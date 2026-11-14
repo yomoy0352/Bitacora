@@ -2486,6 +2486,434 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "13",
+   "titulo": "Muestreo de aceptación",
+   "texto": "## Decidir sobre un lote sin inspeccionarlo todo\nCuando recibes un lote de 1 000 garrafas vacías, 5 000 etiquetas o 200 tambores de materia prima, rara vez puedes inspeccionarlo todo. El **muestreo de aceptación** define cuántas unidades inspeccionar y cuántos defectos tolerar para **aceptar o rechazar el lote**, con riesgos conocidos.\n\nEs una herramienta de **inspección**, no de mejora: no hace mejores los lotes, solo ayuda a decidir sobre ellos. Por eso la tendencia moderna es reducir la dependencia del muestreo de aceptación y sustituirlo, cuando se puede, por **control del proceso del proveedor** (certificados con datos de CEP, capacidad demostrada, auditorías). Pero sigue siendo necesario en recepción, en lotes de proveedores nuevos o problemáticos y en liberación de producto terminado por atributos.\n\n## El plan simple\nUn plan de muestreo simple por atributos se define con:\n\n- **N**: tamaño del lote.\n- **n**: tamaño de la muestra.\n- **Ac** (o c): número de aceptación. Si se encuentran Ac o menos defectuosos, se acepta el lote.\n- **Re**: número de rechazo. Si se encuentran Re o más, se rechaza.\n\nEn un plan simple, Re = Ac + 1.\n\n## La curva característica de operación\nNingún plan de muestreo es perfecto. La **curva característica de operación** (curva OC) muestra la probabilidad de aceptar el lote según su proporción real de defectuosos.\n\n**Ejemplo**: plan n = 80, Ac = 2 (calculado con la distribución binomial):\n\n| Defectuosos en el lote | Probabilidad de aceptar |\n|---|---|\n| 0.5 % | 99 % |\n| 1 % | 95 % |\n| 2 % | 78 % |\n| 3 % | 57 % |\n| 5 % | 23 % |\n| 8 % | 4 % |\n\nLectura: un lote con 3 % defectuoso se acepta más de la mitad de las veces. Un lote con 5 % se acepta casi una de cada cuatro veces. Ningún plan con muestras razonables discrimina de forma perfecta.\n\n### Los dos riesgos\n- **Riesgo del productor (α)**: rechazar un lote bueno. Se define en un nivel de calidad aceptable; típicamente α ≈ 5 %.\n- **Riesgo del consumidor (β)**: aceptar un lote malo. Se define en un nivel de calidad límite (LQ o LTPD); típicamente β ≈ 10 %.\n\nEn el plan del ejemplo, un lote con 1 % defectuoso se acepta el 95 % de las veces (α ≈ 5 %), y uno con alrededor de 6.5 % se acepta solo el 10 % de las veces.\n\n## El AQL: el concepto más malentendido\nEl **AQL** (nivel de calidad aceptable, o límite de calidad de aceptación en la versión más reciente de la terminología ISO) es el peor nivel de calidad que, para fines de muestreo, se considera aceptable **como promedio del proceso** en una serie continua de lotes.\n\nLo que el AQL **no** es:\n\n- **No** es la calidad que el proveedor tiene permitido entregar. Un AQL de 1.0 % **no** significa \"te acepto hasta 1 % de defectuosos\": significa que el sistema de muestreo está diseñado para aceptar casi siempre lotes con 1 % o menos.\n- **No** protege bien contra lotes individuales malos: como muestra la curva OC, lotes con varias veces el AQL pueden aceptarse con frecuencia.\n- **No** es aplicable a defectos **críticos** de inocuidad. Para un defecto que puede causar daño (por ejemplo, un envase de sanitizante con etiqueta de otro producto, o una tapa sin sello de seguridad), no existe un \"porcentaje aceptable\"; se requieren controles de proceso, inspección al 100 % o planes con Ac = 0 y muestras grandes.\n\n### Clasificación de defectos\nPor eso los defectos se clasifican y se les asignan AQL distintos:\n\n- **Críticos**: pueden causar daño o incumplimiento legal. AQL muy bajo o inspección al 100 %, o, mejor, control del proceso.\n- **Mayores**: afectan la función o el uso. AQL intermedio (por ejemplo, 0.65 a 1.0).\n- **Menores**: afectan la apariencia sin afectar la función. AQL mayor (por ejemplo, 2.5 a 4.0).\n\n## ISO 2859-1 (ANSI/ASQ Z1.4)\n### El sistema\nLa norma **ISO 2859-1** (equivalente en lo esencial a **ANSI/ASQ Z1.4**, descendiente del antiguo MIL-STD-105) es el sistema de muestreo por atributos más usado. En México existe la norma mexicana equivalente de la serie **NMX-Z-12**. No es un plan único, sino un **sistema** con:\n\n- **Niveles de inspección**: generales I, II (el normal por defecto) y III, y especiales S-1 a S-4 (para pruebas destructivas o caras, con muestras pequeñas).\n- **Letras código** que dependen del tamaño del lote y del nivel.\n- **Tablas** que dan n, Ac y Re según la letra código y el AQL.\n- **Reglas de cambio** entre inspección normal, rigurosa y reducida.\n\n### Ejemplo de uso\nLote de 1 000 garrafas, nivel de inspección general II, AQL 1.0 para defectos mayores:\n\n1. Tamaño de lote 501 a 1 200, nivel II → **letra código J**.\n2. Letra J, inspección normal → **n = 80**.\n3. AQL 1.0 → **Ac = 2, Re = 3**.\n\nEse es el plan cuya curva OC viste arriba.\n\n### Las reglas de cambio\nEl sistema está diseñado para usarse con **series de lotes** y **reglas de cambio**:\n\n- De **normal a rigurosa**: cuando se rechazan 2 de 5 lotes consecutivos (o menos de 5).\n- De **rigurosa a normal**: cuando se aceptan 5 lotes consecutivos.\n- De **normal a reducida**: con un historial muy favorable, producción estable y aprobación de la autoridad responsable.\n- **Suspensión**: si se acumulan varios lotes rechazados en inspección rigurosa (la norma fija el número), se detiene la aceptación hasta que el proveedor mejore.\n\nLas reglas de cambio son lo que da protección real al consumidor a lo largo del tiempo. Usar las tablas **sin** las reglas de cambio quita al sistema buena parte de su protección.\n\n## Muestreo por variables: ISO 3951\nSi la característica es una **variable** (peso neto, concentración, espesor), se puede usar muestreo por variables (**ISO 3951**, equivalente a ANSI/ASQ Z1.9). Ventajas:\n\n- Requiere **muestras más pequeñas** para la misma protección.\n- Usa más información (el valor, no solo pasa / no pasa).\n\nDesventajas: supone **normalidad** de la característica, requiere un plan por característica y cálculos algo más complejos.\n\n## Planes de aceptación cero\nMuchas industrias prefieren planes con **Ac = 0** (el lote se rechaza con un solo defectuoso en la muestra), con tamaños de muestra menores que los de ISO 2859-1 para una protección similar en el nivel de calidad límite. Psicológicamente comunican \"no aceptamos defectos\", aunque estadísticamente también aceptan lotes con cierta proporción de defectuosos (con n = 80 y Ac = 0, un lote con 1 % se acepta el 45 % de las veces).\n\n## Muestreo en la industria química\nAlgunas particularidades:\n\n- Para **líquidos y polvos a granel**, el \"lote\" es homogéneo (si está bien mezclado) y lo que se hace es tomar una **muestra representativa** para análisis, no inspeccionar unidades. La lógica de ISO 2859 aplica a **envases, etiquetas, tapas, unidades discretas**.\n- Para la **recepción de materias primas** en muchos tambores, se usan reglas de muestreo de envases (por ejemplo, muestrear √N + 1 envases para identidad), complementadas con el análisis de una muestra compuesta.\n- Para **contenido neto** en productos preenvasados, la regulación (en México, normas de contenido neto y verificación de la autoridad de protección al consumidor) define sus propios planes y tolerancias.\n\n## Calidad media de salida\nSi los lotes rechazados se inspeccionan al 100 % y se sustituyen los defectuosos (**inspección rectificadora**), la calidad promedio de lo que sale del sistema tiene un máximo llamado **AOQL** (límite de la calidad media de salida). Es un concepto útil para entender que el muestreo, combinado con rectificación, mejora la calidad promedio que llega al cliente, aunque no garantiza cada lote.\n\n## Ideas que debes llevarte\n- El muestreo de aceptación decide sobre **lotes**; no mejora la calidad. Prefiere el **control del proceso** del proveedor cuando sea posible.\n- Un plan simple: **n, Ac, Re**. La **curva OC** muestra la probabilidad de aceptar según la calidad real.\n- **Riesgo del productor** (rechazar lo bueno) y **del consumidor** (aceptar lo malo).\n- El **AQL no es** un porcentaje permitido de defectuosos ni protege bien lotes individuales; no aplica a **defectos críticos**.\n- **ISO 2859-1**: niveles de inspección, letras código, tablas y **reglas de cambio**, que son esenciales.\n- **ISO 3951** para variables: muestras más pequeñas, supone normalidad.\n- En química, distingue unidades discretas (envases, etiquetas) de **graneles** homogéneos (muestra representativa).",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito",
+     "enunciado": "¿Qué hace el muestreo de aceptación?",
+     "opciones": [
+      "Ayuda a decidir si se acepta o rechaza un lote con riesgos conocidos; no mejora la calidad",
+      "Mejora la calidad de los lotes",
+      "Garantiza que no hay defectos en el lote",
+      "Sustituye el control del proceso"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una herramienta de inspección; la calidad se construye en el proceso.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Plan simple",
+     "enunciado": "Plan n = 50, Ac = 1, Re = 2. Se encuentran 2 defectuosos. ¿Qué se decide?",
+     "opciones": [
+      "Rechazar el lote",
+      "Aceptar el lote",
+      "Tomar otra muestra de 50",
+      "Aceptar con desviación"
+     ],
+     "correcta": 0,
+     "explicacion": "Se alcanzó el número de rechazo.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Curva OC",
+     "enunciado": "¿Qué muestra una curva característica de operación?",
+     "opciones": [
+      "La probabilidad de aceptar un lote según su proporción real de defectuosos",
+      "El tamaño del lote",
+      "El costo de inspección",
+      "La media del proceso"
+     ],
+     "correcta": 0,
+     "explicacion": "Permite ver los riesgos del productor y del consumidor del plan.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Curva OC",
+     "enunciado": "Con el plan n = 80, Ac = 2, ¿con qué probabilidad aproximada se acepta un lote con 5 % defectuoso?",
+     "opciones": [
+      "23 %",
+      "95 %",
+      "0 %",
+      "50 %"
+     ],
+     "correcta": 0,
+     "explicacion": "Ningún plan con muestras razonables discrimina perfectamente.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos",
+     "enunciado": "¿Qué es el riesgo del consumidor?",
+     "opciones": [
+      "La probabilidad de aceptar un lote malo",
+      "La probabilidad de rechazar un lote bueno",
+      "El costo de la inspección",
+      "El riesgo de seguridad laboral"
+     ],
+     "correcta": 0,
+     "explicacion": "El riesgo del productor es rechazar un lote bueno.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "AQL",
+     "enunciado": "¿Qué significa un AQL de 1.0 %?",
+     "opciones": [
+      "El sistema de muestreo está diseñado para aceptar casi siempre lotes con 1 % o menos de defectuosos como promedio del proceso",
+      "El proveedor puede entregar hasta 1 % de defectuosos en cada lote",
+      "Se garantiza que ningún lote aceptado tiene más de 1 %",
+      "Se inspecciona el 1 % del lote"
+     ],
+     "correcta": 0,
+     "explicacion": "El AQL no es un porcentaje permitido ni protege bien lotes individuales.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Defectos críticos",
+     "enunciado": "¿Es apropiado asignar un AQL de 1.0 a envases de sanitizante con etiqueta de otro producto?",
+     "opciones": [
+      "No; es un defecto crítico que requiere control del proceso, inspección al 100 % o planes muy exigentes",
+      "Sí, como cualquier defecto",
+      "Sí, con AQL 4.0",
+      "Solo si el cliente lo acepta"
+     ],
+     "correcta": 0,
+     "explicacion": "Para defectos críticos de inocuidad no existe un porcentaje aceptable.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ISO 2859-1",
+     "enunciado": "Lote de 1 000 unidades, nivel de inspección general II. ¿Qué letra código corresponde?",
+     "opciones": [
+      "J",
+      "K",
+      "H",
+      "L"
+     ],
+     "correcta": 0,
+     "explicacion": "El intervalo de 501 a 1 200 con nivel II corresponde a la letra J (n = 80 en inspección normal).",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas de cambio",
+     "enunciado": "En ISO 2859-1, ¿cuándo se pasa de inspección normal a rigurosa?",
+     "opciones": [
+      "Cuando se rechazan 2 de 5 lotes consecutivos (o menos)",
+      "Cuando se acepta un lote",
+      "Cada año",
+      "Cuando el proveedor lo pide"
+     ],
+     "correcta": 0,
+     "explicacion": "Se regresa a normal tras aceptar 5 lotes consecutivos en rigurosa.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas de cambio",
+     "enunciado": "¿Qué se pierde si se usan las tablas de ISO 2859-1 sin las reglas de cambio?",
+     "opciones": [
+      "Buena parte de la protección del consumidor a lo largo del tiempo",
+      "Nada",
+      "La posibilidad de calcular n",
+      "El nivel de inspección"
+     ],
+     "correcta": 0,
+     "explicacion": "El sistema está diseñado para series de lotes con reglas de cambio.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Variables",
+     "enunciado": "¿Qué ventaja tiene el muestreo por variables (ISO 3951) sobre el de atributos?",
+     "opciones": [
+      "Requiere muestras más pequeñas para la misma protección",
+      "No requiere ningún supuesto",
+      "Sirve para defectos visuales",
+      "Es más sencillo de calcular"
+     ],
+     "correcta": 0,
+     "explicacion": "Usa el valor medido; a cambio, supone normalidad.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Graneles",
+     "enunciado": "¿Cómo se trata un lote de 10 000 L de detergente bien mezclado en un tanque?",
+     "opciones": [
+      "Con una muestra representativa para análisis; la lógica de ISO 2859 aplica a unidades discretas",
+      "Inspeccionando 80 litros por separado según ISO 2859",
+      "Con un AQL de 1.0 por litro",
+      "No se muestrea"
+     ],
+     "correcta": 0,
+     "explicacion": "Un granel homogéneo se caracteriza con un muestreo representativo y análisis.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Curva OC",
+     "enunciado": "Con el plan n = 80, Ac = 2, explica a un comprador por qué 'tener un plan AQL 1.0' no garantiza que los lotes aceptados tengan menos de 1 % de defectuosos.",
+     "respuesta_modelo": "La curva OC del plan muestra que un lote con 2 % defectuoso se acepta el 78 % de las veces, uno con 3 % el 57 % y uno con 5 % el 23 %. Es decir, lotes con varias veces el AQL pasan con frecuencia. El AQL describe el nivel de calidad del proceso que el plan acepta casi siempre (95 % para 1 %), no un tope para cada lote. La protección real viene de usar el sistema completo con reglas de cambio en una serie de lotes y, sobre todo, de que el proveedor controle su proceso. Si se necesita proteger contra lotes individuales malos, hay que fijar un nivel de calidad límite y elegir un plan con riesgo del consumidor bajo en ese nivel.",
+     "puntos_clave": [
+      "Uso de la curva OC con valores",
+      "AQL describe el promedio del proceso",
+      "No protege bien lotes individuales",
+      "Reglas de cambio, control del proceso o nivel de calidad límite"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clasificación de defectos",
+     "enunciado": "Clasifica estos defectos de un envase de sanitizante y propone el tratamiento: a) etiqueta de otro producto; b) tapa sin sello de seguridad; c) etiqueta ligeramente chueca; d) envase con fuga.",
+     "respuesta_modelo": "a) Crítico: puede causar uso equivocado y riesgo de inocuidad o seguridad; tratamiento: control del proceso (verificación de inicio, reconciliación de etiquetas, lector de código), con inspección al 100 % o plan muy exigente si hay sospecha. b) Crítico o mayor según la política (afecta la integridad y la defensa alimentaria): control del proceso y verificación en línea. c) Menor: afecta la apariencia, no la función; AQL alto, por ejemplo 2.5 a 4.0. d) Mayor (o crítico si el producto es corrosivo y causa riesgo en el transporte): control del cierre con torque medido (variable) y muestreo con AQL bajo.",
+     "puntos_clave": [
+      "Clasificación razonada",
+      "Defectos críticos sin AQL convencional",
+      "Tratamiento por control de proceso",
+      "AQL según severidad"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Aplicación",
+     "enunciado": "Recibes 600 tambores de una materia prima de un proveedor nuevo. Describe un esquema de muestreo para la recepción.",
+     "respuesta_modelo": "Para identidad y condición de los envases: inspeccionar visualmente todos los tambores por integridad, etiquetas, lote y sellos; muestrear para identidad una cantidad como √N + 1 ≈ 26 tambores elegidos al azar (o todos si el riesgo lo justifica, al ser proveedor nuevo), con prueba de identidad rápida. Para calidad: preparar una muestra compuesta representativa de esos tambores (o de cada lote del proveedor, si vienen varios) y hacer el análisis completo contra la especificación, verificando el COA. Mantener todo en cuarentena hasta la liberación. Por ser proveedor nuevo, aplicar verificación intensificada en los siguientes envíos y relajarla con base en el historial.",
+     "puntos_clave": [
+      "Inspección de envases y etiquetas",
+      "Muestreo de identidad por envase",
+      "Muestra compuesta para análisis y verificación del COA",
+      "Cuarentena y vigilancia intensificada para proveedor nuevo"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "titulo": "Diseño de experimentos para formulación",
+   "texto": "## El problema de cambiar un factor a la vez\nSupón que quieres mejorar la eficacia de limpieza de un detergente alcalino y sospechas que influyen tres factores: la **temperatura** de uso, la concentración de **quelante** y la concentración de **tensioactivo**. La forma intuitiva de estudiarlos es \"un factor a la vez\": fijar dos y variar el tercero, luego fijar ese en su mejor valor y variar otro, etcétera.\n\nEste método tiene dos problemas graves:\n\n1. **No detecta interacciones**: si el efecto del quelante depende de la temperatura (por ejemplo, el quelante ayuda mucho en caliente y poco en frío), variar un factor a la vez puede llevarte a una conclusión equivocada o a un óptimo falso.\n2. **Es ineficiente**: necesita más corridas para obtener menos información.\n\nEl **diseño de experimentos** (DOE) varía **varios factores a la vez** de forma planificada, de modo que se pueden estimar los efectos de cada factor y sus interacciones con pocas corridas. Ronald Fisher lo desarrolló en la década de 1920 para la agricultura; hoy es la herramienta central de la mejora de procesos y del desarrollo de productos.\n\n## Vocabulario\n- **Respuesta**: lo que se mide (eficacia de limpieza en %, viscosidad, estabilidad, costo).\n- **Factor**: una variable que se controla (temperatura, concentración).\n- **Nivel**: el valor de un factor en una corrida (por ejemplo, 40 y 60 °C).\n- **Corrida o tratamiento**: una combinación de niveles.\n- **Efecto principal**: el cambio promedio en la respuesta al pasar un factor de su nivel bajo al alto.\n- **Interacción**: cuando el efecto de un factor depende del nivel de otro.\n- **Réplica**: repetir una corrida completa para estimar el error experimental.\n- **Aleatorización**: ejecutar las corridas en orden aleatorio.\n- **Bloque**: agrupar corridas en condiciones homogéneas (por ejemplo, el mismo lote de materia prima o el mismo día) cuando no se pueden hacer todas en las mismas condiciones.\n\n## Diseños factoriales 2ᵏ\nEl diseño más útil para empezar: **k factores**, cada uno en **dos niveles** (bajo, −1; alto, +1), con todas las combinaciones. Con 3 factores, 2³ = **8 corridas**.\n\n### Ejemplo\nRespuesta: porcentaje de remoción de una suciedad estándar de proteína y grasa en cupones de acero inoxidable.\n\n| Factor | Bajo (−1) | Alto (+1) |\n|---|---|---|\n| A: temperatura | 40 °C | 60 °C |\n| B: quelante | 0.5 % | 1.5 % |\n| C: tensioactivo | 0.2 % | 0.6 % |\n\nResultados (las corridas se ejecutaron en orden aleatorio; aquí se presentan en orden estándar):\n\n| Corrida | A | B | C | Remoción (%) |\n|---|---|---|---|---|\n| 1 | − | − | − | 62 |\n| 2 | + | − | − | 74 |\n| 3 | − | + | − | 66 |\n| 4 | + | + | − | 90 |\n| 5 | − | − | + | 64 |\n| 6 | + | − | + | 76 |\n| 7 | − | + | + | 68 |\n| 8 | + | + | + | 92 |\n\n### Cálculo de los efectos principales\nEl efecto de un factor es el promedio de la respuesta en su nivel alto menos el promedio en su nivel bajo:\n\n- **A (temperatura)**: promedio con A alto = (74 + 90 + 76 + 92)/4 = 83; con A bajo = (62 + 66 + 64 + 68)/4 = 65. Efecto = **18**.\n- **B (quelante)**: (66 + 90 + 68 + 92)/4 − (62 + 74 + 64 + 76)/4 = 79 − 69 = **10**.\n- **C (tensioactivo)**: (64 + 76 + 68 + 92)/4 − (62 + 74 + 66 + 90)/4 = 75 − 73 = **2**.\n\n### Cálculo de la interacción AB\nSe multiplica la columna de A por la de B para obtener la columna AB (+ cuando A y B tienen el mismo signo) y se calcula igual:\n\n- AB alto (corridas 1, 4, 5, 8): (62 + 90 + 64 + 92)/4 = 77.\n- AB bajo (corridas 2, 3, 6, 7): (74 + 66 + 76 + 68)/4 = 71.\n- Efecto AB = **6**.\n\nLas interacciones AC, BC y ABC resultan cero en este ejemplo.\n\n### Interpretación\nPromedios de las cuatro combinaciones de A y B:\n\n| | Quelante bajo | Quelante alto |\n|---|---|---|\n| 40 °C | 63 | 67 |\n| 60 °C | 75 | 91 |\n\n- A 40 °C, aumentar el quelante mejora la remoción en **4** puntos.\n- A 60 °C, el mismo aumento la mejora en **16** puntos.\n\nEsa es la interacción: el quelante es mucho más eficaz en caliente. Un experimento de \"un factor a la vez\" hecho a 40 °C habría concluido que el quelante casi no importa.\n\nEl **tensioactivo** tiene un efecto pequeño (2 puntos) en este intervalo: quizá no vale la pena aumentarlo, lo que ahorra costo.\n\nConclusión técnica: para máxima remoción, trabajar a 60 °C con quelante alto. Si el cliente no puede trabajar en caliente, el quelante adicional aporta poco y el costo puede no justificarse.\n\n## ¿Qué efectos son reales?\nCon una sola réplica no hay una estimación directa del error experimental. Opciones:\n\n1. **Replicar** el diseño (16 corridas) para estimar el error y hacer pruebas de significancia con ANOVA.\n2. Agregar **puntos centrales** (todos los factores en su nivel medio, repetidos 3 o 4 veces): estiman el error y además detectan **curvatura**.\n3. Usar una **gráfica de probabilidad normal de los efectos** (gráfica de Daniel): los efectos que no son reales se alinean en una recta; los reales se apartan.\n4. Usar la gráfica de **Pareto de efectos** estandarizados que ofrecen los programas estadísticos.\n\n## Diseños factoriales fraccionados\nCon muchos factores, el factorial completo crece rápido: 6 factores son 64 corridas. Un **factorial fraccionado** usa una fracción (por ejemplo, 2⁶⁻² = 16 corridas) a cambio de **confundir** algunos efectos (por ejemplo, una interacción de dos factores con otra). La **resolución** del diseño indica qué se confunde:\n\n- **Resolución III**: efectos principales confundidos con interacciones de dos factores. Útil solo para cribado inicial.\n- **Resolución IV**: efectos principales libres de interacciones de dos factores, pero estas confundidas entre sí.\n- **Resolución V**: efectos principales e interacciones de dos factores libres entre sí.\n\nEstrategia típica: un diseño de **cribado** fraccionado para identificar los pocos factores importantes entre muchos, seguido de un factorial completo o una **superficie de respuesta** con esos pocos.\n\n## Superficies de respuesta\nCuando ya se conocen los factores importantes y se busca el **óptimo**, se usan diseños con tres o más niveles (por ejemplo, **diseño central compuesto** o **Box-Behnken**) que permiten ajustar modelos cuadráticos y encontrar máximos, mínimos o compromisos entre varias respuestas (por ejemplo, máxima remoción con mínimo costo y espuma aceptable).\n\n## Diseños de mezclas\nEn formulación, los componentes de una mezcla suman 100 %: no se puede aumentar uno sin disminuir otro. Para estos casos existen los **diseños de mezclas** (por ejemplo, simplex), con su propio tratamiento estadístico. Son muy útiles para optimizar fórmulas con varios componentes cuya proporción relativa importa.\n\n## Buenas prácticas\n1. **Define el objetivo** y la **respuesta** medible antes de empezar. Asegura que el sistema de medición sea adecuado.\n2. Elige factores y niveles con **conocimiento técnico**: niveles lo bastante separados para ver un efecto, pero dentro de una zona segura y realista.\n3. **Aleatoriza** el orden de las corridas.\n4. Usa **bloques** si hay una fuente de variación conocida que no puedes controlar (lote de materia prima, día).\n5. **Registra todo**, incluidas las condiciones no controladas y los incidentes.\n6. Analiza con gráficas de efectos, gráficas de interacción y residuos.\n7. **Confirma** el resultado con corridas de verificación en las condiciones elegidas.\n\n## DOE en una planta química\nAplicaciones típicas:\n\n- **Formulación**: optimizar la eficacia, la estabilidad, la viscosidad o el costo de una fórmula.\n- **Proceso**: definir tiempo y temperatura de mezclado, orden de adición, velocidad de agitación.\n- **Robustez**: demostrar que el producto funciona bien en un intervalo de condiciones de uso del cliente (dureza del agua, temperatura, dosis), lo cual es valioso para la ficha técnica y para el soporte técnico.\n- **Validación de métodos analíticos**: estudios de robustez (cómo afectan pequeños cambios de pH, temperatura o tiempo al resultado).\n- **Validación de limpieza**: determinar qué parámetros del CIP importan más (concentración, temperatura, tiempo, flujo).\n\n## Ideas que debes llevarte\n- Variar **un factor a la vez** no detecta interacciones y es ineficiente.\n- Los **factoriales 2ᵏ** estiman efectos principales e **interacciones** con pocas corridas.\n- **Efecto** = promedio en nivel alto − promedio en nivel bajo; las interacciones se calculan con columnas de signos multiplicadas.\n- Una **interacción** significa que el efecto de un factor depende de otro: interpreta con la tabla o gráfica de interacción.\n- Estima el error con **réplicas**, **puntos centrales** o gráficas de efectos.\n- **Fraccionados** para cribar muchos factores; **superficies de respuesta** para optimizar; **diseños de mezclas** para fórmulas.\n- **Aleatoriza**, usa **bloques**, mide bien y **confirma**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Un factor a la vez",
+     "enunciado": "¿Cuál es la principal limitación de variar un factor a la vez?",
+     "opciones": [
+      "No detecta interacciones y puede llevar a óptimos falsos",
+      "Requiere demasiado software",
+      "Es imposible de ejecutar",
+      "Siempre da los mismos resultados que un factorial"
+     ],
+     "correcta": 0,
+     "explicacion": "Además es menos eficiente que un diseño factorial.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Factorial",
+     "enunciado": "¿Cuántas corridas tiene un factorial completo 2⁴ sin réplicas?",
+     "opciones": [
+      "16",
+      "8",
+      "4",
+      "24"
+     ],
+     "correcta": 0,
+     "explicacion": "2⁴ = 16.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Efecto principal",
+     "enunciado": "Las respuestas con un factor en su nivel alto promedian 50 y en su nivel bajo 42. ¿Cuál es el efecto?",
+     "opciones": [
+      "8",
+      "46",
+      "92",
+      "4"
+     ],
+     "correcta": 0,
+     "explicacion": "Efecto = promedio alto − promedio bajo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Interacción",
+     "enunciado": "En el ejemplo, el quelante mejora la remoción 4 puntos a 40 °C y 16 puntos a 60 °C. ¿Qué indica?",
+     "opciones": [
+      "Una interacción entre temperatura y quelante",
+      "Que el quelante no tiene efecto",
+      "Que la temperatura no tiene efecto",
+      "Un error experimental"
+     ],
+     "correcta": 0,
+     "explicacion": "El efecto de un factor depende del nivel del otro.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Columna de interacción",
+     "enunciado": "¿Cómo se obtiene la columna de signos para la interacción AB?",
+     "opciones": [
+      "Multiplicando la columna de A por la de B",
+      "Sumando las columnas",
+      "Restando B de A",
+      "Promediando A y B"
+     ],
+     "correcta": 0,
+     "explicacion": "Es + cuando A y B tienen el mismo signo.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aleatorización",
+     "enunciado": "¿Por qué se ejecutan las corridas en orden aleatorio?",
+     "opciones": [
+      "Para que factores no controlados, como el desgaste o la temperatura del día, no se confundan con los efectos",
+      "Para que el experimento dure menos",
+      "Para obtener efectos más grandes",
+      "Por estética"
+     ],
+     "correcta": 0,
+     "explicacion": "La aleatorización protege contra sesgos sistemáticos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Puntos centrales",
+     "enunciado": "¿Qué aportan los puntos centrales replicados a un factorial 2ᵏ?",
+     "opciones": [
+      "Estiman el error experimental y detectan curvatura",
+      "Aumentan el número de factores",
+      "Eliminan las interacciones",
+      "Sustituyen la aleatorización"
+     ],
+     "correcta": 0,
+     "explicacion": "Con solo dos niveles no se puede ver curvatura; los puntos centrales la revelan.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Bloques",
+     "enunciado": "No alcanza un lote de materia prima para las 16 corridas, así que se usan dos lotes. ¿Qué conviene?",
+     "opciones": [
+      "Hacer dos bloques, uno por lote, para separar el efecto del lote de los efectos de los factores",
+      "Mezclar los lotes sin registrarlo",
+      "Hacer solo 8 corridas",
+      "Ignorar el problema"
+     ],
+     "correcta": 0,
+     "explicacion": "Los bloques absorben fuentes de variación conocidas no controladas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fraccionados",
+     "enunciado": "En un diseño de resolución III, ¿qué está confundido?",
+     "opciones": [
+      "Efectos principales con interacciones de dos factores",
+      "Nada",
+      "Solo interacciones de tres factores",
+      "Efectos principales entre sí"
+     ],
+     "correcta": 0,
+     "explicacion": "Es útil solo para cribado inicial.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estrategia",
+     "enunciado": "Tienes 8 factores posibles y quieres encontrar la mejor fórmula. ¿Qué estrategia es razonable?",
+     "opciones": [
+      "Un diseño de cribado fraccionado y después una superficie de respuesta con los factores importantes",
+      "Un factorial completo de 256 corridas",
+      "Variar un factor a la vez",
+      "Elegir al azar"
+     ],
+     "correcta": 0,
+     "explicacion": "Se identifican primero los pocos factores importantes.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mezclas",
+     "enunciado": "¿Cuándo se usa un diseño de mezclas?",
+     "opciones": [
+      "Cuando los componentes suman 100 % y no se puede cambiar uno sin cambiar otro",
+      "Cuando hay un solo factor",
+      "Cuando los factores son de proceso, como temperatura y tiempo",
+      "Nunca en formulación"
+     ],
+     "correcta": 0,
+     "explicacion": "Las proporciones relativas son los factores.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confirmación",
+     "enunciado": "Después de elegir las mejores condiciones con un DOE, ¿qué se hace?",
+     "opciones": [
+      "Corridas de confirmación en esas condiciones",
+      "Nada, el modelo es suficiente",
+      "Cambiar todos los niveles",
+      "Repetir el experimento completo sin cambios"
+     ],
+     "correcta": 0,
+     "explicacion": "La confirmación verifica que el modelo predice bien.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo",
+     "enunciado": "Un factorial 2² sobre la viscosidad (mPa·s) da: A−B− = 400, A+B− = 520, A−B+ = 460, A+B+ = 580. Calcula los efectos de A, B y AB e interpreta.",
+     "respuesta_modelo": "Efecto A = (520 + 580)/2 − (400 + 460)/2 = 550 − 430 = 120. Efecto B = (460 + 580)/2 − (400 + 520)/2 = 520 − 460 = 60. Columna AB: +, −, −, + para las corridas en ese orden; efecto AB = (400 + 580)/2 − (520 + 460)/2 = 490 − 490 = 0. Interpretación: A aumenta la viscosidad 120 mPa·s y B 60 mPa·s, y no hay interacción: los efectos son aditivos (B tiene el mismo efecto en ambos niveles de A). Para estimar la significancia harían falta réplicas o puntos centrales.",
+     "puntos_clave": [
+      "Efecto A = 120",
+      "Efecto B = 60",
+      "Efecto AB = 0",
+      "Interpretación de aditividad y necesidad de error"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diseño",
+     "enunciado": "Diseña un experimento para estudiar la estabilidad del ácido peracético en una nueva fórmula, con tres factores que sospechas influyen.",
+     "respuesta_modelo": "Respuesta: porcentaje de APA remanente después de 4 semanas a 40 °C (estabilidad acelerada), medido con titulación secuencial validada. Factores y niveles: A, concentración de estabilizante (bajo y alto); B, relación inicial peróxido/ácido acético (baja y alta); C, contenido de hierro agregado como simulación de impureza (0 y 1 ppm). Diseño: factorial 2³ con 2 réplicas (16 frascos) más 3 puntos centrales, preparados en orden aleatorio, en el mismo tipo de envase y almacenados en la misma estufa en posiciones aleatorias. Análisis: efectos principales, interacciones (por ejemplo, estabilizante con hierro), ANOVA, residuos y curvatura. Confirmación con lotes piloto en las mejores condiciones y estudio de estabilidad en tiempo real.",
+     "puntos_clave": [
+      "Respuesta medible y método adecuado",
+      "Factores y niveles justificados",
+      "Diseño factorial con réplicas, centros y aleatorización",
+      "Análisis con interacciones y confirmación"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Interacción",
+     "enunciado": "Explica a un formulador por qué el experimento 'un factor a la vez' a 40 °C habría llevado a una conclusión equivocada sobre el quelante en el ejemplo del capítulo.",
+     "respuesta_modelo": "A 40 °C, aumentar el quelante solo mejora la remoción de 63 a 67 %, 4 puntos; el formulador habría concluido que el quelante casi no importa y lo habría dejado bajo para ahorrar. Pero hay una interacción con la temperatura: a 60 °C el mismo aumento mejora de 75 a 91 %, 16 puntos. Al fijar la temperatura en 40 °C mientras variaba el quelante, nunca vio esa combinación. El diseño factorial prueba todas las combinaciones y revela que la mejor condición es 60 °C con quelante alto, y que el valor del quelante depende de la temperatura de uso del cliente.",
+     "puntos_clave": [
+      "Resultado a 40 °C (4 puntos)",
+      "Resultado a 60 °C (16 puntos)",
+      "Explicación de la interacción",
+      "Ventaja del factorial y consecuencia práctica"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
