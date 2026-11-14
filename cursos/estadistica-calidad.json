@@ -2914,6 +2914,206 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "15",
+   "titulo": "Caso integrador: estabilizar un producto",
+   "texto": "## La situación\nUna planta fabrica un **detergente alcalino clorado** para la industria láctea, con especificación de cloro disponible de **4.5 a 5.5 %**. En los últimos seis meses:\n\n- Tres lotes salieron **fuera de especificación** por bajo cloro y se reprocesaron.\n- Dos clientes se **quejaron** de producto \"débil\".\n- El cliente principal pidió demostrar un **Cpk ≥ 1.33** en cloro disponible para renovar el contrato.\n\nLa gerencia pide al coordinador de calidad un diagnóstico y un plan. Este capítulo recorre el análisis usando las herramientas del curso.\n\n## Paso 1: mirar los datos\nSe reúnen los resultados de cloro disponible de los **60 lotes** de los últimos seis meses, en orden de producción, con su fecha, tanque de mezcla, turno, lote de hipoclorito usado y analista.\n\n**Estadística descriptiva**: media 4.92 %, desviación estándar global 0.21 %, mínimo 4.38 %, máximo 5.31 %.\n\n**Gráfica de corrida**: muestra algo que los números no muestran: los valores bajan de forma gradual durante algunas semanas y luego **saltan hacia arriba**, en un patrón de diente de sierra que se repite.\n\n**Histograma**: ancho, con una cola hacia abajo.\n\nPrimera hipótesis a partir de la gráfica: algo se degrada poco a poco y luego se renueva.\n\n## Paso 2: ¿el problema es el proceso o la medición?\nAntes de culpar al proceso, se evalúa el **sistema de medición**. Estudio R&R de la titulación yodométrica con 10 muestras que cubren el intervalo, 3 analistas y 2 réplicas, a ciegas:\n\n- %R&R contra la tolerancia: **12 %**.\n- %R&R contra la variación del proceso: **18 %**.\n- ndc: **7**.\n- Domina la repetibilidad.\n\nConclusión: el método es **aceptable** para liberar y para controlar el proceso, aunque mejorable. La variación observada es principalmente del **proceso**.\n\nAdemás, un estudio de sesgo con un estándar de tiosulfato verificado no muestra sesgo significativo.\n\n## Paso 3: estratificar\nCon los datos separados por variable:\n\n- **Por tanque**: diagramas de caja y ANOVA no muestran diferencias significativas entre los dos tanques de mezcla (p = 0.41).\n- **Por turno**: sin diferencias (p = 0.63).\n- **Por analista**: sin diferencias (coherente con el R&R).\n- **Por lote de hipoclorito**: aquí aparece el patrón. Cada lote de hipoclorito (materia prima, comprado en pipa cada 4 a 6 semanas y almacenado en un tanque exterior) da productos con concentración **decreciente** a medida que pasan los días desde su recepción. Al llegar una pipa nueva, la concentración salta.\n\n## Paso 4: confirmar con datos de la materia prima\nSe revisan los análisis de recepción del hipoclorito y se agrega una medición semanal del tanque de almacenamiento durante dos ciclos:\n\n- El hipoclorito llega con **12.8 %** de cloro disponible en promedio.\n- En el tanque exterior, pierde alrededor de **0.6 a 0.8 puntos** por semana en verano.\n- Una **regresión** del cloro del tanque contra los días desde la recepción muestra una relación aproximadamente lineal en el intervalo observado, con pendiente de alrededor de −0.1 puntos por día en los meses calurosos y R² ≈ 0.92.\n\nAdemás, la fórmula del detergente usa una **cantidad fija** de hipoclorito por lote, calculada para una concentración nominal de 12.5 %. Cuando el hipoclorito ya perdió cloro, el lote sale bajo.\n\n**Causa raíz del patrón**: degradación de la materia prima en almacenamiento (temperatura y tiempo, como viste en el curso de química de la limpieza) combinada con una **dosificación fija** que no compensa la concentración real.\n\nAdemás, la degradación del hipoclorito produce **clorato**, que es un tema regulatorio para los clientes lácteos: otro motivo para atacar la causa.\n\n## Paso 5: capacidad actual\nCon los 60 lotes:\n\n- σ dentro (MR̄/1.128) = 0.11 %\n- σ global = 0.21 %\n- Media = 4.92 %\n\nCálculos:\n\n- Cpk = mín[(5.5 − 4.92)/(3 × 0.11), (4.92 − 4.5)/(3 × 0.11)] = mín[1.76, 1.27] = **1.27**\n- Ppk = mín[(5.5 − 4.92)/(3 × 0.21), (4.92 − 4.5)/(3 × 0.21)] = mín[0.92, 0.67] = **0.67**\n\nPero el proceso **no está en control** (la gráfica I-MR muestra patrones claros de tendencia y saltos), así que estos índices no describen un comportamiento predecible. La gran diferencia entre Cpk y Ppk confirma que la variación **entre periodos** (por la degradación del hipoclorito) domina sobre la de corto plazo.\n\n## Paso 6: acciones\n### Sobre la causa\n1. **Dosificar según la concentración real**: analizar el hipoclorito del tanque **antes de cada lote** y calcular la cantidad a cargar para lograr el cloro objetivo. Se implementa con una hoja de cálculo validada en el sistema de producción.\n2. **Reducir la degradación**: mover el almacenamiento a un tanque **a la sombra** y con aislamiento, comprar **volúmenes más pequeños** con más frecuencia, y establecer un tiempo máximo de almacenamiento.\n3. **Especificación de recepción**: agregar un límite de clorato al hipoclorito y verificar en recepción.\n\n### Optimización con un experimento\nPara fijar el objetivo de formulación, se hace un **factorial 2³** con dos réplicas sobre la estabilidad del producto terminado (pérdida de cloro en 8 semanas a 30 °C), con factores: exceso de álcali libre, concentración de silicato y tipo de envase. Resultado principal: el **álcali libre alto** reduce de forma importante la pérdida de cloro, con una interacción favorable con el envase opaco; el silicato no tuvo efecto significativo en el intervalo probado. Se ajusta la fórmula y se confirma con tres lotes piloto.\n\n### Sobre el control\n4. Implementar una **gráfica I-MR** del cloro por lote, junto con una **EWMA** (λ = 0.2) para detectar derivas pequeñas, con plan de reacción.\n5. Agregar una **gráfica de control** del cloro del hipoclorito en el tanque de almacenamiento.\n6. Gestionar todo el cambio con el procedimiento de **gestión del cambio** e informar a los clientes.\n\n## Paso 7: resultados\nDespués de tres meses con las acciones implementadas, con 30 lotes nuevos:\n\n- La gráfica I-MR muestra el proceso **en control**, sin el patrón de diente de sierra.\n- Media: 5.02 %; σ dentro: 0.09 %; σ global: 0.10 %.\n- Cpk = mín[(5.5 − 5.02)/0.27, (5.02 − 4.5)/0.27] = mín[1.78, 1.93] = **1.78**\n- Ppk = mín[(0.48)/0.30, (0.52)/0.30] = **1.60**\n\nLa brecha entre Cpk y Ppk prácticamente desapareció: la variación entre periodos se eliminó. Con 30 lotes, el límite inferior de confianza de 95 % del Cpk es de aproximadamente **1.38**, por encima del 1.33 exigido. Se presenta al cliente con la gráfica de control, el estudio R&R, el análisis de capacidad con su incertidumbre y la descripción de las acciones.\n\nAdemás:\n\n- Cero lotes fuera de especificación en el periodo.\n- Las quejas de producto débil desaparecieron.\n- El clorato en el producto bajó, por el menor tiempo de almacenamiento del hipoclorito.\n- Se redujo el costo de reprocesos.\n\n## Lo que el caso enseña\n1. **Grafica antes de calcular**: la gráfica de corrida reveló el patrón que la media y la desviación estándar ocultaban.\n2. **Verifica la medición primero**: el R&R descartó al laboratorio como causa y dio confianza en los datos.\n3. **Estratifica**: la variable que explicaba el problema (lote de materia prima y días de almacenamiento) no era la primera que se sospechaba (tanque o turno).\n4. **Une estadística y química**: la estadística señaló dónde estaba el patrón; la química (degradación del hipoclorito con temperatura y tiempo) explicó por qué.\n5. **La capacidad solo vale en control**: el Cpk inicial no significaba nada con un proceso inestable.\n6. **Ppk frente a Cpk** diagnosticó la variación entre periodos.\n7. **El DOE** encontró una interacción que un estudio de un factor a la vez habría pasado por alto.\n8. **Demuestra con incertidumbre**: el límite inferior de confianza del Cpk es lo que realmente responde al requisito del cliente.\n9. **Controla después de mejorar**: las gráficas de control y el plan de reacción sostienen la mejora.\n\n## Ideas que debes llevarte\n- Un problema real se resuelve combinando herramientas: **descriptiva**, **MSA**, **estratificación**, **regresión**, **capacidad**, **DOE** y **CEP**.\n- El orden importa: datos y gráficas, medición, estratificación, causa, acción, verificación y control.\n- La estadística localiza el problema; el **conocimiento técnico** lo explica y lo resuelve.\n- Los resultados se demuestran con datos, gráficas e **incertidumbre**, y se sostienen con **control** del proceso.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Gráfica de corrida",
+     "enunciado": "En el caso, ¿qué herramienta reveló primero el patrón de diente de sierra?",
+     "opciones": [
+      "La gráfica de corrida en orden de producción",
+      "La media y la desviación estándar",
+      "El histograma",
+      "El Cpk"
+     ],
+     "correcta": 0,
+     "explicacion": "Los números resumen; la gráfica en el tiempo muestra el patrón.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Medición",
+     "enunciado": "¿Por qué se hizo el estudio R&R antes de analizar el proceso?",
+     "opciones": [
+      "Para descartar que la variación viniera del método analítico y confiar en los datos",
+      "Porque lo pidió el cliente",
+      "Porque el R&R mejora el proceso",
+      "No era necesario"
+     ],
+     "correcta": 0,
+     "explicacion": "Si la medición fuera inadecuada, el análisis del proceso sería engañoso.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estratificación",
+     "enunciado": "¿Qué variable de estratificación explicó el problema?",
+     "opciones": [
+      "El lote de hipoclorito y los días desde su recepción",
+      "El tanque de mezcla",
+      "El turno",
+      "El analista"
+     ],
+     "correcta": 0,
+     "explicacion": "Tanque, turno y analista no mostraron diferencias.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Causa raíz",
+     "enunciado": "¿Cuál fue la causa raíz del patrón?",
+     "opciones": [
+      "Degradación del hipoclorito en almacenamiento combinada con una dosificación fija",
+      "Un error del laboratorio",
+      "Un tanque de mezcla descalibrado",
+      "Diferencias entre turnos"
+     ],
+     "correcta": 0,
+     "explicacion": "La estadística señaló el patrón; la química lo explicó.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Capacidad en control",
+     "enunciado": "¿Por qué el Cpk inicial de 1.27 no era significativo?",
+     "opciones": [
+      "Porque el proceso no estaba en control estadístico",
+      "Porque era demasiado alto",
+      "Porque se calculó con atributos",
+      "Porque el cliente no lo aceptó"
+     ],
+     "correcta": 0,
+     "explicacion": "La capacidad solo describe procesos estables y predecibles.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cpk frente a Ppk",
+     "enunciado": "Inicialmente Cpk = 1.27 y Ppk = 0.67. ¿Qué indicaba esa brecha?",
+     "opciones": [
+      "Que la variación entre periodos dominaba sobre la de corto plazo",
+      "Que el método era inadecuado",
+      "Que el proceso era muy capaz",
+      "Que los datos no eran normales"
+     ],
+     "correcta": 0,
+     "explicacion": "Tras las acciones, la brecha casi desapareció (1.78 frente a 1.60).",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acción principal",
+     "enunciado": "¿Qué acción atacó directamente la causa del bajo cloro?",
+     "opciones": [
+      "Dosificar el hipoclorito según su concentración real analizada antes de cada lote",
+      "Aumentar la frecuencia de análisis del producto terminado",
+      "Ampliar la especificación",
+      "Capacitar a los analistas"
+     ],
+     "correcta": 0,
+     "explicacion": "Compensa la concentración real en lugar de suponer la nominal.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "DOE",
+     "enunciado": "¿Qué encontró el factorial 2³ sobre la estabilidad del producto?",
+     "opciones": [
+      "El álcali libre alto reduce la pérdida de cloro, con una interacción favorable con el envase opaco",
+      "El silicato era el factor más importante",
+      "Ningún factor tenía efecto",
+      "Solo el envase importaba"
+     ],
+     "correcta": 0,
+     "explicacion": "El silicato no tuvo efecto significativo en el intervalo probado.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Demostración",
+     "enunciado": "¿Qué dato responde mejor al requisito del cliente de Cpk ≥ 1.33?",
+     "opciones": [
+      "El límite inferior de confianza del Cpk (≈ 1.38) con el proceso en control",
+      "El Cpk puntual de 1.78 sin más",
+      "El Cp",
+      "La media del proceso"
+     ],
+     "correcta": 0,
+     "explicacion": "La demostración considera la incertidumbre de la estimación.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control posterior",
+     "enunciado": "¿Qué combinación de gráficas se implementó para sostener la mejora?",
+     "opciones": [
+      "I-MR del cloro por lote junto con una EWMA, más una gráfica del hipoclorito almacenado",
+      "Solo un histograma mensual",
+      "Solo una gráfica p",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "Shewhart para cambios grandes y EWMA para derivas pequeñas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Beneficio adicional",
+     "enunciado": "¿Qué beneficio de inocuidad o regulatorio tuvo reducir el tiempo de almacenamiento del hipoclorito?",
+     "opciones": [
+      "Menor clorato en el producto",
+      "Mayor dureza del agua",
+      "Menor pH",
+      "Ninguno"
+     ],
+     "correcta": 0,
+     "explicacion": "La degradación del hipoclorito produce clorato, de interés regulatorio.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Orden del análisis",
+     "enunciado": "Resume en orden los pasos del análisis del caso y explica por qué el orden importa.",
+     "respuesta_modelo": "1) Reunir y graficar los datos en orden (gráfica de corrida, histograma). 2) Evaluar el sistema de medición (R&R y sesgo). 3) Estratificar por variables candidatas (tanque, turno, analista, lote de materia prima). 4) Confirmar la hipótesis con datos adicionales y regresión. 5) Evaluar la capacidad reconociendo que el proceso no estaba en control. 6) Actuar sobre la causa (dosificación por concentración real, almacenamiento, especificación) y optimizar con DOE. 7) Verificar resultados con capacidad e incertidumbre. 8) Sostener con gráficas de control y plan de reacción. El orden importa porque cada paso da confianza al siguiente: sin medición confiable no se puede interpretar el proceso; sin estabilidad, la capacidad no tiene sentido; sin causa, las acciones son ajustes a ciegas; sin control posterior, la mejora se pierde.",
+     "puntos_clave": [
+      "Secuencia completa",
+      "Medición antes de proceso",
+      "Estabilidad antes de capacidad",
+      "Control para sostener"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Variante",
+     "enunciado": "Supón que en el paso 2 el R&R hubiera dado 45 % contra la variación del proceso. ¿Cómo habría cambiado el plan?",
+     "respuesta_modelo": "El método no habría sido adecuado para controlar el proceso: una parte grande de la variación observada sería de medición. Antes de analizar el proceso, habría que mejorar el método (por ejemplo, titulación potenciométrica automática, control de temperatura, mejor preparación de la muestra, capacitación si domina la reproducibilidad) y repetir el R&R. Mientras tanto, para la liberación habría que evaluar el R&R contra la tolerancia y, si también es alto, aplicar bandas de guarda o réplicas. Además, el Cpk calculado subestimaría la capacidad real, así que no se presentaría al cliente hasta tener un sistema de medición adecuado.",
+     "puntos_clave": [
+      "Método inadecuado para control",
+      "Mejorar y reevaluar antes de analizar",
+      "Medidas temporales para la liberación",
+      "Efecto en la capacidad reportada"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Comunicación",
+     "enunciado": "Redacta en cinco o seis líneas lo que presentarías al cliente principal para responder a su requisito de Cpk.",
+     "respuesta_modelo": "Identificamos que la variación del cloro disponible se debía a la degradación del hipoclorito almacenado combinada con una dosificación fija. Implementamos dosificación según la concentración real de cada carga, almacenamiento protegido con menor tiempo de residencia y una especificación de recepción que incluye clorato. Con 30 lotes posteriores, el proceso está en control (gráficas I-MR y EWMA adjuntas), con un Cpk de 1.78 y un límite inferior de confianza de 95 % de aproximadamente 1.38, por encima del 1.33 requerido. El método analítico tiene un %R&R de 12 % respecto a la tolerancia. Mantendremos el control estadístico y les compartiremos el reporte trimestral.",
+     "puntos_clave": [
+      "Causa y acciones resumidas",
+      "Evidencia de estabilidad",
+      "Cpk con límite de confianza",
+      "Adecuación de la medición y compromiso de seguimiento"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
