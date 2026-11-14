@@ -1,0 +1,1207 @@
+{
+ "id": "causa-raiz-capa",
+ "titulo": "Análisis de causa raíz y CAPA",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "El lenguaje de CAPA: corrección, acción correctiva y riesgo",
+   "texto": "## Por qué este curso\nTodo sistema de gestión genera problemas: no conformidades de auditoría, quejas de clientes, desviaciones de PCC, lotes fuera de especificación, incidentes. Lo que distingue un sistema maduro no es que tenga pocos problemas, sino que **no los repite**. Esa es la función de CAPA (*Corrective and Preventive Action*): convertir cada problema en una mejora permanente.\n\nEn la práctica, la mayoría de las CAPA fallan por las mismas razones: el problema está mal definido, la causa se declara en lugar de demostrarse, la acción es \"capacitar\" y nadie verifica si funcionó. Este curso recorre el proceso completo con el rigor que exigiría un auditor exigente y, sobre todo, la realidad.\n\n## Tres conceptos que no deben confundirse\nISO 9000 define:\n\n- **Corrección**: acción para **eliminar una no conformidad detectada**. Actúa sobre el producto o la situación: reprocesar, reetiquetar, segregar, ajustar la máquina, retirar el lote.\n- **Acción correctiva**: acción para **eliminar la causa** de una no conformidad y **evitar que vuelva a ocurrir**.\n- **Acción preventiva**: acción para eliminar la causa de una no conformidad **potencial** u otra situación potencial no deseable.\n\nUn ejemplo con un sanitizante:\n\n| Situación | Corrección | Acción correctiva |\n|---|---|---|\n| Lote con activo bajo | Reprocesar el lote con ajuste de activo | Eliminar la causa del error de dosificación |\n| Etiqueta con dilución incorrecta | Reetiquetar el inventario y avisar a clientes | Cambiar el proceso de aprobación de etiquetas |\n| PCC de temperatura fuera de límite | Retener y evaluar el producto | Eliminar la causa de la falla del control |\n\nLa corrección es **necesaria** (el problema de hoy hay que atenderlo), pero **no basta**: si solo se corrige, el problema regresa.\n\n## Lo que pide ISO 9001\nEl requisito de no conformidad y acción correctiva (apartado 10.2 en ISO 9001:2015, que se mantiene en la revisión de 2026) pide que, cuando ocurra una no conformidad, incluidas las que surgen de quejas, la organización:\n\n1. **Reaccione**: tome acciones para controlarla y corregirla, y haga frente a las **consecuencias**.\n2. **Evalúe la necesidad** de acciones para eliminar la causa, para que no vuelva a ocurrir ni ocurra en otra parte, mediante:\n   - la revisión y el análisis de la no conformidad,\n   - la determinación de sus **causas**,\n   - la determinación de si existen **no conformidades similares** o si podrían ocurrir.\n3. **Implemente** las acciones necesarias.\n4. **Revise la eficacia** de las acciones tomadas.\n5. Si es necesario, **actualice los riesgos y oportunidades** determinados en la planificación.\n6. Si es necesario, haga **cambios al sistema** de gestión.\n\nY añade que las acciones correctivas deben ser **apropiadas a los efectos** de las no conformidades encontradas. Se conserva información documentada de la naturaleza de la no conformidad, las acciones y sus resultados.\n\nFíjate en el punto 2: no solo se pregunta \"¿por qué pasó aquí?\", sino \"¿dónde **más** puede pasar?\". Esa extensión horizontal es lo que la mayoría de los formatos de CAPA omiten.\n\n## Lo que pide ISO 22000\nISO 22000:2018 tiene requisitos equivalentes en su cláusula de no conformidad y acción correctiva, y además requisitos específicos para la operación:\n\n- **Correcciones** cuando se exceden los límites críticos de los PCC o los criterios de acción de los PPRO, incluida la identificación y evaluación del producto afectado (producto potencialmente no inocuo).\n- **Acciones correctivas** para eliminar la causa, con revisión de las no conformidades (incluidas quejas), tendencias de monitoreo, causas, implementación y eficacia.\n\nEn inocuidad, el \"hacer frente a las consecuencias\" incluye decisiones graves: retener, destruir, retirar del mercado.\n\n## ¿Qué pasó con la acción preventiva?\nISO 9001:2008 tenía un apartado de acción preventiva. En la versión 2015 desapareció como requisito separado: su función la asume el **pensamiento basado en riesgos** (la planificación de riesgos y oportunidades). La idea es que la prevención no es un formato que se llena después de un problema, sino algo que está en todo el sistema: el análisis de peligros, el FMEA de un proceso, la evaluación de un cambio.\n\nEn la práctica, muchas organizaciones siguen usando la etiqueta CAPA y conservan la \"acción preventiva\" para dos casos:\n\n- Extender una acción correctiva a **otros procesos** donde el problema todavía no ha ocurrido (la \"extensión horizontal\").\n- Actuar sobre **tendencias** antes de que se conviertan en no conformidades (una carta de control que deriva hacia un límite).\n\n## Cuándo abrir una CAPA\nNo todo problema necesita un análisis de causa raíz formal. Un sistema que abre CAPA para todo se satura y termina haciendo análisis superficiales. Un criterio **proporcional al riesgo**:\n\n- **Siempre**: problemas de inocuidad, legales o regulatorios; quejas con impacto en el cliente; no conformidades mayores; desviaciones de PCC; problemas **repetidos**.\n- **Según evaluación**: no conformidades menores, desviaciones de proceso sin impacto en producto.\n- **Solo corrección y registro**: eventos aislados de bajo impacto, que se vigilan por **tendencia**. Si se repiten, se escalan.\n\nLa clave es registrar todo, aunque no todo lleve análisis profundo: los datos de eventos pequeños revelan patrones.\n\n## El ciclo completo\nA lo largo del curso seguiremos este ciclo, que es compatible con metodologías como 8D, A3 o DMAIC:\n\n1. **Definir** el problema con precisión.\n2. **Contener** y evaluar el impacto.\n3. **Analizar** las causas, con herramientas adecuadas.\n4. **Verificar** la causa con datos.\n5. **Diseñar** acciones que eliminen la causa, aquí y en otros lugares.\n6. **Implementar**.\n7. **Verificar la eficacia**.\n8. **Estandarizar** y cerrar, aprendiendo del caso.\n\n## Ideas que debes llevarte\n- **Corrección** elimina la no conformidad detectada; **acción correctiva** elimina su causa; **acción preventiva** actúa sobre causas potenciales.\n- ISO 9001 pide reaccionar, atender consecuencias, analizar causas, buscar **no conformidades similares**, implementar, revisar la **eficacia** y actualizar riesgos.\n- ISO 22000 añade la evaluación del **producto potencialmente no inocuo** cuando falla un PCC o un PPRO.\n- La acción preventiva como requisito separado fue sustituida por el **pensamiento basado en riesgos**.\n- Abre CAPA de forma **proporcional al riesgo**, pero registra todo y vigila tendencias.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Corrección",
+     "enunciado": "Según ISO 9000, ¿qué es una corrección?",
+     "opciones": [
+      "Acción para eliminar una no conformidad detectada",
+      "Acción para eliminar la causa de una no conformidad",
+      "Acción para eliminar la causa de una no conformidad potencial",
+      "La verificación de eficacia"
+     ],
+     "correcta": 0,
+     "explicacion": "Actúa sobre el producto o la situación, no sobre la causa.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acción correctiva",
+     "enunciado": "¿Cuál es el propósito de una acción correctiva?",
+     "opciones": [
+      "Eliminar la causa de una no conformidad y evitar que vuelva a ocurrir",
+      "Reprocesar el lote afectado",
+      "Sancionar al responsable",
+      "Documentar el problema"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin eliminar la causa, el problema regresa.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clasificar",
+     "enunciado": "Se reetiqueta el inventario de un producto con instrucción de dilución incorrecta. ¿Qué es?",
+     "opciones": [
+      "Una corrección",
+      "Una acción correctiva",
+      "Una acción preventiva",
+      "Una verificación de eficacia"
+     ],
+     "correcta": 0,
+     "explicacion": "Atiende lo detectado; la acción correctiva cambiaría el proceso que permitió el error.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ISO 9001",
+     "enunciado": "¿Qué pide ISO 9001 además de determinar las causas de la no conformidad?",
+     "opciones": [
+      "Determinar si existen no conformidades similares o si podrían ocurrir",
+      "Despedir al responsable",
+      "Abrir una CAPA por cada evento menor",
+      "Notificar a la autoridad en todos los casos"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la extensión horizontal del análisis.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporcionalidad",
+     "enunciado": "¿Cómo deben ser las acciones correctivas según ISO 9001?",
+     "opciones": [
+      "Apropiadas a los efectos de las no conformidades encontradas",
+      "Siempre las más costosas",
+      "Siempre iguales",
+      "Solo de capacitación"
+     ],
+     "correcta": 0,
+     "explicacion": "La profundidad del análisis y la acción se ajusta al riesgo.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos",
+     "enunciado": "Después de una acción correctiva, ¿qué puede requerir actualizarse según ISO 9001?",
+     "opciones": [
+      "Los riesgos y oportunidades determinados en la planificación",
+      "El logotipo de la empresa",
+      "La política de vacaciones",
+      "El organigrama siempre"
+     ],
+     "correcta": 0,
+     "explicacion": "Y, si es necesario, el sistema de gestión.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ISO 22000",
+     "enunciado": "¿Qué añade ISO 22000 cuando se excede un límite crítico de un PCC?",
+     "opciones": [
+      "La identificación y evaluación del producto potencialmente no inocuo",
+      "Solo un registro de la desviación",
+      "Una auditoría externa inmediata",
+      "El cambio del límite crítico"
+     ],
+     "correcta": 0,
+     "explicacion": "El producto afectado debe controlarse.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acción preventiva",
+     "enunciado": "¿Qué sustituyó al requisito separado de acción preventiva en ISO 9001:2015?",
+     "opciones": [
+      "El pensamiento basado en riesgos",
+      "La auditoría interna",
+      "La revisión por la dirección",
+      "El control de documentos"
+     ],
+     "correcta": 0,
+     "explicacion": "La prevención se integra en la planificación.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cuándo abrir",
+     "enunciado": "¿En cuál de estos casos se debe abrir siempre una CAPA con análisis de causa formal?",
+     "opciones": [
+      "Desviación de un PCC",
+      "Un error tipográfico en un documento interno",
+      "Una etiqueta de archivo despegada",
+      "Una silla rota en la oficina"
+     ],
+     "correcta": 0,
+     "explicacion": "Los problemas de inocuidad siempre requieren análisis.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Saturación",
+     "enunciado": "¿Qué riesgo tiene abrir una CAPA con análisis profundo para cada evento menor?",
+     "opciones": [
+      "El sistema se satura y los análisis se vuelven superficiales",
+      "Ninguno",
+      "Mejora automáticamente la calidad",
+      "Reduce los costos"
+     ],
+     "correcta": 0,
+     "explicacion": "La proporcionalidad mantiene la calidad del análisis donde importa.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tendencias",
+     "enunciado": "¿Por qué conviene registrar incluso los eventos que solo llevan corrección?",
+     "opciones": [
+      "Porque sus datos revelan patrones y permiten escalar si se repiten",
+      "Porque lo exige la ley en todos los casos",
+      "Para tener más papeles",
+      "No conviene"
+     ],
+     "correcta": 0,
+     "explicacion": "Un evento menor repetido es una señal.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clasificar acciones",
+     "enunciado": "Un PCC de concentración de sanitizante en una línea de envasado de un cliente se encontró por debajo del límite. Propón una corrección, una acción correctiva y una extensión preventiva.",
+     "respuesta_modelo": "Corrección: detener el uso, retener y evaluar el producto envasado desde la última verificación conforme, ajustar la dilución y verificar la concentración antes de reanudar. Acción correctiva: determinar la causa (por ejemplo, un dosificador descalibrado o un cambio de concentrado sin ajuste) y eliminarla, por ejemplo con un dosificador con alarma de bajo flujo y verificación de calibración periódica. Extensión preventiva: revisar los demás dosificadores de la planta con el mismo diseño o la misma práctica, y evaluar si el monitoreo debería ser continuo en vez de puntual.",
+     "puntos_clave": [
+      "Corrección con evaluación del producto",
+      "Acción correctiva sobre la causa",
+      "Extensión a otros dosificadores",
+      "Distinción clara entre las tres"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Criterio",
+     "enunciado": "Propón un criterio de tres niveles para decidir cuándo abrir una CAPA en una planta de químicos de limpieza.",
+     "respuesta_modelo": "Nivel 1, CAPA con análisis formal siempre: problemas de inocuidad o seguridad, quejas con impacto en el cliente, incumplimientos legales o regulatorios, no conformidades mayores de auditoría, lotes liberados fuera de especificación, y cualquier problema repetido. Nivel 2, según evaluación del responsable de calidad: no conformidades menores, desviaciones de proceso contenidas internamente, lotes reprocesados. Nivel 3, solo corrección y registro: eventos aislados de bajo impacto (un registro incompleto, un error de formato), con revisión mensual de tendencias; si un tipo de evento se repite, por ejemplo tres veces en un trimestre, se escala al nivel 1.",
+     "puntos_clave": [
+      "Nivel alto basado en riesgo e inocuidad",
+      "Nivel intermedio con evaluación",
+      "Nivel bajo con registro",
+      "Regla de escalamiento por repetición"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Extensión horizontal",
+     "enunciado": "Explica qué es la extensión horizontal de una acción correctiva y da un ejemplo.",
+     "respuesta_modelo": "Es aplicar lo aprendido de una no conformidad a otros procesos, productos, equipos o sitios donde el mismo problema podría ocurrir, aunque todavía no haya ocurrido. Responde al requisito de determinar si existen no conformidades similares o si podrían ocurrir. Ejemplo: se descubre que un tanque de mezcla tenía una válvula de fondo que permitía arrastre de producto anterior; además de corregir ese tanque, se revisan todos los tanques con el mismo tipo de válvula y se modifica el estándar de compra de válvulas.",
+     "puntos_clave": [
+      "Definición",
+      "Relación con el requisito",
+      "Ejemplo concreto",
+      "Cambio de estándar"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "Definir el problema antes de buscar la causa",
+   "texto": "## El error más caro\nLa causa más común de un análisis de causa raíz fallido no está en el análisis: está **antes**. Un problema mal definido lleva a buscar en el lugar equivocado. \"Hay quejas de calidad del detergente\" no es un problema que se pueda analizar; \"el detergente alcalino DA-30 lotes 2608-03 a 2608-11 presenta separación de fases a los 10 a 15 días de fabricación, en 4 de 9 lotes, solo en presentación de 20 L\" sí lo es.\n\nUna buena definición ya contiene pistas de la causa. Una mala definición contiene, muchas veces, una **solución disfrazada** (\"el problema es que no hay suficiente capacitación\") o una **causa supuesta** (\"el problema es el proveedor nuevo\").\n\n## Separar el síntoma, el problema y la causa\n- **Síntoma**: lo que se percibe (\"el cliente se queja\").\n- **Problema**: la desviación concreta entre lo esperado y lo observado (\"el pH del producto a la recepción del cliente es 10.2; la especificación es 11.5 a 12.5\").\n- **Causa**: por qué ocurre la desviación (todavía desconocida).\n\nLa definición del problema describe **qué** y **cuánto**, no **por qué**.\n\n## La desviación: esperado frente a real\nTodo problema es una diferencia entre un **estándar** y la **realidad**. Si no hay estándar claro, el primer problema es ese. La definición debe responder:\n\n- ¿Cuál es el **requisito** o la condición esperada?\n- ¿Qué se **observó**, con datos?\n- ¿Cuál es la **magnitud** de la diferencia?\n\n## 5W2H: la descripción completa\nUna forma ordenada de describir el problema es responder:\n\n- **Qué**: producto, defecto, parámetro.\n- **Dónde**: planta, línea, equipo, posición en el equipo, ubicación en el producto, cliente.\n- **Cuándo**: fecha y hora de la primera ocurrencia, momento del proceso, turno, frecuencia, momento del ciclo de vida del producto.\n- **Quién**: quién lo detectó (no \"quién tuvo la culpa\").\n- **Por qué es un problema**: impacto en el cliente, la inocuidad, el cumplimiento, el costo.\n- **Cómo** se detectó: método, inspección, queja.\n- **Cuánto**: número de unidades o lotes, porcentaje, magnitud, costo, tendencia.\n\n## Es / No es: la herramienta más subestimada\nLa técnica **Es / No es**, del método de análisis de problemas de Kepner y Tregoe, compara dónde **sí** ocurre el problema con dónde **podría** ocurrir **pero no ocurre**. Las diferencias entre ambos lados son pistas poderosas.\n\nEjemplo con el detergente que se separa:\n\n| Dimensión | Es | No es (pero podría ser) | Diferencia o pista |\n|---|---|---|---|\n| Qué | DA-30 | DA-20, DA-40 (similares) | Solo DA-30 lleva el hidrótropo X |\n| Dónde | Presentación 20 L | Garrafa de 4 L, tambor de 200 L | Los 20 L se llenan en la línea 2 |\n| Cuándo | Lotes de agosto | Lotes de junio y julio | Cambio de lote de hidrótropo en agosto |\n| Cuánto | 4 de 9 lotes | Los otros 5 lotes | Los 4 lotes usaron el hidrótropo del lote H-0731 |\n\nCon esta tabla el problema ya no es \"el detergente se separa\": es \"algo asociado al hidrótropo del lote H-0731 y quizá a la línea 2\". Todavía no es la causa demostrada, pero orienta la investigación.\n\n### Cómo usarla bien\n- Llénala con **datos**, no con suposiciones. Si no sabes si el problema ocurre en otra línea, averígualo.\n- Busca el \"No es\" **más cercano** al \"Es\": un producto similar, una línea vecina, el lote anterior. Cuanto más parecidos, más reveladora es la diferencia.\n- Para cada diferencia, pregunta qué **cambió** y **cuándo** (lo retomamos en el capítulo 5).\n\n## Estratificar los datos\nAntes de analizar causas, divide los datos por factores: turno, línea, operador, lote de materia prima, proveedor, equipo, día de la semana. Un **diagrama de Pareto** (lo viste en el curso de estadística) muestra dónde se concentra el problema. Una **gráfica de tiempo** muestra si el problema es nuevo, recurrente o gradual.\n\nTres patrones típicos y lo que sugieren:\n\n- **Escalón** (el problema aparece de golpe): un **cambio** puntual (materia prima, equipo, método, persona).\n- **Deriva** gradual: **desgaste**, acumulación, degradación de un reactivo, pérdida de calibración.\n- **Intermitente**: una condición que se presenta a veces (un turno, una combinación de factores, una variable ambiental).\n\n## Errores comunes al definir el problema\n- **Demasiado amplio**: \"problemas de calidad en producción\".\n- **Con causa incluida**: \"el problema es que el operador no siguió el procedimiento\".\n- **Con solución incluida**: \"el problema es que no tenemos un sistema automático\".\n- **Sin datos**: \"muchas quejas últimamente\".\n- **Con culpables**: \"el turno de la noche es descuidado\".\n- **Mezclando varios problemas**: separación de fases, color fuera de rango y etiquetas mal pegadas son tres problemas, aunque lleguen en la misma queja.\n\n## Una plantilla de enunciado\nUn enunciado útil cabe en dos o tres líneas:\n\n> **Desde** [fecha], **en** [producto, proceso, lugar], **se observa** [defecto medido] **frente a** [requisito], **en** [magnitud y frecuencia], **detectado por** [método o fuente], **con impacto** [en cliente, inocuidad, costo].\n\nEjemplo: \"Desde el 4 de agosto de 2026, en el detergente DA-30 presentación de 20 L, se observa separación de fases entre 10 y 15 días después de la fabricación, frente al requisito de estabilidad de 12 meses, en 4 de 9 lotes fabricados, detectado por quejas de dos clientes y confirmado en retenidos; impacto: devolución de 3,200 L y riesgo de dosificación incorrecta en el cliente.\"\n\n## Ideas que debes llevarte\n- La mayoría de los análisis fallidos empiezan con un **problema mal definido**.\n- Separa **síntoma**, **problema** (desviación medida frente a un estándar) y **causa**.\n- Usa **5W2H** para describir y **Es / No es** para encontrar pistas: busca el \"No es\" más cercano y las diferencias.\n- **Estratifica** y grafica en el tiempo: escalón sugiere cambio, deriva sugiere desgaste, intermitente sugiere una condición ocasional.\n- Evita definiciones amplias, con causa, con solución, sin datos, con culpables o con varios problemas mezclados.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Cuál es el mejor enunciado de problema?",
+     "opciones": [
+      "El DA-30 de 20 L presenta separación de fases a los 10–15 días en 4 de 9 lotes de agosto, frente a estabilidad requerida de 12 meses",
+      "Hay problemas de calidad con el detergente",
+      "El proveedor nuevo causa separación",
+      "Falta capacitación en la línea 2"
+     ],
+     "correcta": 0,
+     "explicacion": "Es específico, medido y sin causa ni solución supuestas.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Síntoma",
+     "enunciado": "'El cliente se queja del producto' es:",
+     "opciones": [
+      "Un síntoma",
+      "Una causa raíz",
+      "Una acción correctiva",
+      "Un enunciado de problema completo"
+     ],
+     "correcta": 0,
+     "explicacion": "El problema es la desviación concreta medida frente al requisito.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Solución disfrazada",
+     "enunciado": "¿Qué error tiene el enunciado 'el problema es que no tenemos un dosificador automático'?",
+     "opciones": [
+      "Incluye una solución en lugar de describir la desviación",
+      "Es demasiado específico",
+      "Tiene demasiados datos",
+      "No tiene errores"
+     ],
+     "correcta": 0,
+     "explicacion": "Limita el análisis a una respuesta preconcebida.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "5W2H",
+     "enunciado": "En 5W2H, ¿qué debe responder el 'quién'?",
+     "opciones": [
+      "Quién detectó el problema, no quién tuvo la culpa",
+      "Quién es el culpable",
+      "Quién pagará la corrección",
+      "Quién es el jefe del área"
+     ],
+     "correcta": 0,
+     "explicacion": "Buscar culpables al definir el problema cierra el análisis.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Es / No es",
+     "enunciado": "¿Cuál es la idea central de la técnica Es / No es?",
+     "opciones": [
+      "Comparar dónde ocurre el problema con dónde podría ocurrir pero no ocurre, para encontrar diferencias",
+      "Hacer una lista de culpables",
+      "Votar por la causa más probable",
+      "Listar todas las causas posibles"
+     ],
+     "correcta": 0,
+     "explicacion": "Las diferencias entre ambos lados son pistas.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No es cercano",
+     "enunciado": "¿Qué 'No es' es más útil para el análisis?",
+     "opciones": [
+      "El más parecido al 'Es': un producto similar, la línea vecina, el lote anterior",
+      "El más diferente",
+      "Cualquiera",
+      "El que se elija al azar"
+     ],
+     "correcta": 0,
+     "explicacion": "Cuanto más parecidos, más reveladora es la diferencia.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Patrones",
+     "enunciado": "Un defecto aparece de golpe a partir de cierta fecha y se mantiene. ¿Qué sugiere ese patrón?",
+     "opciones": [
+      "Un cambio puntual (materia prima, equipo, método o persona)",
+      "Desgaste gradual",
+      "Una condición intermitente",
+      "Variación natural"
+     ],
+     "correcta": 0,
+     "explicacion": "El patrón de escalón apunta a un cambio.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Patrones",
+     "enunciado": "La concentración de un producto baja poco a poco durante semanas. ¿Qué sugiere ese patrón?",
+     "opciones": [
+      "Deriva por desgaste, degradación o pérdida de calibración",
+      "Un cambio puntual",
+      "Sabotaje",
+      "Error de un solo operador"
+     ],
+     "correcta": 0,
+     "explicacion": "Una deriva gradual sugiere algo que se acumula o se degrada.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estratificar",
+     "enunciado": "¿Para qué sirve estratificar los datos antes de buscar causas?",
+     "opciones": [
+      "Para ver dónde se concentra el problema (turno, línea, lote, proveedor)",
+      "Para tener más tablas",
+      "Para culpar a un turno",
+      "Para justificar la solución ya elegida"
+     ],
+     "correcta": 0,
+     "explicacion": "Un Pareto por factor orienta el análisis.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mezcla",
+     "enunciado": "Una queja incluye separación de fases, color fuera de rango y etiquetas mal pegadas. ¿Cómo se trata?",
+     "opciones": [
+      "Como tres problemas separados, cada uno con su definición",
+      "Como un solo problema",
+      "Solo se atiende el más caro",
+      "Se ignora"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada problema puede tener una causa distinta.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estándar",
+     "enunciado": "Si no existe un estándar claro para el parámetro con problema, ¿qué implica?",
+     "opciones": [
+      "Que el primer problema es definir el estándar",
+      "Que no hay problema",
+      "Que se elige cualquier valor",
+      "Que se cierra la CAPA"
+     ],
+     "correcta": 0,
+     "explicacion": "Todo problema es una diferencia entre un estándar y la realidad.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Reescribir",
+     "enunciado": "Reescribe como enunciado de problema útil: 'Muchas quejas por el sanitizante, seguro es el proveedor nuevo del cuaternario'. Inventa datos razonables donde haga falta.",
+     "respuesta_modelo": "Desde el 2 de septiembre de 2026, en el sanitizante sin enjuague Q-200 presentación de 20 L, se reciben quejas de olor atípico (olor a amina) en 5 de 14 lotes despachados, frente al requisito de olor característico conforme al estándar de referencia; detectado por quejas de tres clientes y confirmado en 4 retenidos por el panel interno; impacto: riesgo de rechazo del producto en plantas de alimentos y devoluciones por 2,800 L. El enunciado no incluye la causa supuesta del proveedor; esa es una hipótesis a verificar.",
+     "puntos_clave": [
+      "Desde cuándo y dónde",
+      "Defecto medido frente a requisito",
+      "Magnitud y fuente",
+      "Sin causa supuesta"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Es / No es",
+     "enunciado": "Construye una tabla Es / No es (qué, dónde, cuándo, cuánto) para el problema del sanitizante con olor del ejercicio anterior, proponiendo datos y la pista que daría cada dimensión.",
+     "respuesta_modelo": "Qué: es el Q-200; no es el Q-100 (mismo activo, menor concentración); pista: el Q-200 lleva 4 veces más activo, el olor se haría más evidente. Dónde: es en la presentación de 20 L llenada en la línea 2; no es en la de 200 L (línea 1); pista: diferencias de llenado o de envase entre líneas. Cuándo: es desde el 2 de septiembre; no es antes; pista: buscar cambios alrededor de esa fecha (lote de activo, proveedor de amina del fabricante del activo, limpieza de la línea). Cuánto: 5 de 14 lotes; pista: comparar qué tienen en común los 5 lotes (lote de activo, turno, tanque) frente a los 9 restantes. Cada pista se verifica con datos.",
+     "puntos_clave": [
+      "Las cuatro dimensiones",
+      "No es cercano en cada una",
+      "Pistas derivadas de diferencias",
+      "Verificación con datos"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Gráfica de tiempo",
+     "enunciado": "¿Qué información te da una gráfica de tiempo del parámetro con problema y cómo cambia tu estrategia de análisis según el patrón?",
+     "respuesta_modelo": "Muestra cuándo empezó el problema, si es constante, gradual o intermitente, y si coincide con eventos. Si es un escalón, busco cambios en la fecha de inicio (materias primas, equipos, métodos, personal, proveedores) con análisis de cambios. Si es una deriva, busco desgaste, acumulación, degradación de reactivos o pérdida de calibración, y reviso mantenimiento y calibración. Si es intermitente, estratifico para encontrar la condición que lo acompaña (turno, combinación de lotes, temperatura ambiente, carga). Si no hay patrón claro y los datos están dentro de la variación natural, reviso si es realmente un problema o si la capacidad del proceso es insuficiente.",
+     "puntos_clave": [
+      "Qué muestra la gráfica",
+      "Escalón y análisis de cambios",
+      "Deriva y desgaste o calibración",
+      "Intermitente y estratificación"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Contención y evaluación del impacto",
+   "texto": "## Primero se apaga el fuego\nAntes de saber por qué ocurrió un problema, hay que impedir que siga causando daño. La **contención** son las acciones inmediatas y temporales que protegen al cliente y a la organización mientras se investiga. No eliminan la causa: compran tiempo.\n\nEn la metodología 8D, la contención es la disciplina **D3** (acciones de contención provisionales) y ocurre **antes** del análisis de causa (D4). En inocuidad, la contención no es opcional: es la diferencia entre un problema interno y un retiro de mercado.\n\n## Las preguntas de la contención\n1. ¿Hay producto afectado **en el mercado**, con clientes, en tránsito?\n2. ¿Hay producto afectado **en inventario**: producto terminado, en proceso, materias primas?\n3. ¿El proceso **sigue generando** producto afectado?\n4. ¿Hay **otros productos, líneas o plantas** expuestos al mismo problema?\n5. ¿Hay un **riesgo para la salud** o la seguridad que exija avisar a alguien de inmediato?\n\n## Delimitar el producto afectado\nLa pregunta clave es: **¿desde cuándo y hasta dónde?** Para responderla:\n\n- Identifica el **último punto conocido como bueno**: el último lote conforme, la última verificación aceptable, la última calibración correcta.\n- Identifica el **primer punto conocido como malo**.\n- Todo lo producido **entre** ambos es sospechoso hasta demostrar lo contrario.\n- Usa la **trazabilidad** hacia adelante (clientes, cantidades) y hacia atrás (materias primas comunes).\n\nSi el problema se asocia a una materia prima, el alcance incluye **todos los productos** que la usaron, no solo el que generó la queja.\n\n### Ejemplo\nUn termómetro de un PCC se encuentra descalibrado (+3.8 °C). Su calibración anterior fue conforme el 10 de marzo. El último punto conocido como bueno es el 10 de marzo; todo lo procesado desde entonces con ese PCC es sospechoso. La evaluación debe mostrar, con los datos de proceso, si el límite crítico realmente se cumplió en cada lote (corrigiendo la lectura) antes de liberar o rechazar.\n\n## Acciones de contención típicas\n- **Retener** (poner en espera) producto en inventario y en proceso, con identificación clara y bloqueo en el sistema.\n- **Inspección o análisis al 100 %** o reforzado de producto y materias primas sospechosas.\n- **Detener** la línea o el proceso si sigue generando producto afectado.\n- **Cambiar** temporalmente de materia prima, proveedor, equipo o método conocido como bueno.\n- **Avisar** a clientes y, si aplica, a la autoridad.\n- **Retirar** producto del mercado (retiro o *recall*) cuando el riesgo lo exige.\n\nCada acción de contención debe tener **responsable**, **fecha** y, muy importante, una forma de **verificar** que funciona: si se pone en espera el inventario, se confirma que el sistema impide su despacho; si se refuerza la inspección, se confirma que detecta el defecto.\n\n## Evaluar el impacto\nLa evaluación del impacto responde: **¿qué tan grave es y para quién?** Considera:\n\n- **Inocuidad y salud**: ¿el producto puede causar daño? ¿A quién y con qué probabilidad?\n- **Cumplimiento legal y regulatorio**: ¿el producto incumple un registro, un límite, un requisito de etiquetado?\n- **Cliente**: ¿afecta su proceso, su producto, su certificación?\n- **Costo**: producto, reprocesos, devoluciones, fletes, horas.\n- **Reputación** y relación comercial.\n\nEn el caso de químicos para la industria alimentaria, el impacto en el **cliente del cliente** también cuenta: un sanitizante sin enjuague con concentración alta puede dejar residuos en el alimento del cliente.\n\n## Decidir el destino del producto\nPara el producto retenido, la decisión se basa en evidencia:\n\n- **Liberar**: si se demuestra que cumple (análisis, revisión de registros de proceso).\n- **Reprocesar**: si existe un proceso validado para volverlo conforme, con análisis posterior.\n- **Reclasificar**: destinarlo a otro uso donde sí cumple, si es legal y seguro.\n- **Destruir**.\n\nLa decisión la toma una persona **autorizada**, se registra y, en inocuidad, sigue el procedimiento de manejo de producto potencialmente no inocuo. Liberar \"porque se necesita\" sin evidencia es una de las fallas más graves.\n\n## Comunicar\nLa contención requiere comunicación rápida y clara:\n\n- **Internamente**: producción, almacén, ventas, servicio al cliente, dirección.\n- **Al cliente**: qué pasó, qué lotes, qué debe hacer (segregar, no usar, devolver), qué se está haciendo. Sin especular sobre la causa.\n- **A la autoridad**, cuando la ley lo exige.\n\nUn error frecuente es retrasar la comunicación al cliente \"hasta saber la causa\". El cliente necesita saber pronto para **proteger su propio producto**.\n\n## La trampa de la contención permanente\nLa contención es temporal por definición. Un riesgo común es que se convierta en permanente: la inspección al 100 % que nunca se retira, el operador extra que revisa cada lote, el análisis adicional que se queda para siempre. Eso oculta el problema, aumenta el costo y rara vez es confiable a largo plazo (las inspecciones humanas al 100 % no detectan todo).\n\nLa contención se retira solo cuando la acción correctiva se implementó y su eficacia se **verificó**.\n\n## Registrar\nDocumenta la contención con: alcance definido (lotes y cantidades), acciones, responsables, fechas, verificaciones, decisiones sobre el producto y comunicaciones. Este registro es la primera parte de la evidencia que pedirá un auditor o el cliente.\n\n## Ideas que debes llevarte\n- La **contención** protege al cliente mientras se investiga; ocurre **antes** del análisis de causa.\n- Delimita el producto afectado entre el **último punto conocido como bueno** y el primero malo, usando la **trazabilidad** en ambos sentidos y extendiendo a otros productos con causas comunes.\n- Cada acción de contención necesita responsable, fecha y **verificación** de que funciona.\n- Evalúa el impacto en **inocuidad**, cumplimiento, cliente, costo y reputación.\n- El destino del producto se decide con **evidencia** y por personal autorizado.\n- **Comunica** pronto al cliente, sin especular sobre la causa.\n- La contención es **temporal**: se retira cuando la acción correctiva es eficaz.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Contención",
+     "enunciado": "¿Cuál es el propósito de la contención?",
+     "opciones": [
+      "Proteger al cliente y a la organización mientras se investiga la causa",
+      "Eliminar la causa raíz",
+      "Sancionar a los responsables",
+      "Cerrar la CAPA rápidamente"
+     ],
+     "correcta": 0,
+     "explicacion": "Es temporal; la acción correctiva elimina la causa.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "8D",
+     "enunciado": "En la metodología 8D, ¿cuándo ocurre la contención?",
+     "opciones": [
+      "En D3, antes del análisis de causa raíz (D4)",
+      "Después de la acción correctiva",
+      "En D8",
+      "No forma parte de 8D"
+     ],
+     "correcta": 0,
+     "explicacion": "Primero se protege al cliente.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "¿Qué define el alcance del producto sospechoso?",
+     "opciones": [
+      "Lo producido entre el último punto conocido como bueno y el primer punto conocido como malo",
+      "Solo el lote de la queja",
+      "Todo lo producido en el año",
+      "Solo lo que está en el almacén"
+     ],
+     "correcta": 0,
+     "explicacion": "Se completa con la trazabilidad en ambos sentidos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Materia prima",
+     "enunciado": "El problema se asocia a un lote de materia prima. ¿Qué incluye el alcance?",
+     "opciones": [
+      "Todos los productos que usaron ese lote de materia prima",
+      "Solo el producto de la queja",
+      "Solo el inventario de materia prima",
+      "Nada más allá del cliente que se quejó"
+     ],
+     "correcta": 0,
+     "explicacion": "La trazabilidad hacia adelante de la materia prima define el alcance.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificar contención",
+     "enunciado": "Se pone en espera el inventario sospechoso. ¿Qué falta?",
+     "opciones": [
+      "Verificar que el sistema realmente impide su despacho",
+      "Nada, ya está contenido",
+      "Cerrar la CAPA",
+      "Notificar al proveedor de transporte"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada acción de contención se verifica.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Impacto",
+     "enunciado": "¿Por qué en químicos para la industria alimentaria importa el 'cliente del cliente'?",
+     "opciones": [
+      "Porque un sanitizante fuera de especificación puede afectar la inocuidad del alimento que produce el cliente",
+      "Porque el cliente del cliente paga la factura",
+      "No importa",
+      "Porque lo exige la publicidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El impacto se extiende a lo largo de la cadena.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Destino",
+     "enunciado": "¿Cuál es una práctica incorrecta al decidir el destino del producto retenido?",
+     "opciones": [
+      "Liberarlo porque se necesita, sin evidencia de conformidad",
+      "Liberarlo tras análisis que demuestra conformidad",
+      "Reprocesarlo con un proceso validado",
+      "Destruirlo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una de las fallas más graves.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comunicación",
+     "enunciado": "¿Cuándo se debe comunicar al cliente un problema que puede afectar su producto?",
+     "opciones": [
+      "Pronto, con los lotes afectados y qué hacer, sin especular sobre la causa",
+      "Solo cuando se conozca la causa raíz",
+      "Nunca",
+      "Solo si el cliente pregunta"
+     ],
+     "correcta": 0,
+     "explicacion": "El cliente necesita proteger su propio producto.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Permanente",
+     "enunciado": "¿Cuál es el riesgo de una contención que se vuelve permanente?",
+     "opciones": [
+      "Oculta el problema, aumenta el costo y no es confiable a largo plazo",
+      "Ninguno",
+      "Elimina la causa",
+      "Mejora la eficacia del sistema"
+     ],
+     "correcta": 0,
+     "explicacion": "La inspección humana al 100 % no detecta todo.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Retirar contención",
+     "enunciado": "¿Cuándo se retira la contención?",
+     "opciones": [
+      "Cuando la acción correctiva se implementó y su eficacia se verificó",
+      "En cuanto se identifica la causa",
+      "Al día siguiente",
+      "Cuando el cliente deja de reclamar"
+     ],
+     "correcta": 0,
+     "explicacion": "Retirarla antes expone otra vez al cliente.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proceso activo",
+     "enunciado": "El proceso sigue generando producto con el defecto. ¿Qué acción de contención aplica?",
+     "opciones": [
+      "Detener la línea o cambiar temporalmente a una condición conocida como buena",
+      "Esperar al análisis de causa",
+      "Aumentar la producción",
+      "Cambiar la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "No se debe seguir fabricando producto afectado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Alcance",
+     "enunciado": "Un dosificador de activo de la línea 2 se encontró descalibrado (entregaba 8 % más). Su verificación anterior conforme fue hace 6 semanas. Describe cómo delimitas el producto afectado.",
+     "respuesta_modelo": "El último punto conocido como bueno es la verificación conforme de hace 6 semanas; el primero malo es la verificación actual. Todos los lotes dosificados con ese equipo en ese periodo son sospechosos. Uso los registros de producción para listar los lotes, productos y cantidades; los registros de calidad para ver resultados de activo de cada lote; y la trazabilidad hacia adelante para saber qué está en almacén, en tránsito y en clientes. Considero también otros productos que usan el mismo dosificador, no solo el de la queja. Retengo lo que está en planta, analizo retenidos de los lotes despachados y decido la comunicación con clientes según los resultados y el impacto.",
+     "puntos_clave": [
+      "Último punto bueno y primero malo",
+      "Listado de lotes por registros",
+      "Otros productos del mismo equipo",
+      "Retención, análisis y comunicación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan de contención",
+     "enunciado": "Un cliente lácteo reporta que un lote de sanitizante sin enjuague tiene concentración alta. Escribe un plan de contención con acciones, responsables genéricos y verificación.",
+     "respuesta_modelo": "1) Calidad: analizar el retenido del lote y de lotes cercanos en 24 h; verificación: resultados registrados. 2) Almacén y sistemas: bloquear el lote y los sospechosos en inventario; verificación: intento de despacho rechazado por el sistema. 3) Ventas y calidad: identificar a todos los clientes con el lote; avisar en el día qué lote, que suspendan su uso y lo segreguen, y cómo se reemplazará; verificación: confirmación escrita de cada cliente. 4) Producción: detener la fabricación del producto hasta confirmar la causa probable o fabricar con verificación de activo al 100 %; verificación: registro de cada lote. 5) Dirección y calidad: evaluar el impacto en la inocuidad de los productos del cliente y la necesidad de informar a la autoridad. 6) Registrar todo y revisar el plan diariamente.",
+     "puntos_clave": [
+      "Análisis de retenidos",
+      "Bloqueo verificado",
+      "Aviso a clientes",
+      "Control de la producción y evaluación de inocuidad"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Destino",
+     "enunciado": "Tienes 6 lotes retenidos de detergente con posible separación de fases. Explica cómo decidirías su destino.",
+     "respuesta_modelo": "Primero definiría el criterio con evidencia: prueba de estabilidad acelerada (por ejemplo, ciclos de temperatura) y análisis de los parámetros críticos de cada lote. Los lotes que cumplan la especificación y pasen la prueba de estabilidad con un margen adecuado podrían liberarse, con decisión documentada por la persona autorizada. Los que fallen podrían reprocesarse si existe un procedimiento validado (por ejemplo, ajuste del hidrótropo con mezcla y análisis posterior) y volver a probarse. Si el reproceso no es viable o no se puede validar, se reclasifican para un uso donde cumplan, si es legal y seguro, o se destruyen. Nunca se liberaría por necesidad comercial sin evidencia.",
+     "puntos_clave": [
+      "Criterio basado en pruebas",
+      "Liberación con evidencia y autorización",
+      "Reproceso validado",
+      "Reclasificación o destrucción"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "titulo": "Cinco porqués e Ishikawa bien usados",
+   "texto": "## Dos herramientas sencillas, muchas veces mal usadas\nLos **cinco porqués** y el **diagrama de Ishikawa** son las herramientas más usadas en análisis de causa raíz. Son sencillas, y por eso mismo se usan mal: se llenan en una reunión, se llega a la causa que alguien ya tenía en mente y se cierra. Bien usadas, son potentes. Este capítulo muestra cómo.\n\n## ¿Qué es una causa raíz?\nUna **causa raíz** es la causa más básica que, si se elimina, impide que el problema vuelva a ocurrir, y que está **bajo el control** de la organización. Tres ideas importantes:\n\n- Casi nunca hay **una sola** causa: los problemas suelen resultar de **varias causas que coinciden**.\n- Hay causas de **ocurrencia** (por qué se produjo el defecto) y causas de **escape** (por qué no se detectó antes de llegar al cliente). Ambas necesitan acción.\n- Detrás de causas técnicas suele haber causas **del sistema**: cómo se diseñan los procesos, cómo se gestionan los cambios, cómo se aprueba, cómo se forma al personal.\n\n## Los cinco porqués\nDesarrollada en Toyota y difundida por Taiichi Ohno, la técnica consiste en preguntar \"¿por qué?\" sucesivamente hasta llegar a una causa sobre la que se pueda actuar. El número cinco es orientativo: a veces bastan tres, a veces se necesitan siete.\n\n### Ejemplo bien hecho\nProblema: el lote 2609-14 de sanitizante Q-200 tiene 3.2 % de activo; la especificación es 2.0 ± 0.1 %.\n\n1. ¿Por qué tiene 3.2 %? Porque se agregó **60 % más** de activo del requerido. *Verificado: el balance de la receta y el registro de carga coinciden.*\n2. ¿Por qué se agregó 60 % más? Porque el activo que se cargó era al **80 %** y la receta estaba calculada para activo al **50 %**. *Verificado: el COA y la etiqueta del contenedor dicen 80 %.*\n3. ¿Por qué la receta no correspondía al activo? Porque el cambio a activo al 80 % (aprobado por compras) **no actualizó** las recetas que lo usan. *Verificado: registro de control de cambios.*\n4. ¿Por qué no se actualizaron? Porque el procedimiento de control de cambios **no exige identificar** las recetas afectadas por un cambio de materia prima. *Verificado: revisión del procedimiento.*\n\nEsa es una causa del **sistema** sobre la que se puede actuar. Pero falta la otra rama:\n\n### La rama de escape\n1. ¿Por qué no se detectó en la liberación? Porque el activo de ese producto se analiza **un lote de cada cinco** (*skip-lot*). *Verificado: plan de inspección.*\n2. ¿Por qué un lote de cada cinco? Porque se redujo la frecuencia por historial estable hace dos años. *Verificado.*\n3. ¿Por qué no se revisó la frecuencia al cambiar la materia prima? Porque el control de cambios **no vincula** cambios de materia prima con los planes de inspección. *Verificado.*\n\n## Reglas para que los cinco porqués funcionen\n- **Cada respuesta se verifica** con evidencia antes de pasar al siguiente porqué. Sin verificación, es una cadena de suposiciones.\n- **Una cadena por causa**: si una respuesta tiene dos causas, la cadena se ramifica.\n- Pregunta por qué ocurrió el **defecto** y por qué **no se detectó**.\n- Detente cuando llegues a una causa que, si se elimina, **evita** la recurrencia y está bajo tu control. Ir más allá (\"porque la economía está mal\") no ayuda.\n- Evita respuestas que sean **personas** (\"porque Juan se equivocó\"): pregunta por qué el sistema permitió que el error ocurriera o no se detectara (capítulo 6).\n- Haz la prueba **inversa**: lee la cadena hacia atrás con \"por lo tanto\". Si no tiene sentido lógico, hay un salto.\n\n### Señales de un mal análisis\n- La última respuesta es \"falta de capacitación\", \"error humano\", \"no siguió el procedimiento\", \"descuido\".\n- Las respuestas son **opiniones** de la reunión, sin datos.\n- Las respuestas cambian de tema (de la máquina al clima al jefe).\n- La causa raíz coincide exactamente con la solución que alguien propuso al inicio.\n\n## El diagrama de Ishikawa\nKaoru Ishikawa propuso un diagrama en forma de espina de pescado: el problema en la cabeza y las causas posibles agrupadas en categorías. En manufactura se usan las **6M**:\n\n- **Mano de obra** (personas): competencia, carga de trabajo, comunicación, turnos.\n- **Método**: procedimientos, recetas, instrucciones, secuencias.\n- **Máquina**: equipos, herramientas, mantenimiento, ajustes.\n- **Material**: materias primas, envases, insumos, proveedores.\n- **Medición**: instrumentos, métodos analíticos, muestreo, calibración.\n- **Medio ambiente**: temperatura, humedad, iluminación, limpieza.\n\nAlgunas organizaciones agregan **Management** (gestión): decisiones, recursos, prioridades, control de cambios.\n\n### Para qué sirve\nEl Ishikawa es una herramienta para **generar hipótesis** de forma ordenada y para no olvidar categorías. **No demuestra** causas. Un error común es presentar el diagrama lleno como si fuera el análisis: es solo el inicio.\n\n### Cómo usarlo bien\n1. Escribe el **problema bien definido** en la cabeza (capítulo 2), no una palabra vaga.\n2. Genera causas posibles en equipo multidisciplinario: producción, calidad, mantenimiento, laboratorio, y alguien que haga el trabajo directamente.\n3. Usa la información de **Es / No es**: una causa posible debe poder explicar por qué el problema ocurre donde ocurre y **no** donde no ocurre. Si no lo explica, se descarta o se baja de prioridad.\n4. Para cada causa candidata, define **cómo verificarla** (dato, prueba, revisión).\n5. Verifica y marca: confirmada, descartada, no verificada.\n6. A las causas confirmadas, aplícales los **cinco porqués** para llegar a la causa del sistema.\n\n### Ejemplo de filtrado con Es / No es\nProblema: separación de fases solo en DA-30 de 20 L, en 4 de 9 lotes de agosto.\n\n| Causa posible (Ishikawa) | ¿Explica el Es / No es? | Verificación |\n|---|---|---|\n| Temperatura alta del almacén | No: afectaría todas las presentaciones | Descartada |\n| Lote H-0731 de hidrótropo | Sí: los 4 lotes lo usaron | Analizar H-0731 y hacer mezcla de prueba |\n| Envase de 20 L nuevo | Parcial: todos los lotes de 20 L usan el mismo envase | Revisar si hubo cambio de envase |\n| Error de pesada | Poco probable en 4 lotes con distintos operadores | Revisar registros |\n\n## Combinar las herramientas\nUn flujo práctico:\n\n1. **Definir** con 5W2H y Es / No es.\n2. **Generar** hipótesis con Ishikawa.\n3. **Filtrar** con Es / No es.\n4. **Verificar** con datos y pruebas (capítulo 7).\n5. **Profundizar** con cinco porqués desde cada causa confirmada hasta la causa del sistema, en la rama de ocurrencia y en la de escape.\n\n## Ideas que debes llevarte\n- La causa raíz es la más básica, **bajo tu control**, cuya eliminación evita la recurrencia; suele haber **varias** causas y siempre conviene separar **ocurrencia** y **escape**.\n- En los cinco porqués, **verifica cada respuesta**, ramifica cuando haga falta y no termines en personas.\n- \"Falta de capacitación\" o \"error humano\" como respuesta final son **señales** de un análisis incompleto.\n- El Ishikawa **genera** hipótesis; no demuestra causas. Fíltralas con Es / No es y verifícalas.\n- Combina: definir, generar, filtrar, verificar, profundizar.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Causa raíz",
+     "enunciado": "¿Cuál es la mejor descripción de una causa raíz?",
+     "opciones": [
+      "La causa más básica, bajo el control de la organización, cuya eliminación evita la recurrencia",
+      "El primer culpable identificado",
+      "La causa más fácil de corregir",
+      "Cualquier causa que se mencione en la reunión"
+     ],
+     "correcta": 0,
+     "explicacion": "Suele haber varias causas que coinciden.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ocurrencia y escape",
+     "enunciado": "¿Qué es una causa de escape?",
+     "opciones": [
+      "La razón por la que el defecto no se detectó antes de llegar al cliente",
+      "La razón por la que se produjo el defecto",
+      "La causa de que el cliente se vaya",
+      "Un error de embarque"
+     ],
+     "correcta": 0,
+     "explicacion": "Ambas ramas, ocurrencia y escape, necesitan acción.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Cuál es la regla más importante en los cinco porqués?",
+     "opciones": [
+      "Verificar cada respuesta con evidencia antes de pasar a la siguiente",
+      "Hacer exactamente cinco preguntas",
+      "Llegar a un responsable",
+      "Terminar en la reunión"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin verificación es una cadena de suposiciones.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ramificar",
+     "enunciado": "Una respuesta de los cinco porqués tiene dos causas posibles. ¿Qué haces?",
+     "opciones": [
+      "Ramificar la cadena y seguir cada causa",
+      "Elegir la más probable y descartar la otra",
+      "Detener el análisis",
+      "Votar"
+     ],
+     "correcta": 0,
+     "explicacion": "Una cadena por causa.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Detenerse",
+     "enunciado": "¿Cuándo detener los cinco porqués?",
+     "opciones": [
+      "Al llegar a una causa bajo tu control cuya eliminación evita la recurrencia",
+      "Al llegar exactamente al quinto porqué",
+      "Al encontrar un culpable",
+      "Cuando se acaba el tiempo de la reunión"
+     ],
+     "correcta": 0,
+     "explicacion": "Ir más allá de lo controlable no ayuda.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Señales",
+     "enunciado": "¿Cuál es una señal de un análisis de cinco porqués deficiente?",
+     "opciones": [
+      "La última respuesta es 'falta de capacitación' o 'error humano'",
+      "Cada respuesta tiene evidencia",
+      "Se separaron ocurrencia y escape",
+      "La cadena se lee bien hacia atrás"
+     ],
+     "correcta": 0,
+     "explicacion": "Pregunta por qué el sistema permitió el error.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Prueba inversa",
+     "enunciado": "¿En qué consiste la prueba inversa de los cinco porqués?",
+     "opciones": [
+      "Leer la cadena hacia atrás con 'por lo tanto' para comprobar su lógica",
+      "Repetir el análisis con otro equipo",
+      "Preguntar al cliente",
+      "Empezar desde la solución"
+     ],
+     "correcta": 0,
+     "explicacion": "Si no tiene sentido, hay un salto lógico.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "6M",
+     "enunciado": "¿Cuáles son las 6M del diagrama de Ishikawa?",
+     "opciones": [
+      "Mano de obra, método, máquina, material, medición y medio ambiente",
+      "Mercado, moneda, marca, modelo, meta y misión",
+      "Mantenimiento, manual, mezcla, molde, muestra y monitoreo",
+      "Motivación, método, máquina, mercado, medición y marketing"
+     ],
+     "correcta": 0,
+     "explicacion": "Algunas organizaciones agregan gestión (management).",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ishikawa",
+     "enunciado": "¿Para qué sirve el diagrama de Ishikawa?",
+     "opciones": [
+      "Para generar hipótesis de causa de forma ordenada; no demuestra causas",
+      "Para demostrar la causa raíz",
+      "Para asignar responsables",
+      "Para medir la eficacia"
+     ],
+     "correcta": 0,
+     "explicacion": "Las hipótesis se verifican después.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Filtrar",
+     "enunciado": "Una causa posible es 'temperatura alta del almacén', pero el problema solo ocurre en una presentación almacenada junto a las demás. ¿Qué haces?",
+     "opciones": [
+      "La descartas o bajas su prioridad porque no explica el Es / No es",
+      "La confirmas como causa raíz",
+      "La ignoras sin registrar",
+      "La conviertes en acción correctiva"
+     ],
+     "correcta": 0,
+     "explicacion": "Una causa debe explicar dónde ocurre y dónde no.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipo",
+     "enunciado": "¿Quién debería participar en la elaboración de un Ishikawa?",
+     "opciones": [
+      "Un equipo multidisciplinario que incluya a quien hace el trabajo directamente",
+      "Solo el gerente de calidad",
+      "Solo el auditor",
+      "Solo el cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "Distintas perspectivas generan mejores hipótesis.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cinco porqués",
+     "enunciado": "Mejora este análisis: '¿Por qué el lote salió con pH bajo? Porque se agregó poca sosa. ¿Por qué? Porque el operador se equivocó. Causa raíz: error humano. Acción: capacitar al operador.'",
+     "respuesta_modelo": "El análisis se detiene en una persona y no verifica nada. Lo mejoraría así: verificar en el registro de carga cuánta sosa se agregó y comparar con la receta. Si fue menos, preguntar por qué: ¿la báscula estaba mal?, ¿la receta indicaba otra cantidad?, ¿se confundió el contenedor (sosa al 50 % frente a 25 %)?, ¿la instrucción era ambigua? Supongamos que la receta impresa tenía una versión obsoleta: ¿por qué? Porque el sistema no retira las recetas impresas al actualizar. Además, la rama de escape: ¿por qué no se detectó el pH en proceso? Quizá porque el control en proceso no incluía pH. Las acciones atacarían esas causas del sistema (control de versiones de recetas, verificación de pH en proceso), no solo la capacitación.",
+     "puntos_clave": [
+      "Crítica a 'error humano'",
+      "Verificación con registros",
+      "Profundizar al sistema",
+      "Rama de escape"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ishikawa",
+     "enunciado": "Elabora un Ishikawa (al menos dos causas por categoría en cuatro de las 6M) para: 'el sanitizante Q-200 presenta olor a amina en 5 de 14 lotes desde septiembre'.",
+     "respuesta_modelo": "Material: cambio de proveedor de amina del fabricante del activo; lote de activo con impurezas; fragancia o aditivo de otro lote. Método: cambio en la secuencia de adición; tiempo de mezcla reducido; temperatura de proceso distinta. Máquina: tanque mal limpiado con residuo de otro producto; válvula con arrastre; agitador con falla. Medición: el panel de olor no está calibrado; no se analiza amina libre en liberación; muestreo no representativo. Para cada una se define una verificación y se filtra con Es / No es: por ejemplo, una causa de máquina solo es plausible si los 5 lotes se hicieron en el mismo tanque.",
+     "puntos_clave": [
+      "Causas en al menos cuatro categorías",
+      "Causas concretas y plausibles",
+      "Plan de verificación",
+      "Filtrado con Es / No es"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Escape",
+     "enunciado": "¿Por qué es importante analizar la causa de escape además de la de ocurrencia? Da un ejemplo.",
+     "respuesta_modelo": "Porque aunque se elimine la causa de ocurrencia, siempre puede aparecer otra causa que genere un defecto similar; si el sistema de detección sigue fallando, el defecto volverá a llegar al cliente. Además, la causa de escape suele revelar debilidades del sistema de control. Ejemplo: un lote con activo alto se produjo por una receta no actualizada (ocurrencia) y llegó al cliente porque el activo se analizaba un lote de cada cinco sin revisar esa frecuencia ante cambios (escape). Corregir solo la receta no evita que otro error de dosificación escape en el futuro.",
+     "puntos_clave": [
+      "Definición de escape",
+      "Por qué no basta la ocurrencia",
+      "Debilidad del sistema de control",
+      "Ejemplo"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Análisis de cambios, barreras y árbol de fallas",
+   "texto": "## Más allá de la lluvia de ideas\nLos cinco porqués y el Ishikawa dependen mucho de lo que el equipo ya sabe o sospecha. Para problemas complejos, graves o recurrentes conviene usar herramientas más **estructuradas**. Este capítulo presenta tres: el **análisis de cambios**, el **análisis de barreras** y el **análisis de árbol de fallas**.\n\n## Análisis de cambios\n### La idea\nSi un proceso funcionaba bien y de pronto falla, **algo cambió**. El análisis de cambios compara sistemáticamente la situación con problema frente a una situación **similar sin problema** (la misma línea antes, otra línea, otro producto) y busca las diferencias y los cambios.\n\nEs la continuación natural del Es / No es del capítulo 2 y es especialmente útil cuando la gráfica de tiempo muestra un **escalón**.\n\n### Cómo hacerlo\n1. Describe la situación **con problema**.\n2. Describe una situación **comparable sin problema**.\n3. Compara factor por factor: materiales, proveedores, equipos, métodos, personas, condiciones, documentos, software, mantenimiento.\n4. Lista todas las **diferencias**.\n5. Para cada diferencia, pregunta **qué cambió** y **cuándo**.\n6. Evalúa si cada cambio puede **explicar** el problema y verifícalo.\n\n### Fuentes de cambios que suelen olvidarse\n- Cambios de **proveedor** del proveedor (la amina que usa tu proveedor de activo).\n- Cambios de **concentración**, grado o presentación de una materia prima con el mismo nombre.\n- **Mantenimiento** reciente: piezas reemplazadas, recalibraciones, ajustes.\n- Actualizaciones de **software** o de recetas en el sistema.\n- **Personal** nuevo o rotación de turnos.\n- **Temporada**: temperatura, humedad, calidad del agua.\n- Cambios en el **método analítico** o en el equipo de laboratorio (el problema puede ser de medición, no de producto).\n\nUna buena práctica es mantener una **bitácora de cambios** por proceso; cuando surge un problema, es la primera fuente que se consulta.\n\n## Análisis de barreras\n### La idea\nEn un proceso bien diseñado existen **barreras** (controles) que impiden que un peligro llegue al producto o al cliente: especificaciones, verificaciones, alarmas, inspecciones, análisis de liberación. Cuando un problema llega al cliente, significa que **varias barreras fallaron** o no existían.\n\nEl análisis de barreras pregunta, para cada barrera que debía detener el problema:\n\n- ¿**Existía** la barrera?\n- ¿Estaba **diseñada** para detener este tipo de problema?\n- ¿Se **aplicó**?\n- ¿**Funcionó**? Si no, ¿por qué?\n\n### El modelo del queso suizo\nJames Reason describió los sistemas como capas de queso suizo: cada capa (barrera) tiene agujeros (debilidades), que cambian con el tiempo. Un accidente ocurre cuando los agujeros de **varias capas se alinean**. La consecuencia práctica es que casi nunca hay una sola causa, y que reforzar **una** barrera no basta: hay que entender por qué fallaron todas.\n\n### Ejemplo\nProblema: lote de sanitizante con activo 60 % por encima de especificación llegó al cliente.\n\n| Barrera | ¿Existía? | ¿Funcionó? | Por qué falló |\n|---|---|---|---|\n| Control de cambios de materia prima | Sí | No | No identificó las recetas afectadas |\n| Recepción de materia prima (verificar COA contra especificación) | Sí | No | La especificación se actualizó al 80 %, pero no se ligó a la receta |\n| Etiqueta del contenedor de activo | Sí | No | Decía 80 %, pero la receta no pedía verificar concentración |\n| Verificación de la carga por el operador | Sí | Parcial | Verificaba peso, no concentración |\n| Análisis de liberación del activo | Sí | No | Un lote de cada cinco; ese no tocaba |\n| Densidad y pH en liberación | Sí | No | No son sensibles al cambio de activo |\n\nEl análisis muestra que el problema no fue \"una falla\": fueron **seis** barreras, cada una con su debilidad.\n\n## Árbol de fallas\n### La idea\nEl **análisis de árbol de fallas** (FTA, por sus siglas en inglés), desarrollado en los Laboratorios Bell a inicios de los años sesenta, parte del evento no deseado (el **evento tope**) y lo descompone hacia abajo en los eventos que pueden causarlo, usando **compuertas lógicas**:\n\n- **Compuerta O**: el evento superior ocurre si ocurre **cualquiera** de los eventos inferiores.\n- **Compuerta Y**: el evento superior ocurre solo si ocurren **todos** los eventos inferiores **a la vez**.\n\nLa descomposición continúa hasta llegar a **eventos básicos** que se pueden verificar.\n\n### Ejemplo simplificado\nEvento tope: **producto con activo alto entregado al cliente**.\n\nPara que ocurra se necesitan **a la vez** (compuerta Y):\n\n- **A**: se fabricó un lote con activo alto.\n- **B**: el lote no fue detectado antes del despacho.\n\nA ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- A1: receta incorrecta.\n- A2: materia prima más concentrada de lo previsto.\n- A3: error de dosificación (equipo descalibrado o falla).\n- A4: error de carga manual.\n\nB ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- B1: el lote no se analizó (*skip-lot*).\n- B2: se analizó pero el resultado fue erróneo (método o equipo).\n- B3: se analizó, salió fuera y se liberó de todos modos.\n\n### Lo que enseña el árbol\n- La compuerta **Y** del tope muestra que basta con romper **una** de las dos ramas para evitar el evento: si la detección (B) fuera infalible, A nunca llegaría al cliente. Por eso las barreras de detección robustas son tan valiosas.\n- Las compuertas **O** muestran que hay que controlar **todas** las ramas: eliminar A2 no evita A1, A3 ni A4.\n- El árbol sirve **antes** del problema (como análisis de riesgo) y **después** (para investigar, verificando cada evento básico).\n\n## Elegir la herramienta\n| Situación | Herramienta útil |\n|---|---|\n| Problema simple, causa probablemente única | Cinco porqués con verificación |\n| Muchas causas posibles, poca información | Ishikawa filtrado con Es / No es |\n| El problema empezó en un momento definido | Análisis de cambios |\n| El problema llegó al cliente o es grave | Análisis de barreras |\n| Evento grave con varias combinaciones posibles | Árbol de fallas |\n\nEn problemas importantes se combinan: el análisis de cambios encuentra el disparador, el de barreras explica por qué llegó al cliente, y los cinco porqués llevan cada falla hasta su causa del sistema.\n\n## Ideas que debes llevarte\n- El **análisis de cambios** compara con una situación sin problema y busca qué cambió y cuándo; incluye cambios olvidados (proveedor del proveedor, concentración, mantenimiento, software, método analítico).\n- El **análisis de barreras** revisa cada control que debía detener el problema: existía, estaba bien diseñado, se aplicó, funcionó.\n- El modelo del **queso suizo** explica que los problemas graves resultan de varias barreras que fallan a la vez.\n- El **árbol de fallas** descompone el evento con compuertas **Y** (todas a la vez) y **O** (cualquiera), y muestra dónde una sola barrera robusta corta el camino.\n- Elige la herramienta según el problema y **combínalas** en los casos graves.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis de cambios",
+     "enunciado": "¿Cuál es la premisa del análisis de cambios?",
+     "opciones": [
+      "Si un proceso funcionaba y de pronto falla, algo cambió",
+      "Todos los problemas son de personal",
+      "Los problemas son aleatorios",
+      "El último cambio siempre es la causa"
+     ],
+     "correcta": 0,
+     "explicacion": "Se compara con una situación similar sin problema.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Patrón",
+     "enunciado": "¿Con qué patrón de la gráfica de tiempo es especialmente útil el análisis de cambios?",
+     "opciones": [
+      "Escalón",
+      "Deriva gradual",
+      "Variación aleatoria estable",
+      "Ciclo estacional estable"
+     ],
+     "correcta": 0,
+     "explicacion": "Un escalón sugiere un cambio puntual.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cambios olvidados",
+     "enunciado": "¿Cuál de estos cambios suele olvidarse en un análisis de cambios?",
+     "opciones": [
+      "El cambio de proveedor de una materia prima del propio proveedor",
+      "El cambio de un equipo principal",
+      "Un nuevo producto",
+      "Una nueva línea"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cambios en la cadena de suministro a menudo no se comunican.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Medición",
+     "enunciado": "¿Por qué conviene incluir cambios del método analítico en el análisis de cambios?",
+     "opciones": [
+      "Porque el problema puede ser de medición y no del producto",
+      "Porque los métodos nunca cambian",
+      "Para culpar al laboratorio",
+      "No conviene"
+     ],
+     "correcta": 0,
+     "explicacion": "Un cambio de método puede crear un 'problema' que no existe en el producto.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Barreras",
+     "enunciado": "¿Qué preguntas hace el análisis de barreras para cada control?",
+     "opciones": [
+      "¿Existía, estaba diseñado para este problema, se aplicó y funcionó?",
+      "¿Quién lo diseñó y cuánto costó?",
+      "¿Está en el manual de calidad?",
+      "¿Lo aprobó el auditor?"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada barrera fallida tiene su propia causa.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Queso suizo",
+     "enunciado": "Según el modelo del queso suizo de James Reason, ¿cuándo ocurre un accidente?",
+     "opciones": [
+      "Cuando los agujeros de varias capas de defensa se alinean",
+      "Cuando falla una sola persona",
+      "Por mala suerte",
+      "Cuando no hay procedimientos"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso casi nunca hay una sola causa.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Densidad",
+     "enunciado": "En el ejemplo, ¿por qué la densidad y el pH en liberación no detectaron el activo alto?",
+     "opciones": [
+      "Porque no son sensibles al cambio de concentración del activo",
+      "Porque se midieron mal",
+      "Porque no se midieron",
+      "Porque el cliente no los pidió"
+     ],
+     "correcta": 0,
+     "explicacion": "Una barrera debe estar diseñada para detectar el tipo de problema.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Compuerta Y",
+     "enunciado": "En un árbol de fallas, ¿qué significa una compuerta Y?",
+     "opciones": [
+      "El evento superior ocurre solo si ocurren todos los eventos inferiores a la vez",
+      "El evento ocurre si ocurre cualquiera",
+      "El evento nunca ocurre",
+      "Los eventos son independientes del tope"
+     ],
+     "correcta": 0,
+     "explicacion": "Romper una rama basta para evitar el evento.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Compuerta O",
+     "enunciado": "¿Qué implica una compuerta O para las acciones correctivas?",
+     "opciones": [
+      "Hay que controlar todas las ramas, porque cualquiera produce el evento",
+      "Basta controlar una rama",
+      "No hace falta actuar",
+      "Solo se actúa sobre la rama más cara"
+     ],
+     "correcta": 0,
+     "explicacion": "Eliminar una causa no evita las otras.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Uso del árbol",
+     "enunciado": "¿Cuándo puede usarse un árbol de fallas?",
+     "opciones": [
+      "Antes del problema como análisis de riesgo y después para investigar",
+      "Solo después de un accidente",
+      "Solo en la industria aeroespacial",
+      "Solo para problemas de personal"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una herramienta preventiva y de investigación.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elegir",
+     "enunciado": "Un problema grave llegó al cliente y se sospecha que varios controles fallaron. ¿Qué herramienta es especialmente útil?",
+     "opciones": [
+      "Análisis de barreras",
+      "Solo una lluvia de ideas",
+      "Solo los cinco porqués sin verificación",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "Explica por qué el problema atravesó cada control.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Análisis de cambios",
+     "enunciado": "El detergente DA-30 empezó a separarse en agosto. Construye una tabla de análisis de cambios con al menos cinco factores, comparando agosto con junio y julio.",
+     "respuesta_modelo": "Factores y preguntas: materia prima hidrótropo (¿mismo proveedor, mismo grado, lote nuevo H-0731?); otras materias primas (¿cambios de proveedor o de concentración en tensoactivos o sosa?); envase de 20 L (¿nuevo proveedor o material?); equipo (¿mantenimiento al agitador o al tanque de la línea 2, cambio de velocidad?); método (¿cambió la secuencia de adición o el tiempo de mezcla en la receta?); personal (¿nuevo operador u otro turno?); condiciones (¿temperatura del agua de proceso o del almacén más alta en agosto?); medición (¿cambio en la prueba de estabilidad o en el criterio de separación?). Para cada diferencia encontrada, registrar la fecha del cambio y verificar si explica el Es / No es.",
+     "puntos_clave": [
+      "Al menos cinco factores",
+      "Comparación con periodo sin problema",
+      "Fecha del cambio",
+      "Verificación de cada diferencia"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Árbol de fallas",
+     "enunciado": "Construye un árbol de fallas simplificado para el evento tope 'PCC de temperatura del pasteurizador fuera de límite sin detección'.",
+     "respuesta_modelo": "Tope con compuerta Y: A (la temperatura real cae por debajo del límite) y B (la desviación no se detecta). A, compuerta O: falla del suministro de vapor; válvula de control atascada; intercambiador sucio o con incrustación; flujo de producto mayor al validado. B, compuerta O: termómetro descalibrado que lee alto; registrador sin alarma o con alarma desactivada; monitoreo manual con frecuencia insuficiente; registro llenado sin medición; válvula de desvío de flujo que no actúa. El árbol muestra que una válvula de desvío automática y un sensor calibrado con alarma son barreras clave en la rama B.",
+     "puntos_clave": [
+      "Compuerta Y en el tope",
+      "Ramas O de ocurrencia",
+      "Ramas O de detección",
+      "Identificación de barreras clave"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Barreras",
+     "enunciado": "Para una queja de etiqueta con instrucción de dilución equivocada que llegó al cliente, realiza un análisis de barreras con al menos cuatro barreras.",
+     "respuesta_modelo": "1) Revisión técnica del texto de la etiqueta: existía; falló porque el revisor comparó con la versión anterior, no con la ficha técnica vigente. 2) Aprobación de arte por calidad: existía; falló porque se revisaba solo forma y logotipos. 3) Prueba de impresión o muestra física: no existía para cambios menores de texto. 4) Verificación de etiqueta en línea: existía; solo verificaba código y lote, no el texto. 5) Liberación de producto: no considera la etiqueta. Conclusión: varias barreras no estaban diseñadas para detectar errores de contenido técnico; las acciones deben fortalecer la revisión contra la ficha técnica vigente con lista de verificación y doble revisión técnica, y definir qué cambios requieren prueba física.",
+     "puntos_clave": [
+      "Al menos cuatro barreras",
+      "Existía, diseño, aplicación y funcionamiento",
+      "Causa de falla de cada una",
+      "Conclusión y acciones"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Error humano: el principio, no el final",
+   "texto": "## La causa más declarada y menos útil\n\"Error humano\" es probablemente la causa raíz más escrita en los formatos de CAPA. Y casi siempre es una conclusión **prematura**. Sidney Dekker, uno de los autores más influyentes en el tema, lo resume en una idea: el error humano no es la **explicación** de una falla, es lo que **hay que explicar**. Cuando una persona se equivoca, la pregunta útil no es \"¿quién?\", sino \"¿por qué tenía sentido para esa persona hacer lo que hizo en ese momento?\".\n\nLas personas no van a trabajar a equivocarse. Si se equivocan, casi siempre hay condiciones del sistema que lo hicieron posible o probable: diseño del equipo, procedimientos ambiguos, presión de tiempo, información confusa, fatiga, interrupciones.\n\n## Tipos de error\nJames Reason propuso una clasificación muy útil, porque cada tipo requiere acciones diferentes:\n\n### Errores de ejecución\nLa intención era correcta, pero la acción no salió como se quería.\n\n- **Deslices**: se hace algo distinto a lo que se pretendía. Ejemplo: tomar el contenedor de al lado, que se ve igual; presionar el botón equivocado. Ocurren en tareas rutinarias, con atención dividida.\n- **Lapsus**: se olvida un paso o se pierde el hilo. Ejemplo: olvidar registrar la temperatura después de una interrupción; saltarse la adición de un componente.\n\n### Equivocaciones\nLa acción salió como se quería, pero la **intención** era incorrecta.\n\n- **Basadas en reglas**: se aplica la regla equivocada o una regla buena en la situación equivocada. Ejemplo: aplicar la receta del producto de 50 % al activo de 80 %, porque \"así se hace\".\n- **Basadas en conocimiento**: en una situación nueva, sin regla, la persona razona con información incompleta y llega a una conclusión errónea.\n\n### Violaciones\nDesviaciones **deliberadas** de una regla, generalmente **sin intención de causar daño**.\n\n- **Rutinarias**: atajos que se volvieron costumbre (\"todos lo hacen así\").\n- **Situacionales**: la situación hace casi imposible cumplir (falta de tiempo, de equipo, de personal).\n- **Optimizadoras**: para terminar antes o hacer el trabajo más cómodo.\n\nUna violación rutinaria es, en realidad, una señal de que la regla **no se ajusta** a la realidad del trabajo o de que la supervisión la tolera. Si \"todos lo hacen\", es un problema del sistema.\n\n## Las acciones según el tipo\n| Tipo | Lo que no funciona | Lo que sí funciona |\n|---|---|---|\n| Desliz | Capacitar, \"poner más atención\" | Diseño que impida la confusión: códigos de color, formas distintas, conexiones que no ajustan, lectores de código |\n| Lapsus | Recordar al personal | Listas de verificación, sistemas que no permiten avanzar sin el paso, reducir interrupciones |\n| Equivocación por reglas | Sancionar | Reglas claras y sin ambigüedad, señales que indiquen la regla aplicable |\n| Equivocación por conocimiento | Culpar | Formación, apoyo experto disponible, procedimientos para situaciones nuevas |\n| Violación rutinaria | Recordatorios | Entender por qué ocurre, rediseñar la tarea o la regla, supervisión coherente |\n| Violación situacional | Exigir cumplir | Resolver la falta de recursos o tiempo |\n\nObserva que **capacitar** solo es una buena respuesta para un tipo: la equivocación basada en conocimiento. Para un desliz, capacitar no sirve: la persona ya sabía cómo hacerlo.\n\n## Factores que aumentan el error\nAl investigar un error, busca **factores contribuyentes**:\n\n- **Tarea**: complejidad, pasos parecidos, memoria requerida, cálculos manuales, transcripciones.\n- **Diseño**: contenedores o etiquetas parecidas, controles confusos, información difícil de leer.\n- **Procedimiento**: ambiguo, desactualizado, demasiado largo, inaccesible en el punto de uso, distinto de la práctica real.\n- **Entorno**: ruido, iluminación, interrupciones, temperatura.\n- **Persona**: fatiga, turnos largos, experiencia en la tarea, carga de trabajo.\n- **Organización**: presión por producir, metas contradictorias, falta de personal, cultura que castiga el reporte.\n\n## Cómo entrevistar a la persona involucrada\nLa persona que estaba ahí es la **mejor fuente** de información, si se siente segura para hablar. Para obtener información útil:\n\n- Explica que el objetivo es **entender el sistema**, no buscar culpables.\n- Entrevista **pronto**, en privado, y de preferencia en el lugar del evento.\n- Pide que **reconstruya** lo que hizo y lo que veía: \"cuéntame cómo fue el turno desde que llegaste\".\n- Pregunta qué **información** tenía, qué esperaba que pasara y por qué tomó cada decisión.\n- Pregunta si **antes** había pasado algo parecido y si otros tienen el mismo problema.\n- Pregunta qué **cambiaría** para que no vuelva a ocurrir: muchas veces tiene la mejor solución.\n\n## Cultura justa\nUna **cultura justa** (*just culture*) equilibra el aprendizaje con la responsabilidad. No significa que nunca haya consecuencias, sino que se distingue:\n\n- El **error humano** (desliz, lapsus, equivocación): se consuela a la persona y se rediseña el sistema.\n- El **comportamiento de riesgo** (una violación donde la persona no percibe el riesgo o cree que está justificada): se entrena, se eliminan los incentivos para el atajo y se reafirma la regla.\n- El **comportamiento temerario** (ignorar conscientemente un riesgo sustancial e injustificable): ahí sí corresponden medidas disciplinarias.\n\nUna prueba útil es la de **sustitución**: si otra persona con la misma formación y experiencia, en las mismas condiciones, habría podido hacer lo mismo, el problema es del **sistema**.\n\nSin cultura justa, las personas **ocultan** los errores, los cuasi incidentes no se reportan y la organización pierde la información que necesita para prevenir. En inocuidad, esto se relaciona directamente con la **cultura de inocuidad** que piden los esquemas GFSI.\n\n## Cuándo \"error humano\" sí puede aparecer en la CAPA\nPuede aparecer como **descripción** de lo que pasó (\"el operador cargó el contenedor equivocado\"), pero nunca como **causa raíz** final. Después de esa frase siempre debe seguir un \"¿por qué fue posible?\" y \"¿por qué no se detectó?\".\n\n## Ideas que debes llevarte\n- El error humano es **lo que hay que explicar**, no la explicación. Pregunta por qué tenía sentido para la persona.\n- Distingue **deslices**, **lapsus**, **equivocaciones** (por reglas o por conocimiento) y **violaciones** (rutinarias, situacionales, optimizadoras).\n- Cada tipo requiere acciones distintas; **capacitar** solo resuelve equivocaciones por falta de conocimiento.\n- Busca **factores contribuyentes**: tarea, diseño, procedimiento, entorno, persona, organización.\n- Entrevista para **entender**, no para culpar.\n- Una **cultura justa** distingue error, comportamiento de riesgo y comportamiento temerario; aplica la **prueba de sustitución**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Enfoque",
+     "enunciado": "Según el enfoque de Sidney Dekker, ¿qué es el error humano en una investigación?",
+     "opciones": [
+      "Lo que hay que explicar, no la explicación de la falla",
+      "La causa raíz final",
+      "Una razón para sancionar",
+      "Un evento sin importancia"
+     ],
+     "correcta": 0,
+     "explicacion": "La pregunta útil es por qué tenía sentido para la persona.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desliz",
+     "enunciado": "Un operador toma el contenedor de al lado, idéntico en forma y color, en una tarea rutinaria. ¿Qué tipo de error es?",
+     "opciones": [
+      "Desliz",
+      "Lapsus",
+      "Equivocación basada en conocimiento",
+      "Violación rutinaria"
+     ],
+     "correcta": 0,
+     "explicacion": "La intención era correcta; la ejecución no.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Lapsus",
+     "enunciado": "Tras una interrupción, el analista olvida registrar un resultado. ¿Qué tipo de error es?",
+     "opciones": [
+      "Lapsus",
+      "Desliz",
+      "Violación",
+      "Equivocación basada en reglas"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un olvido o pérdida del hilo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equivocación",
+     "enunciado": "Un operador aplica la receta habitual a un activo más concentrado porque 'así se hace'. ¿Qué tipo de error es?",
+     "opciones": [
+      "Equivocación basada en reglas",
+      "Desliz",
+      "Lapsus",
+      "Comportamiento temerario"
+     ],
+     "correcta": 0,
+     "explicacion": "La acción salió como quería, pero aplicó la regla equivocada.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Violación rutinaria",
+     "enunciado": "Todo el turno omite el lavado de manos al regresar del almacén porque 'siempre se ha hecho así'. ¿Qué indica?",
+     "opciones": [
+      "Una violación rutinaria que señala un problema del sistema",
+      "Un desliz individual",
+      "Un lapsus",
+      "Que el procedimiento funciona"
+     ],
+     "correcta": 0,
+     "explicacion": "Si todos lo hacen, la regla no se ajusta o la supervisión lo tolera.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Capacitar",
+     "enunciado": "¿Para qué tipo de error la capacitación es una buena respuesta?",
+     "opciones": [
+      "Equivocación basada en conocimiento",
+      "Desliz",
+      "Lapsus",
+      "Violación situacional"
+     ],
+     "correcta": 0,
+     "explicacion": "En un desliz la persona ya sabía cómo hacerlo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desliz",
+     "enunciado": "¿Qué acción es eficaz contra los deslices por contenedores parecidos?",
+     "opciones": [
+      "Diseño que impida la confusión: colores, formas, lectores de código",
+      "Pedir que pongan más atención",
+      "Capacitación anual",
+      "Sanciones"
+     ],
+     "correcta": 0,
+     "explicacion": "Se diseña para que el error sea difícil o imposible.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Factores",
+     "enunciado": "¿Cuál es un factor organizacional que aumenta el error?",
+     "opciones": [
+      "Presión por producir y metas contradictorias",
+      "Iluminación deficiente",
+      "Contenedores parecidos",
+      "Un procedimiento largo"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros son factores de entorno, diseño o procedimiento.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Entrevista",
+     "enunciado": "¿Cuál es una buena práctica al entrevistar a la persona involucrada?",
+     "opciones": [
+      "Pedir que reconstruya lo que hizo y qué información tenía, explicando que se busca entender el sistema",
+      "Preguntar por qué cometió el error frente a su jefe",
+      "Entrevistar semanas después",
+      "Leerle el procedimiento"
+     ],
+     "correcta": 0,
+     "explicacion": "La persona es la mejor fuente si se siente segura.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura justa",
+     "enunciado": "En una cultura justa, ¿qué comportamiento sí amerita medidas disciplinarias?",
+     "opciones": [
+      "El comportamiento temerario: ignorar conscientemente un riesgo sustancial e injustificable",
+      "Un desliz",
+      "Un lapsus",
+      "Una equivocación por falta de conocimiento"
+     ],
+     "correcta": 0,
+     "explicacion": "Los errores llevan a rediseñar el sistema.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sustitución",
+     "enunciado": "¿Qué evalúa la prueba de sustitución?",
+     "opciones": [
+      "Si otra persona con la misma formación y en las mismas condiciones habría podido hacer lo mismo",
+      "Si se puede sustituir al empleado",
+      "Si el equipo puede sustituirse",
+      "Si la materia prima tiene sustituto"
+     ],
+     "correcta": 0,
+     "explicacion": "Si la respuesta es sí, el problema es del sistema.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clasificar",
+     "enunciado": "Clasifica estos errores y propón una acción adecuada: a) un operador agrega sosa al tanque equivocado porque los tanques 3 y 4 están juntos y tienen la misma etiqueta pequeña; b) un analista nuevo interpreta mal un cromatograma con un pico desconocido; c) el turno nocturno no registra la temperatura de CIP porque el registrador está en otro edificio y no hay tiempo.",
+     "respuesta_modelo": "a) Desliz por diseño: identificar los tanques con rótulos grandes y colores distintos, y de preferencia conexiones o lectores de código que impidan cargar el tanque equivocado. b) Equivocación basada en conocimiento: formación en interpretación, procedimiento para picos desconocidos y acceso a un analista experto antes de liberar. c) Violación situacional: resolver la condición, por ejemplo con un registrador automático cerca del equipo o la reorganización de la tarea; recordar la regla no sirve si cumplirla es casi imposible.",
+     "puntos_clave": [
+      "Clasificación correcta de los tres",
+      "Acción de diseño para el desliz",
+      "Formación y apoyo para la equivocación",
+      "Resolver la condición en la violación situacional"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Factores contribuyentes",
+     "enunciado": "Un operador cargó 25 kg de activo en lugar de 15 kg en un lote. Enumera preguntas para encontrar factores contribuyentes en al menos cinco categorías.",
+     "respuesta_modelo": "Tarea: ¿la cantidad se calcula a mano o viene en la orden? ¿Hay varias cargas parecidas? Diseño: ¿la báscula muestra el objetivo? ¿los números 15 y 25 se confunden en la orden impresa? Procedimiento: ¿la orden de producción es clara y vigente? ¿difiere de la práctica real? Entorno: ¿había ruido, interrupciones, mala iluminación en la báscula? Persona: ¿cuántas horas llevaba trabajando? ¿tenía experiencia en ese producto? Organización: ¿había presión por terminar el lote? ¿faltaba personal? ¿existe una verificación independiente de cargas críticas?",
+     "puntos_clave": [
+      "Al menos cinco categorías",
+      "Preguntas abiertas y concretas",
+      "Enfoque en condiciones, no en culpa",
+      "Incluir la falta de verificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cultura justa",
+     "enunciado": "Explica por qué una organización que sanciona todos los errores termina con menos información para prevenir problemas de inocuidad.",
+     "respuesta_modelo": "Si cualquier error se castiga, las personas aprenden a ocultarlos: no reportan cuasi incidentes, corrigen sin registrar, maquillan registros o callan lo que vieron. La organización pierde las señales tempranas que permiten detectar debilidades del sistema antes de que causen un incidente grave, y las investigaciones obtienen versiones defensivas en lugar de información real. Una cultura justa, que distingue error, comportamiento de riesgo y temeridad, permite reportar sin miedo, aprender del sistema y mantener la responsabilidad donde corresponde; esto es parte de la cultura de inocuidad que exigen los esquemas.",
+     "puntos_clave": [
+      "Ocultamiento de errores",
+      "Pérdida de cuasi incidentes y señales",
+      "Investigaciones defensivas",
+      "Cultura justa como alternativa"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
