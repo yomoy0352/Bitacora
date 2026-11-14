@@ -828,6 +828,13 @@ function clipPoly(pts, g) {
   return out;
 }
 const polyCss = pts => pts.length < 3 ? 'polygon(0 0,0 0,0 0)' : 'polygon(' + pts.map(p => p[0].toFixed(1) + 'px ' + p[1].toFixed(1) + 'px').join(',') + ')';
+const polyArea = pts => { let a = 0; for (let k = 0; k < pts.length; k++) { const p = pts[k], q = pts[(k + 1) % pts.length]; a += p[0] * q[1] - q[0] * p[1]; } return Math.abs(a) / 2; };
+/* Safari ignora un recorte degenerado (área casi cero) y muestra la página completa: en ese caso se oculta la capa */
+function clipTo(el, pts) {
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+  if (pts.length < 3 || polyArea(pts) < 2 || Math.max(...xs) - Math.min(...xs) < 1 || Math.max(...ys) - Math.min(...ys) < 1) { el.style.visibility = 'hidden'; el.style.clipPath = 'none'; return; }
+  el.style.visibility = ''; el.style.clipPath = polyCss(pts);
+}
 /* Dibuja la hoja con el doblez en f y el punto de agarre a la altura y0, inclinado ty */
 /* La hoja está sujeta al lomo (x = 0): ninguna esquina doblada puede quedar más lejos del lomo que el ancho
    de la página, ni subir por encima del borde superior o bajar del inferior. Si el gesto lo pide, se reduce la inclinación. */
@@ -850,21 +857,21 @@ function setFold(T, f, y0, ty) {
   }
   const Ex = W, Ey = y0, Px = Px0, Py = y0 + ty;
   const dx = Ex - Px, dy = Ey - Py, len = Math.hypot(dx, dy);
-  if (len < 0.6) { T.front.style.clipPath = 'none'; T.flapw.style.visibility = 'hidden'; T.ushade.style.opacity = 0; return; }
+  if (len < 0.6) { T.front.style.visibility = ''; T.front.style.clipPath = 'none'; T.flapw.style.visibility = 'hidden'; T.ushade.style.opacity = 0; return; }
   T.flapw.style.visibility = '';
   const nx = dx / len, ny = dy / len, Mx = (Ex + Px) / 2, My = (Ey + Py) / 2;
   const side = p => (p[0] - Mx) * nx + (p[1] - My) * ny;
   const rect = [[0, 0], [W, 0], [W, H], [0, H]];
-  T.front.style.clipPath = polyCss(clipPoly(rect, p => -side(p)));
+  clipTo(T.front, clipPoly(rect, p => -side(p)));
   const Rg = clipPoly(rect, side);
   const A11 = 1 - 2 * nx * nx, A12 = -2 * nx * ny, A22 = 1 - 2 * ny * ny, k = 2 * (Mx * nx + My * ny), tx = k * nx, tyy = k * ny;
   let ox, oy, ang1;
   if (T.two) {
-    T.flap.style.clipPath = polyCss(Rg.map(([x, y]) => [W - x, y]));
+    clipTo(T.flap, Rg.map(([x, y]) => [W - x, y]));
     T.flap.style.transform = `matrix(${-A11},${-A12},${A12},${A22},${A11 * W + tx},${A12 * W + tyy})`;
     ox = W - Mx; oy = My; ang1 = Math.atan2(ny, -nx);
   } else {
-    T.flap.style.clipPath = polyCss(Rg);
+    clipTo(T.flap, Rg);
     T.flap.style.transform = `matrix(${A11},${A12},${A12},${A22},${tx},${tyy})`;
     ox = Mx; oy = My; ang1 = Math.atan2(ny, nx);
   }
@@ -879,7 +886,7 @@ const easeOut = t => 1 - Math.pow(1 - t, 3);
 const easeInOut = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 /* Anima la hoja hasta f1; al terminar confirma o deshace el cambio de página */
 function animateTo(T, f0, f1, y0, ty0, dur, ease, done, lift) {
-  finishAnim();
+  if (RDp.pending) RDp.pending();      // solo cierra una vuelta anterior; la hoja T sigue en pantalla
   const t0 = performance.now();
   let ended = false;
   const end = () => { if (ended) return; ended = true; cancelAnimationFrame(RDp.anim); RDp.pending = null; done(); };
@@ -889,8 +896,9 @@ function animateTo(T, f0, f1, y0, ty0, dur, ease, done, lift) {
     const t = Math.min(1, (now - t0) / dur), e = ease(t);
     const f = f0 + (f1 - f0) * e;
     const ty = ty0 * (1 - e) + (lift ? -Math.sin(Math.PI * e) * RDp.H * lift : 0);
+    if (t >= 1 || Math.abs(f1 - f) < 1.5) return end();      // el último píxel no se ve: se asienta ya, sin cola
     setFold(T, f, y0, ty);
-    if (t < 1) RDp.anim = requestAnimationFrame(step); else end();
+    RDp.anim = requestAnimationFrame(step);
   };
   RDp.anim = requestAnimationFrame(step);
 }
