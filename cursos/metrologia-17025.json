@@ -1686,6 +1686,434 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "9",
+   "titulo": "ISO/IEC 17025 I: estructura, imparcialidad y recursos",
+   "texto": "## Una norma de competencia\n**ISO/IEC 17025** establece los **requisitos generales para la competencia de los laboratorios de ensayo y calibración**. A diferencia de ISO 9001, que certifica que una organización tiene un **sistema de gestión**, ISO/IEC 17025 sirve para **acreditar** que un laboratorio es **técnicamente competente** para realizar **ensayos o calibraciones específicos** y produce **resultados válidos**.\n\nLa diferencia es importante:\n\n| | ISO 9001 | ISO/IEC 17025 |\n|---|---|---|\n| Qué reconoce | Un sistema de gestión de la calidad | La competencia técnica para actividades específicas |\n| Forma | Certificación por un organismo de certificación | Acreditación por un organismo de acreditación |\n| Alcance | Procesos de la organización | Lista de ensayos o calibraciones, con métodos, matrices e intervalos |\n| Evaluadores | Auditores de sistemas | Evaluadores de sistema y expertos técnicos en los métodos |\n\nUn laboratorio certificado en ISO 9001 **no** está por ello reconocido como técnicamente competente. Por eso los clientes y las autoridades suelen exigir laboratorios **acreditados** para resultados críticos.\n\nLa edición vigente es **ISO/IEC 17025:2017**, que en su revisión sistemática de 2023 se confirmó sin cambios. Aplica a laboratorios de **ensayo** (análisis químicos, microbiológicos, físicos), de **calibración**, y al **muestreo** asociado a ensayos o calibraciones posteriores. Un laboratorio de control de calidad dentro de una planta (laboratorio de primera parte) también puede usarla, se acredite o no.\n\n## Estructura de la norma\nLa edición 2017 abandonó la división de 2005 entre \"requisitos de gestión\" y \"requisitos técnicos\" y adoptó una estructura orientada a procesos, alineada con las normas de evaluación de la conformidad de la serie ISO/IEC 17000:\n\n| Capítulo | Contenido |\n|---|---|\n| 4 | Requisitos generales: imparcialidad y confidencialidad |\n| 5 | Requisitos relativos a la estructura |\n| 6 | Requisitos relativos a los recursos |\n| 7 | Requisitos del proceso |\n| 8 | Requisitos del sistema de gestión |\n\nAdemás introdujo el **pensamiento basado en riesgos**, más flexibilidad documental (menos procedimientos obligatorios), las **reglas de decisión** para declaraciones de conformidad y un apartado sobre **control de datos y gestión de la información**.\n\nEste capítulo cubre los capítulos 4 a 6; el siguiente, el 7; y el capítulo 11 del curso, el 8 y la acreditación.\n\n## Capítulo 4: requisitos generales\n### Imparcialidad (4.1)\nEl laboratorio debe realizar sus actividades de manera **imparcial**, estructurarse y gestionarse para salvaguardarla, y la dirección debe comprometerse con ella. Debe **identificar los riesgos** a la imparcialidad de forma continua (en sus actividades, relaciones y en las de su personal) y, si identifica un riesgo, demostrar cómo lo elimina o minimiza.\n\n**Por qué es crítico en un laboratorio de planta**: el laboratorio de control de calidad pertenece a la misma organización que produce y vende. Las presiones son reales:\n\n- Producción necesita liberar un lote para un embarque urgente.\n- Ventas promete al cliente una fecha que depende del resultado.\n- La gerencia evalúa al laboratorio por la cantidad de lotes liberados.\n- El jefe de laboratorio reporta al gerente de producción.\n\nMedidas típicas para gestionar estos riesgos:\n\n- El laboratorio reporta a **calidad**, no a producción.\n- La **autoridad de liberación** está claramente separada de la de producción.\n- Ningún indicador de desempeño del laboratorio premia la cantidad de lotes aprobados.\n- Declaraciones de imparcialidad y conflictos de interés del personal.\n- Procedimiento para escalar presiones indebidas sin represalias.\n- Análisis periódico de riesgos a la imparcialidad, revisado por la dirección.\n\nEsto conecta directamente con la **cultura de calidad y el comportamiento ético** de ISO 9001:2026 y con la cultura de inocuidad.\n\n### Confidencialidad (4.2)\nEl laboratorio es responsable, mediante **compromisos legalmente ejecutables**, de la gestión de toda la información obtenida o creada durante sus actividades. Debe informar al cliente con antelación la información que pretende hacer pública, y protegerla salvo que la ley exija divulgarla. El personal (incluidos los externos) debe mantener la confidencialidad.\n\n## Capítulo 5: requisitos relativos a la estructura\n- El laboratorio debe ser una **entidad legal** o una parte definida de una entidad legal, legalmente responsable de sus actividades.\n- Debe identificar a la **dirección** con responsabilidad general.\n- Debe definir y documentar el **alcance** de sus actividades que cumplen con la norma (no puede declarar conformidad con la norma para actividades que subcontrata permanentemente o que no cumplen).\n- Debe definir la **organización**, las responsabilidades, autoridades e interrelaciones del personal que gestiona, realiza o verifica trabajos que afectan los resultados.\n- Debe documentar sus **procedimientos** en la medida necesaria para asegurar la aplicación coherente de sus actividades y la validez de los resultados.\n- Debe tener personal con **autoridad y recursos** para implementar, mantener y mejorar el sistema, identificar desviaciones e iniciar acciones.\n- La dirección debe asegurar la **comunicación** sobre la eficacia del sistema y la importancia de cumplir los requisitos del cliente y otros.\n\n## Capítulo 6: requisitos relativos a los recursos\n### Personal (6.2)\n- Todo el personal que pueda influir en las actividades del laboratorio debe actuar con **imparcialidad**, ser **competente** y trabajar según el sistema.\n- El laboratorio debe documentar los **requisitos de competencia** de cada función: educación, calificación, formación, conocimiento técnico, habilidades y experiencia.\n- Debe tener procedimientos y registros para: determinar los requisitos de competencia, **seleccionar**, **formar**, **supervisar**, **autorizar** y **dar seguimiento** a la competencia del personal.\n- Debe **autorizar** al personal para actividades específicas: desarrollar o validar métodos, analizar resultados (incluidas declaraciones de conformidad u opiniones), e informar, revisar y autorizar resultados.\n\n**En la práctica**: una **matriz de competencias** por analista y método; registros de capacitación; evaluación de competencia (por ejemplo, análisis de muestras de control o de muestras ciegas con criterios de aceptación) antes de autorizar; **seguimiento** periódico (desempeño en cartas de control, en ensayos de aptitud, observación).\n\n### Instalaciones y condiciones ambientales (6.3)\n- Adecuadas para las actividades y sin afectar adversamente la validez de los resultados (contaminación, polvo, vibración, temperatura, humedad, interferencias).\n- Los requisitos se documentan.\n- Se **monitorean, controlan y registran** las condiciones cuando influyen en los resultados (por ejemplo, la temperatura del cuarto de balanzas o de los ensayos de densidad).\n- Se controla el acceso y se separan áreas con actividades incompatibles (por ejemplo, el área de muestras concentradas de la de análisis de trazas, o la microbiología de la química).\n\n### Equipamiento (6.4)\nIncluye instrumentos, software, patrones, materiales de referencia, reactivos y consumibles. El laboratorio debe:\n\n- Tener el equipo necesario y verificar que cumple los requisitos antes de usarlo.\n- Asegurar que el equipo logra la **exactitud** y la **incertidumbre** requeridas.\n- **Calibrar** el equipo cuando la exactitud o incertidumbre afecta la validez de los resultados, o cuando se necesita para establecer la **trazabilidad**.\n- Tener un **programa de calibración** revisado y ajustado.\n- **Identificar** el estado de calibración.\n- Hacer **verificaciones intermedias** cuando sean necesarias.\n- Tratar el equipo **fuera de servicio** (sobrecargado, mal manejado, que da resultados dudosos): retirarlo, identificarlo, examinar el efecto en resultados previos e iniciar el control de trabajo no conforme.\n- Aplicar **factores de corrección** cuando la calibración los proporciona, actualizándolos.\n- Proteger el equipo contra **ajustes** no intencionados.\n- Mantener **registros** del equipo: identificación, fabricante, verificaciones, ubicación, fechas y resultados de calibración, materiales de referencia, mantenimiento, daños.\n\n### Trazabilidad metrológica (6.5)\nYa la viste en el capítulo 3: cadena ininterrumpida y documentada de calibraciones hasta el SI, a través de institutos nacionales o laboratorios acreditados, o, cuando técnicamente no es posible, a través de materiales de referencia certificados o resultados de procedimientos de referencia, métodos especificados o patrones de consenso claramente descritos y aceptados.\n\n### Productos y servicios suministrados externamente (6.6)\nIncluye reactivos, materiales de referencia, calibraciones, mantenimiento, ensayos de aptitud y **subcontratación** de ensayos. El laboratorio debe:\n\n- Definir y revisar los **requisitos** de lo que compra.\n- Definir **criterios** para evaluar, seleccionar, dar seguimiento y reevaluar a los proveedores.\n- **Verificar** que lo recibido cumple antes de usarlo (por ejemplo, el certificado de un reactivo o de una calibración).\n- Comunicar sus requisitos a los proveedores.\n\n## Ideas que debes llevarte\n- ISO/IEC 17025 reconoce **competencia técnica** para actividades específicas mediante **acreditación**; ISO 9001 certifica un sistema.\n- Edición vigente: **2017**; estructura en capítulos 4 a 8; enfoque a procesos y riesgos.\n- **Imparcialidad**: identificar y gestionar riesgos, crítico en laboratorios de planta (separar la autoridad de liberación de producción).\n- **Confidencialidad** mediante compromisos legalmente ejecutables.\n- **Estructura**: entidad legal, alcance definido, responsabilidades y autoridad.\n- **Personal**: requisitos de competencia, selección, formación, supervisión, **autorización** y seguimiento.\n- **Instalaciones**, **equipamiento** (calibración, verificación, fuera de servicio, registros), **trazabilidad** y **proveedores** controlados.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito",
+     "enunciado": "¿Qué reconoce la acreditación con ISO/IEC 17025?",
+     "opciones": [
+      "La competencia técnica de un laboratorio para ensayos o calibraciones específicos",
+      "Que la empresa tiene un sistema de gestión de la calidad",
+      "Que el laboratorio es el más barato",
+      "Que el laboratorio usa equipos nuevos"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 9001 certifica sistemas; ISO/IEC 17025 acredita competencia técnica con un alcance definido.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diferencia",
+     "enunciado": "Un laboratorio certificado en ISO 9001, ¿está reconocido como técnicamente competente para sus análisis?",
+     "opciones": [
+      "No necesariamente; para eso se requiere acreditación con ISO/IEC 17025",
+      "Sí, siempre",
+      "Sí, si tiene más de 10 años",
+      "Solo para análisis microbiológicos"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso clientes y autoridades piden laboratorios acreditados.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura",
+     "enunciado": "¿Qué capítulo de ISO/IEC 17025:2017 contiene los requisitos de imparcialidad y confidencialidad?",
+     "opciones": [
+      "4",
+      "6",
+      "7",
+      "8"
+     ],
+     "correcta": 0,
+     "explicacion": "Capítulo 4, requisitos generales.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Imparcialidad",
+     "enunciado": "¿Cuál de estas situaciones representa un riesgo a la imparcialidad en un laboratorio de planta?",
+     "opciones": [
+      "El jefe del laboratorio reporta al gerente de producción, que es evaluado por toneladas liberadas",
+      "El laboratorio participa en ensayos de aptitud",
+      "El laboratorio calibra sus balanzas",
+      "El laboratorio tiene un procedimiento de quejas"
+     ],
+     "correcta": 0,
+     "explicacion": "La presión por liberar puede sesgar decisiones.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Imparcialidad",
+     "enunciado": "¿Qué medida reduce el riesgo a la imparcialidad del laboratorio de una planta?",
+     "opciones": [
+      "Que el laboratorio reporte a calidad y la autoridad de liberación esté separada de producción",
+      "Que producción apruebe los resultados",
+      "Que el indicador del laboratorio sea el número de lotes aprobados",
+      "Eliminar el registro de resultados fuera de especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "También declaraciones de conflicto de interés y vías para escalar presiones.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confidencialidad",
+     "enunciado": "¿Cómo debe asegurar el laboratorio la confidencialidad según ISO/IEC 17025?",
+     "opciones": [
+      "Mediante compromisos legalmente ejecutables, informando al cliente con antelación lo que pretende hacer público",
+      "Con un aviso en la recepción",
+      "No es un requisito",
+      "Solo para clientes externos importantes"
+     ],
+     "correcta": 0,
+     "explicacion": "Incluye al personal externo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura",
+     "enunciado": "¿Puede un laboratorio declarar conformidad con ISO/IEC 17025 para ensayos que subcontrata de forma permanente?",
+     "opciones": [
+      "No, el alcance debe limitarse a las actividades que realiza y cumplen la norma",
+      "Sí, siempre",
+      "Sí, si el subcontratista es barato",
+      "Solo si el cliente lo autoriza"
+     ],
+     "correcta": 0,
+     "explicacion": "El alcance se define y documenta.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Personal",
+     "enunciado": "¿Qué debe hacer el laboratorio antes de que un analista nuevo reporte resultados de un método?",
+     "opciones": [
+      "Autorizarlo después de formarlo y evaluar su competencia con criterios definidos",
+      "Nada, si tiene título universitario",
+      "Solo darle a leer el procedimiento",
+      "Esperar a la auditoría externa"
+     ],
+     "correcta": 0,
+     "explicacion": "6.2 exige determinar requisitos, formar, supervisar, autorizar y dar seguimiento.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Instalaciones",
+     "enunciado": "¿Cuándo deben monitorearse y registrarse las condiciones ambientales?",
+     "opciones": [
+      "Cuando influyen en la validez de los resultados",
+      "Siempre, en todas las áreas",
+      "Nunca",
+      "Solo en laboratorios de calibración"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, la temperatura del cuarto de balanzas o de mediciones de densidad.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipamiento",
+     "enunciado": "¿Qué se incluye en el concepto de 'equipamiento' de ISO/IEC 17025?",
+     "opciones": [
+      "Instrumentos, software, patrones, materiales de referencia, reactivos y consumibles",
+      "Solo los instrumentos de medición",
+      "Solo el mobiliario",
+      "Solo los equipos de cómputo"
+     ],
+     "correcta": 0,
+     "explicacion": "Todo lo que puede influir en los resultados.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipo fuera de servicio",
+     "enunciado": "Un espectrofotómetro da resultados dudosos tras un golpe. ¿Qué exige la norma?",
+     "opciones": [
+      "Retirarlo, identificarlo, examinar el efecto en resultados previos e iniciar el control de trabajo no conforme",
+      "Seguir usándolo hasta la próxima calibración",
+      "Solo anotarlo en una bitácora",
+      "Ajustarlo uno mismo y seguir"
+     ],
+     "correcta": 0,
+     "explicacion": "6.4 trata el equipo fuera de servicio.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proveedores",
+     "enunciado": "Según 6.6, ¿qué debe hacer el laboratorio con un certificado de calibración recibido de un proveedor?",
+     "opciones": [
+      "Verificar que cumple los requisitos antes de usar el equipo",
+      "Archivarlo sin revisar",
+      "Enviarlo al cliente",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Lo recibido se verifica antes de usarse.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Imparcialidad",
+     "enunciado": "Elabora un análisis de riesgos a la imparcialidad del laboratorio de control de calidad de una planta química, con tres riesgos y sus controles.",
+     "respuesta_modelo": "1) Riesgo: presión de producción o ventas para liberar lotes urgentes con resultados límite. Control: autoridad de liberación exclusiva de calidad, regla de decisión documentada, procedimiento de escalamiento sin represalias y registro de toda presión indebida. 2) Riesgo: el jefe del laboratorio reporta al gerente de producción. Control: cambiar la línea de reporte a la dirección de calidad o a la dirección general. 3) Riesgo: indicadores del laboratorio basados en lotes liberados o en tiempo de liberación sin considerar la calidad. Control: indicadores de validez (desempeño en ensayos de aptitud, cartas de control, cumplimiento de tiempos sin comprometer procedimientos). También: analistas que analizan producto de familiares o de áreas donde tienen intereses; declaraciones anuales de conflicto de interés. El análisis se revisa periódicamente y en la revisión por la dirección.",
+     "puntos_clave": [
+      "Tres riesgos pertinentes",
+      "Control concreto para cada uno",
+      "Relación con autoridad e indicadores",
+      "Revisión periódica"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Competencia",
+     "enunciado": "Diseña el proceso de autorización de un analista nuevo para el método de titulación de ácido peracético.",
+     "respuesta_modelo": "1) Requisitos de competencia documentados para el método: formación química, conocimientos de seguridad con oxidantes, manejo de buretas y del titulador. 2) Formación: lectura del procedimiento y de la validación, demostración por un analista autorizado, práctica supervisada. 3) Evaluación: el analista analiza a ciegas un material de control y muestras con valor conocido (por ejemplo, 10 determinaciones en varios días), con criterios definidos: sesgo dentro de un límite y precisión dentro de la del método validado. 4) Autorización formal registrada en la matriz de competencias, con fecha y alcance (método, actividades: ejecutar, revisar o autorizar resultados). 5) Seguimiento: desempeño en cartas de control, participación en ensayos de aptitud y observación periódica; reevaluación si hay ausencia prolongada o cambios del método.",
+     "puntos_clave": [
+      "Requisitos de competencia",
+      "Formación y práctica supervisada",
+      "Evaluación con criterios objetivos",
+      "Autorización registrada y seguimiento"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "17025 y 9001",
+     "enunciado": "Tu empresa está certificada en ISO 9001 y FSSC 22000. Un cliente pide que los análisis de un contaminante se hagan en un laboratorio acreditado. Explica por qué la certificación de tu empresa no es suficiente y qué opciones tienes.",
+     "respuesta_modelo": "La certificación ISO 9001 y FSSC 22000 reconoce los sistemas de gestión de la empresa, no la competencia técnica del laboratorio para ese análisis específico. El cliente pide evidencia de que el resultado es técnicamente válido, lo que se demuestra con acreditación ISO/IEC 17025 para ese método y matriz. Opciones: subcontratar el análisis a un laboratorio externo acreditado por la ema (o por un organismo firmante de los acuerdos de reconocimiento) con ese método en su alcance; o acreditar el laboratorio propio para ese método, lo que requiere implementar ISO/IEC 17025, validar el método, participar en ensayos de aptitud y ser evaluado. A corto plazo, la subcontratación suele ser lo práctico.",
+     "puntos_clave": [
+      "Diferencia entre certificación de sistema y acreditación técnica",
+      "Requisito del cliente",
+      "Opción de subcontratar a laboratorio acreditado con el método en su alcance",
+      "Opción de acreditar el laboratorio propio"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "ISO/IEC 17025 II: requisitos del proceso",
+   "texto": "## El capítulo 7: del pedido al informe\nEl capítulo 7 de ISO/IEC 17025 sigue el recorrido de un trabajo en el laboratorio: desde que se recibe la solicitud hasta que se emite el informe, incluyendo lo que pasa cuando algo sale mal. Es el capítulo más extenso y el más técnico.\n\n## 7.1 Revisión de solicitudes, ofertas y contratos\nAntes de aceptar un trabajo, el laboratorio debe asegurar que:\n\n- Los **requisitos** del cliente están definidos, documentados y entendidos (incluidos los métodos).\n- Tiene la **capacidad y los recursos** para cumplirlos.\n- Si usa proveedores externos, se aplica 6.6 y se informa al cliente.\n- Se seleccionan **métodos apropiados**.\n\nAdemás:\n\n- Si el método solicitado por el cliente es inadecuado u obsoleto, se le **informa**.\n- Si el cliente pide una **declaración de conformidad**, la especificación y la **regla de decisión** deben definirse claramente y acordarse (salvo que estén en la especificación o la norma).\n- Las diferencias se resuelven antes de empezar; las **desviaciones** del contrato se comunican al cliente.\n\n**En un laboratorio de planta**, el \"cliente\" es interno (producción, calidad, desarrollo). Una revisión de solicitudes puede ser tan simple como un catálogo de análisis por producto con métodos, especificaciones, reglas de decisión y tiempos de respuesta acordados; y un mecanismo para solicitudes especiales (investigaciones, desarrollos).\n\n## 7.2 Selección, verificación y validación de métodos\nLo viste en el capítulo 8. Puntos adicionales:\n\n- Se deben usar métodos apropiados y la **versión vigente** de los métodos normalizados, salvo que no sea apropiado.\n- Los métodos deben estar **disponibles** para el personal.\n- Las **desviaciones** de los métodos solo se permiten si están documentadas, técnicamente justificadas, autorizadas y aceptadas por el cliente.\n- Cuando el cliente no especifica el método, el laboratorio selecciona uno apropiado e informa al cliente.\n\n## 7.3 Muestreo\nSi el laboratorio realiza el **muestreo** de sustancias, materiales o productos para ensayo posterior, debe tener un **plan y método de muestreo** que trate los factores a controlar para asegurar la validez de los resultados, y registrar los datos del muestreo (método, fecha y hora, identificación de la persona, condiciones ambientales, ubicación, desviaciones).\n\nEn la planta, el muestreo de producto en tanques, de materias primas en tambores o de agua del sistema de ósmosis es **parte del resultado**: un muestreo deficiente invalida el mejor análisis.\n\n## 7.4 Manipulación de los ítems de ensayo\nEl laboratorio debe tener procedimientos para el transporte, recepción, manipulación, protección, almacenamiento, retención y disposición de los ítems (las muestras), protegiendo su **integridad**. Debe:\n\n- **Identificar** cada ítem de forma inequívoca durante su permanencia en el laboratorio.\n- Registrar **desviaciones** en la recepción (muestra dañada, envase incorrecto, temperatura inadecuada) y consultar al cliente si hay dudas sobre la idoneidad.\n- Mantener las **condiciones** de almacenamiento especificadas.\n\nEjemplos en química: el ácido peracético y el hipoclorito se degradan con el tiempo y la temperatura; las muestras deben analizarse dentro de un **tiempo máximo** y almacenarse en frío y oscuridad. Las **muestras retenidas** de cada lote se guardan en condiciones definidas por un periodo definido, para investigaciones y quejas.\n\n## 7.5 Registros técnicos\nLos registros técnicos de cada actividad deben contener información suficiente para **facilitar la repetición** de la actividad en condiciones lo más cercanas posibles a las originales, e identificar los factores que afectan el resultado y su incertidumbre. Incluyen:\n\n- Fecha e identificación del personal responsable de cada actividad y de la revisión de datos y resultados.\n- Observaciones originales, datos y cálculos, registrados **en el momento** en que se realizan.\n- Equipos, reactivos y patrones usados.\n- **Modificaciones** a los registros: rastreables a versiones anteriores; se conservan el dato original y el modificado, la fecha, la persona y la razón.\n\nEste último punto es la base de la **integridad de datos**: nada de borrar, usar corrector, sobrescribir o \"pasar en limpio\". En sistemas electrónicos, se necesita una **pista de auditoría**.\n\n## 7.6 Evaluación de la incertidumbre de medición\n- Los laboratorios deben **identificar las contribuciones** a la incertidumbre y tenerlas en cuenta, incluidas las del muestreo cuando sea pertinente, con métodos apropiados de análisis.\n- Los laboratorios de **calibración** evalúan la incertidumbre de todas sus calibraciones.\n- Los laboratorios de **ensayo** evalúan la incertidumbre; cuando el método no permite una evaluación rigurosa, hacen una **estimación** basada en la comprensión de los principios teóricos o la experiencia práctica.\n- Cuando un método **normalizado** especifica límites a las fuentes principales de incertidumbre y la forma de expresar los resultados, se considera que el laboratorio satisface el requisito siguiendo el método.\n\nLo viste en los capítulos 5 a 7.\n\n## 7.7 Aseguramiento de la validez de los resultados\nEl laboratorio debe tener un procedimiento para **dar seguimiento a la validez** de los resultados, planificado y revisado, que incluya, cuando sea apropiado:\n\n- Uso de **materiales de referencia** o materiales de control de calidad.\n- Uso de instrumentos **alternativos** calibrados.\n- **Verificaciones funcionales** del equipo.\n- **Patrones de verificación** o de trabajo con **gráficos de control**.\n- **Verificaciones intermedias**.\n- **Repetición** de ensayos con los mismos o diferentes métodos.\n- **Repetición** del ensayo de ítems retenidos.\n- **Correlación** de resultados de diferentes características de un ítem.\n- **Revisión** de los resultados informados.\n- **Comparaciones intralaboratorio**.\n- Ensayo de **muestras ciegas**.\n\nAdemás, debe dar seguimiento a su desempeño mediante la comparación con otros laboratorios: **ensayos de aptitud** y otras **comparaciones interlaboratorio**.\n\nLos datos se **analizan**, se usan para controlar y mejorar, y si están fuera de los criterios, se actúa para evitar informar resultados incorrectos. Lo verás a fondo en el capítulo 12.\n\n## 7.8 Informe de resultados\nLos resultados se revisan y autorizan antes de su emisión, y se informan con exactitud, claridad, sin ambigüedad y objetivamente. Cada informe incluye, como mínimo (salvo justificación o acuerdo con el cliente):\n\n- Título, nombre y dirección del laboratorio, lugar de las actividades.\n- Identificación única del informe y de cada página, con el total de páginas.\n- Nombre del cliente, método usado, descripción e identificación del ítem, fechas de recepción y de ensayo, fecha de emisión.\n- Referencia al plan de muestreo si el laboratorio muestreó.\n- Los **resultados** con sus **unidades**.\n- Identificación de quien autoriza el informe.\n- Indicación clara de los resultados aportados por **proveedores externos**.\n\nCuando es necesario para la interpretación, se incluye la **incertidumbre** (en las mismas unidades que el resultado o en forma relativa), por ejemplo cuando el cliente lo pide, cuando afecta la validez o aplicación del resultado o cuando afecta la conformidad con un límite.\n\nCuando se emite una **declaración de conformidad**, se identifica a qué resultados aplica, qué especificaciones se cumplen o no, y la **regla de decisión** aplicada.\n\nLas **opiniones e interpretaciones** solo las emite personal autorizado y se identifican claramente como tales. Las **modificaciones** a informes emitidos se hacen como nuevo documento identificado como modificación del original.\n\n**El certificado de análisis** que tu planta entrega al cliente con cada lote es, en esencia, un informe de resultados: los mismos principios aplican.\n\n## 7.9 Quejas\nProceso documentado para recibir, evaluar y decidir sobre las quejas, disponible para cualquier parte interesada que lo solicite. Incluye acuse de recibo, investigación, decisión imparcial (por personas no involucradas en las actividades en cuestión) y comunicación del resultado.\n\n## 7.10 Trabajo no conforme\nCuando cualquier aspecto de las actividades o resultados no cumple los procedimientos o los requisitos acordados con el cliente (por ejemplo, un control de calidad fuera de límites, un equipo fuera de calibración, una muestra mal manipulada), el laboratorio:\n\n- Define **responsabilidades** y autoridades para gestionarlo.\n- Toma **acciones** basadas en el nivel de riesgo: detener o repetir el trabajo, retener informes.\n- **Evalúa la importancia** del trabajo no conforme, incluido el impacto en **resultados previos**.\n- Decide sobre su aceptabilidad.\n- **Notifica al cliente** y, si es necesario, **retira** el trabajo.\n- Define la responsabilidad de autorizar la reanudación.\n\nSi el trabajo no conforme puede repetirse o hay dudas sobre la conformidad con el sistema, se aplica el proceso de **acciones correctivas**.\n\n## 7.11 Control de los datos y gestión de la información\nNovedad de la edición 2017, crítica en laboratorios con sistemas informáticos:\n\n- Acceso a los datos y la información necesarios.\n- Los sistemas de gestión de la información del laboratorio (**LIMS** y otros, incluidas hojas de cálculo con cálculos) deben **validarse** en su funcionalidad antes de usarse y después de cambios.\n- Protección contra accesos no autorizados, manipulación y pérdida; **integridad** de los datos; registro de fallas y acciones.\n- Los **cálculos y transferencias** de datos se verifican de forma sistemática.\n\nUna hoja de cálculo que calcula la concentración a partir del volumen de titulación es un sistema que debe **validarse** (fórmulas verificadas, celdas protegidas, control de versiones).\n\n## Ideas que debes llevarte\n- **7.1**: requisitos claros, capacidad, métodos apropiados y **regla de decisión** acordada antes de empezar.\n- **7.2**: métodos vigentes, verificados o validados; desviaciones justificadas y autorizadas.\n- **7.3 y 7.4**: el **muestreo** y la **integridad** de las muestras son parte del resultado; controla tiempos y condiciones.\n- **7.5**: registros que permitan **repetir** la actividad; modificaciones **rastreables**.\n- **7.6**: identificar contribuciones y evaluar la **incertidumbre**.\n- **7.7**: asegurar la **validez** con controles internos y **ensayos de aptitud**.\n- **7.8**: informes completos, con incertidumbre y regla de decisión cuando aplica; el **COA** es un informe.\n- **7.9 a 7.11**: quejas, **trabajo no conforme** con evaluación de resultados previos, y **control de datos** (validar LIMS y hojas de cálculo).",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "7.1",
+     "enunciado": "Un cliente pide una declaración de conformidad con una especificación. ¿Qué debe acordarse antes de empezar si no está en la especificación?",
+     "opciones": [
+      "La regla de decisión",
+      "El precio del informe",
+      "El nombre del analista",
+      "El color del certificado"
+     ],
+     "correcta": 0,
+     "explicacion": "7.1.3 exige definir la especificación y la regla de decisión.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.2",
+     "enunciado": "¿Cuándo se permite una desviación de un método?",
+     "opciones": [
+      "Si está documentada, técnicamente justificada, autorizada y aceptada por el cliente",
+      "Nunca",
+      "Siempre que el analista lo considere",
+      "Solo los fines de semana"
+     ],
+     "correcta": 0,
+     "explicacion": "Las desviaciones no planificadas son trabajo no conforme.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.3",
+     "enunciado": "¿Qué debe registrar el laboratorio cuando realiza el muestreo?",
+     "opciones": [
+      "Método, fecha y hora, persona, condiciones ambientales, ubicación y desviaciones",
+      "Solo el resultado del análisis",
+      "Solo la fecha",
+      "Nada si el muestreo es rutinario"
+     ],
+     "correcta": 0,
+     "explicacion": "El muestreo es parte del resultado.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.4",
+     "enunciado": "Una muestra de ácido peracético llega al laboratorio dos días después de tomada y a 35 °C. ¿Qué hace el laboratorio?",
+     "opciones": [
+      "Registra la desviación en la recepción y consulta al cliente sobre la idoneidad antes de analizar",
+      "La analiza sin registrar nada",
+      "La descarta sin avisar",
+      "Ajusta el resultado por la degradación estimada"
+     ],
+     "correcta": 0,
+     "explicacion": "La integridad del ítem afecta la validez del resultado.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.5",
+     "enunciado": "Un analista se equivoca al anotar un volumen. ¿Cómo debe corregirse el registro?",
+     "opciones": [
+      "Conservando el dato original legible, con el nuevo dato, fecha, persona y razón",
+      "Con corrector",
+      "Pasando la hoja en limpio",
+      "Borrando el dato en el sistema"
+     ],
+     "correcta": 0,
+     "explicacion": "Las modificaciones deben ser rastreables.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.5",
+     "enunciado": "¿Qué propósito tienen los registros técnicos según la norma?",
+     "opciones": [
+      "Contener información suficiente para facilitar la repetición de la actividad e identificar los factores que afectan el resultado",
+      "Cumplir con un formato",
+      "Ocupar espacio en el archivo",
+      "Sustituir al informe"
+     ],
+     "correcta": 0,
+     "explicacion": "Incluyen equipos, reactivos, patrones, datos originales y cálculos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.6",
+     "enunciado": "Un método normalizado especifica los límites de las fuentes principales de incertidumbre y cómo expresar los resultados. ¿Qué implica?",
+     "opciones": [
+      "Se considera que el laboratorio cumple el requisito de incertidumbre siguiendo el método",
+      "El laboratorio debe hacer un presupuesto GUM completo",
+      "No se requiere ningún control de calidad",
+      "El método no necesita verificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una disposición de 7.6.3.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.7",
+     "enunciado": "¿Cuál de estas actividades forma parte del aseguramiento de la validez de los resultados?",
+     "opciones": [
+      "Uso de materiales de control con gráficos de control y participación en ensayos de aptitud",
+      "Comprar equipos nuevos cada año",
+      "Contratar más personal",
+      "Aumentar el precio de los análisis"
+     ],
+     "correcta": 0,
+     "explicacion": "También duplicados, muestras ciegas, ítems retenidos y comparaciones.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.8",
+     "enunciado": "¿Cuándo debe incluirse la incertidumbre en un informe?",
+     "opciones": [
+      "Cuando es pertinente para la validez o aplicación del resultado, cuando lo pide el cliente o cuando afecta la conformidad con un límite",
+      "Nunca",
+      "Siempre, en todos los resultados",
+      "Solo en calibraciones"
+     ],
+     "correcta": 0,
+     "explicacion": "7.8.3.1 c) y 7.8.4 para calibraciones.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.8",
+     "enunciado": "¿Cómo se modifica un informe ya emitido?",
+     "opciones": [
+      "Emitiendo un nuevo documento identificado como modificación del original",
+      "Cambiando el archivo sin avisar",
+      "Enviando un correo con la corrección",
+      "Destruyendo el original"
+     ],
+     "correcta": 0,
+     "explicacion": "La trazabilidad de los informes se mantiene.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.10",
+     "enunciado": "Un material de control sale fuera de límites en una corrida en la que también se analizaron cinco lotes. ¿Qué exige la norma?",
+     "opciones": [
+      "Tratarlo como trabajo no conforme: retener los informes, evaluar el impacto en los resultados y decidir, notificando si es necesario",
+      "Informar los resultados de los lotes porque las muestras no tienen problema",
+      "Repetir solo el material de control hasta que salga bien",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "También se evalúan resultados previos y se aplican acciones correctivas si procede.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "7.11",
+     "enunciado": "¿Qué exige ISO/IEC 17025 respecto a una hoja de cálculo que calcula resultados?",
+     "opciones": [
+      "Validar su funcionalidad antes de usarla y después de cambios, y protegerla",
+      "Nada, las hojas de cálculo no son sistemas",
+      "Imprimirla cada día",
+      "Usarla solo en papel"
+     ],
+     "correcta": 0,
+     "explicacion": "Fórmulas verificadas, celdas protegidas, control de versiones.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "COA",
+     "enunciado": "Revisa con los criterios de 7.8 el certificado de análisis que tu planta entrega a los clientes y enumera qué elementos debería contener.",
+     "respuesta_modelo": "Título; nombre y dirección del laboratorio; identificación única del certificado y de cada página con el total; nombre del cliente; identificación del producto y lote, fecha de fabricación y de análisis, fecha de emisión; métodos usados (o referencia a ellos); resultados con unidades junto a las especificaciones; declaración de conformidad indicando la regla de decisión aplicada (por ejemplo, aceptación simple o con banda de guarda para parámetros críticos); incertidumbre cuando afecta la conformidad o la pide el cliente; indicación de resultados de laboratorios externos si los hay; identificación de quien autoriza. Si se modifica, se emite un nuevo certificado identificado como modificación.",
+     "puntos_clave": [
+      "Identificación del laboratorio, del documento y del ítem",
+      "Métodos, resultados con unidades y especificaciones",
+      "Declaración de conformidad con regla de decisión e incertidumbre cuando aplica",
+      "Autorización y control de modificaciones"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Trabajo no conforme",
+     "enunciado": "Durante una auditoría interna descubres que el titulante usado en la última semana estaba vencido. Describe el manejo según 7.10.",
+     "respuesta_modelo": "1) Detener el uso del titulante y retener los informes pendientes. 2) Identificar todos los análisis hechos con ese lote de titulante desde su vencimiento. 3) Evaluar la importancia: valorar de nuevo el titulante vencido para saber si su concentración cambió y cuánto; recalcular el efecto sobre los resultados; determinar si alguno cambiaría la decisión de conformidad. 4) Si los resultados son válidos dentro de la incertidumbre, documentar la justificación; si no, repetir los análisis con muestras retenidas, corregir informes como modificación y notificar a los clientes (internos o externos) y, si un lote liberado no cumple, activar el manejo de producto no conforme. 5) Autorizar la reanudación con titulante vigente y valorado. 6) Acción correctiva: causa (falta de control de vigencias) y medidas (etiquetado, verificación en el sistema, revisión antes de uso).",
+     "puntos_clave": [
+      "Detención y retención",
+      "Identificación del alcance",
+      "Evaluación del impacto con datos",
+      "Notificación, corrección, reanudación y acción correctiva"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Integridad de datos",
+     "enunciado": "Explica cómo se relacionan 7.5 y 7.11 con la integridad de datos y propone tres controles para un laboratorio con un titulador automático y una hoja de cálculo.",
+     "respuesta_modelo": "7.5 exige registrar los datos originales en el momento y que toda modificación sea rastreable; 7.11 exige proteger los datos contra manipulación y pérdida, validar los sistemas y verificar cálculos y transferencias. Juntos sostienen la integridad de datos: que los resultados reportados sean completos, originales, exactos y atribuibles. Controles: 1) configurar el titulador con usuarios individuales, contraseña y pista de auditoría, sin permitir borrar determinaciones; 2) transferir los datos al sistema o la hoja de cálculo de forma automática o verificada por una segunda persona; 3) validar la hoja de cálculo (verificar fórmulas con casos de prueba, proteger celdas, control de versiones) y revisar periódicamente las pistas de auditoría.",
+     "puntos_clave": [
+      "Relación de 7.5 con datos originales y modificaciones",
+      "Relación de 7.11 con protección y validación",
+      "Tres controles concretos",
+      "Concepto de integridad de datos"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
