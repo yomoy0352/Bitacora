@@ -802,6 +802,620 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "5",
+   "titulo": "Pruebas de hipótesis I: la lógica y la prueba t",
+   "texto": "## Decidir con datos que varían\nEn calidad se toman constantemente decisiones del tipo: ¿el nuevo proveedor da la misma pureza que el actual?, ¿el turno B produce con una concentración distinta al turno A?, ¿el cambio de procedimiento redujo la variación?, ¿el método nuevo da los mismos resultados que el anterior? Como los datos varían, una diferencia observada puede ser real o puede ser producto del azar. Las **pruebas de hipótesis** son el procedimiento para decidir con un riesgo de error conocido.\n\n## La lógica\nUna prueba de hipótesis funciona como un juicio:\n\n1. Se plantea una **hipótesis nula (H₀)**: no hay diferencia, no hay efecto, el proceso no cambió. Es la \"presunción de inocencia\".\n2. Se plantea una **hipótesis alternativa (H₁)**: sí hay diferencia o efecto.\n3. Se recogen datos y se calcula un **estadístico de prueba** que mide qué tan lejos están los datos de lo que esperaríamos si H₀ fuera cierta.\n4. Se calcula el **valor p**: la probabilidad de obtener un resultado al menos tan extremo como el observado **si H₀ fuera cierta**.\n5. Si el valor p es menor que un nivel de significancia **α** definido de antemano (habitualmente 0.05), se **rechaza H₀**: los datos son difícilmente compatibles con \"no hay diferencia\". Si no, **no se rechaza H₀**.\n\n### Lo que el valor p NO es\n- **No** es la probabilidad de que H₀ sea cierta.\n- **No** mide el tamaño ni la importancia práctica de la diferencia.\n- Un valor p de 0.06 no significa \"casi significativo\" en un sentido mágico; significa que la evidencia no alcanzó el umbral que tú mismo fijaste.\n\n### \"No rechazar\" no es \"aceptar\"\nSi no rechazas H₀, **no** has demostrado que no hay diferencia. Solo que los datos no fueron suficientes para detectarla. Con pocos datos, casi nada resulta significativo. Para demostrar **equivalencia** (por ejemplo, que dos métodos dan lo mismo dentro de un margen) se usan pruebas de equivalencia, que verás más adelante.\n\n## Los dos errores\n| | H₀ es cierta | H₀ es falsa |\n|---|---|---|\n| Rechazas H₀ | **Error tipo I** (falsa alarma), probabilidad α | Decisión correcta (potencia = 1 − β) |\n| No rechazas H₀ | Decisión correcta | **Error tipo II** (no detectar), probabilidad β |\n\n- **Error tipo I**: concluir que hay diferencia cuando no la hay. Ejemplo: rechazar un proveedor bueno.\n- **Error tipo II**: no detectar una diferencia real. Ejemplo: aceptar un proveedor que da menor pureza.\n- **Potencia** (1 − β): la probabilidad de detectar una diferencia real de un tamaño dado.\n\nReducir α (ser más exigente) aumenta β si no cambias nada más. La forma de reducir ambos es **aumentar el tamaño de muestra** o **reducir la variabilidad** (por ejemplo, con un mejor método analítico).\n\n## Significancia estadística y significancia práctica\nCon suficientes datos, **cualquier** diferencia, por minúscula que sea, se vuelve estadísticamente significativa. Si comparas 500 lotes de dos turnos y encuentras una diferencia de 0.01 % en la concentración con p = 0.001, la diferencia es real pero probablemente **irrelevante**.\n\nPor eso, siempre reporta:\n\n1. La **diferencia estimada** con su **intervalo de confianza**.\n2. El **valor p**.\n3. Una valoración de la **importancia práctica**, comparando con lo que importa (la tolerancia de la especificación, el efecto en el cliente).\n\nAntes de recoger datos, define **qué diferencia importa** (por ejemplo, 0.1 % de concentración). Eso te permite calcular el tamaño de muestra necesario para detectarla.\n\n## Prueba t de una muestra\nCompara la media de una muestra con un valor de referencia μ₀.\n\nt = (x̄ − μ₀) / (s/√n), con n − 1 grados de libertad.\n\n**Ejemplo**: ¿la media del proceso difiere del objetivo de 15.00 %? Diez lotes: x̄ = 15.06, s = 0.087.\n\nt = (15.06 − 15.00) / (0.087/√10) = 0.06 / 0.0275 ≈ **2.17**; 9 grados de libertad; valor p (dos colas) ≈ **0.058**.\n\nCon α = 0.05, **no se rechaza** H₀. Pero observa: el valor p está cerca del umbral, el intervalo de confianza (15.00 a 15.12) apenas toca el objetivo, y con diez datos la potencia para detectar una diferencia de 0.06 es limitada. La conclusión honesta: no hay evidencia suficiente para afirmar que el proceso está descentrado, pero los datos sugieren vigilarlo y recoger más.\n\n## Prueba t de dos muestras independientes\nCompara las medias de dos grupos independientes (dos turnos, dos proveedores, dos equipos).\n\n**Ejemplo**: concentración por turno.\n\n- Turno A: n = 8, x̄ = 15.02, s = 0.07.\n- Turno B: n = 8, x̄ = 15.12, s = 0.08.\n\nDiferencia de medias: −0.10.\n\n### Varianzas iguales o no\n- Si se puede suponer que las varianzas son iguales, se usa una desviación estándar combinada (prueba t clásica).\n- Si no, se usa la **prueba t de Welch**, que no supone varianzas iguales. Es la opción por defecto recomendable: pierde muy poco cuando las varianzas son iguales y protege cuando no lo son.\n\nCon Welch: t ≈ **−2.66**, valor p ≈ **0.019**. Se rechaza H₀: hay evidencia de que los turnos producen con medias distintas. La diferencia de 0.10 % es una décima parte de la tolerancia total de una especificación de 14.5 a 15.5 %, así que también tiene importancia práctica. Siguiente paso: investigar qué hace distinto cada turno.\n\n## Prueba t pareada\nCuando cada observación de un grupo está **emparejada** con una del otro (la misma muestra analizada por dos métodos, el mismo lote antes y después de un tratamiento), se analizan las **diferencias** dentro de cada par con una prueba t de una muestra contra cero.\n\n**Ejemplo**: seis muestras de producto analizadas por el laboratorio interno y por un laboratorio externo. Diferencias (externo − interno): 0.05, 0.08, 0.03, 0.06, 0.07, 0.04.\n\nMedia de las diferencias = 0.055; s = 0.0187; t = 0.055 / (0.0187/√6) ≈ **7.2**; 5 grados de libertad; valor p ≈ **0.0008**.\n\nHay un **sesgo** sistemático: el laboratorio externo reporta, en promedio, unas 0.055 unidades más. Si se hubieran analizado los datos como dos muestras independientes, la variación entre muestras (que puede ser grande) habría ocultado este sesgo. El emparejamiento **elimina** la variación entre unidades y aumenta mucho la potencia.\n\n**Regla**: si los datos vienen en pares naturales, usa la prueba pareada.\n\n## Supuestos de la prueba t\n- **Independencia** de las observaciones (dentro y entre grupos, salvo en la pareada).\n- **Normalidad** aproximada de los datos (o de las diferencias, en la pareada). La prueba t es bastante **robusta** a desviaciones moderadas, sobre todo con muestras de tamaño similar y no muy pequeñas.\n- Sin valores atípicos extremos que dominen el resultado.\n\nRevisa siempre una gráfica de los datos antes de la prueba.\n\n## Una o dos colas\n- **Dos colas**: H₁ es \"diferente\" (mayor o menor). Es la opción por defecto.\n- **Una cola**: H₁ es solo \"mayor\" o solo \"menor\". Se usa solo si la dirección se define **antes** de ver los datos y si una diferencia en la otra dirección no tendría ninguna consecuencia. Elegir una cola después de ver los datos para obtener significancia es una mala práctica.\n\n## Pruebas múltiples\nSi haces 20 pruebas con α = 0.05 y en realidad no hay ninguna diferencia, esperarías en promedio **una** falsa alarma. Cuando compares muchos grupos, usa métodos diseñados para ello (ANOVA con comparaciones múltiples, capítulo 6) o ajusta α (por ejemplo, la corrección de Bonferroni: α/k).\n\n## Equivalencia: demostrar que algo es igual\nPara demostrar que un método nuevo es equivalente al anterior, o que un proveedor nuevo es equivalente al actual, se define un **margen de equivalencia** (por ejemplo, ± 0.1 %) y se usa el procedimiento **TOST** (dos pruebas de una cola): se concluye equivalencia si el intervalo de confianza de 90 % de la diferencia cae **completamente dentro** del margen. Es la forma correcta de responder \"¿son iguales?\", en lugar de no rechazar H₀ en una prueba t clásica.\n\n## Ideas que debes llevarte\n- **H₀** es \"no hay diferencia\"; el **valor p** es la probabilidad de un resultado tan extremo si H₀ fuera cierta.\n- **No rechazar** H₀ no demuestra que no hay diferencia.\n- **Error tipo I** (falsa alarma, α) y **tipo II** (no detectar, β); la **potencia** crece con n y con menor variabilidad.\n- Reporta la **diferencia con su intervalo** y valora la **importancia práctica**.\n- **t de una muestra** contra un valor; **t de Welch** para dos grupos independientes; **t pareada** para pares naturales.\n- Usa **dos colas** salvo justificación previa; cuida las **pruebas múltiples**.\n- Para demostrar igualdad, usa **pruebas de equivalencia** (TOST).",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Valor p",
+     "enunciado": "¿Qué es el valor p?",
+     "opciones": [
+      "La probabilidad de obtener un resultado al menos tan extremo como el observado si H₀ fuera cierta",
+      "La probabilidad de que H₀ sea cierta",
+      "La probabilidad de que H₁ sea cierta",
+      "El tamaño de la diferencia"
+     ],
+     "correcta": 0,
+     "explicacion": "No mide la probabilidad de las hipótesis ni la importancia práctica.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No rechazar",
+     "enunciado": "Una prueba t da p = 0.30 al comparar dos proveedores. ¿Qué se puede concluir?",
+     "opciones": [
+      "No hay evidencia suficiente de diferencia; no se ha demostrado que sean iguales",
+      "Los proveedores son iguales",
+      "El proveedor nuevo es mejor",
+      "La prueba está mal hecha"
+     ],
+     "correcta": 0,
+     "explicacion": "Para demostrar igualdad dentro de un margen se usan pruebas de equivalencia.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Errores",
+     "enunciado": "Se rechaza un proveedor por una diferencia que en realidad no existe. ¿Qué tipo de error es?",
+     "opciones": [
+      "Error tipo I",
+      "Error tipo II",
+      "Error de muestreo",
+      "No es un error"
+     ],
+     "correcta": 0,
+     "explicacion": "Tipo I: falsa alarma, rechazar H₀ siendo cierta.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Potencia",
+     "enunciado": "¿Cómo se aumenta la potencia de una prueba sin aumentar α?",
+     "opciones": [
+      "Aumentando el tamaño de muestra o reduciendo la variabilidad de la medición",
+      "Reduciendo el tamaño de muestra",
+      "Cambiando a una cola después de ver los datos",
+      "Eliminando datos atípicos sin investigar"
+     ],
+     "correcta": 0,
+     "explicacion": "Más datos o menos ruido aumentan la probabilidad de detectar una diferencia real.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Significancia práctica",
+     "enunciado": "Con 500 lotes por turno, una diferencia de 0.01 % resulta significativa (p = 0.001) en una especificación de 14.5 a 15.5 %. ¿Qué se concluye?",
+     "opciones": [
+      "La diferencia es real pero probablemente irrelevante en la práctica",
+      "Hay que detener la producción",
+      "El turno debe recapacitarse de inmediato",
+      "El valor p indica una diferencia grande"
+     ],
+     "correcta": 0,
+     "explicacion": "Con muchos datos cualquier diferencia se vuelve significativa; hay que valorar su importancia práctica.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "t de una muestra",
+     "enunciado": "x̄ = 10.4, μ₀ = 10.0, s = 0.8, n = 16. ¿Cuál es el estadístico t?",
+     "opciones": [
+      "2.0",
+      "0.5",
+      "8.0",
+      "0.2"
+     ],
+     "correcta": 0,
+     "explicacion": "t = (10.4 − 10.0) / (0.8/√16) = 0.4/0.2 = 2.0.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Welch",
+     "enunciado": "¿Por qué se recomienda la prueba t de Welch por defecto para dos grupos independientes?",
+     "opciones": [
+      "Porque no supone varianzas iguales y pierde muy poco cuando sí lo son",
+      "Porque siempre da valores p más pequeños",
+      "Porque no requiere datos",
+      "Porque es una prueba no paramétrica"
+     ],
+     "correcta": 0,
+     "explicacion": "Protege cuando las varianzas difieren.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pareada",
+     "enunciado": "Seis muestras se analizan con el método A y con el método B. ¿Qué prueba corresponde?",
+     "opciones": [
+      "Prueba t pareada sobre las diferencias",
+      "Prueba t de dos muestras independientes",
+      "Prueba chi-cuadrado",
+      "Prueba F"
+     ],
+     "correcta": 0,
+     "explicacion": "Los datos están emparejados por muestra; el emparejamiento elimina la variación entre muestras.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Una cola",
+     "enunciado": "¿Cuándo es apropiada una prueba de una cola?",
+     "opciones": [
+      "Cuando la dirección se definió antes de ver los datos y una diferencia en la otra dirección no tendría consecuencia",
+      "Cuando la prueba de dos colas no fue significativa",
+      "Siempre, porque es más potente",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "Elegir una cola después de ver los datos es una mala práctica.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pruebas múltiples",
+     "enunciado": "Haces 20 comparaciones independientes con α = 0.05 y no hay ninguna diferencia real. ¿Cuántas falsas alarmas esperas en promedio?",
+     "opciones": [
+      "1",
+      "0",
+      "5",
+      "20"
+     ],
+     "correcta": 0,
+     "explicacion": "20 × 0.05 = 1. Por eso se usan ANOVA con comparaciones múltiples o correcciones como Bonferroni.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equivalencia",
+     "enunciado": "En TOST, ¿cuándo se concluye equivalencia con un margen de ± 0.1?",
+     "opciones": [
+      "Cuando el intervalo de confianza de 90 % de la diferencia cae completamente dentro de −0.1 a 0.1",
+      "Cuando p > 0.05 en una prueba t clásica",
+      "Cuando la diferencia de medias es exactamente cero",
+      "Cuando el intervalo de 95 % incluye el cero"
+     ],
+     "correcta": 0,
+     "explicacion": "TOST equivale a dos pruebas de una cola con α = 0.05 cada una.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Planteamiento",
+     "enunciado": "Quieres saber si un nuevo proveedor de ácido cítrico da un producto con distinto pH final. Plantea H₀, H₁, la prueba adecuada, α y qué reportarías.",
+     "respuesta_modelo": "H₀: la media del pH final es igual con ambos proveedores. H₁: es diferente (dos colas). Diseño: fabricar varios lotes con cada proveedor (idealmente aleatorizando el orden) o, mejor, emparejar si es posible (mismo lote base dividido). Prueba: t de Welch para grupos independientes, o t pareada si los datos están emparejados. α = 0.05 definido antes. Reportaría la diferencia de medias con su intervalo de confianza, el valor p y la comparación con la diferencia de pH que importa (definida antes, por ejemplo 0.1 unidades). Si el objetivo es demostrar que son equivalentes, usaría TOST con ese margen.",
+     "puntos_clave": [
+      "H₀ y H₁ correctas",
+      "Prueba adecuada según el diseño",
+      "α definido antes",
+      "Reporte con intervalo, valor p y relevancia práctica o equivalencia"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Interpretación",
+     "enunciado": "Un análisis da p = 0.058 al comparar la media del proceso con el objetivo, con 10 lotes. El jefe concluye 'el proceso está perfectamente centrado'. Corrige la conclusión.",
+     "respuesta_modelo": "Con α = 0.05 no se rechaza H₀, pero eso no demuestra que el proceso esté centrado: solo que con diez lotes no hay evidencia suficiente de descentrado. El valor p está cerca del umbral y el intervalo de confianza de la media apenas incluye el objetivo, lo que sugiere un posible descentrado pequeño que la muestra no tiene potencia para confirmar. La conclusión adecuada es: no se detectó una diferencia significativa; conviene recoger más datos (o vigilar con una gráfica de control) y evaluar si una diferencia del tamaño observado importaría en la práctica.",
+     "puntos_clave": [
+      "No rechazar no es aceptar",
+      "Valor p cercano al umbral e intervalo",
+      "Potencia limitada con n = 10",
+      "Recomendación de más datos y relevancia práctica"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Pareada",
+     "enunciado": "Explica por qué una comparación entre dos laboratorios con las mismas muestras debe analizarse con una prueba pareada y qué pasaría si se analiza como dos grupos independientes.",
+     "respuesta_modelo": "Cada muestra se analiza en ambos laboratorios, así que las observaciones forman pares. La variación entre muestras (distintas concentraciones) afecta igual a ambos laboratorios; al analizar las diferencias dentro de cada par, esa variación se cancela y solo queda la diferencia entre laboratorios más el ruido analítico. Si se analizan como grupos independientes, la variación entre muestras se suma al error, el estadístico t se reduce y un sesgo real entre laboratorios puede quedar oculto (error tipo II). En el ejemplo del capítulo, la prueba pareada detectó un sesgo de 0.055 con p ≈ 0.0008.",
+     "puntos_clave": [
+      "Datos emparejados por muestra",
+      "Cancelación de la variación entre muestras",
+      "Pérdida de potencia si se ignora el emparejamiento",
+      "Riesgo de no detectar el sesgo"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Pruebas de hipótesis II: varianzas, ANOVA, proporciones y no paramétricas",
+   "texto": "## Más allá de comparar dos medias\nLa prueba t compara dos medias. En la práctica necesitas también comparar **variabilidades** (¿el nuevo equipo dosifica con menos variación?), comparar **más de dos grupos** (¿los tres tanques de mezcla dan lo mismo?), comparar **proporciones** (¿el nuevo envase tiene menos fugas?) y trabajar con datos que **no son normales**. Este capítulo cubre esas herramientas.\n\n## Comparar varianzas\nEn calidad, la variación suele importar tanto como la media o más. Un equipo nuevo que dosifica con la misma media pero con la mitad de la desviación estándar es una mejora real.\n\n### Prueba F\nCompara dos varianzas con el cociente:\n\nF = s₁² / s₂²\n\nBajo H₀ (varianzas iguales), F sigue una distribución F con (n₁ − 1, n₂ − 1) grados de libertad.\n\n**Ejemplo**: equipo de dosificación anterior, s = 0.12 (n = 10); equipo nuevo, s = 0.06 (n = 10). F = (0.12/0.06)² = **4.0**. El valor crítico de dos colas con α = 0.05 y (9, 9) grados de libertad es aproximadamente 4.03. El resultado está justo en el límite: con diez datos por grupo, ni siquiera reducir la desviación estándar a la mitad se demuestra con claridad. Comparar variabilidades **requiere más datos** que comparar medias.\n\n### Prueba de Levene\nLa prueba F es **muy sensible** a la falta de normalidad. La **prueba de Levene** (o su variante de Brown-Forsythe, basada en medianas) es más robusta y es la que conviene usar por defecto, también para más de dos grupos.\n\n## ANOVA de un factor\n### Por qué no hacer muchas pruebas t\nPara comparar tres tanques, podrías hacer tres pruebas t (A con B, A con C, B con C). Pero el riesgo de al menos una falsa alarma aumenta con el número de comparaciones. El **análisis de varianza (ANOVA)** prueba en un solo paso si hay alguna diferencia entre las medias de varios grupos.\n\n### La idea\nEl ANOVA descompone la variación total en dos partes:\n\n- **Variación entre grupos**: cuánto difieren las medias de los grupos entre sí.\n- **Variación dentro de los grupos**: el ruido dentro de cada grupo.\n\nSi la variación entre grupos es grande comparada con la variación dentro de los grupos, las medias probablemente difieren. El estadístico es:\n\nF = CM entre / CM dentro\n\ndonde CM es el cuadrado medio (suma de cuadrados dividida entre sus grados de libertad).\n\n### Ejemplo\nConcentración (%) de cinco lotes fabricados en cada uno de tres tanques:\n\n| Tanque | Datos | Media | s |\n|---|---|---|---|\n| A | 15.02, 15.06, 14.98, 15.04, 15.00 | 15.02 | 0.032 |\n| B | 15.10, 15.14, 15.08, 15.12, 15.16 | 15.12 | 0.032 |\n| C | 15.03, 14.99, 15.05, 15.01, 15.07 | 15.03 | 0.032 |\n\nMedia general: 15.057.\n\nTabla ANOVA:\n\n| Fuente | SC | gl | CM | F |\n|---|---|---|---|---|\n| Entre tanques | 0.0303 | 2 | 0.0152 | 15.2 |\n| Dentro (error) | 0.0120 | 12 | 0.0010 | |\n| Total | 0.0423 | 14 | | |\n\nValor p ≈ **0.0005**. Se rechaza H₀: al menos un tanque produce con una media distinta.\n\n### Comparaciones múltiples\nEl ANOVA dice que **hay** diferencias, no **cuáles**. Para eso se usan pruebas de comparaciones múltiples que controlan el error global, como la de **Tukey**. En el ejemplo:\n\n- A frente a B: diferencia −0.10, significativa.\n- C frente a B: diferencia −0.09, significativa.\n- A frente a C: diferencia −0.01, no significativa.\n\nConclusión: el **tanque B** produce con una concentración unas 0.1 unidades mayor que los otros dos. Siguiente paso técnico: investigar por qué (calibración de su celda de carga, volumen muerto, orden de carga, temperatura).\n\n### Supuestos del ANOVA\n- Observaciones **independientes**.\n- Residuos aproximadamente **normales**.\n- **Varianzas similares** entre grupos (verificar con Levene). Si no, usar ANOVA de **Welch**.\n\nRevisa los **residuos** (cada dato menos la media de su grupo) con una gráfica de probabilidad normal y una gráfica contra los valores ajustados.\n\n### Más de un factor\nSi quieres estudiar dos factores a la vez (por ejemplo, tanque y turno), se usa un **ANOVA de dos factores**, que además puede detectar **interacciones** (que el efecto del turno dependa del tanque). Es la base del diseño de experimentos (capítulo 14).\n\n## Comparar proporciones\n### Dos proporciones\n**Ejemplo**: envase actual, 12 fugas en 400 (3.0 %); envase nuevo, 4 fugas en 400 (1.0 %).\n\nCon la prueba z para dos proporciones (o, de forma equivalente, la prueba chi-cuadrado en una tabla de 2 × 2): z ≈ **2.02**, valor p ≈ **0.043**. Con α = 0.05, hay evidencia de que el envase nuevo tiene menos fugas.\n\nObserva que hicieron falta 800 envases para detectar una diferencia de tres veces en una proporción pequeña. Los datos de atributos necesitan **muestras grandes**.\n\n### Tablas de contingencia: chi-cuadrado\nPara más categorías (por ejemplo, tipo de defecto por línea de envasado), la **prueba chi-cuadrado de independencia** evalúa si la distribución de una variable depende de la otra. Requisito práctico: las frecuencias **esperadas** deben ser suficientes (una regla común es que ninguna sea menor de 5); si no, usar la **prueba exacta de Fisher**.\n\n## Pruebas no paramétricas\nCuando los datos no son normales y no se pueden transformar razonablemente, o cuando son ordinales (calificaciones de un panel), se usan pruebas **no paramétricas**, que trabajan con **rangos** (el orden de los datos) en lugar de los valores:\n\n| Situación | Paramétrica | No paramétrica |\n|---|---|---|\n| Una muestra o pares | t de una muestra o pareada | Wilcoxon de rangos con signo |\n| Dos grupos independientes | t de dos muestras | Mann-Whitney (Wilcoxon de suma de rangos) |\n| Más de dos grupos | ANOVA de un factor | Kruskal-Wallis |\n| Correlación | Pearson | Spearman |\n\nVentajas: no suponen normalidad y son robustas a atípicos. Desventajas: algo menos potentes cuando los datos sí son normales, y comparan principalmente posiciones (medianas) más que medias.\n\n## Elegir la prueba\nUn árbol práctico:\n\n1. ¿Qué comparas? Medias, variabilidad o proporciones.\n2. ¿Cuántos grupos? Uno (contra un valor), dos o más.\n3. ¿Los datos están **emparejados**?\n4. ¿Los datos son aproximadamente **normales** (o lo son los residuos)?\n\n| Comparar | 1 grupo | 2 grupos | > 2 grupos |\n|---|---|---|---|\n| Medias, normal | t de una muestra | t de Welch o pareada | ANOVA |\n| Medias, no normal | Wilcoxon | Mann-Whitney | Kruskal-Wallis |\n| Variabilidad | Chi-cuadrado | F o Levene | Levene |\n| Proporciones | Binomial | z o chi-cuadrado | Chi-cuadrado |\n\n## Advertencias finales\n- **Diseña antes de analizar**: define la pregunta, la diferencia que importa, el tamaño de muestra y la prueba antes de recoger datos.\n- **Aleatoriza** el orden de las corridas cuando comparas tratamientos, para que factores no controlados (temperatura del día, desgaste de un equipo) no se confundan con el efecto.\n- **No busques significancia** probando muchas pruebas hasta encontrar una favorable.\n- Las pruebas no reemplazan el **conocimiento del proceso**: un resultado significativo sin explicación física merece escepticismo y verificación.\n\n## Ideas que debes llevarte\n- Comparar **variabilidad** requiere más datos; usa **Levene** por su robustez.\n- El **ANOVA** compara varias medias en un solo paso; **Tukey** dice cuáles difieren.\n- Revisa los **supuestos** con los residuos; usa ANOVA de Welch si las varianzas difieren.\n- Compara **proporciones** con z o chi-cuadrado; los atributos requieren **muestras grandes**.\n- Las pruebas **no paramétricas** (Wilcoxon, Mann-Whitney, Kruskal-Wallis, Spearman) sirven para datos no normales u ordinales.\n- Elige la prueba según qué comparas, cuántos grupos, si hay emparejamiento y la normalidad; **diseña antes de analizar** y **aleatoriza**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Prueba F",
+     "enunciado": "s₁ = 0.20 y s₂ = 0.10. ¿Cuál es el estadístico F = s₁²/s₂²?",
+     "opciones": [
+      "4.0",
+      "2.0",
+      "0.5",
+      "0.1"
+     ],
+     "correcta": 0,
+     "explicacion": "(0.20/0.10)² = 4.0.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Levene",
+     "enunciado": "¿Por qué se prefiere la prueba de Levene a la prueba F para comparar varianzas?",
+     "opciones": [
+      "Porque es más robusta a la falta de normalidad",
+      "Porque siempre detecta diferencias",
+      "Porque no requiere datos",
+      "Porque compara medias"
+     ],
+     "correcta": 0,
+     "explicacion": "La prueba F es muy sensible a la no normalidad.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Variabilidad",
+     "enunciado": "Con 10 datos por grupo, reducir la desviación estándar a la mitad apenas alcanza significancia. ¿Qué lección deja?",
+     "opciones": [
+      "Comparar variabilidades requiere más datos que comparar medias",
+      "Las varianzas no se pueden comparar",
+      "Hay que usar una cola siempre",
+      "La prueba F es incorrecta"
+     ],
+     "correcta": 0,
+     "explicacion": "Las estimaciones de varianza son muy inciertas con pocos datos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ANOVA",
+     "enunciado": "¿Por qué se usa ANOVA en lugar de varias pruebas t para comparar cuatro tanques?",
+     "opciones": [
+      "Porque varias pruebas t aumentan el riesgo de al menos una falsa alarma",
+      "Porque las pruebas t no funcionan con más de 5 datos",
+      "Porque ANOVA no tiene supuestos",
+      "Porque ANOVA compara varianzas"
+     ],
+     "correcta": 0,
+     "explicacion": "Con cuatro grupos habría seis comparaciones por pares.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ANOVA",
+     "enunciado": "En un ANOVA, ¿qué compara el estadístico F?",
+     "opciones": [
+      "La variación entre grupos con la variación dentro de los grupos",
+      "Las medias de dos grupos",
+      "Las varianzas de dos métodos",
+      "Las proporciones"
+     ],
+     "correcta": 0,
+     "explicacion": "F = CM entre / CM dentro.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo ANOVA",
+     "enunciado": "SC entre = 0.030 con 2 gl; SC dentro = 0.012 con 12 gl. ¿Cuál es F?",
+     "opciones": [
+      "15",
+      "2.5",
+      "0.4",
+      "30"
+     ],
+     "correcta": 0,
+     "explicacion": "CM entre = 0.015; CM dentro = 0.001; F = 15.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tukey",
+     "enunciado": "Un ANOVA da p = 0.0005. ¿Qué falta para saber qué grupos difieren?",
+     "opciones": [
+      "Comparaciones múltiples como Tukey",
+      "Nada, el ANOVA lo dice",
+      "Repetir el ANOVA",
+      "Una prueba de normalidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El ANOVA indica que hay alguna diferencia, no cuál.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Supuestos",
+     "enunciado": "Si los grupos de un ANOVA tienen varianzas muy distintas, ¿qué conviene usar?",
+     "opciones": [
+      "ANOVA de Welch",
+      "Prueba t de una muestra",
+      "Prueba chi-cuadrado",
+      "Ninguna prueba"
+     ],
+     "correcta": 0,
+     "explicacion": "El ANOVA clásico supone varianzas similares.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporciones",
+     "enunciado": "¿Qué prueba compara la proporción de envases con fuga entre dos tipos de envase?",
+     "opciones": [
+      "Prueba z de dos proporciones o chi-cuadrado en tabla 2 × 2",
+      "Prueba t pareada",
+      "ANOVA",
+      "Prueba F"
+     ],
+     "correcta": 0,
+     "explicacion": "Son equivalentes para dos proporciones.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Chi-cuadrado",
+     "enunciado": "En una tabla de contingencia, varias frecuencias esperadas son menores de 5. ¿Qué conviene?",
+     "opciones": [
+      "Usar la prueba exacta de Fisher",
+      "Usar chi-cuadrado sin cambios",
+      "Eliminar esas celdas",
+      "Usar ANOVA"
+     ],
+     "correcta": 0,
+     "explicacion": "La aproximación chi-cuadrado no es confiable con frecuencias esperadas pequeñas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No paramétricas",
+     "enunciado": "¿Qué prueba no paramétrica compara más de dos grupos independientes?",
+     "opciones": [
+      "Kruskal-Wallis",
+      "Mann-Whitney",
+      "Wilcoxon de rangos con signo",
+      "Spearman"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la alternativa no paramétrica al ANOVA de un factor.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aleatorización",
+     "enunciado": "¿Por qué se aleatoriza el orden de las corridas al comparar tratamientos?",
+     "opciones": [
+      "Para que factores no controlados no se confundan con el efecto del tratamiento",
+      "Para que los resultados sean significativos",
+      "Para reducir el tamaño de muestra",
+      "Por costumbre"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, el desgaste de un equipo o la temperatura del día.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Elección de prueba",
+     "enunciado": "Para cada situación elige la prueba: a) comparar la viscosidad media de tres proveedores con datos normales; b) comparar la mediana de calificaciones de olor (1 a 5) entre dos fórmulas; c) comparar la proporción de lotes rechazados entre dos plantas; d) comparar si un equipo nuevo reduce la variabilidad del llenado.",
+     "respuesta_modelo": "a) ANOVA de un factor (con Tukey si es significativo; Welch si las varianzas difieren). b) Mann-Whitney, porque son datos ordinales de dos grupos independientes. c) Prueba z de dos proporciones o chi-cuadrado en tabla 2 × 2 (Fisher si las frecuencias esperadas son pequeñas). d) Prueba de Levene (o F si los datos son claramente normales), con suficientes datos.",
+     "puntos_clave": [
+      "ANOVA para a",
+      "Mann-Whitney para b",
+      "z o chi-cuadrado para c",
+      "Levene o F para d"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Interpretación ANOVA",
+     "enunciado": "En el ejemplo de los tres tanques, el tanque B produce 0.1 % más alto. Explica cómo pasarías del resultado estadístico a una acción técnica.",
+     "respuesta_modelo": "El resultado estadístico solo dice que B difiere; hay que encontrar la causa física. Revisaría: calibración de la celda de carga o del medidor de flujo de B, volumen muerto o retención en el tanque, orden y forma de carga, temperatura, tiempo de mezclado, punto y forma de muestreo, y si el método de análisis se aplicó igual. Haría pruebas controladas (por ejemplo, verificar la celda de carga con pesas patrón). Una vez identificada la causa, la corregiría, verificaría con nuevos lotes que la diferencia desaparece y revisaría si los lotes anteriores cumplen especificación.",
+     "puntos_clave": [
+      "Lo estadístico no da la causa",
+      "Hipótesis técnicas concretas",
+      "Pruebas de verificación",
+      "Corrección y verificación posterior"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Atributos",
+     "enunciado": "Un proveedor afirma que su envase reduce las fugas de 2 % a 1 %. ¿Cuántos envases aproximadamente necesitarías por grupo para detectarlo? Razona sin fórmula exacta y explica por qué.",
+     "respuesta_modelo": "Se necesitan muchos: con proporciones pequeñas, la variación binomial es grande comparada con la diferencia. En el ejemplo del capítulo, con 400 por grupo se detectó con dificultad una diferencia de 3 % a 1 % (p ≈ 0.043). Para detectar una diferencia de 2 % a 1 %, más pequeña, harían falta probablemente más de mil envases por grupo para tener una potencia razonable (del orden de 2 300 por grupo para 80 % de potencia con α = 0.05). Por eso conviene, cuando sea posible, medir una variable continua relacionada (por ejemplo, el torque de cierre o una prueba de presión) que requiere muestras mucho menores.",
+     "puntos_clave": [
+      "Las proporciones pequeñas requieren muestras grandes",
+      "Orden de magnitud de miles",
+      "Referencia al ejemplo",
+      "Alternativa con variable continua"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Correlación, regresión y curvas de calibración",
+   "texto": "## Relaciones entre variables\nMuchas preguntas de calidad son sobre **relaciones**: ¿la pérdida de cloro disponible depende de la temperatura de almacenamiento?, ¿la viscosidad depende de la concentración de espesante?, ¿la respuesta del espectrofotómetro es proporcional a la concentración? La **correlación** mide la fuerza de una relación lineal; la **regresión** construye un modelo que permite predecir una variable a partir de otra. En el laboratorio, la aplicación más frecuente es la **curva de calibración**.\n\n## Diagrama de dispersión primero\nAntes de calcular, grafica una variable contra la otra. El diagrama de dispersión muestra:\n\n- Si la relación es **lineal**, curva o inexistente.\n- Si hay **atípicos** o puntos influyentes.\n- Si la **dispersión** cambia con el nivel (por ejemplo, más dispersión a concentraciones altas).\n- Si hay **grupos** distintos.\n\n## Coeficiente de correlación\nEl coeficiente de correlación de Pearson, **r**, va de −1 a +1:\n\n- r cercano a +1: relación lineal positiva fuerte.\n- r cercano a −1: relación lineal negativa fuerte.\n- r cercano a 0: no hay relación **lineal** (puede haber una relación curva).\n\n### Errores comunes\n- **Correlación no es causalidad**. La pérdida de activo y las quejas pueden correlacionar porque ambas aumentan en verano, no porque una cause la otra. Una tercera variable (la temperatura) puede explicar ambas.\n- **r alto no significa lineal**. Una relación ligeramente curva puede dar r = 0.99.\n- **r depende del rango**. Si solo mides en un intervalo estrecho, r será bajo aunque la relación sea fuerte.\n- **Un atípico** puede crear o destruir una correlación.\n\nPara datos ordinales o con atípicos, usa la correlación de **Spearman** (basada en rangos).\n\n## Regresión lineal simple\n### El modelo\ny = b₀ + b₁x + error\n\n- **b₁** (pendiente): cuánto cambia y por cada unidad de x.\n- **b₀** (intercepto): el valor de y cuando x = 0.\n\nEl método de **mínimos cuadrados** elige b₀ y b₁ que minimizan la suma de los cuadrados de los residuos (la distancia vertical de cada punto a la recta).\n\n### Coeficiente de determinación\n**R²** es la fracción de la variación de y explicada por el modelo. En regresión simple, R² = r². Un R² de 0.80 significa que el 80 % de la variación de y se explica por x.\n\n### Significancia\nSe prueba si la pendiente es distinta de cero (prueba t sobre b₁). Un valor p pequeño indica que hay una relación lineal. Pero, de nuevo, eso no dice si la relación es fuerte o útil: mira R² y el error estándar de la regresión.\n\n### Error estándar de la regresión\ns(y/x) = √[Σ(residuos²) / (n − 2)]\n\nEs la dispersión típica de los puntos alrededor de la recta, en unidades de y. Es lo que más importa para predecir.\n\n## Revisar los residuos\nLos **residuos** (observado − predicho) dicen si el modelo es adecuado. Grafícalos contra x (o contra los valores ajustados):\n\n- **Nube aleatoria** alrededor de cero: el modelo lineal es adecuado.\n- **Forma de U** o curva: la relación no es lineal; considera un término cuadrático o una transformación.\n- **Embudo** (más dispersión a valores altos): la varianza no es constante (**heterocedasticidad**); considera regresión ponderada.\n- **Un punto muy alejado**: posible atípico o punto influyente; investígalo.\n\n## Curvas de calibración\n### El problema\nUn método instrumental (espectrofotometría, cromatografía, conductimetría) mide una **respuesta** (absorbancia, área de pico) que se relaciona con la concentración. Se preparan **estándares** de concentración conocida, se mide su respuesta, se ajusta una recta y después se usa la recta \"al revés\": a partir de la respuesta de una muestra, se calcula su concentración.\n\n### Ejemplo\nEstándares de un analito y su absorbancia:\n\n| Concentración (mg/L) | Absorbancia |\n|---|---|\n| 0 | 0.003 |\n| 2 | 0.198 |\n| 4 | 0.405 |\n| 6 | 0.596 |\n| 8 | 0.801 |\n| 10 | 0.995 |\n\nAjuste por mínimos cuadrados:\n\n- Pendiente b₁ ≈ **0.0994** absorbancia por mg/L.\n- Intercepto b₀ ≈ **0.0025**.\n- r ≈ **0.99996**.\n- Error estándar de la regresión ≈ **0.0038** unidades de absorbancia.\n\nUna muestra da absorbancia de 0.512:\n\nx = (y − b₀) / b₁ = (0.512 − 0.0025) / 0.0994 ≈ **5.12 mg/L**\n\n### La incertidumbre de la concentración calculada\nLa concentración calculada tiene incertidumbre por el ruido de la medición de la muestra y por la incertidumbre de la propia recta. La fórmula aproximada de la desviación estándar de la concentración predicha es:\n\ns(x₀) = (s(y/x) / b₁) · √[1/m + 1/n + (y₀ − ȳ)² / (b₁² · Σ(xᵢ − x̄)²)]\n\ndonde m es el número de réplicas de la muestra, n el número de estándares y ȳ la media de las respuestas de los estándares.\n\nPara el ejemplo, con una sola lectura de la muestra, s(x₀) ≈ 0.041 mg/L, y el intervalo de 95 % (t = 2.78 con 4 gl) es aproximadamente **5.12 ± 0.11 mg/L**. Observa que la incertidumbre es **menor en el centro** de la curva y mayor en los extremos: por eso conviene que las muestras caigan cerca del centro del intervalo de calibración, y nunca fuera de él (**no extrapolar**).\n\nFormas de reducir la incertidumbre: más réplicas de la muestra (m), más estándares (n), estándares bien distribuidos y un instrumento con menos ruido.\n\n### r no es suficiente para validar linealidad\nUna práctica frecuente es aceptar una curva si r ≥ 0.995 o r ≥ 0.999. Es un criterio **insuficiente**: una curva visiblemente curva puede tener r = 0.999. La linealidad se evalúa mejor con:\n\n- La **gráfica de residuos**: no debe mostrar patrón.\n- Una **prueba de falta de ajuste**, si hay réplicas en cada nivel.\n- La comparación de un modelo lineal con uno cuadrático (¿el término cuadrático es significativo?).\n- La **exactitud** de las concentraciones recalculadas de los estándares (por ejemplo, dentro de ± 2 % o el criterio del método).\n\n### El intercepto\nSi el intercepto es significativamente distinto de cero, puede indicar una interferencia, un blanco contaminado o un efecto de matriz. No lo fuerces a cero sin justificarlo: forzar la recta por el origen cuando el intercepto real no es cero introduce sesgo en las concentraciones bajas.\n\n### Efecto de matriz y adición estándar\nSi la matriz de la muestra (por ejemplo, un detergente con tensioactivos y sales) afecta la respuesta, la curva preparada en agua dará resultados sesgados. Se detecta comparando la **pendiente** de una curva en agua con una curva preparada en la matriz. Si difieren, se usa calibración en matriz o el método de **adición estándar**.\n\n## Aplicaciones en planta\n- **Estabilidad**: regresión de la concentración de activo contra el tiempo de almacenamiento para estimar la **vida útil** (el tiempo en que el límite inferior de confianza de la recta cruza el límite de especificación). Es la lógica de las guías de estabilidad.\n- **Relación de proceso**: viscosidad contra concentración de espesante para ajustar la dosificación.\n- **Correlación de métodos**: un método rápido contra el método de referencia, para justificar el uso del rápido en planta (complementar con la prueba pareada y el análisis de Bland-Altman, que grafica la diferencia contra el promedio).\n- **Conversión de unidades**: densidad contra concentración para un control en línea.\n\n## Regresión múltiple: una mirada\nCuando y depende de varias variables (por ejemplo, la pérdida de activo depende de la temperatura, el tiempo y la concentración inicial), se usa la **regresión múltiple**. Advertencias: la **colinealidad** (variables explicativas correlacionadas entre sí) hace inestables los coeficientes; y los datos **históricos** de proceso rara vez permiten separar efectos con claridad, porque las variables cambian juntas. Para separar efectos, lo mejor es un **experimento diseñado** (capítulo 14).\n\n## Ideas que debes llevarte\n- Grafica el **diagrama de dispersión** antes de calcular.\n- **r** mide relación lineal; **correlación no es causalidad**.\n- La **regresión** modela y predice; mira la pendiente, R², el **error estándar** y, sobre todo, los **residuos**.\n- En **curvas de calibración**, la concentración calculada tiene **incertidumbre**, menor en el centro; **no extrapoles**.\n- **r alto no prueba linealidad**: usa residuos, falta de ajuste y recálculo de estándares.\n- No fuerces el intercepto a cero sin justificación; vigila el **efecto de matriz**.\n- La regresión sirve para **estabilidad**, relaciones de proceso y comparación de métodos; para separar efectos, **diseña experimentos**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Correlación",
+     "enunciado": "Las quejas por baja concentración y la temperatura ambiente correlacionan con r = 0.85. ¿Qué se puede concluir?",
+     "opciones": [
+      "Hay una relación lineal fuerte, pero la correlación por sí sola no prueba la causa",
+      "La temperatura causa las quejas con certeza",
+      "No hay relación",
+      "Las quejas causan el aumento de temperatura"
+     ],
+     "correcta": 0,
+     "explicacion": "Hace falta conocimiento del proceso o un experimento para establecer causalidad.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Correlación",
+     "enunciado": "¿Qué significa un r cercano a 0?",
+     "opciones": [
+      "Que no hay relación lineal, aunque podría haber una relación curva",
+      "Que no hay ninguna relación de ningún tipo",
+      "Que la relación es perfecta",
+      "Que hay un error de cálculo"
+     ],
+     "correcta": 0,
+     "explicacion": "r solo mide la relación lineal.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "R²",
+     "enunciado": "Una regresión tiene R² = 0.64. ¿Qué significa?",
+     "opciones": [
+      "El 64 % de la variación de y se explica por x en el modelo",
+      "La pendiente es 0.64",
+      "r = 0.64",
+      "El 64 % de los datos están en la recta"
+     ],
+     "correcta": 0,
+     "explicacion": "En regresión simple, R² = r², así que r = 0.8 (en valor absoluto).",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Residuos",
+     "enunciado": "La gráfica de residuos contra x muestra una forma de U. ¿Qué indica?",
+     "opciones": [
+      "La relación no es lineal; considerar un término cuadrático o una transformación",
+      "El modelo es perfecto",
+      "La varianza es constante",
+      "Hay que eliminar los extremos"
+     ],
+     "correcta": 0,
+     "explicacion": "Un patrón sistemático en los residuos indica un modelo inadecuado.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Residuos",
+     "enunciado": "Los residuos se abren en forma de embudo a concentraciones altas. ¿Qué indica?",
+     "opciones": [
+      "Varianza no constante (heterocedasticidad); considerar regresión ponderada",
+      "Relación no lineal en forma de U",
+      "Ausencia de relación",
+      "Que los estándares son exactos"
+     ],
+     "correcta": 0,
+     "explicacion": "Es frecuente en métodos instrumentales con amplio intervalo de concentración.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Calibración",
+     "enunciado": "Pendiente 0.050 absorbancia por mg/L, intercepto 0.010. Una muestra da 0.260. ¿Cuál es su concentración?",
+     "opciones": [
+      "5.0 mg/L",
+      "5.4 mg/L",
+      "13.0 mg/L",
+      "0.25 mg/L"
+     ],
+     "correcta": 0,
+     "explicacion": "x = (0.260 − 0.010) / 0.050 = 5.0 mg/L.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Extrapolación",
+     "enunciado": "Una curva va de 0 a 10 mg/L. Una muestra da una respuesta equivalente a 14 mg/L. ¿Qué se hace?",
+     "opciones": [
+      "Diluir la muestra para que caiga dentro del intervalo de calibración",
+      "Reportar 14 mg/L extrapolando",
+      "Forzar la curva por el origen",
+      "Reportar 'mayor de 10' como resultado final sin más"
+     ],
+     "correcta": 0,
+     "explicacion": "Fuera del intervalo no se conoce la linealidad ni la incertidumbre.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre de calibración",
+     "enunciado": "¿Dónde es menor la incertidumbre de una concentración calculada con una curva de calibración?",
+     "opciones": [
+      "Cerca del centro del intervalo de calibración",
+      "En el extremo superior",
+      "En el extremo inferior",
+      "Es igual en todo el intervalo"
+     ],
+     "correcta": 0,
+     "explicacion": "El término (y₀ − ȳ)² crece al alejarse del centro.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Linealidad",
+     "enunciado": "¿Por qué r ≥ 0.999 no basta para demostrar linealidad?",
+     "opciones": [
+      "Porque una relación ligeramente curva también puede dar r muy alto; hay que revisar residuos y falta de ajuste",
+      "Porque r debe ser exactamente 1",
+      "Porque r solo aplica a atributos",
+      "Porque r mide la exactitud"
+     ],
+     "correcta": 0,
+     "explicacion": "La gráfica de residuos y el recálculo de estándares son más informativos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Intercepto",
+     "enunciado": "¿Qué riesgo tiene forzar la curva por el origen cuando el intercepto real no es cero?",
+     "opciones": [
+      "Sesgo en las concentraciones bajas",
+      "Ninguno",
+      "Aumenta la exactitud en todo el intervalo",
+      "Elimina el efecto de matriz"
+     ],
+     "correcta": 0,
+     "explicacion": "El intercepto puede reflejar interferencias o blanco; forzarlo a cero requiere justificación.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Efecto de matriz",
+     "enunciado": "¿Cómo se detecta un efecto de matriz en un método instrumental?",
+     "opciones": [
+      "Comparando la pendiente de una curva en agua con la de una curva preparada en la matriz",
+      "Calculando r",
+      "Repitiendo los estándares en agua",
+      "Midiendo el blanco una vez"
+     ],
+     "correcta": 0,
+     "explicacion": "Si las pendientes difieren, se usa calibración en matriz o adición estándar.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Estabilidad",
+     "enunciado": "Explica cómo usarías una regresión de concentración contra tiempo para estimar la vida útil de un sanitizante.",
+     "respuesta_modelo": "Se almacenan lotes en las condiciones definidas y se mide la concentración de activo a varios tiempos (por ejemplo, 0, 1, 3, 6, 9 y 12 meses). Se grafica concentración contra tiempo, se revisa que la relación sea aproximadamente lineal (o se transforma si la cinética es de primer orden, usando el logaritmo) y se ajusta la regresión. Se calcula el límite inferior de confianza (por ejemplo, de 95 %, una cola) de la recta y se determina el tiempo en que ese límite cruza el límite inferior de especificación. Ese tiempo, con un margen prudente y sin extrapolar mucho más allá de los datos, es la vida útil propuesta. Con varios lotes, se evalúa si se pueden combinar.",
+     "puntos_clave": [
+      "Diseño del estudio con tiempos",
+      "Revisión de linealidad o transformación",
+      "Uso del límite de confianza, no de la recta media",
+      "No extrapolar en exceso; varios lotes"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Linealidad",
+     "enunciado": "Una curva de calibración tiene r = 0.9993, pero los residuos son positivos en los extremos y negativos en el centro. ¿Qué concluyes y qué harías?",
+     "respuesta_modelo": "El patrón en forma de U indica curvatura: la relación no es lineal en todo el intervalo, a pesar del r alto. Las concentraciones calculadas tendrán sesgo, sobre todo en el centro y los extremos. Opciones: reducir el intervalo de calibración a la zona lineal, usar un modelo cuadrático si está justificado y validado, o revisar la causa física (saturación del detector, desviaciones de la ley de Beer a concentraciones altas, error en un estándar). Verificaría con el recálculo de los estándares y, si hay réplicas, una prueba de falta de ajuste.",
+     "puntos_clave": [
+      "Interpreta el patrón como curvatura",
+      "r alto no garantiza linealidad",
+      "Opciones de corrección",
+      "Verificación con recálculo o falta de ajuste"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Comparación de métodos",
+     "enunciado": "Quieres usar un método rápido de densidad en planta en lugar de la titulación de laboratorio para la concentración. ¿Qué análisis estadístico harías para justificarlo?",
+     "respuesta_modelo": "Analizaría el mismo conjunto de muestras (cubriendo todo el intervalo de interés) con ambos métodos. Haría una regresión de la concentración por titulación contra la densidad para construir la relación de conversión, revisando residuos y el error estándar de predicción. Luego compararía las concentraciones obtenidas por el método rápido con las de referencia con una prueba t pareada (sesgo) y una gráfica de Bland-Altman (diferencia contra promedio) para ver el acuerdo y si depende del nivel. Definiría de antemano un margen aceptable de diferencia y evaluaría la equivalencia. Consideraría también el efecto de otras variables (temperatura, otros componentes) sobre la densidad.",
+     "puntos_clave": [
+      "Mismas muestras en todo el intervalo",
+      "Regresión para la conversión con residuos",
+      "Prueba pareada y Bland-Altman",
+      "Criterio de aceptación previo y factores de influencia"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
