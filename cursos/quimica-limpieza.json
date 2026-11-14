@@ -2679,6 +2679,432 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "14",
+   "titulo": "Limpieza en sitio (CIP) y fuera de sitio (COP)",
+   "texto": "## Limpiar sin desarmar\nEn la industria láctea, de bebidas, cervecera, de jugos, de salsas y en muchas otras, la mayor parte del equipo de proceso (tanques, tuberías, intercambiadores de calor, llenadoras) se limpia **sin desarmarlo**, haciendo circular soluciones de limpieza por el mismo camino que sigue el producto. Esto es la **limpieza en sitio**, o **CIP** (clean-in-place).\n\nEl CIP no es simplemente \"pasar químico por la tubería\". Es un proceso de ingeniería en el que se controlan con precisión los cuatro factores del círculo de Sinner que viste en el capítulo 1: **química, temperatura, tiempo y acción mecánica**. Su gran ventaja es la **repetibilidad**: un CIP bien diseñado hace exactamente lo mismo cada vez, se puede automatizar, registrar y validar. Su gran riesgo es que **no se ve**: si algo falla, nadie lo nota hasta que aparece un problema de producto.\n\n## La acción mecánica en el CIP\nEn el CIP no hay cepillos. La acción mecánica la proporciona el **flujo** de la solución.\n\n### En tuberías: flujo turbulento\nEl esfuerzo cortante que la solución ejerce sobre la pared es lo que desprende la suciedad. Ese esfuerzo depende del régimen de flujo, que se caracteriza con el **número de Reynolds**:\n\nRe = ρ · v · D / μ\n\ndonde ρ es la densidad, v la velocidad, D el diámetro interno y μ la viscosidad. Por encima de Re ≈ 4000 el flujo es turbulento. Pero no basta con ser turbulento: la práctica industrial recomienda una velocidad media de **al menos 1.5 m/s** en las tuberías, que asegura un esfuerzo cortante adecuado en los diámetros típicos de proceso. Este valor es una regla empírica ampliamente usada, y lo que realmente importa es el esfuerzo cortante en la pared.\n\nUna consecuencia práctica: si un circuito tiene tramos de diámetro mayor (por ejemplo, una tubería de 3 pulgadas que se une a una de 2), el **caudal** debe calcularse para la tubería **más grande** del circuito. De lo contrario, en esa sección la velocidad cae por debajo de la necesaria.\n\n### En tanques: dispositivos de aspersión\nLos tanques no se llenan de solución; se rocían con dispositivos de aspersión:\n\n- **Bolas de aspersión estáticas** (spray balls): económicas y sin partes móviles. Limpian principalmente por la **película descendente** que escurre por las paredes. Funcionan bien con suciedad fácil de remover.\n- **Dispositivos rotatorios** de aspersión: con chorros que giran, aportan más impacto mecánico.\n- **Cabezales de chorro rotatorio de alto impacto** (con giro en dos ejes): proyectan chorros concentrados que barren toda la superficie con gran impacto. Son los indicados para suciedad difícil y tanques grandes, y suelen usar menos agua y químico.\n\nEl caudal recomendado para tanques se expresa con frecuencia por metro de circunferencia del tanque (para asegurar una película descendente continua) o según las especificaciones del fabricante del dispositivo. Igual de importante es el **drenaje**: si la bomba de retorno no saca el líquido tan rápido como entra, se forma un charco en el fondo del tanque que **reduce el impacto** y diluye la solución.\n\n### Zonas difíciles\n- **Puntos muertos** (tramos ciegos): una derivación de tubería sin flujo es casi imposible de limpiar. El diseño sanitario limita su longitud, típicamente a menos de **2 veces el diámetro** de la derivación, y orientados para que drenen.\n- **Válvulas**: las válvulas de asiento deben **pulsarse** (abrirse y cerrarse brevemente) durante el CIP para limpiar sus asientos y el espacio entre ellos. Las válvulas de doble asiento tienen cámaras de fuga que también se limpian.\n- **Intercambiadores de placas**: zonas de flujo bajo entre placas; a menudo se aumenta el caudal o se invierte el flujo.\n- **Bombas, instrumentos y juntas**.\n\n## Secuencia típica de un CIP\nLa secuencia depende del tipo de suciedad, pero un CIP completo en caliente para una planta láctea se ve así:\n\n1. **Preenjuague** con agua (a menudo recuperada del enjuague final anterior): retira hasta el **90 %** o más de la suciedad suelta. Debe hacerse pronto, antes de que la suciedad se seque.\n2. **Lavado alcalino**: sosa cáustica, comúnmente al **0.5 a 2 %**, a **70 a 85 °C**, durante **10 a 30 minutos** en el circuito (más en intercambiadores de calor). Disuelve proteína y saponifica grasa.\n3. **Enjuague intermedio**: retira el álcali y la suciedad suspendida.\n4. **Lavado ácido**: ácido nítrico o fosfórico, típicamente al **0.5 a 1.5 %**, a **60 a 70 °C**, durante **5 a 20 minutos**. Remueve minerales (piedra de leche, fosfato de calcio) y neutraliza residuos alcalinos.\n5. **Enjuague final** con agua potable de buena calidad.\n6. **Sanitización**: APA, agua caliente o, en algunos casos, vapor. Muchas plantas sanitizan **justo antes de la producción** en lugar de al final de la limpieza, para no dejar el sistema sanitizado y en reposo durante horas.\n\nVariantes comunes:\n\n- **CIP de una fase**: con productos que combinan álcali, quelantes y tensioactivos, a veces se omite la etapa ácida cuando la carga mineral es baja.\n- **CIP ácido-alcalino**: orden invertido en ciertos casos, como algunos evaporadores.\n- **CIP en frío o a temperatura moderada**: en cervecería (tanques fríos), con productos formulados para baja temperatura, a veces con enzimas.\n\nLos parámetros de esta sección son valores **típicos de la industria**. La validación del programa en tu equipo es lo que define tus parámetros reales.\n\n## Sistemas CIP\n- **De un solo uso**: la solución se prepara, se usa y se desecha. Mayor consumo de químico y agua, pero sin riesgo de contaminación cruzada entre circuitos. Útil para suciedad muy pesada o para procesos donde la contaminación cruzada es crítica.\n- **Con recuperación**: las soluciones alcalina y ácida se almacenan en tanques, se reutilizan y se **refuerzan** con concentrado según la medición de conductividad. Se recupera también el agua del enjuague final para el preenjuague siguiente. Menor costo de operación, pero las soluciones se ensucian con el tiempo y deben renovarse con criterios definidos.\n- **Híbridos**.\n\n## Control e instrumentación\nUn CIP moderno se controla y registra automáticamente:\n\n- **Conductividad**: mide la concentración de la solución química (con curvas de conductividad contra concentración, compensadas por temperatura) y detecta las **interfases** entre agua y químico para separar y recuperar.\n- **Temperatura**: en el retorno, no solo en el suministro. Lo que importa es la temperatura que alcanza la superficie más lejana del circuito.\n- **Caudal**: con caudalímetro, para verificar la velocidad mínima.\n- **Tiempo**: contado desde que se alcanzan las condiciones correctas en el retorno, no desde que arranca la bomba.\n- **Presión** en dispositivos de aspersión.\n- **Turbidez** en algunos sistemas, para optimizar el preenjuague.\n\nLos parámetros críticos del CIP (concentración, temperatura, tiempo, caudal) deben tener **límites definidos** y registrarse en cada ciclo. Si un ciclo no cumple, el sistema debe alarmar y el equipo no debe liberarse para producción. En un plan de inocuidad, el CIP de equipos críticos se gestiona a menudo como **programa de prerrequisitos operativo** o con monitoreo equivalente.\n\n## Seguridad del producto en CIP\nEl riesgo de que la solución química **contamine el producto** es real. Por eso:\n\n- Los circuitos de CIP deben **separarse físicamente** de los circuitos de producto: con piezas de unión intercambiables (paneles de transferencia), o con válvulas de **doble asiento** que permiten limpiar un circuito mientras el adyacente tiene producto sin riesgo de mezcla.\n- Debe confirmarse que no queda químico antes de producir: verificación de **conductividad o pH** del enjuague final.\n- Los programas deben evitar que un error del operador mande químico al tanque equivocado.\n\n## COP: limpieza fuera de sitio\nLas piezas que no pueden limpiarse en sitio, como partes de llenadoras, cuchillas, tolvas, válvulas desmontables, juntas, accesorios y utensilios, se limpian en **tinas o lavadoras COP** (clean-out-of-place):\n\n- **Tinas COP de recirculación**: tanques con bomba que generan turbulencia en la solución mientras las piezas están sumergidas. Las piezas deben acomodarse para que la solución llegue a todas las superficies.\n- **Lavadoras de túnel o de gabinete**: con aspersión a presión, como lavavajillas industriales.\n- **Baños de ultrasonido**: para piezas pequeñas con geometría complicada; la cavitación desprende la suciedad.\n\nLos mismos principios aplican: química, temperatura, tiempo y acción mecánica controlados y registrados. Errores comunes: sobrecargar la tina, piezas que se apilan y protegen unas a otras, temperatura sin control y soluciones agotadas.\n\n## Optimización del CIP\nUn CIP sobredimensionado desperdicia agua, energía, químico y tiempo de producción. Las oportunidades típicas de optimización son:\n\n- Preenjuague más eficaz, con detección de turbidez.\n- Recuperación de soluciones y agua.\n- Ajuste de tiempos con base en **datos de validación**, no en costumbre.\n- Cambio a dispositivos de aspersión de mayor impacto.\n- Productos formulados que permitan menos etapas o menor temperatura.\n\nPero cualquier reducción de parámetros debe **revalidarse**. Ahorrar en CIP sin datos es una de las formas más comunes de crear un problema de inocuidad.\n\n## Ideas que debes llevarte\n- El CIP controla los cuatro factores del círculo de Sinner con precisión; su ventaja es la **repetibilidad**, su riesgo es que **no se ve**.\n- En tuberías, la acción mecánica es el **flujo turbulento**: la regla práctica es **≥ 1.5 m/s**, calculada para la tubería más grande del circuito.\n- En tanques, la acción mecánica depende del **dispositivo de aspersión** y de un **drenaje** adecuado.\n- Puntos muertos, válvulas e intercambiadores son las zonas difíciles.\n- Secuencia típica: preenjuague, alcalino, enjuague, ácido, enjuague final, sanitización.\n- Conductividad, temperatura de retorno, caudal y tiempo deben **medirse, tener límites y registrarse**.\n- El circuito de CIP debe estar **separado** del producto, con verificación de ausencia de químico.\n- El **COP** aplica los mismos principios a piezas desmontadas.\n- Optimizar sí, pero siempre con **revalidación**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Acción mecánica",
+     "enunciado": "En un CIP de tuberías, ¿qué proporciona la acción mecánica?",
+     "opciones": [
+      "El esfuerzo cortante del flujo turbulento sobre la pared",
+      "La presión estática de la bomba con el circuito cerrado",
+      "La temperatura de la solución",
+      "El tiempo de contacto en reposo"
+     ],
+     "correcta": 0,
+     "explicacion": "En el CIP no hay cepillos: el flujo turbulento con velocidad suficiente genera el esfuerzo cortante que desprende la suciedad.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Velocidad",
+     "enunciado": "Un circuito CIP incluye tuberías de 2 y de 3 pulgadas. ¿Con qué diámetro se calcula el caudal necesario para lograr al menos 1.5 m/s?",
+     "opciones": [
+      "Con el de la tubería más grande, 3 pulgadas",
+      "Con el de la tubería más pequeña, 2 pulgadas",
+      "Con el promedio de ambas",
+      "El diámetro no importa, solo la presión"
+     ],
+     "correcta": 0,
+     "explicacion": "Con el mismo caudal, la velocidad es menor en la tubería de mayor diámetro. Si se calcula para la pequeña, en la grande la velocidad no alcanza el mínimo.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Velocidad",
+     "enunciado": "Por una tubería de diámetro interno 47.5 mm (aproximadamente 2 pulgadas sanitaria) circulan 10 m³/h. ¿Cuál es la velocidad aproximada?",
+     "opciones": [
+      "1.6 m/s",
+      "0.6 m/s",
+      "3.2 m/s",
+      "16 m/s"
+     ],
+     "correcta": 0,
+     "explicacion": "Área = π(0.0475)²/4 ≈ 0.00177 m². Caudal = 10/3600 ≈ 0.00278 m³/s. v = 0.00278/0.00177 ≈ 1.57 m/s.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tanques",
+     "enunciado": "En el CIP de un tanque, el retorno es lento y se acumula un charco en el fondo. ¿Qué consecuencia tiene?",
+     "opciones": [
+      "Reduce el impacto de los chorros y la eficacia de la limpieza en el fondo, además de diluir la solución",
+      "Mejora la limpieza porque el fondo queda sumergido",
+      "No tiene efecto, porque la temperatura es la misma",
+      "Solo aumenta el consumo de agua sin afectar la limpieza"
+     ],
+     "correcta": 0,
+     "explicacion": "El charco amortigua el impacto y la película descendente. El retorno debe dimensionarse para evacuar al menos lo que entra.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tanques",
+     "enunciado": "¿Cuándo conviene un cabezal de chorro rotatorio de alto impacto en lugar de una bola de aspersión estática?",
+     "opciones": [
+      "En tanques grandes o con suciedad difícil, donde se necesita impacto mecánico y no solo película descendente",
+      "En tanques pequeños con suciedad muy ligera",
+      "Nunca, porque las bolas estáticas siempre son superiores",
+      "Solo cuando no se usa químico"
+     ],
+     "correcta": 0,
+     "explicacion": "La bola estática limpia sobre todo por película descendente; el cabezal de alto impacto proyecta chorros concentrados que barren la superficie, con menor consumo de agua y químico.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Zonas difíciles",
+     "enunciado": "¿Por qué se pulsan las válvulas de asiento durante el CIP?",
+     "opciones": [
+      "Para que la solución limpie los asientos y los espacios que quedan ocultos con la válvula en una sola posición",
+      "Para aumentar la presión del circuito",
+      "Para enfriar la solución",
+      "Para medir la conductividad"
+     ],
+     "correcta": 0,
+     "explicacion": "Las superficies de sellado y las cámaras entre asientos solo reciben flujo si la válvula se abre y cierra brevemente durante el ciclo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Secuencia",
+     "enunciado": "¿Cuál es el propósito principal del preenjuague?",
+     "opciones": [
+      "Retirar la mayor parte de la suciedad suelta antes del químico, reduciendo su consumo y la carga sobre la solución",
+      "Sanitizar el equipo",
+      "Calentar el equipo a 85 °C",
+      "Pasivar el acero"
+     ],
+     "correcta": 0,
+     "explicacion": "El preenjuague puede retirar el 90 % o más de la suciedad suelta. Debe hacerse pronto, antes de que la suciedad se seque.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Secuencia",
+     "enunciado": "En un CIP lácteo en caliente, ¿qué función tiene la etapa ácida después de la alcalina?",
+     "opciones": [
+      "Remover minerales como la piedra de leche (fosfato de calcio) y neutralizar residuos alcalinos",
+      "Disolver la proteína que el álcali no pudo remover",
+      "Sanitizar con eficacia esporicida",
+      "Reemplazar el enjuague final"
+     ],
+     "correcta": 0,
+     "explicacion": "El álcali disuelve proteína y saponifica grasa; el ácido (nítrico o fosfórico) disuelve los depósitos minerales.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control",
+     "enunciado": "¿Dónde debe medirse la temperatura para controlar una etapa del CIP?",
+     "opciones": [
+      "En el retorno, porque refleja la temperatura que alcanzó el punto más alejado del circuito",
+      "En el suministro, a la salida del intercambiador",
+      "En el tanque de químico",
+      "Da igual dónde se mida"
+     ],
+     "correcta": 0,
+     "explicacion": "El suministro puede estar a 80 °C y el retorno a 60 °C. Además, el tiempo de la etapa se cuenta desde que el retorno alcanza las condiciones.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control",
+     "enunciado": "¿Para qué se usa la conductividad en un sistema CIP?",
+     "opciones": [
+      "Para medir la concentración de la solución química y detectar las interfases entre agua y químico",
+      "Para medir la carga microbiana",
+      "Para medir el caudal",
+      "Para detectar biopelículas"
+     ],
+     "correcta": 0,
+     "explicacion": "Con curvas de conductividad contra concentración, compensadas por temperatura, se controla y refuerza la solución, y se separan agua y químico en los cambios de etapa.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Seguridad del producto",
+     "enunciado": "¿Qué función cumplen las válvulas de doble asiento en una planta con CIP?",
+     "opciones": [
+      "Permiten limpiar un circuito mientras el adyacente tiene producto, con una cámara de fuga que evita la mezcla",
+      "Aumentan la velocidad del flujo de CIP",
+      "Sustituyen al enjuague final",
+      "Miden la concentración del químico"
+     ],
+     "correcta": 0,
+     "explicacion": "La cámara de fuga entre los dos asientos se drena a la atmósfera: si un asiento falla, la fuga se ve y no pasa al otro lado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diseño de ciclo",
+     "enunciado": "Diseña un ciclo CIP para un pasteurizador de placas de leche. Indica etapas, químicos, concentraciones, temperaturas y tiempos típicos, y qué variables controlarías y registrarías.",
+     "respuesta_modelo": "1) Preenjuague con agua tibia (por ejemplo, recuperada) hasta retorno claro. 2) Alcalino: sosa al 1 a 2 % con aditivos, a 75 a 85 °C, de 20 a 30 minutos o más en la sección de calentamiento, medidos desde que el retorno alcanza la temperatura. 3) Enjuague intermedio hasta conductividad de agua. 4) Ácido: nítrico o fosfórico al 0.5 a 1.5 %, a 60 a 70 °C, de 10 a 20 minutos para remover piedra de leche. 5) Enjuague final con agua potable y verificación de conductividad o pH. 6) Sanitización con APA o agua caliente antes de arrancar producción. Controlar y registrar: concentración por conductividad, temperatura en el retorno, caudal para asegurar velocidad en el diámetro mayor y flujo entre placas, tiempo en condiciones, y alarmas que impidan liberar el equipo si no se cumplen. Los valores finales se fijan por validación.",
+     "puntos_clave": [
+      "Etapas completas en orden",
+      "Parámetros típicos de álcali y ácido",
+      "Medición en retorno y tiempo en condiciones",
+      "Registro, límites, alarmas y validación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Puntos muertos",
+     "enunciado": "Durante una auditoría encuentras una derivación de tubería sin flujo de 40 cm en un circuito de 2 pulgadas, cerrada por una válvula. ¿Qué riesgo representa y qué recomendarías?",
+     "respuesta_modelo": "Es un punto muerto de unas 8 veces el diámetro; durante la producción acumula producto estancado y durante el CIP no recibe flujo turbulento, de modo que la solución no lo limpia. Es un sitio ideal para biopelícula y una fuente intermitente de contaminación. Recomendaría eliminar la derivación si no se usa, o rediseñarla para que su longitud sea menor de 2 diámetros, orientada para drenar, o incluirla en el circuito de CIP con flujo; mientras tanto, desarmarla y limpiarla manualmente con frecuencia definida, y verificar con hisopado o ATP.",
+     "puntos_clave": [
+      "Identifica punto muerto y su longitud relativa",
+      "Ausencia de flujo turbulento en el CIP",
+      "Riesgo de biopelícula y contaminación intermitente",
+      "Rediseño (< 2D, drenable) o limpieza manual verificada"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Optimización",
+     "enunciado": "La dirección quiere reducir el tiempo del CIP un 30 % para ganar producción. ¿Cómo lo abordarías técnicamente sin comprometer la inocuidad?",
+     "respuesta_modelo": "Primero, analizar datos actuales del ciclo para identificar etapas sobredimensionadas o tiempos muertos: llenado, calentamiento, interfases. Opciones: mejorar el preenjuague con turbidez, recuperar soluciones calientes para no calentar desde cero, dispositivos de aspersión de mayor impacto, ajustar caudal, usar productos formulados que permitan menos etapas o menor temperatura, y medir el tiempo desde condiciones en el retorno. Cualquier cambio de parámetros se hace como cambio controlado: protocolo de validación con verificación visual, ATP, proteína o residuos específicos, microbiología y, si aplica, inspección de zonas difíciles, en varias corridas y en el peor caso. Solo con resultados satisfactorios se aprueba el nuevo ciclo y se actualizan los límites.",
+     "puntos_clave": [
+      "Análisis de datos del ciclo actual",
+      "Medidas de optimización concretas",
+      "Gestión del cambio y revalidación",
+      "Criterios de aceptación con varias corridas y peor caso"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "COP",
+     "enunciado": "Describe tres errores comunes en la limpieza en tinas COP y cómo los corregirías.",
+     "respuesta_modelo": "1) Sobrecargar la tina o apilar piezas: la solución no llega a todas las superficies y no hay turbulencia; definir carga máxima y acomodo con canastillas. 2) Temperatura o concentración sin control: la solución se enfría o se agota; instalar control de temperatura, medir concentración por turno y renovar con criterios definidos. 3) Tiempo insuficiente o sin registro: fijar tiempos validados y registrarlos. También: piezas sin desarmar completamente, falta de enjuague y sanitización posterior, y almacenamiento de piezas limpias en lugar sucio.",
+     "puntos_clave": [
+      "Sobrecarga y acomodo",
+      "Control de temperatura y concentración",
+      "Tiempo validado y registrado",
+      "Corrección concreta de cada error"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "titulo": "Validación de eficacia, regulación y caso integrador",
+   "texto": "## Tres palabras que no son sinónimos\nEn inocuidad alimentaria se usan tres términos que en planta se confunden con frecuencia. La **Guía para la validación de medidas de control de la inocuidad de los alimentos** del Codex Alimentarius (CXG 69-2008) y la norma ISO 22000 los distinguen con claridad:\n\n- **Validación**: obtener **evidencia** de que una medida de control, o una combinación de ellas, **es capaz** de lograr el resultado esperado si se aplica correctamente. Se hace **antes** de implementar y cuando algo cambia. Pregunta: *¿este procedimiento de limpieza funciona?*\n- **Monitoreo**: secuencia planeada de **observaciones o mediciones** de parámetros para saber si la medida de control **se está aplicando como se diseñó**. Se hace en cada ciclo. Pregunta: *¿hoy se aplicó como se debía?* (concentración, temperatura, tiempo, caudal).\n- **Verificación**: confirmación, mediante evidencia objetiva, de que se cumplieron los requisitos especificados; en la práctica, comprobar **periódicamente** que el sistema sigue funcionando. Pregunta: *¿sigue funcionando?* (ATP después de la limpieza, monitoreo ambiental, revisión de registros, auditorías).\n\nUn procedimiento de limpieza que se monitorea perfectamente pero nunca se validó puede repetir con exactitud algo que no funciona.\n\n## Qué se valida en un programa de limpieza\nUn programa de saneamiento debe demostrar que remueve, según aplique:\n\n- **Suciedad visible** y residuos de producto.\n- **Microorganismos**: reducción hasta niveles aceptables, con atención a patógenos de interés y deterioradores.\n- **Alérgenos**: hasta niveles que no representen riesgo para el consumidor alérgico en el producto siguiente.\n- **Residuos de los propios químicos** de limpieza y sanitización.\n- **Otros residuos** críticos para el proceso: por ejemplo, residuos de un producto que afecten la calidad del siguiente.\n\n## Cómo se diseña una validación\n### 1. Definir el alcance y el peor caso\nNo se valida cada combinación posible de equipo y producto. Se agrupan y se elige el **peor caso**: el producto más difícil de limpiar (más proteína, más grasa, más azúcar que carameliza, mayor tendencia a quemarse), el equipo más difícil (geometría compleja, intercambiador de calor), el tiempo de proceso más largo antes de limpiar y el tiempo de espera más largo entre el fin de la producción y la limpieza. Si el procedimiento funciona en el peor caso, se justifica para los demás.\n\n### 2. Definir parámetros del procedimiento\nQuímica, concentración, temperatura, tiempo, acción mecánica y secuencia, con sus **límites**. La validación se hace en los **límites inferiores** operativos (por ejemplo, concentración y temperatura mínimas permitidas), no en las condiciones ideales.\n\n### 3. Definir los métodos de evaluación y criterios de aceptación\nAntes de empezar, no después. Los criterios deben ser **medibles** y justificados.\n\n### 4. Ejecutar en varias corridas\nLo habitual es un mínimo de **tres corridas** consecutivas exitosas, en condiciones reales de producción, para demostrar reproducibilidad.\n\n### 5. Documentar y aprobar\nProtocolo, resultados, desviaciones, conclusión y aprobación. El informe de validación es la evidencia que pedirá un auditor.\n\n### 6. Revalidar cuando algo cambia\nCambio de químico o proveedor, de concentración, de temperatura, de equipo, de producto (sobre todo si se introduce un alérgeno nuevo o un producto más difícil), de frecuencia, o resultados de verificación desfavorables.\n\n## Métodos de evaluación\n### Inspección visual\nEs el primer criterio: una superficie visiblemente sucia **no** está limpia, sin importar lo que digan otros métodos. Se hace con buena iluminación y, en CIP, con inspección de puntos accesibles (boquillas, tapas, válvulas desarmadas) y con endoscopios cuando se justifica.\n\n### Bioluminiscencia de ATP\nEl ATP está presente en todas las células vivas y en muchos residuos de alimentos. El hisopo reacciona con **luciferina-luciferasa** y la luz emitida se mide en **unidades relativas de luz (RLU)**.\n\n- Ventaja: resultado en **segundos**; permite decidir antes de arrancar la producción.\n- Limitaciones: mide **ATP total** (de alimento y de microorganismos), no microorganismos viables; las RLU **no son comparables entre marcas** de equipo; algunos alimentos tienen poco ATP (por ejemplo, ciertos productos muy procesados); residuos de sanitizantes y temperaturas extremas pueden **interferir** con la enzima.\n- Los límites de aceptación (pasa, precaución, falla) se establecen **por sitio**, con datos de la propia planta.\n\n### Pruebas de proteína\nHisopos colorimétricos que detectan proteína residual. Útiles como indicador de limpieza y como verificación general para alérgenos, aunque **no son específicos** de un alérgeno.\n\n### Pruebas específicas de alérgenos\n- **ELISA**: cuantitativa, en laboratorio, con límites de detección bajos.\n- **Inmunocromatografía de flujo lateral**: rápida, cualitativa o semicuantitativa, en planta.\n- Para la validación de limpieza de alérgenos se combinan hisopos de superficie, agua de enjuague final y, lo más importante, **análisis del primer producto** fabricado después de la limpieza.\n- El método debe ser capaz de detectar el alérgeno en la **forma procesada** (por ejemplo, proteína horneada o hidrolizada).\n\n### Microbiología\n- **Hisopos o esponjas** de superficie con recuentos de indicadores (aerobios mesófilos, coliformes, Enterobacteriaceae, levaduras y mohos).\n- **Agua de enjuague final** en CIP.\n- **Monitoreo ambiental** de patógenos (por ejemplo, *Listeria* spp. en zonas 1 a 4) para verificación.\n- El hisopo debe contener un **neutralizante** del sanitizante; de lo contrario, el sanitizante residual sigue matando en el tubo y da un resultado falsamente bajo.\n- Los resultados tardan de uno a varios días: sirven para validación y verificación, no para liberar el equipo en el momento.\n\n### Residuos químicos\n- **pH o conductividad** del agua de enjuague final, comparada con el agua de alimentación.\n- **Tiras reactivas** específicas (cuaternarios, cloro, APA, peróxido).\n- Análisis específicos en laboratorio cuando el riesgo lo requiere (por ejemplo, clorato o cuaternarios en el producto).\n\n## Eficacia del sanitizante: el laboratorio\nLa eficacia de un sanitizante como producto se demuestra con métodos estandarizados (capítulo 8). En Estados Unidos, la **EPA** registra los sanitizantes y desinfectantes como plaguicidas, bajo la ley **FIFRA**, con base en datos de eficacia obtenidos con métodos como **AOAC 960.09** (sanitizantes para superficies en contacto con alimentos: reducción de 99.999 % en 30 segundos) o métodos de desinfección como la prueba de uso de dilución de AOAC. La etiqueta registrada define usos, concentraciones, tiempos de contacto, microorganismos y si se requiere enjuague. En Europa se usan normas **EN**, como la EN 1276 (bactericida en suspensión) y la EN 13697 (en superficie), y los biocidas se autorizan bajo el Reglamento de Biocidas.\n\nRecuerda que estos métodos se hacen con condiciones definidas en laboratorio; la validación en planta confirma que el procedimiento funciona **en tus condiciones**.\n\n## El marco regulatorio y normativo que te rodea\n- **Codex Alimentarius**: los *Principios generales de higiene de los alimentos* (CXC 1-1969, revisados en 2020) establecen la limpieza y desinfección como parte de las buenas prácticas de higiene, con programas documentados, eficacia verificada y monitoreo.\n- **ISO 22000** y los **programas de prerrequisitos** de la especificación técnica correspondiente al sector (por ejemplo, ISO/TS 22002-1 para fabricación de alimentos) incluyen requisitos de limpieza y desinfección: programas definidos y validados, agentes adecuados para uso en alimentos, equipo de limpieza mantenido, verificación de eficacia.\n- **FSSC 22000** incorpora ambos y añade requisitos adicionales, por ejemplo en monitoreo ambiental y gestión de alérgenos.\n- **Estados Unidos**: la regla de controles preventivos de FSMA (21 CFR 117) incluye los **controles de saneamiento** como control preventivo cuando corresponde, con monitoreo, correcciones y verificación, incluido el monitoreo ambiental para patógenos en alimentos listos para consumo expuestos al ambiente. La FDA regula los sanitizantes en superficies en contacto con alimentos (21 CFR 178.1010) y la EPA registra el producto.\n- **México**: la **NOM-251-SSA1-2009** establece las prácticas de higiene para el proceso de alimentos, bebidas o suplementos, incluidas la limpieza y desinfección de instalaciones, equipo y utensilios, con programas y registros. Los productos usados deben ser adecuados para su fin y usarse según las indicaciones del fabricante.\n\nPara un fabricante de auxiliares de proceso, como los productos de limpieza y sanitización, esto se traduce en responsabilidades concretas frente a sus clientes: **fichas técnicas** con condiciones de uso y compatibilidad, **hojas de datos de seguridad**, **evidencia de eficacia** y de cumplimiento regulatorio para el uso declarado, y **soporte técnico** para que el cliente valide su programa.\n\n## Caso integrador\nLee este caso con calma; integra lo que viste en los quince capítulos.\n\n### El problema\nUna planta de quesos frescos y yogur, cliente de tu empresa, reporta tres problemas en los últimos dos meses:\n\n1. Vida de anaquel del queso fresco reducida, con **sabores amargos y viscosidad superficial** antes de la fecha de caducidad.\n2. Resultados de ATP **altos y erráticos** en la llenadora de yogur después de la limpieza.\n3. **Picaduras** visibles en un tanque de balance de acero inoxidable 304.\n\nEl cliente sospecha del producto de tu empresa y pide una respuesta técnica.\n\n### La información que recopilas\n- Hace tres meses, para ahorrar, el cliente **bajó la temperatura** del alcalino de CIP de 80 a 65 °C y redujo el tiempo de 25 a 15 minutos, sin revalidar.\n- La etapa ácida se hace **una vez por semana**, no diaria. El agua de la planta es de pozo, con **dureza de 380 mg/L** como CaCO₃.\n- El sanitizante del CIP es **cloro** (hipoclorito) a 200 ppm, aplicado **al final** de la limpieza; el sistema queda así toda la noche. El tanque de balance se llena de esta solución durante el paro de fin de semana.\n- La llenadora de yogur tiene una **válvula de asiento** que no está programada para pulsarse en el CIP, y juntas de **NBR** endurecidas.\n- Las piezas del cabezal de la llenadora se limpian en una tina COP **sin control de temperatura**, sobrecargada.\n- El monitoreo ambiental registra *Pseudomonas* en drenajes del área de envasado.\n\n### Tu análisis\n**1. Limpieza insuficiente por cambio no validado.** La reducción de temperatura y tiempo debilitó dos factores del círculo de Sinner sin compensar con otro. A 65 °C y 15 minutos, la remoción de proteína y grasa láctea es menor, sobre todo en la sección de calentamiento. La suciedad residual actúa como **película de acondicionamiento**.\n\n**2. Incrustación mineral.** Con agua muy dura y ácido solo semanal, se acumula **fosfato y carbonato de calcio** (piedra de leche) sobre superficies calientes. Los depósitos protegen microorganismos, reducen la eficacia del alcalino y del sanitizante, y funcionan como **hendidura** para la corrosión.\n\n**3. Biopelícula.** Suciedad residual + minerales + zonas difíciles (válvula sin pulsar, juntas endurecidas con grietas, piezas COP mal limpiadas) + presencia de *Pseudomonas* en el ambiente: condiciones ideales para **biopelículas**. *Pseudomonas* produce proteasas y lipasas termorresistentes que explican el **amargor** y la **viscosidad** en el queso fresco. El ATP errático es coherente con una fuente intermitente por **dispersión** desde un nicho.\n\n**4. Cloro mal aplicado.** El cloro sobre superficies con suciedad residual se consume por **demanda** y no llega a las células dentro de la biopelícula. Además, aplicado al final y dejado toda la noche, sobre todo durante el fin de semana en el tanque de balance de 304, es una combinación de **oxidante + cloruros + tiempo prolongado** que explica las **picaduras**, posiblemente agravadas por depósitos minerales que funcionan como hendiduras.\n\n**5. COP y juntas.** La tina sin control de temperatura y sobrecargada no limpia; las juntas de NBR endurecidas, probablemente por el cloro y la temperatura, son nichos.\n\n### Tus recomendaciones\n**Inmediatas (contención):**\n\n- Restaurar los parámetros originales del alcalino (80 °C, 25 minutos) mientras se revalida.\n- Limpieza profunda de la llenadora: desarme, limpieza manual de todas las piezas, cambio de juntas, limpieza alcalina clorada con acción mecánica, ácido, y sanitización.\n- Vaciar y enjuagar el tanque de balance; no volver a dejar cloro en contacto prolongado. Evaluar las picaduras con mantenimiento: pulir, reparar o sustituir según su profundidad, y **pasivar**.\n- Programa intensificado de monitoreo ambiental y de vida de anaquel.\n\n**Correctivas y preventivas:**\n\n- Etapa ácida **diaria** (nítrico o fosfórico) o un alcalino con quelantes adecuado para la dureza, y evaluar el ablandamiento del agua para preparación de soluciones.\n- Cambiar el sanitizante final a **APA** en frío, aplicado **antes de iniciar la producción**, en lugar de cloro dejado toda la noche.\n- Programar el **pulsado de válvulas** en el CIP.\n- Seleccionar juntas compatibles con el producto **y** el programa (por ejemplo, EPDM para lácteos con buena resistencia a álcali y vapor, verificando la grasa del producto).\n- Control de temperatura, carga máxima y tiempos en la tina COP.\n- Limpieza y saneamiento de drenajes con programa específico y rotación de biocidas.\n- **Revalidar** el programa de CIP en peor caso, con tres corridas, usando inspección visual, ATP, proteína, microbiología en agua de enjuague e hisopos con neutralizante, y verificación de residuos químicos.\n- Establecer una **gestión del cambio**: ningún parámetro de saneamiento se modifica sin evaluación y revalidación.\n\n### La respuesta al cliente\nLa respuesta técnica no culpa ni defiende: presenta **datos, mecanismos y recomendaciones**. El producto de tu empresa funciona dentro de las condiciones de uso indicadas en su ficha técnica; los problemas se explican por cambios no validados en esas condiciones, por la calidad del agua y por puntos del diseño y la operación. Ofreces apoyo para la revalidación. Esta es la forma de trabajar de un químico de soporte técnico que entiende el sistema completo.\n\n## Ideas que debes llevarte\n- **Validar** (¿funciona?), **monitorear** (¿se aplicó?) y **verificar** (¿sigue funcionando?) son distintos y todos necesarios.\n- La validación se hace en el **peor caso**, en los **límites operativos inferiores**, con criterios definidos antes, en **varias corridas**, y se repite cuando algo cambia.\n- Visual, ATP, proteína, alérgenos específicos, microbiología con neutralizante y residuos químicos se complementan; ninguno basta solo.\n- La eficacia del producto se demuestra con métodos estandarizados (AOAC, EN) y registro regulatorio; la eficacia del **procedimiento** se demuestra en planta.\n- Codex, ISO 22000 y sus prerrequisitos, FSSC 22000, FSMA y NOM-251 exigen programas de limpieza documentados y verificados.\n- Un problema de saneamiento real casi nunca tiene una sola causa: química, agua, temperatura, tiempo, acción mecánica, diseño, materiales, microbiología y gestión del cambio se entrelazan.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Validación, monitoreo y verificación",
+     "enunciado": "Registrar en cada ciclo de CIP la concentración, la temperatura de retorno y el tiempo es un ejemplo de:",
+     "opciones": [
+      "Monitoreo",
+      "Validación",
+      "Verificación",
+      "Calibración"
+     ],
+     "correcta": 0,
+     "explicacion": "El monitoreo responde a ¿se aplicó hoy como se diseñó? La validación demuestra que el procedimiento es capaz de funcionar; la verificación confirma periódicamente que sigue funcionando.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación, monitoreo y verificación",
+     "enunciado": "¿Cuál de estas actividades es validación?",
+     "opciones": [
+      "Tres corridas de un nuevo procedimiento de limpieza en el peor caso, con criterios de aceptación definidos antes, para demostrar que remueve el alérgeno",
+      "El hisopado semanal de ATP en la llenadora",
+      "La revisión mensual de los registros de CIP",
+      "La lectura diaria de concentración con tira reactiva"
+     ],
+     "correcta": 0,
+     "explicacion": "Validar es obtener evidencia de que la medida es capaz de lograr el resultado, antes de implementarla o cuando cambia.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peor caso",
+     "enunciado": "Al validar la limpieza de una línea que fabrica cinco salsas, ¿cuál es el enfoque correcto?",
+     "opciones": [
+      "Elegir el producto y las condiciones más difíciles de limpiar (peor caso) y validar con ellos",
+      "Validar con la salsa que más se vende",
+      "Validar con la salsa más fácil, para asegurar que pase",
+      "Validar las cinco salsas solo en condiciones ideales"
+     ],
+     "correcta": 0,
+     "explicacion": "El peor caso (más proteína, grasa o azúcar caramelizable, mayor tiempo de proceso y de espera) justifica el procedimiento para los demás.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Límites operativos",
+     "enunciado": "¿En qué condiciones se debe ejecutar una validación de limpieza?",
+     "opciones": [
+      "En los límites inferiores operativos permitidos (concentración y temperatura mínimas, tiempo mínimo)",
+      "En las condiciones ideales del laboratorio",
+      "En el punto medio de los rangos",
+      "En los límites superiores, para asegurar el resultado"
+     ],
+     "correcta": 0,
+     "explicacion": "Si el procedimiento funciona en el límite inferior permitido, funcionará en todo el rango operativo.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ATP",
+     "enunciado": "¿Cuál es una limitación importante de la bioluminiscencia de ATP?",
+     "opciones": [
+      "Mide ATP total (de alimento y de células), no microorganismos viables, y las RLU no son comparables entre marcas",
+      "Tarda tres días en dar resultados",
+      "Solo detecta esporas",
+      "Es específica de alérgenos"
+     ],
+     "correcta": 0,
+     "explicacion": "El ATP es un indicador rápido de limpieza general. Los límites se fijan por sitio con datos propios, y algunos residuos de sanitizantes pueden interferir.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Microbiología",
+     "enunciado": "¿Por qué los hisopos para microbiología de superficies deben contener un neutralizante?",
+     "opciones": [
+      "Porque el sanitizante residual seguiría matando en el tubo y daría un resultado falsamente bajo",
+      "Porque el neutralizante hace crecer más rápido a las bacterias",
+      "Para conservar el ATP",
+      "Para eliminar los alérgenos de la muestra"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin neutralizar, el resultado sobreestima la eficacia de la limpieza y la sanitización.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alérgenos",
+     "enunciado": "En la validación de limpieza de alérgenos, ¿qué evidencia es más directa del riesgo para el consumidor?",
+     "opciones": [
+      "El análisis del primer producto fabricado después de la limpieza con un método específico para el alérgeno",
+      "Un hisopo de proteína general en una superficie",
+      "El ATP en la superficie",
+      "El pH del agua de enjuague"
+     ],
+     "correcta": 0,
+     "explicacion": "El hisopo y el agua de enjuague apoyan, pero el riesgo se expresa en el producto siguiente. El método debe detectar el alérgeno en su forma procesada.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regulación",
+     "enunciado": "En Estados Unidos, ¿qué agencia registra los sanitizantes y desinfectantes como plaguicidas?",
+     "opciones": [
+      "La EPA, bajo la ley FIFRA",
+      "La FDA, bajo el 21 CFR 117",
+      "El USDA, bajo la ley de inspección de carnes",
+      "La OSHA, por ser químicos peligrosos"
+     ],
+     "correcta": 0,
+     "explicacion": "La EPA registra el producto con base en datos de eficacia; la FDA regula su uso en superficies en contacto con alimentos (21 CFR 178.1010).",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regulación",
+     "enunciado": "¿Qué norma mexicana establece las prácticas de higiene para el proceso de alimentos, incluida la limpieza y desinfección?",
+     "opciones": [
+      "NOM-251-SSA1-2009",
+      "NOM-051-SCFI/SSA1-2010",
+      "NOM-127-SSA1-2021",
+      "NOM-035-STPS-2018"
+     ],
+     "correcta": 0,
+     "explicacion": "La NOM-251-SSA1-2009 cubre prácticas de higiene; la NOM-051 es de etiquetado, la NOM-127 de agua para uso y consumo humano y la NOM-035 de factores psicosociales.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revalidación",
+     "enunciado": "¿Cuál de estos cambios requiere revalidar un procedimiento de limpieza?",
+     "opciones": [
+      "Bajar la temperatura del alcalino de CIP de 80 a 65 °C para ahorrar energía",
+      "Cambiar al operador del turno por otro capacitado",
+      "Imprimir el procedimiento en otro formato",
+      "Cambiar el color de los cepillos sin cambiar su tipo"
+     ],
+     "correcta": 0,
+     "explicacion": "Cambios en química, concentración, temperatura, tiempo, equipo, producto o frecuencia requieren revalidar. En el caso integrador, este cambio no validado fue una causa raíz.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Caso integrador",
+     "enunciado": "En el caso integrador, ¿qué explica mejor las picaduras en el tanque de balance de inoxidable 304?",
+     "opciones": [
+      "Solución clorada en contacto prolongado durante el fin de semana, con depósitos minerales que funcionan como hendiduras",
+      "El uso de ácido nítrico semanal",
+      "La baja temperatura del alcalino",
+      "La presencia de Pseudomonas en los drenajes"
+     ],
+     "correcta": 0,
+     "explicacion": "Oxidante con cloruros y tiempo prolongado sobre 304, más depósitos que crean hendiduras: condiciones clásicas de picaduras.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Validación, monitoreo y verificación",
+     "enunciado": "Explica con un ejemplo de CIP la diferencia entre validación, monitoreo y verificación, y por qué un programa que solo monitorea es insuficiente.",
+     "respuesta_modelo": "Validación: antes de implementar el ciclo de CIP de un pasteurizador, se hacen tres corridas en el peor caso y en los límites inferiores (por ejemplo, sosa al 1 %, 75 °C, 20 minutos), evaluando visual, ATP, proteína y microbiología del agua de enjuague con criterios definidos, para demostrar que el ciclo es capaz de limpiar. Monitoreo: en cada ciclo se registran conductividad, temperatura de retorno, caudal y tiempo, con alarmas si salen de límites. Verificación: periódicamente se hacen ATP, monitoreo ambiental y revisión de registros para confirmar que el sistema sigue funcionando. Si solo se monitorea, se puede repetir fielmente un ciclo que nunca demostró que funciona; el monitoreo confirma que se aplicó lo diseñado, no que lo diseñado sea eficaz.",
+     "puntos_clave": [
+      "Define los tres conceptos con ejemplos de CIP",
+      "Validación en peor caso y límites inferiores",
+      "Monitoreo de parámetros en cada ciclo",
+      "Por qué el monitoreo sin validación es insuficiente"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diseño de validación",
+     "enunciado": "Escribe el esquema de un protocolo de validación de limpieza para una línea de galletas en la que se introduce una variedad con cacahuate, seguida de producción sin cacahuate.",
+     "respuesta_modelo": "Objetivo: demostrar que el procedimiento de limpieza remueve la proteína de cacahuate hasta niveles que no representen riesgo en el producto siguiente. Alcance: equipos de la línea, con peor caso (zonas de difícil acceso, horno, bandas, depósitos de pasta). Procedimiento a validar: química, concentración, temperatura, tiempo, acción mecánica, desarme, con límites. Métodos: inspección visual; hisopos de proteína general como indicador; hisopos específicos de cacahuate (flujo lateral o ELISA) en sitios definidos; agua de enjuague si aplica; y análisis del primer producto sin cacahuate con ELISA validado para la forma horneada. Criterios de aceptación definidos antes: visualmente limpio, resultados de cacahuate por debajo del límite de detección o del umbral definido con base en evaluación de riesgo. Corridas: mínimo tres. Documentación, desviaciones, conclusión, aprobación, y criterios de revalidación (cambio de receta, equipo, procedimiento o resultados de verificación desfavorables). Después, verificación rutinaria.",
+     "puntos_clave": [
+      "Objetivo y alcance con peor caso",
+      "Procedimiento con parámetros y límites",
+      "Métodos específicos, incluido el primer producto",
+      "Criterios definidos antes, tres corridas y revalidación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Caso integrador",
+     "enunciado": "En el caso integrador, explica cómo se relacionan la reducción de temperatura del CIP, la dureza del agua y la presencia de Pseudomonas con los defectos del queso fresco.",
+     "respuesta_modelo": "La reducción de temperatura y tiempo debilitó la remoción de proteína y grasa, dejando una película de acondicionamiento. El agua muy dura con ácido solo semanal permitió la acumulación de piedra de leche, que protege microorganismos, reduce la eficacia del alcalino y del cloro y aporta una superficie rugosa. Pseudomonas, presente en el ambiente, encontró suciedad, minerales y nichos (válvula sin pulsar, juntas agrietadas, piezas COP mal limpiadas) para formar biopelículas, protegidas además del cloro por la demanda de la suciedad. Desde la biopelícula se dispersa al producto de manera intermitente; sus proteasas y lipasas, muchas termorresistentes, degradan proteína y grasa del queso y explican el sabor amargo y la viscosidad superficial, reduciendo la vida de anaquel.",
+     "puntos_clave": [
+      "Limpieza insuficiente como película de acondicionamiento",
+      "Minerales por dureza y ácido infrecuente",
+      "Biopelícula en nichos y protección frente al cloro",
+      "Enzimas de Pseudomonas: amargor y viscosidad"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Rol técnico",
+     "enunciado": "Como químico de un fabricante de productos de limpieza, ¿qué información y evidencia debes poder entregar a un cliente de la industria de alimentos para que valide su programa de saneamiento?",
+     "respuesta_modelo": "Ficha técnica con composición funcional, condiciones de uso recomendadas (concentración, temperatura, tiempo, método de aplicación), compatibilidad de materiales y limitaciones; hoja de datos de seguridad; evidencia de eficacia con métodos estandarizados para los usos declarados (por ejemplo, AOAC o EN) y del registro o cumplimiento regulatorio aplicable, como la etiqueta registrada o la adecuación para superficies en contacto con alimentos; método para medir la concentración en el punto de uso; datos de compatibilidad (cupones, elastómeros) cuando se requieran; información sobre residuos y su detección; y soporte técnico para diseñar el protocolo de validación, interpretar resultados y gestionar cambios.",
+     "puntos_clave": [
+      "Ficha técnica y hoja de seguridad",
+      "Evidencia de eficacia y cumplimiento regulatorio",
+      "Método de medición y datos de compatibilidad y residuos",
+      "Soporte para validación y gestión del cambio"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
