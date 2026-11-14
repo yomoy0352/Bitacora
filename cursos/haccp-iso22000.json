@@ -2002,6 +2002,406 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "11",
+   "titulo": "Verificación, auditoría interna, revisión y mejora",
+   "texto": "## Cerrar los dos ciclos\nUn sistema que solo se implementa y se monitorea se degrada. Los procesos cambian, las personas rotan, los proveedores modifican sus procesos, la regulación evoluciona. ISO 22000:2018 cierra los dos ciclos PHVA con un conjunto de actividades de **verificación** y **evaluación**:\n\n- **8.8 Verificación** relacionada con los PPR y el plan de control de peligros, y **análisis de los resultados** de la verificación.\n- **8.6 Actualización** de la información de los PPR y del plan.\n- **9.1 Seguimiento, medición, análisis y evaluación** del desempeño del SGIA.\n- **9.2 Auditoría interna.**\n- **9.3 Revisión por la dirección.**\n- **10 Mejora**: no conformidades y acciones correctivas, mejora continua y **actualización del sistema**.\n\n## Verificación operativa (8.8)\n### Qué se verifica\nEl equipo de inocuidad establece, implementa y mantiene actividades de verificación para confirmar que:\n\n- Los **PPR** están implementados y son eficaces.\n- El **plan de control de peligros** está implementado y es eficaz.\n- Los **niveles de peligro** están dentro de los niveles aceptables identificados.\n- La **información de entrada** al análisis de peligros está actualizada.\n- Otras acciones determinadas por la organización están implementadas y son eficaces.\n\nUna regla importante: la verificación **no debe ser realizada por la persona responsable del monitoreo** de esas mismas actividades. Quien mide no se verifica a sí mismo.\n\n### Actividades típicas de verificación en una planta química\n- **Revisión de registros** de monitoreo de PCC y PPRO por una persona distinta del operador, con frecuencia definida (por ejemplo, diaria o por lote antes de la liberación).\n- **Análisis de producto terminado** contra la especificación de inocuidad (por ejemplo, metales pesados en una muestra periódica, aunque el control principal sea el proveedor).\n- **Verificación de la calibración** de instrumentos de monitoreo.\n- **Inspecciones** de PPR (higiene, segregación, control de etiquetas, condiciones de almacenamiento).\n- **Verificación de COA** de proveedores (capítulo 9).\n- **Monitoreo del agua** y de los sistemas de tratamiento.\n- **Simulacros** de trazabilidad y retiro.\n- **Revisión de quejas** de clientes relacionadas con inocuidad.\n\n### Análisis de los resultados de verificación\nNo basta con hacer actividades de verificación; el equipo de inocuidad debe **analizar sus resultados** y usarlos como entrada de la evaluación del desempeño. Cuando la verificación muestra que el producto no cumple los niveles aceptables, ese lote se maneja como potencialmente no inocuo y se aplican acciones correctivas.\n\nEl análisis busca **tendencias**: un PPRO que cumple, pero con resultados que se acercan cada vez más al criterio de acción; un proveedor cuyos resultados de verificación muestran deriva; un tipo de desviación que se repite en un turno. Las herramientas de estadística aplicada a la calidad (gráficos de control, por ejemplo) son ideales para esto y las verás en el curso correspondiente.\n\n## Actualización del sistema (8.6 y 10.3)\nDespués de establecer el plan, la organización actualiza la información cuando es necesario: características de materias primas y productos, uso previsto, diagramas de flujo, análisis de peligros, plan de control y PPR. El apartado 10.3 pide que el equipo de inocuidad evalúe el SGIA a **intervalos planificados** y considere si es necesario revisar el análisis de peligros, el plan de control o los PPR. Las entradas incluyen:\n\n- **Comunicación** interna y externa (cambios, quejas, información regulatoria).\n- Otra **información** sobre la idoneidad, adecuación y eficacia del SGIA.\n- Resultados del **análisis de la verificación**.\n- Resultados de la **revisión por la dirección**.\n\nLas actualizaciones se documentan y se comunican como entrada de la revisión por la dirección.\n\n## Seguimiento, medición, análisis y evaluación (9.1)\nA nivel del sistema, la organización determina **qué** necesita seguimiento y medición, los **métodos**, **cuándo** se realiza y **quién** analiza y evalúa los resultados. Indicadores útiles para una planta de auxiliares:\n\n- Desviaciones de PCC y PPRO por mes, y tiempo de cierre de acciones correctivas.\n- Lotes retenidos y liberados después de evaluación.\n- Quejas de clientes relacionadas con inocuidad.\n- Resultados de verificación de proveedores (discrepancias, rechazos).\n- Cumplimiento del plan de capacitación.\n- Resultados de auditorías internas y externas.\n- Tiempo y conciliación de simulacros de trazabilidad.\n- Indicadores de cultura de inocuidad (reportes de casi incidentes, encuestas).\n\n## Auditoría interna (9.2)\n### Requisitos principales\nLa organización realiza auditorías internas a **intervalos planificados** para obtener información sobre si el SGIA:\n\n- Es **conforme** con los requisitos de la propia organización y de la norma.\n- Está **implementado y mantenido eficazmente**.\n\nEl programa de auditoría considera la **importancia** de los procesos, los **cambios** en el SGIA y los **resultados** del monitoreo, de la verificación y de auditorías previas. Se definen criterios y alcance de cada auditoría, se seleccionan **auditores competentes** que aseguren **objetividad e imparcialidad** (no auditan su propio trabajo), se informan los resultados al equipo de inocuidad y a la dirección pertinente, y las no conformidades se tratan con correcciones y acciones correctivas **sin demora indebida**. Se verifica la eficacia de las acciones.\n\n### Auditar un sistema de inocuidad\nUna auditoría interna eficaz no revisa solo documentos: **sigue el producto y los datos**. Algunas técnicas:\n\n- **Rastreo vertical**: tomar un lote reciente y seguirlo desde la recepción de sus materias primas hasta el embarque, revisando registros de cada PCC y PPRO, la liberación y la trazabilidad.\n- **Entrevistas en piso**: preguntar a un operador qué hace si el criterio de acción no se cumple; si su respuesta no coincide con el plan, hay un hallazgo.\n- **Observación**: ver una limpieza de cambio de producto o un envasado, y comparar con el procedimiento.\n- **Revisión de cambios**: tomar un cambio reciente (de proveedor, de fórmula) y verificar que pasó por la gestión del cambio y que el análisis de peligros se actualizó.\n\nEl curso de auditoría con ISO 19011 profundiza en la planeación, las técnicas y la redacción de hallazgos.\n\n## Revisión por la dirección (9.3)\nLa alta dirección revisa el SGIA a intervalos planificados para asegurar su conveniencia, adecuación y eficacia continuas.\n\n### Entradas\nLa norma enumera entradas que deben considerarse, entre ellas:\n\n- El estado de las acciones de revisiones anteriores.\n- Los **cambios** en cuestiones externas e internas, incluidos cambios en la organización y su contexto.\n- Información sobre el **desempeño y la eficacia** del SGIA: resultados de las actividades de actualización del sistema, del seguimiento y la medición, del análisis de la verificación de PPR y del plan de control, no conformidades y acciones correctivas, resultados de auditorías, inspecciones regulatorias, desempeño de proveedores externos, revisión de riesgos y oportunidades y de la eficacia de las acciones tomadas, y el grado de logro de los objetivos.\n- La adecuación de los **recursos**.\n- Cualquier **situación de emergencia**, incidente o retiro.\n- Información pertinente obtenida de la **comunicación** externa e interna, incluidas solicitudes y quejas de partes interesadas.\n- Oportunidades de **mejora continua**.\n\n### Salidas\nDecisiones y acciones relacionadas con oportunidades de mejora, la necesidad de **actualizaciones y cambios** del SGIA (incluidos recursos y la revisión de la política y los objetivos). La revisión se documenta.\n\nUna revisión por la dirección eficaz no es una presentación de una hora con diapositivas: es una sesión de **toma de decisiones** con datos. Si las actas no muestran decisiones, recursos asignados o cambios, la revisión no está cumpliendo su función.\n\n## Mejora (10)\n- **10.1 No conformidad y acción correctiva**: reaccionar, evaluar la necesidad de acciones para eliminar las causas, implementar, revisar la eficacia y hacer cambios en el SGIA si es necesario.\n- **10.2 Mejora continua**: mejorar la conveniencia, adecuación y eficacia del SGIA, a través de la comunicación, la revisión por la dirección, la auditoría interna, el análisis de la verificación, la validación de medidas de control, las acciones correctivas y la actualización del sistema.\n- **10.3 Actualización del sistema**, ya descrita.\n\n## Ideas que debes llevarte\n- La **verificación operativa** confirma que PPR y plan funcionan y que los peligros están en niveles aceptables; no la hace quien monitorea.\n- Los resultados de verificación se **analizan** para detectar tendencias y alimentar la evaluación del desempeño.\n- El sistema se **actualiza** a intervalos planificados y ante cambios.\n- La **auditoría interna** se planifica por importancia, cambios y resultados, con auditores objetivos y técnicas de rastreo, entrevista y observación.\n- La **revisión por la dirección** es una sesión de decisiones con entradas definidas por la norma y salidas documentadas.\n- La **mejora** integra acciones correctivas, mejora continua y actualización.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Qué restricción establece ISO 22000 sobre quién realiza la verificación?",
+     "opciones": [
+      "No debe realizarla la persona responsable del monitoreo de esas mismas actividades",
+      "Debe realizarla siempre un auditor externo",
+      "Debe realizarla el director general",
+      "Puede realizarla cualquier persona, incluido quien monitorea"
+     ],
+     "correcta": 0,
+     "explicacion": "Quien mide no se verifica a sí mismo; así se reduce el sesgo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Cuál de estas es una actividad de verificación y no de monitoreo?",
+     "opciones": [
+      "La revisión diaria de los registros de PCC por el supervisor de calidad",
+      "La titulación del lote por el analista para decidir si cumple el límite crítico",
+      "La inspección de la malla por el operador antes del lote",
+      "El escaneo del código de la materia prima en la carga"
+     ],
+     "correcta": 0,
+     "explicacion": "El monitoreo genera el dato en tiempo real; la verificación confirma que el sistema funciona y que los registros son correctos.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis de verificación",
+     "enunciado": "Los resultados de un PPRO cumplen el criterio de acción, pero se acercan a él mes con mes. ¿Qué debe hacerse?",
+     "opciones": [
+      "Analizar la tendencia como pérdida potencial de control e iniciar acciones antes de que haya una desviación",
+      "Nada, porque todos los resultados cumplen",
+      "Cambiar el criterio de acción para tener más margen",
+      "Reducir la frecuencia de monitoreo"
+     ],
+     "correcta": 0,
+     "explicacion": "El análisis de los resultados de verificación busca tendencias, no solo cumplimiento puntual.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Actualización",
+     "enunciado": "¿Cuál de estas es una entrada para la actualización del SGIA según 10.3?",
+     "opciones": [
+      "Los resultados del análisis de la verificación",
+      "El presupuesto de mercadotecnia",
+      "El número de empleados de ventas",
+      "La opinión de la competencia"
+     ],
+     "correcta": 0,
+     "explicacion": "También: comunicación interna y externa, información sobre la eficacia del sistema y salidas de la revisión por la dirección.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Auditoría interna",
+     "enunciado": "¿Qué debe considerar el programa de auditoría interna?",
+     "opciones": [
+      "La importancia de los procesos, los cambios en el SGIA y los resultados del monitoreo, la verificación y auditorías previas",
+      "Solo un calendario fijo idéntico cada año",
+      "Solo los procesos con menos personal",
+      "Solo los requisitos del cliente más grande"
+     ],
+     "correcta": 0,
+     "explicacion": "El programa se basa en riesgo, cambios y resultados.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Auditoría interna",
+     "enunciado": "¿Qué técnica de auditoría sigue un lote desde la recepción de sus materias primas hasta el embarque?",
+     "opciones": [
+      "Rastreo vertical",
+      "Muestreo aleatorio de documentos",
+      "Encuesta de satisfacción",
+      "Revisión de organigramas"
+     ],
+     "correcta": 0,
+     "explicacion": "El rastreo vertical revisa PCC, PPRO, liberación y trazabilidad de un caso real.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetividad",
+     "enunciado": "¿Puede el jefe de laboratorio auditar el proceso de liberación de lotes de su propio laboratorio?",
+     "opciones": [
+      "No, los auditores no deben auditar su propio trabajo para asegurar objetividad e imparcialidad",
+      "Sí, porque es quien mejor lo conoce",
+      "Sí, si firma un compromiso",
+      "Solo si no hay hallazgos"
+     ],
+     "correcta": 0,
+     "explicacion": "La objetividad e imparcialidad del proceso de auditoría son requisito de 9.2.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Entrevista",
+     "enunciado": "En una entrevista, un operador dice que si el criterio de acción no se cumple 'avisa al final del turno'. El plan dice 'detener y retener de inmediato'. ¿Qué es?",
+     "opciones": [
+      "Un hallazgo: la práctica no coincide con el plan de control",
+      "Una mejora del proceso",
+      "Una opinión del operador sin importancia",
+      "Un error del auditor"
+     ],
+     "correcta": 0,
+     "explicacion": "La auditoría en piso revela la diferencia entre lo documentado y lo practicado.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión por la dirección",
+     "enunciado": "¿Cuál de estas es una entrada requerida para la revisión por la dirección?",
+     "opciones": [
+      "Situaciones de emergencia, incidentes o retiros",
+      "El plan de vacaciones del personal",
+      "El catálogo de nuevos productos de la competencia",
+      "La decoración de las oficinas"
+     ],
+     "correcta": 0,
+     "explicacion": "También: cambios de contexto, desempeño del SGIA, recursos, comunicación y oportunidades de mejora.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión por la dirección",
+     "enunciado": "¿Qué evidencia muestra que una revisión por la dirección cumple su función?",
+     "opciones": [
+      "Actas con decisiones, recursos asignados y cambios al sistema, basados en datos",
+      "Una presentación con muchas diapositivas",
+      "La asistencia de todos los gerentes",
+      "Que haya durado más de tres horas"
+     ],
+     "correcta": 0,
+     "explicacion": "Las salidas de la revisión son decisiones y acciones documentadas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mejora continua",
+     "enunciado": "¿Cuál de estos procesos contribuye a la mejora continua según el capítulo 10 de ISO 22000?",
+     "opciones": [
+      "La validación de medidas de control y el análisis de la verificación",
+      "La reducción del personal de calidad",
+      "La eliminación de auditorías internas",
+      "El aumento de precios"
+     ],
+     "correcta": 0,
+     "explicacion": "Comunicación, revisión por la dirección, auditoría interna, análisis de verificación, validación, acciones correctivas y actualización contribuyen a la mejora.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa de verificación",
+     "enunciado": "Diseña un programa de verificación operativa para el plan de control de un sanitizante sin enjuague, con actividades, frecuencia y responsable.",
+     "respuesta_modelo": "1) Revisión de los registros del PCC de concentración por lote antes de la liberación, por el supervisor de calidad (no el analista). 2) Verificación de la calibración y de los patrones del método de titulación, mensual, por el jefe de laboratorio, con un control de calidad diario (muestra de referencia). 3) Revisión semanal de registros de PPRO de verificación de grado y limpieza de cambio, por calidad. 4) Análisis trimestral de producto terminado para impurezas críticas (metales, clorato si aplica) en laboratorio externo acreditado. 5) Inspección mensual de PPR de segregación, etiquetas y almacenamiento. 6) Análisis mensual de tendencias de concentración y desviaciones, por el equipo de inocuidad. 7) Simulacro de trazabilidad semestral. Los resultados se analizan y se presentan en la revisión por la dirección.",
+     "puntos_clave": [
+      "Actividades para PCC, PPRO y PPR",
+      "Frecuencia definida",
+      "Responsables distintos de quien monitorea",
+      "Análisis de resultados y uso en la revisión"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Auditoría interna",
+     "enunciado": "Describe cómo auditarías la gestión del cambio en una planta de auxiliares de proceso.",
+     "respuesta_modelo": "Revisaría el procedimiento de gestión del cambio y luego tomaría muestras reales: cambios recientes en fórmulas, proveedores, equipos o empaques identificados en órdenes de compra, registros de producción o actas de mantenimiento, no solo los que aparecen en la lista oficial de cambios. Para cada uno verificaría que hubo solicitud y evaluación del equipo de inocuidad, actualización del análisis de peligros y del plan de control si aplicaba, validación de medidas de control nuevas o modificadas, comunicación interna y a clientes cuando se requería, y aprobación antes de la implementación. Entrevistaría a compras, producción y mantenimiento sobre cómo avisan de cambios. Un cambio real que no pasó por el procedimiento sería un hallazgo.",
+     "puntos_clave": [
+      "Revisión documental del procedimiento",
+      "Muestreo de cambios reales desde otras fuentes",
+      "Verificación de evaluación, actualización, validación y comunicación",
+      "Entrevistas y criterio de hallazgo"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Indicadores",
+     "enunciado": "Propón cinco indicadores de desempeño del SGIA para una planta de auxiliares de proceso y explica qué decisión permitiría tomar cada uno.",
+     "respuesta_modelo": "1) Desviaciones de PCC y PPRO por mes: identificar procesos con pérdida de control y priorizar inversiones o capacitación. 2) Tiempo promedio de cierre de acciones correctivas: detectar falta de recursos o seguimiento. 3) Discrepancias en la verificación de COA por proveedor: decidir aumentar vigilancia, desarrollar o dar de baja proveedores. 4) Quejas de clientes relacionadas con inocuidad: priorizar mejoras de producto o de información de uso. 5) Tiempo y conciliación de simulacros de trazabilidad: decidir mejoras en registros o sistemas. También válidos: lotes retenidos, cumplimiento de capacitación, reportes de casi incidentes como indicador de cultura.",
+     "puntos_clave": [
+      "Cinco indicadores pertinentes",
+      "Medibles",
+      "Decisión asociada a cada uno",
+      "Relación con inocuidad"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "titulo": "Caso integrador: estudio HACCP de un sanitizante",
+   "texto": "## El encargo\nTu empresa va a lanzar un **sanitizante sin enjuague a base de ácido peracético** para superficies en contacto con alimentos, dirigido a plantas de lácteos, bebidas y cárnicos. Se fabricará en una planta que ya produce detergentes alcalinos y ácidos grado alimentario y, en otra nave del mismo sitio, desengrasantes industriales con solventes. El cliente principal exige certificación GFSI y quiere ver el estudio HACCP antes de aprobar el producto.\n\nEres el líder del equipo de inocuidad. Este capítulo recorre el estudio completo. Léelo como un ejemplo resuelto: después, en la evaluación, tendrás que razonar sobre variantes.\n\n## Paso 1: el equipo\n- Líder de inocuidad (tú).\n- Química de formulación: conoce el equilibrio del APA, estabilizantes y compatibilidad.\n- Jefe de producción y un operador de mezclado con experiencia.\n- Jefe de laboratorio de control de calidad.\n- Mantenimiento: materiales de tanques, juntas, bombas y ventilación.\n- Asuntos regulatorios: regulación del producto y etiqueta.\n- Almacén y logística.\n- Compras.\n\nSe documentan su formación en HACCP e ISO 22000 y su experiencia.\n\n## Paso 2: descripción de materias primas y materiales en contacto\n| Material | Características pertinentes | Especificación de inocuidad |\n|---|---|---|\n| Peróxido de hidrógeno | Oxidante; puede contener estabilizantes del proveedor; impurezas metálicas catalizan su descomposición | Grado adecuado para uso en alimentos, metales bajos, estabilizantes declarados y permitidos |\n| Ácido acético | Puede ser de síntesis o de fermentación | Grado alimentario, impurezas según especificación reconocida |\n| Estabilizante (por ejemplo, un fosfonato) | Quelante de metales para estabilizar | Sustancia permitida para el uso, pureza |\n| Catalizador ácido mineral | Acelera el equilibrio | Grado alimentario, metales pesados bajos |\n| Agua desmineralizada | Ingrediente; sin cloro residual | Conductividad baja, metales bajos, microbiología controlada |\n| Envases de HDPE con tapa ventilada | Contacto con oxidante | Aptos para contacto, compatibles, nuevos |\n| Tanque de mezcla de inoxidable 316L y juntas | Contacto con producto | Compatibles con APA, pasivados |\n\n## Paso 3: descripción del producto\n- **Composición**: APA en el intervalo declarado (por ejemplo, alrededor de 15 %), peróxido de hidrógeno, ácido acético, estabilizante y agua.\n- **Características**: líquido, pH muy ácido, oxidante fuerte; sin riesgo de crecimiento microbiano en el concentrado.\n- **Vida útil**: según estudios de estabilidad, con pérdida gradual de APA; almacenamiento fresco y protegido de la luz.\n- **Envase**: garrafas y contenedores con tapa ventilada.\n- **Etiqueta**: nombre, concentración, lote, fecha de fabricación, instrucciones de dilución para uso sin enjuague, tiempo de contacto, precauciones, incompatibilidades.\n\n## Paso 4: uso previsto y uso indebido previsible\n- **Uso previsto**: dilución por el cliente a la concentración de uso indicada en la etiqueta para sanitizar superficies limpias en contacto con alimentos, sin enjuague posterior. Usuarios: personal de saneamiento de plantas de alimentos.\n- **Vía al alimento**: residuo en superficies que entran en contacto con el alimento.\n- **Grupos vulnerables**: algunos clientes elaboran productos lácteos para niños.\n- **Usos indebidos previsibles**: sobredosificación; uso sobre superficies sucias; mezcla con productos alcalinos o clorados; trasvase a envases sin ventilación o sin etiqueta; almacenamiento caliente; uso de una dilución preparada días antes.\n\n## Paso 5: diagrama de flujo y confirmación\n1. Recepción de materias primas (granel de peróxido, envasadas las demás), con muestreo y cuarentena.\n2. Almacenamiento segregado (oxidantes separados de orgánicos, reductores y álcalis).\n3. Producción de agua desmineralizada.\n4. Pesado y carga al tanque de mezcla dedicado, en orden definido.\n5. Mezclado y reacción hasta el equilibrio (tiempo definido, temperatura controlada).\n6. Muestreo y análisis (APA y peróxido por titulación secuencial).\n7. Ajuste si es necesario.\n8. Filtración.\n9. Envasado y colocación de tapa ventilada.\n10. Etiquetado y codificación.\n11. Cuarentena y liberación por laboratorio.\n12. Almacén y embarque.\n\nReproceso: lotes fuera de especificación por baja concentración pueden ajustarse con aprobación. Salidas: producto, residuos, envases dañados.\n\nEn la **confirmación en sitio** el equipo descubre que, cuando el tanque dedicado está en mantenimiento, producción ha usado un tanque de la línea de ácidos que también se usa para un desincrustante con un inhibidor no permitido en alimentos. Se agrega al diagrama como ruta alternativa y se analiza.\n\n## Paso 6: identificación y evaluación de peligros\nEscala: severidad (S) y probabilidad (P) de 1 a 4; significativo si S × P ≥ 6 o S = 4 con P ≥ 2.\n\n| Etapa | Peligro y causa | S | P | ¿Signif.? |\n|---|---|---|---|---|\n| Recepción | Metales pesados en materias primas fuera de especificación | 3 | 2 | Sí |\n| Recepción | Uso de peróxido grado técnico con estabilizantes no permitidos | 3 | 2 | Sí |\n| Agua | Metales que catalizan la descomposición (afecta concentración y estabilidad, no toxicidad directa) | 2 | 2 | No (PPR de agua) |\n| Pesado y carga | Sobreconcentración por error de pesado | 3 | 3 | Sí |\n| Pesado y carga | Carga de materia prima equivocada | 3 | 2 | Sí |\n| Ruta alternativa | Arrastre del desincrustante con inhibidor no permitido | 3 | 3 | Sí |\n| Mezclado | Reacción incompleta, composición fuera de especificación | 2 | 2 | No (controlado por el análisis del lote) |\n| Filtración | Partículas de juntas o filtros | 2 | 2 | No (PPR de mantenimiento y filtración) |\n| Envasado | Envase incompatible o reciclado con residuos | 3 | 1 | No (PPR de envases nuevos aprobados) |\n| Etiquetado | Etiqueta con instrucción de dilución equivocada | 3 | 2 | Sí |\n| Almacén | Degradación por calor (pérdida de APA; menor eficacia, no toxicidad) | 2 | 2 | No (PPR de almacenamiento y vida útil) |\n\nLas justificaciones de cada puntaje se documentan (datos de proveedores, historial, literatura). Nota la decisión sobre la degradación: la pérdida de APA reduce la **eficacia** del sanitizante, lo que puede afectar la inocuidad del alimento del cliente si la sanitización falla. El equipo decide documentarlo como peligro de calidad funcional controlado por PPR y por la información de vida útil, y comunicarlo al cliente para que verifique la concentración de uso. Otro equipo podría razonablemente tratarlo de forma distinta; lo importante es **justificarlo**.\n\n## Paso 7: medidas de control y categorización\n| Peligro significativo | Medida de control | Categoría | Justificación resumida |\n|---|---|---|---|\n| Metales en materias primas | Proveedor aprobado, especificación, COA y verificación analítica periódica | PPRO | Preventiva, monitoreo por lote del COA con criterio observable, verificación periódica |\n| Peróxido grado técnico | Especificación con grado, verificación documental en recepción, código de material único | PPRO | Criterio observable (grado correcto en COA y etiqueta) |\n| Materia prima equivocada en la carga | Escaneo de código de barras y verificación por segunda persona | PPRO | Criterio observable en cada carga |\n| Sobreconcentración | Análisis de APA y peróxido por lote antes del envasado con límite crítico | **PCC** | Efecto decisivo, medible, oportuno, última barrera, severidad alta |\n| Arrastre en ruta alternativa | **Eliminar la ruta**: prohibir el uso del tanque de ácidos; si el tanque dedicado no está disponible, no se fabrica | Medida de diseño | Se elimina el peligro en lugar de controlarlo |\n| Etiqueta con instrucción equivocada | Verificación de la etiqueta contra la orden al inicio y reconciliación | PPRO | Criterio observable por lote |\n\nObserva la decisión sobre la ruta alternativa: cuando un peligro se puede **eliminar por diseño** (no usar un equipo compartido con un producto incompatible), es mejor que crear un PPRO de limpieza que dependa de la ejecución perfecta cada vez.\n\n## Paso 8: validación\n- **PCC de concentración**: se deriva el límite crítico del concentrado a partir de la concentración máxima permitida en la solución de uso sin enjuague y de la dilución de etiqueta, considerando la tolerancia de dilución con dosificadores representativos y la incertidumbre del método de titulación (determinada con patrones y repeticiones). Se fija un límite operativo más estricto.\n- **PPRO de proveedores**: se valida con el historial analítico del proveedor, la capacidad del método del laboratorio externo y la frecuencia de verificación que detecta desviaciones.\n- **PPRO de verificación de carga y etiquetas**: se valida con una prueba de desafío (por ejemplo, presentar una materia prima o una etiqueta equivocada en una corrida de prueba y confirmar que el sistema la detecta y bloquea).\n\n## Paso 9: plan de control (extracto del PCC)\n- **Peligro**: residuos de activo por encima del límite en superficies de contacto por sobreconcentración.\n- **Límite crítico**: concentración de APA y de peróxido en el concentrado menor o igual a los valores validados.\n- **Monitoreo**: titulación secuencial de cada lote antes de envasar, por analista competente; el sistema no permite envasar sin resultado aprobado.\n- **Si falla**: retener; ajustar por dilución como reproceso controlado y reanalizar; si no es posible, destruir; acción correctiva sobre la causa (báscula, procedimiento, competencia); registro.\n- **Verificación**: revisión del registro por el supervisor de calidad antes de la liberación; control diario con muestra de referencia; calibración mensual; análisis de tendencias.\n\n## Paso 10: un día cualquiera, una desviación\nTres meses después del lanzamiento, el análisis de un lote da APA por encima del límite crítico. El analista retiene el lote, el supervisor confirma el resultado con una segunda titulación, y el equipo:\n\n1. Identifica el **alcance**: solo ese lote está afectado; los anteriores cumplieron.\n2. Decide la **corrección**: ajuste por dilución con agua desmineralizada, mezclado y reanálisis; el lote cumple y se libera con registro de reproceso.\n3. Investiga la **causa**: la báscula de la estación de pesado del peróxido estaba fuera de calibración; el programa de calibración había pasado de mensual a trimestral por un cambio no evaluado.\n4. Define la **acción correctiva**: restablecer la calibración mensual, agregar una verificación diaria con pesa patrón y llevar el cambio de frecuencia al procedimiento de gestión del cambio.\n5. Revisa la **eficacia**: en los siguientes tres meses no hay desviaciones y la verificación diaria detecta una deriva antes de que afecte a un lote.\n\nObserva cómo se conectan los capítulos: un cambio no evaluado (capítulo 3) afectó un instrumento de monitoreo (8.7), que generó una desviación de un PCC (capítulo 8), manejada con corrección, acción correctiva y verificación (capítulos 10 y 11).\n\n## Paso 11: comunicación con el cliente\nEl estudio se resume para el cliente con: descripción del producto, uso previsto, peligros significativos y cómo se controlan (sin revelar la fórmula), certificación, especificación del producto, COA por lote, ficha técnica con instrucciones de dilución y tiempo de contacto, hoja de datos de seguridad, declaración de alérgenos, y compromiso de notificar cambios. Es el mismo principio de comunicación externa que tú exiges a tus proveedores.\n\n## Ideas que debes llevarte\n- Un estudio HACCP completo recorre: equipo, materias primas, producto, **uso previsto y uso indebido**, diagrama confirmado en sitio, análisis y evaluación con justificación, categorización, validación, plan, verificación y comunicación.\n- La **confirmación en sitio** revela rutas reales que cambian el análisis.\n- Cuando un peligro puede **eliminarse por diseño**, eso es mejor que controlarlo.\n- En auxiliares químicos, los PCC suelen ser pocos y analíticos; los PPRO cubren proveedores, grado, carga y etiquetas.\n- Las desviaciones conectan todo el sistema: monitoreo, calibración, gestión del cambio, acción correctiva y verificación.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Confirmación en sitio",
+     "enunciado": "En el caso, ¿qué reveló la confirmación en sitio del diagrama de flujo?",
+     "opciones": [
+      "Una ruta alternativa: el uso del tanque de la línea de ácidos, compartido con un desincrustante con inhibidor no permitido",
+      "Que el agua desmineralizada tenía cloro",
+      "Que el envase no tenía tapa ventilada",
+      "Que el laboratorio no tenía titulador"
+     ],
+     "correcta": 0,
+     "explicacion": "La confirmación en operación detecta prácticas que no están en el diagrama y que cambian el análisis.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eliminación por diseño",
+     "enunciado": "¿Por qué el equipo decidió prohibir la ruta alternativa en lugar de crear un PPRO de limpieza?",
+     "opciones": [
+      "Porque eliminar el peligro por diseño es más robusto que depender de una limpieza ejecutada perfectamente cada vez",
+      "Porque la limpieza es demasiado barata",
+      "Porque la norma prohíbe los PPRO de limpieza",
+      "Porque el desincrustante no es peligroso"
+     ],
+     "correcta": 0,
+     "explicacion": "La jerarquía de control favorece eliminar el peligro sobre controlarlo.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PCC",
+     "enunciado": "¿Por qué el análisis de APA y peróxido antes del envasado se categorizó como PCC?",
+     "opciones": [
+      "Tiene efecto decisivo, es medible y oportuno, es la última barrera y la severidad de falla es alta",
+      "Porque todos los análisis de laboratorio son PCC",
+      "Porque el cliente lo pidió",
+      "Porque es la etapa más cara"
+     ],
+     "correcta": 0,
+     "explicacion": "Se aplicaron los criterios del enfoque lógico de ISO 22000.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Uso indebido",
+     "enunciado": "¿Cuál de estos usos indebidos previsibles identificó el caso para el sanitizante de APA?",
+     "opciones": [
+      "Mezcla con productos alcalinos o clorados",
+      "Uso como ingrediente de bebidas",
+      "Uso como combustible",
+      "Uso en la industria textil"
+     ],
+     "correcta": 0,
+     "explicacion": "Otros: sobredosificación, uso sobre superficies sucias, trasvase, almacenamiento caliente y diluciones viejas.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evaluación",
+     "enunciado": "Con la escala del caso (significativo si S × P ≥ 6), ¿un peligro con S = 3 y P = 2 es significativo?",
+     "opciones": [
+      "Sí, 3 × 2 = 6",
+      "No, porque P es baja",
+      "No, porque S no es 4",
+      "Depende del cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "6 alcanza el umbral definido.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Degradación",
+     "enunciado": "¿Cómo trató el equipo la degradación del APA por almacenamiento caliente?",
+     "opciones": [
+      "Como peligro de calidad funcional no significativo, controlado por PPR y vida útil, comunicándolo al cliente, con justificación documentada",
+      "Como PCC con límite crítico de temperatura",
+      "Lo eliminó del análisis sin documentar",
+      "Como peligro alergénico"
+     ],
+     "correcta": 0,
+     "explicacion": "El caso destaca que otra decisión razonable es posible; lo esencial es justificarla.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "¿Cómo se validó el PPRO de verificación de etiquetas en el caso?",
+     "opciones": [
+      "Con una prueba de desafío: presentar una etiqueta equivocada en una corrida de prueba y confirmar que el sistema la detecta y bloquea",
+      "Revisando que el formato tenga firma",
+      "Preguntando al proveedor de etiquetas",
+      "No se validó"
+     ],
+     "correcta": 0,
+     "explicacion": "Las pruebas de desafío demuestran la capacidad de detección de una medida.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desviación",
+     "enunciado": "En la desviación del caso, ¿cuál fue la causa raíz?",
+     "opciones": [
+      "Un cambio no evaluado en la frecuencia de calibración de la báscula",
+      "Un error del analista en la titulación",
+      "Una materia prima fuera de especificación",
+      "Un envase defectuoso"
+     ],
+     "correcta": 0,
+     "explicacion": "El cambio de mensual a trimestral no pasó por gestión del cambio y la báscula se descalibró.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desviación",
+     "enunciado": "En el caso, ¿cuál fue la corrección del lote?",
+     "opciones": [
+      "Ajuste por dilución con agua desmineralizada, mezclado, reanálisis y liberación con registro de reproceso",
+      "Restablecer la calibración mensual",
+      "Agregar verificación diaria con pesa patrón",
+      "Llevar el cambio a gestión del cambio"
+     ],
+     "correcta": 0,
+     "explicacion": "Las otras tres son acciones correctivas sobre la causa.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comunicación",
+     "enunciado": "¿Qué información NO debería incluir el resumen del estudio para el cliente?",
+     "opciones": [
+      "La fórmula exacta del producto",
+      "Los peligros significativos y cómo se controlan",
+      "La especificación del producto",
+      "La declaración de alérgenos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se comunica lo necesario para la inocuidad sin revelar información confidencial como la fórmula.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integración",
+     "enunciado": "La desviación del caso conecta varios apartados de ISO 22000. ¿Cuál de estos NO intervino?",
+     "opciones": [
+      "Política de inocuidad (5.2)",
+      "Planificación de los cambios (6.3)",
+      "Control del seguimiento y la medición (8.7)",
+      "Control de no conformidades (8.9)"
+     ],
+     "correcta": 0,
+     "explicacion": "Intervinieron gestión del cambio, calibración, PCC, corrección, acción correctiva y verificación.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Variante del caso",
+     "enunciado": "El cliente pide una versión del sanitizante con un tensioactivo para mejorar la humectación. ¿Qué partes del estudio HACCP tendrías que revisar y por qué?",
+     "respuesta_modelo": "Gestión del cambio: evaluar el impacto antes de implementar. Materias primas: nueva materia prima con su especificación, impurezas (por ejemplo, 1,4-dioxano si es etoxilado), compatibilidad con el oxidante y aprobación regulatoria para uso sin enjuague. Producto: composición, estabilidad (el tensioactivo podría oxidarse o desestabilizar el APA), espuma. Uso previsto: posibles nuevos usos o mayores residuos. Diagrama: etapa de adición. Análisis de peligros: nuevos peligros químicos y su evaluación. Medidas de control y plan: posible nuevo PPRO de proveedor, ajuste del PCC si cambia el límite. Validación de lo nuevo o modificado. Etiqueta y ficha técnica. Comunicación al cliente y verificación posterior.",
+     "puntos_clave": [
+      "Gestión del cambio",
+      "Nueva materia prima: impurezas, compatibilidad, regulación",
+      "Estabilidad y análisis de peligros actualizado",
+      "Validación, plan, etiqueta y comunicación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Categorización",
+     "enunciado": "Argumenta por qué la verificación de grado del peróxido en la recepción se categorizó como PPRO y no como PCC. ¿En qué circunstancias reconsiderarías esa decisión?",
+     "respuesta_modelo": "Es una medida preventiva cuyo monitoreo se basa en un criterio observable (grado correcto en documentos, etiqueta y código de material), no en un límite medible continuo; actúa en combinación con otras medidas (proveedor aprobado, especificación, verificación analítica) y no es una etapa de eliminación del peligro. Reconsideraría si no hubiera otras barreras posteriores para detectar un grado técnico (por ejemplo, si no hay análisis de impurezas del lote) y el historial mostrara confusiones frecuentes, o si el proveedor manejara ambos grados con alto riesgo de confusión; podría entonces agregarse un análisis específico con límite medible por lote recibido como PCC en la recepción.",
+     "puntos_clave": [
+      "Criterio observable y naturaleza preventiva",
+      "Combinación con otras medidas",
+      "Ausencia de límite medible en tiempo real",
+      "Circunstancias para reconsiderar"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Integración",
+     "enunciado": "Explica cómo el caso integrador ilustra la relación entre los dos ciclos PHVA de ISO 22000.",
+     "respuesta_modelo": "En el ciclo operativo, el PCC detectó la desviación, se retuvo y corrigió el lote, se investigó la causa y se verificó la eficacia. Pero la causa estaba en el ciclo de la organización: un cambio en el programa de calibración no pasó por la planificación de los cambios. La acción correctiva regresa al nivel del sistema: refuerza la gestión del cambio y el control de equipos de medición, y el resultado se analiza en la evaluación del desempeño y en la revisión por la dirección, que puede asignar recursos o fijar objetivos. Así, la verificación operativa alimenta decisiones de gestión, y las decisiones de gestión cambian la operación.",
+     "puntos_clave": [
+      "Ciclo operativo: detección, corrección, verificación",
+      "Causa en el sistema de gestión",
+      "Acción correctiva a nivel de sistema",
+      "Retroalimentación a evaluación y revisión"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
