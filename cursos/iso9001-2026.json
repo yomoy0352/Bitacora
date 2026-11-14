@@ -1002,6 +1002,1006 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "6",
+   "titulo": "Objetivos y planificación de los cambios",
+   "texto": "## Objetivos de la calidad (6.2)\nEl apartado 6.2 prácticamente no cambia en la edición 2026. Los objetivos de la calidad siguen debiendo ser coherentes con la política, medibles, tener en cuenta los requisitos aplicables, ser pertinentes para la conformidad de productos y servicios y para la satisfacción del cliente, ser objeto de seguimiento, comunicarse y actualizarse. Y su planificación sigue respondiendo a qué se hará, con qué recursos, quién es responsable, cuándo se terminará y cómo se evaluarán los resultados.\n\nAun así, la transición es buen momento para revisar la **calidad** de tus objetivos, porque se conectan con los cambios nuevos:\n\n- Las **oportunidades** priorizadas en 6.1.3 se convierten con frecuencia en objetivos.\n- La **cultura de calidad** puede tener objetivos propios (por ejemplo, aumentar el reporte de casi incidentes y reducir su tiempo de respuesta).\n- Los **requisitos climáticos** adoptados de partes interesadas pueden convertirse en objetivos.\n\n### Objetivos que sirven y objetivos que no\n| No sirve | Sirve |\n|---|---|\n| Mejorar la calidad | Reducir el porcentaje de lotes reprocesados de 4.2 % a 2.5 % en 2027 |\n| Satisfacer al cliente | Lograr que el 95 % de los COA se entreguen al cliente el mismo día del embarque |\n| Capacitar al personal | Que el 100 % de los analistas completen la certificación interna en el método de titulación de APA antes de junio |\n| Cero quejas | Reducir las quejas por etiquetado a la mitad respecto al año anterior |\n\nUn buen objetivo tiene **línea base**, **meta**, **plazo**, **responsable** y **método de medición**, y está conectado con un **plan** de acciones.\n\n## Planificación de los cambios (6.3): el refuerzo\n### Lo que pedía 2015\nCuando la organización determinaba la necesidad de cambios en el sistema de gestión de la calidad, los cambios debían llevarse a cabo de manera planificada, considerando el propósito y las consecuencias potenciales, la integridad del sistema, la disponibilidad de recursos y la asignación o reasignación de responsabilidades.\n\n### Lo que agrega 2026\nSegún los análisis de organismos de certificación, el apartado 6.3 se **refuerza** para apoyar el logro de los resultados previstos. Además de planificar, la organización debe:\n\n- **Comunicar** el cambio a quienes corresponda.\n- Dar **seguimiento a la eficacia** del cambio.\n- **Revisar los resultados** del cambio.\n\nEn otras palabras: el ciclo de un cambio ya no termina cuando se implementa, sino cuando se confirma que logró lo que se buscaba y no provocó efectos no deseados.\n\n### Por qué este refuerzo\nLos cambios son una de las fuentes más frecuentes de problemas de calidad: un nuevo sistema informático que se implementa sin capacitar, una reorganización que deja responsabilidades huérfanas, un cambio de proveedor que se decide por precio, una nueva línea que se arranca sin actualizar los controles. Muchas organizaciones planificaban el cambio, pero nadie revisaba después si había funcionado.\n\n### Qué cambios entran en 6.3\nEl apartado se refiere a cambios **en el sistema de gestión de la calidad**: estructura, procesos, responsabilidades, recursos, sistemas de información, alcance. Los cambios en **productos y servicios** y en la **producción** se gestionan en el capítulo 8 (por ejemplo, 8.5.6 control de los cambios y 8.3.6 cambios del diseño y desarrollo). En la práctica, muchas organizaciones tienen un solo procedimiento de **gestión del cambio** que cubre ambos, con ramas según el tipo de cambio. Eso está bien, siempre que se cumplan los requisitos de cada apartado.\n\n## Un proceso de gestión del cambio completo\nUn procedimiento de gestión del cambio alineado con 2026 tiene estas etapas:\n\n### 1. Solicitud\n- Descripción del cambio y su **propósito**.\n- Quién lo solicita, alcance, áreas y procesos afectados.\n- Urgencia.\n\n### 2. Evaluación\n- **Consecuencias potenciales**: en la conformidad de productos y servicios, en la satisfacción del cliente, en otros procesos, en requisitos legales y de clientes, en la inocuidad si hay un sistema integrado.\n- **Riesgos y oportunidades** que introduce el cambio.\n- **Integridad** del sistema: ¿qué documentos, controles, registros, responsabilidades cambian?\n- **Recursos** necesarios.\n- **Responsabilidades** que se asignan o reasignan.\n\n### 3. Aprobación\n- Por quien tiene autoridad, según el impacto.\n\n### 4. Plan de implementación\n- Acciones, responsables, fechas.\n- **Comunicación**: a quién, qué, cuándo y cómo (personal interno, clientes que exigen notificación, proveedores, organismo de certificación si cambia el alcance).\n- Capacitación.\n- Actualización de documentos.\n- Criterios para considerar el cambio **exitoso**.\n\n### 5. Implementación\n- Con registro de lo realizado.\n\n### 6. Seguimiento de la eficacia\n- Indicadores definidos en el plan, medidos durante un periodo adecuado.\n- Detección de efectos no deseados.\n\n### 7. Revisión de resultados y cierre\n- ¿Se logró el propósito? ¿Hubo efectos no deseados? ¿Qué se aprendió?\n- Cierre formal o acciones adicionales.\n- Entrada a la revisión por la dirección.\n\n## Ejemplos de cambios en una planta química\n**Reorganización del laboratorio**: el laboratorio de calidad se divide en dos áreas, una para materias primas y otra para producto terminado, con un nuevo jefe. Consecuencias: cambian responsabilidades de liberación, firmas, competencias, flujos de muestras. Comunicación: producción, almacén, compras. Eficacia: tiempo de liberación, errores de liberación, quejas. Revisión: a los tres meses.\n\n**Nuevo sistema de planificación de recursos (ERP)**: cambia la gestión de inventarios, lotes y trazabilidad. Consecuencias: riesgo para la trazabilidad y la liberación. Plan: migración de datos validada, pruebas de trazabilidad antes y después, capacitación, procedimiento de contingencia. Eficacia: simulacro de trazabilidad después de la puesta en marcha. Revisión: a los seis meses.\n\n**Cambio de turno de tres a dos**: afecta la supervisión, los tiempos de liberación y la carga de trabajo. Consecuencias: riesgo de errores por fatiga, impacto en la cultura. Eficacia: desviaciones, quejas, reportes de casi incidentes por turno.\n\n## Conexión con ISO 22000\nISO 22000:2018 también tiene un apartado 6.3 de planificación de los cambios, y además exige que el equipo de inocuidad sea informado de los cambios que pueden afectar la inocuidad (7.4.3) y que el plan de control se actualice (8.6). En un sistema integrado, un solo procedimiento de gestión del cambio puede cubrir ambas normas, con una etapa de **evaluación de impacto en la inocuidad** obligatoria y la participación del equipo de inocuidad.\n\n## Ideas que debes llevarte\n- Los **objetivos** (6.2) no cambian, pero conviene conectarlos con oportunidades, cultura y requisitos climáticos, y asegurarse de que tengan línea base, meta, plazo, responsable y medición.\n- La **planificación de los cambios** (6.3) se refuerza: además de planificar, hay que **comunicar**, dar **seguimiento a la eficacia** y **revisar los resultados**.\n- Un cambio no termina al implementarse, sino cuando se confirma que logró su propósito sin efectos no deseados.\n- Un procedimiento de gestión del cambio completo incluye solicitud, evaluación, aprobación, plan con comunicación y criterios de éxito, implementación, seguimiento de eficacia y revisión.\n- En un sistema integrado, un mismo procedimiento puede cubrir ISO 9001 e ISO 22000, con evaluación de impacto en la inocuidad.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivos",
+     "enunciado": "¿Cambió de fondo el apartado 6.2 de objetivos de la calidad en la edición 2026?",
+     "opciones": [
+      "No, los requisitos se mantienen prácticamente iguales",
+      "Sí, ahora son opcionales",
+      "Sí, ahora deben ser financieros",
+      "Sí, ahora los define el organismo de certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Los análisis coinciden en que no hay cambios de sistema necesarios en 6.2.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivos",
+     "enunciado": "¿Cuál es un objetivo de la calidad bien formulado?",
+     "opciones": [
+      "Reducir los lotes reprocesados de 4.2 % a 2.5 % en 2027, con responsable y medición mensual",
+      "Mejorar la calidad",
+      "Satisfacer al cliente",
+      "Cero errores"
+     ],
+     "correcta": 0,
+     "explicacion": "Tiene línea base, meta, plazo, responsable y medición.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cambios",
+     "enunciado": "¿Qué agrega la edición 2026 a la planificación de los cambios (6.3)?",
+     "opciones": [
+      "Comunicar el cambio, dar seguimiento a su eficacia y revisar sus resultados",
+      "Eliminar la planificación",
+      "Exigir aprobación del organismo de certificación",
+      "Limitar los cambios a uno por año"
+     ],
+     "correcta": 0,
+     "explicacion": "El refuerzo busca apoyar el logro de los resultados previstos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cambios",
+     "enunciado": "¿Cuándo termina el ciclo de un cambio según la lógica de la edición 2026?",
+     "opciones": [
+      "Cuando se confirma que logró su propósito sin efectos no deseados",
+      "Cuando se aprueba",
+      "Cuando se implementa",
+      "Cuando se comunica"
+     ],
+     "correcta": 0,
+     "explicacion": "El seguimiento de la eficacia y la revisión de resultados cierran el ciclo.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance de 6.3",
+     "enunciado": "¿Qué tipo de cambios cubre principalmente el apartado 6.3?",
+     "opciones": [
+      "Cambios en el sistema de gestión de la calidad: estructura, procesos, responsabilidades, recursos, sistemas",
+      "Solo cambios de fórmula de producto",
+      "Solo cambios de proveedor",
+      "Solo cambios de precio"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cambios en productos y producción se tratan en el capítulo 8 (por ejemplo, 8.5.6 y 8.3.6).",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Procedimiento único",
+     "enunciado": "¿Puede una organización tener un solo procedimiento de gestión del cambio para cambios del sistema y de producción?",
+     "opciones": [
+      "Sí, siempre que se cumplan los requisitos de cada apartado",
+      "No, la norma exige procedimientos separados",
+      "No, solo puede gestionar cambios del sistema",
+      "Solo si está certificada en ISO 22000"
+     ],
+     "correcta": 0,
+     "explicacion": "Un procedimiento con ramas por tipo de cambio es una práctica común y válida.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evaluación",
+     "enunciado": "¿Qué debe evaluarse antes de aprobar un cambio en el sistema?",
+     "opciones": [
+      "Propósito, consecuencias potenciales, integridad del sistema, recursos y responsabilidades",
+      "Solo el costo",
+      "Solo la opinión del solicitante",
+      "Solo la fecha de implementación"
+     ],
+     "correcta": 0,
+     "explicacion": "Estos elementos ya estaban en 2015 y se mantienen.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "Tras implementar un nuevo ERP, ¿cuál es una buena forma de evaluar la eficacia del cambio respecto a la calidad?",
+     "opciones": [
+      "Un simulacro de trazabilidad después de la puesta en marcha",
+      "Contar cuántos usuarios tiene el sistema",
+      "Medir el tiempo de arranque de las computadoras",
+      "Preguntar al proveedor del ERP"
+     ],
+     "correcta": 0,
+     "explicacion": "La trazabilidad es uno de los procesos de calidad más afectados por un cambio de ERP.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comunicación",
+     "enunciado": "Un cambio de alcance del sistema (nueva planta) debe comunicarse, entre otros, a:",
+     "opciones": [
+      "El organismo de certificación",
+      "Solo al personal de la nueva planta",
+      "Solo a ventas",
+      "A nadie hasta la siguiente auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cambios de alcance afectan la certificación; también se comunica a clientes y personal afectados.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integración con ISO 22000",
+     "enunciado": "En un sistema integrado, ¿qué etapa conviene incluir en el procedimiento único de gestión del cambio?",
+     "opciones": [
+      "Evaluación obligatoria del impacto en la inocuidad con participación del equipo de inocuidad",
+      "Aprobación del cliente para cualquier cambio",
+      "Revisión por el área de ventas",
+      "Ninguna adicional"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 22000 exige informar al equipo de inocuidad y actualizar el plan de control ante cambios.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivos y cambios",
+     "enunciado": "¿De dónde pueden surgir objetivos de calidad nuevos en la transición?",
+     "opciones": [
+      "De oportunidades priorizadas en 6.1.3, de la cultura de calidad y de requisitos climáticos adoptados",
+      "Solo de las ventas del año anterior",
+      "Solo de las auditorías externas",
+      "Del organismo de certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Los objetivos conectan la planificación con los cambios nuevos de la norma.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Gestión del cambio",
+     "enunciado": "Aplica las siete etapas de la gestión del cambio a la reducción de tres a dos turnos de producción.",
+     "respuesta_modelo": "1) Solicitud: producción propone pasar a dos turnos por menor demanda; afecta producción, laboratorio, almacén y mantenimiento. 2) Evaluación: consecuencias en la supervisión de PCC y PPRO, tiempos de liberación, carga de trabajo y fatiga, cobertura de mantenimiento, competencias en cada turno, cultura; riesgos de errores y oportunidades de concentrar personal experto; documentos que cambian (horarios, responsabilidades de liberación). 3) Aprobación por la dirección con participación de calidad. 4) Plan: reasignación de responsabilidades, capacitación cruzada, actualización de procedimientos, comunicación a personal y a clientes si cambian horarios de embarque; criterios de éxito (sin aumento de desviaciones ni quejas, tiempos de liberación iguales). 5) Implementación registrada. 6) Seguimiento por tres meses de desviaciones, quejas, reportes de casi incidentes y tiempos de liberación por turno. 7) Revisión de resultados, acciones adicionales si hay efectos no deseados y reporte a la revisión por la dirección.",
+     "puntos_clave": [
+      "Las siete etapas aplicadas",
+      "Consecuencias en calidad y personas",
+      "Comunicación y criterios de éxito",
+      "Seguimiento de eficacia y revisión"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Objetivos",
+     "enunciado": "Reescribe tres objetivos vagos de tu sistema actual para que cumplan con 6.2 y conéctalos con algún cambio de la edición 2026.",
+     "respuesta_modelo": "1) 'Mejorar la cultura de calidad' pasa a 'Duplicar los reportes de casi incidentes y responder el 90 % en menos de 15 días durante 2027', responsable: líder del sistema; se conecta con 5.1.1. 2) 'Aprovechar la tecnología' pasa a 'Entregar el 95 % de los COA el mismo día del embarque mediante emisión digital antes de diciembre de 2027', responsable: jefe de laboratorio; se conecta con una oportunidad de 6.1.3. 3) 'Atender requisitos de clientes' pasa a 'Calcular y entregar la huella de carbono por kilogramo de los cinco productos principales a los clientes que la solicitaron antes de junio de 2028', responsable: ingeniería; se conecta con requisitos climáticos de 4.2. Cada uno con línea base, plan de acciones y seguimiento mensual.",
+     "puntos_clave": [
+      "Tres objetivos reformulados",
+      "Línea base, meta, plazo, responsable, medición",
+      "Conexión con cambios 2026",
+      "Plan y seguimiento"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Efectos no deseados",
+     "enunciado": "¿Por qué es importante buscar efectos no deseados después de un cambio? Da un ejemplo en una planta química.",
+     "respuesta_modelo": "Porque un cambio puede lograr su propósito y, al mismo tiempo, dañar otro proceso que nadie consideró. Ejemplo: se cambia a un proveedor de envases más barato y el objetivo de reducir costos se logra, pero los envases tienen un cierre menos hermético y aumentan las quejas por fugas y la pérdida de concentración del hipoclorito durante el transporte. Si solo se mide el costo, el efecto no deseado se detecta tarde, por quejas. Definir indicadores de seguimiento más amplios (quejas, estabilidad, devoluciones) y revisar resultados después de un periodo permite detectarlo y corregirlo pronto.",
+     "puntos_clave": [
+      "Un cambio puede afectar otros procesos",
+      "Ejemplo concreto",
+      "Indicadores de seguimiento amplios",
+      "Revisión de resultados"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Apoyo y operación: conocimiento, contingencias y diseño",
+   "texto": "## Cambios pequeños en capítulos grandes\nLos capítulos 7 (apoyo) y 8 (operación) son los más extensos de ISO 9001 y donde está la mayor parte del trabajo diario del sistema. En la edición 2026 reciben **ajustes puntuales**, no cambios de fondo. Pero conviene conocerlos con precisión porque los auditores los revisarán en la transición.\n\n## Capítulo 7: apoyo\n### Recursos (7.1)\nLa estructura de 7.1 se mantiene: generalidades, personas, infraestructura, ambiente para la operación de los procesos, recursos de seguimiento y medición (incluida la trazabilidad de las mediciones) y conocimientos de la organización.\n\n**Ambiente para la operación de los procesos (7.1.4).** Como viste en el capítulo 4 del curso, se refuerza su conexión con la **cultura de calidad** y el **comportamiento ético**. Los factores sociales y psicológicos (ambiente no discriminatorio, sin confrontaciones, con manejo del estrés) son parte de un ambiente donde las personas pueden hacer bien su trabajo y reportar problemas.\n\n**Recursos de seguimiento y medición (7.1.5).** Sin cambios de fondo. Siguen vigentes los requisitos de idoneidad de los recursos y de **trazabilidad metrológica** cuando es un requisito o cuando la organización la considera esencial para la confianza en los resultados: calibración o verificación a intervalos especificados contra patrones trazables, identificación del estado de calibración, protección contra ajustes que invaliden los resultados, y evaluación de la validez de resultados previos cuando un equipo se encuentra fuera de calibración. El curso de metrología e ISO/IEC 17025 profundiza en esto.\n\n**Conocimientos de la organización (7.1.6).** Aquí sí hay un ajuste: según los análisis publicados, el alcance se **amplía** hacia los conocimientos que el **sistema de gestión** necesita para lograr sus resultados previstos, no solo los necesarios para la operación de los procesos y la conformidad de los productos. En la práctica:\n\n- Conocimiento técnico de productos y procesos (formulaciones, química, métodos analíticos).\n- Conocimiento del sistema: cómo se gestionan los riesgos, los cambios, las auditorías.\n- Conocimiento regulatorio y de clientes.\n- Lecciones aprendidas de incidentes, quejas, proyectos.\n\nRiesgo típico en una planta química: el conocimiento crítico está en la cabeza de dos o tres personas con muchos años en la empresa (el formulador que sabe por qué el orden de carga importa, el analista que conoce las interferencias del método). Las acciones para gestionarlo incluyen documentar el conocimiento clave, mentoría y capacitación cruzada, bases de lecciones aprendidas, y planes de sucesión.\n\n### Competencia (7.2)\nSin cambios de fondo. Determinar la competencia necesaria, asegurarla mediante educación, formación o experiencia, tomar acciones para adquirirla y evaluar su eficacia, y conservar evidencia.\n\n### Toma de conciencia (7.3)\nSe amplía hacia la **cultura de calidad** y el **comportamiento ético**, además de la política, los objetivos pertinentes, la contribución de cada persona a la eficacia del sistema y las implicaciones de no cumplir.\n\n### Comunicación (7.4) e información documentada (7.5)\nSin cambios de fondo en la comunicación. En información documentada, hay ajustes de redacción: la expresión de \"mantener información documentada\" se sustituye en buena medida por que algo esté \"disponible como información documentada\". Para efectos prácticos: los documentos y registros necesarios deben **existir**, estar **controlados** y ser **accesibles** cuando se necesitan. No hay que reescribir tu sistema documental.\n\n## Capítulo 8: operación\n### Comunicación con el cliente e información de contingencia (8.2.1)\nEl apartado 8.2.1 sobre comunicación con el cliente ya pedía, entre otras cosas, **establecer requisitos específicos para las acciones de contingencia**, cuando sea pertinente. Según los análisis de la edición 2026, ahora se pide explícitamente **proporcionar información de contingencia a los clientes**.\n\n¿Qué significa en la práctica? Que cuando existen planes de contingencia que afectan al cliente (por ejemplo, ante una falla de suministro, un desastre natural, una huelga, una falla de sistemas), el cliente debe conocer lo que le corresponde:\n\n- A quién contactar en una emergencia.\n- Qué productos alternativos, plantas alternas o rutas de suministro se activarían.\n- Cómo se le notificaría una interrupción y con qué anticipación.\n- Qué información se le proporcionaría (por ejemplo, para un auxiliar de proceso, si un producto alternativo tiene otra concentración o requiere otra dosificación).\n\nEsto conecta con el cambio climático (eventos que interrumpen suministros) y con los requisitos de clientes de la industria de alimentos, que suelen exigir **planes de continuidad** a sus proveedores.\n\n### Requisitos para los productos y servicios (8.2.2 a 8.2.4)\nSin cambios de fondo: determinar los requisitos (incluidos los legales y los que la organización considera necesarios), revisarlos antes de comprometerse y gestionar sus cambios.\n\n### Diseño y desarrollo (8.3)\n**Cambios del diseño (8.3.6).** La edición 2026 pide que los cambios durante o después del diseño y desarrollo se **determinen**, y no solo se **identifiquen**. La diferencia parece pequeña, pero tiene sentido: identificar es notar que algo cambió; determinar implica **definir** el cambio con precisión, evaluar su impacto y decidir. En una empresa que formula productos químicos, esto aplica a los cambios de fórmula, de materias primas, de especificaciones o de proceso de un producto ya diseñado.\n\nBuenas prácticas para cumplirlo:\n\n- Un registro de cambios de diseño con la descripción precisa del cambio.\n- Evaluación del impacto en las partes constitutivas y en productos ya entregados (por ejemplo, ¿cambia la estabilidad, la compatibilidad, la regulación, la dosificación del cliente?).\n- Revisión y verificación o validación del cambio cuando corresponda.\n- Autorización.\n- Acciones para prevenir impactos adversos.\n\nRecuerda que muchas empresas químicas excluían el diseño y desarrollo de su alcance. Si **formulas** productos nuevos o modificas fórmulas para clientes, probablemente el apartado 8.3 es aplicable.\n\n### Control de procesos, productos y servicios suministrados externamente (8.4)\nSin cambios de fondo. Sigue siendo el apartado de control de proveedores y procesos subcontratados.\n\n### Producción y provisión del servicio (8.5) a control de salidas no conformes (8.7)\nSin cambios de fondo en el control de la producción, identificación y trazabilidad, propiedad del cliente, preservación, actividades posteriores a la entrega, control de cambios de producción, liberación y control de salidas no conformes.\n\n## Cómo preparar estos apartados para la transición\n| Apartado | Acción de transición |\n|---|---|\n| 7.1.4 | Revisar cómo el ambiente apoya la cultura de calidad y el reporte seguro |\n| 7.1.6 | Mapear conocimientos críticos del sistema y de los procesos; plan de retención |\n| 7.3 | Actualizar inducción y toma de conciencia con cultura y ética |\n| 7.5 | Sin acción obligatoria; revisar accesibilidad de documentos |\n| 8.2.1 | Definir y comunicar a los clientes la información de contingencia pertinente |\n| 8.3.6 | Revisar el procedimiento de cambios de diseño para que se determinen y evalúen |\n\n## Ideas que debes llevarte\n- Los capítulos 7 y 8 reciben **ajustes puntuales**.\n- **7.1.4** se conecta con la cultura de calidad y la ética.\n- **7.1.6** amplía los **conocimientos** hacia lo que el sistema necesita para lograr sus resultados; gestiona el conocimiento crítico concentrado en pocas personas.\n- **7.3** incluye cultura de calidad y comportamiento ético en la toma de conciencia.\n- **7.5**: cambios de redacción (\"disponible como información documentada\"); no hay que reescribir el sistema documental.\n- **8.2.1**: proporcionar **información de contingencia** a los clientes.\n- **8.3.6**: los cambios de diseño deben **determinarse**, no solo identificarse.\n- El resto del capítulo 8 se mantiene sin cambios de fondo.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Conocimientos",
+     "enunciado": "¿Qué ajuste recibe el apartado de conocimientos de la organización (7.1.6)?",
+     "opciones": [
+      "Se amplía hacia los conocimientos que el sistema necesita para lograr sus resultados previstos",
+      "Se elimina",
+      "Se limita a conocimientos de producción",
+      "Se convierte en un requisito de certificación de personal"
+     ],
+     "correcta": 0,
+     "explicacion": "El alcance va más allá de la operación de procesos y la conformidad de productos.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Conocimientos",
+     "enunciado": "¿Cuál es un riesgo típico de conocimiento en una planta química?",
+     "opciones": [
+      "Que el conocimiento crítico de formulación esté en la cabeza de una o dos personas sin documentar",
+      "Tener demasiados procedimientos",
+      "Que el personal tenga demasiada capacitación",
+      "Que el laboratorio tenga muchos métodos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se gestiona con documentación, mentoría, capacitación cruzada, lecciones aprendidas y sucesión.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Toma de conciencia",
+     "enunciado": "¿Qué se agrega a la toma de conciencia (7.3) en la edición 2026?",
+     "opciones": [
+      "Cultura de calidad y comportamiento ético",
+      "Conocimiento de normas ambientales",
+      "Certificación obligatoria del personal",
+      "Conocimiento de finanzas"
+     ],
+     "correcta": 0,
+     "explicacion": "Se suma a la política, los objetivos, la contribución y las implicaciones de no cumplir.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Información documentada",
+     "enunciado": "¿Qué implica el cambio de redacción a 'disponible como información documentada'?",
+     "opciones": [
+      "En la práctica, que los documentos necesarios existan, estén controlados y sean accesibles; no exige reescribir el sistema documental",
+      "Que todos los documentos deben estar en papel",
+      "Que se eliminan los registros",
+      "Que todo debe estar en la nube"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un ajuste de redacción sin cambio de fondo.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contingencia",
+     "enunciado": "¿Qué pide ahora de forma explícita el apartado de comunicación con el cliente (8.2.1)?",
+     "opciones": [
+      "Proporcionar información de contingencia a los clientes",
+      "Pedir al cliente su plan de negocios",
+      "Encuestar al cliente cada mes",
+      "Entregar la fórmula del producto"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, contactos de emergencia, alternativas de suministro y forma de notificación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contingencia",
+     "enunciado": "Para un auxiliar de proceso, ¿qué información de contingencia es especialmente pertinente?",
+     "opciones": [
+      "Si un producto alternativo tiene otra concentración o requiere otra dosificación",
+      "El organigrama de la empresa",
+      "El historial de precios",
+      "Las vacaciones del personal"
+     ],
+     "correcta": 0,
+     "explicacion": "Un cambio de producto alternativo sin información de uso puede afectar el proceso del cliente.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diseño",
+     "enunciado": "¿Qué cambia en los cambios del diseño y desarrollo (8.3.6)?",
+     "opciones": [
+      "Los cambios deben determinarse, no solo identificarse",
+      "Se eliminan las revisiones de diseño",
+      "El diseño deja de ser aplicable a empresas químicas",
+      "Solo se registran los cambios mayores"
+     ],
+     "correcta": 0,
+     "explicacion": "Determinar implica definir con precisión el cambio, evaluar su impacto y decidir.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diseño",
+     "enunciado": "Una empresa química que modifica fórmulas para clientes excluye el apartado 8.3. ¿Es correcto?",
+     "opciones": [
+      "Probablemente no; si formula o modifica fórmulas, el diseño y desarrollo suele ser aplicable",
+      "Sí, las empresas químicas siempre pueden excluirlo",
+      "Sí, si el cliente aprueba la fórmula",
+      "Sí, porque la fórmula no es un producto"
+     ],
+     "correcta": 0,
+     "explicacion": "La exclusión debe justificarse y no afectar la conformidad.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Metrología",
+     "enunciado": "¿Cambió de fondo el apartado de recursos de seguimiento y medición (7.1.5)?",
+     "opciones": [
+      "No; siguen la idoneidad, la trazabilidad metrológica y la evaluación de resultados previos ante equipos fuera de calibración",
+      "Sí, se elimina la calibración",
+      "Sí, ahora exige ISO/IEC 17025",
+      "Sí, solo aplica a laboratorios"
+     ],
+     "correcta": 0,
+     "explicacion": "La trazabilidad metrológica sigue siendo requisito cuando es necesaria para la confianza en los resultados.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sin cambios",
+     "enunciado": "¿Cuál de estos apartados del capítulo 8 se mantiene sin cambios de fondo?",
+     "opciones": [
+      "Control de las salidas no conformes (8.7)",
+      "Comunicación con el cliente (8.2.1)",
+      "Cambios del diseño (8.3.6)",
+      "Ninguno"
+     ],
+     "correcta": 0,
+     "explicacion": "8.4 a 8.7 se mantienen sin cambios de fondo.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ambiente",
+     "enunciado": "¿Cómo se relaciona el ambiente para la operación de los procesos (7.1.4) con la cultura de calidad?",
+     "opciones": [
+      "Un ambiente con miedo a reportar o presión excesiva no es adecuado para la operación de los procesos",
+      "No tienen relación",
+      "El ambiente solo se refiere a temperatura",
+      "La cultura sustituye al ambiente"
+     ],
+     "correcta": 0,
+     "explicacion": "Los factores sociales y psicológicos son parte del ambiente que la norma pide determinar y mantener.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Contingencia",
+     "enunciado": "Redacta la información de contingencia que darías a un cliente de la industria láctea que compra tu sanitizante de ácido peracético.",
+     "respuesta_modelo": "Contacto de emergencia 24 horas para suministro y soporte técnico. Escenarios cubiertos: falla de producción en la planta, interrupción de materias primas, eventos climáticos o logísticos. Acciones: inventario de seguridad equivalente a cierto número de semanas de consumo del cliente; producción en planta alterna o maquila aprobada, con la misma especificación; si fuera necesario un producto alternativo, se notificaría con anticipación su concentración, la nueva dilución recomendada, su ficha técnica, su COA y su aprobación regulatoria, para que el cliente ajuste su procedimiento y su validación. Forma de notificación: correo y llamada al responsable de calidad del cliente en menos de 24 horas desde que se detecta la interrupción, con un estimado de duración.",
+     "puntos_clave": [
+      "Contacto de emergencia",
+      "Escenarios y alternativas",
+      "Información de uso del producto alternativo",
+      "Forma y plazo de notificación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Conocimientos",
+     "enunciado": "Diseña un plan para gestionar el conocimiento crítico de un formulador que se jubilará en un año.",
+     "respuesta_modelo": "1) Identificar el conocimiento crítico: fórmulas, razones del orden de carga, problemas históricos y soluciones, ajustes según lotes de materias primas, interacciones con clientes. 2) Documentar: fichas técnicas de formulación con el porqué de cada paso, base de lecciones aprendidas, notas de incidentes. 3) Transferir: asignar a uno o dos sucesores que trabajen en pareja con él durante el año, con lista de competencias a evaluar. 4) Validar: que los sucesores formulen lotes y resuelvan casos con supervisión, evaluando su competencia (7.2). 5) Retener: acuerdo de consulta posterior si es posible. 6) Seguimiento como objetivo con indicadores (porcentaje de conocimiento documentado, competencias evaluadas) y revisión en la revisión por la dirección.",
+     "puntos_clave": [
+      "Identificación del conocimiento crítico",
+      "Documentación y transferencia",
+      "Evaluación de competencia de sucesores",
+      "Seguimiento y retención"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diseño",
+     "enunciado": "Tu empresa cambia un quelante en un detergente ya vendido por uno de otro proveedor. ¿Cómo 'determinarías' el cambio según 8.3.6?",
+     "respuesta_modelo": "Definiría con precisión el cambio: quelante actual y nuevo, concentración, proveedor, especificación. Evaluaría su impacto: capacidad secuestrante y desempeño en agua dura, estabilidad del producto, compatibilidad con otros componentes, regulación para el uso alimentario, impurezas, alérgenos, efecto en la ficha técnica, en la hoja de seguridad y en la dosificación del cliente, y en productos ya entregados. Haría revisión, verificación con pruebas de laboratorio y validación de desempeño en condiciones de uso. Obtendría la autorización formal, actualizaría la documentación y comunicaría a los clientes que exigen notificación. Registraría todo en el registro de cambios de diseño, y si hay sistema integrado, el equipo de inocuidad evaluaría el impacto.",
+     "puntos_clave": [
+      "Definición precisa del cambio",
+      "Evaluación de impacto técnico y regulatorio",
+      "Verificación, validación y autorización",
+      "Documentación y comunicación"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "titulo": "Evaluación del desempeño y mejora continua",
+   "texto": "## Capítulo 9: evaluación del desempeño\n### Seguimiento, medición, análisis y evaluación (9.1)\nSin cambios de fondo. La organización determina qué necesita seguimiento y medición, los métodos para asegurar resultados válidos, cuándo se realizan y cuándo se analizan y evalúan los resultados. La **satisfacción del cliente** (9.1.2) sigue siendo un requisito de seguimiento de la percepción del cliente sobre el grado en que se cumplen sus necesidades y expectativas. El **análisis y evaluación** (9.1.3) sigue usando los datos para evaluar la conformidad de productos, la satisfacción del cliente, el desempeño y la eficacia del sistema, la eficacia de lo planificado, la eficacia de las acciones sobre riesgos y oportunidades, el desempeño de proveedores y la necesidad de mejoras.\n\nLo que sí cambia es lo que alimenta este análisis: ahora tienes que evaluar también la eficacia de las acciones sobre **oportunidades** (6.1.3), la eficacia de los **cambios** (6.3) y, si los definiste, indicadores de **cultura de calidad**.\n\n### Auditoría interna (9.2): objetivos de auditoría\nEl ajuste principal: según los análisis publicados, las auditorías internas deben tener **objetivos** definidos, además de los **criterios** y el **alcance** que ya pedía la edición 2015.\n\n**¿Cuál es la diferencia?**\n- **Objetivo**: para qué se hace la auditoría. Por ejemplo, \"determinar si el nuevo proceso de gestión de oportunidades está implementado y es eficaz\", o \"evaluar la eficacia de las acciones correctivas de la auditoría anterior en el laboratorio\".\n- **Alcance**: qué se audita (procesos, áreas, periodo, sitios).\n- **Criterios**: contra qué se compara (requisitos de ISO 9001, procedimientos internos, requisitos de clientes).\n\nEsto se alinea con **ISO 19011**, que siempre ha definido objetivos, alcance y criterios para cada auditoría. En la práctica, obliga a pensar cada auditoría como una herramienta con un propósito, no como una revisión rutinaria de todo cada año.\n\n**Ejemplos de objetivos útiles en la transición:**\n- Verificar la implementación de los cambios de la edición 2026 (cultura, oportunidades, gestión del cambio).\n- Evaluar la eficacia del proceso de gestión del cambio después de la implementación del nuevo ERP.\n- Evaluar la integridad de datos en el laboratorio.\n- Confirmar que la información de contingencia se comunicó a los clientes clave.\n\nEl resto de 9.2 se mantiene: programa de auditoría según importancia de los procesos, cambios y resultados previos; auditores objetivos e imparciales; informe a la dirección pertinente; correcciones y acciones correctivas sin demora indebida; información documentada.\n\n### Revisión por la dirección (9.3)\nLos análisis indican que los subapartados de la revisión por la dirección **mantienen la estructura de 2015**: generalidades, entradas y salidas. Lo que cambia, de nuevo, es el **contenido** de las entradas, por los requisitos nuevos:\n\n- Cambios en cuestiones externas e internas, incluido el **clima** cuando es pertinente.\n- Eficacia de las acciones para abordar **riesgos** y, por separado, **oportunidades**.\n- Resultados del seguimiento de la eficacia de los **cambios** planificados.\n- Información sobre la **cultura de calidad** (no es una entrada literal, pero la dirección que debe promoverla necesita información para hacerlo).\n\n### Cómo hacer una revisión por la dirección que sirva\nUna estructura práctica:\n\n1. **Seguimiento de acuerdos** de la revisión anterior.\n2. **Contexto y partes interesadas**: qué cambió (mercado, regulación, clientes, clima).\n3. **Desempeño**: satisfacción del cliente, objetivos, desempeño de procesos, no conformidades y acciones correctivas, auditorías, proveedores, recursos de medición.\n4. **Riesgos y oportunidades**: eficacia de acciones, nuevos riesgos, oportunidades priorizadas.\n5. **Cambios**: resultados de los cambios del periodo.\n6. **Cultura de calidad**: indicadores y percepción.\n7. **Recursos**: suficiencia.\n8. **Decisiones**: mejoras, cambios al sistema, recursos, objetivos.\n\nLas **salidas** deben ser decisiones con responsable y fecha, no una lista de temas revisados.\n\n## Capítulo 10: mejora\n### Una nueva organización\nEn ISO 9001:2015, el capítulo 10 tenía tres apartados: 10.1 generalidades, 10.2 no conformidad y acción correctiva, 10.3 mejora continua. En la edición 2026, según los análisis publicados, se crea un apartado **10.1 de mejora continua** que **consolida** principalmente los requisitos de los antiguos 10.1 y 10.3. La no conformidad y acción correctiva se mantienen.\n\n### Fuentes de mejora según el Anexo A\nLa orientación del Anexo A explica que la mejora puede surgir de:\n\n- **Cambios en el contexto**.\n- **Riesgos** y **oportunidades**.\n- La **adopción de tecnologías**.\n- El creciente uso de **datos** y la integración tecnológica, que pueden influir en la naturaleza y el alcance de la mejora.\n\nEl mensaje: la mejora no es solo corregir errores, sino también **aprovechar** cambios y herramientas para hacer mejor las cosas.\n\n### Tipos de mejora\nEl Anexo A de 2015 ya mencionaba que la mejora puede incluir corrección, acción correctiva, mejora continua, cambio abrupto, innovación y reorganización. La lógica se mantiene. Un sistema maduro tiene evidencia de varios tipos:\n\n| Tipo | Ejemplo en una planta química |\n|---|---|\n| Corrección | Reprocesar un lote fuera de especificación |\n| Acción correctiva | Cambiar el método de pesado para eliminar la causa de errores de concentración |\n| Mejora continua | Reducir año con año la variabilidad del contenido de activo con control estadístico |\n| Cambio abrupto | Sustituir el muestreo manual por analizadores en línea |\n| Innovación | Desarrollar una línea de productos concentrados |\n| Reorganización | Integrar los sistemas de calidad e inocuidad en un solo proceso |\n\n### No conformidad y acción correctiva\nLos requisitos se mantienen: reaccionar ante la no conformidad (controlarla, corregirla, hacer frente a las consecuencias), evaluar la necesidad de eliminar sus causas (revisando y analizando la no conformidad, determinando las causas y si existen o podrían ocurrir no conformidades similares), implementar acciones, revisar su eficacia, actualizar riesgos y oportunidades si es necesario, hacer cambios al sistema si es necesario, y conservar evidencia. El curso de causa raíz y CAPA profundiza en las herramientas.\n\n### Datos y tecnología como motores de mejora\nSin crear requisitos nuevos, la edición 2026 reconoce el papel de los datos y la tecnología. Algunas aplicaciones realistas para una planta química:\n\n- **Control estadístico de procesos** en tiempo real para concentración de activos, pH o densidad.\n- **Análisis de quejas** con categorización sistemática para encontrar patrones.\n- **Tableros** de indicadores conectados a los sistemas de producción y laboratorio.\n- **Sistemas de gestión de laboratorio** que eliminan transcripciones.\n- Herramientas de **inteligencia artificial** para analizar tendencias, siempre con validación y con atención a la integridad de los datos.\n\nLa tecnología también introduce riesgos (integridad de datos, ciberseguridad, dependencia de proveedores de sistemas) que deben evaluarse en 6.1.\n\n## Ideas que debes llevarte\n- **9.1** se mantiene; ahora alimentan el análisis la eficacia de las acciones sobre **oportunidades**, de los **cambios** y la **cultura**.\n- **9.2**: las auditorías internas tienen **objetivos** definidos, además de criterios y alcance, en línea con ISO 19011.\n- **9.3** mantiene su estructura; cambia el contenido de las entradas. Las salidas deben ser **decisiones**.\n- **10.1** consolida la **mejora continua**; el Anexo A señala como fuentes el contexto, los riesgos, las oportunidades, la **tecnología** y los **datos**.\n- No conformidad y acción correctiva se mantienen.\n- La mejora incluye corrección, acción correctiva, mejora continua, cambio abrupto, innovación y reorganización.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Auditoría interna",
+     "enunciado": "¿Qué agrega la edición 2026 a la planificación de cada auditoría interna?",
+     "opciones": [
+      "Definir objetivos de auditoría, además de criterios y alcance",
+      "Exigir auditores externos",
+      "Auditar todos los procesos cada mes",
+      "Eliminar el programa de auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Se alinea con ISO 19011, que define objetivos, alcance y criterios.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Auditoría interna",
+     "enunciado": "¿Cuál de estos es un objetivo de auditoría (y no un alcance ni un criterio)?",
+     "opciones": [
+      "Determinar si el nuevo proceso de gestión de oportunidades está implementado y es eficaz",
+      "El laboratorio de control de calidad, de enero a junio",
+      "Los requisitos de ISO 9001:2026 y el procedimiento interno de laboratorio",
+      "El turno nocturno de envasado"
+     ],
+     "correcta": 0,
+     "explicacion": "El objetivo es para qué; el alcance, qué se audita; los criterios, contra qué se compara.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión por la dirección",
+     "enunciado": "¿Qué pasa con la estructura de la revisión por la dirección en la edición 2026?",
+     "opciones": [
+      "Se mantiene la estructura de 2015; cambia el contenido de las entradas por los requisitos nuevos",
+      "Se elimina",
+      "Se convierte en una auditoría",
+      "Se hace solo cada tres años"
+     ],
+     "correcta": 0,
+     "explicacion": "Las entradas incorporan oportunidades, cambios, clima y, en la práctica, cultura.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Salidas",
+     "enunciado": "¿Cómo deben ser las salidas de una revisión por la dirección eficaz?",
+     "opciones": [
+      "Decisiones con responsable y fecha sobre mejoras, cambios, recursos y objetivos",
+      "Una lista de temas revisados",
+      "Una presentación archivada",
+      "La firma de asistencia"
+     ],
+     "correcta": 0,
+     "explicacion": "Las salidas son decisiones y acciones.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mejora",
+     "enunciado": "¿Qué hace el nuevo apartado 10.1 de la edición 2026?",
+     "opciones": [
+      "Consolida principalmente los requisitos de mejora de los antiguos 10.1 y 10.3",
+      "Elimina la acción correctiva",
+      "Exige certificación Six Sigma",
+      "Exige un porcentaje de mejora anual"
+     ],
+     "correcta": 0,
+     "explicacion": "No conformidad y acción correctiva se mantienen.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuentes de mejora",
+     "enunciado": "Según el Anexo A, ¿cuál es una fuente de mejora?",
+     "opciones": [
+      "La adopción de tecnologías y el uso de datos",
+      "La reducción del presupuesto de calidad",
+      "La eliminación de indicadores",
+      "La rotación de proveedores sin evaluación"
+     ],
+     "correcta": 0,
+     "explicacion": "También cambios en el contexto, riesgos y oportunidades.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos de mejora",
+     "enunciado": "Sustituir el muestreo manual por analizadores en línea es un ejemplo de:",
+     "opciones": [
+      "Cambio abrupto",
+      "Corrección",
+      "Acción correctiva",
+      "Reorganización"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un salto tecnológico en el proceso, distinto de la mejora incremental.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos de mejora",
+     "enunciado": "Reducir año con año la variabilidad del contenido de activo con control estadístico es un ejemplo de:",
+     "opciones": [
+      "Mejora continua",
+      "Corrección",
+      "Innovación",
+      "Cambio abrupto"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una mejora incremental y sostenida.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis",
+     "enunciado": "¿Qué nuevos elementos alimentan el análisis y evaluación (9.1.3) en la práctica de la edición 2026?",
+     "opciones": [
+      "La eficacia de acciones sobre oportunidades, de los cambios planificados y los indicadores de cultura",
+      "Solo los indicadores financieros",
+      "Solo las quejas",
+      "Solo las auditorías externas"
+     ],
+     "correcta": 0,
+     "explicacion": "Los requisitos nuevos generan datos que deben analizarse.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tecnología",
+     "enunciado": "¿Qué riesgo introduce adoptar herramientas de inteligencia artificial para el análisis de tendencias de calidad?",
+     "opciones": [
+      "Riesgos de integridad de datos y de validación que deben evaluarse en 6.1",
+      "Ninguno, la IA siempre es exacta",
+      "Que la norma lo prohíbe",
+      "Que invalida la certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "La tecnología es fuente de mejora, pero también de riesgos que se gestionan.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acción correctiva",
+     "enunciado": "¿Cambiaron de fondo los requisitos de no conformidad y acción correctiva?",
+     "opciones": [
+      "No, se mantienen: reaccionar, evaluar causas, implementar, revisar eficacia, actualizar riesgos y cambiar el sistema si es necesario",
+      "Sí, se eliminan",
+      "Sí, ahora solo aplican a quejas",
+      "Sí, ahora requieren aprobación externa"
+     ],
+     "correcta": 0,
+     "explicacion": "El tratamiento de no conformidades sigue la lógica de 2015.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa de auditoría",
+     "enunciado": "Diseña el programa de auditoría interna del primer año de transición, con al menos cuatro auditorías y su objetivo, alcance y criterios.",
+     "respuesta_modelo": "1) Objetivo: verificar la implementación de los requisitos nuevos de liderazgo y cultura; alcance: alta dirección y gerencias; criterios: 5.1.1, 7.1.4, 7.3 de ISO 9001:2026 y el programa de cultura. 2) Objetivo: evaluar la eficacia del nuevo proceso de riesgos y oportunidades; alcance: registros y fichas del año, procesos clave; criterios: 6.1.1 a 6.1.3 y el procedimiento interno. 3) Objetivo: evaluar la eficacia de la gestión del cambio en los cambios del año; alcance: tres cambios relevantes (ERP, reorganización del laboratorio, nuevo proveedor); criterios: 6.3 y procedimiento de gestión del cambio. 4) Objetivo: confirmar la integridad de datos y la liberación en el laboratorio; alcance: laboratorio de producto terminado, últimos seis meses; criterios: 7.1.5, 8.6, procedimiento de resultados fuera de especificación. 5) Objetivo: confirmar la comunicación de contingencias a clientes clave; alcance: ventas y servicio técnico; criterios: 8.2.1. Auditores independientes del área auditada.",
+     "puntos_clave": [
+      "Al menos cuatro auditorías",
+      "Objetivo, alcance y criterios distintos y claros",
+      "Enfoque en cambios de la transición",
+      "Independencia de los auditores"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Revisión por la dirección",
+     "enunciado": "Prepara la agenda de la primera revisión por la dirección después de implementar la edición 2026, con las entradas nuevas.",
+     "respuesta_modelo": "1) Seguimiento de acuerdos anteriores. 2) Contexto y partes interesadas: cambios, incluido el clima y requisitos climáticos de clientes. 3) Desempeño: satisfacción del cliente, objetivos, procesos, conformidad de productos, no conformidades y acciones correctivas, auditorías internas y externas, proveedores, recursos de medición. 4) Riesgos: eficacia de acciones y riesgos nuevos. 5) Oportunidades: estado de las fichas priorizadas y eficacia de las acciones. 6) Cambios del periodo: resultados del seguimiento de eficacia. 7) Cultura de calidad: indicadores de reporte, respuesta, encuesta y hallazgos de integridad. 8) Recursos. 9) Estado de la transición. 10) Decisiones: mejoras, cambios al sistema, recursos, objetivos nuevos, con responsable y fecha.",
+     "puntos_clave": [
+      "Entradas tradicionales",
+      "Entradas nuevas: clima, oportunidades, cambios, cultura",
+      "Estado de la transición",
+      "Salidas como decisiones con responsable y fecha"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Mejora con datos",
+     "enunciado": "Propón una mejora basada en datos para tu planta y explica cómo la gestionarías según los requisitos de la edición 2026.",
+     "respuesta_modelo": "Mejora: implementar control estadístico de procesos en tiempo real para la concentración de activo de los sanitizantes, con datos del laboratorio y de analizadores en línea. Gestión: se registra como oportunidad en 6.1.3 con ficha (beneficio: menos reprocesos y menos variabilidad; requisitos: software, integración, capacitación; riesgos: integridad de datos y validación del sistema). Se convierte en objetivo de calidad (6.2) con línea base de reprocesos y meta. Se gestiona como cambio planificado (6.3) con comunicación, seguimiento de eficacia y revisión de resultados. Se capacita al personal (7.2) y se gestiona el conocimiento (7.1.6). Se evalúa en 9.1 y en la revisión por la dirección, y se registra como mejora continua (10.1).",
+     "puntos_clave": [
+      "Mejora concreta basada en datos",
+      "Registro como oportunidad con riesgos",
+      "Objetivo y gestión del cambio",
+      "Evaluación de eficacia y revisión"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "titulo": "Plan de transición y sistemas integrados",
+   "texto": "## La transición como proyecto\nUna transición bien hecha es un **proyecto** con alcance, responsables, cronograma y entregables, no una revisión rápida antes de la auditoría. Pero tampoco debe sobredimensionarse: el cambio es moderado, y el error opuesto, reescribir todo el sistema, desperdicia recursos y desgasta al personal.\n\nEste capítulo propone una metodología en siete pasos.\n\n## Paso 1: conseguir y estudiar la norma\n- Adquirir el **texto oficial** de ISO 9001:2026 (y, cuando esté disponible, la traducción oficial al español por el organismo nacional de normalización o por el grupo de traducción de ISO).\n- Conseguir también la nueva edición de **ISO 9000** (vocabulario).\n- Formar al **líder del sistema** y a los **auditores internos** en los cambios. Muchos organismos de certificación y de capacitación ofrecen cursos de transición.\n- Leer cada requisito con su orientación del **Anexo A**.\n\n## Paso 2: análisis de brechas\nEl análisis de brechas compara, apartado por apartado, lo que pide la nueva edición con lo que tu sistema hace hoy. Una plantilla útil:\n\n| Apartado | Tipo | Brecha | Acción |\n|---|---|---|---|\n| 4.1 / 4.2 | Clima integrado | Evaluación de 2024 sin vínculo con 6.1 | Revisar contexto |\n| 5.1.1 | Nuevo | Sin programa de cultura y ética | Programa de cultura |\n| 6.1.3 | Nuevo | Oportunidades como columna | Registro y fichas |\n| 6.3 | Reforzado | Sin seguimiento de eficacia | Actualizar procedimiento |\n| 7.1.6 | Ajuste | Solo conocimientos técnicos | Mapear conocimientos |\n| 7.3 | Ajuste | Inducción sin cultura y ética | Actualizar inducción |\n| 8.2.1 | Ajuste | Contingencias no comunicadas | Ficha para clientes |\n| 8.3.6 | Ajuste | Registro de cambios simple | Agregar evaluación |\n| 9.2 | Ajuste | Auditorías sin objetivos | Actualizar programa |\n| 10.1 | Reorganizado | Sin cambio de fondo | Ajuste documental |\n\nEn tu versión completa agrega columnas de situación actual, responsable y fecha; aquí se omiten para que la tabla quepa en la página.\n\nObserva la columna \"tipo\": te ayuda a no gastar el mismo esfuerzo en un cambio de redacción que en un requisito nuevo.\n\n## Paso 3: plan de implementación\nCon las brechas, se arma un plan con:\n\n- **Acciones** concretas, responsables y fechas.\n- **Recursos** necesarios.\n- **Hitos**: análisis de brechas terminado, procedimientos actualizados, capacitación hecha, auditoría interna de transición, revisión por la dirección, auditoría de transición del organismo de certificación.\n- **Comunicación** al personal.\n\nLa transición en sí es un **cambio** del sistema: gestiónala con tu propio procedimiento de 6.3, incluido el seguimiento de eficacia. Es una buena forma de demostrar el requisito reforzado.\n\n## Paso 4: actualizar documentación (lo mínimo necesario)\n- **No** hay que renumerar documentos ni cambiar terminología.\n- Actualiza solo lo que cambia: procedimientos de riesgos y oportunidades, gestión del cambio, programa de auditoría, inducción y toma de conciencia, registro de cambios de diseño, información de contingencia, análisis de contexto.\n- Actualiza las **referencias** a la norma (por ejemplo, \"ISO 9001:2015\" por \"ISO 9001:2026\") en documentos que las citan, como la política, el manual si lo tienes o las fichas de procesos.\n- Si tienes una **matriz de correlación** entre requisitos y documentos, actualízala: será muy útil para el auditor.\n\n## Paso 5: implementar y generar evidencia\nLos requisitos nuevos necesitan **evidencia de funcionamiento**, no solo documentos:\n\n- Fichas de oportunidades analizadas, priorizadas, con acciones en curso.\n- Cambios gestionados con seguimiento de eficacia y revisión.\n- Comunicaciones y decisiones de la dirección sobre cultura de calidad.\n- Inducción y capacitación actualizadas con registros.\n- Información de contingencia entregada a clientes.\n- Auditorías internas con objetivos.\n\nPor eso conviene implementar con **meses** de anticipación a la auditoría de transición: el auditor buscará que los procesos nuevos hayan funcionado al menos un ciclo.\n\n## Paso 6: auditoría interna y revisión por la dirección\nAntes de la auditoría externa:\n\n- Una **auditoría interna** con el objetivo de verificar la conformidad con la edición 2026, cubriendo todos los cambios.\n- Una **revisión por la dirección** que incluya el estado de la transición y las entradas nuevas.\n\nAmbas son evidencia que el organismo de certificación revisará.\n\n## Paso 7: auditoría de transición\n- Coordina con tu **organismo de certificación**: confirma que ya está acreditado para la edición 2026, el tipo de auditoría (en vigilancia o en recertificación) y si requiere **tiempo adicional**. Las reglas de transición de la acreditación suelen prever tiempo adicional de auditoría para la transición en una vigilancia.\n- Prepara la **evidencia** organizada por cambio.\n- Cierra las **no conformidades** a tiempo: si la transición se hace cerca del 30 de septiembre de 2029, cualquier no conformidad mayor puede poner en riesgo el certificado.\n\n## Sistemas integrados: ISO 9001 con ISO 22000, FSSC 22000 o SQF\nSi coordinas un sistema integrado de calidad e inocuidad, considera:\n\n### Procesos comunes\nLos capítulos comunes de la estructura armonizada (contexto, partes interesadas, alcance, liderazgo, política, riesgos y oportunidades, objetivos, cambios, recursos, competencia, toma de conciencia, comunicación, información documentada, auditoría interna, revisión por la dirección, mejora) pueden **compartir procesos**. Los cambios de la edición 2026 en esos capítulos pueden aplicarse a todo el sistema integrado, aunque ISO 22000 todavía no los exija con la misma redacción: no está prohibido hacer más.\n\n### Diferencias que se mantienen\n- El **capítulo 8** de cada norma es distinto: operación de calidad frente a control de peligros de inocuidad.\n- **Riesgos de la organización** frente a **peligros** de inocuidad.\n- Requisitos adicionales de los esquemas (por ejemplo, de FSSC 22000 o SQF), como cultura de inocuidad, monitoreo ambiental o defensa alimentaria.\n\n### Cultura de calidad y cultura de inocuidad\nSi ya tienes un programa de cultura de inocuidad exigido por FSSC 22000 o SQF, **amplíalo** a cultura de calidad y comportamiento ético en lugar de crear un programa paralelo. Las herramientas son las mismas.\n\n### Auditorías combinadas\nCoordina con los organismos de certificación la posibilidad de auditorías **combinadas** o **integradas**, que reducen tiempo y duplicidad.\n\n### Revisiones futuras\nISO 22000 también tiene su ciclo de revisión, y los esquemas publican versiones nuevas periódicamente. Diseñar procesos comunes sólidos ahora facilitará esas transiciones.\n\n## Errores frecuentes en la transición\n- **Esperar** a la última auditoría antes de la fecha límite.\n- **Reescribir todo** el sistema por un cambio moderado.\n- Cumplir los requisitos nuevos solo con **documentos**, sin evidencia de funcionamiento.\n- Tratar la **cultura de calidad** con un procedimiento.\n- Seguir con las **oportunidades** como columna de la matriz de riesgos.\n- No capacitar a los **auditores internos** en los cambios.\n- No confirmar con el **organismo de certificación** sus fechas de acreditación.\n\n## Ideas que debes llevarte\n- La transición es un **proyecto**: estudiar la norma, análisis de brechas, plan, documentación mínima, implementación con evidencia, auditoría interna y revisión, auditoría de transición.\n- En el análisis de brechas, distingue **cambios nuevos, reforzados, ajustes y redacción**.\n- Gestiona la transición con tu propio procedimiento de **gestión del cambio**.\n- Implementa con **meses** de anticipación para tener evidencia de funcionamiento.\n- Coordina con tu **organismo de certificación**: acreditación, tipo de auditoría y tiempo.\n- En sistemas integrados, aplica los cambios a los **procesos comunes** y amplía la **cultura de inocuidad** a cultura de calidad.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis de brechas",
+     "enunciado": "¿Para qué sirve clasificar cada cambio por tipo en el análisis de brechas?",
+     "opciones": [
+      "Para no gastar el mismo esfuerzo en un cambio de redacción que en un requisito nuevo",
+      "Para decorar la tabla",
+      "Para asignar el presupuesto de ventas",
+      "Para elegir al organismo de certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Clasificar en nuevo, reforzado, ajuste o redacción ayuda a dimensionar el trabajo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Documentación",
+     "enunciado": "¿Qué documentación es necesario actualizar en la transición?",
+     "opciones": [
+      "Solo lo que cambia y las referencias a la edición de la norma",
+      "Todo el sistema documental desde cero",
+      "Ningún documento",
+      "Solo el organigrama"
+     ],
+     "correcta": 0,
+     "explicacion": "No hay que renumerar ni cambiar terminología; se actualiza lo necesario.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "¿Por qué conviene implementar los cambios con meses de anticipación a la auditoría de transición?",
+     "opciones": [
+      "Porque el auditor buscará evidencia de que los procesos nuevos funcionaron al menos un ciclo",
+      "Porque la norma exige seis meses exactos",
+      "Porque el organismo cobra menos",
+      "No conviene; mejor implementarlos la semana anterior"
+     ],
+     "correcta": 0,
+     "explicacion": "Los requisitos nuevos necesitan evidencia de funcionamiento, no solo documentos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gestión del cambio",
+     "enunciado": "¿Por qué gestionar la propia transición con el procedimiento de gestión del cambio?",
+     "opciones": [
+      "Porque la transición es un cambio del sistema y así se demuestra el requisito reforzado de 6.3",
+      "Porque es obligatorio usar un procedimiento distinto",
+      "Porque así se evita la auditoría",
+      "No tiene relación"
+     ],
+     "correcta": 0,
+     "explicacion": "Planificar, comunicar, dar seguimiento a la eficacia y revisar resultados aplica a la transición.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Organismo de certificación",
+     "enunciado": "¿Qué debes confirmar con tu organismo de certificación antes de programar la auditoría de transición?",
+     "opciones": [
+      "Que esté acreditado para la edición 2026, el tipo de auditoría y si requiere tiempo adicional",
+      "El color de su logotipo",
+      "Su número de empleados",
+      "Nada, siempre está listo"
+     ],
+     "correcta": 0,
+     "explicacion": "Los organismos se acreditan a lo largo de 2027 y la transición en vigilancia suele requerir tiempo adicional.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Antes de la auditoría externa",
+     "enunciado": "¿Qué dos actividades internas conviene completar antes de la auditoría de transición?",
+     "opciones": [
+      "Una auditoría interna que cubra los cambios y una revisión por la dirección con el estado de la transición",
+      "Una fiesta de lanzamiento y una encuesta de clima",
+      "Una reimpresión del manual y nuevos uniformes",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "Ambas son evidencia que el organismo revisará.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sistemas integrados",
+     "enunciado": "¿Puede aplicarse un requisito nuevo de ISO 9001:2026 a los procesos comunes del sistema integrado con ISO 22000, aunque ISO 22000 no lo exija aún?",
+     "opciones": [
+      "Sí, hacer más de lo que exige una norma no está prohibido",
+      "No, está prohibido",
+      "Solo con autorización de ISO",
+      "Solo si el cliente lo pide"
+     ],
+     "correcta": 0,
+     "explicacion": "Los procesos comunes pueden adoptar el estándar más exigente.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura",
+     "enunciado": "Si ya tienes un programa de cultura de inocuidad por FSSC 22000, ¿qué conviene hacer?",
+     "opciones": [
+      "Ampliarlo a cultura de calidad y comportamiento ético en lugar de crear uno paralelo",
+      "Crear un programa separado de cultura de calidad",
+      "Eliminar el de inocuidad",
+      "No hacer nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Las herramientas son las mismas; un solo programa reduce duplicidad.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Errores",
+     "enunciado": "¿Cuál de estos es un error frecuente en la transición?",
+     "opciones": [
+      "Cumplir los requisitos nuevos solo con documentos, sin evidencia de funcionamiento",
+      "Capacitar a los auditores internos",
+      "Hacer un análisis de brechas",
+      "Coordinar con el organismo de certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Otros errores: esperar a la última auditoría, reescribir todo, tratar la cultura con un procedimiento.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diferencias",
+     "enunciado": "En un sistema integrado, ¿qué se mantiene separado aunque se integren los procesos comunes?",
+     "opciones": [
+      "El capítulo 8 de cada norma y el análisis de peligros de inocuidad",
+      "La revisión por la dirección",
+      "La auditoría interna",
+      "La política"
+     ],
+     "correcta": 0,
+     "explicacion": "La operación de calidad y el control de peligros de inocuidad tienen requisitos técnicos distintos.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Matriz de correlación",
+     "enunciado": "¿Para qué sirve actualizar una matriz de correlación entre requisitos y documentos?",
+     "opciones": [
+      "Facilita que el auditor y la organización ubiquen dónde se cumple cada requisito",
+      "Es un requisito obligatorio de la norma",
+      "Sustituye a los procedimientos",
+      "Reemplaza la auditoría interna"
+     ],
+     "correcta": 0,
+     "explicacion": "No es obligatoria, pero es muy útil en una transición.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Análisis de brechas",
+     "enunciado": "Completa tres filas del análisis de brechas de tu sistema actual con apartado, tipo de cambio, situación actual, brecha y acción.",
+     "respuesta_modelo": "Ejemplo: 1) 5.1.1, nuevo: cultura de calidad y ética. Situación: política con valores y programa de cultura de inocuidad por FSSC 22000. Brecha: no cubre calidad ni ética explícitamente. Acción: ampliar el programa de cultura a calidad y ética, con indicadores y evidencia de decisiones de la dirección. 2) 6.1.3, nuevo: oportunidades. Situación: columna en la matriz de riesgos. Brecha: sin análisis, evaluación, integración ni eficacia. Acción: registro de oportunidades con ficha y revisión trimestral. 3) 8.2.1, ajuste: información de contingencia. Situación: plan de continuidad interno no comunicado. Brecha: clientes sin información. Acción: ficha de contingencia por familia de productos enviada a clientes clave. Cada una con responsable y fecha.",
+     "puntos_clave": [
+      "Tres apartados pertinentes",
+      "Tipo de cambio correcto",
+      "Situación actual y brecha concretas",
+      "Acción con responsable y fecha"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cronograma",
+     "enunciado": "Elabora un cronograma de transición para una organización con auditoría de vigilancia en abril de 2028 y certificación integrada ISO 9001 y FSSC 22000.",
+     "respuesta_modelo": "Ene–mar 2027: adquirir la norma, capacitar al líder y auditores internos, confirmar con el organismo su acreditación y el tipo de auditoría. Abr–jun 2027: análisis de brechas integrado, plan de implementación gestionado como cambio. Jul–dic 2027: actualizar procedimientos comunes (riesgos y oportunidades, gestión del cambio, programa de auditoría), ampliar el programa de cultura, actualizar inducción, comunicar contingencias a clientes, mapear conocimientos. Ene–feb 2028: auditoría interna de transición con objetivos definidos y seguimiento de hallazgos. Mar 2028: revisión por la dirección con el estado de la transición y entradas nuevas. Abr 2028: auditoría de transición en la vigilancia, combinada con FSSC 22000. May–jun 2028: cierre de hallazgos. Margen: la recertificación posterior queda como respaldo antes de septiembre de 2029.",
+     "puntos_clave": [
+      "Secuencia lógica de fases",
+      "Implementación con meses de anticipación",
+      "Auditoría interna y revisión antes de la externa",
+      "Coordinación con el organismo y margen de seguridad"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Proporcionalidad",
+     "enunciado": "Tu director propone contratar una consultoría para reescribir todo el sistema documental por la transición. ¿Qué le responderías?",
+     "respuesta_modelo": "Que el cambio de la edición 2026 es moderado: la estructura, el enfoque a procesos y la mayoría de los requisitos se mantienen, no hay que renumerar ni cambiar terminología, y los cambios se concentran en cultura y ética, oportunidades, gestión del cambio, clima, ajustes en conocimientos, contingencias, diseño y auditoría. Reescribir todo consume recursos, genera errores y desgasta al personal sin agregar valor. Propondría un análisis de brechas interno, actualizar solo lo que cambia, invertir en capacitación del líder y auditores internos y, si hace falta, apoyo externo puntual para temas como cultura de calidad. Los recursos ahorrados pueden dirigirse a generar evidencia de funcionamiento de los requisitos nuevos.",
+     "puntos_clave": [
+      "Magnitud moderada del cambio",
+      "Qué se mantiene",
+      "Riesgos de reescribir todo",
+      "Alternativa proporcional"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Caso integrador: transición en una planta química",
+   "texto": "## La organización\n**Química del Norte** (empresa ficticia) fabrica detergentes, sanitizantes y auxiliares de proceso para la industria de alimentos y bebidas, y algunos productos industriales. Tiene 180 personas en una planta en el norte de México. Está certificada en **ISO 9001:2015** y en **FSSC 22000**, con un sistema integrado coordinado por una sola persona, el coordinador del sistema de gestión de calidad e inocuidad. Su recertificación ISO 9001 fue en junio de 2026; las vigilancias serán en junio de 2027 y junio de 2028, y la siguiente recertificación en junio de 2029.\n\nEn noviembre de 2026, la dirección pide al coordinador un plan de transición.\n\n## Lo que encuentra el coordinador\nAl revisar el sistema con la edición 2026 en la mano, el coordinador encuentra:\n\n1. **Contexto**: un FODA de 2017 actualizado cada año con cambios menores. En 2024, por la enmienda climática, se agregó una línea: \"El cambio climático no es pertinente para la organización\", sin análisis. Ese año, una ola de calor degradó varios lotes de hipoclorito en el almacén y en tránsito, con quejas de clientes por baja concentración.\n2. **Liderazgo**: una política de calidad e inocuidad con valores. Existe un programa de cultura de inocuidad por FSSC 22000, con una encuesta anual. En el último año hubo dos casos de lotes liberados con desviación por presión comercial, autorizados por el gerente de ventas.\n3. **Riesgos y oportunidades**: una matriz con 160 riesgos y una columna de oportunidades con frases como \"crecer en el mercado\" o \"mejorar procesos\".\n4. **Gestión del cambio**: un procedimiento que cubre cambios de producto y proceso, con evaluación de impacto en inocuidad, pero sin seguimiento posterior. El año pasado se implementó un nuevo sistema de planificación (ERP) y durante tres meses hubo errores de trazabilidad que se detectaron en un simulacro de FSSC.\n5. **Conocimientos**: el formulador principal, con 28 años en la empresa, se jubila en 2027. Nadie más conoce el porqué de varios pasos críticos de formulación.\n6. **Contingencias**: existe un plan de continuidad interno, pero los clientes no lo conocen. Un cliente multinacional pidió en una auditoría información de contingencias.\n7. **Diseño**: la empresa excluye 8.3 \"porque no diseña productos\", aunque desarrolla fórmulas a la medida para varios clientes.\n8. **Auditoría interna**: un programa anual que audita todos los procesos con el mismo formato, con alcance y criterios, sin objetivos.\n9. **Laboratorio**: un analista reconoció en una conversación informal que a veces repite análisis fuera de especificación \"hasta que salen bien\" porque producción presiona.\n\n## El análisis\n### Contexto y clima\nLa conclusión de que el clima \"no es pertinente\" no está justificada y la evidencia la contradice: un evento climático ya afectó la conformidad del producto. El clima **es pertinente**: riesgos físicos (calor en almacén y transporte, agua como materia prima) y de transición (el cliente multinacional pide datos ambientales). Además, el FODA no alimenta los riesgos ni las oportunidades.\n\n**Acciones**: rehacer el análisis de contexto con PESTEL y capacidades internas, con el clima evaluado explícitamente; vincular cada cuestión con riesgos u oportunidades; actualizar la matriz de partes interesadas con requisitos climáticos.\n\n### Cultura y ética\nEste es el hallazgo más serio. Dos liberaciones con desviación por presión comercial y la práctica de repetir análisis hasta que \"salgan bien\" son exactamente lo que el nuevo 5.1.1 busca prevenir. Además, son un riesgo de inocuidad y de integridad de datos que FSSC 22000 también cuestionaría.\n\n**Acciones**:\n- La dirección general establece y comunica que **ninguna** liberación con desviación se autoriza sin evaluación técnica de calidad, y retira esa facultad a ventas.\n- Procedimiento de **investigación de resultados fuera de especificación** antes de repetir cualquier análisis; sistema de laboratorio que conserve todos los resultados.\n- Ampliar el programa de **cultura de inocuidad** a cultura de calidad y comportamiento ético, con canal de reporte confidencial y política de no represalia.\n- Tratar el caso del analista con enfoque **sistémico**: la causa es la presión y la falta de un procedimiento, no solo la conducta individual.\n- Indicadores: liberaciones con desviación sin evaluación (meta cero), reportes de casi incidentes, encuesta.\n\n### Riesgos y oportunidades\nLa matriz es inmanejable y las oportunidades no se gestionan.\n\n**Acciones**: consolidar los riesgos en unos 30 específicos por proceso, con criterios definidos y acciones integradas; crear un registro de oportunidades con fichas. Oportunidades iniciales: digitalizar los COA, ofrecer productos concentrados (responde al cliente multinacional y reduce el riesgo de transporte en calor), y soporte técnico de dosificación a clientes.\n\n### Gestión del cambio\nEl ERP es el ejemplo perfecto del requisito reforzado: el cambio se planificó, pero nadie dio seguimiento a su eficacia y los errores de trazabilidad se detectaron tarde.\n\n**Acciones**: agregar al procedimiento las etapas de comunicación, criterios de éxito, seguimiento de eficacia y revisión de resultados; aplicar retroactivamente una revisión al cambio del ERP; gestionar la propia transición como cambio.\n\n### Conocimientos\nLa jubilación del formulador es un riesgo crítico para la conformidad y para la inocuidad.\n\n**Acciones**: plan de transferencia de conocimiento con documentación del porqué de cada paso, sucesores en pareja durante un año, evaluación de competencia y base de lecciones aprendidas.\n\n### Contingencias\n**Acciones**: preparar una ficha de contingencia por familia de productos (contacto 24 horas, alternativas de suministro, información de uso de productos alternativos, forma de notificación) y enviarla a los clientes clave.\n\n### Diseño y desarrollo\nLa exclusión de 8.3 no es válida: la empresa desarrolla fórmulas a la medida. Esto no es un cambio de la edición 2026, pero la transición lo hace evidente, y el ajuste de 8.3.6 (determinar los cambios) lo vuelve más importante.\n\n**Acciones**: retirar la exclusión, documentar el proceso de diseño y desarrollo (planificación, entradas, controles, salidas, cambios), con evaluación de impacto en inocuidad integrada.\n\n### Auditoría interna\n**Acciones**: rediseñar el programa con objetivos por auditoría. En el primer año: cultura y ética, riesgos y oportunidades, gestión del cambio (con el ERP como caso), integridad de datos en laboratorio, diseño y desarrollo.\n\n## El plan\n| Periodo | Hitos |\n|---|---|\n| Nov 2026 – feb 2027 | Norma adquirida, capacitación de líder y auditores, análisis de brechas, decisión de la dirección sobre liberaciones |\n| Mar – jun 2027 | Procedimiento OOS, contexto rehecho, registro de oportunidades, procedimiento de cambios actualizado, plan de conocimiento del formulador |\n| Jun 2027 | Vigilancia en ISO 9001:2015 (el organismo aún no está acreditado); se informa el avance |\n| Jul – dic 2027 | Programa de cultura ampliado, diseño y desarrollo documentado, fichas de contingencia enviadas, auditorías internas con objetivos |\n| Ene – abr 2028 | Revisión por la dirección con entradas nuevas y estado de la transición; auditoría interna de transición |\n| Jun 2028 | Auditoría de transición en la vigilancia, combinada con FSSC 22000 |\n| Jun 2029 | Recertificación como respaldo, antes del 30 de septiembre de 2029 |\n\n## Lecciones del caso\n1. **La transición revela problemas que ya existían**: el contexto que no servía, la exclusión injustificada de diseño, la integridad de datos. No es solo cumplir requisitos nuevos.\n2. **Los requisitos nuevos tienen sentido práctico**: el clima ya había afectado al producto; el cambio del ERP ya había fallado por falta de seguimiento; la cultura ya estaba permitiendo liberaciones indebidas.\n3. **Calidad e inocuidad se refuerzan mutuamente**: casi todas las acciones benefician también al sistema FSSC 22000.\n4. **La evidencia de funcionamiento requiere tiempo**: por eso la auditoría de transición se programa para junio de 2028, con más de un año de implementación.\n5. **El coordinador no hace todo solo**: la dirección decide sobre las liberaciones, recursos humanos sobre la inducción y el conocimiento, ventas sobre las contingencias e I+D sobre el diseño.\n\n## Ideas que debes llevarte\n- Un buen análisis de transición conecta los **cambios de la norma** con los **problemas reales** de la organización.\n- El clima, la cultura, las oportunidades y la gestión del cambio son requisitos con consecuencias prácticas, no trámites.\n- La transición es una oportunidad para corregir **debilidades preexistentes** del sistema.\n- En un sistema integrado, las acciones de la transición fortalecen también la **inocuidad**.\n- Planifica con margen y genera **evidencia de funcionamiento** antes de la auditoría.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "En el caso, ¿por qué no es válida la conclusión de que el clima no es pertinente?",
+     "opciones": [
+      "Porque no tiene análisis y la evidencia la contradice: una ola de calor ya degradó lotes y generó quejas",
+      "Porque la norma obliga a declarar siempre que es pertinente",
+      "Porque lo pidió el cliente multinacional",
+      "Porque la empresa está en el norte de México"
+     ],
+     "correcta": 0,
+     "explicacion": "La conclusión debe estar justificada; aquí un evento climático ya afectó la conformidad.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura",
+     "enunciado": "¿Cuál es el hallazgo más serio del caso respecto al requisito de cultura y ética?",
+     "opciones": [
+      "Liberaciones con desviación por presión comercial y repetición de análisis hasta obtener resultados favorables",
+      "La encuesta anual de cultura",
+      "El FODA de 2017",
+      "La jubilación del formulador"
+     ],
+     "correcta": 0,
+     "explicacion": "Son fallas de integridad que 5.1.1 busca prevenir y que también afectan la inocuidad.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura",
+     "enunciado": "¿Qué acción de la dirección es la más importante para la cultura en el caso?",
+     "opciones": [
+      "Establecer que ninguna liberación con desviación se autoriza sin evaluación técnica de calidad y retirar esa facultad a ventas",
+      "Imprimir carteles con valores",
+      "Despedir al analista",
+      "Aumentar la frecuencia de la encuesta"
+     ],
+     "correcta": 0,
+     "explicacion": "Las decisiones coherentes son la evidencia más fuerte de cultura.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Enfoque sistémico",
+     "enunciado": "¿Cómo debe tratarse el caso del analista que repetía análisis?",
+     "opciones": [
+      "Con enfoque sistémico: la causa incluye la presión y la falta de procedimiento, no solo la conducta individual",
+      "Solo con una sanción individual",
+      "Ignorándolo porque fue una conversación informal",
+      "Felicitándolo por su sinceridad sin cambiar nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Se corrige el sistema (procedimiento OOS, conservación de datos, presión) y se trata la conducta con proporcionalidad.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gestión del cambio",
+     "enunciado": "¿Qué ilustra el caso del ERP respecto al requisito reforzado de 6.3?",
+     "opciones": [
+      "Que planificar no basta: sin seguimiento de eficacia, los errores de trazabilidad se detectaron tarde",
+      "Que los ERP no deben usarse",
+      "Que el simulacro de FSSC fue innecesario",
+      "Que la trazabilidad no es parte de la calidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El seguimiento de eficacia y la revisión de resultados habrían detectado los errores antes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diseño",
+     "enunciado": "¿Por qué no es válida la exclusión de 8.3 en el caso?",
+     "opciones": [
+      "Porque la empresa desarrolla fórmulas a la medida para clientes",
+      "Porque la edición 2026 elimina las exclusiones",
+      "Porque FSSC 22000 lo exige",
+      "Porque el formulador se jubila"
+     ],
+     "correcta": 0,
+     "explicacion": "Si la organización diseña o desarrolla productos, 8.3 es aplicable.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Oportunidades",
+     "enunciado": "¿Qué oportunidad del caso responde a la vez al cliente multinacional y al riesgo de calor en transporte?",
+     "opciones": [
+      "Ofrecer productos concentrados",
+      "Digitalizar los COA",
+      "Ampliar el almacén",
+      "Contratar más vendedores"
+     ],
+     "correcta": 0,
+     "explicacion": "Los concentrados reducen transporte y empaques, y el volumen expuesto al calor.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cronograma",
+     "enunciado": "¿Por qué el caso no hace la transición en la vigilancia de junio de 2027?",
+     "opciones": [
+      "Porque el organismo aún no estaría acreditado y la organización necesita tiempo para generar evidencia",
+      "Porque la norma lo prohíbe",
+      "Porque FSSC 22000 no lo permite",
+      "Porque junio es temporada alta"
+     ],
+     "correcta": 0,
+     "explicacion": "La transición se programa en junio de 2028, con más de un año de implementación.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Lecciones",
+     "enunciado": "¿Cuál es una lección central del caso?",
+     "opciones": [
+      "La transición revela problemas que ya existían en el sistema",
+      "La transición solo requiere cambiar el número de edición",
+      "Los requisitos nuevos son trámites sin sentido práctico",
+      "El coordinador debe hacer todo solo"
+     ],
+     "correcta": 0,
+     "explicacion": "Contexto inútil, exclusión injustificada e integridad de datos ya eran debilidades.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Conocimientos",
+     "enunciado": "¿Qué apartado de la norma atiende directamente el riesgo de la jubilación del formulador?",
+     "opciones": [
+      "7.1.6, conocimientos de la organización",
+      "8.2.1, comunicación con el cliente",
+      "9.3, revisión por la dirección",
+      "4.3, alcance"
+     ],
+     "correcta": 0,
+     "explicacion": "También se registra como riesgo en 6.1.2 y se vincula con competencia (7.2).",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integración",
+     "enunciado": "¿Cómo afectan las acciones de la transición al sistema FSSC 22000 del caso?",
+     "opciones": [
+      "Lo fortalecen: cultura, integridad de datos, gestión del cambio y conocimiento benefician también la inocuidad",
+      "Lo debilitan",
+      "No tienen relación",
+      "Lo sustituyen"
+     ],
+     "correcta": 0,
+     "explicacion": "Calidad e inocuidad se refuerzan mutuamente en un sistema integrado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Priorización",
+     "enunciado": "Si solo pudieras implementar tres acciones del caso en los primeros tres meses, ¿cuáles elegirías y por qué?",
+     "respuesta_modelo": "1) La decisión de la dirección de prohibir liberaciones con desviación sin evaluación técnica y retirar esa facultad a ventas: es el riesgo más grave para la inocuidad y la integridad, y no requiere recursos. 2) El procedimiento de investigación de resultados fuera de especificación con conservación de todos los resultados: corrige una práctica que pone en duda la validez de las liberaciones. 3) El plan de transferencia de conocimiento del formulador: tiene fecha límite fija (la jubilación) y la pérdida sería irreversible. Las demás acciones (contexto, oportunidades, contingencias, auditoría con objetivos) son importantes pero pueden esperar unos meses sin riesgo inmediato.",
+     "puntos_clave": [
+      "Tres acciones elegidas",
+      "Criterio de riesgo e irreversibilidad",
+      "Justificación de cada una",
+      "Por qué las otras pueden esperar"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Comunicación a la dirección",
+     "enunciado": "Escribe el mensaje de cinco o seis líneas que el coordinador enviaría al director general para presentar los hallazgos del caso.",
+     "respuesta_modelo": "Director: la transición a ISO 9001:2026 es moderada en requisitos, pero el análisis reveló tres riesgos que requieren decisiones de su parte. Primero, hubo liberaciones con desviación autorizadas por ventas y prácticas de repetir análisis hasta que cumplan: le propongo que solo calidad autorice liberaciones con desviación y un procedimiento de resultados fuera de especificación. Segundo, el conocimiento crítico de formulación depende de una persona que se jubila en 2027: necesitamos asignar sucesores ya. Tercero, nuestra conclusión de que el clima no es pertinente es indefendible tras las quejas por calor de 2024. Propongo hacer la transición en la vigilancia de junio de 2028; le comparto el plan completo.",
+     "puntos_clave": [
+      "Breve y orientado a decisiones",
+      "Riesgos principales con propuesta",
+      "Lenguaje de negocio",
+      "Fecha de transición propuesta"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Evidencia",
+     "enunciado": "Para la auditoría de transición de junio de 2028, enumera la evidencia que prepararías para demostrar el cumplimiento de 5.1.1, 6.1.3 y 6.3.",
+     "respuesta_modelo": "5.1.1: comunicación de la dirección sobre la política de liberaciones; actas donde la dirección tomó decisiones de calidad; programa de cultura ampliado con indicadores (liberaciones con desviación sin evaluación en cero, reportes de casi incidentes y tiempo de respuesta, resultados de encuesta); registros del canal de reporte. 6.1.3: registro de oportunidades con fichas analizadas, priorizadas y decididas; evidencia de integración (objetivos, proyectos de COA digitales y concentrados) y evaluación de eficacia en la revisión por la dirección. 6.3: procedimiento actualizado; registros de cambios del periodo con plan de comunicación, criterios de éxito, seguimiento de eficacia y revisión de resultados; la revisión posterior del ERP; la propia transición gestionada como cambio.",
+     "puntos_clave": [
+      "Evidencia de decisiones y comunicación de la dirección",
+      "Indicadores de cultura",
+      "Fichas de oportunidades integradas y evaluadas",
+      "Registros completos de cambios con eficacia"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
