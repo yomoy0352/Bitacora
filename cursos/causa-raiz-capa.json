@@ -606,7 +606,7 @@
   {
    "id": "4",
    "titulo": "Cinco porqués e Ishikawa bien usados",
-   "texto": "## Dos herramientas sencillas, muchas veces mal usadas\nLos **cinco porqués** y el **diagrama de Ishikawa** son las herramientas más usadas en análisis de causa raíz. Son sencillas, y por eso mismo se usan mal: se llenan en una reunión, se llega a la causa que alguien ya tenía en mente y se cierra. Bien usadas, son potentes. Este capítulo muestra cómo.\n\n## ¿Qué es una causa raíz?\nUna **causa raíz** es la causa más básica que, si se elimina, impide que el problema vuelva a ocurrir, y que está **bajo el control** de la organización. Tres ideas importantes:\n\n- Casi nunca hay **una sola** causa: los problemas suelen resultar de **varias causas que coinciden**.\n- Hay causas de **ocurrencia** (por qué se produjo el defecto) y causas de **escape** (por qué no se detectó antes de llegar al cliente). Ambas necesitan acción.\n- Detrás de causas técnicas suele haber causas **del sistema**: cómo se diseñan los procesos, cómo se gestionan los cambios, cómo se aprueba, cómo se forma al personal.\n\n## Los cinco porqués\nDesarrollada en Toyota y difundida por Taiichi Ohno, la técnica consiste en preguntar \"¿por qué?\" sucesivamente hasta llegar a una causa sobre la que se pueda actuar. El número cinco es orientativo: a veces bastan tres, a veces se necesitan siete.\n\n### Ejemplo bien hecho\nProblema: el lote 2609-14 de sanitizante Q-200 tiene 3.2 % de activo; la especificación es 2.0 ± 0.1 %.\n\n1. ¿Por qué tiene 3.2 %? Porque se agregó **60 % más** de activo del requerido. *Verificado: el balance de la receta y el registro de carga coinciden.*\n2. ¿Por qué se agregó 60 % más? Porque el activo que se cargó era al **80 %** y la receta estaba calculada para activo al **50 %**. *Verificado: el COA y la etiqueta del contenedor dicen 80 %.*\n3. ¿Por qué la receta no correspondía al activo? Porque el cambio a activo al 80 % (aprobado por compras) **no actualizó** las recetas que lo usan. *Verificado: registro de control de cambios.*\n4. ¿Por qué no se actualizaron? Porque el procedimiento de control de cambios **no exige identificar** las recetas afectadas por un cambio de materia prima. *Verificado: revisión del procedimiento.*\n\nEsa es una causa del **sistema** sobre la que se puede actuar. Pero falta la otra rama:\n\n### La rama de escape\n1. ¿Por qué no se detectó en la liberación? Porque el activo de ese producto se analiza **un lote de cada cinco** (*skip-lot*). *Verificado: plan de inspección.*\n2. ¿Por qué un lote de cada cinco? Porque se redujo la frecuencia por historial estable hace dos años. *Verificado.*\n3. ¿Por qué no se revisó la frecuencia al cambiar la materia prima? Porque el control de cambios **no vincula** cambios de materia prima con los planes de inspección. *Verificado.*\n\n## Reglas para que los cinco porqués funcionen\n- **Cada respuesta se verifica** con evidencia antes de pasar al siguiente porqué. Sin verificación, es una cadena de suposiciones.\n- **Una cadena por causa**: si una respuesta tiene dos causas, la cadena se ramifica.\n- Pregunta por qué ocurrió el **defecto** y por qué **no se detectó**.\n- Detente cuando llegues a una causa que, si se elimina, **evita** la recurrencia y está bajo tu control. Ir más allá (\"porque la economía está mal\") no ayuda.\n- Evita respuestas que sean **personas** (\"porque Juan se equivocó\"): pregunta por qué el sistema permitió que el error ocurriera o no se detectara (capítulo 6).\n- Haz la prueba **inversa**: lee la cadena hacia atrás con \"por lo tanto\". Si no tiene sentido lógico, hay un salto.\n\n### Señales de un mal análisis\n- La última respuesta es \"falta de capacitación\", \"error humano\", \"no siguió el procedimiento\", \"descuido\".\n- Las respuestas son **opiniones** de la reunión, sin datos.\n- Las respuestas cambian de tema (de la máquina al clima al jefe).\n- La causa raíz coincide exactamente con la solución que alguien propuso al inicio.\n\n## El diagrama de Ishikawa\nKaoru Ishikawa propuso un diagrama en forma de espina de pescado: el problema en la cabeza y las causas posibles agrupadas en categorías. En manufactura se usan las **6M**:\n\n- **Mano de obra** (personas): competencia, carga de trabajo, comunicación, turnos.\n- **Método**: procedimientos, recetas, instrucciones, secuencias.\n- **Máquina**: equipos, herramientas, mantenimiento, ajustes.\n- **Material**: materias primas, envases, insumos, proveedores.\n- **Medición**: instrumentos, métodos analíticos, muestreo, calibración.\n- **Medio ambiente**: temperatura, humedad, iluminación, limpieza.\n\nAlgunas organizaciones agregan **Management** (gestión): decisiones, recursos, prioridades, control de cambios.\n\n### Para qué sirve\nEl Ishikawa es una herramienta para **generar hipótesis** de forma ordenada y para no olvidar categorías. **No demuestra** causas. Un error común es presentar el diagrama lleno como si fuera el análisis: es solo el inicio.\n\n### Cómo usarlo bien\n1. Escribe el **problema bien definido** en la cabeza (capítulo 2), no una palabra vaga.\n2. Genera causas posibles en equipo multidisciplinario: producción, calidad, mantenimiento, laboratorio, y alguien que haga el trabajo directamente.\n3. Usa la información de **Es / No es**: una causa posible debe poder explicar por qué el problema ocurre donde ocurre y **no** donde no ocurre. Si no lo explica, se descarta o se baja de prioridad.\n4. Para cada causa candidata, define **cómo verificarla** (dato, prueba, revisión).\n5. Verifica y marca: confirmada, descartada, no verificada.\n6. A las causas confirmadas, aplícales los **cinco porqués** para llegar a la causa del sistema.\n\n### Ejemplo de filtrado con Es / No es\nProblema: separación de fases solo en DA-30 de 20 L, en 4 de 9 lotes de agosto.\n\n| Causa posible (Ishikawa) | ¿Explica el Es / No es? | Verificación |\n|---|---|---|\n| Temperatura alta del almacén | No: afectaría todas las presentaciones | Descartada |\n| Lote H-0731 de hidrótropo | Sí: los 4 lotes lo usaron | Analizar H-0731 y hacer mezcla de prueba |\n| Envase de 20 L nuevo | Parcial: todos los lotes de 20 L usan el mismo envase | Revisar si hubo cambio de envase |\n| Error de pesada | Poco probable en 4 lotes con distintos operadores | Revisar registros |\n\n## Combinar las herramientas\nUn flujo práctico:\n\n1. **Definir** con 5W2H y Es / No es.\n2. **Generar** hipótesis con Ishikawa.\n3. **Filtrar** con Es / No es.\n4. **Verificar** con datos y pruebas (capítulo 7).\n5. **Profundizar** con cinco porqués desde cada causa confirmada hasta la causa del sistema, en la rama de ocurrencia y en la de escape.\n\n## Ideas que debes llevarte\n- La causa raíz es la más básica, **bajo tu control**, cuya eliminación evita la recurrencia; suele haber **varias** causas y siempre conviene separar **ocurrencia** y **escape**.\n- En los cinco porqués, **verifica cada respuesta**, ramifica cuando haga falta y no termines en personas.\n- \"Falta de capacitación\" o \"error humano\" como respuesta final son **señales** de un análisis incompleto.\n- El Ishikawa **genera** hipótesis; no demuestra causas. Fíltralas con Es / No es y verifícalas.\n- Combina: definir, generar, filtrar, verificar, profundizar.",
+   "texto": "## Dos herramientas sencillas, muchas veces mal usadas\nLos **cinco porqués** y el **diagrama de Ishikawa** son las herramientas más usadas en análisis de causa raíz. Son sencillas, y por eso mismo se usan mal: se llenan en una reunión, se llega a la causa que alguien ya tenía en mente y se cierra. Bien usadas, son potentes. Este capítulo muestra cómo.\n\n## ¿Qué es una causa raíz?\nUna **causa raíz** es la causa más básica que, si se elimina, impide que el problema vuelva a ocurrir, y que está **bajo el control** de la organización. Tres ideas importantes:\n\n- Casi nunca hay **una sola** causa: los problemas suelen resultar de **varias causas que coinciden**.\n- Hay causas de **ocurrencia** (por qué se produjo el defecto) y causas de **escape** (por qué no se detectó antes de llegar al cliente). Ambas necesitan acción.\n- Detrás de causas técnicas suele haber causas **del sistema**: cómo se diseñan los procesos, cómo se gestionan los cambios, cómo se aprueba, cómo se forma al personal.\n\n## Los cinco porqués\nDesarrollada en Toyota y difundida por Taiichi Ohno, la técnica consiste en preguntar \"¿por qué?\" sucesivamente hasta llegar a una causa sobre la que se pueda actuar. El número cinco es orientativo: a veces bastan tres, a veces se necesitan siete.\n\n### Ejemplo bien hecho\nProblema: el lote 2609-14 de sanitizante Q-200 tiene 3.2 % de activo; la especificación es 2.0 ± 0.1 %.\n\n1. ¿Por qué tiene 3.2 %? Porque se agregó **60 % más** de activo del requerido. *Verificado: el balance de la receta y el registro de carga coinciden.*\n2. ¿Por qué se agregó 60 % más? Porque el activo que se cargó era al **80 %** y la receta estaba calculada para activo al **50 %**. *Verificado: el COA y la etiqueta del contenedor dicen 80 %.*\n3. ¿Por qué la receta no correspondía al activo? Porque el cambio a activo al 80 % (aprobado por compras) **no actualizó** las recetas que lo usan. *Verificado: registro de control de cambios.*\n4. ¿Por qué no se actualizaron? Porque el procedimiento de control de cambios **no exige identificar** las recetas afectadas por un cambio de materia prima. *Verificado: revisión del procedimiento.*\n\nEsa es una causa del **sistema** sobre la que se puede actuar. Pero falta la otra rama:\n\n### La rama de escape\n1. ¿Por qué no se detectó en la liberación? Porque el activo de ese producto se analiza **un lote de cada diez** (*skip-lot*). *Verificado: plan de inspección.*\n2. ¿Por qué un lote de cada diez? Porque se redujo la frecuencia por historial estable hace dos años. *Verificado.*\n3. ¿Por qué no se revisó la frecuencia al cambiar la materia prima? Porque el control de cambios **no vincula** cambios de materia prima con los planes de inspección. *Verificado.*\n\n## Reglas para que los cinco porqués funcionen\n- **Cada respuesta se verifica** con evidencia antes de pasar al siguiente porqué. Sin verificación, es una cadena de suposiciones.\n- **Una cadena por causa**: si una respuesta tiene dos causas, la cadena se ramifica.\n- Pregunta por qué ocurrió el **defecto** y por qué **no se detectó**.\n- Detente cuando llegues a una causa que, si se elimina, **evita** la recurrencia y está bajo tu control. Ir más allá (\"porque la economía está mal\") no ayuda.\n- Evita respuestas que sean **personas** (\"porque Juan se equivocó\"): pregunta por qué el sistema permitió que el error ocurriera o no se detectara (capítulo 6).\n- Haz la prueba **inversa**: lee la cadena hacia atrás con \"por lo tanto\". Si no tiene sentido lógico, hay un salto.\n\n### Señales de un mal análisis\n- La última respuesta es \"falta de capacitación\", \"error humano\", \"no siguió el procedimiento\", \"descuido\".\n- Las respuestas son **opiniones** de la reunión, sin datos.\n- Las respuestas cambian de tema (de la máquina al clima al jefe).\n- La causa raíz coincide exactamente con la solución que alguien propuso al inicio.\n\n## El diagrama de Ishikawa\nKaoru Ishikawa propuso un diagrama en forma de espina de pescado: el problema en la cabeza y las causas posibles agrupadas en categorías. En manufactura se usan las **6M**:\n\n- **Mano de obra** (personas): competencia, carga de trabajo, comunicación, turnos.\n- **Método**: procedimientos, recetas, instrucciones, secuencias.\n- **Máquina**: equipos, herramientas, mantenimiento, ajustes.\n- **Material**: materias primas, envases, insumos, proveedores.\n- **Medición**: instrumentos, métodos analíticos, muestreo, calibración.\n- **Medio ambiente**: temperatura, humedad, iluminación, limpieza.\n\nAlgunas organizaciones agregan **Management** (gestión): decisiones, recursos, prioridades, control de cambios.\n\n### Para qué sirve\nEl Ishikawa es una herramienta para **generar hipótesis** de forma ordenada y para no olvidar categorías. **No demuestra** causas. Un error común es presentar el diagrama lleno como si fuera el análisis: es solo el inicio.\n\n### Cómo usarlo bien\n1. Escribe el **problema bien definido** en la cabeza (capítulo 2), no una palabra vaga.\n2. Genera causas posibles en equipo multidisciplinario: producción, calidad, mantenimiento, laboratorio, y alguien que haga el trabajo directamente.\n3. Usa la información de **Es / No es**: una causa posible debe poder explicar por qué el problema ocurre donde ocurre y **no** donde no ocurre. Si no lo explica, se descarta o se baja de prioridad.\n4. Para cada causa candidata, define **cómo verificarla** (dato, prueba, revisión).\n5. Verifica y marca: confirmada, descartada, no verificada.\n6. A las causas confirmadas, aplícales los **cinco porqués** para llegar a la causa del sistema.\n\n### Ejemplo de filtrado con Es / No es\nProblema: separación de fases solo en DA-30 de 20 L, en 4 de 9 lotes de agosto.\n\n| Causa posible (Ishikawa) | ¿Explica el Es / No es? | Verificación |\n|---|---|---|\n| Temperatura alta del almacén | No: afectaría todas las presentaciones | Descartada |\n| Lote H-0731 de hidrótropo | Sí: los 4 lotes lo usaron | Analizar H-0731 y hacer mezcla de prueba |\n| Envase de 20 L nuevo | Parcial: todos los lotes de 20 L usan el mismo envase | Revisar si hubo cambio de envase |\n| Error de pesada | Poco probable en 4 lotes con distintos operadores | Revisar registros |\n\n## Combinar las herramientas\nUn flujo práctico:\n\n1. **Definir** con 5W2H y Es / No es.\n2. **Generar** hipótesis con Ishikawa.\n3. **Filtrar** con Es / No es.\n4. **Verificar** con datos y pruebas (capítulo 7).\n5. **Profundizar** con cinco porqués desde cada causa confirmada hasta la causa del sistema, en la rama de ocurrencia y en la de escape.\n\n## Ideas que debes llevarte\n- La causa raíz es la más básica, **bajo tu control**, cuya eliminación evita la recurrencia; suele haber **varias** causas y siempre conviene separar **ocurrencia** y **escape**.\n- En los cinco porqués, **verifica cada respuesta**, ramifica cuando haga falta y no termines en personas.\n- \"Falta de capacitación\" o \"error humano\" como respuesta final son **señales** de un análisis incompleto.\n- El Ishikawa **genera** hipótesis; no demuestra causas. Fíltralas con Es / No es y verifícalas.\n- Combina: definir, generar, filtrar, verificar, profundizar.",
    "preguntas": [
     {
      "tipo": "opcion",
@@ -792,7 +792,7 @@
      "tipo": "abierta",
      "concepto": "Escape",
      "enunciado": "¿Por qué es importante analizar la causa de escape además de la de ocurrencia? Da un ejemplo.",
-     "respuesta_modelo": "Porque aunque se elimine la causa de ocurrencia, siempre puede aparecer otra causa que genere un defecto similar; si el sistema de detección sigue fallando, el defecto volverá a llegar al cliente. Además, la causa de escape suele revelar debilidades del sistema de control. Ejemplo: un lote con activo alto se produjo por una receta no actualizada (ocurrencia) y llegó al cliente porque el activo se analizaba un lote de cada cinco sin revisar esa frecuencia ante cambios (escape). Corregir solo la receta no evita que otro error de dosificación escape en el futuro.",
+     "respuesta_modelo": "Porque aunque se elimine la causa de ocurrencia, siempre puede aparecer otra causa que genere un defecto similar; si el sistema de detección sigue fallando, el defecto volverá a llegar al cliente. Además, la causa de escape suele revelar debilidades del sistema de control. Ejemplo: un lote con activo alto se produjo por una receta no actualizada (ocurrencia) y llegó al cliente porque el activo se analizaba un lote de cada diez sin revisar esa frecuencia ante cambios (escape). Corregir solo la receta no evita que otro error de dosificación escape en el futuro.",
      "puntos_clave": [
       "Definición de escape",
       "Por qué no basta la ocurrencia",
@@ -806,7 +806,7 @@
   {
    "id": "5",
    "titulo": "Análisis de cambios, barreras y árbol de fallas",
-   "texto": "## Más allá de la lluvia de ideas\nLos cinco porqués y el Ishikawa dependen mucho de lo que el equipo ya sabe o sospecha. Para problemas complejos, graves o recurrentes conviene usar herramientas más **estructuradas**. Este capítulo presenta tres: el **análisis de cambios**, el **análisis de barreras** y el **análisis de árbol de fallas**.\n\n## Análisis de cambios\n### La idea\nSi un proceso funcionaba bien y de pronto falla, **algo cambió**. El análisis de cambios compara sistemáticamente la situación con problema frente a una situación **similar sin problema** (la misma línea antes, otra línea, otro producto) y busca las diferencias y los cambios.\n\nEs la continuación natural del Es / No es del capítulo 2 y es especialmente útil cuando la gráfica de tiempo muestra un **escalón**.\n\n### Cómo hacerlo\n1. Describe la situación **con problema**.\n2. Describe una situación **comparable sin problema**.\n3. Compara factor por factor: materiales, proveedores, equipos, métodos, personas, condiciones, documentos, software, mantenimiento.\n4. Lista todas las **diferencias**.\n5. Para cada diferencia, pregunta **qué cambió** y **cuándo**.\n6. Evalúa si cada cambio puede **explicar** el problema y verifícalo.\n\n### Fuentes de cambios que suelen olvidarse\n- Cambios de **proveedor** del proveedor (la amina que usa tu proveedor de activo).\n- Cambios de **concentración**, grado o presentación de una materia prima con el mismo nombre.\n- **Mantenimiento** reciente: piezas reemplazadas, recalibraciones, ajustes.\n- Actualizaciones de **software** o de recetas en el sistema.\n- **Personal** nuevo o rotación de turnos.\n- **Temporada**: temperatura, humedad, calidad del agua.\n- Cambios en el **método analítico** o en el equipo de laboratorio (el problema puede ser de medición, no de producto).\n\nUna buena práctica es mantener una **bitácora de cambios** por proceso; cuando surge un problema, es la primera fuente que se consulta.\n\n## Análisis de barreras\n### La idea\nEn un proceso bien diseñado existen **barreras** (controles) que impiden que un peligro llegue al producto o al cliente: especificaciones, verificaciones, alarmas, inspecciones, análisis de liberación. Cuando un problema llega al cliente, significa que **varias barreras fallaron** o no existían.\n\nEl análisis de barreras pregunta, para cada barrera que debía detener el problema:\n\n- ¿**Existía** la barrera?\n- ¿Estaba **diseñada** para detener este tipo de problema?\n- ¿Se **aplicó**?\n- ¿**Funcionó**? Si no, ¿por qué?\n\n### El modelo del queso suizo\nJames Reason describió los sistemas como capas de queso suizo: cada capa (barrera) tiene agujeros (debilidades), que cambian con el tiempo. Un accidente ocurre cuando los agujeros de **varias capas se alinean**. La consecuencia práctica es que casi nunca hay una sola causa, y que reforzar **una** barrera no basta: hay que entender por qué fallaron todas.\n\n### Ejemplo\nProblema: lote de sanitizante con activo 60 % por encima de especificación llegó al cliente.\n\n| Barrera | ¿Existía? | ¿Funcionó? | Por qué falló |\n|---|---|---|---|\n| Control de cambios de materia prima | Sí | No | No identificó las recetas afectadas |\n| Recepción de materia prima (verificar COA contra especificación) | Sí | No | La especificación se actualizó al 80 %, pero no se ligó a la receta |\n| Etiqueta del contenedor de activo | Sí | No | Decía 80 %, pero la receta no pedía verificar concentración |\n| Verificación de la carga por el operador | Sí | Parcial | Verificaba peso, no concentración |\n| Análisis de liberación del activo | Sí | No | Un lote de cada cinco; ese no tocaba |\n| Densidad y pH en liberación | Sí | No | No son sensibles al cambio de activo |\n\nEl análisis muestra que el problema no fue \"una falla\": fueron **seis** barreras, cada una con su debilidad.\n\n## Árbol de fallas\n### La idea\nEl **análisis de árbol de fallas** (FTA, por sus siglas en inglés), desarrollado en los Laboratorios Bell a inicios de los años sesenta, parte del evento no deseado (el **evento tope**) y lo descompone hacia abajo en los eventos que pueden causarlo, usando **compuertas lógicas**:\n\n- **Compuerta O**: el evento superior ocurre si ocurre **cualquiera** de los eventos inferiores.\n- **Compuerta Y**: el evento superior ocurre solo si ocurren **todos** los eventos inferiores **a la vez**.\n\nLa descomposición continúa hasta llegar a **eventos básicos** que se pueden verificar.\n\n### Ejemplo simplificado\nEvento tope: **producto con activo alto entregado al cliente**.\n\nPara que ocurra se necesitan **a la vez** (compuerta Y):\n\n- **A**: se fabricó un lote con activo alto.\n- **B**: el lote no fue detectado antes del despacho.\n\nA ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- A1: receta incorrecta.\n- A2: materia prima más concentrada de lo previsto.\n- A3: error de dosificación (equipo descalibrado o falla).\n- A4: error de carga manual.\n\nB ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- B1: el lote no se analizó (*skip-lot*).\n- B2: se analizó pero el resultado fue erróneo (método o equipo).\n- B3: se analizó, salió fuera y se liberó de todos modos.\n\n### Lo que enseña el árbol\n- La compuerta **Y** del tope muestra que basta con romper **una** de las dos ramas para evitar el evento: si la detección (B) fuera infalible, A nunca llegaría al cliente. Por eso las barreras de detección robustas son tan valiosas.\n- Las compuertas **O** muestran que hay que controlar **todas** las ramas: eliminar A2 no evita A1, A3 ni A4.\n- El árbol sirve **antes** del problema (como análisis de riesgo) y **después** (para investigar, verificando cada evento básico).\n\n## Elegir la herramienta\n| Situación | Herramienta útil |\n|---|---|\n| Problema simple, causa probablemente única | Cinco porqués con verificación |\n| Muchas causas posibles, poca información | Ishikawa filtrado con Es / No es |\n| El problema empezó en un momento definido | Análisis de cambios |\n| El problema llegó al cliente o es grave | Análisis de barreras |\n| Evento grave con varias combinaciones posibles | Árbol de fallas |\n\nEn problemas importantes se combinan: el análisis de cambios encuentra el disparador, el de barreras explica por qué llegó al cliente, y los cinco porqués llevan cada falla hasta su causa del sistema.\n\n## Ideas que debes llevarte\n- El **análisis de cambios** compara con una situación sin problema y busca qué cambió y cuándo; incluye cambios olvidados (proveedor del proveedor, concentración, mantenimiento, software, método analítico).\n- El **análisis de barreras** revisa cada control que debía detener el problema: existía, estaba bien diseñado, se aplicó, funcionó.\n- El modelo del **queso suizo** explica que los problemas graves resultan de varias barreras que fallan a la vez.\n- El **árbol de fallas** descompone el evento con compuertas **Y** (todas a la vez) y **O** (cualquiera), y muestra dónde una sola barrera robusta corta el camino.\n- Elige la herramienta según el problema y **combínalas** en los casos graves.",
+   "texto": "## Más allá de la lluvia de ideas\nLos cinco porqués y el Ishikawa dependen mucho de lo que el equipo ya sabe o sospecha. Para problemas complejos, graves o recurrentes conviene usar herramientas más **estructuradas**. Este capítulo presenta tres: el **análisis de cambios**, el **análisis de barreras** y el **análisis de árbol de fallas**.\n\n## Análisis de cambios\n### La idea\nSi un proceso funcionaba bien y de pronto falla, **algo cambió**. El análisis de cambios compara sistemáticamente la situación con problema frente a una situación **similar sin problema** (la misma línea antes, otra línea, otro producto) y busca las diferencias y los cambios.\n\nEs la continuación natural del Es / No es del capítulo 2 y es especialmente útil cuando la gráfica de tiempo muestra un **escalón**.\n\n### Cómo hacerlo\n1. Describe la situación **con problema**.\n2. Describe una situación **comparable sin problema**.\n3. Compara factor por factor: materiales, proveedores, equipos, métodos, personas, condiciones, documentos, software, mantenimiento.\n4. Lista todas las **diferencias**.\n5. Para cada diferencia, pregunta **qué cambió** y **cuándo**.\n6. Evalúa si cada cambio puede **explicar** el problema y verifícalo.\n\n### Fuentes de cambios que suelen olvidarse\n- Cambios de **proveedor** del proveedor (la amina que usa tu proveedor de activo).\n- Cambios de **concentración**, grado o presentación de una materia prima con el mismo nombre.\n- **Mantenimiento** reciente: piezas reemplazadas, recalibraciones, ajustes.\n- Actualizaciones de **software** o de recetas en el sistema.\n- **Personal** nuevo o rotación de turnos.\n- **Temporada**: temperatura, humedad, calidad del agua.\n- Cambios en el **método analítico** o en el equipo de laboratorio (el problema puede ser de medición, no de producto).\n\nUna buena práctica es mantener una **bitácora de cambios** por proceso; cuando surge un problema, es la primera fuente que se consulta.\n\n## Análisis de barreras\n### La idea\nEn un proceso bien diseñado existen **barreras** (controles) que impiden que un peligro llegue al producto o al cliente: especificaciones, verificaciones, alarmas, inspecciones, análisis de liberación. Cuando un problema llega al cliente, significa que **varias barreras fallaron** o no existían.\n\nEl análisis de barreras pregunta, para cada barrera que debía detener el problema:\n\n- ¿**Existía** la barrera?\n- ¿Estaba **diseñada** para detener este tipo de problema?\n- ¿Se **aplicó**?\n- ¿**Funcionó**? Si no, ¿por qué?\n\n### El modelo del queso suizo\nJames Reason describió los sistemas como capas de queso suizo: cada capa (barrera) tiene agujeros (debilidades), que cambian con el tiempo. Un accidente ocurre cuando los agujeros de **varias capas se alinean**. La consecuencia práctica es que casi nunca hay una sola causa, y que reforzar **una** barrera no basta: hay que entender por qué fallaron todas.\n\n### Ejemplo\nProblema: lote de sanitizante con activo 60 % por encima de especificación llegó al cliente.\n\n| Barrera | ¿Existía? | ¿Funcionó? | Por qué falló |\n|---|---|---|---|\n| Control de cambios de materia prima | Sí | No | No identificó las recetas afectadas |\n| Recepción de materia prima (verificar COA contra especificación) | Sí | No | La especificación se actualizó al 80 %, pero no se ligó a la receta |\n| Etiqueta del contenedor de activo | Sí | No | Decía 80 %, pero la receta no pedía verificar concentración |\n| Verificación de la carga por el operador | Sí | Parcial | Verificaba peso, no concentración |\n| Análisis de liberación del activo | Sí | No | Un lote de cada diez; ese no tocaba |\n| Densidad y pH en liberación | Sí | No | No son sensibles al cambio de activo |\n\nEl análisis muestra que el problema no fue \"una falla\": fueron **seis** barreras, cada una con su debilidad.\n\n## Árbol de fallas\n### La idea\nEl **análisis de árbol de fallas** (FTA, por sus siglas en inglés), desarrollado en los Laboratorios Bell a inicios de los años sesenta, parte del evento no deseado (el **evento tope**) y lo descompone hacia abajo en los eventos que pueden causarlo, usando **compuertas lógicas**:\n\n- **Compuerta O**: el evento superior ocurre si ocurre **cualquiera** de los eventos inferiores.\n- **Compuerta Y**: el evento superior ocurre solo si ocurren **todos** los eventos inferiores **a la vez**.\n\nLa descomposición continúa hasta llegar a **eventos básicos** que se pueden verificar.\n\n### Ejemplo simplificado\nEvento tope: **producto con activo alto entregado al cliente**.\n\nPara que ocurra se necesitan **a la vez** (compuerta Y):\n\n- **A**: se fabricó un lote con activo alto.\n- **B**: el lote no fue detectado antes del despacho.\n\nA ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- A1: receta incorrecta.\n- A2: materia prima más concentrada de lo previsto.\n- A3: error de dosificación (equipo descalibrado o falla).\n- A4: error de carga manual.\n\nB ocurre si ocurre **cualquiera** (compuerta O) de:\n\n- B1: el lote no se analizó (*skip-lot*).\n- B2: se analizó pero el resultado fue erróneo (método o equipo).\n- B3: se analizó, salió fuera y se liberó de todos modos.\n\n### Lo que enseña el árbol\n- La compuerta **Y** del tope muestra que basta con romper **una** de las dos ramas para evitar el evento: si la detección (B) fuera infalible, A nunca llegaría al cliente. Por eso las barreras de detección robustas son tan valiosas.\n- Las compuertas **O** muestran que hay que controlar **todas** las ramas: eliminar A2 no evita A1, A3 ni A4.\n- El árbol sirve **antes** del problema (como análisis de riesgo) y **después** (para investigar, verificando cada evento básico).\n\n## Elegir la herramienta\n| Situación | Herramienta útil |\n|---|---|\n| Problema simple, causa probablemente única | Cinco porqués con verificación |\n| Muchas causas posibles, poca información | Ishikawa filtrado con Es / No es |\n| El problema empezó en un momento definido | Análisis de cambios |\n| El problema llegó al cliente o es grave | Análisis de barreras |\n| Evento grave con varias combinaciones posibles | Árbol de fallas |\n\nEn problemas importantes se combinan: el análisis de cambios encuentra el disparador, el de barreras explica por qué llegó al cliente, y los cinco porqués llevan cada falla hasta su causa del sistema.\n\n## Ideas que debes llevarte\n- El **análisis de cambios** compara con una situación sin problema y busca qué cambió y cuándo; incluye cambios olvidados (proveedor del proveedor, concentración, mantenimiento, software, método analítico).\n- El **análisis de barreras** revisa cada control que debía detener el problema: existía, estaba bien diseñado, se aplicó, funcionó.\n- El modelo del **queso suizo** explica que los problemas graves resultan de varias barreras que fallan a la vez.\n- El **árbol de fallas** descompone el evento con compuertas **Y** (todas a la vez) y **O** (cualquiera), y muestra dónde una sola barrera robusta corta el camino.\n- Elige la herramienta según el problema y **combínalas** en los casos graves.",
    "preguntas": [
     {
      "tipo": "opcion",
@@ -1200,6 +1200,820 @@
       "Cultura justa como alternativa"
      ],
      "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Verificar la causa con datos",
+   "texto": "## Una causa no verificada es una hipótesis\nEl paso que más se omite en un análisis de causa raíz es el de **verificar**. Se llena el Ishikawa, se hacen los cinco porqués, el equipo coincide en una causa \"obvia\" y se pasa a las acciones. Si la causa estaba equivocada, la acción no funcionará, el problema regresará y se habrá perdido tiempo y dinero. Peor aún: se habrá **creído** que el problema estaba resuelto.\n\nVerificar significa obtener **evidencia** de que la causa propuesta realmente produce el problema.\n\n## Criterios de una causa verificada\nUna causa puede considerarse verificada cuando cumple, en lo posible, estos criterios:\n\n1. **Explica todos los hechos**: incluido el Es / No es. Si la causa propuesta explicaría el problema también donde **no** ocurre, algo falta.\n2. **Coincide en el tiempo**: la causa estaba presente cuando ocurrió el problema y ausente cuando no.\n3. **Se puede reproducir**: al introducir la causa, el problema aparece.\n4. **Se puede eliminar**: al quitar la causa, el problema desaparece.\n\nLos dos últimos son la prueba más fuerte: **encender y apagar** el problema. No siempre es posible (no se puede reproducir una contaminación peligrosa en la línea), pero muchas veces se puede a escala de laboratorio o con una simulación.\n\n## Primero, verifica la medición\nAntes de buscar causas en el proceso, asegúrate de que el problema **existe**. Una parte sorprendente de los \"problemas de producto\" son en realidad problemas de **medición**:\n\n- ¿El método analítico es adecuado y se aplicó correctamente?\n- ¿El equipo estaba calibrado y el reactivo estandarizado?\n- ¿La muestra era representativa y se conservó bien?\n- ¿El resultado se confirma con un **material de referencia**, con otro analista o con otro laboratorio?\n\nEn el curso de estadística viste el análisis del sistema de medición (MSA). En una investigación, una verificación rápida (analizar un material de referencia y un retenido por duplicado) evita perseguir un problema que no existe.\n\n## Técnicas de verificación\n### Revisión de registros\nLa forma más rápida: comprobar en los registros si la causa propuesta estaba presente en los lotes con problema y ausente en los lotes sin problema. Ejemplo: confirmar que los 4 lotes separados usaron el hidrótropo H-0731 y que los 5 buenos no.\n\n### Análisis de muestras retenidas\nLas **muestras retenidas** de producto y de materias primas son la evidencia física más valiosa. Analizar el retenido de la materia prima sospechosa frente a un lote conocido como bueno puede confirmar o descartar una hipótesis en horas.\n\n### Pruebas de laboratorio y lotes piloto\nReproducir el problema a pequeña escala:\n\n- Preparar el producto con la materia prima sospechosa y con una conocida como buena, en las **mismas condiciones**.\n- Someter ambos a la misma prueba (por ejemplo, estabilidad acelerada).\n- Si solo el preparado con la materia prima sospechosa falla, la hipótesis gana mucha fuerza.\n\nIncluye **controles**: una prueba sin comparación no demuestra nada.\n\n### Experimentos diseñados\nCuando varias causas pueden interactuar (por ejemplo, el hidrótropo y la temperatura de mezcla), un **diseño de experimentos** pequeño (un factorial 2×2, como viste en el curso de estadística) separa los efectos y detecta interacciones con pocas corridas.\n\n### Comparaciones estadísticas\nCon datos de proceso, las pruebas estadísticas indican si una diferencia es real o puede deberse al azar:\n\n- Comparar medias de dos grupos (lotes con materia prima A frente a B): prueba **t**.\n- Comparar proporciones de defectos (turno 1 frente a turno 2): prueba de **proporciones** o **ji cuadrada**.\n- Relación entre dos variables continuas: **diagrama de dispersión** y correlación.\n\n### Ejemplo con proporciones\nSeparación de fases: 4 de 4 lotes con H-0731 frente a 0 de 5 lotes con otro lote de hidrótropo. Aunque la muestra es pequeña, la prueba exacta de Fisher da una probabilidad cercana a 0.008 de obtener una separación tan perfecta por azar. Es evidencia fuerte, pero se confirma con una prueba de laboratorio.\n\n## Correlación no es causalidad\nDos cosas que ocurren juntas no siempre tienen relación causal. Trampas comunes:\n\n- **Una tercera variable**: las quejas aumentan cuando sube la temperatura del almacén, pero ambas aumentan en verano, cuando también se usa otro lote de materia prima.\n- **Coincidencia temporal**: un cambio de operador coincide con el inicio del problema, pero el verdadero cambio fue el lote de materia prima del mismo día.\n- **Causalidad invertida**: un equipo tiene más ajustes en los lotes con problema; no porque los ajustes causen el problema, sino porque el operador ajusta cuando ve que algo va mal.\n\nPor eso la prueba más sólida es la intervención controlada: cambiar **solo** la causa sospechosa y observar el efecto.\n\n## Cuando no se puede verificar del todo\nA veces la evidencia física ya no existe, el problema no se puede reproducir o el costo de verificar es desproporcionado. En esos casos:\n\n- Documenta la causa como **más probable**, con la evidencia que la apoya y la que falta.\n- Diseña acciones que cubran también las **causas alternativas** razonables.\n- Refuerza la **verificación de eficacia**: si el problema regresa, la causa no era esa.\n- Sé honesto en el registro: \"causa probable, no confirmada\" es mejor que una certeza falsa.\n\n## Registrar la verificación\nCada causa candidata debería quedar con su estado:\n\n| Causa candidata | Verificación realizada | Resultado | Estado |\n|---|---|---|---|\n| Temperatura del almacén | Revisión de registros y Es / No es | Afectaría a todas las presentaciones | Descartada |\n| Hidrótropo H-0731 | Registros, análisis del retenido, mezcla de prueba con estabilidad acelerada | Solo las mezclas con H-0731 se separan | Confirmada |\n| Envase de 20 L | Revisión de cambios de envase | Sin cambios en el periodo | Descartada |\n| Velocidad del agitador de la línea 2 | Registros de mantenimiento | Sin cambios; los 20 L buenos usan la misma línea | Descartada |\n\nEsta tabla es lo que un auditor o un cliente esperan ver: no solo la causa, sino **cómo se llegó** a ella.\n\n## Ideas que debes llevarte\n- Una causa no verificada es una **hipótesis**; actuar sobre ella puede dar una falsa sensación de solución.\n- Criterios: **explica todos los hechos**, coincide en el tiempo, se puede **reproducir** y **eliminar**.\n- **Verifica la medición** antes de investigar el proceso.\n- Usa registros, **retenidos**, pruebas de laboratorio con **controles**, experimentos diseñados y comparaciones estadísticas.\n- **Correlación no es causalidad**: cuidado con terceras variables, coincidencias y causalidad invertida.\n- Si no se puede verificar, documenta la causa como **probable**, cubre alternativas y refuerza la verificación de eficacia.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Hipótesis",
+     "enunciado": "¿Qué es una causa propuesta que no se ha verificado?",
+     "opciones": [
+      "Una hipótesis",
+      "Una causa raíz confirmada",
+      "Una acción correctiva",
+      "Un hallazgo de auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Actuar sobre ella puede dar una falsa sensación de solución.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Criterios",
+     "enunciado": "¿Cuál es la prueba más fuerte de que una causa es real?",
+     "opciones": [
+      "Poder reproducir el problema introduciendo la causa y eliminarlo quitándola",
+      "Que el equipo esté de acuerdo",
+      "Que el gerente la apruebe",
+      "Que aparezca en el Ishikawa"
+     ],
+     "correcta": 0,
+     "explicacion": "Encender y apagar el problema.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Es / No es",
+     "enunciado": "Una causa propuesta explicaría el problema también donde no ocurre. ¿Qué indica?",
+     "opciones": [
+      "Que la causa está incompleta o es incorrecta",
+      "Que es la causa correcta",
+      "Que el problema no existe",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Una causa verificada explica todos los hechos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Medición",
+     "enunciado": "¿Qué conviene verificar antes de investigar causas en el proceso?",
+     "opciones": [
+      "Que la medición es confiable y el problema realmente existe",
+      "El presupuesto",
+      "Quién detectó el problema",
+      "El historial del operador"
+     ],
+     "correcta": 0,
+     "explicacion": "Muchos problemas de producto son de medición.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Retenidos",
+     "enunciado": "¿Por qué son tan valiosas las muestras retenidas en una investigación?",
+     "opciones": [
+      "Son la evidencia física que permite confirmar o descartar hipótesis",
+      "Porque lo exige el cliente",
+      "Porque se pueden vender",
+      "No son útiles"
+     ],
+     "correcta": 0,
+     "explicacion": "Un análisis comparativo puede resolver una hipótesis en horas.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Controles",
+     "enunciado": "En una prueba de laboratorio para verificar una materia prima sospechosa, ¿qué es indispensable?",
+     "opciones": [
+      "Un control con materia prima conocida como buena en las mismas condiciones",
+      "Usar solo la materia prima sospechosa",
+      "Hacer la prueba en la línea de producción",
+      "Pedir la opinión del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin comparación, la prueba no demuestra nada.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Experimentos",
+     "enunciado": "Dos factores podrían interactuar para causar el problema. ¿Qué técnica es adecuada?",
+     "opciones": [
+      "Un diseño de experimentos factorial pequeño",
+      "Cinco porqués",
+      "Una encuesta",
+      "Esperar a que vuelva a ocurrir"
+     ],
+     "correcta": 0,
+     "explicacion": "Separa efectos y detecta interacciones.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estadística",
+     "enunciado": "¿Qué prueba usarías para comparar el porcentaje de lotes defectuosos entre dos turnos?",
+     "opciones": [
+      "Prueba de proporciones o ji cuadrada",
+      "Prueba t de medias",
+      "Carta R",
+      "Correlación"
+     ],
+     "correcta": 0,
+     "explicacion": "Son datos de atributos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Causalidad invertida",
+     "enunciado": "Los lotes con problema tienen más ajustes del equipo. El operador ajusta cuando ve que algo va mal. ¿Qué trampa es?",
+     "opciones": [
+      "Causalidad invertida",
+      "Tercera variable",
+      "Coincidencia temporal",
+      "Error de medición"
+     ],
+     "correcta": 0,
+     "explicacion": "El problema causa los ajustes, no al revés.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tercera variable",
+     "enunciado": "Las quejas y la temperatura del almacén suben en verano, cuando también se usa otro lote de materia prima. ¿Qué trampa puede haber?",
+     "opciones": [
+      "Una tercera variable",
+      "Causalidad invertida",
+      "Error de medición",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "La intervención controlada separa las causas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No verificable",
+     "enunciado": "Si una causa no se puede verificar por completo, ¿qué es lo correcto?",
+     "opciones": [
+      "Documentarla como probable, cubrir causas alternativas y reforzar la verificación de eficacia",
+      "Declararla confirmada",
+      "Cerrar la CAPA sin acciones",
+      "Elegir la causa más barata"
+     ],
+     "correcta": 0,
+     "explicacion": "Una certeza falsa es peor que una incertidumbre honesta.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan de verificación",
+     "enunciado": "Diseña una prueba de laboratorio para verificar si el hidrótropo H-0731 causa la separación de fases del DA-30.",
+     "respuesta_modelo": "Prepararía mezclas de DA-30 a escala de laboratorio con la misma receta, equipo y condiciones: al menos dos réplicas con H-0731 y dos con un lote de hidrótropo conocido como bueno (control). Si es posible, también una mezcla con el hidrótropo bueno y la proporción de H-0731 en partes para ver dosis-respuesta. Analizaría el hidrótropo de ambos lotes (por ejemplo, contenido de activo, agua o impurezas). Sometería todas las mezclas a la misma prueba de estabilidad acelerada (ciclos de temperatura o almacenamiento a temperatura elevada) evaluadas a ciegas. Si solo las mezclas con H-0731 se separan, la causa queda verificada; si ambas se separan, hay otra causa.",
+     "puntos_clave": [
+      "Control con lote bueno",
+      "Réplicas y mismas condiciones",
+      "Análisis de la materia prima",
+      "Criterio de interpretación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Medición primero",
+     "enunciado": "Tu laboratorio reporta tres lotes de sanitizante con activo bajo en una semana, después de dos años sin problemas. ¿Qué verificarías antes de investigar producción?",
+     "respuesta_modelo": "Verificaría la medición: estandarización y vigencia del titulante, calibración de la bureta o el titulador y de la balanza, que el método y el cálculo no hayan cambiado (incluida una actualización de hoja de cálculo o software), el analista y su capacitación, y la preparación de la muestra. Analizaría un material de referencia o un lote retenido con valor conocido, y los tres lotes por duplicado, de ser posible por otro analista o un laboratorio externo. Revisaría la carta de control del material de control del laboratorio. Solo si la medición se confirma confiable, investigaría el proceso.",
+     "puntos_clave": [
+      "Reactivos y calibración",
+      "Cambios en el método o cálculo",
+      "Material de referencia y duplicados",
+      "Carta de control del laboratorio"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tabla de verificación",
+     "enunciado": "Para el problema del sanitizante con olor a amina en 5 de 14 lotes, construye una tabla de verificación con al menos tres causas candidatas, la verificación propuesta y un posible resultado.",
+     "respuesta_modelo": "1) Nuevo proveedor de amina del fabricante del activo: verificar en registros qué lotes de activo se usaron en los 5 lotes con olor y en los 9 sin olor; analizar amina libre en retenidos de activo y producto; preparar mezclas de laboratorio con activo viejo y nuevo. Resultado posible: los 5 lotes usaron activo de lotes posteriores al cambio y tienen más amina libre; confirmada. 2) Arrastre de otro producto en el tanque: revisar la secuencia de fabricación y registros de limpieza; resultado posible: los 5 lotes se hicieron en distintos tanques con limpiezas conformes; descartada. 3) Error del panel de olor: evaluar a ciegas retenidos con olor y sin olor y medir amina libre; resultado posible: el panel coincide con la medición; descartada como problema de medición.",
+     "puntos_clave": [
+      "Al menos tres causas",
+      "Verificación concreta para cada una",
+      "Resultado y estado",
+      "Inclusión de la medición"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "titulo": "Diseñar acciones que funcionen",
+   "texto": "## No todas las acciones valen lo mismo\nCon la causa verificada, toca decidir qué hacer. Aquí está el segundo gran punto débil de las CAPA: acciones que **no eliminan la causa**. \"Capacitar al personal\", \"recordar el procedimiento\", \"agregar una firma\", \"poner un letrero\". Son acciones fáciles, baratas y rápidas de cerrar, y por eso son tan comunes. También son las que **menos funcionan**.\n\n## La jerarquía de acciones\nEl Centro Nacional para la Seguridad del Paciente del Departamento de Asuntos de Veteranos de Estados Unidos (VA NCPS) propuso una **jerarquía de acciones** que se ha difundido en muchas industrias. Clasifica las acciones por su **fuerza**, es decir, por cuánto dependen de que las personas recuerden y elijan hacer lo correcto.\n\n### Acciones fuertes\nNo dependen de la memoria ni de la atención:\n\n- **Cambios físicos o de diseño** que eliminan el peligro o la posibilidad del error.\n- **Funciones forzadas** (*forcing functions*): el sistema impide continuar si no se hace lo correcto.\n- **Simplificar** el proceso: eliminar pasos, transcripciones o cálculos.\n- **Estandarizar** equipos, materiales o procesos para eliminar variantes confusas.\n- Participación tangible de la **dirección** para resolver condiciones de fondo.\n\n### Acciones intermedias\nReducen la probabilidad del error, pero aún dependen en parte de las personas:\n\n- **Redundancia** o verificación automatizada.\n- Aumentar personal o reducir la carga de trabajo.\n- Mejoras de **software** que alertan.\n- Eliminar elementos **parecidos** que se confunden.\n- **Listas de verificación** y ayudas cognitivas en el punto de uso.\n- Herramientas estandarizadas de comunicación.\n\n### Acciones débiles\nDependen por completo de que alguien recuerde y quiera hacerlo bien:\n\n- **Doble verificación** humana.\n- **Advertencias** y letreros.\n- Nuevo **procedimiento** o política.\n- **Capacitación**.\n\nEsto no significa que las acciones débiles sean inútiles: la capacitación es necesaria cuando cambia un proceso, y un procedimiento claro es indispensable. Significa que, **solas**, rara vez evitan la recurrencia. Una buena CAPA combina al menos una acción **fuerte o intermedia** con las de apoyo.\n\n## La jerarquía de controles\nEn seguridad industrial se usa una jerarquía equivalente para peligros: **eliminación**, **sustitución**, **controles de ingeniería**, **controles administrativos** y **equipo de protección personal**, de más a menos eficaz. La lógica es la misma: lo que actúa sobre el diseño es más fiable que lo que depende de la conducta.\n\n## Poka-yoke: diseño a prueba de errores\nShigeo Shingo popularizó en Toyota el **poka-yoke**: dispositivos o diseños que impiden el error o lo hacen evidente de inmediato. Dos tipos:\n\n- **De control**: impiden que el error ocurra o que el proceso continúe (una conexión que solo ajusta con el contenedor correcto; un sistema que no permite cargar una materia prima cuyo código no coincide con la receta).\n- **De advertencia**: alertan cuando ocurre (una alarma, una luz, un mensaje).\n\nY tres métodos clásicos:\n\n- **Contacto**: detecta forma, tamaño, posición (conexiones con forma distinta para ácido y álcali).\n- **Valor fijo**: verifica que se haya hecho un número determinado de movimientos o piezas (una báscula que no libera la orden hasta registrar las tres adiciones).\n- **Secuencia**: verifica que los pasos se hagan en orden (el sistema no permite agregar el ácido antes de confirmar la dilución en agua).\n\nEn una planta química, algunos ejemplos potentes:\n\n- **Lectores de código** en la carga de materias primas, ligados a la receta del lote.\n- **Códigos de material distintos** para concentraciones distintas del mismo químico.\n- Recetas en el **sistema**, no impresas, con control de versiones.\n- **Interbloqueos**: la válvula de descarga no abre si el análisis de liberación no está aprobado.\n- **Conexiones** incompatibles entre productos que no deben mezclarse.\n\n## Atacar ocurrencia, escape y sistema\nPara cada causa verificada, pregunta qué acción la elimina. Y cubre tres niveles:\n\n1. **Ocurrencia**: que el defecto no se produzca.\n2. **Escape**: que, si se produce, se detecte antes de llegar al cliente.\n3. **Sistema**: que el proceso de gestión que permitió la causa (control de cambios, aprobación de documentos, planificación de inspección) se corrija.\n\nY agrega la **extensión horizontal**: ¿dónde más puede ocurrir lo mismo?\n\n## Evaluar las acciones antes de implementarlas\nToda acción es un **cambio**, y los cambios generan riesgos. Antes de implementar:\n\n- ¿La acción **elimina** la causa verificada o solo la vigila?\n- ¿Puede generar **nuevos riesgos** (una alarma que causa fatiga de alarmas, un paso adicional que retrasa la producción y provoca atajos)?\n- ¿Es **factible** y sostenible con los recursos disponibles?\n- ¿Requiere **validación** (por ejemplo, un cambio de receta o de un parámetro de un PCC)?\n- ¿Debe pasar por el **control de cambios** formal?\n\n## Un plan de acción bien escrito\nCada acción debe ser específica:\n\n| Elemento | Mal escrito | Bien escrito |\n|---|---|---|\n| Qué | Mejorar el control de cambios | Agregar al formato de control de cambios la sección \"recetas, planes de inspección, etiquetas y fichas de seguridad afectados\", con la lista generada desde el sistema |\n| Quién | Calidad | Jefa de aseguramiento de calidad |\n| Cuándo | Pronto | 15 de diciembre de 2026 |\n| Evidencia | Hecho | Formato vigente en el sistema y tres registros de cambio que lo usan |\n| Eficacia | Verificar | Revisión de todos los cambios de materia prima del siguiente trimestre: 100 % con recetas afectadas identificadas |\n\nObserva la última fila: el **criterio de eficacia** se define al diseñar la acción, no al cerrarla.\n\n## Ideas que debes llevarte\n- Las acciones tienen distinta **fuerza**: fuertes (diseño, funciones forzadas, simplificación, estandarización), intermedias (redundancia, software, listas de verificación) y débiles (doble verificación, advertencias, procedimientos, capacitación).\n- Una buena CAPA incluye al menos una acción **fuerte o intermedia**; las débiles son apoyo.\n- El **poka-yoke** impide o hace evidente el error: de control o de advertencia; por contacto, valor fijo o secuencia.\n- Ataca **ocurrencia**, **escape** y **sistema**, y extiende horizontalmente.\n- Evalúa las acciones como **cambios**: nuevos riesgos, factibilidad, validación.\n- Escribe acciones específicas con responsable, fecha, evidencia y **criterio de eficacia** definido de antemano.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Fuerza",
+     "enunciado": "¿Qué determina la fuerza de una acción en la jerarquía de acciones?",
+     "opciones": [
+      "Cuánto depende de que las personas recuerden y elijan hacer lo correcto",
+      "Su costo",
+      "Cuántas personas la aprueban",
+      "Su rapidez de implementación"
+     ],
+     "correcta": 0,
+     "explicacion": "Las fuertes no dependen de memoria ni atención.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuerte",
+     "enunciado": "¿Cuál es una acción fuerte?",
+     "opciones": [
+      "Un sistema que impide cargar una materia prima cuyo código no coincide con la receta",
+      "Capacitar al operador",
+      "Poner un letrero",
+      "Agregar una firma de revisión"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una función forzada.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Débil",
+     "enunciado": "¿En qué nivel de la jerarquía está la capacitación?",
+     "opciones": [
+      "Débil",
+      "Fuerte",
+      "Intermedia",
+      "No aparece"
+     ],
+     "correcta": 0,
+     "explicacion": "Es necesaria como apoyo, pero sola rara vez evita la recurrencia.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Intermedia",
+     "enunciado": "¿Cuál es una acción intermedia?",
+     "opciones": [
+      "Una lista de verificación en el punto de uso",
+      "Eliminar el paso del proceso",
+      "Un nuevo procedimiento",
+      "Una advertencia verbal"
+     ],
+     "correcta": 0,
+     "explicacion": "Reduce la probabilidad pero aún depende en parte de las personas.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Combinación",
+     "enunciado": "¿Qué caracteriza un buen plan de acciones correctivas?",
+     "opciones": [
+      "Al menos una acción fuerte o intermedia, con las débiles como apoyo",
+      "Solo capacitación y procedimientos",
+      "Solo acciones baratas",
+      "Solo acciones que se cierren en una semana"
+     ],
+     "correcta": 0,
+     "explicacion": "Combinar niveles da robustez.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Jerarquía de controles",
+     "enunciado": "¿Cuál es el orden de la jerarquía de controles de seguridad industrial, de más a menos eficaz?",
+     "opciones": [
+      "Eliminación, sustitución, ingeniería, administrativos, equipo de protección personal",
+      "Equipo de protección, administrativos, ingeniería, sustitución, eliminación",
+      "Capacitación, procedimientos, ingeniería",
+      "Administrativos, eliminación, ingeniería"
+     ],
+     "correcta": 0,
+     "explicacion": "La lógica es igual a la jerarquía de acciones.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Poka-yoke",
+     "enunciado": "¿Qué diferencia hay entre un poka-yoke de control y uno de advertencia?",
+     "opciones": [
+      "El de control impide el error o que el proceso continúe; el de advertencia alerta cuando ocurre",
+      "No hay diferencia",
+      "El de advertencia es siempre mejor",
+      "El de control solo aplica en ensamble"
+     ],
+     "correcta": 0,
+     "explicacion": "El de control es más fuerte.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Secuencia",
+     "enunciado": "El sistema no permite agregar el ácido antes de confirmar que se agregó el agua. ¿Qué método de poka-yoke es?",
+     "opciones": [
+      "Secuencia",
+      "Contacto",
+      "Valor fijo",
+      "Advertencia visual"
+     ],
+     "correcta": 0,
+     "explicacion": "Verifica que los pasos se hagan en orden.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Niveles",
+     "enunciado": "¿Qué tres niveles debe cubrir el plan de acciones?",
+     "opciones": [
+      "Ocurrencia, escape y sistema",
+      "Personas, dinero y tiempo",
+      "Planta, oficina y almacén",
+      "Cliente, proveedor y auditor"
+     ],
+     "correcta": 0,
+     "explicacion": "Además de la extensión horizontal.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos nuevos",
+     "enunciado": "¿Por qué se evalúa una acción correctiva antes de implementarla?",
+     "opciones": [
+      "Porque es un cambio que puede generar nuevos riesgos o requerir validación",
+      "Porque lo exige el auditor",
+      "No es necesario",
+      "Para retrasarla"
+     ],
+     "correcta": 0,
+     "explicacion": "Ejemplo: fatiga de alarmas o atajos por pasos extra.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Criterio de eficacia",
+     "enunciado": "¿Cuándo se define el criterio de eficacia de una acción?",
+     "opciones": [
+      "Al diseñar la acción",
+      "Al cerrar la CAPA",
+      "Cuando lo pida el auditor",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "Definirlo después invita a ajustarlo al resultado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Fortalecer",
+     "enunciado": "Una CAPA por carga de materia prima equivocada (dos contenedores parecidos) propone: 'capacitar a los operadores y poner un letrero'. Propón acciones más fuertes y clasifícalas.",
+     "respuesta_modelo": "Fuertes: lector de código de barras en la carga ligado a la receta del lote, que no permita registrar la adición si el código del material no coincide (función forzada); asignar códigos de material distintos y contenedores o conexiones incompatibles para materiales que se confunden; mover uno de los materiales a otra zona (diseño). Intermedias: diferenciar visualmente contenedores con colores y rótulos grandes; lista de verificación de carga en el sistema. Débiles como apoyo: capacitación sobre el nuevo sistema y actualización del procedimiento. El letrero solo no evitaría la recurrencia.",
+     "puntos_clave": [
+      "Al menos una acción fuerte concreta",
+      "Acciones intermedias",
+      "Capacitación como apoyo",
+      "Clasificación correcta"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan",
+     "enunciado": "Escribe dos acciones correctivas bien especificadas (qué, quién, cuándo, evidencia y criterio de eficacia) para la causa 'el análisis de activo se hace en un lote de cada diez y no se revisó al cambiar la materia prima'.",
+     "respuesta_modelo": "Acción 1: eliminar la reducción de frecuencia para el activo de los sanitizantes sin enjuague y analizar el 100 % de los lotes antes de la liberación, con bloqueo en el sistema que impida liberar sin el resultado. Responsable: jefe de laboratorio. Fecha: 30 de noviembre de 2026. Evidencia: plan de inspección actualizado y configuración del bloqueo. Eficacia: 100 % de los lotes del trimestre con resultado de activo antes de liberación, verificado en el sistema. Acción 2: agregar al control de cambios la revisión obligatoria de planes de inspección y criterios de reducción de frecuencia para cualquier cambio de materia prima, proveedor o proceso. Responsable: jefa de aseguramiento de calidad. Fecha: 15 de diciembre de 2026. Evidencia: formato actualizado y registros de uso. Eficacia: todos los cambios del siguiente trimestre con la revisión documentada.",
+     "puntos_clave": [
+      "Acciones específicas",
+      "Responsable y fecha",
+      "Evidencia",
+      "Criterio de eficacia medible"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Nuevos riesgos",
+     "enunciado": "Se propone como acción correctiva agregar una alarma en el sistema cada vez que la concentración de una dilución se desvíe ±2 % del valor objetivo. ¿Qué riesgos evaluarías antes de implementarla?",
+     "respuesta_modelo": "Evaluaría si el ±2 % es coherente con la variación normal del proceso y la incertidumbre de medición: si es demasiado estrecho, la alarma sonará con frecuencia sin problema real, generando fatiga de alarmas y que los operadores la ignoren o la desactiven. Evaluaría quién responde a la alarma y qué debe hacer, si la respuesta está definida y si detiene el proceso o solo avisa. Revisaría si la alarma puede retrasar la producción y provocar atajos, si requiere validación o control de cambios en el sistema, y cómo se verificará su funcionamiento periódicamente. Ajustaría el umbral con datos del proceso.",
+     "puntos_clave": [
+      "Fatiga de alarmas",
+      "Umbral frente a variación e incertidumbre",
+      "Respuesta definida",
+      "Validación y verificación periódica"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "titulo": "Eficacia, cierre y el sistema CAPA",
+   "texto": "## Implementar no es lo mismo que ser eficaz\nUna acción **implementada** es una acción que se hizo: se instaló el lector de código, se actualizó el procedimiento, se impartió la capacitación. Una acción **eficaz** es una que logró su propósito: el problema **no volvió a ocurrir** y la causa quedó eliminada.\n\nMuchas CAPA se cierran al implementar. ISO 9001 pide explícitamente **revisar la eficacia** de las acciones tomadas, y es una de las preguntas favoritas de los auditores: \"¿cómo sabes que funcionó?\".\n\n## Cómo verificar la eficacia\n### Define el criterio de antemano\nComo viste en el capítulo anterior, el criterio se define al diseñar la acción. Debe responder:\n\n- **Qué se mide**: la recurrencia del problema, el indicador relacionado, el cumplimiento de la nueva práctica.\n- **Cuánto tiempo** o cuántas oportunidades: suficientes para que el problema hubiera reaparecido si la causa siguiera.\n- **Qué resultado** se considera eficaz.\n\n### Ejemplos de criterios\n| Problema | Criterio de eficacia |\n|---|---|\n| Separación de fases por lote de hidrótropo | Cero separaciones en los siguientes 20 lotes de DA-30; recepción de hidrótropo con el nuevo parámetro analizado en el 100 % de los lotes |\n| Carga de materia prima equivocada | Cero cargas equivocadas en 3 meses; el sistema registra y bloquea los intentos de carga incorrecta (que demuestran que la barrera funciona) |\n| Registros de PCC incompletos | 100 % de registros completos en la revisión mensual durante 3 meses consecutivos |\n| Control de cambios sin evaluar recetas | 100 % de los cambios de materia prima del trimestre con recetas afectadas identificadas |\n\n### ¿Cuánto tiempo esperar?\nDepende de la **frecuencia** del problema. Si ocurría una vez por semana, un mes sin recurrencia ya es una señal; si ocurría dos veces al año, tres meses sin recurrencia no demuestran casi nada. En problemas poco frecuentes, conviene complementar con indicadores de **proceso** (la barrera funciona, la práctica se cumple) y no solo de **resultado**.\n\n### Verificar también la barrera\nUna buena verificación revisa que la acción **está funcionando**, no solo que el problema no reapareció:\n\n- El lector de código **rechazó** intentos de carga incorrecta (la barrera actúa).\n- Los registros muestran el **uso** de la nueva lista de verificación.\n- Una auditoría o una observación confirma que la práctica se sigue.\n\n### ¿Y si no fue eficaz?\nSi el problema reaparece, la CAPA **no se cierra** y se reabre el análisis: la causa no era la correcta, era incompleta, o la acción no la eliminó. Reabrir no es un fracaso; cerrar una CAPA ineficaz sí lo es.\n\n## Cerrar y estandarizar\nUna CAPA se cierra cuando:\n\n1. Las acciones se **implementaron** con evidencia.\n2. La **eficacia** se verificó según el criterio.\n3. Los cambios quedaron **estandarizados**: procedimientos, recetas, formatos, planes de inspección, capacitación, análisis de peligros o de riesgos actualizados.\n4. La **contención** temporal se retiró de forma controlada.\n5. Se registró el **aprendizaje** y, si aplica, se comunicó a otras áreas o plantas.\n\n## Las metodologías 8D y A3\n### 8D\nLa metodología de las **ocho disciplinas** (8D) se originó en Ford en la década de 1980 y se usa ampliamente en la industria automotriz y en la respuesta a quejas de clientes. Integra todo lo visto en este curso:\n\n- **D0** Preparar: evaluar si se requiere 8D y tomar acciones de emergencia.\n- **D1** Formar el **equipo** multidisciplinario.\n- **D2** Describir el **problema** (5W2H, Es / No es).\n- **D3** Implementar y verificar la **contención** provisional.\n- **D4** Identificar y verificar la **causa raíz** y el **punto de escape**.\n- **D5** Elegir y verificar las **acciones correctivas** permanentes.\n- **D6** **Implementar** y validar las acciones; retirar la contención.\n- **D7** **Prevenir la recurrencia**: estandarizar y extender a procesos similares (cambios del sistema).\n- **D8** **Reconocer** al equipo y cerrar.\n\nMuchos clientes industriales piden la respuesta a una queja en formato 8D, con plazos para D3 (días) y para D5 a D7 (semanas).\n\n### A3\nEl **A3**, desarrollado en Toyota, resume todo el análisis en una sola hoja de tamaño A3: antecedentes, situación actual, objetivo, análisis de causa, contramedidas, plan, seguimiento. Su valor es obligar a la **síntesis** y a la claridad, y servir como herramienta de conversación con la dirección.\n\nAmbas son formatos del mismo ciclo. Lo importante no es el formato, sino la calidad de cada paso.\n\n## El sistema CAPA como proceso\nMás allá de cada caso, el conjunto de CAPA es un **proceso** que debe gestionarse y medirse.\n\n### Indicadores útiles\n- **Antigüedad** de las CAPA abiertas y porcentaje vencido.\n- **Tiempo** de cierre por tipo y prioridad.\n- **Tasa de recurrencia**: problemas que reaparecen después de cerrar la CAPA. Es el indicador más importante: mide si el sistema realmente aprende.\n- Porcentaje de CAPA **eficaces en la primera verificación**.\n- Porcentaje de CAPA con causa raíz \"**error humano**\" o con acción \"**capacitación**\" como única acción: un porcentaje alto es señal de análisis superficiales.\n- Distribución por **fuente** (quejas, auditorías, desviaciones internas) y por **proceso**.\n\n### Tendencias\nRevisa periódicamente las CAPA y los eventos menores en conjunto: problemas pequeños que se repiten en distintas áreas pueden tener una causa del sistema común (por ejemplo, el control de documentos o la gestión de cambios).\n\n### Revisión por la dirección\nEl desempeño del sistema CAPA es una entrada de la **revisión por la dirección**. La dirección debe ver no solo cuántas CAPA hay, sino si son **eficaces**, dónde se concentran y qué recursos necesitan las acciones fuertes (que suelen costar más que las débiles).\n\n### Errores frecuentes del sistema\n- Cerrar por **fecha** y no por eficacia, para cumplir el indicador de cierre a tiempo.\n- Acciones \"**en curso**\" durante meses sin seguimiento.\n- Un solo responsable (calidad) que hace todos los análisis, en lugar de los dueños de los procesos.\n- CAPA abiertas para todo, que saturan el sistema.\n- No vincular las CAPA con el **análisis de riesgos** y el **análisis de peligros**.\n\n## Ideas que debes llevarte\n- **Implementar** no es ser **eficaz**: la eficacia se demuestra con un criterio definido de antemano, un periodo adecuado y evidencia de que la barrera funciona.\n- Si no fue eficaz, se **reabre** el análisis.\n- Se cierra cuando hay implementación, eficacia verificada, **estandarización**, contención retirada y aprendizaje compartido.\n- **8D** (D0 a D8) y **A3** son formatos del mismo ciclo; lo que importa es la calidad de cada paso.\n- Gestiona el sistema CAPA con indicadores, sobre todo la **tasa de recurrencia**, y llévalo a la **revisión por la dirección**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "¿Cuál es la diferencia entre una acción implementada y una eficaz?",
+     "opciones": [
+      "La implementada se hizo; la eficaz logró que el problema no vuelva a ocurrir",
+      "No hay diferencia",
+      "La eficaz es más cara",
+      "La implementada tiene firma"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 9001 pide revisar la eficacia.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Periodo",
+     "enunciado": "Un problema ocurría dos veces al año. ¿Tres meses sin recurrencia demuestran eficacia?",
+     "opciones": [
+      "Casi nada; conviene complementar con indicadores de proceso",
+      "Sí, demuestran eficacia total",
+      "Sí, siempre bastan tres meses",
+      "No se puede verificar nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "El periodo depende de la frecuencia del problema.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Barrera",
+     "enunciado": "¿Qué evidencia muestra que un lector de código en la carga está funcionando como barrera?",
+     "opciones": [
+      "Registros de intentos de carga incorrecta rechazados por el sistema",
+      "La factura del lector",
+      "La capacitación impartida",
+      "Que no hubo quejas"
+     ],
+     "correcta": 0,
+     "explicacion": "Verifica que la barrera actúa, no solo que el problema no apareció.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No eficaz",
+     "enunciado": "El problema reaparece después de implementar las acciones. ¿Qué se hace?",
+     "opciones": [
+      "No cerrar la CAPA y reabrir el análisis de causa",
+      "Cerrarla porque las acciones se implementaron",
+      "Abrir una CAPA nueva sin relación",
+      "Culpar al operador"
+     ],
+     "correcta": 0,
+     "explicacion": "Reabrir no es fracaso; cerrar una CAPA ineficaz sí.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cierre",
+     "enunciado": "¿Cuál de estos es requisito para cerrar una CAPA?",
+     "opciones": [
+      "Estandarizar los cambios en procedimientos, recetas, formatos y planes",
+      "Que haya pasado la fecha comprometida",
+      "Que el responsable lo pida",
+      "Que el auditor esté de acuerdo"
+     ],
+     "correcta": 0,
+     "explicacion": "Además de implementación, eficacia y retiro de la contención.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "8D",
+     "enunciado": "En 8D, ¿qué disciplina corresponde a identificar y verificar la causa raíz y el punto de escape?",
+     "opciones": [
+      "D4",
+      "D2",
+      "D6",
+      "D8"
+     ],
+     "correcta": 0,
+     "explicacion": "D3 es contención y D5 elegir acciones.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "8D",
+     "enunciado": "¿Qué se hace en D7 de un 8D?",
+     "opciones": [
+      "Prevenir la recurrencia estandarizando y extendiendo a procesos similares",
+      "Formar el equipo",
+      "Describir el problema",
+      "Reconocer al equipo"
+     ],
+     "correcta": 0,
+     "explicacion": "Son los cambios del sistema.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "A3",
+     "enunciado": "¿Cuál es el principal valor del formato A3?",
+     "opciones": [
+      "Obligar a la síntesis y la claridad en una sola hoja",
+      "Tener más espacio para firmas",
+      "Sustituir el análisis de causa",
+      "Ser obligatorio por ISO 9001"
+     ],
+     "correcta": 0,
+     "explicacion": "Sirve también como herramienta de conversación.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Indicadores",
+     "enunciado": "¿Cuál es el indicador más importante del sistema CAPA?",
+     "opciones": [
+      "La tasa de recurrencia de problemas después de cerrar la CAPA",
+      "El número de CAPA abiertas",
+      "El número de firmas",
+      "El costo de los formatos"
+     ],
+     "correcta": 0,
+     "explicacion": "Mide si el sistema realmente aprende.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Señal",
+     "enunciado": "El 70 % de las CAPA del año tiene 'capacitación' como única acción. ¿Qué indica?",
+     "opciones": [
+      "Probablemente análisis superficiales y acciones débiles",
+      "Un sistema excelente",
+      "Que el personal está bien capacitado",
+      "Nada relevante"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un indicador de calidad del análisis.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Error del sistema",
+     "enunciado": "¿Cuál es un error frecuente en la gestión del sistema CAPA?",
+     "opciones": [
+      "Cerrar por fecha y no por eficacia para cumplir el indicador de cierre a tiempo",
+      "Revisar tendencias",
+      "Llevar el desempeño a la revisión por la dirección",
+      "Involucrar a los dueños de los procesos"
+     ],
+     "correcta": 0,
+     "explicacion": "El indicador de cierre a tiempo puede incentivar cierres falsos.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Criterio",
+     "enunciado": "Define criterios de eficacia (qué, cuánto tiempo, resultado) para una CAPA por etiquetas con instrucción de dilución equivocada, cuyas acciones fueron una lista de verificación contra la ficha técnica y una doble revisión técnica.",
+     "respuesta_modelo": "Indicador de resultado: cero etiquetas con información técnica equivocada detectadas por clientes o internamente en los siguientes 6 meses o en las siguientes 15 etiquetas nuevas o modificadas, lo que tome más tiempo. Indicadores de proceso: 100 % de las etiquetas nuevas o modificadas con la lista de verificación completa y la doble revisión técnica registrada; auditoría de 5 etiquetas al azar comparadas contra la ficha técnica vigente sin discrepancias. Si se encuentra un error, la CAPA se reabre.",
+     "puntos_clave": [
+      "Indicador de resultado",
+      "Periodo u oportunidades suficientes",
+      "Indicadores de proceso",
+      "Regla de reapertura"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Indicadores",
+     "enunciado": "Propón un tablero de 5 indicadores para el sistema CAPA de una planta y explica qué decisión permite tomar cada uno.",
+     "respuesta_modelo": "1) Tasa de recurrencia (problemas repetidos tras cierre / CAPA cerradas): indica si los análisis y acciones son eficaces; si sube, revisar calidad de análisis. 2) Antigüedad de CAPA abiertas y porcentaje vencido: muestra si faltan recursos o seguimiento; permite priorizar y escalar. 3) Porcentaje de CAPA eficaces en la primera verificación: mide la calidad del análisis de causa. 4) Porcentaje de CAPA con 'error humano' como causa o 'capacitación' como única acción: detecta análisis superficiales; permite capacitar a los investigadores. 5) Distribución por fuente y proceso: muestra dónde se concentran los problemas y orienta auditorías, inversiones y la revisión por la dirección.",
+     "puntos_clave": [
+      "Recurrencia",
+      "Antigüedad y vencimiento",
+      "Eficacia en primera verificación",
+      "Calidad del análisis y concentración"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "8D",
+     "enunciado": "Un cliente pide un 8D por una queja. Describe en una línea qué entregarías en cada disciplina de D1 a D8.",
+     "respuesta_modelo": "D1: equipo con calidad, producción, laboratorio, mantenimiento y el operador del área. D2: enunciado del problema con 5W2H y Es / No es. D3: contención con lotes retenidos, aviso a clientes y verificación de que funciona. D4: causas de ocurrencia y escape verificadas con datos y pruebas. D5: acciones permanentes elegidas por su fuerza y verificadas antes de implantar. D6: implementación con evidencia, validación y retiro de la contención. D7: estandarización (procedimientos, recetas, control de cambios) y extensión a productos similares. D8: reconocimiento al equipo y cierre con lecciones aprendidas.",
+     "puntos_clave": [
+      "D1 a D3",
+      "D4 con ocurrencia y escape",
+      "D5 y D6 con verificación",
+      "D7 sistémico y D8"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Caso integrador: queja por residuos de sanitizante",
+   "texto": "## La queja\nLunes 21 de septiembre de 2026, 9:40. Un cliente, una planta de lácteos, llama a servicio al cliente: en su verificación de limpieza del viernes, los hisopos de superficies de contacto del llenado de yogur, tomados después de sanitizar con el **sanitizante sin enjuague Q-200**, mostraron residuos de cuaternario de amonio **por encima** del criterio interno de su plan de inocuidad. Usan el producto con el mismo dosificador y la misma dilución desde hace dos años. El lote es **2609-14**. Piden una respuesta formal en formato 8D.\n\nTú coordinas la investigación. Así se desarrolla, disciplina por disciplina.\n\n## D0 y D1: preparar y formar el equipo\nEs una queja con posible impacto en la **inocuidad** del producto del cliente: se abre CAPA de nivel 1 de inmediato.\n\nEquipo: tú (coordinación), jefa de laboratorio, jefe de producción, el operador de la línea de sanitizantes, el comprador de materias primas, el responsable técnico de atención a clientes y, como consulta, el responsable de sistemas (las recetas están en el ERP).\n\n## D2: describir el problema\nLo primero es separar lo que se sabe de lo que se supone.\n\n- **Hecho**: el cliente reporta residuos altos tras sanitizar con el lote 2609-14.\n- **No se sabe todavía**: si el producto está fuera de especificación, si el dosificador del cliente cambió o si su método de hisopado cambió.\n\nPrimeras verificaciones (mismo día):\n\n- Análisis del **retenido** del lote 2609-14, por duplicado, con un material de referencia en la misma corrida: **3.18 % y 3.21 %** de activo. Especificación: **2.0 ± 0.1 %**. El material de referencia da el valor esperado: la medición es confiable.\n- El problema **existe** y está en **nuestro** producto.\n\n### Es / No es (construido en las primeras 48 horas)\n| Dimensión | Es | No es | Pista |\n|---|---|---|---|\n| Qué | Q-200 con activo alto | Otros parámetros del Q-200 (pH, densidad) | Problema específico del activo |\n| Qué | Q-200 y **Q-100** (análisis de retenidos) | Productos que no llevan el activo | Común: el activo |\n| Cuándo | Lotes desde el 8 de septiembre | Lotes anteriores | Algo cambió alrededor del 8 de septiembre |\n| Dónde | Ambos reactores | — | No es un equipo |\n| Cuánto | Q-200: 6 lotes de 6 desde el 8 de septiembre, todos alrededor de 3.2 %; Q-100: 3 lotes, alrededor de 1.6 veces su objetivo | — | Un factor constante de 1.6 |\n\nEl **factor constante de 1.6** es una pista fuerte: sugiere un error **proporcional**, no aleatorio, como un cambio de concentración de una materia prima.\n\n### Enunciado\n\"Desde el 8 de septiembre de 2026, los sanitizantes Q-200 y Q-100 se fabrican con una concentración de activo 1.6 veces el valor objetivo (Q-200: 3.2 % frente a 2.0 ± 0.1 %), en 9 de 9 lotes, detectado por queja de un cliente de lácteos y confirmado con retenidos; impacto: residuos sobre el criterio del cliente en superficies de contacto con alimento y riesgo para la inocuidad de su producto.\"\n\n## D3: contención\nAcciones del mismo lunes y martes:\n\n1. **Bloqueo** en el sistema de todos los lotes de Q-200 y Q-100 desde el 8 de septiembre; verificación: intento de despacho rechazado.\n2. **Trazabilidad hacia adelante**: 9 lotes, 11 clientes. Aviso telefónico el mismo día y por escrito al día siguiente: lotes afectados, **suspender su uso**, segregarlos, y reemplazo inmediato con producto conforme. No se especula sobre la causa. Verificación: confirmación escrita de los 11 clientes.\n3. Información técnica a los clientes para su propia evaluación: concentración real del lote y, para el cliente de lácteos, apoyo para evaluar el producto elaborado tras la sanitización (la decisión sobre su producto es suya, pero necesita datos exactos).\n4. **Producción** del Q-200 y Q-100 suspendida hasta identificar la causa probable.\n5. Evaluación de la necesidad de notificar a la autoridad según la regulación aplicable, por la dirección y el responsable regulatorio.\n\nEl último punto conocido como bueno es el lote del 5 de septiembre (2.02 % en su análisis de liberación).\n\n## D4: causa raíz\n### Análisis de cambios\n¿Qué cambió alrededor del 8 de septiembre? La bitácora de cambios y el sistema de compras muestran:\n\n- El 2 de septiembre se aprobó en control de cambios **sustituir el activo al 50 % por activo al 80 %** del mismo proveedor, por ahorro en flete. La primera entrega llegó el 7 de septiembre.\n- No hubo cambios en reactores, dosificadores ni personal.\n\nHipótesis: la receta sigue calculada para activo al 50 %, pero se carga activo al 80 %. 80 / 50 = **1.6**, exactamente el factor observado.\n\n### Verificación\n- **Registros**: las órdenes de producción desde el 8 de septiembre indican la misma masa de activo que antes, y el lote de activo cargado es el de 80 %.\n- **Reproducción**: lote de laboratorio con la receta del sistema y el activo al 80 %: 3.2 %. Con la receta recalculada para 80 %: 2.0 %. El problema se **enciende y apaga**.\n- **Es / No es**: explica por qué ocurre en Q-200 y Q-100 (ambos usan el activo), en ambos reactores y desde el 8 de septiembre. Explica todos los hechos.\n\nCausa de ocurrencia **verificada**.\n\n### Cinco porqués: ocurrencia\n1. ¿Por qué el activo está alto? Porque se cargó activo al 80 % con una receta para 50 %. *Verificado.*\n2. ¿Por qué la receta no se actualizó? Porque el control de cambios no identificó las recetas que usan el activo. *Verificado: el formato tiene solo \"impacto en costo y proveedor\".*\n3. ¿Por qué no las identificó? Porque el procedimiento de control de cambios **no exige** evaluar recetas, especificaciones, etiquetas ni planes de inspección afectados, y el cambio lo tramitó compras sin participación técnica. *Verificado.*\n4. ¿Por qué el sistema permitió cargar un material distinto con la receta antigua? Porque el activo al 80 % se dio de alta con el **mismo código** de material que el de 50 %, solo con otra descripción de lote. *Verificado en el ERP.*\n\n### Cinco porqués: escape\n1. ¿Por qué no se detectó en la liberación? Porque el activo se analiza **un lote de cada diez** por producto. El último lote de Q-200 analizado fue el del 5 de septiembre, todavía con activo al 50 %; ninguno de los 9 lotes posteriores (6 de Q-200 y 3 de Q-100) tocaba análisis. *Verificado en el plan de inspección y los registros de liberación.*\n2. ¿Por qué un lote de cada diez? Por historial estable desde 2024. *Verificado.*\n3. ¿Por qué no se revisó al cambiar el activo? Porque el control de cambios no vincula cambios de materia prima con los planes de inspección. *Verificado.*\n4. Además: la **densidad** y el **pH**, que sí se analizan en cada lote, **no son sensibles** al cambio de concentración del activo en este producto. *Verificado en los datos.*\n\n### Análisis de barreras (resumen)\nSeis barreras fallaron: control de cambios, alta del material en el sistema, receta, carga (el operador verificó peso, no concentración), análisis de liberación (*skip-lot*) y parámetros de liberación no sensibles. El operador hizo exactamente lo que la orden de producción indicaba: la prueba de sustitución confirma que el problema es del **sistema**.\n\n## D5: elegir las acciones permanentes\n| Nivel | Acción | Fuerza |\n|---|---|---|\n| Ocurrencia | Código de material **distinto** por cada concentración; la receta solo acepta el código especificado; el lector de código en la carga bloquea un material distinto | Fuerte (función forzada) |\n| Ocurrencia | Recetas recalculadas para el activo al 80 % y **validadas** con lotes de prueba | Corrección necesaria |\n| Escape | Análisis de activo en el **100 %** de los lotes de sanitizantes sin enjuague, con bloqueo de liberación sin resultado | Fuerte |\n| Escape | Reglas de reducción de frecuencia (*skip-lot*) revisadas por producto: no se aplican a parámetros críticos para la inocuidad del cliente | Intermedia |\n| Sistema | Control de cambios rediseñado: evaluación técnica obligatoria; lista automática desde el ERP de recetas, especificaciones, etiquetas, fichas de seguridad y planes de inspección afectados; aprobación de calidad y producción antes de recibir el material | Intermedia |\n| Sistema | Revisión de la lista de verificación por el responsable de inocuidad en cambios que afectan productos para la industria alimentaria | Intermedia |\n| Apoyo | Capacitación de compras, calidad y producción en el nuevo control de cambios | Débil, como apoyo |\n\nAntes de implementar, se evalúan como cambios: el bloqueo por código requiere validación en el ERP; el análisis al 100 % agrega carga al laboratorio (se ajusta el turno); el nuevo control de cambios no debe frenar compras urgentes (se define un flujo rápido con los mismos pasos técnicos).\n\n### Extensión horizontal\n- ¿Hay otras materias primas con **distintas concentraciones** bajo un mismo código? La revisión del ERP encuentra dos: sosa cáustica al 50 % y al 32 %, e hipoclorito al 13 % y al 10 %. Se separan sus códigos.\n- ¿Hubo otros cambios de materia prima en el último año sin evaluación técnica? Se revisan 14; dos requieren evaluar recetas (sin impacto encontrado).\n\n## D6: implementar y validar\n- Nuevos códigos de material y bloqueo validados con pruebas en el sistema (incluido un intento deliberado de cargar el código equivocado, que el sistema rechaza).\n- Recetas recalculadas y tres lotes de validación conformes (2.01 %, 1.98 %, 2.03 %).\n- Liberación con análisis al 100 % activa desde el 2 de octubre.\n- Control de cambios rediseñado aprobado el 20 de octubre.\n- **Contención retirada** de forma controlada: los lotes bloqueados se reprocesaron por dilución con un procedimiento validado y análisis posterior, o se destruyeron los que no podían reprocesarse.\n\n## D7: prevenir la recurrencia\n- Procedimientos de control de cambios, alta de materiales y planes de inspección actualizados.\n- Análisis de peligros del producto actualizado: la concentración del activo en sanitizantes sin enjuague se reconoce como **crítica** para el cliente, con su control definido.\n- Lección compartida con las otras líneas de producto.\n\n### Criterios de eficacia, definidos en D5\n- Cero lotes de sanitizantes con activo fuera de especificación en 6 meses (con análisis al 100 %, cualquier recurrencia se detectaría).\n- 100 % de los cambios de materia prima del trimestre con evaluación técnica y lista de documentos afectados.\n- Registros del sistema que muestren intentos de carga con código incorrecto rechazados (evidencia de que la barrera funciona).\n\n### Verificación, a los seis meses\n- 74 lotes de Q-200 y Q-100, todos conformes (1.94 % a 2.07 % en Q-200).\n- 9 cambios de materia prima en el periodo, todos con evaluación técnica completa; uno detectó una etiqueta que requería actualización **antes** de recibir el material.\n- El sistema rechazó 2 intentos de carga con código incorrecto.\n- El cliente de lácteos reporta resultados de hisopos conformes.\n\nLas acciones son **eficaces**; la CAPA se cierra.\n\n## D8: reconocer y cerrar\nSe presenta el caso en la revisión por la dirección y se reconoce al equipo, incluido el operador, cuya reconstrucción detallada de la carga ayudó a confirmar la hipótesis. La respuesta 8D final se envía al cliente con la evidencia de eficacia.\n\n## Lo que integra este caso\n- **Corrección, contención y acción correctiva** como cosas distintas (capítulos 1 y 3).\n- **Medición verificada** antes de investigar (capítulo 7).\n- **Es / No es** y el factor constante como pista (capítulo 2).\n- **Análisis de cambios** y **cinco porqués** con verificación en cada paso, con ramas de **ocurrencia** y **escape** (capítulos 4 y 5).\n- **Análisis de barreras** y prueba de **sustitución**: el operador no fue la causa (capítulos 5 y 6).\n- **Encender y apagar** el problema en laboratorio (capítulo 7).\n- Acciones **fuertes**, evaluadas como cambios, con **extensión horizontal** (capítulo 8).\n- **Criterios de eficacia** definidos de antemano y verificados con datos y con la barrera funcionando (capítulo 9).\n- Comunicación oportuna al cliente y la cadena alimentaria en el centro de la decisión.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Medición",
+     "enunciado": "¿Por qué se analizó el retenido por duplicado junto con un material de referencia antes de cualquier otra investigación?",
+     "opciones": [
+      "Para confirmar que el problema existe y que la medición es confiable",
+      "Para cumplir un formato",
+      "Para retrasar la respuesta al cliente",
+      "Porque el cliente lo exigió"
+     ],
+     "correcta": 0,
+     "explicacion": "Se verifica la medición antes de investigar el proceso.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pista",
+     "enunciado": "¿Qué sugería el factor constante de 1.6 en todos los lotes afectados?",
+     "opciones": [
+      "Un error proporcional, como un cambio de concentración de una materia prima",
+      "Un error aleatorio de dosificación",
+      "Un problema del cliente",
+      "Un error del laboratorio"
+     ],
+     "correcta": 0,
+     "explicacion": "80 / 50 = 1.6.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Extensión",
+     "enunciado": "¿Por qué el Es / No es incluyó al Q-100, aunque la queja era del Q-200?",
+     "opciones": [
+      "Porque comparte el activo, y la contención debe cubrir todos los productos con la causa común",
+      "Por casualidad",
+      "Porque el cliente también lo compra",
+      "No debía incluirse"
+     ],
+     "correcta": 0,
+     "explicacion": "El alcance se define por la causa, no solo por la queja.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contención",
+     "enunciado": "¿Qué se comunicó a los 11 clientes durante la contención?",
+     "opciones": [
+      "Lotes afectados, suspender su uso, segregarlos y el reemplazo, sin especular sobre la causa",
+      "La causa raíz completa",
+      "Nada hasta cerrar la CAPA",
+      "Solo una disculpa"
+     ],
+     "correcta": 0,
+     "explicacion": "El cliente necesita proteger su producto pronto.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Cómo se 'encendió y apagó' el problema?",
+     "opciones": [
+      "Con lotes de laboratorio: receta del sistema con activo al 80 % daba 3.2 %; receta recalculada daba 2.0 %",
+      "Con una encuesta al personal",
+      "Con una auditoría",
+      "Con la opinión del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la prueba más fuerte de causalidad.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Código",
+     "enunciado": "¿Qué falla del sistema permitió cargar el activo al 80 % con la receta antigua?",
+     "opciones": [
+      "El activo al 80 % se dio de alta con el mismo código de material que el de 50 %",
+      "El operador no sabía leer",
+      "El reactor estaba descalibrado",
+      "El proveedor envió el producto equivocado"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso la acción fuerte fue usar códigos distintos con bloqueo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Escape",
+     "enunciado": "¿Por qué la densidad y el pH, que sí se analizaban en cada lote, no detectaron el problema?",
+     "opciones": [
+      "Porque no son sensibles al cambio de concentración del activo en ese producto",
+      "Porque se midieron mal",
+      "Porque no se registraron",
+      "Porque el cliente no los pidió"
+     ],
+     "correcta": 0,
+     "explicacion": "Una barrera debe estar diseñada para detectar el problema.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sustitución",
+     "enunciado": "¿Qué concluyó la prueba de sustitución sobre el operador?",
+     "opciones": [
+      "Que hizo lo que la orden indicaba y cualquier otro habría hecho lo mismo; el problema es del sistema",
+      "Que debía ser sancionado",
+      "Que necesitaba más capacitación",
+      "Que fue la causa raíz"
+     ],
+     "correcta": 0,
+     "explicacion": "Su reconstrucción ayudó a confirmar la hipótesis.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuerza",
+     "enunciado": "¿Cuál fue la acción más fuerte contra la ocurrencia?",
+     "opciones": [
+      "Códigos distintos por concentración con bloqueo del lector en la carga",
+      "Capacitación de compras",
+      "Un letrero en el almacén",
+      "Un recordatorio por correo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una función forzada.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Extensión horizontal",
+     "enunciado": "¿Qué encontró la extensión horizontal?",
+     "opciones": [
+      "Otras materias primas con distintas concentraciones bajo un mismo código (sosa e hipoclorito)",
+      "Nada",
+      "Que el problema era del cliente",
+      "Que el proveedor era el culpable"
+     ],
+     "correcta": 0,
+     "explicacion": "El mismo riesgo existía en otros materiales.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "¿Qué evidencia demostró que la barrera de código funcionaba?",
+     "opciones": [
+      "El sistema rechazó 2 intentos de carga con código incorrecto",
+      "Que se compró el lector",
+      "Que se firmó el procedimiento",
+      "Que pasaron seis meses"
+     ],
+     "correcta": 0,
+     "explicacion": "Se verifica que la barrera actúa.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis de peligros",
+     "enunciado": "¿Qué cambio se hizo en el análisis de peligros en D7?",
+     "opciones": [
+      "Reconocer la concentración del activo en sanitizantes sin enjuague como crítica para el cliente, con su control",
+      "Eliminar el análisis de peligros",
+      "Ninguno",
+      "Reducir los controles"
+     ],
+     "correcta": 0,
+     "explicacion": "La CAPA se vincula con el análisis de peligros.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Respuesta al cliente",
+     "enunciado": "Redacta un resumen ejecutivo de la respuesta 8D para el cliente de lácteos (máximo 8 líneas).",
+     "respuesta_modelo": "Problema: el lote 2609-14 de Q-200 tenía 3.2 % de activo frente a 2.0 ± 0.1 %; nueve lotes de Q-200 y Q-100 fabricados desde el 8 de septiembre estaban afectados. Contención: bloqueo de lotes, aviso a los 11 clientes el mismo día y reemplazo con producto conforme. Causa: el cambio a un activo más concentrado no actualizó las recetas porque el control de cambios no exigía evaluación técnica y el material conservó el mismo código; no se detectó porque el activo se analizaba en uno de cada diez lotes. Acciones: códigos distintos con bloqueo en la carga, recetas validadas, análisis de activo en el 100 % de los lotes y control de cambios con evaluación técnica obligatoria. Eficacia: 74 lotes conformes en seis meses y barreras verificadas en funcionamiento.",
+     "puntos_clave": [
+      "Problema y alcance",
+      "Contención",
+      "Causas de ocurrencia y escape",
+      "Acciones y evidencia de eficacia"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Alternativa",
+     "enunciado": "Imagina que la verificación del retenido hubiera dado 2.02 % (conforme). ¿Cómo cambiaría la investigación?",
+     "respuesta_modelo": "El problema no estaría en la concentración del producto despachado. Primero confirmaría la medición con otro análisis y un material de referencia. Luego investigaría con el cliente: su dosificador y la dilución real en el punto de uso (calibración, cambios, concentración medida en la solución de uso), cambios en su método de hisopado o en su laboratorio, cambios en el criterio, tiempo de contacto y escurrido, y la superficie muestreada. Mantendría la comunicación y la contención proporcionales (por ejemplo, sin bloquear lotes pero apoyando técnicamente al cliente) y documentaría la investigación conjunta. La queja podría resultar no atribuible al producto, pero se cerraría con evidencia.",
+     "puntos_clave": [
+      "Confirmar la medición",
+      "Investigar la dilución y el dosificador del cliente",
+      "Investigar el método del cliente",
+      "Contención proporcional y cierre con evidencia"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Lecciones",
+     "enunciado": "Si fueras la coordinadora del sistema de gestión, ¿qué tres lecciones de este caso llevarías a la revisión por la dirección y qué decisión pedirías en cada una?",
+     "respuesta_modelo": "1) El control de cambios puede ser iniciado por áreas no técnicas sin evaluación del impacto en producto: pedir que todo cambio de materia prima, proveedor o proceso tenga aprobación técnica obligatoria y recursos para la evaluación. 2) Las reglas de reducción de muestreo no consideraban la criticidad para la inocuidad del cliente: pedir la revisión de todos los planes de inspección con criterio de riesgo y el presupuesto para el análisis al 100 % en parámetros críticos. 3) El sistema ERP permitía errores de identificación de materiales: pedir inversión en controles de sistema (códigos únicos, bloqueos, lectores) como estándar en todas las cargas de materiales críticos. Además, presentar la tasa de recurrencia y la calidad de las CAPA como indicadores.",
+     "puntos_clave": [
+      "Control de cambios",
+      "Planes de inspección basados en riesgo",
+      "Controles del sistema y del ERP",
+      "Decisiones y recursos solicitados"
+     ],
+     "id": "q15"
     }
    ]
   }
