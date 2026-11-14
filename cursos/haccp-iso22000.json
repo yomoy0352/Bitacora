@@ -1402,6 +1402,606 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "8",
+   "titulo": "Validación y plan de control de peligros: PCC y PPRO",
+   "texto": "## Del análisis al control diario\nEl análisis de peligros produjo una lista de peligros significativos, cada uno con su medida de control categorizada. Ahora hay que hacer dos cosas antes de operar:\n\n1. **Validar** que esas medidas de control son capaces de lograr el nivel aceptable (ISO 22000, apartado **8.5.3**).\n2. Documentar el **plan de control de peligros** (apartado **8.5.4**): para cada PCC y PPRO, qué se controla, con qué límites o criterios, cómo se monitorea, qué se hace si falla y qué registros se guardan.\n\n## Validación de medidas de control\n### Qué exige la norma\nAntes de implementar las medidas de control que se incluirán en el plan, y después de cualquier cambio en ellas, el equipo de inocuidad debe **validar** que:\n\n- Las medidas de control seleccionadas son **capaces** de lograr el control previsto del peligro significativo.\n- Las medidas son **eficaces** y, en combinación, aseguran el control del peligro para obtener productos que cumplan los niveles aceptables definidos.\n\nSi la validación muestra que una medida no es capaz, se debe **modificar y reevaluar** la medida o la combinación. La metodología de validación y la evidencia deben documentarse.\n\n### Fuentes de evidencia para validar\nEl Codex, en su guía de validación (CXG 69-2008), describe enfoques que pueden usarse solos o combinados:\n\n- **Referencias científicas y técnicas**: literatura revisada, guías reconocidas, datos de organismos técnicos. Por ejemplo, la capacidad de un tamaño de malla para retener partículas de cierto tamaño.\n- **Datos históricos** de la propia planta, siempre que sean pertinentes y suficientes.\n- **Estudios experimentales**: pruebas de laboratorio, piloto o en planta, diseñados para demostrar la capacidad de la medida. Por ejemplo, retos con un contaminante marcador para validar una limpieza de cambio de producto.\n- **Recolección de datos durante la operación** en condiciones normales, con un plan estadístico.\n- **Modelos matemáticos**, cuando están validados para la aplicación.\n- **Encuestas**, cuando aplica (más útil en la cadena de producción primaria).\n\nLo esencial: la validación demuestra la capacidad **en las condiciones de la planta**, considera la **variabilidad** del proceso y el **peor caso**, y fija los **límites** a los que la medida es eficaz.\n\n### Ejemplos de validación en una planta química\n**Límite crítico de concentración de un sanitizante sin enjuague.** El nivel aceptable deriva de la regulación (por ejemplo, la concentración máxima permitida en la solución de uso) y de la etiqueta. La validación demuestra que, si el concentrado está dentro del intervalo de especificación y el cliente lo diluye según la etiqueta, la solución de uso no excede el límite, incluso considerando la **incertidumbre** del método analítico y la tolerancia de dilución. De ahí se obtiene el **límite crítico** de concentración del concentrado.\n\n**Limpieza de cambio de producto en un reactor compartido.** Se diseña un estudio con el producto anterior más difícil de remover (peor caso), se aplica el procedimiento de limpieza en sus parámetros mínimos y se analiza un **marcador** del producto anterior en el agua del último enjuague y, si es posible, en el primer lote del producto siguiente. Se repite en varias corridas. Si el marcador queda por debajo del límite derivado del nivel aceptable, la limpieza se considera validada en esos parámetros.\n\n**Filtración final.** Se valida con datos del fabricante de la malla (tamaño nominal y absoluto) y con pruebas de retención; se define cómo se verifica la **integridad** de la malla (inspección visual antes y después de cada lote, prueba de punto de burbuja en filtros de cartucho cuando aplica).\n\n**Verificación analítica de proveedores.** Se valida que la combinación de especificación, COA del proveedor y frecuencia de análisis propios es suficiente para detectar desviaciones del contaminante, considerando el historial del proveedor y la variabilidad de su proceso.\n\n### Validación frente a verificación\nRecuerda la diferencia: la **validación** pregunta si la medida *puede* funcionar (antes); la **verificación** pregunta si *está* funcionando (después, periódicamente). Una medida bien monitoreada pero no validada puede repetir fielmente un control inútil.\n\n## El plan de control de peligros\nISO 22000:2018 llama así al conjunto de PCC y PPRO documentados, conocido en la práctica como **plan HACCP/PPRO**. Para cada medida de control, el plan incluye:\n\n1. Los **peligros** que se controlan.\n2. El **límite crítico** (PCC) o el **criterio de acción** (PPRO).\n3. Los **procedimientos de monitoreo**.\n4. Las **correcciones** y **acciones correctivas** si no se cumplen los límites o criterios.\n5. Las **responsabilidades y autoridades**.\n6. Los **registros** del monitoreo.\n\n### Límites críticos y criterios de acción\n- Los **límites críticos** de los PCC deben ser **medibles**. Su conformidad debe asegurar que no se exceda el nivel aceptable. Deben estar **validados** y la justificación documentada.\n- Los **criterios de acción** de los PPRO deben ser **medibles u observables**, y su cumplimiento debe contribuir a asegurar que no se exceda el nivel aceptable.\n\n**Límites operativos.** En la práctica, conviene trabajar con un **límite operativo** más estricto que el límite crítico, para corregir el proceso antes de llegar al límite crítico. Por ejemplo: límite crítico de concentración 15.5 % máximo; límite operativo 15.2 %. Si un lote sale a 15.3 %, se ajusta sin generar una desviación del PCC.\n\n### Monitoreo\nEl sistema de monitoreo de cada PCC y PPRO debe definir:\n\n- **Qué** se mide u observa.\n- **Cómo**: método, instrumento, plan de muestreo.\n- **Cuándo**: frecuencia, que debe permitir detectar a tiempo una falla para aislar y evaluar el producto afectado. En PCC, el monitoreo debe ser capaz de detectar la falla dentro del tiempo que permita retener el producto.\n- **Quién**: persona responsable y competente, con su autoridad.\n- **Registro**: dónde y cómo.\n\nLos **instrumentos** de monitoreo deben estar calibrados o verificados (apartado 8.7), y el método analítico debe ser adecuado (por ejemplo, con precisión e incertidumbre conocidas). Un límite crítico de concentración de 15.5 % no sirve si el método tiene una incertidumbre de ± 1 %.\n\n### Qué hacer cuando no se cumplen\nCuando se excede un límite crítico o no se cumple un criterio de acción, el plan debe especificar:\n\n- **Corrección** inmediata: retener el producto, detener el proceso, ajustar.\n- **Identificación y manejo del producto potencialmente no inocuo**: identificar el alcance (qué lotes, desde cuándo), retenerlo y evaluarlo (apartado 8.9.4).\n- **Acción correctiva**: análisis de la causa y acción para evitar la recurrencia (apartado 8.9.3).\n- **Registro** de todo lo anterior.\n\nLa diferencia entre PCC y PPRO también se refleja aquí:\n\n- Producto elaborado cuando se **excedió un límite crítico** de un PCC se considera **potencialmente no inocuo** y **no puede liberarse** como inocuo sin una evaluación; en general se reprocesa, se destina a otro uso o se destruye.\n- Producto elaborado cuando **no se cumplió un criterio de acción** de un PPRO se **evalúa** considerando las causas de la falla y sus consecuencias en la inocuidad; puede liberarse si se demuestra, con evidencia, que el peligro está en el nivel aceptable (por ejemplo, con análisis adicionales del lote).\n\n## Un ejemplo de plan para un sanitizante sin enjuague\n| Medida | Tipo | Peligro | Límite o criterio | Monitoreo | Si falla | Registro |\n|---|---|---|---|---|---|---|\n| Análisis de concentración del lote | PCC | Sobreconcentración de activo | Concentración ≤ límite crítico validado | Titulación por lote antes de envasar, por laboratorio | Retener lote, ajustar o reprocesar, evaluar causa | Bitácora de análisis y liberación |\n| Verificación de grado en la carga | PPRO | Uso de grado técnico | 100 % de materiales cargados con código grado alimentario verificado por escaneo y segunda persona | Cada carga | Detener, retener lote, evaluar, reprocesar o destruir | Orden de producción firmada |\n| Limpieza de cambio de producto | PPRO | Arrastre de producto anterior no permitido | Conductividad del último enjuague ≤ valor validado | Cada cambio de producto | Repetir limpieza, no iniciar hasta cumplir | Registro de limpieza |\n| Filtración final | PPRO | Partículas físicas | Malla íntegra antes y después del lote | Inspección visual por lote | Retener lote, refiltrar, investigar | Registro de filtración |\n\nLos valores y categorías son ilustrativos: cada planta los define con su propio análisis y validación.\n\n## Implementación y actualización\n- El plan debe **implementarse** y mantenerse, con evidencia de su aplicación (registros).\n- El personal que monitorea debe ser **competente** y conocer su autoridad para detener un proceso.\n- La información del plan se **actualiza** (apartado 8.6) cuando cambian materias primas, productos, procesos, equipos, requisitos legales o de clientes, o cuando la verificación muestra la necesidad.\n\n## Ideas que debes llevarte\n- Las medidas de control se **validan** antes de implementarse y después de cambios: ¿son capaces de lograr el nivel aceptable?\n- La validación usa ciencia, datos históricos, experimentos, datos operativos o modelos, en el **peor caso** y con la variabilidad real.\n- El **plan de control de peligros** define, para cada PCC y PPRO, peligro, límite crítico o criterio de acción, monitoreo, correcciones, acciones correctivas, responsabilidades y registros.\n- Los límites críticos son **medibles**; los criterios de acción, medibles u **observables**.\n- Usa **límites operativos** más estrictos para corregir antes de una desviación.\n- El método de monitoreo debe tener una **incertidumbre** compatible con el límite.\n- Producto con un PCC fuera de límite es **potencialmente no inocuo** y no se libera sin evaluación; con un PPRO fuera de criterio se **evalúa** con evidencia.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "¿Cuándo deben validarse las medidas de control según ISO 22000?",
+     "opciones": [
+      "Antes de implementarlas en el plan y después de cualquier cambio en ellas",
+      "Solo después de una auditoría externa",
+      "Una vez cada cinco años",
+      "Solo cuando hay una queja de cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "8.5.3 pide validar antes de implementar y cuando cambian las medidas; si no son capaces, se modifican y reevalúan.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "¿Cuál de estos es un estudio experimental de validación?",
+     "opciones": [
+      "Aplicar la limpieza de cambio en parámetros mínimos tras el producto más difícil y analizar un marcador en el último enjuague en varias corridas",
+      "Revisar que el registro de limpieza esté firmado",
+      "Calibrar el conductímetro",
+      "Hacer una auditoría interna del área"
+     ],
+     "correcta": 0,
+     "explicacion": "La validación experimental demuestra capacidad en el peor caso y con repeticiones.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación frente a verificación",
+     "enunciado": "¿Qué pregunta responde la validación?",
+     "opciones": [
+      "¿La medida de control es capaz de lograr el nivel aceptable?",
+      "¿La medida se aplicó hoy?",
+      "¿El registro está completo?",
+      "¿El auditor quedó satisfecho?"
+     ],
+     "correcta": 0,
+     "explicacion": "El monitoreo confirma que se aplicó; la verificación, que sigue funcionando; la validación, que es capaz de funcionar.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Límite crítico",
+     "enunciado": "¿Qué requisito deben cumplir los límites críticos de un PCC?",
+     "opciones": [
+      "Ser medibles, validados y asegurar que no se exceda el nivel aceptable",
+      "Ser observables mediante inspección subjetiva",
+      "Coincidir con el promedio histórico del proceso",
+      "Ser fijados por el área de ventas"
+     ],
+     "correcta": 0,
+     "explicacion": "Los límites críticos son medibles; los criterios de acción de los PPRO pueden ser observables.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Límite operativo",
+     "enunciado": "Un PCC tiene un límite crítico de 15.5 % máximo. ¿Para qué sirve un límite operativo de 15.2 %?",
+     "opciones": [
+      "Para corregir el proceso antes de llegar al límite crítico y evitar una desviación del PCC",
+      "Para sustituir al límite crítico",
+      "Para relajar el control",
+      "Para que el laboratorio analice menos"
+     ],
+     "correcta": 0,
+     "explicacion": "El límite operativo da un margen de ajuste; no reemplaza al límite crítico validado.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre",
+     "enunciado": "Un límite crítico de concentración es 15.5 % y el método analítico tiene una incertidumbre de ± 1 %. ¿Cuál es el problema?",
+     "opciones": [
+      "El método no tiene capacidad suficiente para decidir de forma confiable si se cumple el límite",
+      "Ninguno, la incertidumbre no importa",
+      "El límite debe subir a 16.5 %",
+      "Se debe analizar con menos frecuencia"
+     ],
+     "correcta": 0,
+     "explicacion": "La incertidumbre del método debe ser compatible con el límite; de lo contrario, la decisión de aceptar o rechazar es poco confiable.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Monitoreo",
+     "enunciado": "¿Qué requisito debe cumplir la frecuencia de monitoreo de un PCC?",
+     "opciones": [
+      "Permitir detectar la falla a tiempo para aislar y retener el producto afectado",
+      "Coincidir con el turno administrativo",
+      "Ser semanal en todos los casos",
+      "Ser la misma para todos los PCC de la planta"
+     ],
+     "correcta": 0,
+     "explicacion": "La frecuencia se define por la capacidad de detectar y contener a tiempo.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PCC fuera de límite",
+     "enunciado": "Un lote se elaboró con un límite crítico de PCC excedido. ¿Cómo se trata?",
+     "opciones": [
+      "Como potencialmente no inocuo: se retiene y no se libera como inocuo sin evaluación; se reprocesa, se destina a otro uso o se destruye",
+      "Se libera si el cliente lo necesita con urgencia",
+      "Se libera con una nota en el certificado",
+      "Se mezcla con otro lote para diluir el problema sin registro"
+     ],
+     "correcta": 0,
+     "explicacion": "8.9.4 establece el manejo de productos potencialmente no inocuos; un PCC fuera de límite no se libera sin evaluación.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PPRO fuera de criterio",
+     "enunciado": "¿Cómo se trata un lote elaborado cuando no se cumplió el criterio de acción de un PPRO?",
+     "opciones": [
+      "Se evalúa considerando las causas y consecuencias; puede liberarse si se demuestra con evidencia que el peligro está en el nivel aceptable",
+      "Se destruye siempre sin evaluación",
+      "Se libera siempre porque es solo un PPRO",
+      "Se ignora la desviación"
+     ],
+     "correcta": 0,
+     "explicacion": "La evaluación puede incluir análisis adicionales del lote para demostrar el cumplimiento del nivel aceptable.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Corrección y acción correctiva",
+     "enunciado": "La malla del filtro final aparece rota al terminar un lote. ¿Cuál es la acción correctiva (no la corrección)?",
+     "opciones": [
+      "Investigar por qué se rompió (presión, material, instalación) y cambiar la especificación o el procedimiento para evitar que se repita",
+      "Retener el lote",
+      "Refiltrar el lote",
+      "Cambiar la malla"
+     ],
+     "correcta": 0,
+     "explicacion": "Retener, refiltrar y cambiar la malla son correcciones; la acción correctiva elimina la causa.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Actualización",
+     "enunciado": "¿Cuál de estos eventos obliga a actualizar el plan de control de peligros?",
+     "opciones": [
+      "Un cambio de proveedor de una materia prima con un perfil de impurezas distinto",
+      "El cambio de color de los uniformes",
+      "La contratación de un vendedor",
+      "La renovación del contrato de limpieza de oficinas"
+     ],
+     "correcta": 0,
+     "explicacion": "8.6 pide actualizar la información de PPR y del plan ante cambios en materias primas, productos, procesos, equipos o requisitos.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan de control",
+     "enunciado": "Escribe la fila completa del plan de control de peligros para un PPRO de limpieza de cambio de producto en un tanque compartido entre un desengrasante con un solvente no permitido y un detergente grado alimentario.",
+     "respuesta_modelo": "Medida: limpieza de cambio de producto validada. Tipo: PPRO. Peligro: arrastre de solvente no permitido al detergente grado alimentario. Criterio de acción: inspección visual sin residuos y concentración del marcador (o conductividad y COT, según lo validado) en el último enjuague menor o igual al valor validado. Monitoreo: en cada cambio de producto, operador de producción toma muestra del último enjuague y laboratorio la analiza; inspección visual con lámpara. Si falla: no iniciar la fabricación, repetir la limpieza y volver a analizar; si ya se fabricó, retener el lote, evaluar con análisis del solvente en el producto y decidir liberación, reproceso o destrucción; acción correctiva sobre la causa (parámetros, procedimiento, capacitación). Responsable: supervisor de producción para la limpieza, laboratorio para el análisis, calidad para la liberación. Registro: formato de limpieza de cambio con resultados y firma.",
+     "puntos_clave": [
+      "Peligro y tipo de medida",
+      "Criterio de acción medible u observable",
+      "Monitoreo con qué, cómo, cuándo, quién",
+      "Correcciones, manejo del producto, acción correctiva y registro"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Validación de límite crítico",
+     "enunciado": "Explica cómo derivarías y validarías el límite crítico de concentración del concentrado de un sanitizante sin enjuague a partir del límite regulatorio de la solución de uso.",
+     "respuesta_modelo": "1) Partir del nivel aceptable: la concentración máxima de activo permitida en la solución de uso sin enjuague (regulación y etiqueta). 2) Considerar la dilución indicada en la etiqueta y su tolerancia práctica en el cliente (por ejemplo, variación del dosificador). 3) Calcular la concentración máxima del concentrado que, diluido según la etiqueta en el peor caso de dilución, no excede el límite de la solución de uso. 4) Restar la incertidumbre del método analítico usado para liberar el lote y considerar la estabilidad (cambios de concentración durante la vida útil). 5) Fijar el límite crítico del concentrado y un límite operativo más estricto. 6) Validar con datos: estudios de dilución con dosificadores representativos, determinación de la incertidumbre del método y estabilidad. Documentar la justificación.",
+     "puntos_clave": [
+      "Nivel aceptable en la solución de uso",
+      "Dilución y su variabilidad",
+      "Incertidumbre analítica y estabilidad",
+      "Límite crítico, límite operativo y evidencia"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "PCC frente a PPRO",
+     "enunciado": "Compara cómo se maneja el producto afectado cuando falla un PCC y cuando falla un PPRO, con un ejemplo de cada uno en una planta química.",
+     "respuesta_modelo": "PCC: si el análisis de concentración de un sanitizante sin enjuague excede el límite crítico, el lote es potencialmente no inocuo, se retiene y no se libera como inocuo; se ajusta por dilución y se reanaliza como reproceso controlado, o se destina a otro uso o se destruye, con registro y acción correctiva. PPRO: si en la verificación de grado una carga no fue escaneada por la segunda persona, el lote se retiene y se evalúa: se revisan registros del material realmente usado, se analiza el lote contra la especificación de impurezas; si la evidencia demuestra que se usó el material correcto y el producto cumple el nivel aceptable, puede liberarse; si no, se trata como no conforme. En ambos casos se investiga la causa.",
+     "puntos_clave": [
+      "PCC: potencialmente no inocuo, no se libera sin evaluación",
+      "PPRO: evaluación con evidencia y posible liberación",
+      "Ejemplos pertinentes",
+      "Acción correctiva en ambos"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "titulo": "Proveedores, materias primas y especificaciones",
+   "texto": "## La inocuidad empieza antes de la puerta\nEn una planta química que fabrica auxiliares de proceso, una gran parte de los peligros significativos entra con las **materias primas**: impurezas, grado equivocado, contaminación en el transporte, adulteración. Por eso el control de proveedores no es un trámite de compras: es una **medida de control** central del sistema de inocuidad, y con frecuencia la base de varios PPRO.\n\nISO 22000:2018 lo trata en el apartado **7.1.6, control de procesos, productos o servicios suministrados externamente**, y lo conecta con las características de las materias primas (8.5.1.2) y con los PPR de gestión de materiales comprados (8.2).\n\n## Qué exige la norma\nLa organización debe:\n\n- Establecer y aplicar **criterios** para la evaluación, selección, seguimiento del desempeño y reevaluación de los proveedores externos.\n- Asegurar la **comunicación adecuada** de los requisitos al proveedor.\n- Asegurar que los procesos, productos o servicios suministrados externamente **no afecten negativamente** la capacidad de cumplir los requisitos del SGIA.\n- Conservar **información documentada** de estas actividades y de las acciones derivadas.\n\nEsto aplica a materias primas, envases, servicios (laboratorios externos, control de plagas, transporte, mantenimiento, calibración) y procesos subcontratados (maquila).\n\n## Especificaciones: el contrato técnico\nUna **especificación** de materia prima es el documento que dice exactamente qué se compra. Para una materia prima química grado alimentario, debe incluir:\n\n- **Identidad**: nombre químico, número CAS, fórmula, grado.\n- **Pureza o ensayo**: concentración mínima del componente principal.\n- **Impurezas** con límites: metales pesados (plomo, arsénico, cadmio, mercurio), impurezas específicas (flúor en fosfatos, 1,4-dioxano en etoxilados, cloratos en hipoclorito, solventes residuales), según corresponda.\n- **Parámetros físicos**: apariencia, color, densidad, pH.\n- **Microbiología**, cuando aplica (enzimas, gomas, productos acuosos).\n- **Alérgenos**: declaración de presencia o ausencia, origen de los componentes.\n- **Cumplimiento regulatorio**: referencia a las monografías del FCC o JECFA, aprobaciones para el uso alimentario en los mercados de interés.\n- **Envase**, etiquetado, condiciones de almacenamiento y vida útil.\n- **Método** de análisis para los parámetros críticos, para que tu laboratorio y el del proveedor midan lo mismo.\n- **Notificación de cambios**: obligación del proveedor de avisar antes de cambiar proceso, sitio de fabricación, materia prima de origen o formulación.\n\nUna buena especificación **no se copia del catálogo del proveedor**: parte de tus niveles aceptables (capítulo 7) y de los requisitos de tus clientes, y el proveedor la acepta por escrito.\n\n## Aprobación de proveedores\n### Criterios de evaluación\nEl rigor de la evaluación debe ser **proporcional al riesgo** de la materia prima. Criterios típicos:\n\n- **Certificación** de inocuidad o calidad (GFSI, ISO 22000, ISO 9001, GMP para ingredientes como las de EXCiPACT o FAMI-QS en sectores específicos).\n- **Cuestionario** técnico: proceso de fabricación, controles, alérgenos, trazabilidad, plan de retiro, manejo de grados técnico y alimentario en su planta, uso de reprocesos.\n- **Auditoría** de segunda parte para proveedores de alto riesgo.\n- **Historial**: desempeño, no conformidades, entregas fuera de especificación.\n- **Muestras y análisis** iniciales contra la especificación.\n- Evaluación de **vulnerabilidad al fraude** de la materia prima (por ejemplo, sustitución de grado alimentario por técnico, dilución).\n\n### Clasificación por riesgo\nUna práctica eficaz es clasificar materias primas y proveedores en categorías:\n\n| Riesgo | Ejemplos | Requisitos |\n|---|---|---|\n| Alto | Materias primas grado alimentario con impurezas de interés, activos de sanitizantes sin enjuague, componentes alergénicos | Certificación GFSI o auditoría, especificación firmada, COA por lote, verificación analítica propia periódica |\n| Medio | Materias primas con historial estable y peligros menores | Cuestionario, especificación, COA por lote, verificación anual |\n| Bajo | Materiales sin contacto con producto | Evaluación documental |\n\n## El certificado de análisis\nEl **COA** (certificado de análisis) del proveedor es el documento que acompaña cada lote con los resultados de los parámetros de la especificación. Su manejo correcto incluye:\n\n- **Revisión en la recepción**: que el COA corresponda al lote recibido, que incluya los parámetros de la especificación, que los resultados cumplan los límites y que el método sea el acordado.\n- **Desconfianza razonable**: el COA es una declaración del proveedor. Puede ser incompleto, típico (no del lote), o incluso falso. Por eso se **verifica**.\n\n### Verificación de COA\nLa verificación consiste en que tu laboratorio, o un laboratorio externo competente, analice periódicamente lotes recibidos para confirmar que los resultados del proveedor son confiables. La frecuencia se define por riesgo e historial: por ejemplo, el primer lote de un proveedor nuevo, luego uno de cada diez lotes, y el 100 % durante un periodo si hay discrepancias.\n\nLos parámetros de verificación se eligen por su relevancia para la inocuidad (impurezas críticas) y para detectar sustitución de grado o adulteración (por ejemplo, un parámetro que distinga el grado alimentario del técnico).\n\nSi hay **discrepancias** entre tu resultado y el del COA, se investigan con el proveedor: diferencia de método, error de muestreo, error del proveedor o fraude. Los resultados de verificación alimentan la **reevaluación** del proveedor.\n\n## Recepción\nLa recepción es el punto donde la especificación se convierte en control. Incluye:\n\n- Verificar **documentación**: orden de compra, COA, remisión, etiqueta con lote y grado.\n- Verificar la **integridad** del envase y sellos, la limpieza del transporte y, para granel, el certificado de lavado y las cargas anteriores.\n- **Muestrear** según el plan, con técnica que no contamine el lote.\n- Mantener el material en **cuarentena** hasta su liberación por calidad, física o en el sistema.\n- **Rechazar** lo que no cumpla, con registro y comunicación al proveedor.\n\n## Servicios y procesos subcontratados\n- **Laboratorios externos**: deben ser competentes para los análisis que realizan, preferentemente acreditados en ISO/IEC 17025 para esos métodos. Esquemas como FSSC 22000 exigen que los análisis críticos para la inocuidad se hagan en laboratorios competentes, y la acreditación es la forma más sólida de demostrarlo.\n- **Transporte**: requisitos de limpieza, cargas previas, temperatura cuando aplica, seguridad (sellos).\n- **Maquila**: si un tercero fabrica o envasa productos para ti, su proceso forma parte de tu SGIA. Se requieren especificaciones, auditorías, controles de calidad y derecho de auditoría.\n- **Control de plagas, mantenimiento y calibración**: servicios que afectan PPR.\n\n## Seguimiento y reevaluación\nCada proveedor se **reevalúa** periódicamente con datos: rechazos, resultados de verificación de COA, quejas, desempeño de entregas, cambios notificados (o no notificados), resultados de auditoría. El resultado puede ser mantener, aumentar la vigilancia, desarrollar al proveedor o darlo de baja.\n\n### Gestión de cambios del proveedor\nUno de los riesgos más subestimados: el proveedor **cambia algo sin avisar** (nueva planta, nueva materia prima de origen, nuevo proceso). Las especificaciones y contratos deben exigir notificación previa, y el sistema de gestión del cambio de tu planta debe evaluar el impacto antes de aceptar el material modificado.\n\n## Proveedores de emergencia\nCuando un proveedor aprobado no puede surtir y se compra a un proveedor no evaluado, la decisión debe ser **controlada**: evaluación mínima, análisis del lote antes de uso, aprobación de calidad documentada. La urgencia de producción no puede convertirse en una puerta trasera para materias primas no controladas.\n\n## Ideas que debes llevarte\n- El control de proveedores (7.1.6) es una **medida de control** central en plantas químicas.\n- Las **especificaciones** definen identidad, pureza, impurezas, microbiología, alérgenos, regulación, métodos y obligación de notificar cambios.\n- La aprobación y la vigilancia son **proporcionales al riesgo**.\n- El **COA** se revisa y se **verifica** con análisis propios o externos; las discrepancias se investigan.\n- La **recepción** incluye documentación, integridad, transporte, muestreo y cuarentena.\n- Laboratorios externos, transporte, maquila y otros servicios también se controlan.\n- Los **cambios del proveedor** y las **compras de emergencia** deben gestionarse, no improvisarse.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Requisito",
+     "enunciado": "¿Qué apartado de ISO 22000:2018 trata el control de procesos, productos o servicios suministrados externamente?",
+     "opciones": [
+      "7.1.6",
+      "8.5.3",
+      "9.3",
+      "10.2"
+     ],
+     "correcta": 0,
+     "explicacion": "7.1.6 pide criterios de evaluación, selección, seguimiento y reevaluación, comunicación de requisitos e información documentada.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especificaciones",
+     "enunciado": "¿Cuál de estos elementos es indispensable en la especificación de una materia prima química grado alimentario?",
+     "opciones": [
+      "Límites de impurezas pertinentes, como metales pesados, con método de análisis",
+      "El nombre del vendedor",
+      "El precio y las condiciones de pago",
+      "El logotipo del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "La especificación define identidad, pureza, impurezas, microbiología, alérgenos, regulación, métodos y notificación de cambios.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especificaciones",
+     "enunciado": "¿Por qué una especificación no debe copiarse simplemente del catálogo del proveedor?",
+     "opciones": [
+      "Porque debe partir de tus niveles aceptables y los requisitos de tus clientes, y el proveedor debe aceptarla",
+      "Porque el catálogo siempre es falso",
+      "Porque la norma prohíbe usar información del proveedor",
+      "Porque el catálogo no tiene formato oficial"
+     ],
+     "correcta": 0,
+     "explicacion": "La especificación es tu requisito técnico; la información del proveedor es un insumo, no la definición.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Notificación de cambios",
+     "enunciado": "¿Por qué la especificación debe obligar al proveedor a notificar cambios antes de implementarlos?",
+     "opciones": [
+      "Porque un cambio de planta, proceso o materia prima de origen puede cambiar el perfil de impurezas o alérgenos",
+      "Porque así se puede renegociar el precio",
+      "Porque es una formalidad comercial",
+      "Porque los cambios nunca afectan la inocuidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cambios no notificados son uno de los riesgos más subestimados en la cadena de suministro.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporcionalidad",
+     "enunciado": "¿Qué nivel de control es adecuado para el proveedor del activo de un sanitizante sin enjuague?",
+     "opciones": [
+      "Alto: certificación GFSI o auditoría, especificación firmada, COA por lote y verificación analítica propia periódica",
+      "Bajo: solo evaluación documental",
+      "Ninguno, si el proveedor es grande",
+      "El mismo que para el proveedor de papelería"
+     ],
+     "correcta": 0,
+     "explicacion": "El rigor es proporcional al riesgo para la inocuidad.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "COA",
+     "enunciado": "¿Cuál de estas situaciones debe detectarse al revisar un COA en la recepción?",
+     "opciones": [
+      "Que el número de lote del COA no coincide con el lote recibido",
+      "Que el COA tiene el logotipo del proveedor",
+      "Que el COA está en inglés",
+      "Que el COA tiene firma electrónica"
+     ],
+     "correcta": 0,
+     "explicacion": "El COA debe corresponder al lote, incluir los parámetros de la especificación con el método acordado y cumplir los límites.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación de COA",
+     "enunciado": "¿Cuál es el propósito de la verificación de COA?",
+     "opciones": [
+      "Confirmar con análisis propios o externos que los resultados declarados por el proveedor son confiables",
+      "Repetir todos los análisis de todos los lotes siempre",
+      "Sustituir la especificación",
+      "Evaluar el precio del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "La frecuencia se basa en riesgo e historial; las discrepancias se investigan y alimentan la reevaluación.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación de COA",
+     "enunciado": "Tu análisis de arsénico en un lote de ácido fosfórico da el doble de lo reportado en el COA, aunque ambos están dentro del límite. ¿Qué haces?",
+     "opciones": [
+      "Investigar la discrepancia con el proveedor (método, muestreo, error o fraude) y aumentar temporalmente la frecuencia de verificación",
+      "Nada, porque ambos cumplen",
+      "Rechazar al proveedor de inmediato sin investigar",
+      "Cambiar tu método para que coincida"
+     ],
+     "correcta": 0,
+     "explicacion": "Una discrepancia sistemática cuestiona la confiabilidad del COA, aunque el lote cumpla.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Laboratorios externos",
+     "enunciado": "¿Cuál es la forma más sólida de demostrar la competencia de un laboratorio externo para un análisis de metales?",
+     "opciones": [
+      "Acreditación en ISO/IEC 17025 para ese método",
+      "Que sea el laboratorio más barato",
+      "Que esté cerca de la planta",
+      "Que el laboratorio lo declare en su página web"
+     ],
+     "correcta": 0,
+     "explicacion": "La acreditación evalúa la competencia técnica para métodos específicos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Recepción",
+     "enunciado": "¿Qué significa mantener un material en cuarentena en la recepción?",
+     "opciones": [
+      "No usarlo hasta que calidad lo libere, con control físico o en el sistema",
+      "Almacenarlo en un lugar frío",
+      "Dejarlo 40 días en el almacén",
+      "Devolverlo al proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "La cuarentena evita el uso de material no evaluado.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Compras de emergencia",
+     "enunciado": "Por un desabasto, compras propone usar un proveedor no aprobado para una materia prima crítica. ¿Qué es lo correcto?",
+     "opciones": [
+      "Una aprobación controlada: evaluación mínima, análisis del lote antes de uso y autorización documentada de calidad",
+      "Usarlo sin controles porque es una emergencia",
+      "Detener la planta indefinidamente",
+      "Usarlo y evaluarlo después"
+     ],
+     "correcta": 0,
+     "explicacion": "La urgencia no puede ser una puerta trasera para materiales no controlados.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Especificaciones",
+     "enunciado": "Redacta los parámetros principales de la especificación de un hipoclorito de sodio que usarás como materia prima de un sanitizante para superficies en contacto con alimentos.",
+     "respuesta_modelo": "Identidad: hipoclorito de sodio en solución acuosa, CAS 7681-52-9, grado adecuado para uso en sanitizantes de superficies en contacto con alimentos. Ensayo: cloro disponible dentro de un intervalo (por ejemplo, 12.5 a 13.5 %) al momento de la entrega. Impurezas: clorato con límite máximo, metales pesados (plomo, mercurio, arsénico) con límites, hidróxido de sodio libre en intervalo, hierro y otros metales de transición bajos porque catalizan la descomposición. Físicos: apariencia, color, densidad. Envase y transporte: materiales compatibles, protección de la luz, limpieza del autotanque y cargas previas. Almacenamiento y vida útil: condiciones frescas y oscuras, fecha de fabricación declarada. Cumplimiento regulatorio para el uso. Métodos analíticos acordados. Obligación de notificar cambios de planta o proceso. COA por lote.",
+     "puntos_clave": [
+      "Identidad y ensayo con intervalo",
+      "Impurezas pertinentes, incluido clorato y metales",
+      "Transporte, almacenamiento y vida útil",
+      "Regulación, métodos y notificación de cambios"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa de verificación",
+     "enunciado": "Diseña un programa de verificación de COA para un proveedor nuevo de carbonato de potasio grado alimentario.",
+     "respuesta_modelo": "Fase inicial: análisis completo de los primeros tres lotes contra la especificación (ensayo, metales pesados, parámetros que distinguen grado alimentario), en laboratorio propio o externo acreditado. Si los resultados coinciden con los COA dentro de la incertidumbre de los métodos: pasar a verificación de un lote de cada cinco durante un año, centrada en impurezas críticas. Si el historial es estable: uno de cada diez o según riesgo, con revisión anual. Reglas de escalamiento: ante una discrepancia significativa o un resultado fuera de especificación, volver a análisis del 100 % de lotes hasta cerrar la investigación con el proveedor. Registro de resultados y uso en la reevaluación anual del proveedor.",
+     "puntos_clave": [
+      "Fase inicial intensiva",
+      "Reducción basada en datos",
+      "Reglas de escalamiento ante discrepancias",
+      "Registro y reevaluación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cambios del proveedor",
+     "enunciado": "Recibes un lote con un COA que ahora indica otra planta de fabricación del proveedor, sin aviso previo. ¿Qué haces?",
+     "respuesta_modelo": "Retengo el lote en cuarentena y no lo uso. Contacto al proveedor para confirmar el cambio y obtener información: ubicación, proceso, materias primas de origen, certificaciones de la nueva planta, manejo de grados y alérgenos. Activo la gestión del cambio interna: el equipo de inocuidad evalúa el impacto en el análisis de peligros (perfil de impurezas distinto). Hago análisis completo del lote contra la especificación. Si todo cumple, apruebo el nuevo sitio con verificación intensificada en los siguientes lotes; si no, rechazo. Registro una no conformidad del proveedor por no notificar y lo considero en su reevaluación; refuerzo la cláusula de notificación de cambios.",
+     "puntos_clave": [
+      "Retención del lote",
+      "Información del proveedor sobre el cambio",
+      "Gestión del cambio y análisis",
+      "Decisión, verificación intensificada y acción con el proveedor"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Trazabilidad, emergencias, no conformes y retiro",
+   "texto": "## Cuando algo sale mal\nNingún sistema de inocuidad es infalible. La diferencia entre un incidente controlado y una crisis está en la capacidad de **saber exactamente qué pasó, con qué lotes y a quién llegaron**, y de **actuar rápido y bien**. ISO 22000:2018 trata estos temas en cuatro apartados conectados:\n\n- **8.3 Sistema de trazabilidad.**\n- **8.4 Preparación y respuesta ante emergencias.**\n- **8.9 Control de las no conformidades del producto y del proceso**, que incluye correcciones, acciones correctivas, manejo de productos potencialmente no inocuos y retiro.\n\n## Trazabilidad\n### Qué exige la norma\nEl sistema de trazabilidad debe ser capaz de **identificar de forma única** el material entrante de los proveedores y la **primera etapa de distribución** del producto terminado. Es decir: **un paso atrás y un paso adelante**, además de la trazabilidad interna que conecta ambos.\n\nAl establecer el sistema, la organización considera:\n\n- La relación entre los **lotes** de materiales recibidos, ingredientes, productos intermedios y productos terminados.\n- El **reproceso** de materiales y productos.\n- La **distribución** del producto terminado.\n\nLa información documentada debe conservarse al menos durante la **vida útil** del producto (y en la práctica más, según requisitos legales y de clientes). La organización debe **verificar y probar** la eficacia del sistema.\n\n### Trazabilidad en una planta química\nAlgunos retos particulares:\n\n- **Graneles y tanques de almacenamiento**: cuando una materia prima a granel se descarga en un tanque que ya contiene material de otros lotes, los lotes se **mezclan**. Hay que definir cómo se rastrea: por ventanas de tiempo de llenado y consumo, por lote de tanque (un lote interno cada vez que se vacía y se llena), o con reglas de \"el tanque contiene los lotes X e Y desde la fecha Z\".\n- **Agua**: aunque no tiene lote, debe poder relacionarse con resultados de monitoreo del sistema de agua en las fechas de fabricación.\n- **Reproceso**: cada incorporación debe registrar el lote de origen y el lote destino.\n- **Envases y etiquetas**: lotes de envases relacionados con lotes de producto, porque un defecto de envase también puede requerir retiro.\n- **Lotes de producto terminado**: un lote de fabricación puede envasarse en varios días o presentaciones; la codificación debe permitir distinguirlos.\n\n### Balance de masa\nUna prueba de trazabilidad completa no solo identifica lotes; también cuadra **cantidades**: cuánto material entró, cuánto se consumió en cada lote, cuánto producto se fabricó, cuánto se embarcó a cada cliente, cuánto queda en inventario y cuánto se desechó. Un balance de masa que no cuadra revela fallas de registro o, peor, producto que no se puede localizar.\n\n### Pruebas de trazabilidad\nSe hacen ejercicios periódicos (al menos anuales, y los esquemas GFSI suelen pedirlos con frecuencia definida) en ambas direcciones:\n\n- **Hacia adelante**: dado un lote de materia prima, ¿en qué lotes de producto se usó y a qué clientes llegaron?\n- **Hacia atrás**: dado un lote de producto, ¿qué lotes de materias primas, envases y reprocesos contiene?\n\nSe mide el **tiempo** que toma obtener la información completa y el **porcentaje** de cantidades conciliadas. Muchas empresas fijan objetivos como 100 % conciliado en menos de 4 horas.\n\n## Preparación y respuesta ante emergencias\nLa organización debe estar preparada para responder a **situaciones de emergencia** e **incidentes** que puedan afectar la inocuidad: incendios, inundaciones, sismos, cortes de energía o de agua, contaminación del agua, bioterrorismo o sabotaje, accidentes con químicos, pandemias, fallas de proveedores críticos.\n\nLa norma pide:\n\n- Asegurar la **comunicación** de información documentada sobre emergencias.\n- **Responder** con acciones que reduzcan las consecuencias, proporcionales a la magnitud.\n- **Probar** periódicamente la respuesta cuando sea factible (simulacros).\n- **Revisar** y actualizar la información documentada después de un incidente o una prueba.\n\nEn una planta química, por ejemplo:\n\n- Un **corte de energía** durante una reacción o un mezclado puede dejar un lote fuera de especificación o con una reacción incompleta: el procedimiento define qué hacer con el lote.\n- Una **contaminación del agua** municipal o del pozo exige suspender el uso en producción y evaluar los lotes fabricados.\n- Un **derrame** o fuga de un químico cerca de producto o envases expuestos exige evaluar la contaminación.\n- Una **inundación** en el almacén puede comprometer envases y etiquetas.\n\n## Control de las no conformidades\n### Datos de monitoreo\nLos datos del monitoreo de PCC y PPRO deben ser **evaluados** por personas designadas, con competencia y autoridad para iniciar correcciones y acciones correctivas.\n\n### Correcciones\nCuando se exceden los límites críticos o no se cumplen los criterios de acción, se identifican y controlan los productos afectados en cuanto a su uso y liberación. Las correcciones incluyen la revisión de la no conformidad, sus consecuencias en la inocuidad y la decisión sobre el producto.\n\n### Acciones correctivas\nLas acciones correctivas eliminan la **causa** de las no conformidades. ISO 22000 pide considerar:\n\n- Las no conformidades identificadas por el **monitoreo**, las **quejas** de clientes y los informes de inspecciones regulatorias.\n- Las **tendencias** en los resultados de monitoreo que indiquen pérdida de control.\n- **Determinar las causas**.\n- Determinar e implementar acciones para que no se repitan.\n- **Registrar** los resultados y **revisar la eficacia** de las acciones.\n\nLas herramientas de causa raíz (5 porqués, diagrama de Ishikawa, análisis de árbol de fallas) se ven a fondo en el curso de causa raíz y CAPA.\n\n### Manejo de productos potencialmente no inocuos\nLa organización debe tomar acciones para evitar que productos potencialmente no inocuos entren en la cadena alimentaria, a menos que pueda demostrar que:\n\n- Los peligros se han **reducido** a los niveles aceptables definidos;\n- Los peligros se **reducirán** a niveles aceptables antes de entrar en la cadena alimentaria; o\n- El producto **cumple** los niveles aceptables a pesar de la no conformidad.\n\nEl producto potencialmente no inocuo se **retiene** bajo control de la organización hasta su evaluación y decisión. Si el producto ya salió del control de la organización y se determina que no es inocuo, se notifica a las partes interesadas pertinentes y se inicia un **retiro**.\n\n### Evaluación para la liberación\nEl producto afectado por una no conformidad solo se libera como inocuo cuando existe **evidencia**: por ejemplo, el monitoreo de otras medidas de control demuestra que fueron eficaces, o los resultados de muestreo y análisis demuestran que el lote cumple los niveles aceptables.\n\n### Disposición del producto no conforme\nSi el producto no es aceptable para la liberación:\n\n- **Reprocesar** o procesar adicionalmente dentro o fuera de la organización para asegurar que el peligro se elimine o reduzca a niveles aceptables.\n- **Redestinar** a otro uso, siempre que no afecte la inocuidad (por ejemplo, un lote de grado alimentario fuera de especificación por impurezas que se vende como grado técnico para un uso industrial sin relación con alimentos, con reetiquetado controlado y si la regulación lo permite).\n- **Destruir** o eliminar como residuo.\n\n## Retiro de producto\n### Retiro y recuperación\nLos términos varían según el país y el esquema. En términos generales:\n\n- **Retiro de mercado** (o recuperación): devolver producto que todavía está en la cadena de distribución o en poder de clientes industriales.\n- **Retiro del consumidor**: cuando el producto (o un alimento que lo contiene) llegó al consumidor final.\n\nPara un fabricante de auxiliares de proceso, el retiro suele ser de producto en poder de **clientes industriales**, pero el cliente puede tener que retirar **sus alimentos** si ya los elaboró con el auxiliar afectado. Por eso la comunicación rápida y precisa es crítica.\n\n### Qué debe incluir el procedimiento\n- **Personal** con autoridad para iniciar y ejecutar el retiro (un equipo de retiro con roles definidos).\n- **Acciones** a tomar, incluida la **notificación** a las partes interesadas pertinentes: clientes, autoridades (en México, la COFEPRIS cuando corresponde; en otros mercados, las autoridades locales), organismo de certificación cuando el esquema lo exige.\n- Manejo del producto **retirado** y del que aún está en **inventario**.\n- **Secuencia** de acciones y tiempos.\n- **Análisis de causa** y reporte a la alta dirección.\n\n### Simulacros\nLa eficacia del retiro debe **verificarse** con simulacros (por ejemplo, anuales), que prueban la trazabilidad, los contactos, la cadena de decisión y los tiempos. Los resultados se registran y las fallas generan acciones.\n\n## Ideas que debes llevarte\n- La **trazabilidad** cubre un paso atrás, un paso adelante y lo interno, incluidos reprocesos, graneles, envases y etiquetas, y se **prueba** con balance de masa.\n- La **preparación ante emergencias** identifica escenarios, define respuestas, se prueba y se revisa.\n- Las **correcciones** contienen el problema; las **acciones correctivas** eliminan la causa; se revisa su eficacia.\n- El **producto potencialmente no inocuo** se retiene y solo se libera con **evidencia**; si no, se reprocesa, se redestina sin afectar la inocuidad o se destruye.\n- El **retiro** requiere roles, notificación a clientes y autoridades, manejo del producto, análisis de causa y **simulacros**.\n- Para un fabricante de auxiliares, un retiro puede desencadenar retiros de **alimentos** de sus clientes: la velocidad y precisión importan.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Trazabilidad",
+     "enunciado": "¿Qué alcance mínimo de trazabilidad exige ISO 22000:2018?",
+     "opciones": [
+      "Identificar el material entrante de los proveedores y la primera etapa de distribución del producto terminado, con la relación interna entre lotes",
+      "Seguir el producto hasta el consumidor final en todos los casos",
+      "Solo identificar el producto terminado",
+      "Solo identificar a los proveedores"
+     ],
+     "correcta": 0,
+     "explicacion": "Un paso atrás, un paso adelante y la trazabilidad interna, incluidos reprocesos y distribución.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Graneles",
+     "enunciado": "¿Qué reto de trazabilidad crea descargar una pipa de materia prima en un tanque que aún contiene material de otro lote?",
+     "opciones": [
+      "Los lotes se mezclan, y hay que definir reglas para rastrear qué lotes contiene el tanque en cada momento",
+      "Ninguno, porque es la misma materia prima",
+      "Que el tanque se corroe más rápido",
+      "Que el COA deja de ser válido"
+     ],
+     "correcta": 0,
+     "explicacion": "Se usan ventanas de tiempo, lotes internos de tanque o registros de los lotes presentes desde una fecha.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Balance de masa",
+     "enunciado": "En un simulacro de trazabilidad, el balance de masa de una materia prima muestra 300 kg sin explicar. ¿Qué indica?",
+     "opciones": [
+      "Una falla de registro o producto que no se puede localizar; requiere investigación y acción",
+      "Que el simulacro fue exitoso",
+      "Que la materia prima se evaporó y no importa",
+      "Que el proveedor envió de más"
+     ],
+     "correcta": 0,
+     "explicacion": "Un balance que no cuadra revela debilidades del sistema de trazabilidad.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Trazabilidad",
+     "enunciado": "¿Por qué los lotes de envases deben relacionarse con los lotes de producto?",
+     "opciones": [
+      "Porque un defecto del envase, como migración o contaminación, también puede requerir retiro",
+      "Porque los envases tienen fecha de caducidad igual al producto",
+      "Porque el cliente quiere saber el color del envase",
+      "No es necesario"
+     ],
+     "correcta": 0,
+     "explicacion": "El envase es un material en contacto; sus problemas afectan la inocuidad del producto.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Emergencias",
+     "enunciado": "¿Cuál de estas es una situación de emergencia que el SGIA de una planta química debe prever?",
+     "opciones": [
+      "Contaminación del agua del pozo que se usa como ingrediente de las fórmulas",
+      "Un aumento del precio de la materia prima",
+      "El cambio de gerente comercial",
+      "Una auditoría de cliente programada"
+     ],
+     "correcta": 0,
+     "explicacion": "8.4 cubre emergencias e incidentes que pueden afectar la inocuidad, con respuestas, pruebas y revisión.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Producto potencialmente no inocuo",
+     "enunciado": "¿En qué caso puede liberarse un producto potencialmente no inocuo?",
+     "opciones": [
+      "Cuando existe evidencia de que cumple los niveles aceptables a pesar de la no conformidad, o que los peligros se reducirán antes de entrar en la cadena",
+      "Cuando el cliente acepta el riesgo verbalmente",
+      "Cuando el lote es muy grande para destruirlo",
+      "Cuando lo autoriza el área de ventas"
+     ],
+     "correcta": 0,
+     "explicacion": "8.9.4 exige evidencia; mientras tanto el producto se retiene bajo control.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Disposición",
+     "enunciado": "Un lote de ácido grado alimentario resulta fuera de especificación por metales pesados. ¿Cuál es una disposición válida?",
+     "opciones": [
+      "Redestinarlo como grado técnico para un uso industrial sin relación con alimentos, con reetiquetado controlado y si la regulación lo permite",
+      "Mezclarlo con otro lote para diluir los metales y venderlo como alimentario",
+      "Venderlo como alimentario con descuento",
+      "Liberarlo porque el cliente lo diluye"
+     ],
+     "correcta": 0,
+     "explicacion": "La disposición puede ser reproceso, redestino sin afectar la inocuidad o destrucción. Diluir para enmascarar no es aceptable.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acciones correctivas",
+     "enunciado": "¿Qué debe considerar ISO 22000 al determinar la necesidad de acciones correctivas además del monitoreo?",
+     "opciones": [
+      "Las quejas de clientes, los informes de inspecciones regulatorias y las tendencias que indiquen pérdida de control",
+      "Solo los resultados de auditorías externas",
+      "Solo las desviaciones de PCC",
+      "El presupuesto disponible"
+     ],
+     "correcta": 0,
+     "explicacion": "También se determinan causas, se implementan acciones, se registran y se revisa su eficacia.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Retiro",
+     "enunciado": "¿Por qué el retiro de un auxiliar de proceso puede tener un impacto mayor que el del propio producto?",
+     "opciones": [
+      "Porque los clientes pueden tener que retirar los alimentos que ya elaboraron con él",
+      "Porque los auxiliares son más caros que los alimentos",
+      "Porque los auxiliares no tienen lote",
+      "Porque la autoridad no participa"
+     ],
+     "correcta": 0,
+     "explicacion": "El problema se multiplica en todos los alimentos donde se usó; la velocidad y la precisión de la comunicación son críticas.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Retiro",
+     "enunciado": "¿Cuál de estos elementos debe incluir el procedimiento de retiro?",
+     "opciones": [
+      "Personal con autoridad, notificación a partes interesadas incluidas autoridades, manejo del producto y análisis de causa",
+      "Solo una lista de clientes",
+      "Una carta modelo para la prensa",
+      "El catálogo de productos"
+     ],
+     "correcta": 0,
+     "explicacion": "El procedimiento también define secuencia, tiempos y reporte a la dirección, y se verifica con simulacros.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Simulacros",
+     "enunciado": "¿Qué mide principalmente un simulacro de retiro?",
+     "opciones": [
+      "La capacidad de identificar y localizar el producto afectado, contactar a las partes y decidir en un tiempo adecuado",
+      "La satisfacción del cliente",
+      "La productividad de la línea",
+      "El costo del producto"
+     ],
+     "correcta": 0,
+     "explicacion": "Prueba trazabilidad, contactos, cadena de decisión y tiempos; las fallas generan acciones.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Trazabilidad",
+     "enunciado": "Diseña un sistema de trazabilidad para una materia prima a granel que se descarga en un tanque de almacenamiento continuo, del que se alimentan varios productos.",
+     "respuesta_modelo": "Cada recepción a granel se registra con el lote del proveedor, cantidad, fecha y hora de descarga, y se asigna un lote interno. El tanque lleva un registro de inventario por lotes: tras cada descarga, se registra la mezcla resultante (lotes presentes y cantidades estimadas). Cada consumo para un lote de producto se registra con fecha, hora y cantidad, y se asocia a los lotes internos presentes en el tanque en ese momento, con una regla documentada (por ejemplo, considerar presentes todos los lotes descargados desde que el nivel del tanque estuvo por debajo de un mínimo definido). Periódicamente, o cuando se vacía hasta el mínimo, se cierra una ventana de trazabilidad. Se hace balance de masa por ventana. En simulacros se prueba hacia adelante desde un lote de proveedor y hacia atrás desde un lote de producto.",
+     "puntos_clave": [
+      "Registro de recepción con lote interno",
+      "Regla documentada para la mezcla en el tanque",
+      "Asociación de consumos con lotes presentes",
+      "Balance de masa y pruebas"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Manejo de no conformes",
+     "enunciado": "Durante un corte de energía, un lote de detergente quedó con el mezclado incompleto. Describe el manejo del lote paso a paso.",
+     "respuesta_modelo": "1) Identificar y retener el lote, física y en el sistema, como potencialmente no conforme. 2) Registrar el incidente con hora, etapa y condiciones. 3) Evaluar con el equipo: química del producto (estratificación, reacción incompleta, temperatura), riesgo para la inocuidad (concentraciones locales fuera de especificación, componentes que no se incorporaron). 4) Restablecer el mezclado si el procedimiento de emergencia lo permite, y muestrear de varios puntos del tanque para analizar parámetros críticos (concentración de activo, pH, apariencia). 5) Si cumple la especificación con evidencia analítica, liberar con aprobación documentada de calidad; si no, reprocesar con ajuste controlado o destruir. 6) Analizar la causa y la eficacia de la respuesta ante emergencias; actualizar el procedimiento si hace falta.",
+     "puntos_clave": [
+      "Retención e identificación",
+      "Evaluación técnica del riesgo",
+      "Evidencia analítica para decidir",
+      "Disposición, registro y revisión de la respuesta"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Retiro",
+     "enunciado": "Se descubre que un lote de sanitizante sin enjuague, ya entregado a cinco clientes de alimentos, tiene una concentración de activo 30 % por encima del límite crítico. Describe las primeras acciones del equipo de retiro.",
+     "respuesta_modelo": "1) Convocar al equipo de retiro y confirmar el hallazgo (repetir análisis, revisar registros). 2) Determinar el alcance con trazabilidad: lote afectado, otros lotes posiblemente afectados por la misma causa, cantidades, clientes y fechas de entrega; inventario restante retenido. 3) Notificar de inmediato a los cinco clientes con información clara: lote, problema, riesgo (residuos por encima del límite en superficies en contacto si se usó según la dilución de la etiqueta), instrucciones de suspender su uso, segregar el producto y evaluar si se usó en superficies de contacto sin enjuague y en qué alimentos. 4) Evaluar con los clientes la necesidad de que retiren alimentos. 5) Notificar a la autoridad sanitaria y al organismo de certificación según requisitos. 6) Recuperar el producto y disponer de él. 7) Iniciar análisis de causa y acciones correctivas. 8) Reportar a la dirección y documentar todo.",
+     "puntos_clave": [
+      "Confirmación y alcance por trazabilidad",
+      "Comunicación inmediata y clara a clientes",
+      "Evaluación del impacto en alimentos",
+      "Autoridad, recuperación, causa y registro"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
