@@ -1416,6 +1416,648 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "8",
+   "titulo": "Control estadístico de procesos I: fundamentos y gráficas X̄-R",
+   "texto": "## La herramienta de Shewhart\nEn 1924, Walter Shewhart, en los Laboratorios Bell, propuso una herramienta sencilla para distinguir la variación por causas comunes de la variación por causas especiales: la **gráfica de control**. Un siglo después sigue siendo la herramienta central del **control estadístico de procesos** (CEP, o SPC por sus siglas en inglés).\n\nUna gráfica de control es una gráfica de corrida con tres líneas horizontales:\n\n- **Línea central (LC)**: el promedio del estadístico graficado.\n- **Límite de control superior (LCS)** e **inferior (LCI)**: típicamente a ± 3 desviaciones estándar del estadístico.\n\nMientras los puntos caen dentro de los límites sin patrones especiales, el proceso se considera **en control estadístico**: solo hay causas comunes. Un punto fuera de los límites o un patrón no aleatorio es una **señal** de causa especial que hay que investigar.\n\n## Límites de control no son límites de especificación\nEs la confusión más frecuente y más dañina en CEP:\n\n| | Límites de control | Límites de especificación |\n|---|---|---|\n| Vienen de | Los **datos** del proceso | El **cliente**, el diseño o la regulación |\n| Describen | Lo que el proceso **hace** | Lo que el producto **debe** cumplir |\n| Se aplican a | El estadístico graficado (medias, rangos, individuales) | Unidades o lotes individuales |\n| Pregunta | ¿El proceso es estable? | ¿El producto es conforme? |\n\nUn proceso puede estar **en control y producir fuera de especificación** (estable pero no capaz), o estar **fuera de control y dentro de especificación** (inestable, con causas especiales que todavía no producen rechazos). Nunca dibujes los límites de especificación en una gráfica de medias: las medias siempre son menos dispersas que los individuales y compararlas con las especificaciones lleva a conclusiones falsas.\n\n## Por qué ± 3σ\nShewhart eligió 3σ por razones **económicas**, no solo probabilísticas: es un equilibrio entre dos errores.\n\n- Límites más estrechos (± 2σ) producen muchas **falsas alarmas**: se investiga y se ajusta un proceso que no cambió (sobreajuste).\n- Límites más amplios (± 4σ) **tardan** en detectar cambios reales.\n\nCon ± 3σ y un proceso normal estable, la probabilidad de que un punto caiga fuera es de aproximadamente 0.27 %, es decir, una falsa alarma cada 370 puntos en promedio.\n\n## Subgrupos racionales\nLa gráfica X̄-R trabaja con **subgrupos**: pequeños conjuntos de mediciones (típicamente de 3 a 5) tomadas en condiciones lo más homogéneas posible, y luego se comparan los subgrupos en el tiempo.\n\nEl concepto clave es el **subgrupo racional**: los subgrupos se forman de manera que la variación **dentro** del subgrupo represente solo causas comunes, y las causas especiales, si existen, aparezcan como diferencias **entre** subgrupos. Los límites de la gráfica de medias se calculan con la variación dentro de los subgrupos; por eso, si los subgrupos están mal formados, la gráfica no funciona.\n\nEjemplos:\n\n- **Bueno**: cinco envases consecutivos de la llenadora cada hora. La variación dentro refleja la repetibilidad de la llenadora en un momento dado; los cambios entre horas (deriva, ajuste) aparecen entre subgrupos.\n- **Malo**: cinco envases, uno de cada una de las cinco boquillas de la llenadora. Si una boquilla está desajustada, esa diferencia infla el rango dentro del subgrupo, los límites se ensanchan y la gráfica de medias se vuelve ciega.\n\nEn procesos por **lotes** de la industria química, a menudo no tiene sentido formar subgrupos (un lote es una unidad homogénea con un resultado), y se usan gráficas de **individuales** (capítulo 9).\n\n## La gráfica X̄-R\nSe usan dos gráficas juntas:\n\n- La **gráfica X̄** (de medias) vigila el **centro** del proceso.\n- La **gráfica R** (de rangos) vigila la **variación** dentro de los subgrupos.\n\n### Cálculo\nCon k subgrupos de tamaño n:\n\n1. Para cada subgrupo, calcula su media x̄ᵢ y su rango Rᵢ.\n2. Calcula la gran media X̿ (promedio de las medias) y el rango medio R̄.\n3. Límites de la gráfica R:\n   - LC = R̄\n   - LCS = D₄ · R̄\n   - LCI = D₃ · R̄\n4. Límites de la gráfica X̄:\n   - LC = X̿\n   - LCS = X̿ + A₂ · R̄\n   - LCI = X̿ − A₂ · R̄\n\nConstantes según el tamaño del subgrupo:\n\n| n | A₂ | D₃ | D₄ | d₂ |\n|---|---|---|---|---|\n| 2 | 1.880 | 0 | 3.267 | 1.128 |\n| 3 | 1.023 | 0 | 2.574 | 1.693 |\n| 4 | 0.729 | 0 | 2.282 | 2.059 |\n| 5 | 0.577 | 0 | 2.114 | 2.326 |\n| 6 | 0.483 | 0 | 2.004 | 2.534 |\n\nLa constante d₂ permite estimar la desviación estándar del proceso a partir del rango medio: **σ̂ = R̄ / d₂**. El término A₂ · R̄ es justamente 3σ̂/√n.\n\n### Ejemplo\nPeso neto de garrafas de 20 L (en kg), 25 subgrupos de 5 garrafas consecutivas tomadas cada hora. Resultados resumidos: X̿ = 20.15 kg; R̄ = 0.12 kg.\n\nGráfica R:\n- LC = 0.12\n- LCS = 2.114 × 0.12 ≈ **0.254**\n- LCI = 0\n\nGráfica X̄:\n- LC = 20.15\n- LCS = 20.15 + 0.577 × 0.12 ≈ **20.219**\n- LCI = 20.15 − 0.577 × 0.12 ≈ **20.081**\n\nDesviación estándar estimada del proceso: σ̂ = 0.12 / 2.326 ≈ **0.052 kg**.\n\n## Cómo se lee: primero R, después X̄\nSiempre se interpreta **primero la gráfica R**. Si la variación dentro de los subgrupos no es estable, los límites de la gráfica X̄ (que dependen de R̄) no son confiables. Una vez que R está en control, se interpreta X̄.\n\n## Fase I y fase II\n### Fase I: establecer los límites\nCon datos históricos o recién recolectados (al menos 20 a 25 subgrupos):\n\n1. Calcula los límites preliminares.\n2. Identifica puntos fuera de control.\n3. **Investiga** cada uno. Si encuentras una causa especial **y la eliminas**, excluye ese subgrupo y recalcula los límites.\n4. Si no encuentras causa, el punto se queda.\n5. Repite hasta tener límites que representen el proceso en control.\n\n### Fase II: vigilar\nLos límites de la fase I se **congelan** y se usan para vigilar los datos nuevos. No se recalculan con cada dato nuevo (eso haría que la gráfica se adaptara a los cambios en lugar de detectarlos). Se revisan cuando hay un cambio deliberado del proceso (nuevo equipo, nueva fórmula) o periódicamente con justificación.\n\n## Plan de reacción\nUna gráfica de control sin un **plan de reacción** es decoración. El plan define, para cada tipo de señal:\n\n- Quién reacciona y en qué tiempo.\n- Qué se revisa primero (por ejemplo: báscula, materia prima, ajuste del equipo, método de medición).\n- Qué se hace con el producto fabricado desde la última señal confiable.\n- Cómo se registra la causa encontrada y la acción.\n\nCon el tiempo, el registro de causas encontradas se convierte en una base de conocimiento del proceso.\n\n## Lo que la gráfica no hace\n- No dice **por qué** ocurrió la señal: eso lo descubre la investigación técnica.\n- No mejora el proceso por sí sola: un proceso estable puede tener demasiada variación.\n- No sustituye la **liberación** contra especificaciones: un lote fuera de especificación se rechaza aunque el proceso esté \"en control\".\n- No funciona con un **sistema de medición** inadecuado (capítulo 12): si el ruido del método es grande, la gráfica vigila el método, no el proceso.\n\n## Ideas que debes llevarte\n- La gráfica de control distingue causas comunes de causas especiales con límites a **± 3σ** del estadístico graficado.\n- **Límites de control ≠ límites de especificación**: los primeros vienen del proceso; los segundos, del cliente.\n- Los **subgrupos racionales** concentran la variación común dentro y las causas especiales entre subgrupos.\n- X̄-R: LC = X̿ y R̄; límites con A₂, D₃, D₄; σ̂ = R̄/d₂.\n- Lee **primero R**, después X̄.\n- **Fase I** para establecer límites (investigando y excluyendo solo con causa); **fase II** para vigilar con límites congelados.\n- Toda gráfica necesita un **plan de reacción**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito",
+     "enunciado": "¿Qué distingue una gráfica de control?",
+     "opciones": [
+      "La variación por causas comunes de la variación por causas especiales",
+      "Los lotes conformes de los no conformes",
+      "Los proveedores buenos de los malos",
+      "La exactitud del método"
+     ],
+     "correcta": 0,
+     "explicacion": "La conformidad se juzga contra especificaciones; la gráfica juzga la estabilidad del proceso.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control frente a especificación",
+     "enunciado": "¿De dónde vienen los límites de control?",
+     "opciones": [
+      "De los datos del propio proceso",
+      "De la especificación del cliente",
+      "De la regulación",
+      "Del criterio del supervisor"
+     ],
+     "correcta": 0,
+     "explicacion": "Describen lo que el proceso hace, no lo que debe cumplir.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control frente a especificación",
+     "enunciado": "¿Por qué no deben dibujarse los límites de especificación en una gráfica de medias?",
+     "opciones": [
+      "Porque las medias son menos dispersas que los individuales y la comparación lleva a conclusiones falsas",
+      "Porque es ilegal",
+      "Porque los límites de especificación son siempre más estrechos",
+      "Porque la gráfica se ve desordenada"
+     ],
+     "correcta": 0,
+     "explicacion": "Las especificaciones aplican a unidades o lotes individuales.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "3 sigma",
+     "enunciado": "¿Por qué Shewhart eligió límites a ± 3σ?",
+     "opciones": [
+      "Como equilibrio económico entre falsas alarmas y detección tardía de cambios",
+      "Porque así lo exige ISO 9001",
+      "Porque garantiza cero falsas alarmas",
+      "Porque coincide con la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Con ± 3σ hay una falsa alarma cada 370 puntos en promedio en un proceso estable.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Subgrupos racionales",
+     "enunciado": "¿Qué subgrupo es más racional para vigilar una llenadora de seis boquillas?",
+     "opciones": [
+      "Cinco envases consecutivos de la misma boquilla cada hora (o una gráfica por boquilla)",
+      "Un envase de cada boquilla en el mismo momento",
+      "Cinco envases tomados al azar a lo largo del día",
+      "Un envase cada semana"
+     ],
+     "correcta": 0,
+     "explicacion": "Mezclar boquillas en un subgrupo infla el rango con diferencias sistemáticas y ciega la gráfica de medias.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo",
+     "enunciado": "Con n = 5, X̿ = 50.0 y R̄ = 2.0, ¿cuál es el LCS de la gráfica X̄ (A₂ = 0.577)?",
+     "opciones": [
+      "51.15",
+      "52.0",
+      "54.23",
+      "50.58"
+     ],
+     "correcta": 0,
+     "explicacion": "50.0 + 0.577 × 2.0 = 51.154.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo",
+     "enunciado": "Con n = 5 y R̄ = 2.0, ¿cuál es el LCS de la gráfica R (D₄ = 2.114)?",
+     "opciones": [
+      "4.23",
+      "2.00",
+      "1.15",
+      "6.00"
+     ],
+     "correcta": 0,
+     "explicacion": "2.114 × 2.0 = 4.228; el LCI es 0 porque D₃ = 0 para n = 5.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estimación de sigma",
+     "enunciado": "Con n = 5 y R̄ = 0.233, ¿cuál es σ̂ del proceso (d₂ = 2.326)?",
+     "opciones": [
+      "0.10",
+      "0.233",
+      "0.54",
+      "0.05"
+     ],
+     "correcta": 0,
+     "explicacion": "σ̂ = R̄/d₂ = 0.233/2.326 ≈ 0.100.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Orden de lectura",
+     "enunciado": "¿Qué gráfica se interpreta primero en un par X̄-R y por qué?",
+     "opciones": [
+      "La R, porque los límites de X̄ dependen de R̄ y no son confiables si la variación no es estable",
+      "La X̄, porque es la más importante",
+      "Es indistinto",
+      "Ninguna; se interpreta solo la X̄"
+     ],
+     "correcta": 0,
+     "explicacion": "Primero se asegura la estabilidad de la variación.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fase I",
+     "enunciado": "En la fase I, un punto fuera de control no tiene causa identificable tras investigar. ¿Qué se hace?",
+     "opciones": [
+      "Se conserva en el cálculo de los límites",
+      "Se elimina igualmente",
+      "Se reemplaza por la media",
+      "Se eliminan todos los puntos cercanos"
+     ],
+     "correcta": 0,
+     "explicacion": "Solo se excluye un subgrupo si se encontró y eliminó la causa especial.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fase II",
+     "enunciado": "¿Por qué no se recalculan los límites con cada dato nuevo en la fase II?",
+     "opciones": [
+      "Porque la gráfica se adaptaría a los cambios en lugar de detectarlos",
+      "Porque es muy laborioso",
+      "Porque los límites nunca cambian",
+      "Porque la norma lo prohíbe"
+     ],
+     "correcta": 0,
+     "explicacion": "Se revisan ante cambios deliberados del proceso o periódicamente con justificación.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estable no capaz",
+     "enunciado": "Un proceso está en control estadístico pero produce lotes fuera de especificación. ¿Qué significa?",
+     "opciones": [
+      "Es estable pero no capaz; hay que reducir la variación común o centrar el proceso cambiando el sistema",
+      "Que la gráfica está mal calculada",
+      "Que hay causas especiales",
+      "Que la especificación es incorrecta necesariamente"
+     ],
+     "correcta": 0,
+     "explicacion": "La estabilidad no implica capacidad.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo completo",
+     "enunciado": "Una gráfica X̄-R con subgrupos de 4 tiene X̿ = 7.20 (pH) y R̄ = 0.10. Calcula los límites de ambas gráficas y σ̂ (A₂ = 0.729; D₃ = 0; D₄ = 2.282; d₂ = 2.059).",
+     "respuesta_modelo": "Gráfica R: LC = 0.10; LCS = 2.282 × 0.10 = 0.228; LCI = 0. Gráfica X̄: LC = 7.20; LCS = 7.20 + 0.729 × 0.10 = 7.273; LCI = 7.20 − 0.0729 = 7.127. σ̂ = 0.10/2.059 ≈ 0.049 unidades de pH.",
+     "puntos_clave": [
+      "Límites de R correctos",
+      "Límites de X̄ correctos",
+      "σ̂ ≈ 0.049",
+      "Uso correcto de constantes para n = 4"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan de reacción",
+     "enunciado": "Redacta un plan de reacción para una gráfica X̄-R del peso neto de garrafas de 20 L.",
+     "respuesta_modelo": "Ante un punto fuera de límites o un patrón especial: 1) El operador detiene o marca el producto desde el último subgrupo en control y avisa al supervisor en menos de 15 minutos. 2) Revisión en este orden: verificación de la báscula con pesa patrón, ajuste de la boquilla o válvula, presión y nivel del tanque de alimentación, cambio de lote de producto o de temperatura (densidad), procedimiento del operador. 3) Producto afectado: se pesa al 100 % o se aplica muestreo reforzado al producto desde la última señal confiable; se reprocesa lo que no cumple el contenido neto. 4) Se corrige la causa y se verifica con nuevos subgrupos. 5) Se registra en la bitácora de la gráfica la señal, la causa encontrada, la acción y el responsable; si no se encuentra causa, se registra así y se vigila.",
+     "puntos_clave": [
+      "Quién reacciona y en qué tiempo",
+      "Secuencia de revisión técnica",
+      "Manejo del producto afectado",
+      "Registro de causa y acción"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Subgrupos",
+     "enunciado": "En una planta que fabrica lotes de 5 000 L de detergente, ¿tiene sentido usar una gráfica X̄-R con la concentración? Explica.",
+     "respuesta_modelo": "Generalmente no. Un lote homogéneo produce un solo valor representativo de concentración; varias muestras del mismo lote solo reflejarían la variación de muestreo y del método, no la del proceso. Si se forman subgrupos con varias muestras de un mismo lote, el rango interno sería pequeño y los límites de la gráfica de medias serían demasiado estrechos, generando falsas alarmas por la variación real entre lotes. Lo adecuado es una gráfica de individuales y rangos móviles (I-MR) con un valor por lote. La X̄-R sí tendría sentido, por ejemplo, para el peso neto en el envasado, donde hay muchas unidades consecutivas.",
+     "puntos_clave": [
+      "Un lote produce un valor representativo",
+      "Subgrupos dentro de un lote no representan la variación del proceso",
+      "Límites demasiado estrechos y falsas alarmas",
+      "Alternativa: I-MR"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "titulo": "Control estadístico de procesos II: individuales, atributos y reglas",
+   "texto": "## Elegir la gráfica correcta\nLa gráfica X̄-R es la clásica, pero no siempre es la adecuada. La elección depende del **tipo de dato** y de **cómo se genera**:\n\n| Tipo de dato | Situación | Gráfica |\n|---|---|---|\n| Variable | Subgrupos de 2 a 9 | X̄-R |\n| Variable | Subgrupos de 10 o más | X̄-S |\n| Variable | Un dato por lote o por periodo | I-MR (individuales y rango móvil) |\n| Atributo: unidades defectuosas | Tamaño de muestra variable | p |\n| Atributo: unidades defectuosas | Tamaño de muestra constante | np |\n| Atributo: número de defectos | Área de oportunidad constante | c |\n| Atributo: número de defectos | Área de oportunidad variable | u |\n\n## Gráfica X̄-S\nPara subgrupos grandes (n ≥ 10), el rango desperdicia información; se usa la **desviación estándar** de cada subgrupo. La lógica es la misma, con constantes A₃, B₃ y B₄. Los programas estadísticos la calculan automáticamente.\n\n## Gráfica de individuales y rango móvil (I-MR)\n### Cuándo usarla\nEs probablemente la gráfica **más útil en la industria química**:\n\n- Procesos por **lotes**, con un resultado por lote (concentración, pH, densidad).\n- Mediciones **caras** o lentas (análisis de laboratorio, pruebas microbiológicas).\n- Datos de **baja frecuencia** (resultados semanales, mensuales).\n- Indicadores de gestión (quejas por mes, tiempo de liberación).\n\n### Cálculo\n1. Grafica cada valor individual xᵢ.\n2. Calcula los **rangos móviles**: MRᵢ = |xᵢ − xᵢ₋₁| (la diferencia absoluta entre valores consecutivos).\n3. Calcula x̄ (media de los individuales) y MR̄ (media de los rangos móviles).\n4. Gráfica de individuales:\n   - LC = x̄\n   - LCS = x̄ + 2.66 · MR̄\n   - LCI = x̄ − 2.66 · MR̄\n5. Gráfica de rangos móviles:\n   - LC = MR̄\n   - LCS = 3.267 · MR̄\n   - LCI = 0\n\nEl factor 2.66 es 3/d₂, con d₂ = 1.128 para rangos de dos valores. La desviación estándar estimada es σ̂ = MR̄ / 1.128.\n\n### Ejemplo\nConcentración de activo por lote: x̄ = 15.06 %, MR̄ = 0.10 %.\n\n- Individuales: LCS = 15.06 + 2.66 × 0.10 = **15.326**; LCI = **14.794**.\n- Rango móvil: LCS = 3.267 × 0.10 ≈ **0.327**.\n- σ̂ = 0.10 / 1.128 ≈ **0.089 %**.\n\n### Por qué usar el rango móvil y no la desviación estándar de todos los datos\nEl rango móvil estima la variación **de corto plazo** (de un lote al siguiente). La desviación estándar de todos los datos incluye cualquier deriva o cambio de nivel. Si el proceso tiene causas especiales, la desviación estándar global se **infla**, los límites se ensanchan y la gráfica deja de detectar los cambios que debería detectar. Por eso los límites de control se calculan con la variación de corto plazo.\n\n### Precauciones\n- La gráfica de individuales es **más sensible a la falta de normalidad** que la de medias. Revisa la forma de los datos; con datos muy sesgados (impurezas cerca de cero), considera transformarlos.\n- Los datos deben estar en **orden de producción**.\n- Cuidado con la **autocorrelación** (cuando un lote se parece al anterior por razones físicas, como un tanque pulmón que se mezcla): ver capítulo 10.\n\n## Gráficas de atributos\n### Gráfica p: proporción de unidades defectuosas\nPara cada muestra de tamaño nᵢ, la proporción defectuosa es pᵢ = defectuosos / nᵢ.\n\n- LC = p̄ (total de defectuosos / total inspeccionado)\n- LCS = p̄ + 3√[p̄(1 − p̄)/nᵢ]\n- LCI = p̄ − 3√[p̄(1 − p̄)/nᵢ] (si es negativo, se toma 0)\n\nSi nᵢ varía, los límites varían con cada muestra (más estrechos para muestras grandes).\n\n**Ejemplo**: envases con defecto de cierre, muestras de 200 por turno, p̄ = 0.02.\n\nσp = √(0.02 × 0.98 / 200) ≈ 0.0099. LCS = 0.02 + 3 × 0.0099 ≈ **0.050**; LCI = 0.02 − 0.030 < 0 → **0**.\n\nUn turno con 10 o más envases defectuosos en 200 (5 % o más) es una señal.\n\n### Gráfica np\nIgual que la p, pero grafica el **número** de defectuosos con tamaño de muestra constante: LC = np̄; límites np̄ ± 3√[np̄(1 − p̄)].\n\n### Gráfica c: número de defectos\nCuenta defectos (una unidad puede tener varios) en un área de oportunidad constante (por ejemplo, defectos de impresión por rollo de etiquetas, o quejas por mes con un volumen de ventas similar). Se basa en la distribución de Poisson:\n\n- LC = c̄\n- LCS = c̄ + 3√c̄\n- LCI = c̄ − 3√c̄ (si es negativo, 0)\n\n**Ejemplo**: c̄ = 4 defectos por rollo. LCS = 4 + 3 × 2 = **10**; LCI = 4 − 6 < 0 → **0**.\n\n### Gráfica u: defectos por unidad\nPara áreas de oportunidad variables (por ejemplo, defectos por cada 1000 etiquetas cuando los rollos tienen distinto tamaño). uᵢ = defectos / tamaño; límites ū ± 3√(ū/nᵢ).\n\n### La limitación de los atributos\nLas gráficas de atributos necesitan **muestras grandes** y reaccionan tarde, sobre todo cuando la proporción de defectuosos es baja. Cuando el proceso mejora mucho (por ejemplo, defectos en partes por millón), muchas muestras tienen cero defectos y la gráfica deja de ser útil. Alternativas: medir una **variable** relacionada (el torque de cierre en lugar de \"fuga sí o no\"), o usar gráficas de **tiempo entre eventos** (gráficas g o t).\n\n## Reglas para detectar causas especiales\nUn punto fuera de los límites es la señal más clara, pero no la única. Los patrones no aleatorios también indican causas especiales. Las **reglas de Western Electric** (publicadas en su manual de 1956) y las de **Nelson** (1984) son las más usadas. Dividiendo la distancia entre la línea central y cada límite en tres zonas (A, la más externa, entre 2σ y 3σ; B, entre 1σ y 2σ; C, la más cercana al centro), las reglas típicas son:\n\n1. **Un punto** fuera de los límites de 3σ.\n2. **Dos de tres** puntos consecutivos en la zona A o más allá, del mismo lado.\n3. **Cuatro de cinco** puntos consecutivos en la zona B o más allá, del mismo lado.\n4. **Ocho puntos consecutivos** del mismo lado de la línea central (algunas versiones usan 7 o 9).\n5. **Seis puntos consecutivos** aumentando o disminuyendo (tendencia).\n6. **Catorce puntos** alternando arriba y abajo (puede indicar dos fuentes que se alternan, como dos equipos).\n7. **Quince puntos** consecutivos en la zona C (variación menor de la esperada: posible estratificación o límites mal calculados).\n\n### El costo de usar muchas reglas\nCada regla adicional aumenta la sensibilidad, pero también la tasa de **falsas alarmas**. Con todas las reglas activas, un proceso estable genera una falsa alarma mucho más a menudo que con la regla 1 sola. Elige un conjunto razonable (por ejemplo, las reglas 1, 2, 4 y 5) y documéntalo en el procedimiento.\n\n### Qué suelen significar los patrones\n| Patrón | Posibles causas en una planta química |\n|---|---|\n| Punto aislado fuera | Error de pesado, materia prima puntual, error analítico |\n| Cambio de nivel sostenido (regla 4) | Nuevo lote de materia prima, cambio de proveedor, recalibración, nuevo operador |\n| Tendencia (regla 5) | Desgaste, degradación de un reactivo analítico, deriva de un instrumento, temperatura estacional |\n| Alternancia (regla 6) | Dos equipos, dos analistas o dos turnos que se alternan |\n| Abrazar el centro (regla 7) | Datos de distintas fuentes mezclados en subgrupos; límites calculados con datos inadecuados |\n\n## Gráficas de control para indicadores de gestión\nLas gráficas I-MR y c son excelentes para **indicadores de gestión**: quejas por mes, días de liberación, desviaciones por semana. Permiten responder la pregunta que muchos reportes mensuales ignoran: ¿este mes es realmente distinto, o es variación normal? Evitan reaccionar ante cada subida o bajada de un indicador estable (el error de tratar causas comunes como especiales a nivel gerencial).\n\n## Ideas que debes llevarte\n- Elige la gráfica según el **tipo de dato** y la **estructura** de los datos.\n- La **I-MR** es la más útil para procesos por lotes: límites x̄ ± 2.66·MR̄; MR con LCS = 3.267·MR̄.\n- Los límites se calculan con la variación de **corto plazo**, no con la desviación estándar global.\n- **p** y **np** para unidades defectuosas; **c** y **u** para conteos de defectos; necesitan muestras grandes.\n- Las **reglas de patrones** (Western Electric, Nelson) detectan cambios que no salen de los límites, a costa de más falsas alarmas: elige un conjunto y documéntalo.\n- Usa gráficas de control también para **indicadores de gestión**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Elección",
+     "enunciado": "Un proceso por lotes produce un solo resultado de concentración por lote. ¿Qué gráfica corresponde?",
+     "opciones": [
+      "I-MR",
+      "X̄-R",
+      "p",
+      "c"
+     ],
+     "correcta": 0,
+     "explicacion": "Un dato por lote se vigila con individuales y rango móvil.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "I-MR",
+     "enunciado": "x̄ = 7.00 y MR̄ = 0.15. ¿Cuál es el LCS de la gráfica de individuales?",
+     "opciones": [
+      "7.40",
+      "7.45",
+      "7.15",
+      "7.49"
+     ],
+     "correcta": 0,
+     "explicacion": "7.00 + 2.66 × 0.15 = 7.399.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "I-MR",
+     "enunciado": "Con MR̄ = 0.15, ¿cuál es el LCS de la gráfica de rangos móviles?",
+     "opciones": [
+      "0.49",
+      "0.40",
+      "0.30",
+      "0.15"
+     ],
+     "correcta": 0,
+     "explicacion": "3.267 × 0.15 = 0.490.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Corto plazo",
+     "enunciado": "¿Por qué los límites de la gráfica I se calculan con MR̄ y no con la desviación estándar de todos los datos?",
+     "opciones": [
+      "Porque la desviación global se infla con derivas y cambios, ensanchando los límites y cegando la gráfica",
+      "Porque es más fácil de calcular",
+      "Porque la desviación global siempre es menor",
+      "Porque así lo indica la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "El rango móvil estima la variación de corto plazo, de causas comunes.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gráfica p",
+     "enunciado": "p̄ = 0.04 y n = 100. ¿Cuál es aproximadamente el LCS de la gráfica p?",
+     "opciones": [
+      "0.099",
+      "0.060",
+      "0.140",
+      "0.044"
+     ],
+     "correcta": 0,
+     "explicacion": "√(0.04 × 0.96/100) = 0.0196; 0.04 + 3 × 0.0196 = 0.0988.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gráfica c",
+     "enunciado": "c̄ = 9 defectos por rollo. ¿Cuáles son los límites de la gráfica c?",
+     "opciones": [
+      "LCS = 18, LCI = 0",
+      "LCS = 12, LCI = 6",
+      "LCS = 27, LCI = 0",
+      "LCS = 18, LCI = 9"
+     ],
+     "correcta": 0,
+     "explicacion": "9 ± 3√9 = 9 ± 9: LCS = 18; LCI = 0.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elección",
+     "enunciado": "Se cuentan los defectos de impresión por cada 1000 etiquetas en rollos de distinto tamaño. ¿Qué gráfica corresponde?",
+     "opciones": [
+      "u",
+      "c",
+      "np",
+      "X̄-R"
+     ],
+     "correcta": 0,
+     "explicacion": "Defectos con área de oportunidad variable: gráfica u.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas",
+     "enunciado": "Ocho puntos consecutivos quedan por encima de la línea central, todos dentro de los límites. ¿Qué indica?",
+     "opciones": [
+      "Una posible causa especial: un cambio de nivel sostenido",
+      "Nada, todos están dentro de los límites",
+      "Que el proceso es excelente",
+      "Que hay que ensanchar los límites"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una regla de patrones; por ejemplo, un lote nuevo de materia prima o una recalibración.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas",
+     "enunciado": "Seis puntos consecutivos aumentan de manera continua. ¿Qué causa es típica?",
+     "opciones": [
+      "Una deriva: desgaste, degradación de un reactivo o temperatura",
+      "Dos equipos alternándose",
+      "Datos de fuentes mezcladas",
+      "Un error de transcripción aislado"
+     ],
+     "correcta": 0,
+     "explicacion": "Una tendencia sugiere un cambio gradual.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas",
+     "enunciado": "Catorce puntos alternan arriba y abajo de la línea central. ¿Qué puede indicar?",
+     "opciones": [
+      "Dos fuentes que se alternan, como dos equipos, analistas o turnos",
+      "Un proceso perfectamente estable",
+      "Una tendencia",
+      "Un error en la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "La alternancia sistemática no es aleatoria.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Falsas alarmas",
+     "enunciado": "¿Qué consecuencia tiene activar todas las reglas de patrones al mismo tiempo?",
+     "opciones": [
+      "Aumenta la sensibilidad pero también la tasa de falsas alarmas",
+      "Elimina las falsas alarmas",
+      "No tiene ningún efecto",
+      "Reduce la sensibilidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Conviene elegir un conjunto razonable y documentarlo.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Atributos",
+     "enunciado": "Cuando la proporción defectuosa baja a partes por millón, ¿qué problema tiene la gráfica p?",
+     "opciones": [
+      "Muchas muestras tienen cero defectos y deja de ser útil; conviene medir una variable o usar gráficas de tiempo entre eventos",
+      "Se vuelve más sensible",
+      "Los límites se vuelven negativos y la gráfica es más precisa",
+      "Ninguno"
+     ],
+     "correcta": 0,
+     "explicacion": "Los atributos pierden información con proporciones muy bajas.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "I-MR",
+     "enunciado": "Los pH de seis lotes consecutivos son 7.1, 7.3, 7.0, 7.2, 7.4, 7.2. Calcula x̄, los rangos móviles, MR̄ y los límites de la gráfica I.",
+     "respuesta_modelo": "x̄ = (7.1 + 7.3 + 7.0 + 7.2 + 7.4 + 7.2)/6 = 43.2/6 = 7.20. Rangos móviles: |7.3−7.1| = 0.2; |7.0−7.3| = 0.3; |7.2−7.0| = 0.2; |7.4−7.2| = 0.2; |7.2−7.4| = 0.2. MR̄ = 1.1/5 = 0.22. Límites: 7.20 ± 2.66 × 0.22 = 7.20 ± 0.585: LCS ≈ 7.79; LCI ≈ 6.61. (Con tan pocos datos los límites son preliminares; se recomiendan al menos 20 a 25 puntos.)",
+     "puntos_clave": [
+      "x̄ = 7.20",
+      "Cinco rangos móviles y MR̄ = 0.22",
+      "Límites ≈ 6.61 y 7.79",
+      "Advertencia sobre pocos datos"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Gestión",
+     "enunciado": "El número de quejas mensuales de los últimos 24 meses tiene c̄ = 6. En el último mes hubo 10 quejas y la dirección pide una investigación urgente. ¿Qué le dirías?",
+     "respuesta_modelo": "Con una gráfica c, los límites serían 6 ± 3√6 = 6 ± 7.35: LCS ≈ 13.3 y LCI = 0. Diez quejas están dentro de los límites, así que, por sí solo, el mes no es una señal de causa especial; es consistente con la variación habitual. Reaccionar como si lo fuera es tratar una causa común como especial. Antes de una investigación urgente, revisaría si hay patrones (por ejemplo, varios meses consecutivos por encima de la media o una tendencia) y si las quejas de este mes comparten un mismo tipo, producto o cliente, lo cual sí podría indicar un problema específico. Para reducir el nivel general de quejas hay que trabajar el sistema, con Pareto de causas.",
+     "puntos_clave": [
+      "Cálculo de límites de la gráfica c",
+      "10 está dentro: no es señal por sí solo",
+      "Riesgo de reaccionar a causas comunes",
+      "Revisar patrones y Pareto para mejorar el sistema"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Patrones",
+     "enunciado": "En una gráfica I-MR de concentración aparece un cambio de nivel sostenido de 12 lotes por encima de la media, que comenzó en una fecha concreta. Describe cómo investigarías.",
+     "respuesta_modelo": "Ubicaría la fecha del cambio en la gráfica y revisaría qué cambió en ese momento: lote nuevo o proveedor nuevo de la materia prima activa, recalibración o reparación de básculas o medidores de flujo, cambio en el método analítico (lote de reactivo valorante, nuevo estándar, nuevo analista), cambio de procedimiento o de personal, mantenimiento del equipo. Contrastaría con registros (bitácoras de mantenimiento, de calibración, de recepción, del laboratorio). Si se sospecha del método, analizaría una muestra de referencia o retenida para separar proceso de medición. Una vez identificada la causa, decidiría si se corrige o si el nuevo nivel es aceptable y se recalculan los límites con justificación.",
+     "puntos_clave": [
+      "Ubicar el inicio del cambio",
+      "Revisar cambios en materias primas, equipos, método y personal",
+      "Separar proceso de medición con muestras de referencia",
+      "Acción y decisión documentada sobre los límites"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Control estadístico de procesos III: CUSUM, EWMA e implementación",
+   "texto": "## La debilidad de la gráfica de Shewhart\nLas gráficas de Shewhart son excelentes para detectar **cambios grandes** (de 2σ o más), pero son lentas para detectar **cambios pequeños** y sostenidos. Esto se mide con la **longitud media de corrida** (ARL, average run length): el número promedio de puntos hasta que aparece una señal.\n\n- Con un proceso estable, una gráfica de individuales con límites a 3σ da una falsa alarma en promedio cada **370** puntos (ARL₀ ≈ 370).\n- Si la media se desplaza **1σ**, la misma gráfica tarda en promedio unos **44** puntos en dar la señal (solo con la regla de un punto fuera).\n\nEn un proceso por lotes con un lote al día, 44 lotes son casi dos meses de producción ligeramente descentrada antes de que la gráfica lo detecte. Las reglas de patrones (capítulo 9) ayudan, pero hay herramientas diseñadas específicamente para cambios pequeños: **CUSUM** y **EWMA**. Ambas acumulan información de varios puntos en lugar de juzgar cada punto por separado.\n\n## CUSUM: suma acumulada\n### La idea\nLa gráfica CUSUM acumula las desviaciones de cada dato respecto a un valor objetivo. Si el proceso está en el objetivo, las desviaciones positivas y negativas se compensan y la suma oscila cerca de cero. Si la media se desplaza, aunque sea un poco, la suma empieza a crecer de forma sostenida.\n\n### CUSUM tabular\nLa forma más usada lleva dos sumas, una para detectar aumentos (C⁺) y otra para disminuciones (C⁻):\n\nC⁺ᵢ = máx[0, xᵢ − (μ₀ + K) + C⁺ᵢ₋₁]\n\nC⁻ᵢ = máx[0, (μ₀ − K) − xᵢ + C⁻ᵢ₋₁]\n\ndonde:\n\n- μ₀ es el valor objetivo.\n- **K** es el valor de referencia o \"holgura\", típicamente la **mitad del cambio** que se quiere detectar. Para detectar un cambio de 1σ, K = 0.5σ.\n- Se da la señal cuando C⁺ o C⁻ supera el **intervalo de decisión H**, típicamente **4σ o 5σ**.\n\n### Desempeño\nCon K = 0.5σ y H = 5σ, la CUSUM tiene un ARL₀ de alrededor de **465** (menos falsas alarmas que Shewhart) y detecta un cambio de 1σ en unos **10** puntos en promedio, frente a los 44 de la gráfica de Shewhart sola.\n\n### Una ventaja adicional\nLa CUSUM indica **cuándo empezó** el cambio: es el último punto en que la suma estaba en cero antes de la señal. Esto facilita mucho la investigación (\"¿qué cambió el 14 de marzo?\").\n\n## EWMA: promedio móvil ponderado exponencialmente\n### La idea\nLa EWMA grafica un promedio que da más peso a los datos recientes y menos a los antiguos:\n\nzᵢ = λ · xᵢ + (1 − λ) · zᵢ₋₁, con z₀ = μ₀\n\n- **λ** (entre 0 y 1) controla la memoria. Con λ = 1 la EWMA es una gráfica de individuales; con λ pequeño (0.05 a 0.25) acumula información de muchos puntos y detecta cambios pequeños.\n- Los límites, una vez estabilizados, son:\n\nμ₀ ± L · σ · √[λ / (2 − λ)]\n\nCon λ = 0.2 y L = 3, los límites quedan a ± 3σ × √(0.2/1.8) = **± 1.0σ** de la línea central. (En los primeros puntos son algo más estrechos; los programas lo calculan.)\n\n### Ventajas\n- Detecta cambios pequeños con un desempeño similar al de la CUSUM.\n- Es **robusta a la falta de normalidad**, porque promedia.\n- Es intuitiva: la línea suavizada muestra la tendencia del proceso.\n\n### Cuál elegir\nCUSUM y EWMA tienen desempeños comparables para cambios pequeños. Una práctica común es usar una **gráfica de Shewhart** (para cambios grandes y súbitos) **junto con** una CUSUM o una EWMA (para cambios pequeños y sostenidos).\n\n## Autocorrelación\n### El problema\nTodas las gráficas anteriores suponen que los datos son **independientes**: que el valor de hoy no depende del de ayer, salvo por el nivel del proceso. En muchos procesos químicos esto no se cumple:\n\n- Un **tanque pulmón** que mezcla producto de varios lotes: cada valor arrastra parte del anterior.\n- Mediciones **continuas** en línea tomadas con alta frecuencia (pH, temperatura, conductividad cada minuto).\n- Procesos con **inercia** térmica o de composición.\n\nCon datos positivamente autocorrelacionados, el rango móvil **subestima** la variación real; los límites salen **demasiado estrechos** y la gráfica genera muchas falsas alarmas. Los puntos parecen \"deambular\" lentamente.\n\n### Cómo detectarla\n- La gráfica de corrida muestra ondulaciones lentas.\n- Una gráfica de **autocorrelación** (función de autocorrelación) muestra correlación significativa entre xᵢ y xᵢ₋₁.\n\n### Qué hacer\n- **Muestrear con menos frecuencia**, de modo que los datos sean aproximadamente independientes.\n- Modelar la autocorrelación (por ejemplo, con un modelo de series de tiempo) y graficar los **residuos** del modelo.\n- En procesos con control automático (un lazo PID), vigilar también la **acción del controlador**, no solo la variable controlada.\n\n## Implementar el CEP en una planta química\n### 1. Elegir qué vigilar\nNo todo merece una gráfica. Prioriza:\n\n- **Características críticas** del producto: las relacionadas con inocuidad (concentración de un sanitizante sin enjuague), regulación (contenido neto) o funcionamiento para el cliente.\n- **Variables de proceso** que controlan esas características (temperatura de reacción, tiempo de mezclado, dosificación).\n- PCC y PPRO del plan de inocuidad con resultados medibles: una gráfica de control complementa el monitoreo contra límites críticos, porque detecta derivas **antes** de que se exceda el límite.\n\n### 2. Asegurar la medición\nAntes de graficar, verifica que el sistema de medición sea adecuado (capítulo 12). Si la variación del método es una parte grande de la variación total, la gráfica vigila el laboratorio, no el proceso.\n\n### 3. Definir la recolección de datos\nFrecuencia, tamaño de subgrupo, quién mide, dónde se registra. Idealmente, los datos se capturan **automáticamente** desde el sistema del laboratorio o de producción.\n\n### 4. Fase I con datos reales\nEstablecer límites con al menos 20 a 25 puntos (o subgrupos), investigando las señales.\n\n### 5. Plan de reacción\nEscrito, conocido por los operadores, con responsabilidades.\n\n### 6. Capacitación\nLos operadores y supervisores deben entender **qué es** una señal y **qué no** lo es. El mayor riesgo de una gráfica mal entendida es el sobreajuste.\n\n### 7. Revisión periódica\nRevisar las gráficas en reuniones de producción y calidad; actualizar los límites ante cambios deliberados; usar el registro de causas para mejorar.\n\n## Procesos de corridas cortas y muchos productos\nUna planta química puede fabricar decenas de productos, cada uno pocas veces al mes. Hacer una gráfica por producto da muy pocos datos por gráfica. Alternativas:\n\n- **Gráficas de desviación del objetivo**: graficar (x − objetivo) de todos los productos que comparten proceso y variación similar en una sola gráfica.\n- **Gráficas estandarizadas**: graficar (x − objetivo)/σ del producto, cuando las variaciones difieren.\n- Agrupar por **familia** de productos con el mismo equipo y método.\n\n## Más allá: control multivariado\nCuando varias variables están correlacionadas (por ejemplo, concentración de activo y de estabilizante, o temperatura y presión), vigilarlas por separado puede ocultar combinaciones anómalas. Las gráficas **T² de Hotelling** vigilan varias variables a la vez. Son herramientas avanzadas, útiles en procesos con muchos sensores.\n\n## Ideas que debes llevarte\n- Shewhart detecta bien los cambios grandes, pero tarda con los pequeños (ARL de unos 44 puntos para 1σ).\n- **CUSUM** (K ≈ 0.5σ, H ≈ 4 a 5σ) y **EWMA** (λ ≈ 0.05 a 0.25) detectan **cambios pequeños** mucho antes; la CUSUM además indica cuándo empezó el cambio.\n- Combina Shewhart con CUSUM o EWMA.\n- La **autocorrelación** produce límites demasiado estrechos y falsas alarmas; se detecta y se maneja.\n- Implementar CEP: elegir características críticas, asegurar la medición, recolectar datos, fase I, plan de reacción, capacitación y revisión.\n- Para muchos productos con corridas cortas, usa gráficas de **desviación del objetivo** o **estandarizadas**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "ARL",
+     "enunciado": "¿Qué mide la longitud media de corrida (ARL)?",
+     "opciones": [
+      "El número promedio de puntos hasta que aparece una señal",
+      "La longitud de la gráfica en centímetros",
+      "El número de lotes por día",
+      "La duración del lote"
+     ],
+     "correcta": 0,
+     "explicacion": "ARL₀ mide falsas alarmas en un proceso estable; ARL₁, la rapidez de detección de un cambio.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Shewhart",
+     "enunciado": "¿En cuántos puntos promedio detecta una gráfica de individuales de Shewhart un cambio de 1σ en la media (solo con la regla de un punto fuera)?",
+     "opciones": [
+      "Unos 44",
+      "Unos 2",
+      "Unos 370",
+      "Inmediatamente"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso se usan CUSUM o EWMA para cambios pequeños.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "CUSUM",
+     "enunciado": "Para detectar un cambio de 1σ con una CUSUM tabular, ¿qué valor de K se usa típicamente?",
+     "opciones": [
+      "0.5σ",
+      "1σ",
+      "3σ",
+      "5σ"
+     ],
+     "correcta": 0,
+     "explicacion": "K es la mitad del cambio que se quiere detectar.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "CUSUM",
+     "enunciado": "¿Qué ventaja práctica adicional tiene la CUSUM para la investigación?",
+     "opciones": [
+      "Indica cuándo empezó el cambio: el último punto en que la suma estaba en cero",
+      "Elimina la necesidad de investigar",
+      "Funciona sin datos",
+      "Detecta solo cambios grandes"
+     ],
+     "correcta": 0,
+     "explicacion": "Saber cuándo empezó facilita encontrar qué cambió.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "EWMA",
+     "enunciado": "En una EWMA, ¿qué efecto tiene un λ pequeño (por ejemplo, 0.1)?",
+     "opciones": [
+      "Da más memoria al promedio y aumenta la sensibilidad a cambios pequeños",
+      "La convierte en una gráfica de individuales",
+      "La hace más sensible a cambios grandes súbitos",
+      "Elimina los límites"
+     ],
+     "correcta": 0,
+     "explicacion": "Con λ = 1 la EWMA equivale a una gráfica de individuales.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "EWMA",
+     "enunciado": "Con λ = 0.2 y L = 3, ¿a qué distancia de la línea central quedan los límites estabilizados de la EWMA?",
+     "opciones": [
+      "± 1.0σ",
+      "± 3σ",
+      "± 0.2σ",
+      "± 2σ"
+     ],
+     "correcta": 0,
+     "explicacion": "3σ × √(0.2/1.8) = 3σ × 0.333 = 1.0σ.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Combinación",
+     "enunciado": "¿Qué combinación de gráficas es una práctica recomendada?",
+     "opciones": [
+      "Shewhart para cambios grandes junto con CUSUM o EWMA para cambios pequeños",
+      "Solo CUSUM, sin Shewhart",
+      "Solo gráficas de atributos",
+      "Ninguna gráfica"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada una cubre un tipo de cambio.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Autocorrelación",
+     "enunciado": "¿Qué efecto tiene la autocorrelación positiva sobre una gráfica I-MR?",
+     "opciones": [
+      "El rango móvil subestima la variación, los límites salen estrechos y hay muchas falsas alarmas",
+      "Los límites salen demasiado amplios",
+      "No tiene efecto",
+      "Elimina las falsas alarmas"
+     ],
+     "correcta": 0,
+     "explicacion": "Los valores consecutivos se parecen más de lo que se parecerían si fueran independientes.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Autocorrelación",
+     "enunciado": "¿Cuál es una forma sencilla de reducir la autocorrelación en mediciones en línea tomadas cada minuto?",
+     "opciones": [
+      "Muestrear con menos frecuencia para que los datos sean aproximadamente independientes",
+      "Medir cada segundo",
+      "Eliminar los datos altos",
+      "Usar límites más estrechos"
+     ],
+     "correcta": 0,
+     "explicacion": "También se puede modelar la autocorrelación y graficar los residuos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Corridas cortas",
+     "enunciado": "Una planta fabrica 40 productos distintos en el mismo equipo, cada uno pocas veces al mes. ¿Qué gráfica conviene?",
+     "opciones": [
+      "Gráfica de desviación del objetivo o estandarizada, agrupando productos con proceso similar",
+      "Una gráfica X̄-R por producto",
+      "Ninguna gráfica",
+      "Una gráfica p por producto"
+     ],
+     "correcta": 0,
+     "explicacion": "Así se acumulan suficientes datos en una sola gráfica.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Implementación",
+     "enunciado": "¿Qué debe verificarse antes de implementar una gráfica de control?",
+     "opciones": [
+      "Que el sistema de medición sea adecuado",
+      "Que el proceso nunca haya tenido problemas",
+      "Que haya un software caro",
+      "Que la especificación sea amplia"
+     ],
+     "correcta": 0,
+     "explicacion": "Si el ruido del método domina, la gráfica vigila el laboratorio, no el proceso.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PCC",
+     "enunciado": "¿Qué aporta una gráfica de control a un PCC con límite crítico medible?",
+     "opciones": [
+      "Detecta derivas antes de que se exceda el límite crítico",
+      "Sustituye el límite crítico",
+      "Elimina la necesidad de monitoreo",
+      "Permite liberar producto fuera de límite"
+     ],
+     "correcta": 0,
+     "explicacion": "Complementa el monitoreo contra el límite crítico con información de tendencia.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "CUSUM",
+     "enunciado": "Objetivo μ₀ = 15.00, σ = 0.10, K = 0.05, H = 0.50. Calcula C⁺ para los datos 15.08, 15.12, 15.04, 15.10, 15.09, 15.11 y di si hay señal.",
+     "respuesta_modelo": "Se resta μ₀ + K = 15.05 a cada dato y se acumula con mínimo cero: 15.08 − 15.05 = 0.03 → C⁺ = 0.03; 15.12 → 0.07 + 0.03 = 0.10; 15.04 → −0.01 + 0.10 = 0.09; 15.10 → 0.05 + 0.09 = 0.14; 15.09 → 0.04 + 0.14 = 0.18; 15.11 → 0.06 + 0.18 = 0.24. C⁺ = 0.24 < H = 0.50: todavía no hay señal, pero la suma crece de forma sostenida; si continúa, la señal llegará en pocos puntos, mientras que ninguno de estos datos saldría de los límites de Shewhart (15.30).",
+     "puntos_clave": [
+      "Uso de μ₀ + K = 15.05",
+      "Acumulación correcta con mínimo cero",
+      "C⁺ final ≈ 0.24",
+      "Comparación con H y con Shewhart"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Autocorrelación",
+     "enunciado": "Una gráfica I-MR del pH de un tanque pulmón, con lecturas cada 10 minutos, genera muchas alarmas y los operadores la ignoran. Explica la causa probable y propone soluciones.",
+     "respuesta_modelo": "Un tanque pulmón mezcla producto y tiene inercia: cada lectura se parece mucho a la anterior (autocorrelación positiva). El rango móvil es pequeño, los límites salen demasiado estrechos y cualquier deriva lenta normal genera alarmas; los operadores aprenden a ignorarlas, lo que destruye la utilidad de la gráfica. Soluciones: comprobar la autocorrelación con una gráfica de autocorrelación; muestrear con menos frecuencia (por ejemplo, cada dos horas o una vez por lote de salida); o modelar la serie y graficar residuos; o usar una EWMA con límites adecuados. Además, revisar si lo que interesa vigilar es el pH del producto final y no el del tanque intermedio.",
+     "puntos_clave": [
+      "Identifica autocorrelación por inercia",
+      "Explica límites estrechos y falsas alarmas",
+      "Consecuencia sobre la credibilidad",
+      "Soluciones concretas"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Implementación",
+     "enunciado": "Propón un plan para implementar CEP en la línea de un sanitizante sin enjuague, indicando qué variables vigilarías y con qué gráficas.",
+     "respuesta_modelo": "Variables: concentración de activo por lote (característica crítica de inocuidad y PCC), pH o estabilizante por lote, y peso neto en el envasado. Gráficas: I-MR más EWMA para la concentración por lote (detecta cambios grandes y derivas pequeñas antes del límite crítico); I-MR para el pH; X̄-R con subgrupos de 5 envases consecutivos por hora por boquilla para el peso neto; gráfica p para defectos de cierre si se inspeccionan muestras grandes. Pasos: verificar el sistema de medición (R&R del método de titulación y de la báscula), fase I con 25 lotes, plan de reacción escrito, capacitación a operadores y supervisores, captura automática desde el sistema del laboratorio y revisión semanal en la reunión de producción.",
+     "puntos_clave": [
+      "Variables críticas justificadas",
+      "Gráficas adecuadas a cada tipo de dato",
+      "Verificación de medición y fase I",
+      "Plan de reacción, capacitación y revisión"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
