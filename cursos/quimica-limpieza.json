@@ -1413,6 +1413,632 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "8",
+   "titulo": "Cinética de la desinfección",
+   "texto": "## De la química a la microbiología\nHasta ahora el objetivo era quitar suciedad. A partir de este capítulo el objetivo es otro: **reducir los microorganismos** que quedan sobre una superficie ya limpia a un nivel que no represente riesgo. Para hacerlo con criterio no basta con conocer los productos; hay que entender **cómo mueren los microorganismos** frente a un biocida, qué tan rápido, y qué condiciones aceleran o frenan ese proceso.\n\nEste capítulo es la base cuantitativa de los siguientes, donde verás cada familia de desinfectantes por separado.\n\n## Limpiar, sanitizar, desinfectar y esterilizar\nLos términos se usan como sinónimos en planta, pero tienen significados distintos, y en el lenguaje regulatorio de Estados Unidos (que rige muchas de las etiquetas que vas a ver) están definidos con precisión:\n\n- **Limpieza**: remoción de suciedad. Reduce microorganismos de forma indirecta, al quitar el sustrato y parte de la población, pero no es un tratamiento antimicrobiano.\n- **Sanitización** de superficies en contacto con alimentos: reducción de la población microbiana a niveles considerados seguros. El estándar regulatorio de la EPA para un sanitizante de superficies en contacto con alimentos, en el método oficial de prueba para sanitizantes (AOAC 960.09), es una **reducción del 99.999 % (5 logaritmos) en 30 segundos** frente a organismos de prueba como *Staphylococcus aureus* y *Escherichia coli*.\n- **Desinfección**: destrucción o inactivación irreversible de los microorganismos especificados en la etiqueta (bacterias vegetativas, hongos, ciertos virus) en superficies duras, con métodos de prueba más exigentes en tiempo y carga (por ejemplo, el método de dilución de uso de la AOAC). No necesariamente elimina esporas.\n- **Esterilización**: eliminación de toda forma de vida microbiana, incluidas las esporas. En la industria de alimentos se aplica a procesos térmicos y a ciertos envases, no a la limpieza de superficies.\n\nEn Europa la lógica es parecida pero con otras normas (las de la serie EN del comité CEN/TC 216), que verás en el último capítulo.\n\nLo importante: **un sanitizante y un desinfectante no son lo mismo**, y la etiqueta registrada dice qué afirmación está probada, contra qué organismos, a qué concentración, con qué tiempo de contacto y en qué condiciones.\n\n## La muerte microbiana es exponencial\nCuando se expone una población de microorganismos a un biocida en condiciones constantes, no mueren todos al mismo tiempo: en cada intervalo muere una **fracción constante** de los sobrevivientes. Es una cinética de **primer orden**, descrita por la ley de Chick (1908):\n\nln(N/N₀) = −k·t\n\ndonde N₀ es la población inicial, N la población al tiempo t y k la constante de velocidad. En logaritmos decimales, la gráfica de log N contra el tiempo es una **recta descendente**.\n\n### Reducción logarítmica\nPor esa forma exponencial, la eficacia se expresa en **reducciones logarítmicas**:\n\n| Reducción | Porcentaje eliminado | Sobrevivientes de 1,000,000 |\n|---|---|---|\n| 1 log | 90 % | 100,000 |\n| 2 log | 99 % | 10,000 |\n| 3 log | 99.9 % | 1,000 |\n| 4 log | 99.99 % | 100 |\n| 5 log | 99.999 % | 10 |\n| 6 log | 99.9999 % | 1 |\n\nFíjate en lo que dice la tabla: un \"99.9 % de eficacia\", que suena muy alto, deja **mil sobrevivientes** de cada millón. En una superficie muy contaminada, eso puede ser mucho.\n\n### El valor D\nEl **valor D** es el tiempo necesario para reducir la población en un logaritmo (90 %) en condiciones definidas de concentración y temperatura. Si un desinfectante tiene un valor D de 0.5 minutos contra cierto organismo, lograr 5 logaritmos de reducción requiere 2.5 minutos.\n\nEl valor D viene de la microbiología de procesos térmicos, pero el concepto es útil para cualquier biocida: hace evidente que el **tiempo de contacto** no es un detalle.\n\n### La consecuencia más importante\nComo la muerte es exponencial, la población final depende de la **población inicial**. Con el mismo tratamiento de 5 logaritmos:\n\n- Una superficie con 10³ microorganismos por cm² queda, en promedio, con 0.01 por cm².\n- Una superficie con 10⁸ por cm² (por ejemplo, con residuos o biopelícula) queda con 10³ por cm².\n\nPor eso **se limpia antes de desinfectar**: la limpieza baja la carga inicial varios logaritmos y elimina la materia orgánica que protege y consume al biocida. Un desinfectante no compensa una mala limpieza.\n\n## Concentración y tiempo: el modelo de Chick-Watson\nWatson añadió el efecto de la concentración del biocida:\n\nCⁿ · t = constante\n\ndonde C es la concentración, t el tiempo para lograr cierta reducción y n el **coeficiente de dilución**, característico de cada biocida.\n\n- Si **n = 1**, duplicar la concentración reduce el tiempo a la mitad: concentración y tiempo son intercambiables. A esto se refiere el concepto **CT** (concentración × tiempo), muy usado en desinfección de agua con cloro.\n- Si **n > 1**, la concentración tiene un efecto desproporcionado: diluir un poco el producto alarga mucho el tiempo necesario. Por ejemplo, con n = 2, usar la mitad de concentración exige **cuatro veces** más tiempo. Algunos biocidas, como ciertos fenoles y alcoholes, tienen exponentes altos: por debajo de cierta concentración prácticamente dejan de funcionar.\n- Si **n < 1**, el tiempo pesa más que la concentración.\n\nLección práctica: **una dilución \"un poco\" mayor a la de la etiqueta puede tener consecuencias mucho mayores de lo que parece**, dependiendo del biocida. Por eso las concentraciones de uso se verifican con kits de prueba en el punto de aplicación.\n\n## Temperatura\nLa temperatura acelera la acción de casi todos los biocidas: como regla general, la velocidad aumenta varias veces con cada 10 °C. Pero:\n\n- Los oxidantes se descomponen más rápido en caliente.\n- Algunos productos se evaporan (alcoholes) o pierden estabilidad.\n- La corrosión aumenta.\n\nMuchas etiquetas especifican un rango de temperatura. Un desinfectante validado a 20 °C puede no cumplir su afirmación a 5 °C en una cámara fría: en ambientes refrigerados se necesitan productos y tiempos probados a esa temperatura.\n\n## Cuando la recta no es recta\nEn la práctica las curvas de supervivencia se desvían de la recta ideal:\n\n- **Hombro inicial**: al principio la muerte es lenta, porque el biocida tarda en penetrar o porque los microorganismos están agrupados y hay que \"dañar\" varios blancos.\n- **Cola**: al final quedan sobrevivientes que mueren mucho más lento. Puede deberse a una subpoblación más resistente, a microorganismos protegidos dentro de agregados, de grietas o de **biopelículas**, o a que el biocida se agotó.\n\nLa cola es la más preocupante: significa que alargar el tiempo ya no sirve y que la solución es **retirar la protección** (limpiar mejor, eliminar la biopelícula) o cambiar de agente.\n\n## Factores que reducen la eficacia\n1. **Materia orgánica**. Proteínas, grasas y azúcares protegen a los microorganismos y, en el caso de los oxidantes, **consumen** el biocida. Esta es la causa más común de fallas de desinfección.\n2. **pH**. Muchos biocidas tienen una especie activa que depende del pH: el cloro (ácido hipocloroso frente a hipoclorito), el ácido peracético, los aniónicos ácidos. Un pH fuera de rango puede reducir la eficacia de forma drástica.\n3. **Dureza del agua**. Afecta a cuaternarios y a algunos ácidos.\n4. **Residuos de otros productos**. Un detergente aniónico inactiva a un cuaternario; un álcali residual sube el pH de un desinfectante ácido.\n5. **Superficie**. Rugosidad, grietas y materiales porosos protegen a los microorganismos.\n6. **Tipo de microorganismo**. No todos son igual de susceptibles.\n\n## Jerarquía de resistencia\nLos microorganismos tienen distinta resistencia intrínseca a los biocidas. De mayor a menor resistencia, de forma aproximada:\n\n1. Priones\n2. **Esporas bacterianas** (*Bacillus*, *Clostridium*)\n3. Micobacterias\n4. Virus pequeños sin envoltura (como norovirus)\n5. Hongos y sus esporas\n6. **Bacterias vegetativas** (*Listeria*, *Salmonella*, *E. coli*, *Staphylococcus*)\n7. Virus con envoltura lipídica\n\nLa mayoría de los sanitizantes de uso diario en planta están probados contra bacterias vegetativas. Si el riesgo de tu proceso o de tu cliente incluye esporas, mohos o virus sin envoltura, hay que elegir productos y condiciones probados contra ellos, no suponer que el sanitizante de siempre los cubre.\n\n## Resistencia y rotación de desinfectantes\nEs común oír que hay que \"rotar desinfectantes para que las bacterias no se hagan resistentes\". La evidencia es más matizada:\n\n- La resistencia adquirida en sentido estricto, como la que ocurre con antibióticos, es poco relevante para los oxidantes (cloro, peracético), que atacan muchos blancos a la vez.\n- Sí se ha documentado **tolerancia** reducida a concentraciones subletales de algunos biocidas de blanco más específico (como los cuaternarios), sobre todo cuando se usan de forma continua por debajo de la dosis efectiva.\n- La causa más frecuente de \"resistencia\" en planta es en realidad una falla de aplicación: mala limpieza, biopelículas, concentración baja o tiempo insuficiente.\n\nPor eso una estrategia razonable es usar siempre la **concentración y el tiempo correctos**, controlar la limpieza y, cuando el riesgo lo justifica, incluir de forma periódica un agente de **mecanismo distinto** o de mayor espectro (por ejemplo, un oxidante o un esporicida) en lugar de una rotación automática sin fundamento.\n\n## Ideas que debes llevarte\n- **Sanitizar** y **desinfectar** son afirmaciones distintas, con métodos de prueba distintos; la etiqueta dice cuál está probada.\n- La muerte microbiana es **exponencial**: se mide en reducciones logarítmicas, y \"99.9 %\" deja mil de cada millón.\n- El **valor D** y el modelo **Cⁿ·t** muestran que el tiempo y la concentración no son detalles; con exponentes altos, diluir un poco puede arruinar la desinfección.\n- La población final depende de la inicial: **se limpia antes de desinfectar**.\n- Materia orgánica, pH, dureza, residuos, superficie y tipo de microorganismo modifican la eficacia.\n- Las colas de las curvas indican protección (biopelícula, agregados): se resuelven quitando la protección, no alargando el tiempo.\n- La mayoría de los problemas de \"resistencia\" en planta son fallas de aplicación.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "reducción logarítmica",
+     "enunciado": "Un proveedor anuncia que su desinfectante 'elimina el 99.9 % de las bacterias'. Si la superficie tiene 10⁶ UFC, ¿cuántas quedan?",
+     "opciones": [
+      "1,000 UFC (3 logaritmos de reducción)",
+      "10 UFC",
+      "1 UFC",
+      "100 UFC"
+     ],
+     "correcta": 0,
+     "explicacion": "99.9 % equivale a 3 log: de 10⁶ quedan 10³.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "sanitizante de contacto con alimentos",
+     "enunciado": "¿Cuál es el criterio de la EPA para un sanitizante de superficies en contacto con alimentos en el método oficial de prueba?",
+     "opciones": [
+      "Reducción de 5 logaritmos (99.999 %) en 30 segundos",
+      "Reducción de 3 logaritmos en 10 minutos",
+      "Eliminación total de esporas en 1 minuto",
+      "Reducción de 2 logaritmos en 5 minutos"
+     ],
+     "correcta": 0,
+     "explicacion": "El estándar para sanitizantes de contacto con alimentos es 99.999 % en 30 s frente a organismos de prueba como S. aureus y E. coli.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "valor D",
+     "enunciado": "Un biocida tiene un valor D de 0.8 minutos contra un organismo. ¿Cuánto tiempo se necesita para una reducción de 5 log en esas condiciones?",
+     "opciones": [
+      "4 minutos",
+      "0.8 minutos",
+      "1.6 minutos",
+      "8 minutos"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada valor D es un log; 5 × 0.8 = 4 minutos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Chick-Watson",
+     "enunciado": "Para un biocida con coeficiente de dilución n = 2, ¿qué pasa con el tiempo necesario si la concentración se reduce a la mitad?",
+     "opciones": [
+      "Se multiplica por cuatro",
+      "Se duplica",
+      "Se mantiene igual",
+      "Se reduce a la mitad"
+     ],
+     "correcta": 0,
+     "explicacion": "Cⁿ·t = constante; con n = 2, (C/2)² = C²/4, así que t debe ser 4 veces mayor.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "carga inicial",
+     "enunciado": "Dos superficies reciben el mismo tratamiento de 5 log. Una tenía 10³ UFC/cm² y la otra 10⁸ UFC/cm². ¿Qué conclusión es correcta?",
+     "opciones": [
+      "La segunda queda con 10³ UFC/cm²; por eso hay que limpiar antes de desinfectar",
+      "Ambas quedan estériles",
+      "Ambas quedan con la misma población final",
+      "La primera queda con más sobrevivientes"
+     ],
+     "correcta": 0,
+     "explicacion": "La reducción es relativa a la población inicial; una carga alta deja muchos sobrevivientes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "materia orgánica",
+     "enunciado": "¿Cuál es la causa más común de fallas de desinfección en planta?",
+     "opciones": [
+      "Materia orgánica residual que protege a los microorganismos y consume el biocida",
+      "Resistencia genética adquirida de las bacterias",
+      "Exceso de concentración del desinfectante",
+      "Usar agua blanda"
+     ],
+     "correcta": 0,
+     "explicacion": "La mala limpieza deja residuos que protegen a los microorganismos y, con oxidantes, agotan el producto.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "colas de supervivencia",
+     "enunciado": "Una curva de supervivencia muestra una 'cola': después de cierto tiempo los sobrevivientes casi no disminuyen. ¿Qué indica con más probabilidad?",
+     "opciones": [
+      "Microorganismos protegidos en agregados, grietas o biopelícula, o un biocida agotado",
+      "Que el biocida está en concentración excesiva",
+      "Que la temperatura es demasiado alta",
+      "Que la curva es una recta perfecta"
+     ],
+     "correcta": 0,
+     "explicacion": "La cola sugiere protección o agotamiento; alargar el tiempo no lo resuelve, hay que quitar la protección.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "jerarquía de resistencia",
+     "enunciado": "¿Cuál de estos grupos es en general MÁS resistente a los biocidas?",
+     "opciones": [
+      "Esporas bacterianas",
+      "Bacterias vegetativas como Salmonella",
+      "Virus con envoltura lipídica",
+      "Hongos levaduriformes"
+     ],
+     "correcta": 0,
+     "explicacion": "Las esporas bacterianas están muy arriba en la jerarquía de resistencia; los virus con envoltura están al final.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "temperatura",
+     "enunciado": "Un desinfectante validado a 20 °C se usa en una cámara fría a 4 °C. ¿Qué es correcto?",
+     "opciones": [
+      "La eficacia declarada no está demostrada a 4 °C; se necesita un producto y tiempo probados a esa temperatura",
+      "Funcionará mejor porque el frío estabiliza el biocida",
+      "No hay diferencia; la temperatura no afecta a los biocidas",
+      "Basta con duplicar la dosis por encima de la etiqueta"
+     ],
+     "correcta": 0,
+     "explicacion": "La velocidad de inactivación baja con la temperatura; la etiqueta indica las condiciones probadas.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "rotación",
+     "enunciado": "¿Cuál es la postura más sustentada sobre la 'rotación de desinfectantes'?",
+     "opciones": [
+      "La mayoría de las fallas se deben a mala aplicación; conviene usar dosis y tiempo correctos y, si el riesgo lo justifica, incluir periódicamente un agente de mecanismo distinto",
+      "Rotar cada semana evita toda resistencia",
+      "Los oxidantes generan resistencia rápidamente",
+      "La rotación sustituye a la limpieza"
+     ],
+     "correcta": 0,
+     "explicacion": "La resistencia verdadera es poco relevante para oxidantes; la tolerancia se asocia a dosis subletales de algunos biocidas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "definiciones",
+     "enunciado": "¿Qué diferencia a la desinfección de la esterilización?",
+     "opciones": [
+      "La esterilización elimina toda forma de vida, incluidas las esporas; la desinfección inactiva los organismos especificados y no necesariamente esporas",
+      "Son sinónimos",
+      "La desinfección elimina esporas y la esterilización no",
+      "La esterilización solo aplica a virus"
+     ],
+     "correcta": 0,
+     "explicacion": "La esterilización incluye esporas; la desinfección se limita a los microorganismos declarados.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "cinética",
+     "enunciado": "Un operador diluye el desinfectante al doble 'porque es muy concentrado'. Explica con el modelo Cⁿ·t por qué esto puede ser mucho peor de lo que parece.",
+     "respuesta_modelo": "Con Cⁿ·t constante, reducir la concentración a la mitad obliga a multiplicar el tiempo por 2ⁿ. Si n = 1 el tiempo se duplica; si n es mayor, como en algunos biocidas, el tiempo crece mucho más (con n = 2, cuatro veces). Como el tiempo de contacto en planta no cambia, la reducción lograda cae drásticamente y puede quedar muy por debajo de lo requerido.",
+     "puntos_clave": [
+      "Cⁿ·t constante",
+      "el tiempo crece en 2ⁿ",
+      "con n alto el efecto es desproporcionado",
+      "el tiempo real no compensa"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "limpiar antes de desinfectar",
+     "enunciado": "Explica con números por qué un desinfectante no compensa una mala limpieza.",
+     "respuesta_modelo": "La desinfección reduce un número fijo de logaritmos. Si una superficie limpia tiene 10³ UFC/cm² y el tratamiento logra 5 log, queda con 0.01; si está sucia con 10⁸, queda con 10³. Además la suciedad protege a los microorganismos y consume el biocida, así que la reducción real es aún menor.",
+     "puntos_clave": [
+      "reducción logarítmica fija",
+      "dependencia de la carga inicial",
+      "la suciedad protege",
+      "la suciedad consume biocida"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "selección según riesgo",
+     "enunciado": "Un cliente produce un alimento donde preocupan las esporas de Bacillus. ¿Qué le dirías sobre su sanitizante cuaternario de uso diario?",
+     "respuesta_modelo": "Que los sanitizantes de uso diario suelen estar probados contra bacterias vegetativas y que las esporas están mucho más arriba en la jerarquía de resistencia; su cuaternario probablemente no las cubre. Necesita un agente esporicida probado (por ejemplo, ciertos oxidantes como el ácido peracético en condiciones específicas) aplicado según su etiqueta, además de controlar la limpieza.",
+     "puntos_clave": [
+      "cuaternarios contra vegetativas",
+      "esporas muy resistentes",
+      "usar esporicida probado",
+      "la etiqueta define el alcance"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "titulo": "Cloro y oxidantes clorados",
+   "texto": "## El desinfectante más usado y más malentendido\nEl cloro es barato, de amplio espectro, rápido y fácil de medir. Por eso es el desinfectante más usado del mundo, en agua potable, en alimentos y en superficies. También es uno de los más malentendidos: en planta se habla de \"ppm de cloro\" como si fuera una sola sustancia, cuando en realidad su eficacia depende de **en qué forma química está**, y esa forma depende del **pH**. Dos soluciones con exactamente las mismas ppm pueden tener eficacias que difieren decenas de veces.\n\n## Las especies del cloro en agua\nCuando se disuelve cloro gaseoso o hipoclorito en agua se establece un equilibrio:\n\nCl₂ + H₂O ⇌ HOCl + H⁺ + Cl⁻\n\nHOCl ⇌ H⁺ + OCl⁻\n\n- El **ácido hipocloroso (HOCl)** es una molécula neutra y pequeña que atraviesa con facilidad la pared y la membrana celular, y oxida enzimas y estructuras internas. Es la forma **más activa**.\n- El **ion hipoclorito (OCl⁻)**, por su carga, penetra mal en las células. Su poder desinfectante es muy inferior; en la literatura se cita con frecuencia que el HOCl es del orden de **80 a 100 veces** más eficaz.\n- El **cloro molecular (Cl₂)** solo existe en cantidad apreciable a pH muy bajo (menor de 3 o 4) y se escapa como gas: es tóxico y corrosivo.\n\nEl pKa del ácido hipocloroso es de alrededor de **7.5 a 25 °C**. La fracción de cloro libre que está como HOCl se calcula con:\n\nfracción HOCl = 1 / (1 + 10^(pH − 7.5))\n\n| pH | % como HOCl | % como OCl⁻ |\n|---|---|---|\n| 6.0 | 97 % | 3 % |\n| 7.0 | 76 % | 24 % |\n| 7.5 | 50 % | 50 % |\n| 8.0 | 24 % | 76 % |\n| 9.0 | 3 % | 97 % |\n| 10.0 | 0.3 % | 99.7 % |\n\nAhora regresa al capítulo 5: un alcalino clorado a pH 12 tiene prácticamente **todo** el cloro como hipoclorito. Es un excelente agente de limpieza de proteína, pero un desinfectante pobre. En cambio, una solución sanitizante de 100 ppm a pH 6.5 a 7 tiene la mayor parte como HOCl.\n\n### El compromiso del pH\nSi el HOCl es la forma activa, ¿por qué no trabajar siempre a pH 5? Porque:\n\n- Por debajo de pH 5 a 6 empieza a liberarse **cloro gaseoso**.\n- A pH bajo el cloro es **mucho más corrosivo** para el acero inoxidable.\n- El hipoclorito es **más estable** a pH alto; las soluciones ácidas pierden cloro más rápido.\n\nPor eso los sanitizantes clorados se usan típicamente en un rango de pH de **6 a 7.5** (o algo más alto, según la etiqueta), buscando un equilibrio entre eficacia, estabilidad y corrosión. Y por eso medir solo las ppm, sin el pH, da una idea incompleta.\n\n## Cloro libre, combinado y total\n- **Cloro libre disponible**: la suma de HOCl, OCl⁻ y Cl₂ disueltos.\n- **Cloro combinado**: el cloro que reaccionó con amoniaco o con compuestos nitrogenados (aminas, aminoácidos, proteína) formando **cloraminas**. Las cloraminas son oxidantes mucho más lentos y débiles como desinfectantes que el cloro libre, aunque más persistentes.\n- **Cloro total**: libre más combinado.\n\nEsto tiene una consecuencia práctica muy directa: en una solución con materia orgánica nitrogenada (agua de lavado de carne, de vegetales, de procesos con proteína), una parte del cloro que agregas se convierte en cloraminas. El kit de prueba puede mostrar \"cloro total\" aceptable mientras el cloro **libre**, el que realmente desinfecta rápido, es bajo. En control de planta se mide **cloro libre** con el método DPD (dietil-p-fenilendiamina), que distingue libre de total.\n\n## La demanda de cloro\nEl cloro es un oxidante poco selectivo: reacciona con todo lo que puede oxidar. La **demanda de cloro** es la cantidad que se consume en reaccionar con materia orgánica, hierro, manganeso, sulfuros y compuestos nitrogenados antes de que quede cloro libre residual.\n\nPor eso:\n\n- Una solución sanitizante aplicada sobre una superficie **sucia** pierde su cloro libre en segundos.\n- En aguas de lavado de producto, el cloro libre debe **monitorearse y reponerse** de forma continua, porque la carga orgánica lo consume constantemente.\n- El cloro sanitiza superficies **limpias**; no se debe usar para \"compensar\" la limpieza.\n\n## Estabilidad y subproductos\nEl hipoclorito de sodio comercial (típicamente del 5 al 13 % de cloro disponible) se descompone con el tiempo. Lo aceleran:\n\n- **Temperatura** alta de almacenamiento.\n- **Concentración** alta: las soluciones más concentradas se degradan más rápido.\n- **Luz**, sobre todo ultravioleta.\n- **Metales** (cobre, níquel, hierro) que catalizan la descomposición.\n- **pH** menor de alrededor de 11.\n\nUno de los productos de descomposición es el **clorato** (ClO₃⁻). El clorato es un contaminante de interés regulatorio en alimentos y agua: puede pasar al producto a través de agua tratada o de residuos de sanitizantes clorados, y varias autoridades han fijado límites. Gestionar bien el hipoclorito (rotación de inventario, almacenamiento fresco y oscuro, compras frecuentes en lugar de grandes volúmenes, diluciones recién preparadas) reduce la formación de clorato.\n\nCon materia orgánica, el cloro también forma **subproductos de desinfección** como los trihalometanos, motivo de regulación en agua potable.\n\n## Uso en superficies en contacto con alimentos\nEn Estados Unidos, las soluciones sanitizantes a base de hipoclorito para superficies en contacto con alimentos están reguladas en el **21 CFR 178.1010**, que permite su uso **sin enjuague** posterior a concentraciones que no excedan **200 ppm de cloro disponible**, siempre que la superficie se deje escurrir adecuadamente. La etiqueta registrada de cada producto define la concentración y el tiempo de contacto para su afirmación. Concentraciones mayores requieren enjuague con agua potable.\n\nRecomendaciones prácticas:\n\n- Preparar la solución con agua **limpia** y a la concentración de etiqueta.\n- Verificar **cloro libre** y **pH** con kit de prueba en el punto de uso.\n- Respetar el **tiempo de contacto** y no exceder la concentración para \"asegurar\": más cloro significa más corrosión y más riesgo de subproductos, no más seguridad.\n- Renovar las soluciones de cubetas o tinas cuando se ensucian; el cloro libre cae rápido.\n\n## Corrosión\nEl cloro es uno de los químicos más agresivos para el **acero inoxidable**. El riesgo de **picaduras** aumenta con:\n\n- Concentración alta.\n- pH bajo.\n- Temperatura alta.\n- Tiempo de contacto prolongado (dejar una superficie mojada con solución clorada toda la noche).\n- Acero de menor resistencia (el 304 es más vulnerable que el 316).\n\nPor eso no se debe usar cloro caliente sobre inoxidable, ni dejarlo secar sobre la superficie, ni concentrarlo de más. Lo verás con más detalle en el capítulo 13.\n\n## Dióxido de cloro: otra química\nEl **dióxido de cloro (ClO₂)** suele confundirse con el cloro, pero es una molécula distinta:\n\n- Es un **radical** gaseoso disuelto que no se hidroliza en agua como el cloro, así que su eficacia depende **mucho menos del pH**.\n- **No reacciona con amoniaco** para formar cloraminas y forma menos trihalometanos.\n- Es eficaz contra biopelículas y contra un espectro amplio de microorganismos.\n- Es inestable y no se puede almacenar concentrado: se **genera en sitio** a partir de clorito de sodio activado con ácido o con cloro.\n- Su principal subproducto es el **clorito** (ClO₂⁻), también sujeto a límites en agua.\n\nSe usa en tratamiento de agua, en aguas de lavado de productos agrícolas y en sistemas de distribución de agua de proceso.\n\n## Agua electrolizada y otras fuentes\nEl **agua electrolizada** se produce haciendo pasar corriente por una salmuera diluida; según el diseño del equipo genera soluciones de HOCl a pH cercano a neutro. Químicamente es lo mismo: cloro libre, con las mismas reglas de pH, demanda y corrosión, aunque con la ventaja de generarse en sitio y a la concentración de uso.\n\nLos compuestos orgánicos clorados de liberación lenta, como el **dicloroisocianurato de sodio** en tabletas, también liberan HOCl en agua y se usan donde se necesita un producto sólido y estable.\n\n## Seguridad\n- **Nunca mezclar cloro con ácidos**: libera cloro gaseoso.\n- **Nunca mezclar cloro con amoniaco** o productos amoniacales: forma cloraminas volátiles e irritantes, incluida la tricloramina.\n- El hipoclorito concentrado es corrosivo para la piel y los ojos.\n- Almacenar lejos de ácidos, en lugar fresco y protegido de la luz.\n\n## Ideas que debes llevarte\n- El cloro libre es una mezcla de **HOCl** (muy activo) y **OCl⁻** (poco activo); el **pH** decide la proporción, con pKa cercano a 7.5.\n- Las mismas ppm pueden tener eficacias muy distintas según el pH: mide siempre **cloro libre y pH**.\n- El cloro combinado (cloraminas) desinfecta mucho más lento; la materia orgánica nitrogenada lo genera.\n- La **demanda de cloro** de la suciedad consume el biocida: el cloro sanitiza superficies limpias.\n- El hipoclorito se degrada a **clorato**; un buen manejo del inventario lo reduce.\n- En superficies en contacto con alimentos, sin enjuague, el límite regulatorio en Estados Unidos es de **200 ppm** de cloro disponible.\n- El cloro es muy corrosivo para el inoxidable en concentración alta, pH bajo, calor y contacto prolongado.\n- El **dióxido de cloro** es otra química: menos dependiente del pH y sin cloraminas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Especies del cloro y pH",
+     "enunciado": "Una solución de cloro tiene 100 ppm de cloro libre a pH 8.5. Otra tiene las mismas 100 ppm a pH 6.5. ¿Qué esperas de su eficacia biocida?",
+     "opciones": [
+      "La de pH 6.5 es mucho más eficaz, porque la mayor parte del cloro está como HOCl",
+      "Son equivalentes, porque tienen las mismas ppm de cloro libre",
+      "La de pH 8.5 es más eficaz, porque el hipoclorito es más estable",
+      "La de pH 8.5 es más eficaz, porque el OCl⁻ penetra mejor la membrana por su carga"
+     ],
+     "correcta": 0,
+     "explicacion": "Con pKa ≈ 7.5, a pH 6.5 cerca del 90 % es HOCl; a pH 8.5 solo cerca del 9 %. El HOCl es del orden de 80 a 100 veces más eficaz que el OCl⁻, así que las mismas ppm no implican la misma eficacia.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especies del cloro y pH",
+     "enunciado": "Usando pKa = 7.5, ¿qué fracción aproximada del cloro libre está como HOCl a pH 8.0?",
+     "opciones": [
+      "24 %",
+      "50 %",
+      "76 %",
+      "97 %"
+     ],
+     "correcta": 0,
+     "explicacion": "fracción HOCl = 1/(1 + 10^(8.0 − 7.5)) = 1/(1 + 3.16) ≈ 0.24.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especies del cloro y pH",
+     "enunciado": "¿Por qué un alcalino clorado a pH 12 se considera buen limpiador de proteína pero mal desinfectante?",
+     "opciones": [
+      "Porque a pH 12 prácticamente todo el cloro está como OCl⁻, que oxida y ayuda a romper proteína pero penetra mal en las células",
+      "Porque a pH 12 el cloro se escapa como Cl₂ gaseoso",
+      "Porque a pH 12 el cloro se transforma completamente en clorato",
+      "Porque el álcali neutraliza el cloro y lo deja inactivo"
+     ],
+     "correcta": 0,
+     "explicacion": "A pH 12 la fracción de HOCl es del orden de 0.003 %. El hipoclorito sigue siendo oxidante y ayuda a degradar proteína, pero su acción biocida es pobre.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Compromiso de pH",
+     "enunciado": "Si el HOCl es la forma más activa, ¿por qué no se formulan los sanitizantes clorados a pH 4?",
+     "opciones": [
+      "Porque a pH bajo se libera cloro gaseoso, aumenta mucho la corrosión del inoxidable y la solución es menos estable",
+      "Porque a pH 4 todo el cloro se convierte en OCl⁻",
+      "Porque a pH 4 el cloro forma cloraminas con el agua",
+      "Porque la regulación prohíbe sanitizantes con pH menor de 6"
+     ],
+     "correcta": 0,
+     "explicacion": "El rango típico de 6 a 7.5 equilibra eficacia (mucho HOCl), estabilidad y corrosión. Por debajo de 5 a 6 empieza a aparecer Cl₂ y la agresividad hacia el acero crece.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cloro libre, combinado y total",
+     "enunciado": "En un tanque de agua de lavado de pollo, el kit marca 5 ppm de cloro total, pero el cloro libre por DPD es 0.3 ppm. ¿Qué está pasando?",
+     "opciones": [
+      "La mayor parte del cloro reaccionó con compuestos nitrogenados y está como cloraminas, que desinfectan mucho más lento",
+      "El kit está fallando, porque el cloro total siempre es igual al libre",
+      "El cloro se convirtió en dióxido de cloro",
+      "El pH es demasiado bajo y el cloro se volatilizó"
+     ],
+     "correcta": 0,
+     "explicacion": "Cloro total = libre + combinado. Con carga orgánica nitrogenada, el cloro forma cloraminas; el valor que importa para desinfección rápida es el cloro libre.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Demanda de cloro",
+     "enunciado": "¿Qué es la demanda de cloro?",
+     "opciones": [
+      "La cantidad de cloro que se consume reaccionando con materia orgánica, metales reducidos y compuestos nitrogenados antes de que quede cloro libre residual",
+      "La concentración mínima que exige la etiqueta del producto",
+      "La cantidad de cloro que se pierde por evaporación en una hora",
+      "La concentración de cloro necesaria para pasivar el acero inoxidable"
+     ],
+     "correcta": 0,
+     "explicacion": "El cloro es poco selectivo: oxida todo lo que puede. Solo lo que sobra después de satisfacer la demanda queda como residual activo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Demanda de cloro",
+     "enunciado": "Un operador aplica sanitizante clorado a 200 ppm sobre un equipo con residuos visibles de proteína \"para que de una vez limpie y desinfecte\". ¿Cuál es el problema principal?",
+     "opciones": [
+      "La suciedad consume el cloro libre en segundos y protege a los microorganismos; el cloro sanitiza superficies ya limpias",
+      "200 ppm es una concentración demasiado baja para cualquier superficie",
+      "El cloro no tiene ninguna reacción con la proteína",
+      "El problema solo es de costo, la eficacia es la misma"
+     ],
+     "correcta": 0,
+     "explicacion": "La demanda de cloro de la suciedad agota el biocida y la materia orgánica escuda a los microorganismos. La sanitización no sustituye a la limpieza.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estabilidad y clorato",
+     "enunciado": "¿Cuál de estas prácticas reduce la formación de clorato en el hipoclorito de sodio almacenado?",
+     "opciones": [
+      "Comprar con más frecuencia en volúmenes menores y almacenarlo en lugar fresco y protegido de la luz",
+      "Comprar el hipoclorito más concentrado posible para diluirlo después",
+      "Almacenarlo en tanques de cobre para evitar la luz",
+      "Bajar su pH a 7 para estabilizarlo"
+     ],
+     "correcta": 0,
+     "explicacion": "El hipoclorito se descompone más rápido con temperatura, concentración alta, luz, metales catalíticos y pH menor de 11. La rotación rápida y el almacenamiento fresco y oscuro reducen el clorato.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regulación",
+     "enunciado": "Según el 21 CFR 178.1010, ¿cuál es la concentración máxima de cloro disponible de una solución de hipoclorito para uso sin enjuague en superficies en contacto con alimentos?",
+     "opciones": [
+      "200 ppm",
+      "50 ppm",
+      "500 ppm",
+      "1000 ppm"
+     ],
+     "correcta": 0,
+     "explicacion": "El límite es de 200 ppm de cloro disponible para uso sin enjuague con escurrido adecuado. Por encima se requiere enjuague con agua potable, y siempre manda la etiqueta registrada.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Dióxido de cloro",
+     "enunciado": "¿Cuál es una diferencia química clave entre el dióxido de cloro y el cloro libre?",
+     "opciones": [
+      "El ClO₂ no se hidroliza en agua como el cloro, así que su eficacia depende mucho menos del pH, y no forma cloraminas con amoniaco",
+      "El ClO₂ es simplemente cloro a mayor concentración",
+      "El ClO₂ es estable y se vende concentrado en garrafas",
+      "El ClO₂ solo es eficaz a pH menor de 4"
+     ],
+     "correcta": 0,
+     "explicacion": "El ClO₂ es un radical disuelto distinto del sistema HOCl/OCl⁻; es menos sensible al pH, no forma cloraminas y se genera en sitio por su inestabilidad. Su subproducto principal es el clorito.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Seguridad",
+     "enunciado": "Un limpiador ácido para incrustaciones se aplica justo después de un alcalino clorado sin enjuague intermedio. ¿Cuál es el riesgo inmediato?",
+     "opciones": [
+      "Liberación de cloro gaseoso al bajar el pH del hipoclorito residual",
+      "Formación de clorato en la superficie",
+      "Neutralización sin riesgo, solo pérdida de eficacia",
+      "Formación de cloraminas por reacción con el ácido"
+     ],
+     "correcta": 0,
+     "explicacion": "Al acidificar hipoclorito, el equilibrio se desplaza hacia HOCl y luego Cl₂, que se libera como gas tóxico. Por eso entre etapas alcalinas cloradas y ácidas siempre debe haber enjuague.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Especies del cloro y pH",
+     "enunciado": "Explica a un supervisor de producción por qué no basta con verificar las ppm de cloro de la solución sanitizante y por qué también hay que medir el pH. Incluye un ejemplo numérico.",
+     "respuesta_modelo": "El cloro libre es una mezcla de ácido hipocloroso (HOCl), muy activo porque es neutro y penetra las células, e hipoclorito (OCl⁻), unas 80 a 100 veces menos eficaz. La proporción la decide el pH, con un pKa cercano a 7.5. Por ejemplo, 100 ppm a pH 6.5 tienen alrededor de 90 ppm como HOCl, mientras que 100 ppm a pH 8.5 tienen solo unas 9 ppm como HOCl. Con las mismas ppm, la segunda solución es mucho menos eficaz. Por eso se controla cloro libre y pH juntos, dentro del rango de la etiqueta.",
+     "puntos_clave": [
+      "Distingue HOCl (activo) de OCl⁻ (poco activo)",
+      "Menciona que el pH controla la proporción, pKa ≈ 7.5",
+      "Da un ejemplo numérico coherente",
+      "Concluye que hay que medir cloro libre y pH"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cloro libre, combinado y total",
+     "enunciado": "En una línea de lavado de vegetales con alta carga orgánica, el equipo de calidad registra solo cloro total. Explica el riesgo de esta práctica y qué cambiarías en el monitoreo.",
+     "respuesta_modelo": "El cloro total incluye el cloro combinado (cloraminas), que se forma cuando el cloro reacciona con compuestos nitrogenados de la materia orgánica. Las cloraminas desinfectan mucho más lento, de modo que se puede tener un cloro total aceptable con un cloro libre muy bajo, lo que permite la contaminación cruzada en el agua de lavado. Cambiaría a medir cloro libre con DPD, junto con el pH, con una frecuencia suficiente para la carga orgánica, con límites de control definidos y reposición continua o automática del cloro, además de renovar el agua cuando la carga orgánica sea excesiva.",
+     "puntos_clave": [
+      "Total = libre + combinado",
+      "Las cloraminas son desinfectantes mucho más lentos",
+      "El riesgo es la falsa seguridad y la contaminación cruzada",
+      "Propone medir cloro libre (DPD) y pH, con reposición y límites"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Corrosión",
+     "enunciado": "Enumera las condiciones que aumentan el riesgo de corrosión por picaduras del acero inoxidable con soluciones cloradas y propone tres reglas operativas para la planta.",
+     "respuesta_modelo": "El riesgo aumenta con concentración alta, pH bajo, temperatura alta, tiempo de contacto prolongado (dejar la superficie mojada o que la solución se seque y concentre) y con aceros menos resistentes como el 304 frente al 316. Reglas operativas: usar la concentración de etiqueta sin excederla; aplicar el cloro a temperatura ambiente, nunca caliente; no dejar soluciones cloradas en contacto durante horas ni que se sequen, escurrir o enjuagar según corresponda; y no acidificar soluciones cloradas.",
+     "puntos_clave": [
+      "Concentración, pH bajo, temperatura y tiempo de contacto",
+      "Menciona el tipo de acero (304 frente a 316)",
+      "Al menos tres reglas operativas concretas",
+      "Relaciona las reglas con las causas"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Dióxido de cloro",
+     "enunciado": "¿En qué situación preferirías dióxido de cloro sobre hipoclorito? Justifica químicamente y menciona una desventaja.",
+     "respuesta_modelo": "Lo preferiría en agua de proceso o de lavado con pH variable o alcalino y con carga de compuestos nitrogenados, o donde haya problemas de biopelícula en líneas de distribución. El ClO₂ no se hidroliza como el cloro, así que su eficacia depende poco del pH, no forma cloraminas con amoniaco y genera menos trihalometanos. Desventajas: es inestable y debe generarse en sitio, con equipo y control adicionales, y su subproducto, el clorito, está sujeto a límites.",
+     "puntos_clave": [
+      "Escenario con pH alto o variable, o carga nitrogenada, o biopelícula",
+      "Menor dependencia del pH",
+      "No forma cloraminas, menos subproductos",
+      "Desventaja: generación en sitio o subproducto clorito"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Ácido peracético y peróxido de hidrógeno",
+   "texto": "## Oxidantes que no dejan cloro\nEl **ácido peracético** (APA, o PAA por sus siglas en inglés) se ha convertido en el sanitizante de referencia en muchas plantas de alimentos y bebidas, sobre todo en sistemas CIP, en lácteos, en bebidas y en procesamiento de carne y aves. Sus atractivos son claros: actúa rápido, funciona en frío, tolera mejor la materia orgánica que el cloro, es eficaz en un intervalo amplio de pH ácido y se descompone en productos inocuos: ácido acético, agua y oxígeno. No deja residuos clorados ni forma trihalometanos ni clorato.\n\nPara usarlo bien hay que entender una idea que confunde a mucha gente: el ácido peracético **no se vende puro**. Siempre se vende como una **mezcla en equilibrio**.\n\n## El equilibrio de la mezcla\nEl ácido peracético se forma al hacer reaccionar ácido acético con peróxido de hidrógeno, con un ácido mineral como catalizador:\n\nCH₃COOH + H₂O₂ ⇌ CH₃COOOH + H₂O\n\nEs un equilibrio. Por eso, un producto comercial típico contiene al mismo tiempo **ácido peracético, peróxido de hidrógeno, ácido acético y agua**, además de un estabilizante. Las formulaciones comunes van del 5 al 15 % de APA, con cantidades de peróxido que pueden ser similares, mayores o menores según el producto. En la hoja técnica verás ambas concentraciones, y ambas importan:\n\n- El **APA** es el principal agente biocida a las concentraciones de uso.\n- El **peróxido** contribuye algo a la actividad, pero a las concentraciones de uso en sanitización actúa mucho más lento.\n- El **ácido acético** aporta el olor característico a vinagre y algo de acidez.\n\nCuando diluyes el concentrado a la dosis de uso, el equilibrio se desplaza lentamente hacia la hidrólisis del APA (porque hay mucha agua), así que **las soluciones diluidas pierden APA con el tiempo**. Por eso se preparan frescas o se monitorean.\n\n## Cómo mata el ácido peracético\nEl APA es un oxidante fuerte y, a la vez, una molécula pequeña y neutra (su pKa es de alrededor de **8.2**). En su forma no disociada:\n\n- Atraviesa con facilidad la pared celular.\n- Oxida grupos **sulfhidrilo (–SH)** y enlaces **disulfuro (S–S)** de proteínas y enzimas.\n- Daña la membrana y altera el transporte.\n- Genera especies reactivas que atacan múltiples blancos al mismo tiempo.\n\nComo ataca muchos blancos, es difícil que los microorganismos desarrollen resistencia específica, y tiene un espectro amplio: bacterias vegetativas, levaduras, mohos, virus y, a concentraciones y tiempos mayores, esporas bacterianas.\n\n### Efecto del pH\nIgual que con el cloro, la forma **no disociada** es la más activa. Con pKa cercano a 8.2, por debajo de pH 7 la mayor parte del APA está sin disociar, y por eso funciona bien en el intervalo ácido a neutro. A pH alcalino pierde actividad y además se descompone más rápido. Esta es una diferencia práctica importante: el APA **no es compatible con residuos alcalinos**. Si el enjuague después del alcalino es insuficiente, el álcali residual neutraliza y degrada el APA.\n\n## Ventajas frente al cloro\n- **Tolera mejor la materia orgánica.** No es que la materia orgánica no lo consuma, pero lo afecta mucho menos que al cloro, y no forma cloraminas.\n- **Funciona en frío.** Se usa con eficacia a temperaturas de refrigeración, lo que lo hace útil en cuartos fríos, en agua de enfriamiento de canales de aves y en CIP sanitizante sin calentar.\n- **Sin subproductos clorados.**\n- **Eficaz contra biopelículas** en mayor medida que muchos otros sanitizantes a dosis de uso, aunque ninguna química elimina por sí sola una biopelícula madura sin acción mecánica o limpieza previa.\n- **Descomposición a productos inocuos**: ácido acético, agua y oxígeno.\n\n## Desventajas y precauciones\n- **Olor penetrante e irritación.** Los vapores de ácido acético y APA irritan ojos y vías respiratorias. Requiere ventilación y control de exposición del personal.\n- **Corrosión.** A las concentraciones de uso es compatible con el acero inoxidable, pero ataca metales blandos como el **cobre, el latón, el acero al carbono y el aluminio**, y algunos elastómeros se degradan con el uso repetido. Los concentrados son corrosivos para muchos materiales.\n- **Oxidante fuerte en concentrado.** El producto concentrado es corrosivo, puede intensificar un fuego y se descompone liberando oxígeno: los envases deben tener **tapas ventiladas** y no se debe regresar producto a su envase original ni mezclarlo con materiales incompatibles (álcalis, reductores, metales, materia orgánica concentrada).\n- **Estabilidad.** Se degrada con temperatura alta, metales de transición (hierro, cobre, manganeso) y pH alto.\n- **Costo** más alto por litro que el hipoclorito.\n\n## Dosis y regulación\nLas concentraciones de uso para sanitizar superficies en contacto con alimentos suelen estar en el orden de **85 a 200 ppm de APA**, con tiempos de contacto de alrededor de un minuto o según etiqueta. En Estados Unidos, las mezclas de APA, peróxido de hidrógeno y ácido acético como sanitizantes sin enjuague están cubiertas en el **21 CFR 178.1010**, con límites de concentración para cada componente; y su uso directo en alimentos, como en el agua de lavado de canales de aves o en frutas y hortalizas, está regulado mediante aditivos alimentarios secundarios y notificaciones de contacto con alimentos. Lo que define la dosis legal y eficaz para tu producto es la **etiqueta registrada**.\n\n## Medición\nEn planta, el APA se mide con:\n\n- **Kits de titulación**: titulación secuencial que primero cuantifica el peróxido con permanganato o cerio y luego el APA con yodometría (tiosulfato). Es importante distinguir porque el peróxido interfiere.\n- **Tiras reactivas** específicas para APA, útiles para verificación rápida.\n- **Sensores en línea** en sistemas CIP o agua de proceso, que permiten dosificación automática.\n\nUn error común es medir con un método que no distingue APA de peróxido y sobreestimar el APA disponible.\n\n## Peróxido de hidrógeno\nEl peróxido de hidrógeno (H₂O₂) por sí solo es un oxidante con un potencial considerable, pero su acción biocida a temperatura ambiente y a concentraciones bajas es **lenta**. La razón es la **catalasa**: muchos microorganismos aerobios producen esta enzima, que descompone el peróxido en agua y oxígeno antes de que cause daño. Para ser eficaz, el peróxido necesita:\n\n- **Concentraciones altas**, del orden de porcentajes, no de ppm.\n- **Temperatura alta**: por ejemplo, en la esterilización de envases en llenado aséptico se usan soluciones de alrededor del **30 a 35 %** calientes, o peróxido vaporizado, con tiempos cortos. Después hay que eliminar el residuo hasta niveles muy bajos, y en Estados Unidos la FDA fija un residuo máximo en el envase terminado.\n- **Activación**: combinado con ultravioleta, con ozono o con iones metálicos genera radicales hidroxilo mucho más reactivos.\n\nEl **peróxido vaporizado** se usa también para descontaminar cuartos, salas limpias y equipos cerrados.\n\n## Otros perácidos y oxidantes\n- Existen mezclas con **ácido peroctanoico** (de cadena más larga), que mejoran la actividad contra ciertos microorganismos y levaduras.\n- El **ozono** es un oxidante muy potente que se genera en sitio, se usa en agua y en aire, y se descompone rápidamente a oxígeno, sin residuo; su limitante es la baja solubilidad, la vida media corta y la exposición del personal.\n\n## Cuándo elegir APA\nEl APA suele ser la mejor opción cuando:\n\n- Se necesita sanitizar en **frío**.\n- El sistema es **CIP** y se busca una etapa final sin enjuague que no deje residuos.\n- Hay preocupación por **subproductos clorados** o por clorato.\n- El proceso es sensible a residuos o sabores (por ejemplo, cerveza o lácteos), siempre que la dosis y el escurrido sean correctos.\n- Se busca mejor desempeño en presencia de algo de materia orgánica.\n\nY conviene reconsiderarlo cuando hay muchos metales blandos en contacto, cuando la ventilación es pobre o cuando los residuos alcalinos no se pueden eliminar bien.\n\n## Ideas que debes llevarte\n- El APA comercial es una **mezcla en equilibrio** de APA, peróxido, ácido acético y agua; ambas concentraciones, APA y peróxido, importan.\n- Las diluciones pierden APA con el tiempo: prepara frescas y **mide**.\n- Funciona mejor en pH ácido a neutro (pKa ≈ 8.2); es **incompatible con residuos alcalinos**.\n- Ventajas: rápido, eficaz en frío, más tolerante a la materia orgánica, sin subproductos clorados, descomposición inocua.\n- Desventajas: olor e irritación, corrosión de metales blandos, manejo de concentrado oxidante, costo.\n- El **peróxido** solo es lento a dosis bajas por la catalasa; funciona a concentraciones altas, en caliente o activado.\n- La medición debe **distinguir APA de peróxido**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Equilibrio APA",
+     "enunciado": "¿Por qué una hoja técnica de ácido peracético reporta también la concentración de peróxido de hidrógeno?",
+     "opciones": [
+      "Porque el producto es una mezcla en equilibrio de APA, peróxido, ácido acético y agua, y ambos oxidantes están presentes",
+      "Porque el peróxido es una impureza accidental del proceso",
+      "Porque el peróxido es el único biocida activo y el APA solo da olor",
+      "Porque la regulación exige declarar el peróxido aunque no esté presente"
+     ],
+     "correcta": 0,
+     "explicacion": "CH₃COOH + H₂O₂ ⇌ CH₃COOOH + H₂O. El producto comercial siempre contiene los cuatro componentes; el APA es el principal biocida a dosis de uso, pero el peróxido también está presente y afecta medición y regulación.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equilibrio APA",
+     "enunciado": "Preparas una solución de uso de APA a 150 ppm en la mañana y la usas hasta la tarde. ¿Qué esperas?",
+     "opciones": [
+      "Que el APA disminuya con el tiempo, porque en la dilución el equilibrio se desplaza hacia la hidrólisis",
+      "Que aumente, porque el peróxido sigue reaccionando con el ácido acético",
+      "Que se mantenga constante, porque el APA es estable diluido",
+      "Que se convierta en cloro libre"
+     ],
+     "correcta": 0,
+     "explicacion": "Con exceso de agua, el equilibrio favorece la hidrólisis del APA a ácido acético y peróxido; además hay descomposición. Las soluciones diluidas deben prepararse frescas o monitorearse.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH y APA",
+     "enunciado": "Con un pKa de alrededor de 8.2, ¿en qué condición es más activo el ácido peracético?",
+     "opciones": [
+      "En pH ácido a neutro, donde predomina la forma no disociada",
+      "En pH 11 a 12, donde predomina el anión peracetato",
+      "Su actividad no depende del pH",
+      "Solo a pH menor de 2"
+     ],
+     "correcta": 0,
+     "explicacion": "La forma no disociada, neutra, penetra mejor en las células. Por debajo de pH 7 es la forma dominante; a pH alcalino se disocia, pierde actividad y se descompone más rápido.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH y APA",
+     "enunciado": "Después de un lavado alcalino en CIP, el enjuague intermedio fue corto y el sanitizante APA da conteos altos en la verificación. ¿Cuál es una causa química probable?",
+     "opciones": [
+      "El álcali residual elevó el pH y degradó o neutralizó el APA",
+      "El APA reaccionó con el agua del enjuague formando cloraminas",
+      "El APA no funciona en sistemas cerrados",
+      "El enjuague corto dejó demasiado ácido en el sistema"
+     ],
+     "correcta": 0,
+     "explicacion": "El APA es incompatible con residuos alcalinos: a pH alto se disocia y se descompone. Un enjuague intermedio suficiente es parte del diseño del ciclo.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mecanismo",
+     "enunciado": "¿Qué blancos moleculares ataca principalmente el ácido peracético?",
+     "opciones": [
+      "Grupos sulfhidrilo y enlaces disulfuro de proteínas y enzimas, además de la membrana",
+      "Solo el ADN, por intercalación",
+      "Únicamente la pared de peptidoglucano",
+      "Los ribosomas, por unión específica como un antibiótico"
+     ],
+     "correcta": 0,
+     "explicacion": "Como oxidante, el APA oxida –SH y S–S, daña membranas y genera especies reactivas. Atacar múltiples blancos dificulta el desarrollo de resistencia específica.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ventajas",
+     "enunciado": "¿Cuál de estas afirmaciones sobre el APA frente al cloro es correcta?",
+     "opciones": [
+      "Es más tolerante a la materia orgánica, funciona en frío y no forma subproductos clorados",
+      "Es inmune a la materia orgánica y puede usarse sobre superficies sucias",
+      "Es más barato por litro y no tiene olor",
+      "Es compatible con cobre y latón a cualquier concentración"
+     ],
+     "correcta": 0,
+     "explicacion": "El APA tolera mejor la materia orgánica, pero no es inmune a ella; no sustituye la limpieza. Es más caro, tiene olor penetrante y ataca metales blandos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Compatibilidad de materiales",
+     "enunciado": "¿Qué material es más vulnerable a soluciones de APA en uso repetido?",
+     "opciones": [
+      "Cobre y latón",
+      "Acero inoxidable 316",
+      "Vidrio borosilicato",
+      "Polipropileno"
+     ],
+     "correcta": 0,
+     "explicacion": "A las concentraciones de uso, el APA es compatible con inoxidable, pero ataca metales blandos como cobre, latón, acero al carbono y aluminio, y degrada algunos elastómeros con el tiempo.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Manejo del concentrado",
+     "enunciado": "¿Por qué los envases de APA concentrado tienen tapas ventiladas?",
+     "opciones": [
+      "Porque el producto se descompone liberando oxígeno y podría presurizar un envase cerrado",
+      "Porque necesita oxígeno del aire para mantener el equilibrio",
+      "Para que el ácido acético se evapore y aumente la concentración de APA",
+      "Para evitar la formación de cloro gaseoso"
+     ],
+     "correcta": 0,
+     "explicacion": "La descomposición del APA y del peróxido genera O₂. Un envase sellado se puede presurizar. Por la misma razón no se regresa producto al envase original ni se mezcla con incompatibles.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peróxido de hidrógeno",
+     "enunciado": "¿Por qué el peróxido de hidrógeno a baja concentración y temperatura ambiente es un biocida lento?",
+     "opciones": [
+      "Porque muchos microorganismos producen catalasa, que lo descompone en agua y oxígeno antes de que cause daño",
+      "Porque el peróxido no es un oxidante",
+      "Porque el peróxido solo actúa a pH mayor de 12",
+      "Porque reacciona con el agua y forma ácido acético"
+     ],
+     "correcta": 0,
+     "explicacion": "La catalasa protege a muchos aerobios. Por eso el peróxido se usa a concentraciones altas, en caliente (esterilización de envases) o activado con UV, ozono o metales.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Medición",
+     "enunciado": "Un técnico mide APA con un método que responde a cualquier oxidante. El resultado será:",
+     "opciones": [
+      "Sobreestimado, porque el peróxido presente también responde",
+      "Subestimado, porque el peróxido consume el reactivo",
+      "Exacto, porque el peróxido no reacciona con ningún reactivo",
+      "Cero, porque el APA no es un oxidante"
+     ],
+     "correcta": 0,
+     "explicacion": "Los kits correctos titulan primero el peróxido (permanganato o cerio) y luego el APA (yodometría). Un método no específico suma ambos y sobreestima el APA disponible.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Selección",
+     "enunciado": "¿En cuál de estos escenarios el APA es claramente preferible al hipoclorito?",
+     "opciones": [
+      "Sanitización final sin enjuague de un CIP de cerveza a temperatura de bodega, donde se quieren evitar residuos y subproductos clorados",
+      "Desinfección de un área con muchas válvulas y tuberías de latón",
+      "Una sala sin ventilación donde el personal trabaja muchas horas",
+      "Una superficie con residuos alcalinos que no se pueden enjuagar"
+     ],
+     "correcta": 0,
+     "explicacion": "El APA brilla en frío, en CIP, sin enjuague y sin subproductos clorados. Es mala elección con metales blandos, ventilación pobre o residuos alcalinos.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Equilibrio APA",
+     "enunciado": "Explica qué contiene realmente un producto comercial de ácido peracético al 15 % y qué implicaciones prácticas tiene esa composición para la dosificación y el monitoreo.",
+     "respuesta_modelo": "Contiene una mezcla en equilibrio de ácido peracético, peróxido de hidrógeno, ácido acético, agua y un estabilizante, formada por la reacción reversible entre ácido acético y peróxido. Implicaciones: la dosis se calcula con base en el APA declarado, pero el peróxido también está presente y cuenta para la regulación; al diluir, el equilibrio favorece la hidrólisis y la solución pierde APA con el tiempo, por lo que debe prepararse fresca o medirse; y el método de medición debe distinguir APA de peróxido para no sobreestimar el activo.",
+     "puntos_clave": [
+      "Mezcla en equilibrio de APA, peróxido, ácido acético y agua",
+      "La dilución desplaza el equilibrio y el APA se pierde",
+      "Preparar fresco o monitorear",
+      "Medición que distinga APA de peróxido"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ventajas",
+     "enunciado": "Tu planta evalúa sustituir el hipoclorito por APA como sanitizante final en CIP. Elabora un análisis breve de ventajas, riesgos y condiciones que verificarías antes del cambio.",
+     "respuesta_modelo": "Ventajas: eficacia en frío, mejor tolerancia a materia orgánica, sin cloraminas, trihalometanos ni clorato, descomposición a ácido acético, agua y oxígeno, y menor corrosión del inoxidable frente al cloro mal manejado. Riesgos: olor e irritación del personal, ataque a metales blandos y algunos elastómeros, incompatibilidad con residuos alcalinos, manejo de un concentrado oxidante y mayor costo. Verificaría: inventario de materiales del circuito (juntas, metales blandos), suficiencia del enjuague intermedio y pH antes del sanitizante, sistema de medición de APA específico, ventilación y EPP, etiqueta registrada para la dosis y el uso sin enjuague, y una validación microbiológica antes y después del cambio.",
+     "puntos_clave": [
+      "Ventajas técnicas concretas",
+      "Riesgos de seguridad y materiales",
+      "Compatibilidad con residuos alcalinos",
+      "Plan de verificación y validación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Peróxido de hidrógeno",
+     "enunciado": "¿Por qué el peróxido de hidrógeno se usa caliente y concentrado en la esterilización de envases asépticos, pero no como sanitizante a 100 ppm en superficies?",
+     "respuesta_modelo": "A baja concentración y temperatura ambiente el peróxido actúa lento, en parte porque muchos microorganismos producen catalasa que lo descompone. Para lograr reducciones altas, incluidas esporas, en los segundos que permite una línea de llenado, se necesita concentración alta, del orden del 30 a 35 %, y temperatura alta, o forma vaporizada. Después el residuo debe eliminarse hasta niveles muy bajos. A 100 ppm sobre superficies no alcanzaría la cinética necesaria en tiempos prácticos; para eso se prefieren el APA u otros sanitizantes.",
+     "puntos_clave": [
+      "Cinética lenta a baja concentración",
+      "Papel de la catalasa",
+      "Necesidad de concentración y temperatura altas para esporas",
+      "Eliminación del residuo"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Mecanismo",
+     "enunciado": "Compara cómo el pH afecta la eficacia del cloro y del ácido peracético, y qué consecuencia tiene esto en la secuencia de un CIP.",
+     "respuesta_modelo": "En ambos casos la forma no disociada y neutra es la más activa porque penetra mejor las células. En el cloro, el pKa del HOCl es de alrededor de 7.5; en el APA, de alrededor de 8.2. Ambos pierden actividad a pH alcalino, y el APA además se descompone más rápido. En un CIP, después de la etapa alcalina debe haber un enjuague intermedio eficaz, y a veces una etapa ácida, para que el sanitizante trabaje en un pH donde predomine su forma activa; un residuo alcalino reduciría la eficacia.",
+     "puntos_clave": [
+      "Forma no disociada más activa en ambos",
+      "pKa aproximados: 7.5 y 8.2",
+      "Pérdida de actividad a pH alto",
+      "Enjuague intermedio o etapa ácida antes del sanitizante"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
