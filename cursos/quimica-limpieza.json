@@ -413,6 +413,1006 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "3",
+   "titulo": "Tensioactivos I: estructura y comportamiento en disolución",
+   "texto": "## La molécula con dos personalidades\nUn **tensioactivo** (surfactante) es una molécula **anfifílica**: tiene una parte que se lleva bien con el agua (la **cabeza hidrofílica**) y otra que la rechaza (la **cola hidrofóbica**, casi siempre una cadena de hidrocarburo de 8 a 18 carbonos). Esa doble afinidad hace que, en agua, las moléculas busquen las **interfases**: la superficie aire-agua, la interfase aceite-agua y la interfase sólido-agua. Ahí se acomodan con la cola fuera del agua y la cabeza dentro.\n\nTodo lo que hace un tensioactivo en limpieza (mojar, emulsificar, dispersar, hacer espuma) se deriva de ese comportamiento en las interfases. Entender la estructura te permite predecir qué tensioactivo sirve para cada suciedad y por qué una formulación falla.\n\n## Tensión superficial y mojado\nEl agua tiene una **tensión superficial** alta, alrededor de 72 mN/m a 25 °C, por los puentes de hidrógeno entre sus moléculas. Por eso forma gotas sobre superficies grasosas o plásticas en lugar de extenderse. Los tensioactivos, al ubicarse en la superficie, reducen esa tensión a valores típicos de 25 a 35 mN/m.\n\nEl resultado práctico es el **mojado**: la solución se extiende sobre la superficie, penetra en poros, grietas y en la propia capa de suciedad, y llega a la interfase entre la suciedad y el sustrato. Sin mojado no hay limpieza: la química no actúa donde no llega.\n\nEl mojado se mide con el **ángulo de contacto** de una gota sobre la superficie: un ángulo pequeño indica buen mojado. En equipos de plástico con baja energía superficial, elegir un tensioactivo con buen poder humectante marca la diferencia.\n\n## La concentración micelar crítica\nA concentraciones bajas, las moléculas de tensioactivo se acomodan en las interfases y algunas quedan sueltas en solución. Al aumentar la concentración, llega un punto en que las interfases están saturadas y las moléculas empiezan a agruparse en el seno del líquido formando **micelas**: agregados esféricos con las colas hacia adentro (un pequeño núcleo \"aceitoso\") y las cabezas hacia afuera, en contacto con el agua.\n\nEse punto es la **concentración micelar crítica (CMC)**. Por arriba de ella:\n\n- La tensión superficial casi no baja más.\n- Se forman micelas capaces de **solubilizar** sustancias aceitosas en su núcleo.\n- Agregar más tensioactivo produce más micelas, no más reducción de tensión.\n\nConsecuencias prácticas:\n\n- Un tensioactivo con **CMC baja** es eficiente: trabaja a concentraciones pequeñas.\n- La CMC baja al aumentar la longitud de la cadena hidrofóbica y cambia con la temperatura y los electrolitos. En los aniónicos, la sal y la dureza la **bajan**, pero la dureza además los puede precipitar.\n- Una solución de uso con tensioactivo por debajo de su CMC moja algo, pero solubiliza muy poco. Las diluciones excesivas \"para ahorrar\" pueden dejar el sistema tensioactivo por debajo de su zona útil.\n\n## Las cuatro familias\nLos tensioactivos se clasifican por la carga de su cabeza en solución.\n\n### Aniónicos\nLa cabeza tiene **carga negativa**. Son el corazón de la mayoría de los detergentes por su buen poder de limpieza y su costo.\n\n- **Alquilbencensulfonato lineal (LAS)**: el gran tensioactivo de los detergentes. Buena detergencia, espuma alta. Sensible a la dureza.\n- **Lauril sulfato de sodio (SLS)** y **lauril éter sulfato de sodio (SLES)**: espuma abundante; el SLES tolera mejor la dureza gracias a sus grupos etoxilados.\n- **Jabones** (carboxilatos de ácidos grasos): los más antiguos; precipitan con calcio y magnesio y en medio ácido se convierten en ácido graso insoluble.\n- **Alquil sulfonatos y olefin sulfonatos**: buena estabilidad en medios alcalinos y ácidos.\n\nPuntos clave: generan **espuma**, en general son **incompatibles con los catiónicos** (forman complejos insolubles al mezclarse) y su desempeño cae en agua dura si no hay secuestrante.\n\n### No iónicos\nLa cabeza **no tiene carga**; su hidrofilia viene de cadenas de óxido de etileno (polietoxilados) o de azúcares.\n\n- **Alcoholes grasos etoxilados**: los no iónicos más usados. Su comportamiento depende del número de moles de óxido de etileno (EO): pocos EO, más lipofílicos; muchos EO, más hidrofílicos.\n- **Copolímeros de óxido de etileno y óxido de propileno (EO/PO)**: tensioactivos de **baja espuma**, indispensables en CIP y en lavadoras.\n- **Alquil poliglucósidos (APG)**: derivados de azúcares y alcoholes grasos, de buena biodegradabilidad y tolerancia a álcali y electrolitos.\n\nPuntos clave: excelentes para **emulsificar grasas**, **tolerantes a la dureza**, compatibles con aniónicos y catiónicos, y la espuma se puede controlar con la estructura. Su talón de Aquiles es el **punto de nube**, que veremos abajo.\n\n### Catiónicos\nLa cabeza tiene **carga positiva**. El ejemplo central son los **cuaternarios de amonio** (como el cloruro de benzalconio o el cloruro de didecil dimetil amonio).\n\n- Su valor principal no es la detergencia sino la **actividad biocida**: se adsorben en las membranas bacterianas, cargadas negativamente, y las desestabilizan.\n- Se adsorben fuertemente sobre superficies con carga negativa (vidrio, muchas fibras, suciedad proteica) y pueden dejar una película.\n- **Se inactivan con aniónicos**: un residuo de detergente aniónico mal enjuagado puede neutralizar un desinfectante cuaternario aplicado después. Este es un error de secuencia muy común en planta.\n\n### Anfóteros (zwitteriónicos)\nTienen grupos con carga positiva y negativa; su carga neta depende del pH.\n\n- **Betaínas** (como la cocamidopropil betaína) y **óxidos de amina**.\n- Son suaves, compatibles con casi todo, estabilizan la espuma y mejoran la tolerancia de las formulaciones a electrolitos.\n- Los **óxidos de amina** se usan mucho en limpiadores espumantes porque toleran medios alcalinos, ácidos y clorados mejor que otros tensioactivos. En un limpiador alcalino clorado de espuma, buscar un tensioactivo estable al cloro es crítico, porque el hipoclorito oxida a muchos tensioactivos y la formulación pierde desempeño en el almacén.\n\n## El balance hidrófilo-lipófilo (HLB)\nPara los no iónicos, Griffin propuso en 1949 una escala de **0 a 20** que resume qué tan hidrofílica es la molécula. Valores típicos de aplicación:\n\n| HLB | Uso típico |\n|---|---|\n| 3 a 6 | Emulsionantes de agua en aceite |\n| 7 a 9 | Humectantes |\n| 8 a 16 | Emulsionantes de aceite en agua |\n| 13 a 15 | Detergentes |\n| 15 a 18 | Solubilizantes |\n\nEl HLB es una guía para seleccionar, no una ley. Sirve para entender por qué un etoxilado con pocos EO emulsifica bien aceites minerales en caliente y uno con muchos EO es mejor solubilizante y humectante.\n\n## Temperatura: punto de Krafft y punto de nube\nDos temperaturas críticas limitan el uso de los tensioactivos.\n\n### Punto de Krafft (aniónicos)\nPor debajo de cierta temperatura, la solubilidad de un tensioactivo iónico es menor que su CMC: no forma micelas y puede cristalizar. Es el **punto de Krafft**. Un aniónico de cadena larga puede funcionar bien a 40 °C y quedar \"inactivo\" en agua fría. Los etoxilados (como el SLES) tienen puntos de Krafft más bajos y trabajan mejor en frío.\n\n### Punto de nube (no iónicos)\nLos etoxilados se mantienen solubles porque las cadenas de óxido de etileno se hidratan con puentes de hidrógeno. Al subir la temperatura esa hidratación se pierde y, a cierta temperatura, el tensioactivo se separa formando una fase turbia: es el **punto de nube**.\n\n- Por arriba del punto de nube el tensioactivo **sale de la solución** y su eficacia cambia: a veces mejora la remoción de grasas (cerca del punto de nube el tensioactivo es más lipofílico) y la espuma disminuye, que es justo lo que se aprovecha en los tensioactivos de baja espuma para CIP.\n- Pero muy por arriba se separa en otra fase, no se enjuaga bien y puede dejar residuos.\n- El punto de nube **baja** con la presencia de electrolitos y álcali. Un no iónico con punto de nube de 60 °C en agua puede enturbiarse a 40 °C en una solución con sosa.\n\nPor eso la estabilidad de un limpiador se prueba a las temperaturas reales de uso y almacén, y por eso una formulación que se ve perfecta en el laboratorio puede separarse en la bodega de un cliente en verano.\n\n## Espuma: aliada o enemiga\nLa espuma se forma cuando el tensioactivo estabiliza películas delgadas de líquido alrededor de burbujas de aire.\n\n- **Aliada** en limpieza manual y en limpieza con espuma (sistemas de espuma en superficies abiertas): aumenta el tiempo de contacto en superficies verticales y permite ver dónde se aplicó el producto.\n- **Enemiga** en CIP, lavadoras de botellas y equipos con bombas: la espuma causa cavitación en las bombas, impide el contacto de la solución con la superficie, provoca falsas lecturas de nivel y retarda el drenado.\n\nPara sistemas recirculados se usan tensioactivos de baja espuma (EO/PO, no iónicos por arriba de su punto de nube) y, cuando hace falta, **antiespumantes**. La proteína del propio residuo puede generar espuma en CIP; por eso a veces el antiespumante se agrega al limpiador aunque la formulación base no espume.\n\n## Otros criterios de selección\n- **Estabilidad química**: en álcali fuerte, en ácido fuerte o con cloro. No todos los tensioactivos sobreviven en un limpiador de pH 13 o en uno de pH 1, ni en presencia de hipoclorito.\n- **Biodegradabilidad y ecotoxicidad**: los alquilbencensulfonatos ramificados de los años cincuenta generaban espuma persistente en ríos; se sustituyeron por el LAS lineal, biodegradable. Hoy las regulaciones y los clientes exigen biodegradabilidad.\n- **Enjuagabilidad y residuos**: en superficies que tocan alimento, el tensioactivo debe enjuagarse por completo. Algunos se adsorben y dejan película.\n- **Compatibilidad**: aniónicos con catiónicos no; cuidado con secuencias de producto en planta.\n\n## Ideas que debes llevarte\n- Un tensioactivo es una molécula anfifílica que se concentra en las interfases; de ahí vienen el mojado, la emulsificación y la espuma.\n- Por arriba de la **CMC** se forman micelas que solubilizan aceites; diluir de más deja al sistema fuera de su zona útil.\n- **Aniónicos**: detergencia y espuma, sensibles a la dureza. **No iónicos**: emulsificación de grasas, tolerantes a la dureza, limitados por el punto de nube. **Catiónicos**: biocidas, se inactivan con aniónicos. **Anfóteros**: versátiles y estables.\n- El **HLB** orienta la selección de no iónicos; el **punto de Krafft** y el **punto de nube** limitan el rango de temperatura.\n- La espuma se elige según el método de aplicación: alta para limpieza con espuma, baja para CIP.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "concentración micelar crítica",
+     "enunciado": "¿Qué ocurre al aumentar la concentración de un tensioactivo por arriba de su CMC?",
+     "opciones": [
+      "La tensión superficial casi no baja más y se forman más micelas capaces de solubilizar aceites",
+      "La tensión superficial sigue bajando en proporción directa",
+      "El tensioactivo precipita y deja de funcionar",
+      "Se pierde la capacidad de mojar superficies"
+     ],
+     "correcta": 0,
+     "explicacion": "Por arriba de la CMC la interfase está saturada; el tensioactivo adicional forma micelas que solubilizan sustancias aceitosas.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "aniónicos y catiónicos",
+     "enunciado": "Una planta lava con detergente aniónico y, sin enjuagar bien, aplica un desinfectante cuaternario. Los conteos microbiológicos salen altos. ¿Qué explicación química es más probable?",
+     "opciones": [
+      "El residuo aniónico forma complejos con el cuaternario catiónico y lo inactiva",
+      "El cuaternario reacciona con el agua dura y se vuelve más fuerte",
+      "El detergente aniónico es desinfectante y compite con el cuaternario",
+      "Los cuaternarios solo funcionan a pH ácido"
+     ],
+     "correcta": 0,
+     "explicacion": "Aniónicos y catiónicos forman complejos insolubles; el residuo de detergente neutraliza al cuaternario.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "punto de nube",
+     "enunciado": "Un limpiador alcalino con un no iónico se ve transparente en el laboratorio, pero en la bodega del cliente a 40 °C se separa en dos fases. ¿Qué explica el fenómeno?",
+     "opciones": [
+      "El punto de nube del no iónico bajó por el álcali y los electrolitos, y a 40 °C se separó de la solución",
+      "El tensioactivo se saponificó con la sosa",
+      "El punto de Krafft del no iónico es de 40 °C",
+      "La sosa precipitó como carbonato por el calor"
+     ],
+     "correcta": 0,
+     "explicacion": "Los electrolitos y el álcali bajan el punto de nube de los etoxilados; por arriba de él, el tensioactivo se separa.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "punto de Krafft",
+     "enunciado": "Un detergente con un aniónico de cadena larga limpia bien con agua tibia pero casi nada con agua fría. ¿Qué concepto lo explica?",
+     "opciones": [
+      "El punto de Krafft: por debajo de esa temperatura el tensioactivo no alcanza la CMC y no forma micelas",
+      "El punto de nube del aniónico",
+      "La hidrólisis del tensioactivo en frío",
+      "La dureza del agua aumenta en frío"
+     ],
+     "correcta": 0,
+     "explicacion": "Por debajo del punto de Krafft la solubilidad es menor que la CMC; el tensioactivo no forma micelas y puede cristalizar.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "espuma en CIP",
+     "enunciado": "¿Qué tipo de tensioactivo conviene en un limpiador para un sistema CIP recirculado con bombas?",
+     "opciones": [
+      "Un no iónico de baja espuma, como un copolímero EO/PO, que trabaje por arriba de su punto de nube",
+      "Un lauril éter sulfato de alta espuma",
+      "Un jabón de ácidos grasos",
+      "Una betaína espumante"
+     ],
+     "correcta": 0,
+     "explicacion": "La espuma causa cavitación y mala lectura de nivel en CIP; se usan tensioactivos de baja espuma y, si hace falta, antiespumantes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "HLB",
+     "enunciado": "Según la escala de HLB, ¿qué rango corresponde típicamente a los solubilizantes?",
+     "opciones": [
+      "15 a 18",
+      "3 a 6",
+      "7 a 9",
+      "8 a 10"
+     ],
+     "correcta": 0,
+     "explicacion": "HLB alto indica molécula muy hidrofílica: de 15 a 18 se usan como solubilizantes; de 3 a 6, emulsionantes de agua en aceite.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "mojado",
+     "enunciado": "¿Por qué el mojado es la primera condición para limpiar?",
+     "opciones": [
+      "Porque si la solución no se extiende y penetra en la suciedad, la química no llega a actuar sobre ella",
+      "Porque el mojado elimina por sí solo la grasa",
+      "Porque el mojado aumenta la temperatura de la superficie",
+      "Porque el mojado sustituye a la acción mecánica"
+     ],
+     "correcta": 0,
+     "explicacion": "Bajar la tensión superficial permite que la solución se extienda, penetre en poros y llegue a la interfase suciedad-sustrato.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "tensioactivos estables al cloro",
+     "enunciado": "En un limpiador alcalino clorado de espuma, ¿por qué se prefieren óxidos de amina o ciertos sulfonatos sobre muchos etoxilados?",
+     "opciones": [
+      "Porque son estables frente al hipoclorito; otros tensioactivos se oxidan y la formulación pierde cloro y desempeño",
+      "Porque generan menos espuma",
+      "Porque son catiónicos y desinfectan",
+      "Porque son más baratos que cualquier etoxilado"
+     ],
+     "correcta": 0,
+     "explicacion": "El hipoclorito oxida muchos tensioactivos; la estabilidad al cloro es un criterio de selección clave en esas formulaciones.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "no iónicos y dureza",
+     "enunciado": "¿Cuál es una ventaja de los no iónicos frente a los aniónicos en agua dura?",
+     "opciones": [
+      "No tienen carga, así que no precipitan con calcio y magnesio",
+      "Generan más espuma en agua dura",
+      "Son biocidas por naturaleza",
+      "Tienen punto de Krafft más alto"
+     ],
+     "correcta": 0,
+     "explicacion": "Al no tener carga no forman sales insolubles con los cationes de dureza.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "dilución excesiva",
+     "enunciado": "Para ahorrar, un operador diluye el detergente al doble de lo indicado. ¿Cuál es el riesgo técnico desde el punto de vista del tensioactivo?",
+     "opciones": [
+      "Que la concentración quede cerca o por debajo de la CMC y casi no se formen micelas para solubilizar la grasa",
+      "Que el tensioactivo se vuelva catiónico",
+      "Que la tensión superficial suba por encima de la del agua pura",
+      "Que el tensioactivo forme más espuma y limpie mejor"
+     ],
+     "correcta": 0,
+     "explicacion": "Por debajo de la CMC el tensioactivo moja algo pero solubiliza muy poco; el sistema queda fuera de su zona útil.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "biodegradabilidad",
+     "enunciado": "¿Por qué se sustituyeron los alquilbencensulfonatos ramificados por el LAS lineal?",
+     "opciones": [
+      "Los ramificados se biodegradaban mal y causaban espuma persistente en ríos",
+      "Los ramificados no generaban espuma",
+      "El LAS lineal es catiónico y desinfecta",
+      "Los ramificados eran incompatibles con la sosa"
+     ],
+     "correcta": 0,
+     "explicacion": "La cadena ramificada resistía la biodegradación; el LAS lineal se degrada y resolvió el problema de espuma ambiental.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "selección de tensioactivo",
+     "enunciado": "Un cliente necesita un limpiador para retirar grasa de una línea con equipos de polipropileno y agua dura de 350 ppm, aplicado con espuma en superficies verticales. ¿Qué sistema tensioactivo propondrías y por qué?",
+     "respuesta_modelo": "Un sistema con no iónicos etoxilados para emulsificar grasa y tolerar la dureza, combinado con un tensioactivo espumante estable (como un óxido de amina o un aniónico tolerante a la dureza como el SLES) para generar espuma que prolongue el contacto en superficies verticales, con buen poder humectante para el plástico de baja energía superficial, y secuestrante para la dureza.",
+     "puntos_clave": [
+      "no iónicos para grasa y dureza",
+      "componente espumante estable",
+      "buen humectante para plástico",
+      "secuestrante por la dureza"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "punto de nube",
+     "enunciado": "Explica qué es el punto de nube y cómo se aprovecha en los limpiadores de baja espuma para CIP.",
+     "respuesta_modelo": "Es la temperatura a la que un tensioactivo no iónico etoxilado pierde la hidratación de sus cadenas de óxido de etileno y se separa de la solución, que se enturbia. Cerca o por arriba de ese punto el tensioactivo genera poca espuma y es más lipofílico, lo que ayuda a la remoción de grasa; por eso se eligen tensioactivos cuyo punto de nube queda por debajo de la temperatura de trabajo del CIP, cuidando que no se separen tanto que dejen residuos.",
+     "puntos_clave": [
+      "pérdida de hidratación del óxido de etileno",
+      "separación de fase al subir la temperatura",
+      "baja espuma por arriba del punto de nube",
+      "el álcali y los electrolitos bajan el punto de nube"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "secuencia de productos",
+     "enunciado": "Explica por qué el orden y el enjuague entre un detergente aniónico y un desinfectante cuaternario son críticos.",
+     "respuesta_modelo": "El cuaternario es catiónico y el detergente aniónico tiene carga opuesta; al encontrarse forman complejos insolubles y el cuaternario se inactiva. Si no se enjuaga bien el detergente, el desinfectante pierde eficacia aunque se aplique a la concentración correcta. Por eso entre ambos debe haber un enjuague completo.",
+     "puntos_clave": [
+      "cargas opuestas",
+      "complejos insolubles",
+      "inactivación del cuaternario",
+      "enjuague intermedio obligatorio"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "titulo": "Tensioactivos II: cómo se desprende la suciedad",
+   "texto": "## De la molécula al mecanismo\nEn el capítulo anterior viste qué es un tensioactivo y cómo se comporta en solución. Ahora la pregunta es otra: **¿qué pasa físicamente en la superficie para que una capa de grasa se despegue del acero y se vaya con el enjuague?** La detergencia no es un solo fenómeno sino varios que ocurren a la vez: mojado, desplazamiento de la grasa, emulsificación, solubilización, dispersión de partículas y prevención de la redeposición. Cada uno depende de condiciones distintas, y entenderlos te permite saber qué ajustar cuando una limpieza \"casi\" funciona.\n\n## Etapa 1: mojado y penetración\nTodo empieza con que la solución **moje** la suciedad y el sustrato. Un tensioactivo baja la tensión superficial del agua y la tensión interfacial entre el agua y la grasa, de modo que la solución se extiende y penetra por los bordes de la capa de suciedad, por microgrietas y por los poros de la propia suciedad.\n\nEn suciedades secas o compactadas (polvo con grasa, residuos horneados) la penetración puede ser la etapa lenta. Ahí ayudan la temperatura, el tiempo de remojo y tensioactivos de buen poder humectante y molécula pequeña, que se difunden rápido.\n\n## Etapa 2: el mecanismo de \"enrollamiento\" (roll-up)\nPara la suciedad aceitosa líquida, el mecanismo central es el **enrollamiento**.\n\nImagina una gota de aceite sobre una superficie de acero, rodeada de solución de limpieza. La gota tiene un **ángulo de contacto** con la superficie que resulta del balance de tres tensiones interfaciales: sólido-aceite, sólido-agua y aceite-agua (la ecuación de Young).\n\nLos tensioactivos se adsorben en la interfase sólido-agua y en la interfase aceite-agua y **bajan esas tensiones**. El balance cambia: al sistema le resulta energéticamente más favorable que el agua moje el sólido y que el aceite se retire. La gota se va contrayendo, su ángulo de contacto aumenta (medido a través del aceite) hasta acercarse a 180°, y la gota termina tocando la superficie por un punto. En ese estado la más mínima acción mecánica (flujo, cepillado, la propia flotabilidad) la desprende.\n\nConsecuencias prácticas:\n\n- El enrollamiento funciona con **grasa líquida**. Si la grasa está sólida, por debajo de su punto de fusión, casi no ocurre. Por eso la temperatura es tan importante con grasas animales.\n- Funciona mejor sobre superficies **hidrofílicas** (acero limpio, vidrio), donde el agua \"quiere\" mojar el sólido. Sobre plásticos hidrofóbicos el desplazamiento es más difícil y se necesita más tensioactivo y más acción mecánica.\n- Si el enrollamiento es incompleto, la gota se divide: una parte se va y otra queda adherida. Esa fracción residual es la que se ve como película después de \"limpiar\".\n\n## Etapa 3: emulsificación\nLa grasa que se desprendió tiene que quedarse **suspendida** en la solución para irse con el enjuague. El tensioactivo forma una capa alrededor de las gotas de aceite y las estabiliza como **emulsión** de aceite en agua:\n\n- Los tensioactivos **iónicos** dan a las gotas una carga que hace que se repelan electrostáticamente.\n- Los **no iónicos** forman una barrera estérica con sus cadenas de óxido de etileno hidratadas.\n\nUna emulsión de limpieza no necesita ser estable por días, como una crema: basta con que dure el tiempo del ciclo y del enjuague. Pero si se rompe antes, la grasa vuelve a flotar y a depositarse en el equipo, especialmente en las zonas más frías.\n\nPara grasas saponificables el álcali ayuda doblemente: los jabones que se forman en la superficie de la grasa son ellos mismos tensioactivos y emulsifican el resto.\n\n## Etapa 4: solubilización micelar\nPor arriba de la CMC, las micelas pueden alojar moléculas aceitosas en su núcleo hidrofóbico. A diferencia de la emulsión, la **solubilización** produce una solución transparente y termodinámicamente estable. Su capacidad es limitada: cada micela aloja una cantidad pequeña de aceite. Por eso la solubilización es el mecanismo dominante para **películas delgadas y residuos aceitosos pequeños**, y la emulsificación para cantidades mayores.\n\nLos no iónicos son especialmente buenos solubilizantes, y su capacidad aumenta al acercarse a su punto de nube. Este es uno de los motivos por los que un limpiador con no iónicos rinde más cerca de cierta temperatura.\n\n## Etapa 5: suciedad particulada\nPolvo, hollín, residuos de harina o partículas minerales no se emulsifican: hay que **dispersarlas**. El mecanismo es:\n\n1. El tensioactivo y el álcali se adsorben sobre la partícula y sobre la superficie, dándoles **carga del mismo signo** (normalmente negativa a pH alto).\n2. La repulsión electrostática debilita la adhesión y, con acción mecánica, la partícula se desprende.\n3. Una vez en la solución, la misma carga evita que las partículas se agreguen y vuelvan a depositarse.\n\nAquí el **pH alto** es un aliado: la mayoría de las superficies y partículas se cargan negativamente en medio alcalino. Por eso los limpiadores alcalinos dispersan mejor los sólidos que los neutros.\n\n## Etapa 6: evitar la redeposición\nUna suciedad desprendida que vuelve a la superficie es un fracaso de limpieza aunque la solución haya trabajado. La **redeposición** ocurre cuando:\n\n- La solución se **satura** de suciedad (recirculación prolongada, soluciones de CIP reutilizadas sin control).\n- La emulsión se rompe por enfriamiento o por pérdida de tensioactivo.\n- La dureza del agua precipita tensioactivos y forma una nata que atrapa suciedad.\n- Hay zonas muertas donde la solución se estanca.\n\nPara evitarla las formulaciones incluyen **agentes antirredeposición**: polímeros como los **poliacrilatos** y la **carboximetilcelulosa**, que se adsorben sobre partículas y superficies y las mantienen separadas. Los secuestrantes también ayudan al impedir que la dureza forme precipitados que funcionen como \"pegamento\".\n\nEn la operación, la regla es **no sobreexplotar la solución**: controlar la concentración y la carga de suciedad en soluciones recirculadas, y drenar y reponer cuando la solución está saturada.\n\n## Espuma y antiespumantes\nLa espuma no limpia por sí misma, pero afecta a la limpieza.\n\n**Cuando la espuma ayuda**: en la limpieza con espuma de superficies abiertas (paredes, transportadores, exterior de equipos) una espuma estable mantiene la química en contacto con superficies verticales durante varios minutos y permite ver la cobertura. La calidad de la espuma importa: una espuma \"húmeda\" escurre rápido; una espuma \"seca\" se adhiere más pero contiene menos producto. El equipo generador de espuma y la formulación se ajustan juntos.\n\n**Cuando estorba**: en CIP, lavadoras de túnel y de botellas, máquinas de limpieza de cajas y cualquier sistema con bombas. Ahí se usan tensioactivos de baja espuma y **antiespumantes**:\n\n- **Siliconas** (polidimetilsiloxanos emulsionados): muy eficaces, pero pueden dejar residuos y afectar recubrimientos o procesos posteriores; su uso en contacto con alimento se evalúa caso por caso.\n- **Copolímeros EO/PO** y tensioactivos por arriba de su punto de nube: actúan como desestabilizadores de espuma y son la opción habitual en limpiadores para la industria de alimentos.\n- **Aceites y alcoholes grasos** en ciertos casos.\n\nLa propia suciedad puede espumar: la proteína de la leche o de la sangre genera espuma en un CIP aunque el limpiador sea de baja espuma. Por eso algunos limpiadores incluyen un antiespumante aunque su tensioactivo principal no espume.\n\n## Sinergias y formulación\nPocas formulaciones usan un solo tensioactivo. Las **mezclas** suelen rendir más que cada componente por separado:\n\n- Un aniónico aporta detergencia y espuma; un no iónico aporta emulsificación y tolerancia a la dureza; juntos forman **micelas mixtas** con CMC más baja que la de cada uno.\n- Un anfótero estabiliza la espuma y mejora la tolerancia a electrolitos.\n- Un hidrotropo (como el xilensulfonato de sodio o el cumensulfonato) permite meter más tensioactivo en una formulación muy alcalina o salina sin que se separe, y eleva el punto de nube.\n\nPero cada ingrediente debe sobrevivir al medio: en un limpiador de sosa al 20 % o en uno con hipoclorito, la lista de tensioactivos compatibles es corta. Cuando revises una formulación, pregúntate siempre si cada componente es estable en el pH, el oxidante y la temperatura de uso y almacenamiento.\n\n## Cómo usar esto para resolver fallas\n| Síntoma | Mecanismo que falla | Qué revisar |\n|---|---|---|\n| Película grasosa residual | Enrollamiento incompleto | Temperatura por debajo del punto de fusión de la grasa; tensioactivo insuficiente o inadecuado; superficie hidrofóbica |\n| Grasa que reaparece en zonas frías | Emulsión que se rompe | Caída de temperatura en el circuito; concentración baja; solución saturada |\n| Polvo o partículas que regresan | Dispersión y antirredeposición | pH, polímero antirredeposición, carga de suciedad de la solución |\n| Nata blanca pegajosa | Precipitación por dureza | Dureza del agua y secuestrante |\n| Bomba que cavita, nivel errático | Espuma | Tensioactivo de alta espuma, proteína en el residuo, falta de antiespumante |\n\n## Ideas que debes llevarte\n- La detergencia combina **mojado**, **enrollamiento** de la grasa, **emulsificación**, **solubilización**, **dispersión** de partículas y **prevención de la redeposición**.\n- El enrollamiento necesita grasa **líquida** y funciona mejor sobre superficies hidrofílicas; por eso la temperatura y el tipo de superficie importan tanto.\n- La emulsión solo tiene que durar el ciclo y el enjuague; si se rompe, la grasa se redeposita en zonas frías.\n- El pH alto ayuda a dispersar partículas porque carga negativamente superficies y suciedad.\n- La redeposición se combate con polímeros, secuestrantes y control de la carga de suciedad de la solución.\n- La espuma se diseña según el método: estable en limpieza con espuma, mínima en sistemas con bombas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "enrollamiento",
+     "enunciado": "En el mecanismo de enrollamiento (roll-up), ¿qué hace que una gota de aceite se despegue de una superficie de acero?",
+     "opciones": [
+      "Los tensioactivos bajan las tensiones interfaciales y el agua desplaza al aceite, que se contrae hasta tocar la superficie casi por un punto",
+      "El tensioactivo disuelve químicamente el aceite y lo convierte en jabón",
+      "El aceite se evapora por efecto del tensioactivo",
+      "El álcali corroe el acero bajo el aceite"
+     ],
+     "correcta": 0,
+     "explicacion": "Al cambiar el balance de tensiones (ecuación de Young), el agua moja el sólido y la gota se enrolla; con poca acción mecánica se desprende.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "grasa sólida",
+     "enunciado": "Una planta de cárnicos limpia con un buen detergente a 35 °C y queda película de sebo. ¿Qué mecanismo está limitado?",
+     "opciones": [
+      "El enrollamiento, porque la grasa está por debajo de su punto de fusión y se comporta como sólido",
+      "La solubilización micelar, porque hay demasiadas micelas",
+      "La dispersión de partículas, porque el pH es muy alto",
+      "La redeposición, porque la emulsión es demasiado estable"
+     ],
+     "correcta": 0,
+     "explicacion": "El enrollamiento necesita grasa líquida; el sebo a 35 °C sigue sólido. Hay que subir la temperatura o compensar con otros factores.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "emulsión vs solubilización",
+     "enunciado": "¿Cuál es la diferencia principal entre emulsificación y solubilización micelar?",
+     "opciones": [
+      "La solubilización aloja aceite dentro de micelas en una solución transparente y estable, con capacidad limitada; la emulsión dispersa gotas mayores que solo deben ser estables durante el ciclo",
+      "Son el mismo fenómeno con distinto nombre",
+      "La emulsificación solo ocurre con tensioactivos catiónicos",
+      "La solubilización requiere ácido y la emulsión álcali"
+     ],
+     "correcta": 0,
+     "explicacion": "La solubilización es termodinámicamente estable pero aloja poco aceite; la emulsión maneja cantidades mayores con estabilidad cinética.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "redeposición",
+     "enunciado": "En un CIP, la grasa reaparece en una sección de tubería alejada del tanque de solución, donde la temperatura cae. ¿Qué está pasando?",
+     "opciones": [
+      "La emulsión se rompe al enfriarse y la grasa se redeposita en la zona fría",
+      "La grasa se saponifica de más en la zona fría",
+      "El tensioactivo forma más micelas en frío y atrapa la grasa en la pared",
+      "La zona fría tiene más acción mecánica"
+     ],
+     "correcta": 0,
+     "explicacion": "Si la temperatura baja, la grasa solidifica y la emulsión se rompe; la grasa se deposita en las zonas frías.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "dispersión de partículas",
+     "enunciado": "¿Por qué los limpiadores alcalinos dispersan mejor la suciedad particulada que los neutros?",
+     "opciones": [
+      "A pH alto las superficies y las partículas se cargan negativamente y se repelen",
+      "El álcali disuelve todas las partículas minerales",
+      "A pH alto los tensioactivos se vuelven catiónicos",
+      "El álcali aumenta la tensión superficial del agua"
+     ],
+     "correcta": 0,
+     "explicacion": "La repulsión electrostática entre cargas del mismo signo debilita la adhesión y evita la reagregación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "antirredeposición",
+     "enunciado": "¿Qué función cumplen los poliacrilatos y la carboximetilcelulosa en un limpiador?",
+     "opciones": [
+      "Se adsorben en partículas y superficies y evitan que la suciedad desprendida vuelva a depositarse",
+      "Aumentan la espuma",
+      "Desinfectan la superficie",
+      "Disuelven las incrustaciones de carbonato"
+     ],
+     "correcta": 0,
+     "explicacion": "Son agentes antirredeposición: mantienen separadas las partículas suspendidas de las superficies.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "espuma de proteína",
+     "enunciado": "Un limpiador de baja espuma provoca espuma excesiva en el CIP de una línea de leche. ¿Cuál es la causa más probable?",
+     "opciones": [
+      "La proteína del residuo es tensoactiva y genera espuma; conviene un limpiador con antiespumante",
+      "El limpiador se descompuso y se volvió espumante",
+      "El agua de la planta es demasiado blanda",
+      "La temperatura del CIP es demasiado alta para cualquier tensioactivo"
+     ],
+     "correcta": 0,
+     "explicacion": "Las proteínas estabilizan espuma; por eso algunos limpiadores incluyen antiespumante aunque su tensioactivo no espume.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "espuma en superficies abiertas",
+     "enunciado": "¿Para qué sirve la espuma en la limpieza de paredes y transportadores?",
+     "opciones": [
+      "Mantiene la química en contacto con superficies verticales durante más tiempo y permite ver la cobertura",
+      "Aumenta la temperatura de la solución",
+      "Sustituye por completo a la acción mecánica",
+      "Desinfecta por sí misma"
+     ],
+     "correcta": 0,
+     "explicacion": "La espuma prolonga el tiempo de contacto en superficies verticales y hace visible dónde se aplicó el producto.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "hidrotropos",
+     "enunciado": "¿Para qué se agrega xilensulfonato o cumensulfonato de sodio a un limpiador muy alcalino?",
+     "opciones": [
+      "Como hidrotropo, para mantener solubles los tensioactivos en un medio salino o alcalino y elevar el punto de nube",
+      "Para desinfectar",
+      "Para generar espuma estable",
+      "Para secuestrar el calcio"
+     ],
+     "correcta": 0,
+     "explicacion": "Los hidrotropos aumentan la solubilidad de los tensioactivos en medios concentrados y evitan la separación de fases.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "micelas mixtas",
+     "enunciado": "¿Por qué se combinan un aniónico y un no iónico en una misma formulación?",
+     "opciones": [
+      "Forman micelas mixtas con CMC más baja y combinan detergencia, emulsificación y tolerancia a la dureza",
+      "Porque se neutralizan mutuamente y reducen la espuma a cero",
+      "Porque el no iónico vuelve catiónico al aniónico",
+      "Porque así el producto se vuelve desinfectante"
+     ],
+     "correcta": 0,
+     "explicacion": "Las mezclas suelen rendir más que cada componente: menor CMC y propiedades complementarias.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "soluciones saturadas",
+     "enunciado": "En una solución de CIP reutilizada durante toda la semana, la limpieza empeora día a día aunque la concentración titulada es correcta. ¿Qué explicación es más probable?",
+     "opciones": [
+      "La solución está saturada de suciedad y redeposita; hay que controlar la carga de suciedad y reponerla",
+      "La concentración titulada siempre es engañosa",
+      "El tensioactivo se vuelve más eficiente con el uso",
+      "La temperatura sube con el uso"
+     ],
+     "correcta": 0,
+     "explicacion": "La titulación mide alcalinidad, no la carga de suciedad. Una solución saturada no retiene más suciedad y la redeposita.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "enrollamiento",
+     "enunciado": "Explica el mecanismo de enrollamiento y dos condiciones que lo favorecen en planta.",
+     "respuesta_modelo": "Los tensioactivos se adsorben en las interfases y bajan las tensiones sólido-agua y aceite-agua; el balance de la ecuación de Young cambia, el agua desplaza al aceite, la gota se contrae hasta tocar la superficie casi por un punto y se desprende con poca acción mecánica. Lo favorecen que la grasa esté líquida (temperatura por arriba de su punto de fusión) y una superficie hidrofílica como acero limpio o vidrio.",
+     "puntos_clave": [
+      "bajan las tensiones interfaciales",
+      "la gota se contrae y se despega",
+      "grasa líquida",
+      "superficie hidrofílica"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "resolución de fallas",
+     "enunciado": "Una lavadora de cajas de plástico produce espuma excesiva y las cajas salen con película grasosa. Propón un diagnóstico y dos cambios.",
+     "respuesta_modelo": "La espuma indica un tensioactivo de alta espuma o proteína en la suciedad, y la película grasosa indica enrollamiento incompleto sobre un plástico hidrofóbico, posiblemente por baja temperatura o tensioactivo inadecuado. Cambiaría a un limpiador de baja espuma con no iónicos tipo EO/PO o con antiespumante, y revisaría que la temperatura supere el punto de fusión de la grasa y que la concentración sea la adecuada.",
+     "puntos_clave": [
+      "tensioactivo de baja espuma o antiespumante",
+      "plástico hidrofóbico dificulta el enrollamiento",
+      "temperatura por encima del punto de fusión",
+      "verificar concentración"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "redeposición",
+     "enunciado": "Describe tres causas de redeposición y cómo se previene cada una.",
+     "respuesta_modelo": "Solución saturada de suciedad: controlar la carga y reponer la solución. Emulsión que se rompe por enfriamiento: mantener la temperatura en todo el circuito y suficiente tensioactivo. Precipitación por dureza que atrapa suciedad: usar secuestrantes o agua tratada. También ayudan los polímeros antirredeposición y eliminar zonas muertas.",
+     "puntos_clave": [
+      "saturación de la solución",
+      "ruptura de emulsión por enfriamiento",
+      "precipitados de dureza",
+      "polímeros antirredeposición y secuestrantes"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Limpiadores alcalinos",
+   "texto": "## El caballo de batalla de la industria de alimentos\nSi tuvieras que quedarte con una sola química para limpiar una planta de alimentos, sería un limpiador alcalino. La mayor parte de la suciedad orgánica (grasas, proteínas y carbohidratos) responde al pH alto, y por eso los limpiadores alcalinos son el paso principal en casi todos los procesos de limpieza, desde la limpieza manual de una mesa de deshuese hasta el CIP de un evaporador lácteo.\n\nPero \"alcalino\" no describe un solo producto. Entre un desengrasante suave de pH 10 para superficies de aluminio y una solución de sosa al 2 % a 80 °C para un evaporador hay diferencias enormes en mecanismo, riesgo y compatibilidad. Este capítulo te da las herramientas para elegir, formular y controlar un limpiador alcalino con criterio.\n\n## Qué hace la alcalinidad\nEl pH alto actúa sobre la suciedad de cuatro maneras:\n\n1. **Saponificación** de grasas animales y vegetales: hidrólisis de los triglicéridos en jabones solubles y glicerol.\n2. **Hidrólisis y peptización de proteínas**: las cadenas se rompen parcialmente y se cargan negativamente, se repelen y se dispersan.\n3. **Dispersión** de partículas: superficies y suciedad se cargan negativamente y se repelen (lo viste en el capítulo anterior).\n4. **Solubilización de carbohidratos** complejos y residuos caramelizados, que a pH alto se degradan y se dispersan.\n\nAdemás, el pH alto potencia a los oxidantes clorados como agentes de limpieza de proteína y mantiene estable el hipoclorito en el producto.\n\n## Las fuentes de alcalinidad\n### Hidróxidos: sosa y potasa\nEl **hidróxido de sodio** (sosa cáustica) es la fuente de alcalinidad más fuerte y barata. El **hidróxido de potasio** cuesta más pero tiene ventajas en formulación: los jabones de potasio son más solubles que los de sodio, y las sales de potasio en general permiten productos líquidos más concentrados sin cristalizar.\n\n- Aportan **alcalinidad libre**: OH⁻ disponible para saponificar e hidrolizar.\n- Son muy corrosivos para aluminio, zinc, estaño y sus aleaciones, y atacan algunos elastómeros.\n- Generan **calor al diluirse**: el concentrado siempre se agrega al agua, nunca al revés.\n- En contacto con el aire absorben **CO₂** y se convierten en carbonato: una solución de sosa expuesta pierde alcalinidad libre con el tiempo. Esto pasa en tanques de CIP abiertos y en soluciones que se reutilizan durante días.\n\n### Carbonatos\nEl **carbonato de sodio** es un álcali más suave (una solución al 1 % tiene pH cercano a 11.5), de bajo costo y con buena capacidad amortiguadora. Saponifica poco, pero aporta alcalinidad de reserva y ayuda a dispersar. Su punto débil: precipita con la dureza del agua como carbonato de calcio.\n\n### Silicatos\nLos **silicatos de sodio** (metasilicato, ortosilicato, silicatos con distinta relación SiO₂:Na₂O) son ingredientes multifunción:\n\n- Aportan alcalinidad y capacidad amortiguadora.\n- Tienen buen poder dispersante y antirredeposición.\n- Sobre todo, **inhiben la corrosión** del aluminio y otros metales blandos al formar una película protectora. Por eso los limpiadores alcalinos \"seguros para aluminio\" casi siempre llevan silicato.\n\nDesventaja: pueden formar depósitos de sílice si se usan en exceso, en aguas duras o con enjuague deficiente, y esos depósitos son muy difíciles de remover.\n\n### Fosfatos\nHistóricamente los fosfatos (fosfato trisódico, tripolifosfato, pirofosfato) aportaban alcalinidad, secuestro de dureza y dispersión. Por su contribución a la eutrofización de cuerpos de agua, su uso se ha restringido en muchos países y mercados, y muchas formulaciones los sustituyen por otros secuestrantes. Los verás aún en productos industriales.\n\n### Aminas\nLa **monoetanolamina** y otras alcanolaminas aportan alcalinidad moderada, buena acción sobre grasas y compatibilidad con algunos metales. Se usan en desengrasantes y limpiadores de pisos.\n\n## Alcalinidad libre y alcalinidad total\nEn control de calidad y en planta vas a medir dos valores por titulación con ácido:\n\n- **Alcalinidad libre** (o activa): la que se titula hasta el vire de la **fenolftaleína** (alrededor de pH 8.3). Representa principalmente los hidróxidos y la mitad del carbonato. Es la alcalinidad que realmente saponifica.\n- **Alcalinidad total**: la que se titula hasta un pH cercano a 4 (anaranjado de metilo). Incluye carbonatos, silicatos, fosfatos y la alcalinidad de reserva.\n\nLa relación entre ambas te dice cómo está la solución. Una solución de sosa recién preparada tiene alcalinidad libre casi igual a la total. Una solución vieja, que absorbió CO₂ o que consumió alcalinidad saponificando grasa, tiene alcalinidad libre baja con alcalinidad total todavía alta. **Si solo mides alcalinidad total, puedes creer que la solución está bien cuando ya no limpia.**\n\nEn CIP es común controlar la concentración por **conductividad**, que es rápida y continua. Pero la conductividad no distingue entre hidróxido y carbonato: una solución carbonatada puede tener buena conductividad y poca alcalinidad libre. Por eso la conductividad se calibra contra titulación y se verifica periódicamente.\n\n## La alcalinidad se consume\nLa saponificación **gasta** álcali. Para estimar cuánto, se usa el **índice de saponificación** de la grasa: los miligramos de KOH que se necesitan para saponificar un gramo de grasa. Para la mayoría de las grasas animales y aceites vegetales comunes ronda los 190 a 200 mg KOH/g.\n\nEjemplo: una línea deja alrededor de **2 kg de sebo** en el equipo en cada ciclo de limpieza.\n\n1. Consumo en KOH: 2,000 g × 195 mg/g ≈ 390 g de KOH.\n2. Pasado a NaOH (masas molares 40 y 56.1): 390 × 40 / 56.1 ≈ **278 g de NaOH**.\n3. Si el CIP recircula 1,000 L de solución al 1 % de NaOH (10 kg), la grasa de un ciclo consume cerca de 3 % de la sosa. Si la solución se reutiliza diez ciclos sin reponer, la pérdida es significativa, sin contar la carbonatación y el arrastre.\n\nNo todo el álcali que se consume es por saponificación (la proteína y los ácidos del producto también lo neutralizan), pero el cálculo explica por qué las soluciones reutilizadas necesitan control y reposición.\n\n## Concentración, temperatura y tiempo\nLos rangos típicos dependen del tipo de suciedad y del método de aplicación:\n\n- **Limpieza manual y con espuma**: limpiadores formulados de alcalinidad moderada a alta, a las concentraciones de la etiqueta (normalmente de 1 a 5 % del producto), a temperatura tibia, con tiempos de contacto de 10 a 20 minutos y acción mecánica.\n- **CIP en industria láctea y de bebidas**: soluciones de sosa o de limpiadores alcalinos formulados del orden de 0.5 a 2 % de NaOH, a temperaturas de 70 a 85 °C, durante 10 a 30 minutos según el equipo y la carga de suciedad. Los evaporadores y superficies muy calientes requieren condiciones más agresivas.\n\nEstas cifras son referencias; el proceso de cada planta se define y se **valida** con su suciedad, su agua y su equipo.\n\nMás concentración no siempre es mejor. Por arriba de cierto punto, el exceso de sosa puede incluso **dificultar** la remoción de algunas proteínas lácteas, que forman geles a pH muy alto. También aumentan la corrosión, el costo, la carga de enjuague y el riesgo de residuos.\n\n## Limpiadores alcalinos clorados\nAgregar **hipoclorito de sodio** a un limpiador alcalino combina dos acciones: el álcali saponifica y dispersa, y el cloro **oxida** la proteína, rompiéndola en fragmentos más solubles. Son muy eficaces sobre residuos proteicos (cárnicos, lácteos, huevo) y además blanquean manchas.\n\nPuntos clave:\n\n- El hipoclorito es **estable a pH alto** y se descompone rápidamente a pH bajo (y libera cloro gaseoso con ácidos: nunca se mezclan).\n- En la solución de limpieza el cloro actúa como agente de **limpieza**, no como desinfectante: a pH 12 casi todo está como ion hipoclorito, que desinfecta mucho menos que el ácido hipocloroso (lo verás en el capítulo 9). Un alcalino clorado **no sustituye** al paso de desinfección.\n- Solo admiten tensioactivos y aditivos **estables al cloro**.\n- Son más corrosivos para el acero inoxidable que los alcalinos sin cloro, sobre todo en caliente.\n\n## Alternativas suaves\n- **Limpiadores enzimáticos**: proteasas, amilasas y lipasas que degradan la suciedad a pH moderado y temperaturas bajas. Útiles en membranas de ultrafiltración y ósmosis, equipos sensibles y para biopelículas. Requieren control de temperatura, pH y tiempo, porque las enzimas se desnaturalizan fuera de su rango.\n- **Alcalinos de baja alcalinidad** para aluminio, superficies pintadas o limpieza manual frecuente, con silicatos como inhibidores.\n\n## Seguridad\nLos alcalinos fuertes son de los químicos más peligrosos en una planta:\n\n- Causan **quemaduras químicas graves** y lesiones oculares irreversibles; la sosa saponifica los lípidos de la piel y penetra, por eso el daño avanza aunque no se sienta de inmediato.\n- Requieren protección ocular y facial, guantes y ropa resistentes, regaderas y lavaojos cercanos, y comunicación de peligros conforme al Sistema Globalmente Armonizado (en México, la NOM-018-STPS-2015).\n- La reacción con aluminio produce **hidrógeno**: nunca se deben almacenar soluciones alcalinas en recipientes de aluminio.\n- La dilución es exotérmica: el concentrado se agrega lentamente al agua.\n\n## Ideas que debes llevarte\n- La alcalinidad saponifica grasas, hidroliza y dispersa proteínas, dispersa partículas y degrada carbohidratos.\n- **Sosa y potasa** dan alcalinidad libre; **carbonatos** reserva y amortiguamiento; **silicatos** inhiben la corrosión del aluminio; los **fosfatos** se usan cada vez menos.\n- Controla la **alcalinidad libre**, no solo la total: la carbonatación y la saponificación la consumen.\n- El consumo de álcali por la grasa se estima con el **índice de saponificación**.\n- Los **alcalinos clorados** limpian proteína por oxidación, pero no sustituyen a la desinfección.\n- Más concentración no siempre limpia más, y siempre aumenta la corrosión, el costo y el riesgo.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "alcalinidad libre vs total",
+     "enunciado": "La solución de CIP de una planta láctea tiene alcalinidad total dentro de especificación, pero la limpieza empeoró. La alcalinidad libre está muy baja. ¿Qué explica la diferencia?",
+     "opciones": [
+      "La sosa se convirtió en carbonato por absorción de CO₂ y se consumió saponificando grasa; queda alcalinidad de reserva que no limpia igual",
+      "La alcalinidad total siempre es menor que la libre en soluciones viejas",
+      "El termómetro del CIP está descalibrado",
+      "La alcalinidad libre solo se mide en soluciones ácidas"
+     ],
+     "correcta": 0,
+     "explicacion": "La carbonatación y la saponificación consumen hidróxido; la alcalinidad total puede seguir alta mientras la libre, que es la que saponifica, cae.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "conductividad en CIP",
+     "enunciado": "¿Cuál es la limitación principal de controlar la concentración de sosa en un CIP solo por conductividad?",
+     "opciones": [
+      "No distingue entre hidróxido y carbonato, así que una solución carbonatada puede leer bien y limpiar mal",
+      "La conductividad no cambia con la concentración de sosa",
+      "La conductividad solo funciona con ácidos",
+      "La conductividad mide la carga de suciedad, no la alcalinidad"
+     ],
+     "correcta": 0,
+     "explicacion": "La conductividad responde a todos los iones; por eso se calibra contra titulación y se verifica periódicamente.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "silicatos",
+     "enunciado": "¿Por qué un limpiador alcalino 'seguro para aluminio' casi siempre contiene silicato de sodio?",
+     "opciones": [
+      "Porque el silicato forma una película protectora que inhibe la corrosión del aluminio",
+      "Porque el silicato neutraliza la sosa",
+      "Porque el silicato es un desinfectante",
+      "Porque el silicato aumenta el pH por encima de 14"
+     ],
+     "correcta": 0,
+     "explicacion": "Los silicatos inhiben la corrosión de metales blandos como el aluminio, además de aportar alcalinidad y dispersión.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "cálculo de saponificación",
+     "enunciado": "Una línea deja 1 kg de grasa con índice de saponificación de 195 mg KOH/g. ¿Cuánto NaOH se consume aproximadamente en saponificarla? (KOH = 56.1 g/mol; NaOH = 40 g/mol)",
+     "opciones": [
+      "≈139 g",
+      "≈195 g",
+      "≈273 g",
+      "≈56 g"
+     ],
+     "correcta": 0,
+     "explicacion": "1,000 g × 195 mg/g = 195 g KOH; × 40/56.1 ≈ 139 g NaOH.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "alcalinos clorados",
+     "enunciado": "En un limpiador alcalino clorado a pH 12, ¿qué papel tiene principalmente el cloro?",
+     "opciones": [
+      "Agente de limpieza que oxida y fragmenta la proteína; no sustituye a la desinfección porque casi todo está como ion hipoclorito",
+      "Desinfectante principal, por lo que se puede omitir el paso de desinfección",
+      "Secuestrante de dureza",
+      "Inhibidor de corrosión del acero"
+     ],
+     "correcta": 0,
+     "explicacion": "A pH alto predomina el OCl⁻, que desinfecta mucho menos que el HOCl; el cloro aquí limpia proteína por oxidación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "potasa vs sosa",
+     "enunciado": "¿Por qué un formulador puede preferir hidróxido de potasio en un limpiador líquido concentrado, aunque cueste más?",
+     "opciones": [
+      "Porque los jabones y sales de potasio son más solubles y permiten concentrados sin cristalizar",
+      "Porque la potasa es menos corrosiva para el aluminio",
+      "Porque la potasa no reacciona con las grasas",
+      "Porque la potasa es un ácido débil"
+     ],
+     "correcta": 0,
+     "explicacion": "Las sales de potasio son más solubles; facilitan concentrados líquidos estables.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "exceso de concentración",
+     "enunciado": "¿Cuál de estas afirmaciones sobre subir la concentración de sosa en un CIP es correcta?",
+     "opciones": [
+      "Por arriba de cierto punto no mejora la limpieza y algunas proteínas lácteas incluso forman geles más difíciles de remover",
+      "Siempre mejora la limpieza proporcionalmente",
+      "Reduce la corrosión porque pasiva el acero",
+      "Elimina la necesidad del paso ácido"
+     ],
+     "correcta": 0,
+     "explicacion": "El beneficio se aplana y aumentan corrosión, costo, carga de enjuague y riesgo de residuos; con proteínas lácteas un exceso puede ser contraproducente.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "seguridad",
+     "enunciado": "¿Por qué nunca se debe almacenar una solución de sosa en un recipiente de aluminio?",
+     "opciones": [
+      "El álcali disuelve el aluminio y libera hidrógeno, que es inflamable",
+      "El aluminio neutraliza la sosa y la vuelve ácida",
+      "El aluminio cataliza la formación de cloro gaseoso",
+      "El aluminio aumenta la concentración de la sosa"
+     ],
+     "correcta": 0,
+     "explicacion": "El aluminio es anfótero: se disuelve en álcali y genera hidrógeno.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "carbonato de sodio",
+     "enunciado": "¿Cuál es una desventaja del carbonato de sodio como fuente de alcalinidad en agua dura?",
+     "opciones": [
+      "Precipita con el calcio como carbonato de calcio",
+      "Es más fuerte que la sosa y corroe el acero",
+      "No tiene capacidad amortiguadora",
+      "Libera cloro al calentarse"
+     ],
+     "correcta": 0,
+     "explicacion": "El carbonato aporta reserva y amortiguamiento, pero en agua dura forma CaCO₃.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "enzimáticos",
+     "enunciado": "¿En qué situación tiene más sentido un limpiador enzimático?",
+     "opciones": [
+      "En membranas de ultrafiltración u ósmosis, donde no se toleran condiciones agresivas de pH y temperatura",
+      "En evaporadores con residuos quemados a muy alta temperatura",
+      "Para disolver incrustaciones de carbonato",
+      "Como sustituto del paso de desinfección"
+     ],
+     "correcta": 0,
+     "explicacion": "Las enzimas trabajan a pH moderado y temperatura baja; son útiles en equipos sensibles y contra biopelículas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "dilución exotérmica",
+     "enunciado": "¿Cuál es la forma correcta de preparar una solución a partir de sosa concentrada?",
+     "opciones": [
+      "Agregar lentamente el concentrado al agua, con protección ocular y guantes",
+      "Agregar el agua sobre el concentrado de golpe",
+      "Calentar primero el concentrado para que se disuelva mejor",
+      "Mezclar con un ácido para controlar el calor"
+     ],
+     "correcta": 0,
+     "explicacion": "La dilución es exotérmica; el concentrado se agrega al agua para evitar ebullición localizada y salpicaduras.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "control de soluciones",
+     "enunciado": "Diseña cómo controlarías la solución alcalina de un CIP que se reutiliza durante varios ciclos. Indica qué medirías y por qué.",
+     "respuesta_modelo": "Mediría la alcalinidad libre por titulación (fenolftaleína) y la total, además de la conductividad en línea calibrada contra la titulación. La libre indica la sosa disponible para saponificar; la diferencia con la total revela carbonatación y consumo. Repondría sosa según la libre y drenaría la solución cuando la carga de suciedad o la carbonatación sean altas, aunque la conductividad parezca correcta.",
+     "puntos_clave": [
+      "alcalinidad libre y total",
+      "conductividad calibrada con titulación",
+      "carbonatación y consumo por grasa",
+      "criterio de reposición y drenado"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "selección de limpiador",
+     "enunciado": "Un cliente tiene equipos de aluminio con residuos de grasa vegetal y agua dura. ¿Qué características debe tener el limpiador alcalino que le recomiendes?",
+     "respuesta_modelo": "Alcalinidad moderada (no sosa libre alta), con silicatos como inhibidores de corrosión del aluminio, secuestrantes para la dureza, tensioactivos para emulsificar la grasa y aplicarlo tibio, con buen enjuague para no dejar depósitos de silicato.",
+     "puntos_clave": [
+      "alcalinidad moderada",
+      "silicatos para proteger aluminio",
+      "secuestrante por la dureza",
+      "tensioactivos y enjuague adecuado"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "alcalinos clorados",
+     "enunciado": "Explica por qué un alcalino clorado limpia muy bien la proteína pero no sustituye al desinfectante.",
+     "respuesta_modelo": "El cloro oxida y fragmenta la proteína, volviéndola soluble, y el álcali la peptiza y dispersa, así que es muy eficaz para limpiar. Pero a pH 12 el cloro está casi todo como ion hipoclorito, que tiene mucho menor poder biocida que el ácido hipocloroso, y además la solución está cargada de suciedad; por eso después hace falta un paso de desinfección validado.",
+     "puntos_clave": [
+      "oxidación de proteína",
+      "a pH alto predomina OCl⁻",
+      "OCl⁻ desinfecta mucho menos que HOCl",
+      "se requiere desinfección aparte"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Limpiadores ácidos y remoción de incrustaciones",
+   "texto": "## Cuándo el álcali no alcanza\nEl limpiador alcalino resuelve la suciedad orgánica, pero deja intacta la suciedad mineral: carbonato de calcio, fosfato de calcio, oxalato de calcio, óxidos metálicos. Peor aún, el pH alto favorece que esas sales precipiten. Para ellas se necesita un **ácido**, que las disuelve convirtiendo los aniones poco solubles (carbonato, fosfato, oxalato) en especies protonadas y liberando el calcio como sal soluble.\n\nLos ácidos también tienen otros usos en la planta: neutralizar residuos alcalinos, pasivar el acero inoxidable, abrillantar superficies, eliminar manchas de agua dura y, combinados con tensioactivos especiales, desinfectar (los aniónicos ácidos del capítulo 11).\n\n## La química de la disolución de incrustaciones\nEl caso más simple es el carbonato de calcio:\n\nCaCO₃ + 2 H⁺ → Ca²⁺ + CO₂↑ + H₂O\n\nLa efervescencia de CO₂ es una señal visible de que el ácido está trabajando sobre carbonato. Con el fosfato de calcio (piedra de leche) y el oxalato de calcio (piedra de cerveza) el mecanismo es la protonación del anión, sin desprendimiento de gas.\n\nPara que la disolución sea eficaz importan tres cosas:\n\n1. **Fuerza del ácido**: un ácido fuerte disuelve más rápido.\n2. **Solubilidad de la sal de calcio que se forma**: si la sal que resulta del ácido y el calcio es poco soluble, se vuelve a depositar.\n3. **Capacidad del ácido** (cuánto ácido hay): cada mol de carbonato consume dos moles de H⁺. Una solución ácida se \"agota\" a medida que disuelve incrustación, igual que el álcali se consume saponificando grasa.\n\n## Los ácidos de la industria\n### Ácido nítrico\n- Ácido **fuerte** y **oxidante**.\n- Disuelve rápido el carbonato y el fosfato de calcio; el nitrato de calcio es **muy soluble**.\n- **Pasiva** el acero inoxidable: favorece la formación de la capa de óxido de cromo que lo protege.\n- Es el ácido clásico de la industria láctea en CIP, a concentraciones del orden de 0.5 a 1.5 % y temperaturas moderadas.\n- Limitaciones: ataca a algunos elastómeros y a metales blandos; con materia orgánica y calor puede generar vapores de óxidos de nitrógeno; el nitrato en efluentes está regulado en muchos lugares.\n\n### Ácido fosfórico\n- Ácido de fuerza **media** (su primera disociación es moderada).\n- Muy usado en limpiadores ácidos formulados: menos agresivo que el nítrico, buena compatibilidad con el acero inoxidable y buena acción sobre carbonatos.\n- Se combina a menudo con nítrico en productos para CIP, y con tensioactivos en limpiadores ácidos de espuma para superficies abiertas.\n- Desventaja: aporta fósforo al efluente, con las restricciones ambientales que eso implica.\n\n### Ácido sulfúrico\n- Fuerte y barato.\n- Problema químico importante: el **sulfato de calcio** es **poco soluble** (del orden de 2 g/L). Al disolver carbonato con sulfúrico se puede formar yeso, que se vuelve a depositar. Por eso no es una buena opción para incrustaciones de calcio.\n- Se usa en algunas aplicaciones específicas y como acidulante.\n\n### Ácido clorhídrico\n- Fuerte, rápido, y el cloruro de calcio es muy soluble: disuelve sarro con gran eficacia.\n- Pero **los cloruros atacan el acero inoxidable** y provocan corrosión por picadura, sobre todo en caliente. En equipo de proceso de acero inoxidable de la industria de alimentos **se evita**. Se encuentra en desincrustantes para pisos, cerámica o equipos que no son de inoxidable.\n\n### Ácidos orgánicos\n- **Cítrico, glucónico, láctico**: débiles, de baja corrosividad y con capacidad **quelante** (el citrato y el gluconato secuestran calcio y hierro). Útiles en limpiadores suaves, en pasivación con ácido cítrico y en formulaciones donde se busca bajo riesgo.\n- Su debilidad es la velocidad: disuelven más lento y pueden necesitar más tiempo o temperatura. El citrato de calcio no es muy soluble, lo que limita su capacidad con incrustaciones gruesas.\n\n### Ácido metanosulfónico (MSA)\n- Ácido fuerte, no oxidante, cuyas sales de calcio son **muy solubles**.\n- Menos corrosivo para muchos metales que el clorhídrico, sin aportar fósforo ni nitrógeno al efluente y biodegradable.\n- Se ha vuelto una alternativa atractiva al fosfórico y al nítrico en desincrustantes y limpiadores ácidos formulados.\n\n### Ácido sulfámico\n- Sólido, fácil de transportar, fuerte y con sal de calcio soluble. Común en desincrustantes en polvo para calderas y equipos. Se hidroliza en caliente a bisulfato de amonio, lo que limita su uso a temperaturas moderadas.\n\n## Cuánto ácido hace falta: un cálculo\nUn intercambiador tiene aproximadamente **1.5 kg de incrustación de carbonato de calcio**. ¿Cuánto ácido nítrico se necesita, como mínimo, para disolverla?\n\n1. Moles de CaCO₃: 1,500 g ÷ 100 g/mol = **15 mol**.\n2. Cada mol consume 2 mol de H⁺: **30 mol** de HNO₃.\n3. Masa de HNO₃ puro: 30 mol × 63 g/mol ≈ **1.9 kg**.\n4. Como ácido nítrico comercial al 60 %: 1.9 ÷ 0.60 ≈ **3.2 kg** de producto, como mínimo estequiométrico.\n\nEn la práctica se usa un exceso, porque la velocidad de disolución cae cuando el ácido se agota y porque la solución también reacciona con otros depósitos. Si el cálculo te da que necesitas más ácido del que cabe en una carga del CIP, la incrustación se removerá en varios ciclos o con una limpieza de recuperación más concentrada. Y la pregunta de fondo será **por qué** se formó tanta incrustación: dureza del agua, falta de paso ácido, temperatura de proceso.\n\n## ¿Ácido antes o después del álcali?\nLa secuencia habitual es **álcali primero, ácido después**: lo orgánico recubre lo mineral, y el ácido después del álcali también neutraliza residuos alcalinos y deja la superficie pasivada.\n\nPero hay excepciones razonadas:\n\n- En equipos que operan a **muy alta temperatura** con productos ricos en minerales (por ejemplo, algunos procesos UHT o evaporadores lácteos), el depósito puede ser predominantemente mineral, con proteína atrapada dentro. Un paso ácido inicial abre la estructura y permite que el álcali posterior llegue a la proteína. Estas secuencias \"ácido-álcali-ácido\" se definen y validan para cada equipo.\n- En superficies con poca carga orgánica y mucho mineral (por ejemplo, equipos de agua o bebidas carbonatadas), un limpiador ácido puede bastar como paso único.\n\nEl criterio es siempre el mismo del capítulo 1: **qué suciedad hay y en qué capas**.\n\n## Pasivación del acero inoxidable\nEl acero inoxidable resiste la corrosión gracias a una capa muy delgada de óxido rico en **cromo**. Esa capa se daña con el maquinado, la soldadura, el contacto con acero al carbono (partículas de hierro libre de herramientas) o ciertas limpiezas agresivas.\n\nLa **pasivación** es un tratamiento con ácido oxidante o quelante (típicamente **nítrico** o **cítrico**, según procedimientos como los de las normas ASTM A967 y A380) que:\n\n- Disuelve el **hierro libre** de la superficie.\n- Favorece la reconstrucción de una capa de óxido de cromo continua.\n\nSe hace después de instalar o reparar equipo, después de soldaduras y cuando aparecen manchas de óxido (\"rouge\") en el inoxidable. En CIP, el paso con ácido nítrico contribuye a mantener esa pasividad.\n\n## Limpiadores ácidos formulados\nUn limpiador ácido para la industria de alimentos rara vez es solo ácido diluido. Suele incluir:\n\n- **Tensioactivos estables en ácido** (para mojar, ayudar con residuos grasos ligeros y, en limpieza con espuma, generar espuma estable).\n- **Inhibidores de corrosión**, sobre todo si hay metales blandos o acero galvanizado cerca.\n- **Hidrotropos** para mantener la formulación estable.\n- Combinaciones de ácidos (por ejemplo fosfórico con nítrico) que equilibran velocidad, compatibilidad y costo.\n\n## Control y seguridad\n- La concentración de la solución ácida se controla por **titulación con base** (acidez total) o por conductividad calibrada.\n- La solución se \"gasta\" al disolver incrustación: igual que con el álcali, las soluciones reutilizadas necesitan control y reposición.\n- **Nunca mezcles ácidos con productos clorados**: el hipoclorito en medio ácido libera **cloro gaseoso**, tóxico. Este es uno de los accidentes químicos más comunes en plantas: un operador que vacía un ácido en un tambo donde había alcalino clorado, o que aplica ambos productos en la misma superficie sin enjuague.\n- Los ácidos con sulfitos o sulfuros liberan gases tóxicos; el nítrico concentrado con materia orgánica puede reaccionar violentamente.\n- Como con los álcalis, el ácido concentrado se agrega al agua y se usa equipo de protección acorde a la hoja de seguridad.\n\n## Ideas que debes llevarte\n- Los ácidos disuelven la suciedad mineral protonando sus aniones; el ácido se **consume** en el proceso (2 mol de H⁺ por mol de carbonato).\n- La **solubilidad de la sal de calcio** que se forma importa: el nitrato, el cloruro y el metanosulfonato son muy solubles; el sulfato no.\n- **Nítrico**: fuerte, oxidante, pasiva el inoxidable. **Fosfórico**: versátil, compatible. **Clorhídrico**: evitar en acero inoxidable por los cloruros. **Orgánicos**: suaves y quelantes. **MSA**: fuerte, sales muy solubles, menor impacto ambiental.\n- La secuencia normal es álcali y luego ácido, con excepciones validadas para depósitos predominantemente minerales.\n- La **pasivación** restaura la capa de óxido de cromo del inoxidable.\n- Ácido y cloro nunca deben encontrarse: liberan cloro gaseoso.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "solubilidad de sales de calcio",
+     "enunciado": "¿Por qué el ácido sulfúrico no es buena opción para desincrustar carbonato de calcio?",
+     "opciones": [
+      "Porque el sulfato de calcio que se forma es poco soluble y se vuelve a depositar",
+      "Porque el sulfúrico es un ácido débil",
+      "Porque el sulfúrico no reacciona con el carbonato",
+      "Porque libera cloro gaseoso"
+     ],
+     "correcta": 0,
+     "explicacion": "El sulfato de calcio (yeso) tiene baja solubilidad; al disolver carbonato con sulfúrico se puede formar un nuevo depósito.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ácido clorhídrico",
+     "enunciado": "¿Por qué se evita el ácido clorhídrico en equipo de proceso de acero inoxidable?",
+     "opciones": [
+      "Porque los cloruros provocan corrosión por picadura en el inoxidable, sobre todo en caliente",
+      "Porque el cloruro de calcio es insoluble",
+      "Porque es demasiado débil para disolver sarro",
+      "Porque pasiva demasiado el acero"
+     ],
+     "correcta": 0,
+     "explicacion": "Aunque disuelve muy bien el sarro, los cloruros atacan la capa pasiva del inoxidable.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "cálculo de ácido",
+     "enunciado": "¿Cuántos moles de HNO₃ se necesitan como mínimo para disolver 500 g de CaCO₃ (100 g/mol)?",
+     "opciones": [
+      "10 mol",
+      "5 mol",
+      "2.5 mol",
+      "20 mol"
+     ],
+     "correcta": 0,
+     "explicacion": "500 g ÷ 100 g/mol = 5 mol de CaCO₃; cada mol consume 2 mol de H⁺, así que 10 mol de HNO₃.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ácido nítrico",
+     "enunciado": "¿Qué propiedad del ácido nítrico lo hace especialmente útil en el CIP de equipos de acero inoxidable?",
+     "opciones": [
+      "Además de disolver minerales, es oxidante y contribuye a pasivar el inoxidable",
+      "Es el único ácido que no se consume al disolver carbonato",
+      "Forma sales de calcio insolubles que protegen la superficie",
+      "Desinfecta mejor que cualquier sanitizante"
+     ],
+     "correcta": 0,
+     "explicacion": "El nítrico disuelve carbonato y fosfato de calcio y favorece la capa de óxido de cromo del inoxidable.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "cloro y ácido",
+     "enunciado": "Un operador vacía un desincrustante ácido en un tambo donde quedaba alcalino clorado. ¿Cuál es el riesgo principal?",
+     "opciones": [
+      "Liberación de cloro gaseoso tóxico",
+      "Formación de una espuma inofensiva",
+      "Neutralización sin consecuencias",
+      "Precipitación de carbonato de calcio"
+     ],
+     "correcta": 0,
+     "explicacion": "El hipoclorito en medio ácido libera Cl₂. Es uno de los accidentes químicos más frecuentes en plantas.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pasivación",
+     "enunciado": "¿Qué logra la pasivación con ácido nítrico o cítrico después de soldar equipo de inoxidable?",
+     "opciones": [
+      "Elimina el hierro libre de la superficie y favorece la formación de una capa continua de óxido de cromo",
+      "Aumenta el contenido de níquel del acero",
+      "Elimina toda la capa de óxido para dejar el metal desnudo",
+      "Recubre el acero con un polímero protector"
+     ],
+     "correcta": 0,
+     "explicacion": "La pasivación disuelve contaminación de hierro y permite que se reconstruya la capa pasiva rica en cromo.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "MSA",
+     "enunciado": "¿Qué ventaja tiene el ácido metanosulfónico frente al fosfórico en un desincrustante?",
+     "opciones": [
+      "Es fuerte, sus sales de calcio son muy solubles y no aporta fósforo al efluente",
+      "Es oxidante y pasiva el inoxidable mejor que el nítrico",
+      "Es un ácido débil y por eso no corroe nada",
+      "Forma sulfato de calcio protector"
+     ],
+     "correcta": 0,
+     "explicacion": "El MSA disuelve rápido, mantiene el calcio en solución y tiene menor impacto ambiental que el fosfórico.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "secuencia ácido-álcali",
+     "enunciado": "¿En qué caso puede justificarse un paso ácido ANTES del alcalino?",
+     "opciones": [
+      "En equipos de muy alta temperatura donde el depósito es predominantemente mineral con proteína atrapada dentro",
+      "Siempre, porque el ácido es más rápido",
+      "Cuando la suciedad es solo grasa",
+      "Cuando no se quiere enjuagar entre pasos"
+     ],
+     "correcta": 0,
+     "explicacion": "Si lo mineral domina y encapsula la proteína, el ácido abre la estructura; esas secuencias se validan por equipo.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ácidos orgánicos",
+     "enunciado": "¿Cuál es la principal limitación del ácido cítrico como desincrustante?",
+     "opciones": [
+      "Es débil y disuelve más lento; además el citrato de calcio no es muy soluble para incrustaciones gruesas",
+      "Corroe el acero inoxidable más que el clorhídrico",
+      "Libera vapores de óxidos de nitrógeno",
+      "No tiene capacidad quelante"
+     ],
+     "correcta": 0,
+     "explicacion": "El cítrico es suave y quelante, pero lento y con capacidad limitada para depósitos gruesos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "efervescencia",
+     "enunciado": "Al aplicar ácido sobre un depósito blanco se observa efervescencia. ¿Qué indica?",
+     "opciones": [
+      "Que el depósito contiene carbonatos que liberan CO₂ al disolverse",
+      "Que el depósito es sílice",
+      "Que se está liberando cloro",
+      "Que el depósito es grasa saponificada"
+     ],
+     "correcta": 0,
+     "explicacion": "CaCO₃ + 2H⁺ → Ca²⁺ + CO₂ + H₂O; la efervescencia es CO₂.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "agotamiento del ácido",
+     "enunciado": "Una solución ácida de CIP que se reutiliza disuelve cada vez menos incrustación. ¿Qué es lo más probable?",
+     "opciones": [
+      "El ácido se consumió al disolver minerales y la acidez libre bajó; hay que titular y reponer",
+      "Los ácidos se fortalecen con el uso",
+      "El calcio disuelto aumenta la fuerza del ácido",
+      "La temperatura subió demasiado"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada mol de carbonato consume ácido; las soluciones reutilizadas pierden acidez y requieren control.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "cálculo de ácido",
+     "enunciado": "Un evaporador tiene unos 3 kg de incrustación de CaCO₃. Calcula la masa mínima de ácido nítrico comercial al 60 % necesaria (HNO₃ = 63 g/mol) y comenta qué harías con el resultado.",
+     "respuesta_modelo": "3,000 g ÷ 100 = 30 mol de CaCO₃; se necesitan 60 mol de HNO₃ × 63 g/mol ≈ 3.8 kg de HNO₃ puro; al 60 % son unos 6.3 kg de producto como mínimo estequiométrico. Usaría un exceso, posiblemente en varios ciclos o con una limpieza de recuperación, y buscaría la causa de tanta incrustación (dureza del agua, falta de paso ácido, temperatura).",
+     "puntos_clave": [
+      "30 mol de carbonato",
+      "60 mol de HNO₃",
+      "≈6.3 kg al 60 %",
+      "exceso y causa raíz"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "selección de ácido",
+     "enunciado": "Compara ácido nítrico, fosfórico y clorhídrico para desincrustar un intercambiador de acero inoxidable 316 y recomienda uno.",
+     "respuesta_modelo": "El clorhídrico disuelve rápido pero sus cloruros causan picaduras en el inoxidable, así que lo descarto. El fosfórico es compatible y eficaz pero más lento y aporta fósforo al efluente. El nítrico es fuerte, forma sales de calcio muy solubles y pasiva el inoxidable; lo recomendaría (o una mezcla nítrico-fosfórica formulada), cuidando la compatibilidad de los empaques.",
+     "puntos_clave": [
+      "clorhídrico descartado por cloruros",
+      "fosfórico compatible pero más lento",
+      "nítrico fuerte y pasivante",
+      "revisar empaques"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "seguridad",
+     "enunciado": "Describe dos medidas para prevenir la liberación de cloro gaseoso en una planta que usa alcalinos clorados y limpiadores ácidos.",
+     "respuesta_modelo": "Enjuagar completamente entre la aplicación de un producto clorado y uno ácido, y nunca reutilizar recipientes ni mezclar productos; además, separar el almacenamiento, rotular claramente y capacitar al personal, con conexiones y dosificadores distintos para cada producto.",
+     "puntos_clave": [
+      "enjuague entre productos",
+      "no mezclar ni reutilizar recipientes",
+      "almacenamiento separado y rotulado",
+      "capacitación"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Secuestrantes y quelantes",
+   "texto": "## El ingrediente invisible\nEn una etiqueta de limpiador, los secuestrantes casi nunca son el ingrediente estrella, pero muchas veces son la diferencia entre un producto que funciona en cualquier agua y uno que solo funciona en el laboratorio. Su trabajo es mantener los iones metálicos (calcio, magnesio, hierro, manganeso) **en solución y fuera de juego**, para que no precipiten tensioactivos, no formen incrustaciones, no catalicen la descomposición de oxidantes y no manchen las superficies.\n\nEn el capítulo 2 calculaste cuánto EDTA \"se come\" la dureza del agua. Ahora vas a entender cómo funcionan los secuestrantes, por qué no todos sirven a cualquier pH y cómo elegirlos.\n\n## Tres mecanismos distintos\nAunque en planta se les llama a todos \"secuestrantes\", trabajan de tres maneras diferentes.\n\n### Quelación\nUn **quelante** es una molécula con varios grupos donadores (carboxilatos, aminas, fosfonatos, hidroxilos) que rodean al ion metálico y forman con él un complejo en forma de anillo, muy estable y soluble. El nombre viene del griego *chele*, pinza. El ejemplo clásico es el **EDTA**, que envuelve al calcio con dos nitrógenos y cuatro carboxilatos.\n\nLa quelación es **estequiométrica**: cada molécula de quelante atrapa un ion metálico (en el caso del EDTA, proporción 1:1). Por eso se puede calcular cuánto hace falta.\n\n### Secuestro por complejación débil y dispersión\nLos **polifosfatos** (tripolifosfato, pirofosfato) y algunos ácidos orgánicos forman complejos solubles con el calcio menos estables que los quelatos clásicos, pero útiles. También aportan dispersión.\n\n### Inhibición de umbral (efecto *threshold*)\nAlgunos aditivos, sobre todo los **fosfonatos** y los **poliacrilatos**, evitan la precipitación de carbonato o sulfato de calcio a concentraciones **muy por debajo** de la estequiométrica (unos pocos mg/L). No atrapan cada ion; se adsorben en los núcleos de cristal que empiezan a formarse y **bloquean su crecimiento**, o los deforman para que no se adhieran. Es una acción cinética: retrasan la precipitación lo suficiente para que el agua salga del sistema antes de incrustar.\n\nEsta diferencia es práctica: si el objetivo es impedir que un agua dura incruste en un enjuague o en un sistema de agua, unos mg/L de fosfonato pueden bastar. Si el objetivo es que la dureza no precipite a un tensioactivo aniónico en la solución de limpieza, se necesita quelación estequiométrica.\n\n## La estabilidad y el pH\nLa fuerza con que un quelante retiene un metal se mide con la **constante de estabilidad** (se reporta como log K). Para el EDTA, por ejemplo, el complejo con hierro(III) es muchísimo más estable que con calcio, y el de calcio es más estable que el de magnesio. Cuanto mayor el log K, más difícil que el metal se escape del complejo.\n\nPero esas constantes son para el ligando totalmente desprotonado. En la realidad, los grupos donadores compiten por el metal con los **protones**: a pH bajo, los carboxilatos y las aminas están protonados y el quelante pierde capacidad. Por eso se habla de **constante condicional**, que depende del pH.\n\nConsecuencias:\n\n- El **EDTA** quela bien el calcio a pH neutro y alcalino, pero su capacidad cae mucho en medio ácido fuerte.\n- En medio muy alcalino aparece otra competencia: el **hidróxido**. El hierro y el magnesio tienden a precipitar como hidróxidos a pH alto, y no todos los quelantes logran mantenerlos en solución.\n- El **gluconato de sodio** es un caso especial: a pH bajo o neutro quela poco, pero en **sosa concentrada** es uno de los mejores secuestrantes de calcio y hierro. Por eso es un ingrediente clásico de los limpiadores para lavadoras de botellas y de los aditivos para sosa en CIP.\n\nElegir un secuestrante sin mirar el pH de uso es uno de los errores más comunes de formulación.\n\n## Los principales secuestrantes\n| Secuestrante | Mecanismo | Rango de pH donde rinde | Comentarios |\n|---|---|---|---|\n| **EDTA** (sales sódicas) | Quelación 1:1 | Neutro a alcalino | Muy eficaz y barato; baja biodegradabilidad; puede movilizar metales pesados en el ambiente |\n| **NTA** | Quelación | Neutro a alcalino | Eficaz y biodegradable, pero con restricciones regulatorias en varios mercados por su perfil toxicológico |\n| **MGDA** y **GLDA** | Quelación | Amplio, incluso alcalino fuerte | Fácilmente biodegradables; sustitutos modernos del EDTA y el NTA |\n| **Gluconato** y **glucoheptonato** | Quelación | Alcalino fuerte | Excelentes en sosa concentrada; poco útiles a pH bajo |\n| **Citrato** | Quelación moderada | Ácido a neutro | Suave, biodegradable; capacidad limitada |\n| **Fosfonatos** (HEDP, ATMP, PBTC) | Umbral y quelación | Amplio | Muy eficaces contra incrustación a dosis bajas; estables en ácido y en álcali (PBTC tolera bien el cloro) |\n| **Polifosfatos** (STPP, pirofosfato) | Secuestro y dispersión | Neutro a alcalino | Se hidrolizan con calor y tiempo a ortofosfato, que precipita con calcio; restricciones por fósforo |\n| **Poliacrilatos** y copolímeros | Umbral y dispersión | Amplio | Antiincrustantes y antirredeposición; complementan a los quelantes |\n\n## Capacidad de secuestro\nLos proveedores suelen expresar la **capacidad de secuestro** como miligramos de CaCO₃ que secuestra un gramo de producto. Para un quelante 1:1 se puede estimar a partir de su masa molar:\n\n- Na₄EDTA anhidro (aprox. 380 g/mol): 1 g son 2.63 mmol, que secuestran 2.63 mmol de calcio, equivalentes a **263 mg de CaCO₃** por gramo.\n- Si el producto comercial es una solución al 40 %, la capacidad por gramo de solución es de alrededor de **105 mg de CaCO₃**.\n\nCon este número y la dureza del agua puedes calcular rápidamente si una dosis de limpiador alcanza para el agua del cliente, como hiciste en el capítulo 2. Recuerda que la capacidad real depende del pH, la temperatura y los demás iones presentes; el cálculo da un mínimo.\n\n## Qué más hacen los secuestrantes\nAdemás de controlar la dureza, los secuestrantes:\n\n- **Ayudan a remover suciedad mineral**. Un quelante en un limpiador alcalino puede disolver lentamente depósitos ligeros de carbonato o fosfato de calcio, aunque no sustituye al paso ácido cuando la incrustación es gruesa.\n- **Protegen a los oxidantes**. Al atrapar hierro, cobre y manganeso, frenan la descomposición catalítica del peróxido, el ácido peracético y el hipoclorito. Los productos de peróxido y peracético llevan estabilizantes de este tipo (fosfonatos, dipicolínico).\n- **Previenen manchas** de hierro y de agua dura en superficies y envases.\n- **Mejoran la detergencia** al proteger a los tensioactivos aniónicos de la dureza y al ayudar a desprender suciedad que contiene calcio como \"puente\" entre la grasa y la superficie.\n\n## Aspectos ambientales y regulatorios\n- El **EDTA** se biodegrada mal en plantas de tratamiento convencionales y puede **movilizar metales pesados** en sedimentos. Varios mercados y clientes buscan formulaciones sin EDTA.\n- El **NTA** es biodegradable, pero su clasificación toxicológica ha llevado a restricciones en distintos países.\n- Los **fosfatos** y, en menor medida, los **fosfonatos** aportan fósforo a los efluentes, asociado a la eutrofización.\n- **MGDA** y **GLDA** son fácilmente biodegradables y se han vuelto la alternativa preferida en formulaciones \"verdes\", aunque su costo es mayor.\n\nCuando un cliente pide un producto \"libre de fosfatos\" o \"sin EDTA\", la reformulación no es solo quitar un ingrediente: hay que reemplazar su función con otro secuestrante que trabaje en el mismo rango de pH y verificar el desempeño en agua dura real.\n\n## Errores frecuentes en planta y en formulación\n- **Usar un quelante fuera de su pH útil**: por ejemplo, contar con gluconato en un limpiador neutro, o con EDTA en un desincrustante muy ácido.\n- **Calcular la dosis con agua blanda de laboratorio** y llevar el producto a una planta con agua de pozo de 400 mg/L.\n- **Confundir antiincrustante con quelante**: un fosfonato a 5 mg/L evita incrustación en el enjuague, pero no protege a un tensioactivo aniónico en una solución de limpieza con agua muy dura.\n- **Ignorar el hierro**: un agua con hierro consume quelante con prioridad (por su constante de estabilidad alta) y deja menos para el calcio.\n\n## Ideas que debes llevarte\n- Los secuestrantes mantienen los metales en solución para que no precipiten tensioactivos, no incrusten, no catalicen la descomposición de oxidantes y no manchen.\n- Hay tres mecanismos: **quelación** estequiométrica, **complejación** y dispersión, e **inhibición de umbral** a dosis bajas.\n- La capacidad de un quelante **depende del pH**: EDTA en neutro y alcalino, gluconato en sosa concentrada, citrato en ácido suave, fosfonatos en rangos amplios.\n- La **capacidad de secuestro** (mg de CaCO₃ por gramo) permite calcular si una dosis alcanza para el agua del cliente.\n- EDTA, NTA y fosfatos tienen limitaciones ambientales o regulatorias; MGDA y GLDA son las alternativas biodegradables.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "inhibición de umbral",
+     "enunciado": "Un fosfonato a 5 mg/L evita la incrustación de carbonato en un agua de 300 mg/L de dureza. ¿Cómo es posible si la dosis es muy inferior a la estequiométrica?",
+     "opciones": [
+      "Actúa por inhibición de umbral: se adsorbe en los núcleos de cristal y bloquea su crecimiento",
+      "Quela todo el calcio en proporción 1:1",
+      "Acidifica el agua y disuelve el carbonato",
+      "Precipita el calcio como fosfonato insoluble"
+     ],
+     "correcta": 0,
+     "explicacion": "El efecto threshold es cinético: retrasa la precipitación sin atrapar cada ion de calcio.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH y quelación",
+     "enunciado": "¿Por qué el EDTA pierde capacidad de quelar calcio en un desincrustante muy ácido?",
+     "opciones": [
+      "Sus grupos donadores están protonados y compiten con el metal, por lo que la constante condicional cae",
+      "El EDTA se descompone en medio ácido",
+      "El calcio se vuelve insoluble en medio ácido",
+      "El EDTA solo quela hierro"
+     ],
+     "correcta": 0,
+     "explicacion": "A pH bajo los protones ocupan carboxilatos y aminas; la capacidad efectiva de quelación disminuye.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "gluconato",
+     "enunciado": "¿En qué tipo de producto es especialmente útil el gluconato de sodio?",
+     "opciones": [
+      "En limpiadores de sosa concentrada, como los de lavadoras de botellas, donde secuestra calcio y hierro",
+      "En desincrustantes ácidos fuertes",
+      "En desinfectantes cuaternarios neutros",
+      "En limpiadores enzimáticos de pH 7"
+     ],
+     "correcta": 0,
+     "explicacion": "El gluconato quela poco a pH neutro o bajo, pero es excelente en medio muy alcalino.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "capacidad de secuestro",
+     "enunciado": "Un gramo de Na₄EDTA anhidro (≈380 g/mol) secuestra aproximadamente cuántos mg de CaCO₃?",
+     "opciones": [
+      "≈263 mg",
+      "≈100 mg",
+      "≈380 mg",
+      "≈38 mg"
+     ],
+     "correcta": 0,
+     "explicacion": "1 g ÷ 380 g/mol = 2.63 mmol; secuestra 2.63 mmol de Ca, equivalentes a 263 mg de CaCO₃.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "hierro y quelantes",
+     "enunciado": "En un agua con hierro y calcio, ¿qué ocurre con el EDTA disponible?",
+     "opciones": [
+      "El hierro se compleja con prioridad por su constante de estabilidad mucho mayor, y queda menos EDTA para el calcio",
+      "El EDTA ignora el hierro y solo quela calcio",
+      "El hierro aumenta la capacidad del EDTA para el calcio",
+      "El hierro y el calcio comparten la misma molécula de EDTA"
+     ],
+     "correcta": 0,
+     "explicacion": "El complejo Fe(III)-EDTA es mucho más estable que el de calcio; el hierro consume quelante primero.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "polifosfatos",
+     "enunciado": "¿Por qué un limpiador con tripolifosfato puede dejar depósitos de fosfato de calcio después de mucho tiempo en caliente?",
+     "opciones": [
+      "El polifosfato se hidroliza a ortofosfato, que precipita con el calcio",
+      "El tripolifosfato es insoluble desde el inicio",
+      "El calor convierte el fosfato en carbonato",
+      "El tripolifosfato reacciona con la sosa y forma sílice"
+     ],
+     "correcta": 0,
+     "explicacion": "La hidrólisis con calor y tiempo convierte polifosfatos en ortofosfato, que forma fosfato de calcio.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "oxidantes y quelantes",
+     "enunciado": "¿Por qué los productos de peróxido y ácido peracético incluyen fosfonatos u otros estabilizantes?",
+     "opciones": [
+      "Para secuestrar metales como hierro, cobre y manganeso que catalizan su descomposición",
+      "Para aumentar el pH del producto",
+      "Para generar espuma",
+      "Para neutralizar el ácido acético"
+     ],
+     "correcta": 0,
+     "explicacion": "Los metales de transición catalizan la descomposición de los oxidantes; secuestrarlos prolonga su vida útil.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "alternativas biodegradables",
+     "enunciado": "Un cliente pide un limpiador alcalino sin EDTA ni fosfatos. ¿Qué secuestrante es una buena alternativa?",
+     "opciones": [
+      "MGDA o GLDA, fácilmente biodegradables y eficaces en medio alcalino",
+      "Ácido sulfúrico",
+      "Tripolifosfato de sodio",
+      "Hipoclorito de sodio"
+     ],
+     "correcta": 0,
+     "explicacion": "MGDA y GLDA sustituyen al EDTA con buena biodegradabilidad; hay que verificar desempeño en el agua real.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "umbral vs quelación",
+     "enunciado": "¿Cuál es el error en esta idea: 'si 5 mg/L de fosfonato evitan la incrustación en el enjuague, también protegerán al tensioactivo aniónico en la solución de limpieza con agua muy dura'?",
+     "opciones": [
+      "Proteger al tensioactivo requiere quelación estequiométrica de la dureza; el efecto umbral solo retrasa la precipitación de cristales",
+      "Los fosfonatos son catiónicos e inactivan al aniónico",
+      "El fosfonato precipita al tensioactivo",
+      "No hay error; funciona igual"
+     ],
+     "correcta": 0,
+     "explicacion": "El calcio libre sigue disponible para reaccionar con el aniónico; se necesita quelante en cantidad suficiente.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "EDTA ambiental",
+     "enunciado": "¿Cuál es la principal preocupación ambiental del EDTA?",
+     "opciones": [
+      "Se biodegrada mal en plantas convencionales y puede movilizar metales pesados",
+      "Aporta nitrógeno amoniacal tóxico",
+      "Produce cloro al degradarse",
+      "Es inflamable"
+     ],
+     "correcta": 0,
+     "explicacion": "Su persistencia y capacidad de movilizar metales motivan su sustitución en muchos mercados.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PBTC",
+     "enunciado": "¿Qué ventaja tiene el fosfonato PBTC en formulaciones con cloro?",
+     "opciones": [
+      "Tolera bien los oxidantes como el hipoclorito, a diferencia de otros fosfonatos",
+      "Es un desinfectante por sí mismo",
+      "Genera espuma estable",
+      "No contiene fósforo"
+     ],
+     "correcta": 0,
+     "explicacion": "El PBTC es de los fosfonatos más estables frente al cloro, útil en productos clorados y aguas tratadas.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "cálculo de dosis",
+     "enunciado": "Un limpiador contiene 8 % de Na₄EDTA (capacidad ≈263 mg CaCO₃/g de EDTA) y se usa al 1 % (10 g/L). ¿Hasta qué dureza de agua alcanza su EDTA solo para el agua? Comenta el resultado.",
+     "respuesta_modelo": "10 g/L de producto contienen 0.8 g/L de EDTA; 0.8 g × 263 mg/g ≈ 210 mg/L de CaCO₃. Alcanza para un agua de hasta unos 210 mg/L, sin dejar margen para el calcio de la suciedad. Con agua más dura habría que subir la dosis, ablandar el agua o elegir otra formulación.",
+     "puntos_clave": [
+      "0.8 g/L de EDTA",
+      "≈210 mg/L de CaCO₃",
+      "sin margen para la suciedad",
+      "ajustar dosis o tratar el agua"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "selección por pH",
+     "enunciado": "Recomienda un secuestrante para cada caso y justifica: (a) aditivo para sosa al 2 % en una lavadora de botellas; (b) limpiador ácido suave para superficies; (c) evitar incrustación en un enjuague con agua dura.",
+     "respuesta_modelo": "(a) Gluconato de sodio, porque secuestra calcio y hierro muy bien en sosa concentrada. (b) Ácido cítrico o un fosfonato estable en ácido, porque quelan en medio ácido donde el EDTA rinde poco. (c) Un fosfonato o un poliacrilato a pocos mg/L por inhibición de umbral, sin necesidad de dosis estequiométrica.",
+     "puntos_clave": [
+      "gluconato en sosa",
+      "cítrico o fosfonato en ácido",
+      "efecto umbral para enjuagues",
+      "elegir según el pH de uso"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "funciones del secuestrante",
+     "enunciado": "Explica tres funciones de un secuestrante en un limpiador además de 'ablandar el agua'.",
+     "respuesta_modelo": "Protege a los tensioactivos aniónicos de precipitar con la dureza; ayuda a remover depósitos ligeros de minerales y el calcio que une la suciedad a la superficie; secuestra metales que catalizan la descomposición de oxidantes; y previene manchas de hierro o de agua dura.",
+     "puntos_clave": [
+      "protege tensioactivos",
+      "ayuda con depósitos minerales ligeros",
+      "estabiliza oxidantes",
+      "previene manchas"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
