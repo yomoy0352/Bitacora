@@ -1,0 +1,202 @@
+{
+ "id": "como-aprender",
+ "titulo": "Cómo aprender",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Repetición espaciada y práctica de recuperación",
+   "fuente": "Curso de bienvenida",
+   "texto": "## Idea central\nRecordamos mejor lo que **intentamos recuperar de memoria** que lo que solo releemos, y lo retenemos más tiempo si esos intentos se **espacian** en el tiempo. Esta app combina las dos cosas: lees un capítulo, te evalúas y la app programa el siguiente repaso según tu resultado.\n\n## Conceptos clave\n- **Curva del olvido**: Hermann Ebbinghaus mostró a finales del siglo XIX que lo aprendido se pierde rápido en las primeras horas y días, y después más despacio. Cada repaso bien hecho aplana esa curva.\n- **Práctica de recuperación** (efecto de prueba): contestar preguntas sin ver el material fortalece el recuerdo más que releerlo el mismo tiempo. La evaluación no solo mide; también enseña.\n- **Espaciado**: repartir los repasos en días distintos funciona mejor que concentrarlos en una sola sesión larga, aunque la sesión larga se sienta más productiva.\n- **Dificultad deseable**: un repaso que cuesta un poco de esfuerzo (porque ya empezabas a olvidar) consolida más que uno fácil. Por eso los intervalos crecen cuando aciertas.\n- **Retroalimentación**: saber de inmediato por qué una respuesta es incorrecta evita que el error se fije.\n\n## Ejemplo aplicado\nLees un capítulo sobre validación de métodos y sacas 72% en la primera evaluación. La app programa el repaso en 3 días. En ese repaso las preguntas cambian y se enfocan en los conceptos que fallaste. Sacas 88%: el siguiente repaso queda a una o dos semanas. Si vuelves a sacar más de 85% con un intervalo de 14 días o más, el capítulo se marca como dominado.\n\n## Errores comunes\n- **Releer y subrayar** como método principal: da sensación de dominio porque el texto se vuelve familiar, pero reconocer no es lo mismo que recordar.\n- **Estudiar todo un día antes**: sirve para el examen inmediato, pero el olvido posterior es mucho más rápido.\n- **Saltarse los repasos cuando ya \"te lo sabes\"**: justo cuando empieza a costar recordarlo es el mejor momento para repasar.\n\n## Resumen\n- Recuperar de memoria enseña más que releer.\n- Espaciar los repasos y alargar el intervalo cuando aciertas consolida lo aprendido.\n- La retroalimentación inmediata corrige errores antes de que se fijen.",
+   "preguntas": [
+    {
+     "id": "q1",
+     "tipo": "opcion",
+     "concepto": "práctica de recuperación",
+     "enunciado": "Tienes 30 minutos para estudiar un capítulo que ya leíste una vez. ¿Qué uso del tiempo produce mejor retención a largo plazo?",
+     "opciones": [
+      "Contestar preguntas sobre el capítulo sin verlo y luego revisar las que fallaste",
+      "Releer el capítulo completo dos veces con atención",
+      "Subrayar las ideas principales y hacer un resumen copiando frases clave",
+      "Leer el capítulo en voz alta para fijarlo mejor"
+     ],
+     "correcta": 0,
+     "explicacion": "Recuperar de memoria (efecto de prueba) fortalece el recuerdo más que releer o subrayar el mismo tiempo; revisar los errores añade retroalimentación."
+    },
+    {
+     "id": "q2",
+     "tipo": "opcion",
+     "concepto": "curva del olvido",
+     "enunciado": "Según la curva del olvido de Ebbinghaus, ¿cuándo se pierde más rápido lo aprendido?",
+     "opciones": [
+      "En las primeras horas y días después de aprenderlo",
+      "De forma constante, la misma cantidad cada día",
+      "Después de varias semanas, cuando el recuerdo ya se debilitó",
+      "Solo si no se entendió bien desde el principio"
+     ],
+     "correcta": 0,
+     "explicacion": "La pérdida es más rápida al inicio y después se vuelve más lenta; por eso el primer repaso conviene hacerlo pronto."
+    },
+    {
+     "id": "q3",
+     "tipo": "opcion",
+     "concepto": "espaciado",
+     "enunciado": "Debes dedicar 3 horas en total a repasar un tema. ¿Qué distribución recomienda el principio de espaciado?",
+     "opciones": [
+      "Tres sesiones de una hora en días distintos",
+      "Una sesión de tres horas el día anterior a necesitarlo",
+      "Una sesión de tres horas el mismo día que lo aprendiste",
+      "Seis sesiones de media hora el mismo día"
+     ],
+     "correcta": 0,
+     "explicacion": "Repartir el estudio en días distintos produce más retención que concentrarlo, aunque la sesión larga se sienta más productiva."
+    },
+    {
+     "id": "q4",
+     "tipo": "opcion",
+     "concepto": "dificultad deseable",
+     "enunciado": "¿Por qué la app alarga el intervalo de repaso cuando aciertas?",
+     "opciones": [
+      "Porque recordar cuando ya empezabas a olvidar consolida más el aprendizaje",
+      "Porque si acertaste ya no necesitas volver a repasar ese capítulo",
+      "Para que tengas menos trabajo pendiente cada día",
+      "Porque las preguntas se vuelven más fáciles con el tiempo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la dificultad deseable: un repaso que exige cierto esfuerzo fortalece más que uno fácil hecho demasiado pronto."
+    },
+    {
+     "id": "q5",
+     "tipo": "opcion",
+     "concepto": "reconocer vs recordar",
+     "enunciado": "Después de releer tres veces un procedimiento, sientes que ya lo dominas. ¿Cuál es el riesgo principal de esa sensación?",
+     "opciones": [
+      "Confundir que el texto te resulta familiar con poder recordarlo sin verlo",
+      "Haber memorizado demasiados detalles irrelevantes",
+      "Cansarte y olvidar el principio del procedimiento",
+      "Ninguno, si lo releíste tres veces ya está aprendido"
+     ],
+     "correcta": 0,
+     "explicacion": "Releer genera familiaridad (reconocer), que no es lo mismo que recuperar la información por tu cuenta (recordar)."
+    },
+    {
+     "id": "q6",
+     "tipo": "opcion",
+     "concepto": "retroalimentación",
+     "enunciado": "En una evaluación te equivocas en una pregunta. ¿Qué hace que ese error no se fije en tu memoria?",
+     "opciones": [
+      "Saber de inmediato por qué tu respuesta era incorrecta y cuál era la correcta",
+      "Repetir la evaluación completa al día siguiente sin revisar nada",
+      "Ignorar el error porque la mayoría de tus respuestas fueron correctas",
+      "Anotar la calificación para comparar tu avance"
+     ],
+     "correcta": 0,
+     "explicacion": "La retroalimentación inmediata corrige el error antes de que se consolide."
+    },
+    {
+     "id": "q7",
+     "tipo": "opcion",
+     "concepto": "momento del repaso",
+     "enunciado": "Un capítulo que dominabas empieza a costarte trabajo recordarlo. Según el capítulo, ¿qué conviene hacer?",
+     "opciones": [
+      "Repasarlo ahora: es el mejor momento, justo cuando cuesta recordarlo",
+      "Esperar a olvidarlo por completo para aprenderlo desde cero",
+      "Saltarte el repaso porque ya lo habías dominado antes",
+      "Releerlo varias veces seguidas el mismo día"
+     ],
+     "correcta": 0,
+     "explicacion": "El momento en que empieza a costar recordar es el más productivo para repasar; saltarse ese repaso es uno de los errores comunes."
+    },
+    {
+     "id": "q8",
+     "tipo": "opcion",
+     "concepto": "estudiar un día antes",
+     "enunciado": "¿Qué pasa con lo que se estudia todo junto el día anterior a un examen?",
+     "opciones": [
+      "Sirve para el examen inmediato, pero se olvida mucho más rápido después",
+      "Se retiene igual de bien que si se hubiera estudiado espaciado",
+      "Se olvida antes del examen porque el cerebro se satura",
+      "Se retiene mejor porque está más fresco"
+     ],
+     "correcta": 0,
+     "explicacion": "La práctica concentrada da buen desempeño inmediato pero un olvido posterior más rápido."
+    },
+    {
+     "id": "q9",
+     "tipo": "opcion",
+     "concepto": "repaso espaciado en la app",
+     "enunciado": "Sacas 72% en la primera evaluación de un capítulo. ¿Qué hace la app?",
+     "opciones": [
+      "Programa un repaso en pocos días con preguntas enfocadas en lo que fallaste",
+      "Marca el capítulo como dominado",
+      "Te pide releer el capítulo completo antes de continuar",
+      "Programa el siguiente repaso dentro de dos semanas"
+     ],
+     "correcta": 0,
+     "explicacion": "Con un resultado intermedio el intervalo es corto (unos 3 días) y la siguiente evaluación insiste en los conceptos que fallaste."
+    },
+    {
+     "id": "q10",
+     "tipo": "opcion",
+     "concepto": "capítulo dominado",
+     "enunciado": "¿Cuándo marca la app un capítulo como dominado?",
+     "opciones": [
+      "Cuando sacas 85% o más con un intervalo de repaso de 14 días o más",
+      "La primera vez que sacas 100%",
+      "Cuando lo lees completo",
+      "Cuando contestas todas las preguntas del banco al menos una vez"
+     ],
+     "correcta": 0,
+     "explicacion": "Dominar exige un buen resultado sostenido en el tiempo: 85% o más cuando el repaso ya está espaciado a dos semanas o más."
+    },
+    {
+     "id": "q11",
+     "tipo": "abierta",
+     "concepto": "práctica de recuperación",
+     "enunciado": "Explica con tus palabras por qué contestar preguntas sin ver el material enseña más que releerlo.",
+     "respuesta_modelo": "Porque obliga a reconstruir la información desde la memoria; ese esfuerzo de recuperación fortalece el recuerdo, mientras que releer solo produce familiaridad con el texto.",
+     "puntos_clave": [
+      "recuperar desde la memoria fortalece el recuerdo",
+      "releer da familiaridad, no recuerdo"
+     ]
+    },
+    {
+     "id": "q12",
+     "tipo": "abierta",
+     "concepto": "espaciado",
+     "enunciado": "Un compañero dice que prefiere estudiar todo en una sola sesión larga porque siente que aprende más. ¿Qué le responderías con base en el capítulo?",
+     "respuesta_modelo": "Que la sesión larga da sensación de productividad y sirve a corto plazo, pero repartir el estudio en días distintos produce más retención a largo plazo y frena la curva del olvido.",
+     "puntos_clave": [
+      "la sensación de productividad engaña",
+      "repartir en días distintos retiene más",
+      "efecto a largo plazo"
+     ]
+    },
+    {
+     "id": "q13",
+     "tipo": "abierta",
+     "concepto": "dificultad deseable",
+     "enunciado": "¿Qué es una dificultad deseable y cómo la aprovecha esta app?",
+     "respuesta_modelo": "Es el esfuerzo extra de recordar algo cuando ya empezabas a olvidarlo, que consolida más que un repaso fácil. La app la aprovecha alargando el intervalo de repaso cada vez que aciertas.",
+     "puntos_clave": [
+      "esfuerzo de recordar al empezar a olvidar",
+      "consolida más que un repaso fácil",
+      "intervalos que crecen al acertar"
+     ]
+    },
+    {
+     "id": "q14",
+     "tipo": "abierta",
+     "concepto": "aplicación a tu estudio",
+     "enunciado": "Describe cómo usarías los principios del capítulo para prepararte para una auditoría que será en un mes.",
+     "respuesta_modelo": "Leer el material pronto, evaluarme sin ver las notas, revisar de inmediato lo que fallé y repetir evaluaciones en días distintos con intervalos crecientes (por ejemplo a los 2, 7 y 20 días), concentrándome en los puntos débiles, en lugar de estudiar todo la semana anterior.",
+     "puntos_clave": [
+      "evaluarse sin ver el material",
+      "repasos espaciados con intervalos crecientes",
+      "enfocarse en los errores",
+      "no dejar todo para el final"
+     ]
+    }
+   ]
+  }
+ ]
+}
