@@ -2114,6 +2114,648 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "11",
+   "titulo": "ISO/IEC 17025 III: sistema de gestión y acreditación",
+   "texto": "## El capítulo 8: el sistema que sostiene la competencia\nLa competencia técnica no se mantiene sola: necesita un sistema que controle documentos y registros, gestione riesgos, corrija problemas, audite y revise. El capítulo 8 de ISO/IEC 17025 establece esos requisitos.\n\n## Dos opciones: A y B\nLa norma ofrece dos formas de cumplir el capítulo 8:\n\n- **Opción A**: el laboratorio implementa los requisitos 8.2 a 8.9 de la propia norma.\n- **Opción B**: el laboratorio tiene un sistema de gestión establecido y mantenido conforme a **ISO 9001**, capaz de apoyar y demostrar el cumplimiento coherente de los capítulos 4 a 7, y que cumple **al menos la intención** de los requisitos de 8.2 a 8.9.\n\nPara un laboratorio de una planta con un sistema integrado ISO 9001 e ISO 22000, la **opción B** es natural: el laboratorio se integra al sistema existente. Pero atención: el auditor de acreditación verificará que el sistema realmente cubre las necesidades del laboratorio (por ejemplo, que las auditorías internas incluyan los requisitos técnicos de ISO/IEC 17025, no solo los de ISO 9001). La certificación ISO 9001 por sí sola no basta.\n\n## Requisitos de la opción A\n### 8.2 Documentación del sistema\nLa dirección establece, documenta y mantiene **políticas y objetivos** para cumplir la norma, asegura que se conocen e implementan en todos los niveles, y demuestra su compromiso con la **competencia**, la **imparcialidad** y la **operación coherente**. Toda la documentación, procesos, sistemas y registros relacionados con el cumplimiento se incluyen o referencian en el sistema.\n\n### 8.3 Control de documentos\nDocumentos internos y externos (normas, métodos, manuales de equipos, especificaciones) controlados: aprobados antes de su emisión, revisados y actualizados, cambios y versión vigente identificados, disponibles en los puntos de uso, identificados de forma única y protegidos contra el uso de obsoletos.\n\n**Error frecuente**: usar una versión **obsoleta** de un método normalizado porque nadie vigila las actualizaciones de las normas externas.\n\n### 8.4 Control de registros\nRegistros legibles, identificables, protegidos, con tiempo de retención definido, accesibles y conforme a las obligaciones contractuales y legales.\n\n### 8.5 Acciones para abordar riesgos y oportunidades\nEl laboratorio considera los riesgos y oportunidades asociados a sus actividades para asegurar que el sistema logra sus resultados, potenciar oportunidades, prevenir o reducir impactos no deseados y lograr la mejora. Las acciones son **proporcionales** al impacto potencial en la validez de los resultados. La norma aclara que no se exige un método formal de gestión de riesgos.\n\nEjemplos de riesgos en un laboratorio de planta: dependencia de un solo analista para un método crítico; un solo equipo para un análisis de liberación sin respaldo; muestras inestables con tiempos de transporte largos; presión por tiempos de liberación; obsolescencia del software del titulador.\n\n### 8.6 Mejora\nIdentificar y seleccionar oportunidades de mejora e implementar acciones, considerando la **retroalimentación de los clientes** (que el laboratorio debe buscar activamente).\n\n### 8.7 Acciones correctivas\nAnte una no conformidad: reaccionar (controlarla y corregirla, hacer frente a las consecuencias), evaluar la necesidad de eliminar sus causas (revisión, análisis de causas, determinar si existen no conformidades similares o podrían ocurrir), implementar acciones, revisar su eficacia, actualizar riesgos y oportunidades y hacer cambios al sistema si es necesario.\n\n### 8.8 Auditorías internas\nA intervalos planificados, para verificar que el sistema cumple los requisitos propios y los de la norma, y está implementado y mantenido eficazmente. Con programa, criterios y alcance definidos, auditores objetivos e imparciales, informe a la dirección pertinente, correcciones y acciones correctivas sin demora indebida.\n\n**Buena práctica en laboratorios**: además de auditar el sistema, hacer **auditorías verticales** (seguir un resultado desde la recepción de la muestra hasta el informe, revisando registros técnicos, equipos, patrones, cálculos y competencia del analista) y **auditorías de testificación** (observar al analista ejecutar el método).\n\n### 8.9 Revisiones por la dirección\nA intervalos planificados. Las entradas incluyen, entre otras: cambios internos y externos, cumplimiento de objetivos, adecuación de políticas y procedimientos, estado de acciones de revisiones anteriores, resultados de auditorías internas, acciones correctivas, evaluaciones externas, cambios en volumen y tipo de trabajo, retroalimentación de clientes y personal, quejas, eficacia de las mejoras, adecuación de recursos, resultados de identificación de riesgos, resultados del aseguramiento de la validez, y otros factores como el seguimiento de actividades y la formación. Las salidas son decisiones sobre la eficacia del sistema, mejoras, recursos y cambios.\n\n## La acreditación\n### Qué es\nLa **acreditación** es la atestación de tercera parte, emitida por un **organismo de acreditación**, que manifiesta la demostración formal de la competencia de un organismo de evaluación de la conformidad (en este caso, un laboratorio) para llevar a cabo **tareas específicas**. Los organismos de acreditación operan según **ISO/IEC 17011**.\n\n### En México\nEn México, la acreditación de laboratorios de ensayo y calibración la otorga la **Entidad Mexicana de Acreditación (ema)**, firmante de los acuerdos de reconocimiento internacionales para laboratorios. La ema publica sus propios criterios, políticas (por ejemplo, sobre trazabilidad, incertidumbre y participación en ensayos de aptitud) y guías técnicas, que complementan la norma y se exigen en la evaluación. En México, la norma se adopta también como norma mexicana equivalente.\n\n### El proceso típico\n1. **Preparación**: implementar el sistema, validar o verificar los métodos, estimar incertidumbres, calibrar equipos, participar en ensayos de aptitud, operar el sistema un tiempo (auditoría interna y revisión por la dirección completas).\n2. **Solicitud** al organismo de acreditación, con la documentación y el **alcance** solicitado.\n3. **Evaluación documental**.\n4. **Evaluación en sitio** por un evaluador líder y **expertos técnicos** en los métodos, que incluye testificación de ensayos.\n5. Atención de **no conformidades** con evidencia de corrección y acción correctiva en el plazo establecido.\n6. **Decisión** de acreditación por un comité.\n7. **Vigilancia** periódica y **reevaluación**, con posibilidad de ampliar, reducir o suspender el alcance.\n\n### El alcance\nLa acreditación no es para \"el laboratorio\" en general, sino para un **alcance** específico: cada ensayo con su **método**, el **producto o matriz** y, cuando aplica, el **intervalo** de medición. Un laboratorio puede estar acreditado para la determinación de cloro disponible en hipoclorito y no para la de ácido peracético. Por eso, al evaluar un laboratorio externo, hay que verificar que el ensayo que necesitas esté **en su alcance**.\n\n### Uso del símbolo\nLos laboratorios acreditados pueden usar el símbolo del organismo de acreditación en sus informes **solo** para los resultados de ensayos dentro del alcance, según las reglas del organismo. Un informe con símbolo de acreditación que incluye resultados fuera del alcance debe identificarlos claramente.\n\n## Ensayos de aptitud\n### Qué son\nLos **ensayos de aptitud** (EA, o PT por sus siglas en inglés) son la evaluación del desempeño de un participante frente a criterios preestablecidos mediante **comparaciones interlaboratorio**: un proveedor envía muestras homogéneas a varios laboratorios, cada uno las analiza como muestras normales y el proveedor compara los resultados contra un **valor asignado**. Los proveedores de EA operan según **ISO/IEC 17043** (edición vigente de 2023), y se prefieren los acreditados.\n\n### Por qué son indispensables\n- Son la evidencia **externa e independiente** de que los resultados del laboratorio son comparables.\n- Detectan **sesgos** que el control interno no puede detectar (si el patrón interno está sesgado, todos los controles internos lo están).\n- Los organismos de acreditación exigen una **participación** mínima, siguiendo la política de ILAC sobre ensayos de aptitud: típicamente, participar en las principales áreas técnicas del alcance con una frecuencia definida dentro del ciclo de acreditación.\n\nEn el capítulo 12 verás cómo se evalúan los resultados (puntaje z).\n\n### Cuando no hay programa disponible\nPara productos muy específicos (por ejemplo, un auxiliar de proceso propio), puede no existir un programa de EA. Alternativas: **comparaciones interlaboratorio** organizadas con otros laboratorios (del cliente, del proveedor, externos acreditados), análisis de **MRC**, análisis de muestras **divididas** con un laboratorio acreditado. Deben estar planificadas y documentadas.\n\n## ¿Vale la pena acreditar el laboratorio de una planta?\nVentajas:\n\n- Credibilidad ante **clientes** y **autoridades**; reduce la necesidad de análisis externos repetidos.\n- Requisito de algunos clientes o esquemas para resultados críticos.\n- Mejora real de la **calidad técnica**: incertidumbres conocidas, métodos validados, trazabilidad, control.\n- Disciplina en la **integridad de datos** e imparcialidad.\n\nCostos y retos:\n\n- Recursos humanos y económicos (calibraciones, MRC, EA, evaluaciones).\n- Rigor documental y técnico sostenido.\n- Gestión de la **imparcialidad** dentro de una organización productiva.\n\nUna estrategia frecuente: **implementar** ISO/IEC 17025 en el laboratorio (con opción B) aunque no se acredite al inicio, y acreditar después los métodos más críticos para los clientes.\n\n## Ideas que debes llevarte\n- El capítulo 8 tiene **opción A** (requisitos propios) y **opción B** (sistema ISO 9001 que cumple la intención de 8.2 a 8.9).\n- Requisitos: documentación, control de documentos (incluidos **externos** vigentes) y registros, **riesgos y oportunidades**, mejora, acciones correctivas, **auditorías** (también verticales y de testificación) y revisión por la dirección.\n- La **acreditación** reconoce competencia para un **alcance** específico; en México la otorga la **ema**.\n- Verifica siempre que el ensayo que necesitas esté **dentro del alcance** del laboratorio.\n- Los **ensayos de aptitud** (ISO/IEC 17043) son evidencia externa e indispensable; sin programa, usa comparaciones planificadas, MRC o muestras divididas.\n- Implementar ISO/IEC 17025 aporta valor técnico aunque no se acredite de inmediato.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Opciones",
+     "enunciado": "¿Qué es la opción B del capítulo 8 de ISO/IEC 17025?",
+     "opciones": [
+      "Tener un sistema conforme a ISO 9001 que apoye los capítulos 4 a 7 y cumpla al menos la intención de 8.2 a 8.9",
+      "No tener sistema de gestión",
+      "Usar solo el capítulo 7",
+      "Contratar el sistema a un tercero"
+     ],
+     "correcta": 0,
+     "explicacion": "La opción A implementa directamente 8.2 a 8.9.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Opción B",
+     "enunciado": "¿Basta la certificación ISO 9001 de la empresa para cumplir el capítulo 8 con la opción B?",
+     "opciones": [
+      "No; el evaluador verifica que el sistema cubra realmente las necesidades técnicas del laboratorio",
+      "Sí, automáticamente",
+      "Sí, si el certificado está vigente",
+      "Solo si es FSSC 22000"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, auditorías internas que incluyan requisitos técnicos de ISO/IEC 17025.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Documentos externos",
+     "enunciado": "¿Cuál es un error frecuente en el control de documentos de un laboratorio?",
+     "opciones": [
+      "Usar una versión obsoleta de un método normalizado porque nadie vigila las actualizaciones",
+      "Tener demasiadas copias controladas",
+      "Identificar los documentos",
+      "Aprobar los documentos antes de emitirlos"
+     ],
+     "correcta": 0,
+     "explicacion": "Los documentos externos también se controlan.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos",
+     "enunciado": "¿Exige ISO/IEC 17025 un método formal de gestión de riesgos?",
+     "opciones": [
+      "No; las acciones deben ser proporcionales al impacto en la validez de los resultados",
+      "Sí, ISO 31000 obligatoria",
+      "Sí, AMEF obligatorio",
+      "Sí, una matriz de 5 × 5"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma lo aclara en una nota.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Auditoría vertical",
+     "enunciado": "¿En qué consiste una auditoría vertical en un laboratorio?",
+     "opciones": [
+      "Seguir un resultado desde la recepción de la muestra hasta el informe, revisando registros, equipos, patrones, cálculos y competencia",
+      "Auditar a la dirección",
+      "Auditar solo los documentos",
+      "Auditar el edificio de arriba abajo"
+     ],
+     "correcta": 0,
+     "explicacion": "Complementa las auditorías de sistema y de testificación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acreditación",
+     "enunciado": "¿Qué norma rige a los organismos de acreditación?",
+     "opciones": [
+      "ISO/IEC 17011",
+      "ISO/IEC 17025",
+      "ISO/IEC 17043",
+      "ISO 9001"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO/IEC 17043 es para proveedores de ensayos de aptitud.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "México",
+     "enunciado": "¿Qué organismo acredita laboratorios de ensayo y calibración en México?",
+     "opciones": [
+      "La Entidad Mexicana de Acreditación (ema)",
+      "El CENAM",
+      "La COFEPRIS",
+      "El IMNC"
+     ],
+     "correcta": 0,
+     "explicacion": "El CENAM es el instituto nacional de metrología.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "Un laboratorio externo está acreditado para cloro disponible en hipoclorito. ¿Puede reportar con símbolo de acreditación un resultado de ácido peracético?",
+     "opciones": [
+      "No, si ese ensayo no está en su alcance",
+      "Sí, porque está acreditado",
+      "Sí, si el método es parecido",
+      "Solo con autorización del cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "La acreditación cubre ensayos, métodos, matrices e intervalos específicos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proceso",
+     "enunciado": "¿Quiénes participan típicamente en la evaluación en sitio para acreditación?",
+     "opciones": [
+      "Un evaluador líder y expertos técnicos en los métodos, con testificación de ensayos",
+      "Solo un auditor de ISO 9001",
+      "El cliente del laboratorio",
+      "Nadie; es solo documental"
+     ],
+     "correcta": 0,
+     "explicacion": "La competencia técnica se evalúa con expertos y observación.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ensayos de aptitud",
+     "enunciado": "¿Por qué los ensayos de aptitud detectan problemas que el control interno no detecta?",
+     "opciones": [
+      "Porque comparan con un valor externo; si el patrón interno está sesgado, los controles internos también lo están",
+      "Porque son más caros",
+      "Porque los hace otro analista",
+      "No detectan nada adicional"
+     ],
+     "correcta": 0,
+     "explicacion": "Son evidencia externa e independiente.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sin programa",
+     "enunciado": "No existe un programa de ensayos de aptitud para tu auxiliar de proceso. ¿Qué alternativa es válida?",
+     "opciones": [
+      "Comparaciones interlaboratorio planificadas con un laboratorio acreditado mediante muestras divididas",
+      "No hacer nada",
+      "Repetir los análisis internamente",
+      "Inventar un valor asignado"
+     ],
+     "correcta": 0,
+     "explicacion": "También análisis de MRC si existen.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión por la dirección",
+     "enunciado": "¿Cuál de estas es una entrada de la revisión por la dirección del laboratorio según 8.9?",
+     "opciones": [
+      "Resultados del aseguramiento de la validez de los resultados",
+      "El presupuesto de mercadotecnia",
+      "El número de visitas a la página web",
+      "La rotación de vendedores"
+     ],
+     "correcta": 0,
+     "explicacion": "También quejas, auditorías, evaluaciones externas, riesgos y recursos.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Estrategia",
+     "enunciado": "Tu director pregunta si conviene acreditar el laboratorio de la planta. Prepara una recomendación breve con ventajas, costos y una estrategia.",
+     "respuesta_modelo": "Ventajas: credibilidad ante clientes y autoridades, menos análisis externos duplicados, cumplimiento de requisitos de clientes para resultados críticos, mejora técnica real (métodos validados, incertidumbres, trazabilidad, control), y fortalecimiento de la integridad de datos y la imparcialidad. Costos: tiempo del personal, calibraciones acreditadas, materiales de referencia, ensayos de aptitud, evaluaciones de la ema, y la gestión de la imparcialidad en una organización productiva. Estrategia: implementar ISO/IEC 17025 con la opción B integrada al sistema ISO 9001/FSSC existente para todo el laboratorio, y solicitar la acreditación primero para dos o tres métodos críticos que los clientes piden (por ejemplo, concentración de activos de sanitizantes sin enjuague), ampliando el alcance después según demanda.",
+     "puntos_clave": [
+      "Ventajas concretas",
+      "Costos y retos",
+      "Estrategia por etapas",
+      "Priorización de métodos críticos"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Riesgos del laboratorio",
+     "enunciado": "Identifica tres riesgos y una oportunidad para el laboratorio de control de calidad de tu planta, con acciones proporcionales.",
+     "respuesta_modelo": "Riesgos: 1) Un solo analista domina el método de liberación crítico: capacitar y autorizar a un segundo analista. 2) Un solo titulador automático sin respaldo: procedimiento alternativo validado con bureta manual o acuerdo con un laboratorio externo. 3) Muestras de APA que se degradan si el traslado desde planta tarda: tiempo máximo y transporte en frío, con registro. Oportunidad: implementar un LIMS o un sistema de captura directa desde el titulador que elimine transcripciones; acción: proyecto con validación del sistema y capacitación. Las acciones se priorizan por su impacto en la validez de los resultados y se revisan en la revisión por la dirección.",
+     "puntos_clave": [
+      "Tres riesgos pertinentes",
+      "Acción proporcional para cada uno",
+      "Una oportunidad con acción",
+      "Seguimiento en la revisión"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Evaluación de laboratorio externo",
+     "enunciado": "¿Qué revisarías antes de subcontratar a un laboratorio externo el análisis de clorato en tus productos?",
+     "respuesta_modelo": "Que esté acreditado con ISO/IEC 17025 por la ema o por un organismo firmante de los acuerdos de reconocimiento, y que el análisis de clorato en matrices similares a las tuyas (alcalinas, cloradas) esté dentro de su alcance, con el intervalo que necesitas (límite de cuantificación adecuado frente a tus especificaciones). Revisaría el método (por ejemplo, cromatografía iónica), su incertidumbre, su participación y resultados en ensayos de aptitud para ese analito, los tiempos de respuesta, los requisitos de muestreo, conservación y transporte de muestras (el clorato puede seguir formándose en muestras de hipoclorito), las condiciones de confidencialidad, y el formato del informe (incertidumbre y regla de decisión). Lo evaluaría como proveedor según mis criterios y verificaría su desempeño con muestras de valor conocido o divididas.",
+     "puntos_clave": [
+      "Acreditación con el ensayo en el alcance",
+      "Método, intervalo e incertidumbre",
+      "Ensayos de aptitud",
+      "Manejo de muestras, informe y evaluación como proveedor"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "titulo": "Aseguramiento de la validez de los resultados",
+   "texto": "## Validar no basta: hay que vigilar\nLa validación demostró que el método **puede** funcionar. La calibración demostró que los equipos estaban bien **en la fecha** de la calibración. Pero entre una y otra, cada día, los resultados pueden degradarse por muchas causas: un titulante que se descompone, un electrodo que envejece, un analista que cambia una técnica, un lote de reactivo defectuoso, una temperatura ambiente distinta. El **aseguramiento de la validez de los resultados** (apartado 7.7 de ISO/IEC 17025) es el sistema que detecta esos problemas antes de que lleguen a un informe.\n\nSe organiza en dos niveles:\n\n- **Control interno**: lo que el laboratorio hace por sí mismo en cada corrida o periódicamente.\n- **Control externo**: la comparación con otros laboratorios (ensayos de aptitud y comparaciones interlaboratorio).\n\n## Control interno\n### Material de control con carta de control\nEs la herramienta central. En cada corrida (o con una frecuencia definida), se analiza un **material de control** de valor conocido, de matriz y concentración parecidas a las muestras, y el resultado se grafica en una **carta de control** de Shewhart, como viste en el curso de estadística.\n\n**Cómo se establece**:\n\n1. Se elige o prepara un material de control estable y homogéneo (puede ser un MRC, un MR comercial o un material interno).\n2. Se analiza en al menos 20 corridas **en condiciones de precisión intermedia** (distintos días, analistas, lotes de reactivos).\n3. Línea central: la media. Límites de **advertencia** a ± 2s y de **acción** a ± 3s, donde s es la desviación estándar de precisión intermedia.\n4. Si el material es un MRC, la línea central puede ser el **valor certificado**, lo que permite además vigilar el **sesgo**.\n\n**Reglas típicas de interpretación** (como las de Westgard en laboratorios clínicos o las de la guía **Nordtest TR 569** para laboratorios químicos):\n\n- Un punto fuera de los límites de acción: la corrida está **fuera de control**; no se informan resultados hasta investigar.\n- Dos de tres puntos consecutivos fuera de los límites de advertencia, del mismo lado: fuera de control.\n- Varios puntos consecutivos del mismo lado de la línea central (por ejemplo, 7 a 9): posible sesgo; investigar.\n- Tendencias: posible deriva (titulante que se degrada, electrodo que envejece).\n\n### Duplicados y gráfico de rangos\nAnalizar algunas muestras **en duplicado** y graficar la diferencia (rango) vigila la **repetibilidad** con las muestras reales, incluida su matriz. Con la desviación estándar de repetibilidad s_r del método, la diferencia entre dos réplicas no debería superar, con 95 % de probabilidad, el **límite de repetibilidad**:\n\nr = 2.8 · s_r\n\n(el factor 2.8 es 1.96 × √2). Una diferencia mayor indica un problema en esa corrida o con esa muestra.\n\n### Blancos\nLos **blancos de reactivos** detectan contaminación y sirven para corregir. Un blanco alto o variable es una señal de alerta, sobre todo en análisis de trazas.\n\n### Otras herramientas internas\n- **Recuperación** de fortificaciones en muestras reales (para métodos con riesgo de efecto de matriz).\n- **Muestras ciegas** introducidas por el supervisor sin que el analista sepa cuáles son.\n- **Reanálisis de muestras retenidas** por otro analista o en otro día.\n- **Correlación** entre parámetros de la misma muestra (por ejemplo, la densidad y la concentración de un producto deben ser coherentes; la alcalinidad total y la libre siguen una relación conocida).\n- **Revisión** de los resultados por una segunda persona antes de emitir el informe.\n- **Verificaciones funcionales** de equipos (por ejemplo, la verificación diaria del pHímetro o de la balanza).\n\n### Cuánto control es suficiente\nDepende del **riesgo**: la criticidad de las decisiones, la estabilidad del método, la frecuencia de análisis, el historial. Un análisis de liberación de un sanitizante sin enjuague merece un material de control en **cada corrida**; un análisis de apariencia, mucho menos. El plan de control de calidad se documenta por método.\n\n## Control externo: ensayos de aptitud\n### El puntaje z\nLa forma más común de evaluar un resultado en un ensayo de aptitud es el **puntaje z** (ISO 13528 describe los métodos estadísticos):\n\nz = (x − X) / σ_pt\n\ndonde:\n\n- x es el resultado del laboratorio.\n- X es el **valor asignado** (por consenso de los participantes, por formulación o por un laboratorio de referencia).\n- σ_pt es la **desviación estándar para la evaluación de la aptitud**, definida por el proveedor (a partir de los resultados, de un modelo como Horwitz, o de un criterio de adecuación al uso).\n\nInterpretación habitual:\n\n| Puntaje | Interpretación |\n|---|---|\n| \\|z\\| ≤ 2.0 | Satisfactorio |\n| 2.0 < \\|z\\| < 3.0 | Cuestionable (señal de advertencia) |\n| \\|z\\| ≥ 3.0 | No satisfactorio (señal de acción) |\n\n**Ejemplo**: valor asignado X = 15.10 %; σ_pt = 0.12 %; resultado del laboratorio x = 15.30 %.\n\nz = (15.30 − 15.10) / 0.12 ≈ **1.67**: satisfactorio. Pero si en las tres rondas anteriores los puntajes fueron 1.4, 1.8 y 1.5, todos positivos, hay un patrón: el laboratorio tiende a reportar **alto**. Aunque cada ronda sea satisfactoria, la **tendencia** sugiere un sesgo que conviene investigar (por ejemplo, el titulante, un patrón, el punto final).\n\n### El número En\nCuando se considera la incertidumbre del laboratorio y la del valor de referencia (frecuente en calibraciones y en comparaciones con un laboratorio de referencia), se usa:\n\nEn = (x − X) / √(U_lab² + U_ref²)\n\ncon incertidumbres **expandidas**. |En| ≤ 1 se considera satisfactorio: el resultado y el valor de referencia son compatibles dentro de sus incertidumbres. Un |En| > 1 puede deberse a un sesgo o a una **incertidumbre subestimada**.\n\n### Qué hacer con un resultado no satisfactorio\nUn resultado cuestionable o no satisfactorio se trata como **trabajo no conforme** potencial:\n\n1. **Revisar** errores evidentes: transcripción, unidades, cálculos, identificación de la muestra, dilución.\n2. **Investigar** el método: patrones, titulante, calibración, equipo, analista, condiciones.\n3. Evaluar el **impacto** en los resultados de clientes emitidos desde la última evidencia de buen desempeño.\n4. Implementar **acciones correctivas** y verificar su eficacia (por ejemplo, con un MRC o en la siguiente ronda).\n5. **Documentar** todo.\n\nUn resultado no satisfactorio que no se investiga es uno de los hallazgos más serios en una evaluación de acreditación.\n\n### Uso inteligente de los ensayos de aptitud\n- Analiza las muestras de EA **como muestras normales**, con los mismos analistas y procedimientos (no con el \"mejor analista\" y triple réplica).\n- Lleva un **registro histórico** de puntajes z por método y analiza tendencias.\n- Usa los resultados para **validar** la incertidumbre: si los |z| frecuentemente superan lo que tu incertidumbre predice, tu incertidumbre está subestimada.\n\n## Integrar todo: el plan de aseguramiento de la validez\nUn plan por método, documentado, que define:\n\n| Elemento | Ejemplo para la titulación de APA |\n|---|---|\n| Material de control | Material interno estabilizado, en cada corrida |\n| Carta de control | Shewhart con límites de precisión intermedia; reglas definidas |\n| Duplicados | Una muestra de cada diez, límite r = 2.8 s_r |\n| Valoración del titulante | Diaria, con patrón primario; carta de control del factor |\n| Verificación del equipo | Bureta del titulador, mensual gravimétrica |\n| Ensayos de aptitud o comparaciones | Dos veces al año (comparación con laboratorio acreditado si no hay programa) |\n| Revisión de resultados | Segunda persona antes de emitir |\n| Análisis de tendencias | Mensual, en la reunión del laboratorio |\n\n## Ideas que debes llevarte\n- El **aseguramiento de la validez** vigila día a día que los resultados sigan siendo válidos.\n- **Control interno**: material de control con **carta de control** (límites a 2s y 3s de precisión intermedia), **duplicados** con límite r = 2.8 s_r, blancos, recuperaciones, muestras ciegas, retenidas, correlaciones, revisión.\n- La **cantidad de control** depende del riesgo de las decisiones.\n- **Control externo**: ensayos de aptitud con **puntaje z** (≤ 2 satisfactorio, 2 a 3 cuestionable, ≥ 3 no satisfactorio) y **En** (≤ 1).\n- Analiza **tendencias** de los puntajes, no solo cada ronda.\n- Un resultado no satisfactorio se investiga como **trabajo no conforme**, con evaluación del impacto y acciones correctivas.\n- Documenta un **plan por método**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito",
+     "enunciado": "¿Qué diferencia hay entre la validación y el aseguramiento de la validez de los resultados?",
+     "opciones": [
+      "La validación demuestra que el método puede funcionar; el aseguramiento vigila que siga funcionando cada día",
+      "Son lo mismo",
+      "El aseguramiento sustituye a la validación",
+      "La validación se hace cada día"
+     ],
+     "correcta": 0,
+     "explicacion": "Apartado 7.7 de ISO/IEC 17025.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Carta de control",
+     "enunciado": "¿Con qué desviación estándar se calculan los límites de la carta de control de un material de control?",
+     "opciones": [
+      "Con la de precisión intermedia, obtenida en al menos 20 corridas en distintos días y analistas",
+      "Con la de repetibilidad de un solo día",
+      "Con la tolerancia de la especificación",
+      "Con la incertidumbre del certificado del MRC"
+     ],
+     "correcta": 0,
+     "explicacion": "Así los límites reflejan la variación real del trabajo diario.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas",
+     "enunciado": "El material de control cae fuera del límite de acción (3s). ¿Qué se hace?",
+     "opciones": [
+      "La corrida está fuera de control; no se informan resultados hasta investigar",
+      "Se informan los resultados con una nota",
+      "Se repite el control hasta que salga dentro",
+      "Se ignora porque es un solo punto"
+     ],
+     "correcta": 0,
+     "explicacion": "Se trata como trabajo no conforme.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reglas",
+     "enunciado": "Nueve puntos consecutivos del material de control quedan por encima de la línea central, todos dentro de los límites. ¿Qué sugiere?",
+     "opciones": [
+      "Un posible sesgo que conviene investigar",
+      "Que el método es perfecto",
+      "Que hay que ensanchar los límites",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, un cambio de lote de titulante o de patrón.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Duplicados",
+     "enunciado": "Con s_r = 0.05 %, ¿cuál es el límite de repetibilidad para la diferencia entre duplicados?",
+     "opciones": [
+      "0.14 %",
+      "0.05 %",
+      "0.10 %",
+      "0.28 %"
+     ],
+     "correcta": 0,
+     "explicacion": "r = 2.8 × 0.05 = 0.14 %.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Correlación",
+     "enunciado": "¿Qué tipo de control es comparar la densidad y la concentración de una misma muestra?",
+     "opciones": [
+      "Correlación entre características de un mismo ítem",
+      "Ensayo de aptitud",
+      "Calibración",
+      "Validación"
+     ],
+     "correcta": 0,
+     "explicacion": "Resultados incoherentes entre parámetros indican un posible error.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgo",
+     "enunciado": "¿De qué depende la frecuencia del control interno de un método?",
+     "opciones": [
+      "Del riesgo: criticidad de las decisiones, estabilidad del método, frecuencia e historial",
+      "Siempre es una vez al mes",
+      "Del costo del material únicamente",
+      "No depende de nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Un análisis de liberación crítico merece control en cada corrida.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Puntaje z",
+     "enunciado": "X = 50.0, σ_pt = 2.0, x = 55.4. ¿Cuál es el puntaje z y su interpretación?",
+     "opciones": [
+      "2.7, cuestionable",
+      "5.4, no satisfactorio",
+      "2.7, satisfactorio",
+      "1.35, satisfactorio"
+     ],
+     "correcta": 0,
+     "explicacion": "z = (55.4 − 50.0)/2.0 = 2.7, entre 2 y 3.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tendencia",
+     "enunciado": "En cuatro rondas, los puntajes z son 1.5, 1.8, 1.4 y 1.7. ¿Qué conclusión es correcta?",
+     "opciones": [
+      "Todos son satisfactorios, pero la tendencia positiva sugiere un sesgo que conviene investigar",
+      "No hay nada que hacer",
+      "El laboratorio está fuera de control",
+      "Los puntajes son no satisfactorios"
+     ],
+     "correcta": 0,
+     "explicacion": "Se analizan tendencias, no solo cada ronda.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "En",
+     "enunciado": "x − X = 0.30, U_lab = 0.20 y U_ref = 0.15. ¿Cuál es En?",
+     "opciones": [
+      "1.2, no satisfactorio",
+      "0.6, satisfactorio",
+      "1.5, satisfactorio",
+      "0.86, satisfactorio"
+     ],
+     "correcta": 0,
+     "explicacion": "√(0.04 + 0.0225) = 0.25; En = 0.30/0.25 = 1.2 > 1.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "En",
+     "enunciado": "Un |En| > 1 puede deberse a:",
+     "opciones": [
+      "Un sesgo o una incertidumbre del laboratorio subestimada",
+      "Una incertidumbre sobreestimada",
+      "Un resultado perfecto",
+      "Un error del proveedor de EA siempre"
+     ],
+     "correcta": 0,
+     "explicacion": "Se investigan ambas posibilidades.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Buenas prácticas",
+     "enunciado": "¿Cómo deben analizarse las muestras de un ensayo de aptitud?",
+     "opciones": [
+      "Como muestras normales, con los mismos analistas y procedimientos",
+      "Con el mejor analista y triple réplica",
+      "Con un método especial",
+      "Enviándolas a otro laboratorio"
+     ],
+     "correcta": 0,
+     "explicacion": "Así el EA refleja el desempeño real.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Resultado no satisfactorio",
+     "enunciado": "Tu laboratorio obtiene z = −3.4 en un ensayo de aptitud de alcalinidad total en un detergente. Describe la investigación y las acciones.",
+     "respuesta_modelo": "1) Revisar errores evidentes: transcripción, unidades (por ejemplo, % como NaOH frente a como Na₂O), cálculos, dilución, identificación de la muestra. 2) Si no hay error evidente, investigar el método: valoración y concentración del ácido titulante, patrón primario, bureta, detección del punto final, interferencias de la matriz, analista y condiciones; analizar un MRC o una muestra de valor conocido. 3) Evaluar el impacto: revisar los resultados de clientes y liberaciones desde la última evidencia de buen desempeño (ronda anterior satisfactoria, controles internos) y decidir si hay que reanalizar muestras retenidas y notificar. 4) Implementar acciones correctivas sobre la causa y verificar su eficacia con un MRC o en la siguiente ronda. 5) Documentar como trabajo no conforme y acción correctiva.",
+     "puntos_clave": [
+      "Revisión de errores evidentes",
+      "Investigación técnica del método",
+      "Evaluación del impacto en resultados emitidos",
+      "Acción correctiva verificada y documentada"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan",
+     "enunciado": "Diseña el plan de aseguramiento de la validez para el método de pH al 1 % de detergentes.",
+     "respuesta_modelo": "Verificación funcional: calibración del pHímetro con dos amortiguadores trazables antes de cada sesión, con criterios de pendiente (95 a 105 %) y verificación con un tercer amortiguador dentro de ± 0.05. Material de control: una solución de un detergente estable (material interno) medida en cada sesión, con carta de control de límites de precisión intermedia. Duplicados: una muestra de cada diez, con límite r = 2.8 s_r. Correlación: pH coherente con la alcalinidad del producto. Comparación externa: ensayo de aptitud de pH en agua o soluciones, o comparación con un laboratorio acreditado dos veces al año. Revisión de resultados por segunda persona. Análisis mensual de tendencias.",
+     "puntos_clave": [
+      "Verificación funcional con criterios",
+      "Material de control con carta",
+      "Duplicados y correlación",
+      "Comparación externa y revisión de tendencias"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Validar la incertidumbre",
+     "enunciado": "Explica cómo los resultados de ensayos de aptitud pueden indicar que tu incertidumbre de medición está subestimada.",
+     "respuesta_modelo": "Si la incertidumbre estándar declarada por el laboratorio es realista y comparable con σ_pt, la mayoría de los puntajes z deberían estar entre −2 y 2, y los |En| deberían ser ≤ 1 en la gran mayoría de los casos. Si frecuentemente aparecen |z| > 2 o |En| > 1 sin un error identificable, las diferencias reales entre el laboratorio y el valor asignado son mayores que lo que la incertidumbre del laboratorio predice: hay un sesgo no considerado o fuentes de variación que el presupuesto omitió. Además, los sesgos de los EA alimentan directamente el componente u(sesgo) del enfoque Nordtest, así que se puede recalcular la incertidumbre incluyéndolos.",
+     "puntos_clave": [
+      "Distribución esperada de z y En",
+      "Frecuencia excesiva de valores altos",
+      "Interpretación como sesgo u omisión",
+      "Uso de los datos de EA en Nordtest"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "titulo": "Caso integrador: el laboratorio de una planta química",
+   "texto": "## La situación\nUna planta de detergentes, sanitizantes y auxiliares de proceso tiene un laboratorio de control de calidad con cinco analistas, que libera unos 15 lotes diarios. El laboratorio no está acreditado. En los últimos meses pasaron tres cosas:\n\n1. Un cliente lácteo analizó en un laboratorio acreditado un lote de **sanitizante de ácido peracético sin enjuague** y obtuvo **15.62 %** de APA. El certificado de análisis de la planta decía **15.35 %**, dentro de la especificación de 14.5 a 15.5 %. El cliente rechazó el lote y pidió explicaciones.\n2. En una auditoría FSSC 22000 se levantó una no conformidad menor: \"no hay evidencia de la incertidumbre de los métodos usados para el monitoreo del PCC de concentración\".\n3. La dirección pide evaluar si conviene acreditar el laboratorio.\n\nTe encargan el diagnóstico y el plan. Este capítulo recorre el caso con lo aprendido.\n\n## Paso 1: atender la discrepancia con el cliente\nAntes de concluir quién tiene razón, se reúnen los hechos:\n\n- **Muestra retenida** del lote: se reanaliza por duplicado por dos analistas: 15.37 % y 15.41 %.\n- **Método de la planta**: titulación secuencial (cerimetría para el peróxido y luego yodometría para el APA), validado internamente hace cuatro años; no hay estimación formal de incertidumbre.\n- **Método del laboratorio del cliente**: método equivalente, acreditado, con U = 0.15 % (k = 2).\n- **Tiempo**: el cliente analizó la muestra tres semanas después de recibirla; el APA se degrada, así que esperaríamos un valor **menor**, no mayor.\n\nLa diferencia (15.62 − 15.39 ≈ 0.23 %) es mayor de lo que se esperaría solo por degradación y, además, en sentido contrario. La hipótesis principal es un **sesgo negativo** del método de la planta.\n\n## Paso 2: buscar el sesgo\nRevisión de la cadena de trazabilidad del método:\n\n- **Balanza**: calibrada por un laboratorio acreditado, verificación diaria en orden. Sin problema.\n- **Bureta del titulador**: última calibración gravimétrica hace 18 meses (el programa decía 12). Se calibra: entrega 0.4 % **más** de volumen que el nominal. Un volumen mayor que el que se registra daría un resultado mayor, no menor, así que no explica el sesgo, pero se corrige.\n- **Tiosulfato (titulante del APA)**: se valora mensualmente contra **yodato de potasio**. El yodato es un frasco de reactivo analítico abierto hace tres años, **sin certificado** de pureza ni control de humedad. Se compra un **MRC** de yodato de potasio y se valora el tiosulfato con él: la concentración real es **1.6 % mayor** que la usada en los cálculos.\n\nCon una concentración de tiosulfato subestimada, el APA calculado queda **subestimado** en la misma proporción: 15.39 × 1.016 ≈ **15.64 %**, prácticamente el resultado del cliente.\n\n**Causa raíz**: el patrón primario usado para valorar el titulante no tenía trazabilidad ni pureza conocida (probablemente había absorbido humedad o estaba degradado). Ningún control interno lo detectó porque el **material de control** se valoraba con el mismo tiosulfato: el sesgo afectaba igual al control y a las muestras. Es exactamente el escenario en el que el control interno no protege y solo una referencia **externa** o un **MRC** lo revela.\n\n## Paso 3: evaluar el impacto\nEl sesgo de −1.6 % afectó todos los resultados de APA desde la última valoración con un patrón confiable, hace por lo menos un año. Se revisan los lotes del periodo:\n\n- Lotes con resultado reportado ≤ 15.25 % siguen cumpliendo después de corregir (15.25 × 1.016 ≈ 15.49 %).\n- Lotes con resultado reportado entre 15.26 y 15.50 %: tras la corrección, quedan **por encima** de 15.5 %. Se identifican **siete lotes** entregados a cuatro clientes.\n\nAcciones:\n\n- Tratar como **trabajo no conforme** del laboratorio y **producto no conforme** de la planta.\n- Reanalizar muestras retenidas de los siete lotes con el titulante correctamente valorado.\n- Evaluar el riesgo para el cliente (residuos sin enjuague por encima del límite si se diluyó según la etiqueta) con el equipo de inocuidad.\n- **Notificar** a los cuatro clientes con la información técnica y las acciones; coordinar la recuperación de producto si aún existe inventario.\n- Notificar al organismo de certificación según las reglas del esquema.\n- Revisar los **demás métodos** que usan tiosulfato valorado con el mismo yodato (cloro disponible en otros productos).\n\n## Paso 4: estimar la incertidumbre\nPara atender la no conformidad de la auditoría y para la regla de decisión, se estima la incertidumbre del método con un enfoque **global** (Nordtest), complementado con el presupuesto de la valoración:\n\n- **u(Rw)**: el material de control interno (re-establecido con el titulante corregido) en 25 corridas da una desviación estándar relativa de **0.45 %**.\n- **u(sesgo)**: tres análisis de un **MRC** de matriz similar (encargado a un productor acreditado ISO 17034) y una comparación con el laboratorio acreditado del cliente con muestras divididas dan sesgos de +0.3, −0.2 y +0.4 %; RMS ≈ 0.31 %. La incertidumbre del valor de referencia es 0.25 %. u(sesgo) ≈ √(0.31² + 0.25²) ≈ **0.40 %**.\n- **u_c** ≈ √(0.45² + 0.40²) ≈ **0.60 %** relativo.\n- **U** (k = 2) ≈ **1.2 %** relativo, es decir, alrededor de **0.18 %** absoluto a 15 % de APA.\n\n## Paso 5: definir la regla de decisión\nEl APA en un sanitizante sin enjuague es una característica **crítica** (PCC). Se adopta una **banda de guarda** w = U en el límite superior:\n\n- Límite de aceptación superior: 15.5 − 0.18 = **15.32 %**.\n- Límite inferior: aceptación simple (un lote ligeramente bajo es un problema de eficacia, que se controla con el objetivo de formulación y la vida útil).\n\nCon esta regla, el lote del reclamo (15.35 % con el método sesgado, 15.64 % real) no se habría liberado ni siquiera con el resultado sesgado. Además, el objetivo de formulación se ajusta a **15.0 %**, centrado, para que la banda de guarda no genere rechazos frecuentes.\n\nLa regla se documenta, se incorpora a la liberación y se comunica a los clientes en la ficha técnica.\n\n## Paso 6: fortalecer el sistema\nAcciones correctivas y preventivas:\n\n1. **Patrones primarios**: solo MRC de productores ISO 17034 para la valoración de titulantes; control de apertura, almacenamiento en desecador y fecha límite de uso.\n2. **Carta de control del factor del titulante**: cada valoración se grafica; un cambio se investiga.\n3. **Material de control independiente**: un MRC o un material caracterizado externamente, distinto del usado para valorar, para que el control interno pueda detectar sesgos del titulante.\n4. **Programa de calibración**: cumplimiento con alertas automáticas; la bureta vencida era una señal de un programa débil.\n5. **Comparaciones externas**: comparación semestral con muestras divididas con un laboratorio acreditado, ya que no existe un programa de ensayos de aptitud para APA en este tipo de producto.\n6. **Validación revisada** del método, incluyendo la veracidad con MRC y la incertidumbre.\n7. **Integridad y revisión**: segunda revisión de resultados cercanos al límite.\n\n## Paso 7: la recomendación sobre la acreditación\nCon lo aprendido, la recomendación a la dirección:\n\n- **Implementar** ISO/IEC 17025 en todo el laboratorio con la **opción B**, integrada al sistema ISO 9001/FSSC 22000, en los próximos 12 meses.\n- **Acreditar** con la ema, en una primera etapa, los dos métodos más críticos para clientes: APA en sanitizantes y cloro disponible en productos clorados.\n- Justificación: el incidente mostró que, sin trazabilidad, incertidumbre y comparación externa, el laboratorio puede producir resultados sesgados durante meses sin detectarlo, con impacto en inocuidad, clientes y reputación. La acreditación obliga a mantener exactamente los controles que faltaron.\n\n## Lo que el caso enseña\n1. **La trazabilidad es una cadena**: el eslabón débil era un patrón primario sin certificado.\n2. **El control interno no detecta sesgos comunes** a controles y muestras; se necesitan **MRC** y **comparaciones externas**.\n3. **Un equipo fuera de calibración** es una señal de un programa débil, aunque no sea la causa.\n4. **Ante un sesgo, evalúa el impacto** hacia atrás y comunica.\n5. **La incertidumbre** convierte un resultado en una decisión defendible, con una **regla de decisión** adecuada al riesgo.\n6. **Metrología e inocuidad están unidas**: el monitoreo de un PCC vale lo que vale su medición.\n\n## Ideas que debes llevarte\n- Ante una discrepancia, revisa la **cadena de trazabilidad** eslabón por eslabón.\n- Los sesgos que afectan por igual a controles y muestras solo se detectan con **referencias externas**.\n- Evalúa el **impacto** en resultados emitidos y gestiona producto y trabajo no conforme.\n- Estima la **incertidumbre** y define **reglas de decisión** proporcionales al riesgo.\n- ISO/IEC 17025 aporta exactamente los controles que previenen estos incidentes.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Hipótesis",
+     "enunciado": "¿Por qué la degradación del APA en las tres semanas no explicaba la diferencia con el cliente?",
+     "opciones": [
+      "Porque la degradación daría un resultado menor en el cliente, no mayor",
+      "Porque el APA no se degrada",
+      "Porque tres semanas es poco tiempo siempre",
+      "Porque el cliente usó otro método"
+     ],
+     "correcta": 0,
+     "explicacion": "La diferencia iba en sentido contrario al esperado por degradación.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Causa raíz",
+     "enunciado": "¿Cuál fue la causa raíz del sesgo?",
+     "opciones": [
+      "El patrón primario de yodato usado para valorar el tiosulfato no tenía trazabilidad ni pureza conocida",
+      "La bureta descalibrada",
+      "La balanza",
+      "El analista"
+     ],
+     "correcta": 0,
+     "explicacion": "El tiosulfato tenía una concentración real 1.6 % mayor que la usada.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Bureta",
+     "enunciado": "La bureta entregaba 0.4 % más volumen que el nominal. ¿Explicaba el sesgo negativo?",
+     "opciones": [
+      "No, habría producido resultados mayores; pero indicaba un programa de calibración débil",
+      "Sí, completamente",
+      "Sí, parcialmente en el mismo sentido",
+      "No tenía ninguna importancia"
+     ],
+     "correcta": 0,
+     "explicacion": "Se corrigió como hallazgo, aunque no fuera la causa.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control interno",
+     "enunciado": "¿Por qué el material de control interno no detectó el sesgo?",
+     "opciones": [
+      "Porque se analizaba con el mismo tiosulfato mal valorado, así que el sesgo afectaba igual al control y a las muestras",
+      "Porque el material de control estaba vencido",
+      "Porque no se graficaba",
+      "Porque el analista lo ocultó"
+     ],
+     "correcta": 0,
+     "explicacion": "Solo referencias externas o MRC independientes revelan sesgos comunes.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Corrección",
+     "enunciado": "Con un sesgo de −1.6 %, un resultado reportado de 15.30 % corresponde aproximadamente a:",
+     "opciones": [
+      "15.54 %",
+      "15.06 %",
+      "15.30 %",
+      "16.90 %"
+     ],
+     "correcta": 0,
+     "explicacion": "15.30 × 1.016 ≈ 15.54 %, por encima del máximo de 15.5 %.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Impacto",
+     "enunciado": "¿Qué lotes del periodo quedaban fuera de especificación al corregir el sesgo?",
+     "opciones": [
+      "Los reportados entre 15.26 y 15.50 %",
+      "Los reportados por debajo de 15.0 %",
+      "Ninguno",
+      "Todos"
+     ],
+     "correcta": 0,
+     "explicacion": "15.26 × 1.016 ≈ 15.50 %.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acciones",
+     "enunciado": "¿Cuál de estas acciones corresponde al manejo del impacto en clientes?",
+     "opciones": [
+      "Notificar a los clientes afectados con información técnica y coordinar la recuperación del producto",
+      "Esperar a que se quejen",
+      "Corregir los certificados sin avisar",
+      "Cambiar la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "También se reanalizan retenidas y se evalúa el riesgo con el equipo de inocuidad.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre",
+     "enunciado": "Con u(Rw) = 0.45 % y u(sesgo) = 0.40 %, ¿cuál es U relativa con k = 2?",
+     "opciones": [
+      "≈ 1.2 %",
+      "≈ 0.85 %",
+      "≈ 0.6 %",
+      "≈ 1.7 %"
+     ],
+     "correcta": 0,
+     "explicacion": "u_c = √(0.2025 + 0.16) ≈ 0.60 %; U ≈ 1.2 %.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regla de decisión",
+     "enunciado": "Con U ≈ 0.18 % y banda de guarda w = U en el máximo de 15.5 %, ¿cuál es el límite de aceptación?",
+     "opciones": [
+      "15.32 %",
+      "15.68 %",
+      "15.50 %",
+      "15.14 %"
+     ],
+     "correcta": 0,
+     "explicacion": "15.5 − 0.18 = 15.32 %.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivo",
+     "enunciado": "¿Por qué se ajustó el objetivo de formulación a 15.0 %?",
+     "opciones": [
+      "Para que la banda de guarda no genere rechazos frecuentes, centrando el proceso",
+      "Para ahorrar materia prima",
+      "Porque lo pidió el cliente",
+      "Para reducir la incertidumbre"
+     ],
+     "correcta": 0,
+     "explicacion": "Un proceso centrado tiene margen frente al límite de aceptación.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comparación externa",
+     "enunciado": "Sin programa de ensayos de aptitud para APA, ¿qué se implementó?",
+     "opciones": [
+      "Comparación semestral con muestras divididas con un laboratorio acreditado",
+      "Nada",
+      "Repetir los análisis internamente",
+      "Un material de control del mismo lote de tiosulfato"
+     ],
+     "correcta": 0,
+     "explicacion": "Complementada con análisis de MRC.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Recomendación",
+     "enunciado": "¿Qué estrategia de acreditación se recomendó?",
+     "opciones": [
+      "Implementar ISO/IEC 17025 con opción B en todo el laboratorio y acreditar primero dos métodos críticos",
+      "Acreditar todos los métodos de inmediato",
+      "No implementar nada",
+      "Certificar el laboratorio en ISO 9001"
+     ],
+     "correcta": 0,
+     "explicacion": "Una estrategia por etapas basada en riesgo y clientes.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Lección principal",
+     "enunciado": "Explica por qué este incidente es un ejemplo de que la metrología y la inocuidad están unidas.",
+     "respuesta_modelo": "La concentración de APA de un sanitizante sin enjuague se monitorea como PCC: el límite crítico protege contra residuos excesivos en superficies que tocan alimentos. Ese monitoreo depende por completo de una medición. Con un titulante mal valorado por un patrón sin trazabilidad, el método tenía un sesgo de −1.6 % y el PCC 'cumplía' mientras siete lotes estaban realmente por encima del límite. El plan HACCP estaba bien diseñado, pero su monitoreo no era válido. La trazabilidad, la incertidumbre, las reglas de decisión y la comparación externa son, por lo tanto, parte de la validación y verificación de las medidas de control de inocuidad.",
+     "puntos_clave": [
+      "El PCC depende de una medición",
+      "Sesgo y su efecto en la decisión",
+      "Lotes realmente no conformes",
+      "Metrología como parte de la validación y verificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Prevención",
+     "enunciado": "Si tuvieras que elegir solo tres de las acciones preventivas del caso, ¿cuáles elegirías y por qué?",
+     "respuesta_modelo": "1) Usar MRC de productores ISO 17034 para valorar titulantes: elimina la causa raíz y restablece la trazabilidad. 2) Material de control independiente del titulante (MRC o material caracterizado externamente): permite que el control interno detecte sesgos del titulante, que fue la falla del sistema de detección. 3) Comparación externa periódica con un laboratorio acreditado: es la red de seguridad que detecta sesgos que nada interno detecta. Las tres juntas atacan la causa, la detección interna y la detección externa; las demás (programa de calibración, carta del factor, revisión) son valiosas pero complementarias.",
+     "puntos_clave": [
+      "Acción sobre la causa (MRC)",
+      "Acción sobre la detección interna",
+      "Acción sobre la detección externa",
+      "Justificación de la selección"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Comunicación",
+     "enunciado": "Redacta en cinco o seis líneas la explicación técnica que enviarías al cliente lácteo que reclamó.",
+     "respuesta_modelo": "Agradecemos su reporte. Confirmamos que su resultado de 15.62 % es correcto. Nuestra investigación encontró un sesgo de −1.6 % en nuestro método por la valoración del titulante con un patrón primario sin trazabilidad adecuada; corregido, nuestro resultado del lote es 15.64 %. Identificamos otros lotes potencialmente afectados y estamos contactando a los clientes involucrados. Hemos sustituido el patrón por un material de referencia certificado, implementado un control independiente y una comparación semestral con un laboratorio acreditado, y adoptado una banda de guarda en la liberación. Les proponemos reponer el lote y compartiremos el informe de la acción correctiva.",
+     "puntos_clave": [
+      "Reconoce el resultado del cliente",
+      "Explica la causa con transparencia",
+      "Informa el alcance y las acciones",
+      "Propone solución y seguimiento"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }

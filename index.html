@@ -677,7 +677,7 @@ function mdBlocks(src) {
 }
 /* Tabla markdown → HTML */
 function tblHtml(s) {
-  const rows = s.split('\n').map(r => r.replace(/^\s*\|/, '').replace(/\|\s*$/, '').split('|').map(c => c.trim()));
+  const rows = s.split('\n').map(r => r.replace(/\\\|/g, '\u0001').replace(/^\s*\|/, '').replace(/\|\s*$/, '').split('|').map(c => c.trim().replace(/\u0001/g, '|')));
   const sep = rows.findIndex(r => r.every(c => /^:?-{2,}:?$/.test(c)));
   const head = sep > 0 ? rows.slice(0, sep) : [], body = sep >= 0 ? rows.slice(sep + 1) : rows;
   return (head.length ? '<thead>' + head.map(r => '<tr>' + r.map(c => `<th>${inline(c)}</th>`).join('') + '</tr>').join('') + '</thead>' : '')
