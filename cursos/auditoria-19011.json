@@ -1,0 +1,649 @@
+{
+ "id": "auditoria-19011",
+ "titulo": "Auditoría de sistemas de gestión con ISO 19011",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Qué es una auditoría y qué no es",
+   "texto": "## Una definición precisa\nLa norma **ISO 19011**, *Directrices para la auditoría de los sistemas de gestión*, define la auditoría como un **proceso sistemático, independiente y documentado** para obtener **evidencia objetiva** y evaluarla de manera **objetiva** con el fin de determinar el grado en que se cumplen los **criterios de auditoría**.\n\nCada palabra importa:\n\n- **Sistemático**: sigue un método planificado, no es una visita improvisada.\n- **Independiente**: el auditor no audita su propio trabajo y no tiene intereses en el resultado.\n- **Documentado**: se planifica, se registra y se informa por escrito.\n- **Evidencia objetiva**: datos que respaldan la existencia o veracidad de algo, obtenidos por observación, medición, ensayo o entrevista y verificables. No opiniones ni impresiones.\n- **Criterios de auditoría**: el conjunto de requisitos contra los que se compara la evidencia: la norma, los procedimientos de la organización, los requisitos legales y de clientes, los contratos.\n\nLa auditoría compara **evidencia** con **criterios** y produce **hallazgos**. De los hallazgos, el equipo auditor obtiene **conclusiones**.\n\n## Qué no es una auditoría\n- **No es una inspección**: la inspección determina la conformidad de un producto o una actividad específica (por ejemplo, revisar si un lote cumple la especificación o si una línea está limpia). La auditoría evalúa un **sistema** o un **proceso**.\n- **No es una consultoría**: el auditor no diseña soluciones ni dice cómo corregir. Si lo hace, compromete su independencia en la siguiente auditoría. Puede señalar oportunidades de mejora, pero la organización decide qué hacer.\n- **No es una cacería de culpables**: busca evidencia sobre el sistema, no culpables individuales. Un auditor que genera miedo obtiene menos información.\n- **No es una revisión de papeles**: una auditoría que solo revisa documentos sin observar la práctica ni hablar con quien hace el trabajo no evalúa la eficacia.\n\n## ISO 19011: la guía de referencia\nISO 19011 es una norma de **directrices** (guía): no contiene requisitos certificables. Proporciona orientación sobre:\n\n- Los **principios** de la auditoría (capítulo 4).\n- La **gestión de un programa** de auditoría (capítulo 5).\n- La **realización** de auditorías de sistemas de gestión (capítulo 6).\n- La **competencia y evaluación** de los auditores (capítulo 7).\n- El **Anexo A**, con orientación adicional para auditores.\n\nSe aplica a cualquier sistema de gestión: calidad, inocuidad, ambiental, seguridad, laboratorios, y a sistemas integrados.\n\n### La edición 2026\nLa edición vigente es **ISO 19011:2026**, cuarta edición, publicada el **27 de mayo de 2026**, que sustituyó a la de 2018. Según el propio prólogo de la norma, los cambios principales son dos:\n\n1. Se amplía la orientación sobre **métodos de auditoría remota**, incorporando la orientación de la especificación técnica **ISO/IEC TS 17012** (2024).\n2. Se amplía el **Anexo A** con orientación sobre métodos de auditoría remota y **ubicaciones virtuales**.\n\nLos **siete principios** de la auditoría se mantienen. Al ser una guía, no tiene periodo de transición: las organizaciones actualizan sus procedimientos de auditoría y programas cuando lo consideran oportuno.\n\n### Relación con otras normas\n- **ISO/IEC 17021-1**: contiene los **requisitos** para los organismos que auditan y certifican sistemas de gestión (auditorías de tercera parte). Los organismos de certificación deben cumplirla; ISO 19011 es una guía complementaria.\n- **ISO/IEC 17011**: requisitos para los organismos de acreditación.\n- **ISO/IEC TS 17012**: orientación sobre auditoría remota, ahora incorporada a ISO 19011.\n- Los esquemas como **FSSC 22000** o **SQF** tienen sus propias reglas de auditoría (duración, auditorías no anunciadas, clasificación de hallazgos) que se suman a las normas.\n\n## Tipos de auditoría\n### Por quién audita\n| Tipo | Quién audita a quién | Ejemplo |\n|---|---|---|\n| **Primera parte** (interna) | La organización a sí misma | Auditoría interna del SGIA |\n| **Segunda parte** | Un cliente a su proveedor (o alguien en su nombre) | Tu cliente lácteo audita tu planta; tú auditas a tu proveedor de hipoclorito |\n| **Tercera parte** | Un organismo independiente | Auditoría de certificación ISO 9001 o FSSC 22000; auditoría regulatoria |\n\n### Por lo que se audita\n- **Auditoría de sistema**: el sistema completo o una parte, contra una norma.\n- **Auditoría de proceso**: un proceso específico (por ejemplo, la gestión del cambio o la liberación de producto).\n- **Auditoría de producto**: verificar que un producto cumple sus requisitos a través de todo su ciclo (cercana a una inspección, pero con enfoque en el proceso que lo produce).\n\n### Por su combinación\n- **Auditoría combinada**: se auditan **dos o más sistemas** a la vez (por ejemplo, ISO 9001 e ISO 22000).\n- **Auditoría conjunta**: **dos o más organizaciones auditoras** auditan a un mismo auditado.\n\n## Roles en la auditoría\n- **Cliente de la auditoría**: quien solicita la auditoría (la dirección, para una auditoría interna; tu empresa, para una auditoría a un proveedor).\n- **Auditado**: la organización o parte que se audita.\n- **Auditor líder**: dirige el equipo, planifica, conduce las reuniones, decide sobre los hallazgos y el informe.\n- **Auditor**: obtiene y evalúa evidencia.\n- **Experto técnico**: aporta conocimiento específico (por ejemplo, un microbiólogo en la auditoría de un programa de monitoreo ambiental), pero no actúa como auditor.\n- **Observador**: acompaña sin participar (por ejemplo, un auditor en formación o un representante regulatorio).\n- **Guía**: persona del auditado que acompaña al equipo auditor.\n\n## El ciclo de una auditoría\n1. **Inicio**: contacto con el auditado, viabilidad.\n2. **Preparación**: revisión de información documentada, plan de auditoría, asignación de tareas, documentos de trabajo.\n3. **Realización**: reunión de apertura, obtención y verificación de evidencia, generación de hallazgos, conclusiones, reunión de cierre.\n4. **Informe**.\n5. **Finalización**.\n6. **Seguimiento**: verificación de las acciones correctivas, si está dentro de los objetivos.\n\nTodos estos pasos los verás a lo largo del curso.\n\n## Por qué auditar bien importa\nPara el coordinador de un sistema de calidad e inocuidad, la auditoría interna es la herramienta principal para saber si el sistema **funciona** o solo **existe**. Una auditoría interna superficial produce una falsa sensación de seguridad: el sistema pasa la auditoría y falla en la realidad. Una auditoría bien hecha encuentra los problemas antes que el cliente, la autoridad o el organismo de certificación, y antes de que se conviertan en un incidente.\n\nEn la auditoría a proveedores, la calidad de la auditoría determina la calidad de las materias primas que aceptas.\n\n## Ideas que debes llevarte\n- Auditoría: proceso **sistemático, independiente y documentado** que compara **evidencia objetiva** con **criterios**.\n- No es inspección, ni consultoría, ni cacería de culpables, ni solo revisión de papeles.\n- **ISO 19011:2026** (cuarta edición, 27 de mayo de 2026) es la guía; amplió la orientación sobre **auditoría remota** y **ubicaciones virtuales**; los siete principios se mantienen.\n- **ISO/IEC 17021-1** contiene los requisitos para organismos de certificación.\n- Auditorías de **primera**, **segunda** y **tercera** parte; de sistema, proceso o producto; **combinadas** (varios sistemas) o **conjuntas** (varios auditores de distintas organizaciones).\n- Roles: cliente, auditado, auditor líder, auditor, experto técnico, observador y guía.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Qué compara una auditoría?",
+     "opciones": [
+      "Evidencia objetiva contra criterios de auditoría",
+      "Opiniones del personal contra las del auditor",
+      "Resultados financieros contra el presupuesto",
+      "Productos contra especificaciones"
+     ],
+     "correcta": 0,
+     "explicacion": "El resultado son hallazgos, y de ellos, conclusiones.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "¿Cuál de estos es evidencia objetiva?",
+     "opciones": [
+      "Un registro de temperatura de CIP con firma y fecha que el auditor revisó",
+      "La impresión del auditor de que el personal está bien capacitado",
+      "El comentario de un gerente de que 'todo está bajo control'",
+      "Un rumor sobre un incidente"
+     ],
+     "correcta": 0,
+     "explicacion": "La evidencia objetiva es verificable.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Inspección",
+     "enunciado": "Revisar si un lote cumple su especificación es:",
+     "opciones": [
+      "Una inspección",
+      "Una auditoría de sistema",
+      "Una consultoría",
+      "Una revisión por la dirección"
+     ],
+     "correcta": 0,
+     "explicacion": "La auditoría evalúa sistemas o procesos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Consultoría",
+     "enunciado": "¿Por qué un auditor no debe diseñar las soluciones para el auditado?",
+     "opciones": [
+      "Porque compromete su independencia en auditorías posteriores",
+      "Porque no sabe",
+      "Porque la norma lo prohíbe expresamente con sanción",
+      "Porque el auditado no lo pagaría"
+     ],
+     "correcta": 0,
+     "explicacion": "Puede señalar oportunidades de mejora; la organización decide qué hacer.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ISO 19011",
+     "enunciado": "¿Qué tipo de documento es ISO 19011?",
+     "opciones": [
+      "Una norma de directrices, sin requisitos certificables",
+      "Una norma de requisitos para certificación",
+      "Un reglamento obligatorio",
+      "Un esquema GFSI"
+     ],
+     "correcta": 0,
+     "explicacion": "Los requisitos para organismos de certificación están en ISO/IEC 17021-1.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Edición 2026",
+     "enunciado": "¿Cuáles son los cambios principales de ISO 19011:2026 según su prólogo?",
+     "opciones": [
+      "Más orientación sobre auditoría remota (de ISO/IEC TS 17012) y un Anexo A ampliado sobre métodos remotos y ubicaciones virtuales",
+      "Un octavo principio de auditoría",
+      "Requisitos certificables para auditores",
+      "La eliminación de la auditoría interna"
+     ],
+     "correcta": 0,
+     "explicacion": "Los siete principios se mantienen.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Transición",
+     "enunciado": "¿Tiene ISO 19011:2026 un periodo de transición como las normas certificables?",
+     "opciones": [
+      "No, es una guía; las organizaciones actualizan sus procedimientos cuando lo consideran oportuno",
+      "Sí, de tres años",
+      "Sí, de un año",
+      "Sí, hasta 2029"
+     ],
+     "correcta": 0,
+     "explicacion": "No se certifica contra ella.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos",
+     "enunciado": "Tu empresa audita a su proveedor de hipoclorito. ¿Qué tipo de auditoría es?",
+     "opciones": [
+      "Segunda parte",
+      "Primera parte",
+      "Tercera parte",
+      "Interna"
+     ],
+     "correcta": 0,
+     "explicacion": "Un cliente audita a su proveedor.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos",
+     "enunciado": "¿Qué es una auditoría combinada?",
+     "opciones": [
+      "La auditoría de dos o más sistemas de gestión a la vez",
+      "La auditoría de dos o más organizaciones auditoras al mismo auditado",
+      "Una auditoría interna y externa el mismo día",
+      "Una auditoría remota y presencial"
+     ],
+     "correcta": 0,
+     "explicacion": "La conjunta es la de dos o más organizaciones auditoras.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Roles",
+     "enunciado": "Un microbiólogo acompaña la auditoría para aportar conocimiento sobre el monitoreo ambiental, sin auditar. ¿Qué rol tiene?",
+     "opciones": [
+      "Experto técnico",
+      "Auditor líder",
+      "Observador",
+      "Guía"
+     ],
+     "correcta": 0,
+     "explicacion": "El experto técnico aporta conocimiento, pero no actúa como auditor.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Roles",
+     "enunciado": "¿Quién es el cliente de una auditoría interna?",
+     "opciones": [
+      "Quien la solicita, típicamente la dirección",
+      "El organismo de certificación",
+      "El cliente comercial de la empresa",
+      "El auditado"
+     ],
+     "correcta": 0,
+     "explicacion": "El cliente de la auditoría es quien la solicita.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Valor",
+     "enunciado": "¿Qué riesgo tiene una auditoría interna superficial?",
+     "opciones": [
+      "Producir una falsa sensación de seguridad: el sistema pasa la auditoría y falla en la realidad",
+      "Ninguno",
+      "Generar demasiados hallazgos",
+      "Aumentar el costo de la certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Una buena auditoría encuentra problemas antes que el cliente o la autoridad.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diferencias",
+     "enunciado": "Explica con ejemplos de tu planta la diferencia entre una auditoría de sistema, una de proceso y una inspección.",
+     "respuesta_modelo": "Inspección: revisar que el lote 2611-04 de sanitizante cumple su especificación o que una línea quedó limpia después del CIP (conformidad de un producto o actividad concreta). Auditoría de proceso: evaluar el proceso de liberación de producto terminado: si se aplica la regla de decisión, si los registros son completos, si los analistas están autorizados, si las desviaciones se gestionan, con muestras de varios lotes. Auditoría de sistema: evaluar el SGIA contra ISO 22000 y FSSC 22000: contexto, liderazgo, PPR, análisis de peligros, plan de control, verificación, mejora, a través de varios procesos. La inspección dice si algo cumple; la auditoría dice si el sistema o proceso es capaz de lograr y mantener la conformidad.",
+     "puntos_clave": [
+      "Ejemplo de inspección",
+      "Ejemplo de auditoría de proceso",
+      "Ejemplo de auditoría de sistema",
+      "Diferencia de enfoque"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tipos de parte",
+     "enunciado": "Describe un ejemplo de auditoría de primera, segunda y tercera parte en el contexto de tu empresa y qué objetivo tendría cada una.",
+     "respuesta_modelo": "Primera parte: auditoría interna del proceso de gestión del cambio, con el objetivo de verificar que los cambios del año se evaluaron, validaron y comunicaron según el procedimiento y los requisitos de ISO 22000 e ISO 9001. Segunda parte: auditoría de tu empresa a su proveedor de ácido fosfórico, con el objetivo de evaluar su capacidad de entregar grado alimentario consistente (control de impurezas, segregación de grados, trazabilidad). Tercera parte: auditoría de vigilancia de FSSC 22000 por el organismo de certificación, con el objetivo de confirmar que el sistema sigue cumpliendo para mantener el certificado.",
+     "puntos_clave": [
+      "Ejemplo y objetivo de primera parte",
+      "Ejemplo y objetivo de segunda parte",
+      "Ejemplo y objetivo de tercera parte",
+      "Distinción de quién audita a quién"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Mala práctica",
+     "enunciado": "Un auditor interno pasa el día revisando procedimientos en la sala de juntas y no visita la planta. ¿Qué limitaciones tiene su auditoría?",
+     "respuesta_modelo": "Solo puede verificar que los documentos existen y que, en papel, cubren los requisitos. No puede evaluar si se aplican ni si son eficaces: no observa la práctica, no habla con quienes hacen el trabajo, no muestrea registros en el punto de uso, no ve las condiciones reales (segregación, limpieza, identificación). Las diferencias entre lo documentado y lo practicado, que son la fuente más común de problemas, quedan sin detectar. El resultado es una falsa sensación de conformidad. Una auditoría debe combinar revisión documental, entrevistas en el lugar de trabajo, observación y rastreo de evidencia.",
+     "puntos_clave": [
+      "Solo verifica existencia documental",
+      "No evalúa implementación ni eficacia",
+      "No detecta diferencias entre papel y práctica",
+      "Combinación de técnicas necesaria"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "Los siete principios de la auditoría",
+   "texto": "## Por qué principios y no reglas\nNinguna lista de reglas cubre todas las situaciones de una auditoría: un auditado que ofrece una comida, un hallazgo grave que el gerente pide \"no poner en el informe\", una evidencia que parece concluyente pero viene de un solo registro, un auditor que conoce al auditado de un empleo anterior. Para esas situaciones, ISO 19011 propone **principios**: guías de comportamiento que hacen que la auditoría sea una herramienta **eficaz y confiable** y que permiten que auditores distintos, trabajando de forma independiente, lleguen a **conclusiones similares** en circunstancias similares.\n\nISO 19011 enumera siete principios. Los primeros cuatro se refieren al **auditor** como persona; los últimos tres, a la **auditoría** como proceso.\n\n## 1. Integridad: el fundamento del profesionalismo\nLos auditores y quienes gestionan programas de auditoría deberían:\n\n- Realizar su trabajo de forma **ética**, con honestidad y responsabilidad.\n- Realizar solo actividades para las que son **competentes**.\n- Ser **imparciales**: justos e imparciales en todas sus actuaciones.\n- Ser sensibles a cualquier **influencia** que pueda ejercerse sobre su juicio.\n\n**En la práctica**:\n\n- No aceptar regalos, comidas costosas u hospitalidad que puedan percibirse como influencia. Una comida de trabajo sencilla durante la jornada suele ser aceptable; una cena en un restaurante caro, no.\n- No auditar un área o método sin la competencia técnica necesaria; pedir un experto técnico.\n- Declarar cualquier relación previa con el auditado.\n\n## 2. Presentación imparcial: informar con veracidad y exactitud\nLos hallazgos, conclusiones e informes deberían reflejar **con veracidad y exactitud** las actividades de la auditoría. Se informan los **obstáculos** significativos encontrados y las **opiniones divergentes** no resueltas entre el equipo auditor y el auditado. La comunicación debería ser veraz, exacta, objetiva, oportuna, clara y completa.\n\n**En la práctica**:\n\n- No **suavizar** ni **exagerar** un hallazgo para agradar o presionar.\n- Si un área no se pudo auditar (por ejemplo, porque el proceso no estaba operando), decirlo en el informe.\n- Si el auditado no está de acuerdo con un hallazgo y no se resolvió, registrarlo.\n- Reconocer también lo que funciona bien: la presentación imparcial incluye los **puntos fuertes**.\n\n## 3. Debido cuidado profesional: diligencia y juicio\nLos auditores deberían aplicar **diligencia y juicio** en la auditoría, de acuerdo con la importancia de la tarea que desempeñan y la confianza que han depositado en ellos el cliente de la auditoría y otras partes interesadas. Un factor importante es la capacidad de hacer **juicios razonados** en todas las situaciones.\n\n**En la práctica**:\n\n- Preparar la auditoría: conocer los criterios, el proceso y los riesgos.\n- No conformarse con la primera respuesta: verificar.\n- Distinguir lo importante de lo trivial: un registro con una firma faltante no tiene el mismo peso que un PCC sin monitorear.\n\n## 4. Confidencialidad: seguridad de la información\nLos auditores deberían ejercer **discreción** en el uso y la protección de la información adquirida en el curso de sus tareas. La información no debería usarse para beneficio personal ni de forma que perjudique los intereses legítimos del auditado.\n\n**En la práctica**:\n\n- No comentar con otros clientes o proveedores lo que se vio en una auditoría.\n- Proteger los documentos y fotografías del auditado (pedir permiso antes de fotografiar; las fórmulas y procesos son información sensible).\n- En auditorías remotas, cuidar el manejo de archivos compartidos, grabaciones y accesos.\n\n## 5. Independencia: la base de la imparcialidad y la objetividad\nLos auditores deberían ser **independientes de la actividad auditada** siempre que sea posible y, en todos los casos, actuar libres de sesgo y conflicto de intereses. Para las auditorías internas, deberían ser independientes de la función que se audita si es posible.\n\n**En la práctica**:\n\n- Un auditor interno no audita su propio departamento.\n- En organizaciones pequeñas, donde la independencia total no es posible, se hace todo lo posible por eliminar el sesgo (por ejemplo, intercambiar auditores con otra planta o usar un auditor externo para el área del coordinador).\n- El coordinador del sistema de gestión, que diseñó muchos procesos, no debería auditar los procesos que él mismo opera (por ejemplo, la revisión por la dirección que él prepara).\n\n## 6. Enfoque basado en la evidencia\nLa evidencia de la auditoría debería ser **verificable**. En general se basa en **muestras** de la información disponible, ya que la auditoría se realiza en un periodo y con recursos limitados. Se debería aplicar un **uso apropiado del muestreo**, ya que está estrechamente relacionado con la confianza que se puede depositar en las conclusiones.\n\n**En la práctica**:\n\n- Un hallazgo debe poder **rastrearse** a evidencia concreta: qué registro, qué fecha, qué persona, qué se observó.\n- Una sola observación puede ser una excepción; varias del mismo tipo indican un patrón. El tamaño y la selección de la muestra se eligen con criterio.\n- Lo que el auditado **dice** es evidencia, pero se **corrobora** con registros u observación cuando es posible.\n\n## 7. Enfoque basado en riesgos\nUn enfoque de auditoría que considera los **riesgos y oportunidades**. Este enfoque debería influir **sustancialmente** en la planificación, la realización y el informe de las auditorías, para asegurar que se centran en los asuntos que son **significativos** para el cliente de la auditoría y para lograr los objetivos del programa.\n\n**En la práctica**:\n\n- Dedicar más tiempo a los procesos con mayor impacto en la inocuidad y la calidad (PCC, liberación, gestión de proveedores críticos, cambios) que a los de bajo riesgo.\n- Planificar con base en datos: quejas, desviaciones, hallazgos anteriores, cambios recientes.\n- En el informe, priorizar los hallazgos por su importancia.\n\n## Los principios en conflicto\nA veces los principios parecen chocar. Algunos ejemplos y cómo resolverlos:\n\n- **Presentación imparcial frente a presión del auditado**: el gerente pide que un hallazgo se reclasifique como \"observación\" porque afectaría su bono. La integridad y la presentación imparcial mandan: se mantiene la clasificación basada en la evidencia y los criterios; se puede escuchar si hay evidencia adicional.\n- **Confidencialidad frente a un riesgo grave**: en una auditoría a un proveedor se detecta un problema que pone en riesgo la inocuidad de un producto en el mercado. La confidencialidad no impide informar al cliente de la auditoría y, si la ley lo exige, a la autoridad. Los acuerdos de confidencialidad deberían prever estas situaciones.\n- **Independencia frente a competencia**: la persona que mejor conoce un proceso suele ser la menos independiente. Solución: un auditor independiente con apoyo de un experto técnico.\n\n## Sesgos que amenazan los principios\nLos auditores, como cualquier persona, tienen **sesgos cognitivos** que afectan su objetividad:\n\n- **Sesgo de confirmación**: buscar evidencia que confirme lo que ya se pensaba (\"este proveedor siempre ha sido bueno\").\n- **Efecto halo**: una buena impresión inicial (planta limpia, gerente amable) influye en la evaluación de todo lo demás.\n- **Anclaje**: quedarse con la primera información recibida.\n- **Familiaridad**: auditar muchas veces al mismo auditado reduce el escepticismo.\n- **Disponibilidad**: dar más peso a lo que se recuerda fácilmente (el último incidente).\n\nContramedidas: preparar con datos, buscar activamente evidencia que contradiga la hipótesis inicial, rotar auditores, discutir los hallazgos en el equipo antes de concluir.\n\n## Ideas que debes llevarte\n- Los **principios** guían al auditor donde las reglas no alcanzan y hacen que auditores distintos lleguen a conclusiones similares.\n- Del auditor: **integridad**, **presentación imparcial**, **debido cuidado profesional**, **confidencialidad**.\n- De la auditoría: **independencia**, **enfoque basado en la evidencia** (verificable, con muestreo apropiado) y **enfoque basado en riesgos**.\n- Cuando los principios parecen chocar, la **integridad** y la **evidencia** deciden.\n- Reconoce y contrarresta los **sesgos cognitivos**: confirmación, halo, anclaje, familiaridad y disponibilidad.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito de los principios",
+     "enunciado": "¿Qué permite que los auditores sigan los principios de ISO 19011?",
+     "opciones": [
+      "Que auditores distintos, trabajando de forma independiente, lleguen a conclusiones similares en circunstancias similares",
+      "Que las auditorías sean más cortas",
+      "Que no haya hallazgos",
+      "Que el auditado siempre esté de acuerdo"
+     ],
+     "correcta": 0,
+     "explicacion": "Hacen de la auditoría una herramienta eficaz y confiable.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integridad",
+     "enunciado": "Un proveedor auditado invita al auditor a una cena costosa la noche anterior a la reunión de cierre. ¿Qué principio está en juego?",
+     "opciones": [
+      "Integridad",
+      "Enfoque basado en riesgos",
+      "Confidencialidad",
+      "Debido cuidado profesional"
+     ],
+     "correcta": 0,
+     "explicacion": "Debe ser sensible a cualquier influencia sobre su juicio.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integridad",
+     "enunciado": "¿Qué debe hacer un auditor que no tiene la competencia técnica para evaluar un método microbiológico?",
+     "opciones": [
+      "Pedir apoyo de un experto técnico o no auditar esa parte",
+      "Auditarlo igualmente",
+      "Aprobarlo sin revisar",
+      "Pedir al auditado que se autoevalúe"
+     ],
+     "correcta": 0,
+     "explicacion": "La integridad incluye realizar solo actividades para las que se es competente.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Presentación imparcial",
+     "enunciado": "El proceso de CIP no estaba operando durante la auditoría y no se pudo observar. ¿Qué exige la presentación imparcial?",
+     "opciones": [
+      "Informar ese obstáculo en el informe",
+      "Omitirlo",
+      "Suponer que funciona",
+      "Calificarlo como no conformidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Se informan los obstáculos significativos.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Presentación imparcial",
+     "enunciado": "El auditado no está de acuerdo con un hallazgo y no se resuelve. ¿Qué se hace?",
+     "opciones": [
+      "Se registran las opiniones divergentes no resueltas",
+      "Se elimina el hallazgo",
+      "Se cambia a observación",
+      "Se cancela la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "El informe refleja con veracidad la situación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Debido cuidado",
+     "enunciado": "¿Cuál es un ejemplo de debido cuidado profesional?",
+     "opciones": [
+      "Distinguir entre una firma faltante en un registro y un PCC sin monitorear según su importancia",
+      "Tratar todos los hallazgos con el mismo peso",
+      "Aceptar la primera respuesta del auditado",
+      "No preparar la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Implica diligencia y juicio razonado.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confidencialidad",
+     "enunciado": "¿Qué debe hacer un auditor antes de fotografiar un equipo en la planta de un proveedor?",
+     "opciones": [
+      "Pedir permiso, porque procesos y fórmulas pueden ser información sensible",
+      "Tomar la foto sin preguntar",
+      "Publicarla en redes",
+      "Enviarla a la competencia para comparar"
+     ],
+     "correcta": 0,
+     "explicacion": "La información se protege y no se usa para perjudicar al auditado.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Independencia",
+     "enunciado": "¿Puede el coordinador del sistema de gestión auditar la revisión por la dirección que él mismo prepara?",
+     "opciones": [
+      "No debería, porque no sería independiente de la actividad auditada",
+      "Sí, porque es quien mejor la conoce",
+      "Sí, siempre",
+      "Solo si no hay hallazgos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se busca un auditor independiente, por ejemplo de otra planta o externo.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "El supervisor afirma que todos los operadores están capacitados en el nuevo procedimiento. ¿Qué hace el auditor?",
+     "opciones": [
+      "Corrobora con registros de capacitación y entrevistas a operadores",
+      "Lo acepta como suficiente",
+      "Lo descarta como evidencia",
+      "Lo registra como no conformidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Lo dicho es evidencia, pero se corrobora cuando es posible.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos",
+     "enunciado": "Según el enfoque basado en riesgos, ¿dónde debería concentrarse más tiempo de auditoría en una planta de sanitizantes?",
+     "opciones": [
+      "En procesos con mayor impacto en inocuidad y calidad, como el PCC de concentración, la liberación y los proveedores críticos",
+      "En la papelería de oficina",
+      "En el comedor",
+      "De forma igual en todos los procesos"
+     ],
+     "correcta": 0,
+     "explicacion": "La planificación se basa en riesgos y datos.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sesgos",
+     "enunciado": "Un auditor queda impresionado por la limpieza de la planta y la amabilidad del gerente, y revisa con menos rigor los registros. ¿Qué sesgo actúa?",
+     "opciones": [
+      "Efecto halo",
+      "Anclaje",
+      "Disponibilidad",
+      "Sesgo de confirmación"
+     ],
+     "correcta": 0,
+     "explicacion": "Una buena impresión inicial contamina la evaluación del resto.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sesgos",
+     "enunciado": "¿Qué contramedida reduce el sesgo de familiaridad?",
+     "opciones": [
+      "Rotar auditores entre auditados",
+      "Auditar siempre con el mismo auditor",
+      "Reducir el tiempo de auditoría",
+      "Eliminar el muestreo"
+     ],
+     "correcta": 0,
+     "explicacion": "La familiaridad reduce el escepticismo.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Conflicto de principios",
+     "enunciado": "En la reunión de cierre, el gerente de planta te pide reclasificar una no conformidad mayor como observación porque afectaría su evaluación anual. ¿Cómo respondes y qué principios aplicas?",
+     "respuesta_modelo": "Respondo con respeto, reconociendo su preocupación, pero explico que la clasificación se basa en la evidencia y los criterios definidos, no en sus consecuencias para las personas. Le pregunto si tiene evidencia adicional que cambie los hechos (por ejemplo, un registro que no se presentó); si la hay, la evalúo con objetividad. Si no, mantengo la clasificación y, si persiste el desacuerdo, lo registro como opinión divergente. Principios: integridad (no ceder a influencias), presentación imparcial (informar con veracidad), enfoque basado en evidencia (la clasificación depende de evidencia y criterios) e independencia.",
+     "puntos_clave": [
+      "Respuesta respetuosa y firme",
+      "Apertura a evidencia adicional",
+      "Registro de opiniones divergentes",
+      "Principios aplicados correctamente"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Independencia",
+     "enunciado": "Tu planta es pequeña y solo tú y otra persona están capacitados como auditores internos. ¿Cómo aseguras la independencia en el programa de auditoría?",
+     "respuesta_modelo": "Asigno a cada auditor las áreas que no opera ni supervisa: yo no audito los procesos que coordino (revisión por la dirección, control de documentos, auditoría interna misma) y la otra persona no audita su propia área. Para los procesos que ambos operamos o donde no hay independencia posible, uso un auditor externo, un intercambio con auditores de otra planta del grupo o de un cliente o proveedor con acuerdo, o un consultor independiente. Documento en el programa cómo se aseguró la independencia y, donde no fue total, cómo se minimizó el sesgo (por ejemplo, revisión de los hallazgos por un tercero).",
+     "puntos_clave": [
+      "No auditar el propio trabajo",
+      "Auditor externo o intercambio para lo que no se puede cubrir",
+      "Documentar la solución",
+      "Minimizar el sesgo donde no hay independencia total"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Sesgo de confirmación",
+     "enunciado": "Vas a auditar a un proveedor que siempre ha tenido buenos resultados. Describe cómo evitarías el sesgo de confirmación.",
+     "respuesta_modelo": "Preparo la auditoría con datos objetivos actuales (resultados recientes de verificación de COA, quejas, cambios notificados), no con mi impresión histórica. Defino de antemano los procesos críticos a revisar y el tamaño de las muestras. Durante la auditoría busco activamente evidencia que pueda contradecir la buena imagen: cambios recientes en el proceso o el personal, registros de desviaciones, lotes rechazados, manejo de grados técnico y alimentario. Pido registros de periodos que yo elijo, no los que me ofrecen. Al final, reviso si mis conclusiones se basan en la evidencia recogida o en la reputación previa. Idealmente, rotaría al auditor o incluiría a otro auditor en el equipo.",
+     "puntos_clave": [
+      "Preparación con datos actuales",
+      "Plan de muestreo definido de antemano",
+      "Búsqueda activa de evidencia contraria",
+      "Revisión crítica de las conclusiones o rotación"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Gestión del programa de auditoría",
+   "texto": "## Del calendario al programa\nMuchas organizaciones tienen un \"programa de auditoría\" que en realidad es un calendario: una tabla con los procesos en las filas, los meses en las columnas y una equis en cada celda. Todos los procesos, una vez al año, con el mismo formato. ISO 19011 propone algo más útil: un **programa** gestionado como un proceso, con objetivos, basado en riesgos, con recursos asignados, seguimiento y mejora.\n\nEl **programa de auditoría** es el conjunto de una o más auditorías planificadas para un periodo de tiempo determinado y dirigidas hacia un propósito específico. Puede cubrir un sistema o varios (en un sistema integrado), uno o varios sitios, auditorías internas y a proveedores.\n\n## El ciclo PHVA del programa\nISO 19011 organiza la gestión del programa en un ciclo:\n\n1. **Establecer los objetivos** del programa.\n2. **Determinar y evaluar los riesgos y oportunidades** del programa.\n3. **Establecer** el programa: funciones y responsabilidades, competencia de quien lo gestiona, alcance, recursos.\n4. **Implementar** el programa: definir objetivos, alcance y criterios de cada auditoría, seleccionar métodos, asignar equipos, gestionar resultados y registros.\n5. **Hacer seguimiento** del programa.\n6. **Revisar y mejorar** el programa.\n\n## 1. Objetivos del programa\nLos objetivos deberían ser **coherentes** con la dirección estratégica del auditado y apoyar la política y los objetivos del sistema de gestión. Pueden considerar:\n\n- Las necesidades y expectativas de las **partes interesadas** (clientes, autoridades, organismos de certificación).\n- Las **características** de los procesos, productos y proyectos, y sus cambios.\n- Los requisitos del **sistema de gestión**.\n- El **nivel de desempeño** y madurez del sistema (reflejado en indicadores, incidentes, quejas).\n- Los **riesgos y oportunidades** identificados para el auditado.\n- Los resultados de **auditorías previas**.\n\nEjemplos de objetivos de un programa anual:\n\n- Verificar la conformidad del sistema integrado con ISO 9001:2026, ISO 22000 y FSSC 22000, con énfasis en los requisitos nuevos de la transición.\n- Evaluar la eficacia de los PPRO y PCC del plan de control de peligros.\n- Evaluar a los proveedores de materias primas de alto riesgo.\n- Verificar la eficacia de las acciones correctivas de la auditoría de certificación anterior.\n\n## 2. Riesgos y oportunidades del programa\nAquí hay que distinguir dos cosas: los riesgos **del auditado** (que orientan qué auditar) y los riesgos **para el propio programa** (lo que podría impedir que el programa logre sus objetivos). ISO 19011 menciona riesgos del programa como:\n\n- **Planificación**: no fijar objetivos pertinentes o no determinar la extensión, el número, la duración, la ubicación y el calendario de las auditorías.\n- **Recursos**: tiempo, equipos o formación insuficientes.\n- **Selección del equipo**: falta de competencia o de independencia.\n- **Comunicación**: procesos de comunicación externos o internos ineficaces.\n- **Implementación**: coordinación deficiente de las auditorías, falta de cooperación del auditado.\n- **Control de la información documentada**: protección deficiente de los registros.\n- **Seguimiento, revisión y mejora**: no dar seguimiento eficaz a los resultados del programa.\n\nOportunidades: realizar auditorías combinadas, usar métodos remotos donde sean eficaces, aprovechar datos del sistema para enfocar las auditorías.\n\n## 3. Establecer el programa\n### Quién lo gestiona\nLa persona que gestiona el programa debería tener competencia en principios, métodos y procesos de auditoría, normas de sistemas de gestión, el auditado y su contexto, y requisitos legales aplicables. En una planta, suele ser el coordinador del sistema de gestión, que a su vez no audita sus propios procesos.\n\n### Extensión del programa\nLa edición 2026 de ISO 19011 refuerza que el programa se dimensione considerando, entre otros factores, el **alcance del sistema de gestión** auditado, su complejidad, la cantidad de sitios, el número de procesos y de turnos, y los riesgos.\n\n### Frecuencia basada en riesgos\nEn lugar de auditar todo una vez al año con la misma intensidad, se asigna frecuencia y profundidad según el riesgo de cada proceso. Una matriz sencilla:\n\n| Proceso | Impacto en inocuidad o calidad | Desempeño reciente | Cambios recientes | Frecuencia |\n|---|---|---|---|---|\n| Liberación de producto (PCC) | Alto | Dos desviaciones | Nuevo analista | Semestral |\n| Gestión de proveedores | Alto | Discrepancias de COA | Proveedor nuevo | Semestral |\n| Gestión del cambio | Alto | Hallazgo previo | Nuevo ERP | Semestral |\n| Control de documentos | Medio | Estable | Ninguno | Anual |\n| Mantenimiento | Medio | Estable | Ninguno | Anual |\n| Capacitación | Medio | Estable | Ninguno | Anual |\n| Compras de papelería | Bajo | Estable | Ninguno | Cada dos años o no se audita |\n\nRequisito importante: aunque la frecuencia varíe, el programa debe cubrir **todos los requisitos** de las normas aplicables dentro del ciclo que defina la organización (y que exijan los esquemas, por ejemplo, que todos los procesos del SGIA se auditen en un periodo definido).\n\n## 4. Implementar el programa\nPara cada auditoría del programa se definen:\n\n- **Objetivos de la auditoría**: para qué se hace. Por ejemplo: \"determinar si el proceso de liberación aplica la regla de decisión con banda de guarda definida en marzo\".\n- **Alcance**: qué se audita: procesos, áreas, turnos, periodo de registros, sitios.\n- **Criterios**: contra qué se compara: requisitos de normas, procedimientos, especificaciones, contratos, requisitos legales.\n- **Métodos**: presencial, remoto o combinado (capítulo 6), según la viabilidad y los riesgos.\n- **Equipo auditor**: competencia necesaria, independencia, experto técnico si hace falta, tamaño.\n- **Recursos**: tiempo, viajes, herramientas.\n\nAdemás, el gestor del programa asegura la **gestión de los resultados** (revisión y aprobación de informes, distribución, seguimiento de acciones) y de los **registros** del programa.\n\n## 5. Seguimiento del programa\nEl gestor del programa da seguimiento a:\n\n- El **cumplimiento** del calendario.\n- El **desempeño** de los equipos auditores (por ejemplo, con retroalimentación del auditado y revisión de informes).\n- La **capacidad** de los equipos para implementar el plan.\n- La **retroalimentación** del cliente de la auditoría, de los auditados y de los auditores.\n- La **eficacia** de las acciones derivadas de los hallazgos.\n\n## 6. Revisión y mejora\nPeriódicamente (por ejemplo, anualmente, antes de la revisión por la dirección) se revisa si el programa logró sus objetivos y se identifican mejoras. Preguntas útiles:\n\n- ¿Las auditorías encontraron los problemas que después aparecieron como incidentes, quejas o hallazgos externos? Si el organismo de certificación encuentra no conformidades que la auditoría interna no detectó, el programa necesita mejorar.\n- ¿Los auditores tienen la competencia necesaria?\n- ¿Los hallazgos generaron acciones eficaces?\n- ¿El enfoque basado en riesgos se aplicó realmente?\n\n## El programa en un sistema integrado\nEn un sistema que integra ISO 9001, ISO 22000/FSSC 22000 e ISO/IEC 17025:\n\n- Un **solo programa** con auditorías **combinadas** por proceso reduce el tiempo y da una visión de cómo interactúan los requisitos.\n- La matriz de procesos contra requisitos asegura que se cubran todos los apartados de todas las normas.\n- Los auditores necesitan competencia en **todas** las normas que auditan, o el equipo se complementa.\n\n## Ideas que debes llevarte\n- El **programa** de auditoría es un proceso con objetivos, riesgos, recursos, seguimiento y mejora, no un calendario.\n- **Objetivos** coherentes con la estrategia, las partes interesadas, el desempeño y los riesgos.\n- Distingue los **riesgos del auditado** (qué auditar) de los **riesgos del programa** (qué podría hacerlo fallar).\n- Asigna **frecuencia y profundidad según el riesgo**, cubriendo todos los requisitos en el ciclo definido.\n- Para cada auditoría, define **objetivos, alcance y criterios**, métodos y equipo.\n- Da **seguimiento** y **revisa** el programa: si los externos encuentran lo que la interna no, hay que mejorar.\n- En sistemas integrados, usa un **programa único** con auditorías combinadas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Qué es un programa de auditoría?",
+     "opciones": [
+      "Un conjunto de una o más auditorías planificadas para un periodo y dirigidas hacia un propósito específico",
+      "Una sola auditoría",
+      "Una lista de verificación",
+      "El informe de auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Se gestiona como un proceso con su propio ciclo PHVA.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ciclo",
+     "enunciado": "¿Cuál es el primer paso en la gestión de un programa de auditoría según ISO 19011?",
+     "opciones": [
+      "Establecer los objetivos del programa",
+      "Seleccionar a los auditores",
+      "Hacer la reunión de apertura",
+      "Redactar el informe"
+     ],
+     "correcta": 0,
+     "explicacion": "Después: riesgos y oportunidades, establecer, implementar, seguimiento, revisión y mejora.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivos",
+     "enunciado": "¿Cuál de estos es un objetivo adecuado para un programa de auditoría anual?",
+     "opciones": [
+      "Evaluar la eficacia de los PPRO y PCC del plan de control de peligros",
+      "Auditar todo una vez",
+      "Cumplir con el calendario",
+      "Llenar el formato"
+     ],
+     "correcta": 0,
+     "explicacion": "Los objetivos se vinculan con la estrategia, los riesgos y el desempeño.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos del programa",
+     "enunciado": "¿Cuál de estos es un riesgo para el propio programa de auditoría?",
+     "opciones": [
+      "Que los auditores asignados no tengan la competencia necesaria",
+      "Que el proceso de liberación tenga desviaciones",
+      "Que un proveedor entregue fuera de especificación",
+      "Que haya quejas de clientes"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros son riesgos del auditado, que orientan qué auditar.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Frecuencia",
+     "enunciado": "Según el enfoque basado en riesgos, ¿qué proceso debería auditarse con más frecuencia?",
+     "opciones": [
+      "La liberación de producto con desviaciones recientes y un analista nuevo",
+      "El control de documentos estable sin cambios",
+      "Las compras de papelería",
+      "Todos con la misma frecuencia"
+     ],
+     "correcta": 0,
+     "explicacion": "Impacto, desempeño y cambios definen la frecuencia.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cobertura",
+     "enunciado": "Si la frecuencia varía por riesgo, ¿qué debe asegurar el programa?",
+     "opciones": [
+      "Cubrir todos los requisitos de las normas aplicables dentro del ciclo definido",
+      "Auditar solo los procesos de alto riesgo",
+      "Eliminar los procesos de bajo riesgo para siempre",
+      "Nada adicional"
+     ],
+     "correcta": 0,
+     "explicacion": "Los esquemas suelen exigir cobertura completa en un periodo definido.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Edición 2026",
+     "enunciado": "¿Qué factor refuerza ISO 19011:2026 para dimensionar la extensión del programa?",
+     "opciones": [
+      "El alcance del sistema de gestión auditado",
+      "El número de páginas del manual",
+      "La edad de los auditores",
+      "El presupuesto de mercadotecnia"
+     ],
+     "correcta": 0,
+     "explicacion": "Junto con la complejidad, los sitios, los procesos, los turnos y los riesgos.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elementos de cada auditoría",
+     "enunciado": "'Procesos de recepción y almacén, turnos matutino y nocturno, registros de enero a junio' describe:",
+     "opciones": [
+      "El alcance de la auditoría",
+      "El objetivo de la auditoría",
+      "Los criterios de la auditoría",
+      "El método de la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "El objetivo es para qué; los criterios, contra qué.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gestor",
+     "enunciado": "¿Qué competencia debería tener quien gestiona el programa?",
+     "opciones": [
+      "Principios, métodos y procesos de auditoría, normas aplicables, el auditado y requisitos legales",
+      "Solo conocimiento financiero",
+      "Solo experiencia en ventas",
+      "Ninguna en particular"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 19011 describe la competencia del gestor del programa.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mejora",
+     "enunciado": "El organismo de certificación encuentra tres no conformidades que la auditoría interna no detectó. ¿Qué indica?",
+     "opciones": [
+      "Que el programa de auditoría interna necesita mejorar",
+      "Que el organismo se equivocó",
+      "Que no importa",
+      "Que hay que reducir las auditorías internas"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una entrada clave para la revisión del programa.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integración",
+     "enunciado": "¿Qué ventaja tiene un programa único con auditorías combinadas en un sistema integrado?",
+     "opciones": [
+      "Reduce tiempo y muestra cómo interactúan los requisitos de las distintas normas",
+      "Elimina la necesidad de competencia en varias normas",
+      "Reduce la cobertura",
+      "No tiene ventajas"
+     ],
+     "correcta": 0,
+     "explicacion": "Los auditores necesitan competencia en todas las normas que auditan.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Seguimiento",
+     "enunciado": "¿Cuál de estos aspectos se sigue en el seguimiento del programa?",
+     "opciones": [
+      "La eficacia de las acciones derivadas de los hallazgos",
+      "El color de los formatos",
+      "El número de páginas de cada informe",
+      "La marca de las computadoras"
+     ],
+     "correcta": 0,
+     "explicacion": "También el cumplimiento del calendario y el desempeño de los auditores.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa basado en riesgos",
+     "enunciado": "Diseña el programa de auditoría interna anual de una planta química con sistema integrado ISO 9001 y FSSC 22000. Incluye objetivos del programa, criterios de frecuencia y cuatro auditorías con su objetivo.",
+     "respuesta_modelo": "Objetivos del programa: verificar la conformidad del sistema integrado con ISO 9001:2026 y FSSC 22000; evaluar la eficacia de PCC y PPRO; verificar la implementación de los cambios de la transición; dar seguimiento a las acciones de la auditoría externa anterior. Criterios de frecuencia: impacto en inocuidad o calidad, desempeño reciente (quejas, desviaciones, hallazgos), cambios y madurez; procesos de alto riesgo semestral, medio anual, bajo cada dos años, con cobertura total en el ciclo exigido. Auditorías: 1) Liberación y PCC de concentración (semestral): verificar la aplicación de la regla de decisión y la integridad de datos. 2) Gestión de proveedores (semestral): evaluar la verificación de COA y la gestión de cambios de proveedores. 3) Gestión del cambio (semestral): evaluar la eficacia del procedimiento reforzado con tres cambios reales. 4) Contexto, liderazgo y cultura (anual): verificar los requisitos nuevos de ISO 9001:2026 y la cultura de inocuidad de FSSC. Auditores independientes con competencia en ambas normas.",
+     "puntos_clave": [
+      "Objetivos del programa",
+      "Criterios de frecuencia por riesgo y cobertura total",
+      "Cuatro auditorías con objetivo concreto",
+      "Independencia y competencia de los auditores"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Riesgos del programa",
+     "enunciado": "Identifica tres riesgos para el programa de auditoría interna de tu planta y una acción para cada uno.",
+     "respuesta_modelo": "1) Recursos: los auditores internos tienen otras funciones y las auditorías se posponen; acción: acordar con la dirección tiempo protegido y calendario fijo, con seguimiento del cumplimiento en la revisión por la dirección. 2) Competencia: los auditores no conocen ISO 9001:2026 ni las técnicas de auditoría remota; acción: capacitación y evaluación de competencia antes de asignar. 3) Seguimiento: los hallazgos se registran pero las acciones correctivas no se verifican; acción: tablero de seguimiento con fechas y verificación de eficacia por el auditor o el gestor del programa. También: falta de independencia en una planta pequeña, cooperación deficiente del auditado.",
+     "puntos_clave": [
+      "Tres riesgos del programa (no del auditado)",
+      "Acción concreta para cada uno",
+      "Vinculación con la revisión por la dirección",
+      "Distinción entre riesgos del programa y del auditado"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Revisión del programa",
+     "enunciado": "¿Qué preguntas harías al revisar el programa de auditoría del año anterior antes de la revisión por la dirección?",
+     "respuesta_modelo": "¿Se cumplió el calendario y, si no, por qué? ¿Las auditorías cubrieron todos los requisitos en el ciclo? ¿Los hallazgos internos anticiparon los problemas que después aparecieron como quejas, incidentes o hallazgos externos? ¿Hubo hallazgos externos que la auditoría interna no detectó? ¿Las acciones correctivas derivadas fueron eficaces? ¿El enfoque basado en riesgos se aplicó realmente (más tiempo donde había más riesgo)? ¿Los auditores tuvieron la competencia e independencia necesarias? ¿Qué dicen la retroalimentación de auditados y auditores? Con las respuestas, se definen mejoras para el programa siguiente.",
+     "puntos_clave": [
+      "Cumplimiento y cobertura",
+      "Capacidad de detección comparada con externos",
+      "Eficacia de acciones",
+      "Aplicación del enfoque basado en riesgos y competencia"
+     ],
+     "id": "q15"
+    }
+   ]
+  }
+ ]
+}
