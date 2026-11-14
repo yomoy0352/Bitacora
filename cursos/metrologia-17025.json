@@ -1,0 +1,621 @@
+{
+ "id": "metrologia-17025",
+ "titulo": "Metrología e ISO/IEC 17025",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Por qué la metrología sostiene la calidad",
+   "texto": "## Medir es comparar\nMedir es comparar una magnitud con una referencia. Cuando dices que un lote tiene 15.08 % de ácido peracético, estás afirmando que, comparado con una referencia (la concentración de un patrón de tiosulfato, la masa de una pesa, el volumen de una bureta), ese lote contiene esa cantidad. Si las referencias son incorrectas, o si la comparación tiene mucha variación, el número es engañoso, aunque se reporte con dos decimales.\n\nLa **metrología** es la ciencia de las mediciones y sus aplicaciones. Abarca todos los aspectos teóricos y prácticos de la medición, cualquiera que sea su incertidumbre y su campo de aplicación. Para un químico que trabaja en calidad e inocuidad, la metrología no es un tema académico: es lo que da validez a cada decisión de liberación, a cada certificado de análisis y a cada límite crítico que se monitorea.\n\n## Tres ramas de la metrología\n- **Metrología científica**: desarrolla y mantiene los patrones de medición y el Sistema Internacional de Unidades. La realizan los institutos nacionales de metrología, como el **CENAM** (Centro Nacional de Metrología) en México, el NIST en Estados Unidos o el PTB en Alemania.\n- **Metrología industrial**: asegura el funcionamiento adecuado de los instrumentos de medición en la industria, la producción y los laboratorios. Es la que aplicas en planta: calibración, verificación, control de equipos.\n- **Metrología legal**: regula las mediciones que afectan transacciones comerciales, la salud, la seguridad y el ambiente: básculas comerciales, contenido neto de productos preenvasados, surtidores de combustible. La establece la autoridad (en México, en el marco de la **Ley de Infraestructura de la Calidad**, vigente desde 2020, que sustituyó a la Ley Federal sobre Metrología y Normalización).\n\n## El Sistema Internacional de Unidades\nEl **SI** tiene siete unidades base: metro, kilogramo, segundo, ampere, kelvin, **mol** y candela. Desde el **20 de mayo de 2019**, todas se definen a partir de **constantes fundamentales de la naturaleza** con valores fijos (la constante de Planck, la carga elemental, la constante de Boltzmann, la constante de Avogadro, entre otras). El cambio más simbólico fue el del **kilogramo**, que dejó de definirse por un cilindro de platino-iridio guardado en Francia.\n\nPara la química, la redefinición del **mol** es importante: un mol contiene exactamente 6.022 140 76 × 10²³ entidades elementales, por definición de la constante de Avogadro. Ya no depende de la masa del carbono-12.\n\nEn la práctica de tu laboratorio, la redefinición no cambia nada: tus pesas, buretas y termómetros siguen calibrados de la misma forma. Pero conceptualmente, toda medición trazable termina conectada con esas constantes.\n\n## La infraestructura de la calidad\nLa metrología es uno de los pilares de lo que se conoce como **infraestructura de la calidad**, junto con:\n\n- **Normalización**: el desarrollo de normas (ISO, normas mexicanas, normas oficiales).\n- **Acreditación**: el reconocimiento formal de la competencia de laboratorios, organismos de certificación y de inspección. En México la realiza la **Entidad Mexicana de Acreditación (ema)**.\n- **Evaluación de la conformidad**: ensayos, calibraciones, inspección y certificación.\n\nEstos pilares se sostienen entre sí: una certificación ISO 22000 depende de que los resultados de laboratorio que sustentan las decisiones de inocuidad sean válidos; los resultados son válidos si las mediciones son trazables y la competencia del laboratorio está demostrada; y esa competencia se reconoce mediante la **acreditación** con ISO/IEC 17025.\n\n### Reconocimiento internacional\nLa acreditación tiene valor internacional gracias a los **acuerdos de reconocimiento mutuo**. Los organismos de acreditación que firman estos acuerdos (a través de la cooperación internacional de acreditación de laboratorios, ILAC, cuyo papel se integró en 2026 en la nueva organización global de acreditación) aceptan los resultados de laboratorios acreditados por sus pares. En la frase popular: **\"probado una vez, aceptado en todas partes\"**. En el nivel de los institutos nacionales, el acuerdo equivalente es el **CIPM MRA**, que permite comparar las capacidades de calibración de distintos países.\n\n## Por qué la metrología importa en una planta química\nAlgunos ejemplos de lo que puede pasar cuando la metrología falla:\n\n- Una **báscula** de formulación descalibrada en 1 % hace que todos los lotes de un sanitizante salgan con 1 % más de activo. Si el producto es sin enjuague y estaba cerca del límite regulatorio, el resultado es un incumplimiento sistemático que nadie detecta, porque el laboratorio usa una balanza distinta que sí está bien.\n- Un **termómetro** de un tanque de CIP lee 5 °C de más: el sistema registra 80 °C y el proceso real ocurre a 75 °C. El límite crítico parece cumplirse y no se cumple.\n- Un **estándar** de valoración mal preparado o caducado da concentraciones sesgadas en todos los análisis del mes.\n- Un **pHímetro** con electrodo deteriorado responde lento y el analista lee antes de que se estabilice.\n- Un resultado del laboratorio interno y uno del cliente no coinciden, y nadie sabe cuál es correcto porque ninguno puede demostrar su trazabilidad ni su incertidumbre.\n\nEn todos los casos, el problema no se detecta con el control de calidad habitual: los datos se ven \"normales\". Solo un sistema metrológico (calibraciones trazables, verificaciones intermedias, controles de calidad del laboratorio, estimación de incertidumbre) lo previene.\n\n## Normas que verás en este curso\n- **VIM** (Vocabulario Internacional de Metrología, JCGM 200): el vocabulario oficial.\n- **GUM** (Guía para la expresión de la incertidumbre de medida, JCGM 100): el método de referencia para la incertidumbre.\n- **ISO/IEC 17025**: requisitos generales para la competencia de los laboratorios de ensayo y calibración. La edición vigente es la de **2017**, confirmada en la revisión sistemática de ISO de 2023.\n- **ISO 17034**: requisitos para productores de materiales de referencia.\n- **ISO/IEC 17043**: requisitos para proveedores de ensayos de aptitud.\n- Guías de **EURACHEM** y **CITAC** para química analítica: validación de métodos, incertidumbre en mediciones químicas, trazabilidad.\n- Guías de **ILAC**: intervalos de calibración, reglas de decisión, trazabilidad.\n- **ISO 10012**: sistemas de gestión de las mediciones, útil para la metrología industrial fuera del laboratorio, con una nueva edición en 2026 alineada con la estructura de las normas de sistemas de gestión.\n\n## ISO 9001 y ISO 22000 también lo exigen\nNo necesitas un laboratorio acreditado para tener obligaciones metrológicas:\n\n- **ISO 9001** (apartado 7.1.5) exige recursos de seguimiento y medición adecuados y, cuando la trazabilidad es un requisito o es esencial para la confianza, calibración o verificación contra patrones trazables, identificación del estado, protección y evaluación de resultados previos si un equipo se encuentra fuera de calibración.\n- **ISO 22000** (apartado 8.7) exige lo mismo para los métodos y equipos usados en el monitoreo de PCC y PPRO y en la verificación.\n- Los esquemas como **FSSC 22000** piden además que los análisis críticos para la inocuidad se realicen en laboratorios competentes, idealmente acreditados.\n\n## Ideas que debes llevarte\n- **Medir es comparar** con una referencia; la metrología da validez a cada resultado.\n- Tres ramas: **científica** (patrones), **industrial** (instrumentos en planta) y **legal** (transacciones y protección).\n- El **SI** se define desde 2019 con **constantes fundamentales**; el mol, por la constante de Avogadro.\n- La metrología es un pilar de la **infraestructura de la calidad**, con normalización, acreditación y evaluación de la conformidad. En México: **CENAM**, **ema** y la **Ley de Infraestructura de la Calidad**.\n- Las fallas metrológicas producen **sesgos invisibles** al control de calidad habitual.\n- ISO 9001 (7.1.5) e ISO 22000 (8.7) ya exigen control metrológico; **ISO/IEC 17025:2017** es la norma de competencia de laboratorios.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Ramas",
+     "enunciado": "¿Qué rama de la metrología se ocupa de la calibración y el control de los instrumentos de una planta?",
+     "opciones": [
+      "Metrología industrial",
+      "Metrología científica",
+      "Metrología legal",
+      "Metrología teórica"
+     ],
+     "correcta": 0,
+     "explicacion": "La científica mantiene patrones nacionales; la legal regula mediciones de transacciones y protección.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ramas",
+     "enunciado": "El control del contenido neto de productos preenvasados pertenece principalmente a la:",
+     "opciones": [
+      "Metrología legal",
+      "Metrología científica",
+      "Metrología industrial únicamente",
+      "Química analítica"
+     ],
+     "correcta": 0,
+     "explicacion": "Afecta transacciones comerciales y protección al consumidor.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "SI",
+     "enunciado": "¿Qué cambió en el Sistema Internacional de Unidades el 20 de mayo de 2019?",
+     "opciones": [
+      "Todas las unidades base pasaron a definirse a partir de constantes fundamentales con valores fijos",
+      "Se eliminó el mol",
+      "Se adoptó el sistema inglés",
+      "Se cambió el valor de la candela"
+     ],
+     "correcta": 0,
+     "explicacion": "El kilogramo dejó de depender del prototipo internacional.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mol",
+     "enunciado": "¿Cómo se define el mol desde 2019?",
+     "opciones": [
+      "Por un número fijo de entidades elementales dado por la constante de Avogadro",
+      "Por la masa de 12 g de carbono-12",
+      "Por el volumen de un gas ideal",
+      "Por la masa del prototipo del kilogramo"
+     ],
+     "correcta": 0,
+     "explicacion": "Un mol contiene exactamente 6.022 140 76 × 10²³ entidades.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "México",
+     "enunciado": "¿Qué institución es el instituto nacional de metrología de México?",
+     "opciones": [
+      "CENAM",
+      "ema",
+      "COFEPRIS",
+      "PROFECO"
+     ],
+     "correcta": 0,
+     "explicacion": "La ema acredita; COFEPRIS es autoridad sanitaria; PROFECO protege al consumidor.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "México",
+     "enunciado": "¿Qué ley regula la metrología y la normalización en México desde 2020?",
+     "opciones": [
+      "Ley de Infraestructura de la Calidad",
+      "Ley Federal sobre Metrología y Normalización",
+      "Ley General de Salud",
+      "Ley Federal de Protección al Consumidor"
+     ],
+     "correcta": 0,
+     "explicacion": "La Ley de Infraestructura de la Calidad sustituyó a la Ley Federal sobre Metrología y Normalización.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Infraestructura",
+     "enunciado": "¿Cuál de estos es un pilar de la infraestructura de la calidad junto con la metrología?",
+     "opciones": [
+      "La acreditación",
+      "La mercadotecnia",
+      "La contabilidad",
+      "La logística"
+     ],
+     "correcta": 0,
+     "explicacion": "También la normalización y la evaluación de la conformidad.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reconocimiento",
+     "enunciado": "¿Qué permiten los acuerdos de reconocimiento mutuo de la acreditación?",
+     "opciones": [
+      "Que los resultados de laboratorios acreditados en un país sean aceptados en otros",
+      "Que cualquier laboratorio emita certificados válidos",
+      "Que no se necesite calibración",
+      "Que el cliente no pueda auditar al laboratorio"
+     ],
+     "correcta": 0,
+     "explicacion": "'Probado una vez, aceptado en todas partes'.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fallas",
+     "enunciado": "¿Por qué las fallas metrológicas son peligrosas para la calidad?",
+     "opciones": [
+      "Porque producen sesgos que el control de calidad habitual no detecta: los datos se ven normales",
+      "Porque siempre generan resultados muy dispersos",
+      "Porque detienen la producción inmediatamente",
+      "No son peligrosas"
+     ],
+     "correcta": 0,
+     "explicacion": "Un sesgo sistemático no aparece como variación.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Normas",
+     "enunciado": "¿Cuál es la edición vigente de ISO/IEC 17025?",
+     "opciones": [
+      "2017, confirmada en la revisión sistemática de 2023",
+      "2005",
+      "1999",
+      "2026"
+     ],
+     "correcta": 0,
+     "explicacion": "La de 2017 sigue vigente.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Requisitos",
+     "enunciado": "¿Qué apartado de ISO 22000:2018 trata el control de los equipos de seguimiento y medición?",
+     "opciones": [
+      "8.7",
+      "7.1.5",
+      "9.2",
+      "4.3"
+     ],
+     "correcta": 0,
+     "explicacion": "7.1.5 es el apartado equivalente de ISO 9001.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ejemplo",
+     "enunciado": "Describe un escenario en tu planta en el que una falla metrológica afecte la inocuidad sin que el control de calidad habitual la detecte, y qué control metrológico la habría prevenido.",
+     "respuesta_modelo": "Ejemplo: el sensor de temperatura del retorno del CIP de un pasteurizador lee 4 °C de más por deriva. El sistema registra 78 °C cuando en realidad hay 74 °C, por debajo del límite crítico validado de 75 °C; la limpieza es insuficiente y se forma biopelícula. Los registros muestran cumplimiento y nadie lo nota. Lo habría prevenido: calibración periódica trazable del sensor, verificaciones intermedias con un termómetro de referencia, análisis de tendencia de las verificaciones y evaluación de los ciclos anteriores cuando se detecta la desviación.",
+     "puntos_clave": [
+      "Escenario plausible",
+      "Explicación de por qué no se detecta",
+      "Impacto en inocuidad",
+      "Control metrológico preventivo"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Infraestructura",
+     "enunciado": "Explica cómo se relacionan la metrología, la acreditación y la certificación ISO 22000 de un fabricante de auxiliares de proceso.",
+     "respuesta_modelo": "La certificación ISO 22000 se basa en decisiones de inocuidad (liberación de lotes, monitoreo de PCC, verificación de proveedores) que dependen de resultados de medición. Esos resultados son confiables si las mediciones son trazables al SI a través de calibraciones con patrones de referencia (metrología) y si el laboratorio que los produce es competente. La acreditación con ISO/IEC 17025 es la forma reconocida de demostrar esa competencia, y los acuerdos de reconocimiento mutuo permiten que esos resultados sean aceptados por clientes de otros países. Así, la metrología da la base técnica, la acreditación la demuestra y la certificación del sistema se apoya en ambas.",
+     "puntos_clave": [
+      "Decisiones dependen de mediciones",
+      "Trazabilidad y competencia",
+      "Papel de la acreditación",
+      "Encadenamiento con la certificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Requisitos",
+     "enunciado": "Enumera los requisitos metrológicos que ISO 9001 (7.1.5) e ISO 22000 (8.7) ya exigen a una planta aunque su laboratorio no esté acreditado.",
+     "respuesta_modelo": "Que los recursos de seguimiento y medición sean adecuados para el propósito; que, cuando la trazabilidad sea un requisito o sea esencial para la confianza, los equipos se calibren o verifiquen a intervalos especificados contra patrones trazables a patrones internacionales o nacionales (o se registre la base usada si no existen); que se identifique su estado de calibración; que se protejan contra ajustes, daño o deterioro que invaliden los resultados; que se evalúe la validez de los resultados previos cuando un equipo se encuentre fuera de calibración y se tomen acciones; y que se conserve información documentada. ISO 22000 lo aplica a los métodos y equipos del monitoreo de PCC y PPRO y de la verificación.",
+     "puntos_clave": [
+      "Adecuación al propósito",
+      "Calibración o verificación trazable",
+      "Identificación y protección",
+      "Evaluación de resultados previos y registros"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "El vocabulario de la medición",
+   "texto": "## Las palabras importan\nEn metrología, palabras que en el lenguaje cotidiano son sinónimos tienen significados distintos y precisos. \"Exactitud\" y \"precisión\" no son lo mismo; \"error\" e \"incertidumbre\" tampoco; \"calibrar\" no es \"ajustar\". Usar mal estos términos no es solo un problema de estilo: lleva a decisiones técnicas equivocadas y a hallazgos en auditorías.\n\nLa referencia oficial es el **Vocabulario Internacional de Metrología** (**VIM**, documento JCGM 200 del Comité Conjunto para Guías en Metrología), disponible gratuitamente. En México, el CENAM publica su traducción al español. Este capítulo resume los términos esenciales con tus propias palabras de trabajo.\n\n## La medición y lo que se mide\n- **Magnitud**: propiedad de un fenómeno, cuerpo o sustancia que puede expresarse con un número y una referencia. Ejemplos: masa, temperatura, concentración de cantidad de sustancia.\n- **Mensurando**: la magnitud que **se pretende medir**. Definirlo con precisión es el primer paso de toda medición. \"La concentración de APA\" es una definición incompleta; \"la fracción másica de ácido peracético en el lote 2611-04, en %, a 20 °C, en la muestra tomada de la válvula de fondo después de 30 minutos de agitación\" es mucho mejor.\n- **Medición**: proceso experimental para obtener uno o varios valores que pueden atribuirse razonablemente a una magnitud.\n- **Valor medido**: el resultado que obtienes.\n- **Valor verdadero**: el valor que tendría el mensurando si pudiera conocerse perfectamente. En la práctica es **desconocible**.\n- **Valor de referencia**: un valor que se usa como base de comparación, por ejemplo el valor certificado de un material de referencia.\n\n## Error\nEl **error de medida** es la diferencia entre el valor medido y un valor de referencia. Se descompone en:\n\n- **Error sistemático**: componente que, en mediciones repetidas, permanece constante o varía de manera predecible. Su estimación es el **sesgo**. Ejemplo: una bureta mal calibrada que siempre entrega 0.05 mL de menos.\n- **Error aleatorio**: componente que varía de forma impredecible en mediciones repetidas. Su promedio tiende a cero con muchas repeticiones.\n\nEl error sistemático se puede **corregir** si se conoce (aplicando una **corrección**). El error aleatorio se reduce **promediando** varias mediciones, pero no se elimina.\n\n## Exactitud, veracidad y precisión\nEste es el trío que más se confunde:\n\n- **Veracidad**: proximidad entre el **promedio** de un número infinito de mediciones repetidas y el valor de referencia. Está relacionada con el **error sistemático**. Su contrario es el **sesgo**.\n- **Precisión**: proximidad entre los valores medidos en mediciones repetidas del mismo objeto en condiciones especificadas. Está relacionada con el **error aleatorio**. Se expresa como desviación estándar, varianza o coeficiente de variación.\n- **Exactitud**: proximidad entre **un** valor medido y el valor verdadero. Incluye **ambos** componentes: un resultado es exacto si es veraz **y** preciso.\n\nLa imagen clásica es la del blanco de tiro:\n\n| | Precisión alta | Precisión baja |\n|---|---|---|\n| **Veracidad alta** | Tiros agrupados en el centro: exacto | Tiros dispersos alrededor del centro |\n| **Veracidad baja** | Tiros agrupados lejos del centro: sesgo | Tiros dispersos y desplazados |\n\n**Exactitud** y **precisión** son conceptos **cualitativos** en el VIM: no se les asigna un número. Lo que se cuantifica es el **sesgo**, la **desviación estándar** o la **incertidumbre**.\n\n### Condiciones de precisión\nLa precisión depende de las condiciones en que se repiten las mediciones:\n\n- **Repetibilidad**: mismo procedimiento, mismo operador, mismo sistema, mismas condiciones, mismo lugar, en un periodo corto. Es la mínima variación.\n- **Precisión intermedia**: mismo procedimiento y lugar, pero con variación de otras condiciones a lo largo de un periodo prolongado: distintos días, analistas, lotes de reactivos, calibraciones. Es la que mejor representa la variación real del laboratorio en su trabajo diario.\n- **Reproducibilidad**: diferentes lugares, operadores y sistemas de medición (por ejemplo, distintos laboratorios en una comparación interlaboratorio).\n\nRepetibilidad ≤ precisión intermedia ≤ reproducibilidad.\n\n## Incertidumbre de medida\nLa **incertidumbre** es un parámetro **no negativo** que caracteriza la **dispersión de los valores** que pueden atribuirse razonablemente al mensurando, a partir de la información utilizada.\n\nEn palabras simples: es la **duda** cuantificada sobre el resultado. Un resultado completo se expresa como:\n\n**15.08 % ± 0.12 % (k = 2)**\n\nque se lee: el mejor estimado es 15.08 % y, con un nivel de confianza de aproximadamente 95 %, el valor del mensurando está entre 14.96 y 15.20 %.\n\n### Error frente a incertidumbre\n- El **error** es una diferencia (con signo) respecto a un valor de referencia, y requiere conocer ese valor.\n- La **incertidumbre** es un intervalo de duda, que se puede estimar sin conocer el valor verdadero.\n- Un resultado puede tener un error muy pequeño por casualidad y una incertidumbre grande, o al revés.\n- Los errores sistemáticos conocidos se **corrigen**; la incertidumbre de esa corrección se **incluye** en la incertidumbre del resultado.\n\nLos capítulos 5 a 7 tratan la incertidumbre a fondo.\n\n## Calibración, verificación y ajuste\nTres actividades distintas que se confunden con frecuencia:\n\n- **Calibración**: operación que, en condiciones especificadas, establece la relación entre los valores indicados por un instrumento y los valores correspondientes de patrones, **con sus incertidumbres**, y utiliza esa información para obtener resultados. Una calibración **no** incluye necesariamente un ajuste, y **no** dice por sí misma si el instrumento \"pasa\" o \"no pasa\".\n- **Ajuste**: conjunto de operaciones sobre un instrumento para que proporcione indicaciones prescritas (por ejemplo, ajustar el cero o la ganancia de una balanza). **No es calibración**; después de un ajuste, se debe calibrar o verificar de nuevo.\n- **Verificación**: aportación de evidencia objetiva de que un elemento satisface **requisitos especificados**. Por ejemplo, verificar que el error de una balanza en 100 g está dentro de ± 0.5 mg. La verificación implica una **decisión** de conformidad.\n\nEjemplo: un laboratorio externo **calibra** una balanza y entrega un certificado con los errores encontrados en varios puntos y sus incertidumbres. El laboratorio de la planta usa ese certificado para **verificar** si la balanza cumple sus requisitos de uso (tolerancias que la planta definió). Si no cumple, se solicita un **ajuste** y una nueva calibración.\n\n## Trazabilidad metrológica\nPropiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una **cadena ininterrumpida y documentada de calibraciones**, cada una de las cuales contribuye a la incertidumbre de medida. Es el tema del capítulo 3.\n\n## Otros términos útiles\n- **Resolución**: la menor variación de la magnitud que causa un cambio perceptible en la indicación.\n- **Sensibilidad**: el cociente entre la variación de la indicación y la variación de la magnitud que la causa (la pendiente de una curva de calibración).\n- **Selectividad**: capacidad de un método de medir el analito sin interferencia de otros componentes.\n- **Límite de detección**: el valor más bajo que puede distinguirse de cero con una probabilidad definida.\n- **Intervalo de medida**: el intervalo en el que el instrumento o método funciona con la incertidumbre especificada.\n- **Deriva instrumental**: variación continua o incremental de la indicación en el tiempo, no debida a cambios del mensurando.\n- **Patrón de medida**: realización de la definición de una magnitud, con un valor y una incertidumbre asociados, usada como referencia (una pesa, una solución valorada, un termómetro de referencia).\n- **Material de referencia (MR)** y **material de referencia certificado (MRC)**: los verás en el capítulo 3.\n\n## Ideas que debes llevarte\n- Usa el **VIM**: los términos de metrología tienen significados precisos.\n- Define el **mensurando** con precisión antes de medir.\n- **Error sistemático** (sesgo, se corrige) y **error aleatorio** (se reduce promediando).\n- **Veracidad** (sesgo), **precisión** (dispersión) y **exactitud** (ambas); exactitud y precisión son cualitativas.\n- **Repetibilidad** ≤ **precisión intermedia** ≤ **reproducibilidad**.\n- La **incertidumbre** cuantifica la duda sobre el resultado; un resultado completo incluye su incertidumbre y el factor de cobertura.\n- **Calibrar** establece la relación con patrones e incertidumbres; **ajustar** modifica el instrumento; **verificar** decide si cumple requisitos.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Mensurando",
+     "enunciado": "¿Qué es el mensurando?",
+     "opciones": [
+      "La magnitud que se pretende medir, definida con precisión",
+      "El instrumento de medición",
+      "El resultado obtenido",
+      "El patrón de referencia"
+     ],
+     "correcta": 0,
+     "explicacion": "Definirlo bien es el primer paso de toda medición.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Errores",
+     "enunciado": "Una bureta entrega siempre 0.05 mL de menos. ¿Qué tipo de error es?",
+     "opciones": [
+      "Sistemático",
+      "Aleatorio",
+      "Grosero",
+      "De redondeo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es constante y predecible; se puede corregir si se conoce.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Errores",
+     "enunciado": "¿Cómo se reduce el efecto del error aleatorio?",
+     "opciones": [
+      "Promediando varias mediciones",
+      "Aplicando una corrección constante",
+      "Ajustando el instrumento",
+      "No se puede reducir"
+     ],
+     "correcta": 0,
+     "explicacion": "El error sistemático se corrige; el aleatorio se reduce al promediar.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Veracidad",
+     "enunciado": "¿Con qué tipo de error está relacionada la veracidad?",
+     "opciones": [
+      "Con el error sistemático (sesgo)",
+      "Con el error aleatorio",
+      "Con la resolución",
+      "Con la incertidumbre de redondeo"
+     ],
+     "correcta": 0,
+     "explicacion": "La precisión se relaciona con el error aleatorio.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Blanco de tiro",
+     "enunciado": "Los resultados de un método están muy agrupados pero lejos del valor de referencia. ¿Cómo se describe?",
+     "opciones": [
+      "Preciso pero con sesgo (poco veraz)",
+      "Exacto",
+      "Veraz pero impreciso",
+      "Ni preciso ni veraz"
+     ],
+     "correcta": 0,
+     "explicacion": "Agrupado indica buena precisión; lejos del centro, sesgo.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Exactitud",
+     "enunciado": "Según el VIM, ¿se le asigna un valor numérico a la exactitud?",
+     "opciones": [
+      "No, es un concepto cualitativo; se cuantifican el sesgo, la desviación estándar o la incertidumbre",
+      "Sí, siempre en porcentaje",
+      "Sí, es igual a la incertidumbre",
+      "Sí, es igual a la desviación estándar"
+     ],
+     "correcta": 0,
+     "explicacion": "Exactitud y precisión son cualitativos en el VIM.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Condiciones de precisión",
+     "enunciado": "El mismo método aplicado durante tres meses, por distintos analistas y con distintos lotes de reactivos, en el mismo laboratorio, da la:",
+     "opciones": [
+      "Precisión intermedia",
+      "Repetibilidad",
+      "Reproducibilidad interlaboratorio",
+      "Resolución"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la que mejor representa la variación real del trabajo diario.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Condiciones de precisión",
+     "enunciado": "¿Cuál es el orden correcto de magnitud?",
+     "opciones": [
+      "Repetibilidad ≤ precisión intermedia ≤ reproducibilidad",
+      "Reproducibilidad ≤ repetibilidad ≤ precisión intermedia",
+      "Todas son iguales",
+      "Precisión intermedia ≤ repetibilidad"
+     ],
+     "correcta": 0,
+     "explicacion": "A más condiciones variables, mayor dispersión.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre",
+     "enunciado": "¿Cómo se lee '15.08 % ± 0.12 % (k = 2)'?",
+     "opciones": [
+      "El mejor estimado es 15.08 % y, con aproximadamente 95 % de confianza, el valor está entre 14.96 y 15.20 %",
+      "El error es 0.12 %",
+      "El valor verdadero es 15.08 %",
+      "El método tiene sesgo de 0.12 %"
+     ],
+     "correcta": 0,
+     "explicacion": "k = 2 corresponde a un nivel de confianza de aproximadamente 95 %.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Error e incertidumbre",
+     "enunciado": "¿Cuál es la diferencia entre error e incertidumbre?",
+     "opciones": [
+      "El error es una diferencia con signo respecto a una referencia; la incertidumbre es un intervalo de duda que se estima sin conocer el valor verdadero",
+      "Son sinónimos",
+      "La incertidumbre siempre es mayor que el error",
+      "El error solo existe en métodos malos"
+     ],
+     "correcta": 0,
+     "explicacion": "Los errores sistemáticos conocidos se corrigen; la incertidumbre de la corrección se incluye.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Calibración y ajuste",
+     "enunciado": "Un técnico 'calibra' una balanza moviendo el cero y la ganancia hasta que marca 100.000 g con la pesa. ¿Qué hizo realmente?",
+     "opciones": [
+      "Un ajuste; después debe calibrarse o verificarse",
+      "Una calibración completa",
+      "Una verificación",
+      "Una validación"
+     ],
+     "correcta": 0,
+     "explicacion": "La calibración establece la relación con patrones e incertidumbres; no implica ajustar.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Qué implica una verificación?",
+     "opciones": [
+      "Una decisión sobre si el elemento cumple requisitos especificados",
+      "Solo establecer una relación con patrones",
+      "Modificar el instrumento",
+      "Validar un método"
+     ],
+     "correcta": 0,
+     "explicacion": "La calibración por sí misma no dice si el instrumento pasa o no.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Mensurando",
+     "enunciado": "Redefine con precisión el mensurando 'el pH del detergente'.",
+     "respuesta_modelo": "Ejemplo: 'el pH de una solución al 1 % (masa/volumen) del detergente lote 2611-07 en agua desionizada, medido a 25.0 ± 0.5 °C con electrodo de vidrio combinado calibrado con soluciones amortiguadoras de pH 7 y 10, en la muestra tomada de la válvula de fondo del tanque tras 30 minutos de agitación'. La definición incluye la dilución (el pH de un concentrado alcalino no se mide directamente de forma confiable), la temperatura, el método, la identificación del ítem y el muestreo, porque todos influyen en el resultado.",
+     "puntos_clave": [
+      "Especifica la dilución o forma de la muestra",
+      "Especifica la temperatura",
+      "Especifica el método y la calibración",
+      "Identifica el ítem y el muestreo"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Calibrar, ajustar, verificar",
+     "enunciado": "Describe la secuencia correcta de calibración, verificación y ajuste para la balanza de formulación de tu planta.",
+     "respuesta_modelo": "1) Un laboratorio competente (idealmente acreditado) calibra la balanza en varios puntos del intervalo de uso con pesas trazables y entrega un certificado con los errores y sus incertidumbres. 2) La planta compara los errores más la incertidumbre con sus requisitos de uso (tolerancias definidas según la exactitud que necesita la formulación): eso es la verificación. 3) Si no cumple, se solicita un ajuste al proveedor de servicio. 4) Después del ajuste se vuelve a calibrar y verificar. 5) Entre calibraciones, la planta hace verificaciones intermedias diarias o semanales con pesas de control. 6) Se identifica el estado de la balanza y se registra todo.",
+     "puntos_clave": [
+      "Calibración trazable con incertidumbres",
+      "Verificación contra requisitos de uso",
+      "Ajuste solo si no cumple, seguido de nueva calibración",
+      "Verificaciones intermedias y registro"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Precisión",
+     "enunciado": "¿Por qué la precisión intermedia es más útil que la repetibilidad para estimar la incertidumbre del trabajo diario del laboratorio?",
+     "respuesta_modelo": "La repetibilidad se obtiene en condiciones muy controladas (mismo analista, mismo día, mismos reactivos) y subestima la variación real. En el trabajo diario cambian los analistas, los días, los lotes de reactivos y estándares, las calibraciones y las condiciones ambientales. La precisión intermedia incluye esas fuentes de variación, así que representa mejor la dispersión que tendrán los resultados que el laboratorio entrega. Por eso se usa como base de los enfoques globales de incertidumbre y de las cartas de control del laboratorio.",
+     "puntos_clave": [
+      "La repetibilidad subestima la variación real",
+      "Fuentes de variación del trabajo diario",
+      "La precisión intermedia las incluye",
+      "Uso en incertidumbre y control"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Trazabilidad metrológica y materiales de referencia",
+   "texto": "## La cadena que conecta tu resultado con el SI\nCuando reportas que un lote tiene 15.08 % de activo, ¿cómo sabe tu cliente que tu 15.08 % es el mismo 15.08 % que mediría otro laboratorio? La respuesta es la **trazabilidad metrológica**: la propiedad de un resultado que permite relacionarlo con una referencia (idealmente, la definición de una unidad del SI) mediante una **cadena ininterrumpida y documentada de calibraciones**, cada una de las cuales contribuye a la incertidumbre.\n\nTres palabras clave de esa definición:\n\n- **Ininterrumpida**: cada eslabón está conectado con el siguiente; un solo eslabón sin calibración rompe la cadena.\n- **Documentada**: cada eslabón tiene evidencia (certificados, registros).\n- **Incertidumbre**: cada eslabón aporta incertidumbre, y la incertidumbre crece hacia abajo en la cadena.\n\n## La pirámide de la trazabilidad\nPara una masa, la cadena típica es:\n\n1. **Definición del kilogramo** en el SI (a partir de la constante de Planck).\n2. **Patrón nacional** del CENAM, realizado y comparado internacionalmente.\n3. **Patrones de referencia** de laboratorios de calibración acreditados, calibrados contra el patrón nacional o sus derivados.\n4. **Pesas de trabajo** del proveedor de servicios de calibración.\n5. **Tu balanza**, calibrada con esas pesas.\n6. **Tu resultado** de pesada.\n\nCada nivel tiene mayor incertidumbre que el anterior. La trazabilidad no significa \"sin incertidumbre\", sino \"con incertidumbre **conocida** y conectada a la referencia\".\n\n## Cómo se demuestra la trazabilidad\nSegún la política de **ILAC** sobre trazabilidad (documento ILAC P10), un laboratorio demuestra la trazabilidad de sus mediciones obteniendo las calibraciones de sus equipos y patrones de alguna de estas fuentes, en orden de preferencia práctica:\n\n1. Un **instituto nacional de metrología** cuyos servicios estén cubiertos por el acuerdo de reconocimiento mutuo del CIPM (con sus capacidades publicadas en la base de datos del BIPM).\n2. Un **laboratorio de calibración acreditado** con ISO/IEC 17025 por un organismo de acreditación firmante de los acuerdos de reconocimiento, para la magnitud e intervalo que necesitas (dentro de su **alcance** de acreditación).\n3. En casos excepcionales, otros laboratorios, siempre que el laboratorio usuario demuestre por sí mismo la trazabilidad y la competencia.\n\nLo que **no** demuestra trazabilidad:\n\n- Un certificado de calibración **sin incertidumbres**.\n- Un certificado de un laboratorio acreditado, pero **fuera de su alcance** de acreditación (por ejemplo, acreditado para masas hasta 1 kg y calibrando una báscula de 500 kg).\n- Una \"constancia de servicio\" o un reporte de mantenimiento que solo dice que el equipo \"funciona correctamente\".\n- La declaración del fabricante de que el equipo \"es trazable\".\n\n**Al revisar un certificado de calibración**, verifica: identificación del equipo, fecha, puntos calibrados, resultados (errores o correcciones), **incertidumbres**, condiciones ambientales, patrones usados y su trazabilidad, método, y el **símbolo de acreditación** con el número, si aplica.\n\n## Trazabilidad en química: un reto especial\nEn mediciones físicas (masa, volumen, temperatura), la cadena de calibración es clara. En **química**, el mensurando es la cantidad de una **sustancia específica** en una **matriz** específica, y la trazabilidad depende de:\n\n1. La trazabilidad de las mediciones **físicas** involucradas (masa de la muestra, volúmenes, temperatura).\n2. La **pureza** o concentración de los **estándares** químicos usados para calibrar el método (la sustancia de referencia).\n3. La **validez del método**: que el método realmente mida el analito en esa matriz, sin sesgo significativo (selectividad, recuperación).\n\nPor ejemplo, en una titulación ácido-base, la trazabilidad del resultado pasa por la masa de la muestra (balanza calibrada), el volumen entregado (bureta calibrada) y la concentración del titulante, que a su vez se determina por **valoración** contra un **patrón primario** de pureza conocida (por ejemplo, ftalato ácido de potasio para el hidróxido de sodio), idealmente un **material de referencia certificado**.\n\n## Materiales de referencia\n### Definiciones\n- **Material de referencia (MR)**: material suficientemente **homogéneo y estable** respecto a una o más propiedades especificadas, establecido como apto para su uso previsto en una medición.\n- **Material de referencia certificado (MRC)**: MR acompañado de un **certificado** emitido por un organismo competente, que proporciona uno o más valores de propiedades con sus **incertidumbres** y sus **trazabilidades**, obtenidos mediante procedimientos metrológicamente válidos.\n\n### Productores competentes\nLa norma **ISO 17034** establece los requisitos de competencia para productores de materiales de referencia. Un MRC de un productor acreditado con ISO 17034 es la opción preferida cuando se necesita trazabilidad. ISO 33401 (antes Guía ISO 31) describe el contenido de los certificados.\n\n### Usos de los materiales de referencia\n| Uso | Tipo de material |\n|---|---|\n| Calibración de un método o instrumento | MRC de sustancia pura o solución patrón certificada |\n| Valoración de soluciones titulantes | Patrón primario de pureza certificada |\n| Evaluación de la veracidad (sesgo) de un método | MRC en matriz similar a las muestras |\n| Control de calidad rutinario | MR o material de control interno (no necesariamente certificado) |\n| Validación de métodos | MRC en matriz |\n\nUn mismo material **no** debe usarse a la vez para calibrar un método y para evaluar su veracidad: el resultado sería circular.\n\n### Materiales de control internos\nPara el control de calidad diario no siempre se necesita un MRC (son caros). Muchos laboratorios preparan un **material de control interno**: por ejemplo, un lote de producto bien homogeneizado, dividido en alícuotas y almacenado en condiciones que aseguren su estabilidad, cuyo valor se establece con muchas mediciones. Sirve para las cartas de control (capítulo 12), pero **no** aporta trazabilidad por sí mismo.\n\n### Manejo\n- Respetar las condiciones de **almacenamiento** y el **periodo de validez** del certificado.\n- Registrar la **apertura** y la estabilidad después de abrir.\n- Usar la **cantidad mínima de muestra** indicada en el certificado (por debajo de ella no se garantiza la homogeneidad).\n- No contaminar el material (usar alícuotas, no regresar material al frasco).\n\n## Trazabilidad en la planta\nLa trazabilidad no es solo un tema del laboratorio. En la planta:\n\n- **Básculas de formulación y de envasado**: calibradas por un laboratorio acreditado, con verificaciones intermedias con pesas de control.\n- **Medidores de flujo** de dosificación: calibrados o verificados contra una referencia (por ejemplo, gravimétricamente).\n- **Sensores de temperatura** de procesos críticos (CIP, pasteurización, reactores): calibrados en el intervalo de uso.\n- **Conductímetros y pHímetros en línea**: verificados con soluciones de referencia.\n- **Manómetros** de equipos críticos.\n\nPara cada uno, la planta define si requiere **calibración trazable** (porque su resultado se usa para decisiones de conformidad o de inocuidad) o si basta con una **verificación funcional**.\n\n## Ideas que debes llevarte\n- La **trazabilidad** es una cadena **ininterrumpida y documentada** de calibraciones, cada una con su **incertidumbre**.\n- Se demuestra con calibraciones de **institutos nacionales** o de **laboratorios acreditados dentro de su alcance**.\n- Un certificado sin **incertidumbres**, fuera de alcance o un reporte de mantenimiento **no** demuestran trazabilidad.\n- En química, la trazabilidad depende de las mediciones físicas, de los **estándares** químicos y de la **validez del método**.\n- Los **MRC** (productores con **ISO 17034**) aportan trazabilidad y permiten evaluar sesgo; los **materiales de control internos** sirven para el control diario.\n- No uses el mismo material para calibrar y evaluar veracidad.\n- La trazabilidad también aplica a **básculas, sensores y medidores** de la planta.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Qué caracteriza a la trazabilidad metrológica?",
+     "opciones": [
+      "Una cadena ininterrumpida y documentada de calibraciones, cada una con su incertidumbre, hasta una referencia",
+      "Que el equipo sea de una marca reconocida",
+      "Que el resultado no tenga incertidumbre",
+      "Que el equipo tenga mantenimiento preventivo"
+     ],
+     "correcta": 0,
+     "explicacion": "Un solo eslabón sin calibración rompe la cadena.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre en la cadena",
+     "enunciado": "¿Qué ocurre con la incertidumbre al bajar por la cadena de trazabilidad?",
+     "opciones": [
+      "Aumenta en cada eslabón",
+      "Disminuye en cada eslabón",
+      "Se mantiene igual",
+      "Desaparece al llegar al usuario"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada calibración aporta su incertidumbre.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Demostración",
+     "enunciado": "¿Cuál de estas opciones demuestra trazabilidad según la política de ILAC?",
+     "opciones": [
+      "Calibración por un laboratorio acreditado con ISO/IEC 17025 dentro de su alcance",
+      "Una constancia de mantenimiento que dice 'funciona correctamente'",
+      "La declaración del fabricante de que el equipo es trazable",
+      "Un certificado sin incertidumbres"
+     ],
+     "correcta": 0,
+     "explicacion": "También los institutos nacionales cubiertos por el acuerdo del CIPM.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "Un laboratorio acreditado para masas hasta 1 kg emite un certificado de una báscula de 500 kg. ¿Demuestra trazabilidad acreditada?",
+     "opciones": [
+      "No, está fuera de su alcance de acreditación",
+      "Sí, porque el laboratorio está acreditado",
+      "Sí, si el certificado tiene logotipo",
+      "Solo si el cliente lo acepta"
+     ],
+     "correcta": 0,
+     "explicacion": "La acreditación cubre magnitudes e intervalos específicos.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Certificado",
+     "enunciado": "Al revisar un certificado de calibración, ¿qué elemento es indispensable?",
+     "opciones": [
+      "Las incertidumbres de los resultados",
+      "El precio del servicio",
+      "El color del equipo",
+      "La garantía del fabricante"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin incertidumbres no hay trazabilidad.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Química",
+     "enunciado": "En una titulación ácido-base, ¿de qué depende la trazabilidad del resultado?",
+     "opciones": [
+      "De la masa de la muestra, del volumen de la bureta y de la valoración del titulante contra un patrón primario",
+      "Solo del color del indicador",
+      "Solo de la marca del reactivo",
+      "De la experiencia del analista únicamente"
+     ],
+     "correcta": 0,
+     "explicacion": "Además de la validez del método.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "MRC",
+     "enunciado": "¿Qué distingue a un material de referencia certificado de un material de referencia?",
+     "opciones": [
+      "Un certificado con valores, incertidumbres y trazabilidad emitido por un organismo competente",
+      "Que es más caro",
+      "Que no tiene incertidumbre",
+      "Que no requiere almacenamiento especial"
+     ],
+     "correcta": 0,
+     "explicacion": "Un MR es homogéneo y estable; un MRC además tiene valores certificados.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Productores",
+     "enunciado": "¿Qué norma establece los requisitos de competencia para productores de materiales de referencia?",
+     "opciones": [
+      "ISO 17034",
+      "ISO/IEC 17043",
+      "ISO 9001",
+      "ISO 22000"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO/IEC 17043 es para proveedores de ensayos de aptitud.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Circularidad",
+     "enunciado": "¿Por qué no debe usarse el mismo material para calibrar un método y para evaluar su veracidad?",
+     "opciones": [
+      "Porque el resultado sería circular y no detectaría el sesgo",
+      "Porque es demasiado caro",
+      "Porque la norma prohíbe usar materiales dos veces",
+      "Porque se contamina"
+     ],
+     "correcta": 0,
+     "explicacion": "La veracidad se evalúa con un material independiente de la calibración.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Material de control",
+     "enunciado": "¿Para qué sirve un material de control interno preparado por el laboratorio?",
+     "opciones": [
+      "Para el control de calidad diario (cartas de control); no aporta trazabilidad por sí mismo",
+      "Para demostrar trazabilidad al SI",
+      "Para sustituir a los MRC en la validación",
+      "Para calibrar balanzas"
+     ],
+     "correcta": 0,
+     "explicacion": "Su valor se establece con muchas mediciones internas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Manejo",
+     "enunciado": "¿Por qué debe respetarse la cantidad mínima de muestra indicada en el certificado de un MRC?",
+     "opciones": [
+      "Porque por debajo de ella no se garantiza la homogeneidad del material",
+      "Porque así dura más",
+      "Porque lo exige la aduana",
+      "No es importante"
+     ],
+     "correcta": 0,
+     "explicacion": "El valor certificado aplica para tomas iguales o mayores a la mínima.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cadena",
+     "enunciado": "Describe la cadena de trazabilidad del resultado de concentración de hidróxido de sodio obtenido por titulación con ácido clorhídrico valorado.",
+     "respuesta_modelo": "El resultado depende de: 1) la masa o volumen de la muestra: balanza o material volumétrico calibrados con trazabilidad (pesas trazables al patrón nacional de masa del CENAM, que se conecta con la definición del kilogramo); 2) el volumen de titulante: bureta calibrada gravimétricamente; 3) la concentración del ácido clorhídrico: valorada contra un patrón primario (por ejemplo, carbonato de sodio o TRIS de pureza certificada, idealmente un MRC de un productor ISO 17034), pesado en balanza calibrada; 4) la validez del método: punto final adecuado, ausencia de interferencias significativas (por ejemplo, carbonatos), verificada con un material de referencia. Cada eslabón tiene certificados y registros, y aporta incertidumbre al resultado final.",
+     "puntos_clave": [
+      "Masa o volumen de la muestra",
+      "Volumen del titulante",
+      "Valoración contra patrón primario certificado",
+      "Validez del método e incertidumbre en cada eslabón"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Revisión de certificados",
+     "enunciado": "Recibes un certificado de calibración de un termómetro del CIP que dice: 'Equipo revisado, funciona dentro de especificación'. ¿Qué observaciones harías?",
+     "respuesta_modelo": "No demuestra trazabilidad: no indica los puntos calibrados, los errores o correcciones, las incertidumbres, los patrones usados y su trazabilidad, las condiciones ni el método. Tampoco dice qué 'especificación' se usó (¿la del fabricante?, ¿la de la planta?). Pediría un certificado de calibración completo, idealmente de un laboratorio acreditado para temperatura en el intervalo de uso (por ejemplo, 60 a 90 °C), con resultados e incertidumbres en puntos cercanos a los límites críticos del CIP. Con ese certificado, la planta haría su propia verificación contra sus requisitos.",
+     "puntos_clave": [
+      "Falta de resultados e incertidumbres",
+      "Falta de patrones y trazabilidad",
+      "Especificación no definida",
+      "Solicitud de certificado acreditado en el intervalo de uso"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Planta",
+     "enunciado": "Clasifica estos equipos de tu planta según requieran calibración trazable o verificación funcional, y justifica: báscula de formulación del activo, manómetro de la línea de aire de oficinas, sensor de temperatura del retorno del CIP, termómetro ambiental del comedor.",
+     "respuesta_modelo": "Báscula de formulación del activo: calibración trazable, porque determina la concentración del producto y su conformidad (y, en un sanitizante sin enjuague, la inocuidad). Sensor de temperatura del retorno del CIP: calibración trazable, porque se usa para monitorear un parámetro crítico de limpieza (posible PCC o PPRO). Manómetro de aire de oficinas: verificación funcional o ninguna, porque no afecta la conformidad del producto. Termómetro del comedor: no requiere control metrológico del sistema de calidad. El criterio es si el resultado se usa para decisiones de conformidad, inocuidad o requisitos legales.",
+     "puntos_clave": [
+      "Báscula: trazable",
+      "Sensor CIP: trazable",
+      "Equipos sin impacto: verificación funcional o ninguno",
+      "Criterio de decisión explícito"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
