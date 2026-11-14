@@ -2039,6 +2039,646 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "11",
+   "titulo": "Cuaternarios de amonio y otros biocidas",
+   "texto": "## Un biocida que también es tensioactivo\nLos **compuestos de amonio cuaternario** (QAC, \"cuats\") son, químicamente, **tensioactivos catiónicos**: tienen una cabeza con un nitrógeno unido a cuatro grupos orgánicos, con carga positiva permanente, y una o dos colas hidrofóbicas largas. Todo lo que aprendiste de tensioactivos en los capítulos 3 y 4 aplica aquí, con una diferencia fundamental: la carga es **positiva**.\n\nEsa carga positiva es la clave de su modo de acción, de sus ventajas y de casi todas sus incompatibilidades.\n\n## Estructura y generaciones\nEl cuaternario típico tiene la forma R₁R₂R₃R₄N⁺ X⁻, donde X⁻ suele ser cloruro. Por convención comercial se habla de \"generaciones\":\n\n- **Primera generación**: cloruro de **alquil dimetil bencil amonio** (ADBAC, el clásico cloruro de benzalconio), con cadenas alquílicas de 12 a 16 carbonos.\n- **Segunda generación**: alquil dimetil etilbencil amonio; mejor actividad que el ADBAC, pero hoy se usa poco solo.\n- **Tercera generación**: mezclas de ADBAC con la segunda generación, con mejor actividad y algo mejor tolerancia a la dureza y a la carga orgánica.\n- **Cuarta generación**: **dialquil dimetil amonio** (por ejemplo, cloruro de didecil dimetil amonio, DDAC), con dos cadenas largas; mayor actividad, mejor tolerancia a dureza y carga orgánica.\n- **Quinta generación**: mezclas de cuarta generación con ADBAC; es la base de muchos productos actuales.\n\nLas \"generaciones\" son más un término de mercado que una clasificación química estricta, pero te sirven para leer etiquetas y hojas técnicas.\n\n## Cómo matan los cuaternarios\nLa superficie de las bacterias tiene carga neta **negativa** (fosfolípidos, ácidos teicoicos en grampositivas, lipopolisacárido en gramnegativas). El mecanismo procede en pasos:\n\n1. **Adsorción**: la cabeza catiónica se une electrostáticamente a la superficie celular.\n2. **Penetración**: la cola hidrofóbica se inserta en la membrana citoplasmática.\n3. **Desorganización** de la bicapa: se pierde la permeabilidad selectiva.\n4. **Fuga** de potasio, nucleótidos y otros componentes; colapso del potencial de membrana.\n5. A concentraciones altas, **lisis** y precipitación de proteínas.\n\n### Espectro de acción\n- Muy eficaces contra bacterias **grampositivas**.\n- Eficaces contra muchas **gramnegativas**, aunque la membrana externa de estas es una barrera. *Pseudomonas* es notoriamente más tolerante.\n- Buena actividad contra levaduras y mohos, y contra **virus envueltos**.\n- Poca actividad contra **virus no envueltos** (por ejemplo, norovirus) y prácticamente nula contra **esporas** bacterianas: son **esporostáticos**, no esporicidas.\n- Contra micobacterias, actividad limitada.\n\n## Ventajas\n- **Estables**: no se descomponen al almacenarse ni al diluirse; el concentrado dura años.\n- **No corrosivos** a dosis de uso; compatibles con casi todos los metales y plásticos.\n- **Sin olor** y poco irritantes a dosis de uso.\n- Funcionan bien en un **pH neutro a alcalino**, con buena actividad en el rango de 6 a 10 aproximadamente.\n- Tienen **efecto residual**: dejan una película activa sobre la superficie que sigue inhibiendo el crecimiento microbiano. Esto es útil en pisos, paredes, drenes y áreas no en contacto con alimentos.\n- Tienen cierta acción **detergente**, aunque son malos limpiadores comparados con los aniónicos.\n\n## Desventajas e incompatibilidades\n### Tensioactivos aniónicos\nEsta es la incompatibilidad más importante y más ignorada en planta. Un tensioactivo **aniónico** (LAS, SLES, jabones) y un cuaternario **catiónico** forman un **complejo iónico** insoluble o inactivo. Los residuos de un detergente aniónico mal enjuagado **inactivan el cuaternario**. Por eso el enjuague entre limpieza y sanitización con cuaternario es crítico.\n\n### Dureza del agua\nLos iones Ca²⁺ y Mg²⁺ compiten por los sitios negativos de la superficie celular y reducen la eficacia de los cuaternarios de primera generación. Las generaciones más nuevas toleran mejor la dureza, y las formulaciones incluyen quelantes. Aun así, la etiqueta indica la dureza máxima del agua de dilución para la que se validó el producto.\n\n### Materia orgánica\nLa proteína y otras sustancias con carga negativa adsorben el cuaternario y lo inactivan. Igual que con el cloro, los cuaternarios se aplican sobre superficies **limpias**.\n\n### Espuma y residuo\nAl ser tensioactivos, forman espuma. Esto los hace **inadecuados para CIP** con bombeo turbulento, donde la espuma causa cavitación y mala cobertura.\n\n### Adsorción en materiales\nLos cuaternarios se adsorben en fibras de celulosa (trapos, mopas de algodón, toallas de papel) y en algunos plásticos. Un trapo de algodón sumergido en la cubeta con sanitizante puede bajar la concentración de forma significativa. Se recomiendan paños de microfibra sintética compatibles o cambiar la solución con frecuencia.\n\n### Residuo en alimentos y procesos fermentativos\nEl efecto residual que es ventaja en un piso es desventaja en una superficie de contacto: el residuo puede pasar al producto. En procesos con cultivos (lácteos fermentados, quesos, cerveza, panificación con levadura), el residuo de cuaternario puede **inhibir el cultivo**. Además, varias autoridades regulatorias han establecido **límites máximos de residuos** de cuaternarios como el DDAC y el cloruro de benzalconio en alimentos, por lo que su uso en superficies de contacto debe controlarse con cuidado.\n\n### Tolerancia y resistencia\nLa exposición repetida a concentraciones **subletales** de cuaternarios puede seleccionar bacterias con mayor tolerancia, por ejemplo mediante **bombas de eflujo** o cambios en la membrana. En *Listeria monocytogenes* se han descrito determinantes genéticos de tolerancia a cloruro de benzalconio. Esto refuerza dos reglas: usar la **concentración correcta**, sin diluir de más, y **rotar o alternar** con biocidas de mecanismo distinto donde el riesgo lo justifique.\n\n## Dosis y regulación\nLas concentraciones de uso típicas para superficies en contacto con alimentos sin enjuague son de alrededor de **150 a 400 ppm** de activo, según la etiqueta. En Estados Unidos, el **21 CFR 178.1010** (FDA) y el **40 CFR 180.940** (EPA) fijan, para cada tipo de cuaternario, la concentración máxima de activo en soluciones sanitizantes sin enjuague para superficies en contacto con alimentos; según el compuesto y la mezcla, esos límites están típicamente entre 200 y 400 ppm. Para superficies que no están en contacto con alimentos, como pisos y paredes, se usan concentraciones más altas, del orden de 400 a 800 ppm o más, según etiqueta.\n\nLa medición se hace con **tiras reactivas** específicas (azul de bromofenol) o con **titulación**.\n\n## Otros biocidas que encontrarás\n### Ácidos aniónicos\nLos **sanitizantes ácidos aniónicos** combinan un ácido (fosfórico, por ejemplo) con un tensioactivo aniónico, como el ácido dodecilbencensulfónico. A pH bajo (alrededor de 2 a 3), el tensioactivo aniónico desorganiza la membrana. Ventajas: sanitizan y al mismo tiempo **previenen la incrustación mineral**, funcionan bien con agua dura, son útiles en lácteos y cervecería. Desventajas: espuma (hay versiones de baja espuma para CIP) y menor actividad a pH alto.\n\n### Ácidos grasos sanitizantes\nÁcidos carboxílicos de cadena media (por ejemplo, octanoico y decanoico) en medio ácido. Funcionan como sanitizantes con baja espuma, útiles en CIP.\n\n### Yodóforos\nComplejos de **yodo** con un tensioactivo no iónico (por ejemplo, polivinilpirrolidona o un etoxilado) que liberan yodo libre de forma controlada. Funcionan mejor en **pH ácido** (alrededor de 3 a 5). El color ámbar indica que hay yodo activo, lo cual es útil para el operador. Desventajas: **manchan** plásticos y juntas, son menos eficaces a pH alto, pierden yodo por sublimación por encima de unos 45 a 50 °C y son más caros. Se usan, por ejemplo, en sumideros de botas y en algunos lácteos.\n\n### Alcoholes\nEl etanol y el isopropanol, idealmente al **60 a 80 %** en agua, desnaturalizan proteínas. El agua es necesaria: el alcohol absoluto es menos eficaz. Actúan rápido, se evaporan sin residuo y se usan en superficies pequeñas, equipo de manipulación y donde no se puede usar agua. No son esporicidas y la materia orgánica los afecta.\n\n### Biguanidas y otros\nLa **clorhexidina** y la polihexametilen biguanida (PHMB) se usan más en el ámbito clínico y cosmético que en plantas de alimentos.\n\n## Elegir un biocida: un marco de decisión\nAl elegir, pregúntate:\n\n1. **¿Qué microorganismo** me preocupa? (Gramnegativas, *Listeria*, esporas, levaduras, norovirus.)\n2. **¿Qué superficie**? (Contacto con alimento o no; materiales; metales blandos.)\n3. **¿Cómo se aplica?** (CIP con bombeo: no espuma; manual; nebulización; espuma.)\n4. **¿Qué condiciones?** (Temperatura, dureza del agua, pH, carga orgánica residual, tiempo disponible.)\n5. **¿Enjuague o no?** ¿Hay riesgo de residuo en el producto o sobre cultivos?\n6. **¿Regulación y etiqueta?** ¿Está registrado para ese uso, superficie y microorganismo?\n7. **¿Rotación?** ¿Hay historial de hallazgos persistentes que sugieran tolerancia?\n\n## Ideas que debes llevarte\n- Los cuaternarios son **tensioactivos catiónicos**; su carga positiva los une a la superficie celular negativa y desorganiza la membrana.\n- Son estables, no corrosivos, sin olor y con **efecto residual**; son débiles contra esporas, virus no envueltos y algunas gramnegativas como *Pseudomonas*.\n- Se **inactivan** con tensioactivos aniónicos, dureza, materia orgánica y fibras de algodón.\n- Espuman: **no son para CIP**; su residuo puede afectar cultivos y tiene límites regulatorios en alimentos.\n- La subdosificación favorece la **tolerancia**; usa la dosis correcta y rota donde aplique.\n- Los ácidos aniónicos, ácidos grasos, yodóforos y alcoholes completan la caja de herramientas, cada uno con su nicho.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Mecanismo QAC",
+     "enunciado": "¿Cuál es el primer paso del mecanismo de acción de un cuaternario de amonio sobre una bacteria?",
+     "opciones": [
+      "Adsorción electrostática de la cabeza catiónica sobre la superficie celular con carga negativa",
+      "Oxidación de los grupos sulfhidrilo de las enzimas",
+      "Intercalación en el ADN",
+      "Hidrólisis de la pared de peptidoglucano"
+     ],
+     "correcta": 0,
+     "explicacion": "La carga positiva permanente del nitrógeno cuaternario se une a fosfolípidos, ácidos teicoicos o LPS; después la cola se inserta en la membrana y la desorganiza.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Espectro",
+     "enunciado": "¿Contra cuál de estos microorganismos o agentes es menos eficaz un cuaternario de amonio?",
+     "opciones": [
+      "Esporas bacterianas",
+      "Staphylococcus aureus",
+      "Levaduras",
+      "Virus envueltos"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cuaternarios son esporostáticos, no esporicidas. También son débiles contra virus no envueltos y algunas gramnegativas como Pseudomonas.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incompatibilidad aniónicos",
+     "enunciado": "Después de lavar con un detergente a base de LAS y un enjuague mínimo, el sanitizante cuaternario da conteos altos en el ATP y en el hisopado. ¿Causa química más probable?",
+     "opciones": [
+      "El tensioactivo aniónico residual formó un complejo con el cuaternario catiónico y lo inactivó",
+      "El LAS es esporicida y compitió con el cuaternario",
+      "El cuaternario se oxidó por el oxígeno del aire",
+      "El LAS elevó demasiado la temperatura"
+     ],
+     "correcta": 0,
+     "explicacion": "Aniónico + catiónico forman un complejo iónico inactivo o insoluble. El enjuague entre detergente aniónico y cuaternario es crítico.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Dureza",
+     "enunciado": "¿Por qué la dureza del agua reduce la eficacia de los cuaternarios de primera generación?",
+     "opciones": [
+      "Los iones Ca²⁺ y Mg²⁺ compiten con el cuaternario por los sitios negativos de la superficie celular",
+      "El calcio oxida al cuaternario",
+      "La dureza baja el pH a niveles donde el cuaternario se descompone",
+      "El magnesio forma cloro libre con el contraión cloruro"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cationes divalentes ocupan sitios aniónicos en la superficie bacteriana. Las generaciones más nuevas y los quelantes de la formulación mejoran la tolerancia, pero la etiqueta limita la dureza del agua de dilución.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aplicación",
+     "enunciado": "¿Por qué los cuaternarios no se recomiendan como sanitizante en sistemas CIP con bombeo turbulento?",
+     "opciones": [
+      "Porque forman espuma, que causa cavitación en bombas y mala cobertura de las superficies",
+      "Porque son demasiado corrosivos para el acero inoxidable",
+      "Porque se descomponen al pasar por la bomba",
+      "Porque solo funcionan a temperaturas mayores de 80 °C"
+     ],
+     "correcta": 0,
+     "explicacion": "Al ser tensioactivos, espuman. En CIP se prefieren químicas de baja espuma como el APA, ácidos aniónicos de baja espuma o ácidos grasos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Adsorción en materiales",
+     "enunciado": "Un operador deja trapos de algodón sumergidos en una cubeta con cuaternario a 200 ppm durante el turno. ¿Qué ocurre?",
+     "opciones": [
+      "La concentración de cuaternario baja porque se adsorbe en las fibras de celulosa",
+      "La concentración sube porque el agua se evapora más rápido",
+      "El algodón libera cloro y potencia el sanitizante",
+      "No ocurre nada; los cuaternarios no interactúan con fibras"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cuaternarios se adsorben en celulosa. La concentración real puede caer por debajo de la eficaz; se recomiendan paños compatibles y verificar con tiras.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ventajas",
+     "enunciado": "¿Qué propiedad hace a los cuaternarios especialmente útiles en pisos, paredes y drenes?",
+     "opciones": [
+      "Su efecto residual: dejan una película activa que sigue inhibiendo el crecimiento",
+      "Su capacidad esporicida a bajas concentraciones",
+      "Que se descomponen inmediatamente sin dejar residuo",
+      "Que eliminan incrustaciones minerales"
+     ],
+     "correcta": 0,
+     "explicacion": "La película residual es ventaja en superficies que no están en contacto con alimentos, pero es una desventaja en superficies de contacto y en procesos con cultivos.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Residuos y cultivos",
+     "enunciado": "En una planta de yogur, ¿cuál es el riesgo principal de usar cuaternario sin enjuague en tanques de fermentación?",
+     "opciones": [
+      "El residuo puede inhibir el cultivo iniciador y además existen límites máximos de residuos en alimentos",
+      "El cuaternario se convierte en clorato",
+      "El cuaternario acidifica el producto",
+      "El cuaternario favorece el crecimiento de levaduras"
+     ],
+     "correcta": 0,
+     "explicacion": "El efecto residual que es útil en pisos puede pasar al producto, inhibir cultivos y exceder límites de residuos de compuestos como DDAC o benzalconio.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tolerancia",
+     "enunciado": "¿Qué práctica favorece la selección de bacterias tolerantes a cuaternarios?",
+     "opciones": [
+      "Usar repetidamente concentraciones subletales, por ejemplo diluyendo de más para ahorrar",
+      "Usar la concentración de etiqueta y verificarla con tiras",
+      "Rotar con un sanitizante oxidante",
+      "Enjuagar bien el detergente aniónico antes de sanitizar"
+     ],
+     "correcta": 0,
+     "explicacion": "La exposición subletal repetida selecciona mecanismos como bombas de eflujo. En Listeria se han descrito determinantes de tolerancia a benzalconio.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ácidos aniónicos",
+     "enunciado": "¿Qué ventaja ofrece un sanitizante ácido aniónico en una planta láctea con agua dura?",
+     "opciones": [
+      "Sanitiza y a la vez previene la incrustación mineral, y funciona bien con agua dura",
+      "Es esporicida a temperatura ambiente",
+      "Es compatible con residuos de cuaternario",
+      "Funciona mejor a pH 11"
+     ],
+     "correcta": 0,
+     "explicacion": "El ácido mantiene los minerales en solución y el tensioactivo aniónico a pH 2 a 3 desorganiza la membrana. Es útil en lácteos y cervecería.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Yodóforos y alcoholes",
+     "enunciado": "¿Por qué el etanol al 70 % es más eficaz como desinfectante que el etanol absoluto?",
+     "opciones": [
+      "Porque el agua es necesaria para desnaturalizar las proteínas y para que el alcohol penetre la célula",
+      "Porque el agua aumenta la volatilidad del alcohol",
+      "Porque el etanol absoluto es esporicida y deja de actuar",
+      "Porque el agua reacciona con el etanol formando ácido peracético"
+     ],
+     "correcta": 0,
+     "explicacion": "La desnaturalización de proteínas requiere agua; el alcohol absoluto coagula superficialmente y penetra peor. El rango útil es de 60 a 80 %.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Incompatibilidad aniónicos",
+     "enunciado": "Diseña la secuencia de limpieza y sanitización de una banda transportadora (superficie en contacto con alimentos) que usa detergente aniónico clorado y luego sanitizante cuaternario. Justifica cada paso químicamente.",
+     "respuesta_modelo": "1) Retiro en seco de sólidos para reducir la carga orgánica. 2) Preenjuague con agua tibia para retirar suciedad suelta. 3) Detergente alcalino clorado: el álcali saponifica y dispersa grasa, el cloro oxida proteína y el aniónico humecta y emulsiona. 4) Enjuague abundante con agua potable: retira el aniónico y el álcali, que inactivarían al cuaternario por formación de complejo iónico, y la suciedad suspendida. 5) Verificación visual o de ATP. 6) Sanitizante cuaternario a la concentración de etiqueta, verificada con tira, con el tiempo de contacto indicado, y con enjuague o no según la etiqueta y el riesgo de residuo. Además, considerar la dureza del agua de dilución.",
+     "puntos_clave": [
+      "Retiro de sólidos y preenjuague",
+      "Detergente con función de cada componente",
+      "Enjuague crítico por la incompatibilidad aniónico-catiónico",
+      "Concentración verificada, tiempo de contacto y decisión sobre enjuague"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tolerancia",
+     "enunciado": "En tu programa de monitoreo ambiental aparece Listeria persistente en un drenaje que se sanitiza diariamente con cuaternario. Propón un análisis de causas químicas y operativas y medidas concretas.",
+     "respuesta_modelo": "Causas posibles: subdosificación (dilución incorrecta, adsorción en mopas de algodón, agua dura), inactivación por residuos aniónicos o materia orgánica, tiempo de contacto insuficiente, biopelícula protegida en el drenaje que el cuaternario no penetra, y posible selección de cepas tolerantes por exposición subletal repetida. Medidas: verificar concentración en el punto de uso con tiras; limpieza mecánica del drenaje con cepillos dedicados y detergente para remover la biopelícula; enjuague antes del cuaternario; rotar con un oxidante como APA o con un producto de mecanismo distinto; revisar diseño y estado del drenaje; y aumentar el muestreo de verificación con vector swabbing, eventualmente con tipificación de aislamientos.",
+     "puntos_clave": [
+      "Subdosificación e inactivación",
+      "Biopelícula y limpieza mecánica",
+      "Tolerancia por exposición subletal",
+      "Rotación con biocida de otro mecanismo y verificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Selección de biocida",
+     "enunciado": "Compara cuaternario, APA e hipoclorito para sanitizar una mesa de acero inoxidable en un área de empaque de carne fría. ¿Cuál elegirías y por qué?",
+     "respuesta_modelo": "Hipoclorito: barato y de amplio espectro, pero depende del pH, la materia orgánica residual lo consume, es corrosivo para el inoxidable si se maneja mal y puede formar subproductos. Cuaternario: estable, no corrosivo, sin olor, con efecto residual, pero con riesgo de residuo en el producto, inactivación por aniónicos y materia orgánica, y tolerancia en Listeria si se subdosifica. APA: rápido, eficaz en frío, tolera mejor algo de materia orgánica, sin residuos clorados y se descompone a ácido acético, agua y oxígeno, aunque tiene olor e irritación y es más caro. Para una superficie de contacto en un área fría, el APA sin enjuague suele ser la mejor opción; el cuaternario podría reservarse para pisos y paredes por su efecto residual.",
+     "puntos_clave": [
+      "Analiza los tres biocidas con ventajas y desventajas",
+      "Considera temperatura fría y contacto con alimento",
+      "Toma una decisión justificada",
+      "Menciona el nicho de los cuaternarios en superficies sin contacto"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Mecanismo QAC",
+     "enunciado": "Explica por qué la misma propiedad del cuaternario (su carga positiva) explica tanto su modo de acción como sus principales incompatibilidades.",
+     "respuesta_modelo": "La cabeza catiónica se une a la superficie negativa de la célula, que es el primer paso del mecanismo. Pero esa misma afinidad por las cargas negativas hace que el cuaternario se una a cualquier especie aniónica: tensioactivos aniónicos (forma complejos inactivos), proteína y materia orgánica con carga negativa, fibras de celulosa y algunas superficies. Además, los cationes divalentes de la dureza compiten por los sitios negativos de la célula. Así, carga positiva implica eficacia sobre la membrana, pero también inactivación por todo lo que sea aniónico o compita por esos sitios.",
+     "puntos_clave": [
+      "Atracción electrostática como primer paso",
+      "Unión a aniónicos, materia orgánica y celulosa",
+      "Competencia de Ca²⁺ y Mg²⁺",
+      "Relaciona una misma causa con efecto y limitación"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "titulo": "Biopelículas en la planta de alimentos",
+   "texto": "## El modo de vida real de las bacterias\nEn el laboratorio estudiamos bacterias **planctónicas**: células libres, suspendidas en un caldo. Las pruebas de eficacia de sanitizantes, como las que viste en el capítulo 8, también usan casi siempre células en suspensión. Pero en una planta de alimentos, la mayoría de los microorganismos no vive así. Vive **adherida a superficies**, en comunidades organizadas y protegidas: las **biopelículas**.\n\nUna biopelícula es una comunidad de microorganismos adheridos a una superficie y embebidos en una **matriz de sustancias poliméricas extracelulares** (EPS) que ellos mismos producen. Esa matriz cambia por completo la química de la limpieza y la desinfección: una bacteria en una biopelícula madura puede tolerar concentraciones de biocida de **10 a 1000 veces** mayores que la misma bacteria en suspensión.\n\nPor eso entender las biopelículas es indispensable para quien diseña, valida o audita un programa de saneamiento.\n\n## Cómo se forma una biopelícula\nLa formación es un proceso en etapas:\n\n### 1. Película de acondicionamiento\nAntes de que llegue cualquier bacteria, la superficie limpia se cubre en segundos a minutos con moléculas del medio: proteínas, polisacáridos, grasas, minerales. Esta **película de acondicionamiento** cambia la carga, la energía superficial y la hidrofobicidad del acero y aporta nutrientes. En una planta de alimentos, la película de acondicionamiento es simplemente **suciedad residual**.\n\n### 2. Adhesión reversible\nLas bacterias llegan por flujo, gravedad o movimiento propio, y se acercan a la superficie. Las fuerzas de van der Waals, electrostáticas y las interacciones hidrofóbicas las retienen débilmente. En esta fase un enjuague o una acción mecánica las remueven con facilidad.\n\n### 3. Adhesión irreversible\nLas células se anclan con apéndices (fimbrias, pili, flagelos) y comienzan a producir EPS. A partir de aquí, el enjuague ya no basta.\n\n### 4. Maduración\nLas células se dividen, producen más matriz y forman microcolonias con una estructura tridimensional, con canales por donde circulan agua y nutrientes. Se establecen gradientes de oxígeno, pH y nutrientes. Este proceso está coordinado en parte por **detección de quórum**: señales químicas que las bacterias liberan y que, al alcanzar cierta densidad, activan genes de formación de biopelícula.\n\n### 5. Dispersión\nPorciones de la biopelícula se desprenden, ya sea por esfuerzo mecánico o por un programa activo de dispersión, y colonizan nuevas superficies. Aquí está el riesgo para el producto: **la biopelícula es una fuente continua de contaminación**, que libera células de manera intermitente. Esto explica resultados de monitoreo que aparecen y desaparecen sin patrón claro.\n\n## La matriz: química de la protección\nLa EPS está formada principalmente por:\n\n- **Polisacáridos**: el componente estructural mayoritario en muchas especies (por ejemplo, celulosa, alginato en *Pseudomonas*, poli-N-acetilglucosamina en estafilococos).\n- **Proteínas**: adhesinas y proteínas estructurales, incluidas fibras amiloides.\n- **ADN extracelular** (eDNA): liberado por lisis celular; aporta estructura y cargas negativas.\n- **Lípidos** y otros componentes.\n- **Agua**: hasta el 90 % o más de la masa.\n\nAdemás, en las plantas de alimentos las biopelículas incorporan **suciedad del proceso**: proteína, grasa y, muy importante, **minerales**. Una biopelícula en un intercambiador de calor de leche puede estar mineralizada con fosfato de calcio, lo que la hace todavía más difícil de remover.\n\n## Por qué las biopelículas toleran los biocidas\nNo hay un solo mecanismo; se combinan:\n\n1. **Barrera de difusión y reacción**: la matriz no solo frena la difusión del biocida, sino que **reacciona** con él. Para un oxidante como el cloro, la matriz representa una enorme demanda: el cloro se consume en las capas externas antes de llegar a las células profundas. Los cuaternarios, catiónicos, se adsorben en los componentes aniónicos de la matriz (eDNA, polisacáridos ácidos).\n2. **Microambientes**: en el interior hay zonas con poco oxígeno, pH distinto y pocos nutrientes, que alteran la actividad de algunos biocidas.\n3. **Crecimiento lento y células persistentes**: muchas células del interior están en un estado metabólico lento. Una subpoblación de **células persistentes** tolera los biocidas sin ser genéticamente resistente.\n4. **Respuesta adaptativa**: las células expuestas a dosis subletales activan respuestas de estrés y bombas de eflujo.\n5. **Comunidades mixtas**: en la planta, las biopelículas suelen ser **multiespecie**. Una especie productora de mucha matriz, como *Pseudomonas*, puede proteger a otra, como *Listeria monocytogenes*, que por sí sola forma biopelículas más débiles.\n\n## Los microorganismos que importan\n- ***Listeria monocytogenes***: el patógeno más asociado con persistencia en plantas de alimentos listos para consumo. Crece a temperaturas de refrigeración, tolera sal y forma biopelículas, sobre todo en asociación con otras especies. Hay cepas que persisten **años** en una misma planta.\n- ***Pseudomonas*** spp.: grandes productoras de matriz, deterioradoras de lácteos y carnes refrigeradas, y \"anfitrionas\" de otros microorganismos.\n- ***Salmonella***: forma biopelículas en plantas de alimentos secos y en equipos de baja humedad; tolera muy bien la desecación.\n- ***Escherichia coli*** **STEC**, *Staphylococcus*, *Bacillus* (formador de esporas, también en biopelículas de lácteos), *Geobacillus* (termófilo, en evaporadores y secadores de leche) y levaduras y mohos.\n\n## Dónde se forman en una planta\nLas biopelículas se forman donde coinciden **humedad, nutrientes, tiempo y difícil acceso**. Lugares típicos, conocidos como **nichos** o **refugios**:\n\n- **Drenajes**: el sitio clásico de *Listeria* en ambientes húmedos.\n- **Juntas y empaques** deteriorados, con grietas o mal asentados.\n- **Bandas transportadoras** modulares, rodillos huecos, bisagras y uniones.\n- **Soldaduras** mal pulidas, rayones y superficies dañadas.\n- **Puntos muertos** en tuberías (tramos sin flujo) y válvulas.\n- **Intercambiadores de calor**, sobre todo las zonas de temperatura de crecimiento.\n- **Equipo de limpieza**: cepillos, mangueras, mopas y cubetas.\n- **Unidades de refrigeración**: charolas de condensado y evaporadores.\n- Estructuras huecas, motores y cualquier sitio que se moje y no se desarme para limpiarse.\n\nEl **diseño sanitario** del equipo y de las instalaciones es la primera barrera: superficies lisas, sin grietas, autodrenantes, sin puntos muertos y desarmables.\n\n## Cómo se controla una biopelícula\nEl mensaje central es este: **una biopelícula madura no se elimina solo con sanitizante**. Se necesita romper físicamente la matriz.\n\n### Prevenir: la mejor estrategia\n- **Limpiar con la frecuencia correcta**, antes de que la adhesión se vuelva irreversible y la biopelícula madure.\n- Eliminar la **película de acondicionamiento**: una limpieza completa no deja nutrientes.\n- **Secar**: sin agua no hay biopelícula. Mantener las áreas secas siempre que se pueda.\n- Diseño sanitario y mantenimiento de juntas, soldaduras y superficies.\n\n### Remover: limpieza agresiva\n- **Acción mecánica**: el cepillado y la turbulencia son el factor más importante para romper la matriz. En CIP, una velocidad de flujo adecuada; en limpieza manual, cepillos dedicados.\n- **Química alcalina fuerte**, a menudo **clorada**: el álcali hidroliza y solubiliza polisacáridos y proteínas de la matriz; el cloro oxida proteína.\n- **Etapa ácida** cuando la biopelícula está mineralizada.\n- **Enzimas**: proteasas, amilasas, celulasas y otras glicosidasas, y en algunos casos DNasas, que degradan componentes específicos de la matriz. Son útiles cuando la química convencional no basta, con la ventaja de condiciones de trabajo más suaves.\n- **Tensioactivos** que penetran y dispersan.\n- **Desarme** de equipos para alcanzar los nichos.\n\n### Matar: después de remover\nUna vez removida la matriz, el sanitizante sí funciona. Los **oxidantes** como el APA tienen mejor desempeño frente a biopelículas residuales que los cuaternarios, en parte porque tienen menor afinidad por la matriz. Rotar biocidas con mecanismos distintos es útil en programas contra *Listeria* persistente.\n\n### Limpieza profunda y saneamiento intensivo\nCuando el monitoreo ambiental indica un problema persistente, se aplica un plan de **saneamiento intensivo**: desarme completo, limpieza de nichos, tratamientos térmicos (por ejemplo, calentar el equipo o usar vapor), y, para *Listeria*, el enfoque de **búsqueda y destrucción** (**seek and destroy**): muestreo intensivo para localizar el nicho y eliminarlo.\n\n## Cómo detectar una biopelícula\nLas biopelículas no siempre se ven. Algunas señales:\n\n- Superficies **resbalosas** o con capa viscosa.\n- Película o coloración en juntas, drenajes, bandas.\n- **ATP** alto de forma recurrente en el mismo punto después de la limpieza.\n- Monitoreo ambiental con **positivos intermitentes** en la misma zona.\n- Recuentos altos en enjuagues finales de CIP.\n- Deterioro de vida de anaquel del producto sin causa en materia prima.\n\nPara muestrear, se usan **hisopos o esponjas con fricción vigorosa**, porque la biopelícula está adherida. La **tipificación molecular** de aislamientos (por ejemplo, secuenciación del genoma completo) permite saber si el mismo clon persiste en la planta o si son introducciones nuevas.\n\n## Ideas que debes llevarte\n- Una **biopelícula** es una comunidad adherida, embebida en una matriz de polisacáridos, proteínas, ADN extracelular y suciedad del proceso.\n- Se forma por etapas: acondicionamiento, adhesión reversible, adhesión irreversible, maduración y dispersión. La **dispersión** convierte un nicho en fuente intermitente de contaminación.\n- Tolera biocidas por **barrera de difusión-reacción**, microambientes, células persistentes, respuestas adaptativas y comunidades mixtas.\n- *Listeria monocytogenes* persiste en nichos húmedos, a menudo protegida por *Pseudomonas*.\n- El control requiere **prevenir** (frecuencia, secado, diseño sanitario), **remover** (acción mecánica, álcali, ácido, enzimas) y después **sanitizar**.\n- El sanitizante sobre una biopelícula intacta tiene poca eficacia: primero se rompe la matriz.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Qué distingue a una biopelícula de un simple depósito de bacterias sobre una superficie?",
+     "opciones": [
+      "Las células están adheridas y embebidas en una matriz de sustancias poliméricas extracelulares producida por ellas",
+      "Las células están muertas y secas",
+      "Las bacterias son siempre de una sola especie",
+      "La biopelícula solo se forma en superficies plásticas"
+     ],
+     "correcta": 0,
+     "explicacion": "La matriz EPS (polisacáridos, proteínas, ADN extracelular, lípidos, agua) es lo que da estructura y protección a la comunidad.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Formación",
+     "enunciado": "¿Qué es la película de acondicionamiento en el contexto de una planta de alimentos?",
+     "opciones": [
+      "La capa de moléculas del medio (proteínas, grasas, minerales) que cubre la superficie antes de que lleguen las bacterias; en la práctica, suciedad residual",
+      "Una capa protectora de pasivación del acero inoxidable",
+      "La primera capa de células que muere al contacto con el sanitizante",
+      "Un recubrimiento antimicrobiano aplicado al equipo"
+     ],
+     "correcta": 0,
+     "explicacion": "La película de acondicionamiento modifica la superficie y aporta nutrientes; una limpieza completa la elimina y reduce la adhesión.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Formación",
+     "enunciado": "¿En qué etapa basta un enjuague o una acción mecánica ligera para remover las bacterias?",
+     "opciones": [
+      "Adhesión reversible",
+      "Adhesión irreversible",
+      "Maduración",
+      "Biopelícula multiespecie madura"
+     ],
+     "correcta": 0,
+     "explicacion": "En la adhesión reversible solo actúan fuerzas débiles. Cuando las células se anclan con apéndices y producen EPS, el enjuague ya no basta.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Dispersión",
+     "enunciado": "El monitoreo ambiental muestra positivos de Listeria intermitentes, sin patrón claro, en la misma zona de una línea. ¿Qué explicación es más coherente?",
+     "opciones": [
+      "Un nicho con biopelícula que libera células de manera intermitente por dispersión",
+      "Errores de laboratorio aleatorios sin relación con la planta",
+      "Contaminación de la materia prima en cada lote",
+      "Que la Listeria no forma biopelículas y llega solo por el aire"
+     ],
+     "correcta": 0,
+     "explicacion": "La dispersión de una biopelícula establecida es una fuente continua pero intermitente. Esto justifica la búsqueda del nicho y la tipificación de aislamientos.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tolerancia",
+     "enunciado": "¿Por qué el cloro pierde eficacia frente a una biopelícula madura?",
+     "opciones": [
+      "Porque la matriz reacciona con el cloro y lo consume en las capas externas antes de que llegue a las células profundas",
+      "Porque el cloro no es oxidante",
+      "Porque las biopelículas tienen pH 2, que inactiva el cloro",
+      "Porque el cloro solo actúa sobre esporas"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una barrera de difusión y reacción: la matriz es una gran demanda de cloro. Por eso primero hay que romperla mecánica y químicamente.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tolerancia",
+     "enunciado": "¿Qué son las células persistentes en una biopelícula?",
+     "opciones": [
+      "Una subpoblación en estado metabólico lento que tolera biocidas sin ser genéticamente resistente",
+      "Mutantes con genes de resistencia adquiridos por plásmidos",
+      "Esporas bacterianas",
+      "Células muertas que forman la estructura de la matriz"
+     ],
+     "correcta": 0,
+     "explicacion": "La tolerancia fenotípica no se hereda como la resistencia; las células persistentes pueden repoblar la biopelícula después del tratamiento.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comunidades mixtas",
+     "enunciado": "¿Qué papel puede tener Pseudomonas en la persistencia de Listeria monocytogenes en una planta?",
+     "opciones": [
+      "Producir abundante matriz que protege a Listeria dentro de una biopelícula multiespecie",
+      "Competir y eliminar siempre a Listeria",
+      "Producir cloro que inactiva a Listeria",
+      "Ninguno; nunca coexisten"
+     ],
+     "correcta": 0,
+     "explicacion": "Las biopelículas en planta suelen ser multiespecie; Pseudomonas es gran productora de matriz y puede actuar como anfitriona.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Nichos",
+     "enunciado": "¿Cuál de estos sitios es un nicho clásico de biopelículas de Listeria en plantas de alimentos listos para consumo?",
+     "opciones": [
+      "Drenajes de piso en áreas húmedas",
+      "Una superficie de acero inoxidable lisa, seca y expuesta",
+      "El interior de un empaque sellado al vacío",
+      "Una tolva de producto seco que nunca se moja"
+     ],
+     "correcta": 0,
+     "explicacion": "Los nichos combinan humedad, nutrientes, tiempo y difícil acceso: drenajes, juntas, rodillos huecos, puntos muertos, charolas de condensado.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control",
+     "enunciado": "¿Cuál es el factor más importante para remover una biopelícula madura?",
+     "opciones": [
+      "La acción mecánica (cepillado o turbulencia) combinada con química de limpieza",
+      "Duplicar la concentración del sanitizante",
+      "Aumentar el tiempo de contacto del cuaternario a una hora",
+      "Aplicar el sanitizante sin limpieza previa para que penetre mejor"
+     ],
+     "correcta": 0,
+     "explicacion": "El sanitizante sobre una biopelícula intacta tiene poca eficacia. Primero se rompe la matriz con acción mecánica, álcali (a menudo clorado), ácido si está mineralizada y enzimas si hace falta.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control",
+     "enunciado": "¿Qué aporta una formulación enzimática en la remoción de biopelículas?",
+     "opciones": [
+      "Degrada componentes específicos de la matriz, como proteínas y polisacáridos, en condiciones más suaves",
+      "Mata directamente a las esporas",
+      "Pasiva el acero inoxidable",
+      "Reemplaza la necesidad de sanitizar"
+     ],
+     "correcta": 0,
+     "explicacion": "Proteasas, amilasas, celulasas y otras glicosidasas, y en algunos casos DNasas, atacan la matriz. Después todavía hay que sanitizar.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Detección",
+     "enunciado": "¿Por qué el muestreo de biopelículas requiere hisopos o esponjas con fricción vigorosa?",
+     "opciones": [
+      "Porque las células están adheridas y embebidas en la matriz; sin fricción no se recuperan",
+      "Porque la fricción mata a las bacterias y facilita el conteo",
+      "Porque así se neutraliza el sanitizante",
+      "Porque las biopelículas solo existen en superficies rugosas"
+     ],
+     "correcta": 0,
+     "explicacion": "Un hisopado ligero subestima la contaminación adherida. La fricción desprende parte de la biopelícula para su análisis.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tolerancia",
+     "enunciado": "Explica a un gerente de producción por qué aumentar la concentración del sanitizante no resuelve un problema de biopelícula y qué haría falta en su lugar.",
+     "respuesta_modelo": "La biopelícula está protegida por una matriz que frena y consume el biocida: el cloro se gasta oxidando la matriz, los cuaternarios se adsorben en sus componentes aniónicos, y en el interior hay microambientes y células persistentes con metabolismo lento que toleran dosis altas. Subir la concentración aumenta costo, corrosión y residuos sin llegar a las células profundas, y puede seleccionar tolerancia. Lo que hace falta es remover la matriz: desarme, acción mecánica con cepillos o turbulencia, limpieza alcalina, a menudo clorada, ácido si hay minerales, enzimas si es necesario, y después sanitizar sobre la superficie ya limpia; además, frecuencia de limpieza adecuada, secado y corrección de nichos de diseño.",
+     "puntos_clave": [
+      "Barrera de difusión-reacción de la matriz",
+      "Células persistentes y microambientes",
+      "Riesgos de subir la dosis",
+      "Remover primero, después sanitizar, y prevenir"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Formación",
+     "enunciado": "Describe las cinco etapas de formación de una biopelícula e indica, para cada una, qué práctica de saneamiento interrumpe el proceso.",
+     "respuesta_modelo": "1) Película de acondicionamiento: se interrumpe con limpieza completa que elimine suciedad residual. 2) Adhesión reversible: enjuague y acción mecánica la remueven; la frecuencia de limpieza evita que avance. 3) Adhesión irreversible: limpieza con química y acción mecánica antes de que madure, y sanitización. 4) Maduración: requiere limpieza agresiva (desarme, cepillado, álcali clorado, ácido, enzimas) y luego sanitizante. 5) Dispersión: se previene eliminando el nicho; se detecta con monitoreo ambiental y se controla con saneamiento intensivo y corrección del diseño. El secado y el diseño sanitario actúan en todas las etapas.",
+     "puntos_clave": [
+      "Nombra las cinco etapas en orden",
+      "Asocia una práctica a cada etapa",
+      "Reconoce que la dificultad aumenta con la madurez",
+      "Incluye secado y diseño sanitario"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Nichos",
+     "enunciado": "Diseña un plan de búsqueda y destrucción para un hallazgo repetido de Listeria spp. en el piso cerca de una rebanadora en un área de producto listo para consumo.",
+     "respuesta_modelo": "1) Contención: intensificar limpieza y sanitización del área, retener o evaluar el producto según el riesgo y la política, y aumentar el muestreo de producto y de zonas 1 a 3. 2) Búsqueda: muestreo intensivo y en vector desde el punto positivo hacia afuera, incluyendo la rebanadora desarmada, juntas, rodillos, estructuras huecas, drenajes, charolas de condensado y utensilios de limpieza; muestrear antes de la limpieza y durante la producción. 3) Identificar el nicho con los positivos y tipificar los aislamientos (por ejemplo, secuenciación del genoma completo) para saber si es un clon persistente. 4) Destrucción: desarme completo, limpieza mecánica, álcali clorado, enzimas si aplica, tratamiento térmico si es posible, y sanitizante oxidante con rotación; reparar o sustituir componentes dañados. 5) Verificación: muestreo intensivo posterior en días consecutivos hasta resultados negativos sostenidos. 6) Causa raíz y acciones preventivas: diseño sanitario, flujo de personal, frecuencia de limpieza, control de humedad.",
+     "puntos_clave": [
+      "Contención y evaluación del producto",
+      "Muestreo en vector e incluir equipo desarmado",
+      "Tipificación de aislamientos",
+      "Destrucción con acción mecánica, química, calor y reparación",
+      "Verificación sostenida y acciones preventivas"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Matriz",
+     "enunciado": "¿Por qué una biopelícula en la sección de calentamiento de un pasteurizador de leche puede necesitar un ciclo alcalino seguido de uno ácido?",
+     "respuesta_modelo": "En esa zona la biopelícula incorpora suciedad del proceso: proteína desnaturalizada y grasa, además de minerales como fosfato de calcio que precipitan con el calor. El álcali, a menudo clorado, hidroliza y solubiliza proteína y polisacáridos de la matriz y saponifica grasa; el ácido disuelve el componente mineral que el álcali no remueve y que protege a la biopelícula. Sin el ácido, el depósito mineralizado quedaría como refugio y como nueva película de acondicionamiento.",
+     "puntos_clave": [
+      "Composición mixta: orgánica y mineral",
+      "Función del álcali sobre proteína y polisacáridos",
+      "Función del ácido sobre fosfato de calcio",
+      "Consecuencia de omitir el ácido"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "titulo": "Corrosión y compatibilidad de materiales",
+   "texto": "## Limpiar sin destruir el equipo\nUn programa de saneamiento eficaz que corroe el equipo es un mal programa. La corrosión no solo cuesta dinero en reparaciones: crea **superficies rugosas, picaduras y grietas** donde se refugian microorganismos y se forman biopelículas (capítulo 12), puede liberar metales al producto y puede provocar fallas de equipo en plena producción. Para un fabricante de químicos de limpieza, además, la corrosión es una de las principales fuentes de **reclamaciones de clientes**.\n\nEste capítulo te da las bases electroquímicas para entender por qué un químico ataca un material y otro no, y para recomendar o validar compatibilidad.\n\n## La corrosión es electroquímica\nLa corrosión de un metal en medio acuoso es una reacción de **óxido-reducción** con dos semirreacciones que ocurren al mismo tiempo en zonas distintas de la superficie:\n\n- **Ánodo**: el metal se oxida y pasa a la solución. Fe → Fe²⁺ + 2e⁻\n- **Cátodo**: un oxidante del medio acepta esos electrones. En medio neutro o alcalino aireado, O₂ + 2H₂O + 4e⁻ → 4OH⁻. En medio ácido, 2H⁺ + 2e⁻ → H₂. Con oxidantes fuertes como el cloro, este también puede actuar como aceptor.\n\nPara que haya corrosión se necesitan: un ánodo, un cátodo, un **electrolito** que conduzca iones (la solución de limpieza) y una conexión eléctrica entre ánodo y cátodo (el propio metal). Las soluciones de limpieza son buenos electrolitos, y muchas contienen oxidantes o ácidos: por eso son un medio corrosivo por naturaleza.\n\n## El acero inoxidable y la capa pasiva\nEl acero inoxidable es una aleación de hierro con al menos **10.5 % de cromo**. Su resistencia no viene de que el metal sea inerte, sino de una **capa pasiva**: una película de óxido rico en cromo, de apenas unos nanómetros de espesor, que se forma espontáneamente en presencia de oxígeno y separa al metal del medio. Si se daña, en condiciones normales se **regenera** sola.\n\nLos grados más comunes en la industria de alimentos:\n\n- **AISI 304** (aproximadamente 18 % Cr y 8 % Ni): el más usado; buena resistencia general, pero vulnerable a cloruros.\n- **AISI 316** (aproximadamente 16 a 18 % Cr, 10 a 14 % Ni y **2 a 3 % Mo**): el molibdeno mejora mucho la resistencia a la corrosión por picaduras en presencia de cloruros. Se usa en zonas con salmueras, productos salados o ácidos y en contacto con químicos más agresivos.\n- Las versiones **L** (304L, 316L) tienen bajo carbono, lo que reduce la sensibilización en las soldaduras.\n- Los aceros **dúplex** y superausteníticos se usan en condiciones muy agresivas.\n\nUna medida útil para comparar es el **PREN** (número equivalente de resistencia a picaduras): PREN ≈ %Cr + 3.3 × %Mo + 16 × %N. El 304 tiene un PREN de alrededor de 18 a 20; el 316, de alrededor de 24 a 26. Mayor PREN, mayor resistencia a picaduras.\n\n## Formas de corrosión que verás en planta\n### Corrosión por picaduras\nEs la forma más peligrosa en el acero inoxidable. Los **iones cloruro** penetran la capa pasiva en puntos débiles (inclusiones, defectos, depósitos). Se forma un pequeño ánodo que se disuelve; dentro de la picadura se acumulan cationes metálicos que se hidrolizan y **acidifican** el interior, y los cloruros migran hacia dentro para mantener la neutralidad eléctrica. Se crea así un ambiente local muy ácido y concentrado en cloruros que **se autoalimenta**. Por fuera, la superficie puede verse casi intacta mientras la picadura crece hacia dentro.\n\nFactores que la favorecen: concentración alta de **cloruros**, **temperatura** alta, **pH bajo**, **oxidantes** (como el cloro libre, que eleva el potencial del metal) y **tiempo** de contacto. Por eso el cloro concentrado, caliente y acidificado sobre 304 es una combinación tan agresiva.\n\n### Corrosión por hendidura\nOcurre en espacios estrechos donde la solución queda estancada: bajo juntas, empaques, depósitos, uniones roscadas o bajo suciedad. Dentro de la hendidura se agota el oxígeno, la capa pasiva no se regenera y se desarrolla el mismo mecanismo autocatalítico que en la picadura. Un depósito de suciedad o de sarro también puede funcionar como hendidura: otra razón para limpiar bien.\n\n### Corrosión bajo tensión\nCombinación de esfuerzo mecánico (residual de soldadura o de operación) con un medio con cloruros a **temperatura alta** (en el 304 y 316, típicamente por encima de unos 50 a 60 °C). Produce grietas finas que pueden causar fallas súbitas, por ejemplo en tanques, intercambiadores o tuberías de agua caliente.\n\n### Corrosión intergranular\nEn aceros con carbono alto, el calentamiento en ciertos intervalos de temperatura (por ejemplo, durante la soldadura) hace que precipiten carburos de cromo en los límites de grano, dejando zonas adyacentes empobrecidas en cromo. Esas zonas se corroen preferentemente. Los grados L lo previenen.\n\n### Corrosión galvánica\nCuando dos metales distintos están en contacto eléctrico dentro de un electrolito, el **menos noble** se corroe más rápido. Por ejemplo, una pieza de aluminio o de acero al carbono unida a acero inoxidable en un ambiente húmedo y con soluciones de limpieza.\n\n### Corrosión general\nDisolución más o menos uniforme de la superficie. Es típica de metales como el aluminio en álcalis fuertes, o del acero al carbono en ácidos.\n\n### Contaminación con hierro libre\nPartículas de acero al carbono incrustadas en el inoxidable (por herramientas, cepillos de alambre de acero al carbono, esmerilado cercano) se oxidan y producen **manchas de óxido** que parecen corrosión del inoxidable. Además, inician picaduras. Por eso nunca se usan fibras ni cepillos de acero al carbono sobre inoxidable.\n\n## Compatibilidad química por material\n| Material | Álcali | Ácido | Cloro | APA | Cuat |\n|---|---|---|---|---|---|\n| Inoxidable | Buena | Buena (no HCl) | Con riesgo | Buena | Buena |\n| Aluminio | Mala | Mala | Mala | Mala | Buena |\n| Galvanizado | Mala | Mala | Regular | Mala | Buena |\n| Cobre y latón | Regular | Mala | Mala | Mala | Buena |\n| Acero al C | Buena | Mala | Mala | Mala | Regular |\n\nEn el inoxidable, el ácido clorhídrico debe evitarse, y el cloro es un riesgo con concentración alta, calor y pH bajo. Esta tabla es una guía general; la compatibilidad real depende de concentración, temperatura, tiempo y formulación (inhibidores incluidos).\n\n### Aluminio\nEl aluminio es **anfótero**: su capa de óxido se disuelve tanto en ácidos como en álcalis fuertes. En sosa cáustica se disuelve rápidamente con desprendimiento de **hidrógeno**, que es inflamable. Para aluminio se usan limpiadores formulados especialmente, con pH moderado y con **inhibidores** como los silicatos.\n\n### Elastómeros y plásticos\n- **EPDM**: buena resistencia a álcalis, ácidos diluidos y vapor; mala a grasas y aceites.\n- **NBR (nitrilo)**: buena resistencia a grasas; peor a oxidantes y a temperaturas altas.\n- **FKM** (fluoroelastómero, conocido comercialmente como Viton): buena resistencia química general y a temperatura; puede ser sensible a álcalis concentrados calientes y a vapor.\n- **Silicona**: buena a temperatura; su resistencia química y mecánica es menor.\n- **PTFE**: prácticamente inerte.\n- **Policarbonato**: sensible a álcalis fuertes y a algunos solventes; puede agrietarse por tensión.\n\nLas juntas degradadas por un químico se endurecen, se agrietan o se hinchan, y se vuelven **nichos** de biopelícula. La selección de juntas debe considerar el producto **y** el programa de limpieza.\n\n## Cómo prevenir la corrosión\n### Desde la formulación\n- **Inhibidores de corrosión** en los productos: silicatos para aluminio, inhibidores fílmicos en ácidos, etc.\n- Ajustar la **concentración y el pH** al mínimo eficaz.\n- Elegir el ácido correcto: **nítrico o fosfórico** para el inoxidable, no clorhídrico.\n\n### Desde la operación\n- Respetar concentración, **temperatura** y tiempo: no \"reforzar\" la dosis.\n- **Enjuagar** bien: no dejar químicos secarse ni concentrarse sobre el metal.\n- **No dejar** soluciones cloradas en contacto toda la noche.\n- Controlar los **cloruros** en el agua de proceso y en los enjuagues.\n- Evitar el contacto de metales distintos en zonas húmedas.\n- No usar cepillos ni fibras de acero al carbono sobre inoxidable.\n\n### Desde el mantenimiento\n- **Pasivación** periódica del inoxidable, especialmente después de soldaduras, reparaciones, esmerilados o contaminación con hierro. La pasivación con **ácido nítrico** o **ácido cítrico** elimina el hierro libre de la superficie y favorece la formación de una capa pasiva rica en cromo. Las normas **ASTM A967** y **ASTM A380** describen tratamientos y pruebas de verificación (como la prueba de inmersión en agua, la de alta humedad o la de sulfato de cobre).\n- Inspección de soldaduras, juntas y superficies.\n\n## Validar compatibilidad\nCuando un cliente pregunta \"¿su producto es compatible con mi equipo?\", la respuesta técnica no es un sí general. Se basa en:\n\n- **Datos de la formulación**: pH, oxidantes, cloruros, inhibidores.\n- **Pruebas de inmersión de cupones** del material de interés, a la concentración, temperatura y tiempo reales, midiendo **pérdida de peso** y expresando la **velocidad de corrosión** en mm/año o mils por año (mpy); también inspección visual y microscópica de picaduras.\n- Normas de referencia como **ASTM G31** (pruebas de inmersión de laboratorio) y **ASTM G48** (resistencia a picaduras y hendiduras del inoxidable en cloruro férrico).\n- Pruebas de **compatibilidad de elastómeros**: cambio de masa, volumen y dureza tras inmersión.\n- Historial de uso en condiciones similares.\n\n## Ideas que debes llevarte\n- La corrosión es **electroquímica**: ánodo, cátodo, electrolito y contacto eléctrico.\n- El inoxidable resiste por su **capa pasiva** rica en cromo; los **cloruros**, el calor, el pH bajo, los oxidantes y el tiempo la rompen.\n- El **316** (con molibdeno) resiste mejor las picaduras que el **304**; el PREN permite compararlos.\n- Picaduras, hendiduras, corrosión bajo tensión, intergranular, galvánica y contaminación con hierro libre son las formas típicas en planta.\n- El **aluminio** es anfótero: no tolera álcalis ni ácidos fuertes sin inhibidores.\n- Las juntas se eligen según el producto **y** el programa de limpieza.\n- La **pasivación** restaura la capa pasiva; ASTM A967 y A380 la describen.\n- La compatibilidad se valida con **cupones** y datos, no con suposiciones.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Electroquímica",
+     "enunciado": "En la corrosión del acero en una solución neutra aireada, ¿cuál es la reacción catódica principal?",
+     "opciones": [
+      "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+      "Fe → Fe²⁺ + 2e⁻",
+      "2H⁺ + 2e⁻ → H₂ como única opción posible",
+      "Cr₂O₃ → 2Cr³⁺ + 3O²⁻"
+     ],
+     "correcta": 0,
+     "explicacion": "La oxidación del metal es la reacción anódica. En medio neutro o alcalino aireado, el oxígeno disuelto es el aceptor de electrones; en medio ácido, el H⁺.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Capa pasiva",
+     "enunciado": "¿A qué se debe la resistencia a la corrosión del acero inoxidable?",
+     "opciones": [
+      "A una capa pasiva de óxido rico en cromo, de pocos nanómetros, que se regenera en presencia de oxígeno",
+      "A que el hierro de la aleación es químicamente inerte",
+      "A un recubrimiento de níquel aplicado en la fábrica",
+      "A que el cromo reacciona con los cloruros y los elimina"
+     ],
+     "correcta": 0,
+     "explicacion": "Con al menos 10.5 % de cromo, se forma espontáneamente una película pasiva. Si se daña, se regenera en condiciones normales.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Grados de inoxidable",
+     "enunciado": "¿Qué aporta el molibdeno en el acero inoxidable 316 frente al 304?",
+     "opciones": [
+      "Mayor resistencia a la corrosión por picaduras en presencia de cloruros",
+      "Mayor resistencia mecánica sin efecto en la corrosión",
+      "Menor costo y mejor soldabilidad",
+      "Resistencia completa al ácido clorhídrico concentrado"
+     ],
+     "correcta": 0,
+     "explicacion": "El Mo eleva el PREN (≈ %Cr + 3.3 %Mo + 16 %N), de alrededor de 18 a 20 en el 304 a 24 a 26 en el 316.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Picaduras",
+     "enunciado": "¿Por qué una picadura en acero inoxidable tiende a autoalimentarse?",
+     "opciones": [
+      "Dentro se acumulan cationes que se hidrolizan y acidifican el medio, y los cloruros migran hacia dentro, impidiendo la repasivación",
+      "Porque el oxígeno se concentra dentro y oxida el cromo",
+      "Porque el níquel se deposita y forma un cátodo",
+      "Porque las bacterias producen ácido dentro de la picadura en todos los casos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se crea un microambiente ácido y rico en cloruros. Por fuera la superficie parece intacta mientras la picadura crece.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Picaduras",
+     "enunciado": "¿Cuál de estas condiciones es la más agresiva para un tanque de inoxidable 304?",
+     "opciones": [
+      "Solución clorada concentrada, caliente, a pH ácido, dejada toda la noche",
+      "Solución de sosa al 1 % a 60 °C con enjuague inmediato",
+      "Ácido nítrico diluido a temperatura ambiente durante 15 minutos",
+      "APA a 150 ppm en frío durante 2 minutos"
+     ],
+     "correcta": 0,
+     "explicacion": "Cloruros, oxidante, temperatura, pH bajo y tiempo prolongado: todos los factores de picadura juntos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Hendidura",
+     "enunciado": "¿Por qué un depósito de sarro o suciedad sobre el inoxidable puede iniciar corrosión?",
+     "opciones": [
+      "Funciona como hendidura: bajo el depósito se agota el oxígeno y la capa pasiva no se regenera",
+      "Porque el sarro es un metal menos noble",
+      "Porque el sarro libera cloro",
+      "Porque el sarro aumenta el pH y disuelve el cromo"
+     ],
+     "correcta": 0,
+     "explicacion": "La corrosión por hendidura ocurre bajo juntas, depósitos o suciedad, con el mismo mecanismo autocatalítico de la picadura.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Galvánica",
+     "enunciado": "Una placa de aluminio está atornillada a una estructura de acero inoxidable en una zona que se lava a diario. ¿Qué esperas?",
+     "opciones": [
+      "Corrosión galvánica acelerada del aluminio, el metal menos noble",
+      "Corrosión acelerada del inoxidable",
+      "Ninguna corrosión, porque ambos forman capa pasiva",
+      "Pasivación del aluminio por el inoxidable"
+     ],
+     "correcta": 0,
+     "explicacion": "Dos metales en contacto eléctrico dentro de un electrolito: el menos noble actúa como ánodo y se corroe más rápido.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aluminio",
+     "enunciado": "¿Qué ocurre si se limpia una pieza de aluminio con sosa cáustica concentrada?",
+     "opciones": [
+      "El aluminio se disuelve rápidamente con desprendimiento de hidrógeno inflamable",
+      "El aluminio se pasiva y queda más resistente",
+      "No ocurre nada porque el aluminio solo se ataca con ácidos",
+      "Se forma una capa de cromo protectora"
+     ],
+     "correcta": 0,
+     "explicacion": "El aluminio es anfótero: su óxido se disuelve en ácidos y en álcalis fuertes. Se usan limpiadores de pH moderado con inhibidores como silicatos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Hierro libre",
+     "enunciado": "Aparecen manchas de óxido en una mesa de inoxidable después de que mantenimiento usó un cepillo de alambre de acero al carbono. ¿Qué pasó y qué corresponde hacer?",
+     "opciones": [
+      "Partículas de hierro libre se incrustaron y se oxidaron; limpiar y pasivar la superficie, y prohibir esos cepillos",
+      "El inoxidable perdió todo su cromo; hay que reemplazar la mesa",
+      "El óxido viene del agua dura; basta con un enjuague",
+      "Es una biopelícula; basta con sanitizar"
+     ],
+     "correcta": 0,
+     "explicacion": "La contaminación con hierro libre produce manchas e inicia picaduras. La pasivación con nítrico o cítrico elimina el hierro libre y restaura la capa pasiva.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elastómeros",
+     "enunciado": "En una línea de aderezos grasos con limpieza alcalina diaria, ¿qué consideración es clave al elegir juntas?",
+     "opciones": [
+      "Que el elastómero resista tanto la grasa del producto como la química y temperatura de limpieza",
+      "Solo la resistencia al producto, porque la limpieza dura poco",
+      "Solo el precio, porque todas las juntas son equivalentes",
+      "Que sea de EPDM, porque resiste todo"
+     ],
+     "correcta": 0,
+     "explicacion": "El EPDM resiste álcalis y vapor pero es malo con grasas; el NBR resiste grasas pero sufre con oxidantes y calor. Hay que considerar producto y programa de limpieza.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "Un cliente pide evidencia de que tu limpiador ácido es compatible con su equipo de inoxidable 316. ¿Qué evidencia es la más sólida?",
+     "opciones": [
+      "Pruebas de inmersión de cupones de 316 en las condiciones reales de uso, con velocidad de corrosión e inspección de picaduras",
+      "Una declaración general de que el producto no es corrosivo",
+      "El pH del producto",
+      "El hecho de que otro cliente no se ha quejado"
+     ],
+     "correcta": 0,
+     "explicacion": "La compatibilidad se valida con datos: pérdida de peso, mm/año o mpy, inspección de picaduras, con referencias como ASTM G31 y G48.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Picaduras",
+     "enunciado": "Explica el mecanismo de corrosión por picaduras del acero inoxidable en presencia de cloruros y propone cuatro medidas preventivas para un programa de limpieza.",
+     "respuesta_modelo": "Los cloruros penetran la capa pasiva en puntos débiles, como inclusiones o defectos. Se forma un ánodo local donde el metal se disuelve; los cationes metálicos se hidrolizan y acidifican el interior, y los cloruros migran hacia dentro, creando un ambiente ácido y salino que impide la repasivación y se autoalimenta. El oxidante, la temperatura y el tiempo aceleran el proceso. Medidas: usar el cloro a la concentración mínima eficaz y a temperatura ambiente; no dejar soluciones cloradas en contacto prolongado ni que se sequen; enjuagar bien con agua de bajo cloruro; usar ácido nítrico o fosfórico en lugar de clorhídrico; preferir 316 en zonas críticas; y pasivar periódicamente.",
+     "puntos_clave": [
+      "Ruptura local de la capa pasiva por cloruros",
+      "Acidificación y migración de cloruros: autocatálisis",
+      "Factores: oxidante, temperatura, pH, tiempo",
+      "Al menos cuatro medidas concretas"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Pasivación",
+     "enunciado": "¿Qué es la pasivación del acero inoxidable, cuándo debe hacerse y cómo se verifica?",
+     "respuesta_modelo": "Es un tratamiento químico, normalmente con ácido nítrico o ácido cítrico, que elimina el hierro libre y otros contaminantes de la superficie y favorece la formación de una capa pasiva rica en cromo. Debe hacerse en equipo nuevo, después de soldaduras, reparaciones o esmerilados, cuando hay contaminación con hierro o manchas de óxido, y periódicamente en equipos sometidos a químicos agresivos. Las normas ASTM A967 y A380 describen tratamientos y pruebas de verificación como la inmersión en agua, la de alta humedad o la de sulfato de cobre, que detectan hierro libre.",
+     "puntos_clave": [
+      "Definición y agentes: nítrico o cítrico",
+      "Elimina hierro libre y favorece capa rica en cromo",
+      "Situaciones que la requieren",
+      "Verificación según ASTM A967 / A380"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Compatibilidad",
+     "enunciado": "Un cliente con una planta que tiene equipo de inoxidable 304, piezas de aluminio y juntas de NBR quiere cambiar a un programa con alcalino clorado caliente. Analiza los riesgos de compatibilidad y propone alternativas.",
+     "respuesta_modelo": "Inoxidable 304: el cloro caliente aumenta el riesgo de picaduras, sobre todo con tiempos largos o si el pH baja por mezcla con ácidos; habría que limitar concentración y temperatura y asegurar enjuague. Aluminio: el álcali fuerte lo disuelve con desprendimiento de hidrógeno; el cloro también lo ataca; requiere un limpiador de pH moderado con inhibidores o aislar esas piezas y limpiarlas aparte. Juntas de NBR: sufren con oxidantes y temperatura, se endurecen y agrietan, y se vuelven nichos; valorar cambio a EPDM si el producto no es graso, o a FKM, considerando la grasa del producto. Alternativas: alcalino sin cloro con aditivos para proteína o enzimas, temperatura moderada, inhibidores para aluminio y validación con cupones y pruebas de elastómeros antes de implementar.",
+     "puntos_clave": [
+      "Riesgo para 304 por cloro caliente",
+      "Incompatibilidad de aluminio con álcali y cloro",
+      "Degradación de NBR por oxidantes y calor",
+      "Alternativas concretas y validación con cupones"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Electroquímica",
+     "enunciado": "¿Por qué las soluciones de limpieza y sanitización son, por naturaleza, medios potencialmente corrosivos? Usa los requisitos de una celda de corrosión.",
+     "respuesta_modelo": "Una celda de corrosión requiere ánodo, cátodo, electrolito y conexión eléctrica. El metal del equipo aporta ánodo, cátodo y conexión. Las soluciones de limpieza son buenos electrolitos por su contenido iónico, y además aportan aceptores de electrones para la reacción catódica: H⁺ en los ácidos, oxígeno disuelto y oxidantes como cloro, APA o peróxido. Algunas aportan cloruros, que rompen la capa pasiva, o pH extremos que disuelven óxidos protectores, como en el aluminio con álcalis. Por eso la formulación, los inhibidores y las condiciones de uso son decisivos.",
+     "puntos_clave": [
+      "Cuatro requisitos de la celda",
+      "Soluciones como electrolitos",
+      "Aportan aceptores: H⁺, O₂, oxidantes",
+      "Cloruros o pH extremos rompen la protección"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
