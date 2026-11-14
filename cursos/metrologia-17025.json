@@ -616,6 +616,1076 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "4",
+   "titulo": "Calibración y verificación de equipos de laboratorio",
+   "texto": "## Un programa, no una lista de fechas\nMuchos laboratorios gestionan sus equipos con una hoja de cálculo de \"fechas de calibración\". Es necesario, pero insuficiente. Un **programa de calibración y verificación** responde preguntas más importantes: ¿qué exactitud necesita cada equipo para su uso?, ¿cómo sé que sigue funcionando entre calibraciones?, ¿qué hago con los resultados si encuentro un equipo fuera de tolerancia?, ¿con qué frecuencia calibro y por qué?\n\nEste capítulo recorre los equipos más comunes de un laboratorio de control de calidad químico y los principios que aplican a todos.\n\n## Principios generales\n### 1. Requisitos de uso primero\nAntes de calibrar, define **qué necesitas**. Una balanza que se usa para pesar 10 g de muestra para una titulación con tolerancia de ± 0.5 % necesita una exactitud muy distinta a la que se usa para pesar 0.1 g de un estándar primario. El requisito de uso (la **tolerancia** o el **error máximo permitido** que tú defines) es contra lo que se **verifica** el certificado.\n\nUna regla práctica frecuente: la incertidumbre de la calibración (o del equipo) debería ser pequeña frente a la tolerancia del resultado que se quiere medir; a menudo se busca una relación de al menos **4 a 1** (y a veces 10 a 1) entre la tolerancia y la incertidumbre.\n\n### 2. Calibración y verificaciones intermedias\n- La **calibración** periódica (frecuentemente externa) establece la trazabilidad.\n- Las **verificaciones intermedias** (internas, más frecuentes) confirman que el equipo **sigue** en el estado de la calibración. ISO/IEC 17025 las pide cuando son necesarias para mantener la confianza en el estado de calibración.\n\n### 3. Identificación y estado\nCada equipo debe estar identificado de forma única y su estado de calibración debe ser visible (etiqueta con fecha, próxima calibración o estado de verificación).\n\n### 4. Equipo fuera de tolerancia\nCuando una calibración o verificación muestra que un equipo está fuera de sus requisitos:\n\n1. Se **retira** de uso y se identifica.\n2. Se **evalúa el efecto** sobre los resultados emitidos desde la última verificación satisfactoria: ¿qué lotes se liberaron con ese equipo?, ¿el error afecta la conformidad?\n3. Se toman acciones (repetir análisis con muestras retenidas, notificar a clientes si un resultado emitido resulta inválido).\n4. Se **repara o ajusta** y se recalibra antes de volver a usarlo.\n\nEste paso, que exigen tanto ISO 9001 como ISO/IEC 17025, es el que más se omite en la práctica.\n\n## Balanzas analíticas\n### Calibración\nUn laboratorio acreditado calibra la balanza en varios puntos de su intervalo de uso con pesas de clase adecuada, y evalúa típicamente:\n\n- **Error de indicación** en varios puntos (linealidad).\n- **Repetibilidad**: desviación estándar de pesadas repetidas de una misma pesa.\n- **Excentricidad**: diferencia de indicación al colocar la pesa en distintas posiciones del plato.\n\nEl certificado incluye la **incertidumbre** de cada resultado.\n\n### Verificación diaria o antes del uso\n- **Nivelación** (burbuja centrada).\n- **Ajuste interno** si la balanza lo tiene (calibración interna automática).\n- Pesada de una o dos **pesas de control** (de clase adecuada, con su propio certificado), comparando con tolerancias definidas.\n\n### Peso mínimo\nA cargas muy pequeñas, la **repetibilidad** domina la incertidumbre relativa. El **peso mínimo** es la carga por debajo de la cual la incertidumbre relativa de la pesada excede la tolerancia requerida. Por ejemplo, la farmacopea de Estados Unidos (capítulo 41) establece para balanzas de uso farmacéutico que 2 veces la desviación estándar de repetibilidad dividida entre la carga no debe exceder 0.10 %; eso da un peso mínimo de 2 000 veces la desviación estándar. Con una repetibilidad de 0.02 mg, el peso mínimo sería 40 mg. Aunque no estés obligado a seguir esa farmacopea, la lógica sirve para cualquier laboratorio: **no pesar cantidades donde la balanza no es confiable**.\n\n### Cuidados\n- Ambiente sin corrientes de aire ni vibraciones; temperatura estable.\n- Muestras a temperatura ambiente (una muestra caliente genera corrientes convectivas y pesa de menos).\n- Atención a la **electricidad estática** en polvos y recipientes de plástico.\n- Recipientes de tara adecuados.\n- Muestras higroscópicas o volátiles: pesar rápido y en recipiente cerrado.\n\n## Material volumétrico de vidrio\n### Clases\nEl material volumétrico se fabrica en **clase A** (tolerancias estrictas, para trabajo analítico) y **clase B** (tolerancias aproximadamente del doble). Ejemplos típicos de tolerancias de clase A:\n\n| Material | Volumen | Tolerancia clase A |\n|---|---|---|\n| Matraz volumétrico | 100 mL | ± 0.10 mL |\n| Pipeta volumétrica | 25 mL | ± 0.03 mL |\n| Bureta | 50 mL | ± 0.05 mL |\n\n(Los valores exactos están en las normas de cada tipo de material.)\n\n### Calibración gravimétrica\nEl método de referencia (ISO 4787) es **pesar el agua** que contiene o entrega el material a una temperatura conocida y convertir la masa en volumen con un factor que considera la **densidad del agua** a esa temperatura, el **empuje del aire** y la **dilatación del vidrio**. A 20 °C, el factor de conversión es aproximadamente **1.0029 mL por gramo** de agua pesada con pesas de acero. Por ejemplo, si una pipeta de 25 mL entrega 24.926 g de agua a 20 °C, el volumen entregado es 24.926 × 1.0029 ≈ 24.998 mL.\n\n### Cuándo calibrar\nEl material de clase A **certificado** por el fabricante (con certificado de lote o individual) puede usarse sin calibración propia en muchos casos, si las tolerancias de clase son suficientes para el uso. Se calibra cuando:\n\n- El método requiere una exactitud mejor que la tolerancia de clase.\n- El material no tiene certificado.\n- Se usa para preparar **estándares** críticos.\n- Hay sospecha de daño (por ejemplo, exposición a álcalis calientes, que atacan el vidrio).\n\n### Cuidados\n- No calentar material volumétrico (la deformación cambia el volumen).\n- Lectura del menisco a la altura de los ojos.\n- Tiempo de escurrido de pipetas y buretas según su clase.\n- Limpieza sin residuos grasos (las gotas que se adhieren a la pared indican suciedad).\n\n## Pipetas de émbolo (micropipetas)\nSe calibran o verifican **gravimétricamente** (ISO 8655), evaluando el **error sistemático** (exactitud) y el **error aleatorio** (repetibilidad) en varios volúmenes. Como se desgastan, se descalibran con facilidad y dependen mucho del operador, requieren verificaciones frecuentes (por ejemplo, trimestrales) y capacitación en la técnica.\n\n## Termómetros y sensores de temperatura\n- Calibración por comparación contra un termómetro de referencia en un baño o bloque, en los **puntos de uso** (por ejemplo, 20 °C para mediciones de densidad, 75 a 85 °C para procesos de CIP).\n- Verificación del **punto de hielo** (0 °C) como comprobación rápida de termómetros de líquido en vidrio o de resistencias.\n- Los termómetros de mercurio se han eliminado en muchos laboratorios por razones ambientales; sus sustitutos (digitales, de líquido orgánico) tienen características distintas que hay que considerar.\n\n## pHímetros\nEl pH es una de las mediciones más frecuentes y más subestimadas.\n\n### Calibración antes del uso\n- Con al menos **dos soluciones amortiguadoras** que **encierren** el intervalo de las muestras (por ejemplo, pH 7 y 10 para detergentes alcalinos diluidos; pH 4 y 7 para productos ácidos). Para mayor exactitud, tres puntos.\n- Soluciones amortiguadoras **trazables**, dentro de su fecha de validez, y renovadas (no regresar la solución al frasco).\n- Temperatura controlada o **compensación de temperatura** activa.\n\n### Criterios de aceptación del electrodo\n- **Pendiente**: típicamente entre **95 y 105 %** de la teórica (59.16 mV por unidad de pH a 25 °C). Una pendiente baja indica un electrodo envejecido o sucio.\n- **Potencial de asimetría** (offset) en pH 7: dentro del intervalo que indica el fabricante, frecuentemente unas decenas de mV como máximo.\n- **Tiempo de respuesta**: un electrodo que tarda mucho en estabilizarse necesita limpieza o reemplazo.\n\n### Particularidades en productos químicos\n- Las soluciones **muy alcalinas** (pH mayor de 12) producen el **error alcalino** (interferencia del sodio) en electrodos de vidrio estándar: se necesitan electrodos especiales o, mejor, medir en dilución definida.\n- Las soluciones con **tensioactivos** o **proteínas** ensucian la membrana y el diafragma.\n- Las soluciones de **baja conductividad** (agua desionizada) dan lecturas inestables.\n\n## Espectrofotómetros\nVerificaciones típicas:\n\n- **Exactitud de longitud de onda**: con filtros de óxido de holmio o lámparas de emisión.\n- **Exactitud fotométrica** (absorbancia): con filtros de densidad neutra certificados o soluciones de dicromato de potasio.\n- **Luz parásita**: con soluciones de corte (por ejemplo, cloruro de potasio a 198 nm).\n- **Resolución** espectral y **línea base**.\n\n## Otros equipos\n- **Tituladores automáticos**: calibración de la bureta (gravimétrica) y verificación del electrodo; verificación del método con un estándar.\n- **Densímetros digitales**: verificación con aire y agua desionizada a temperatura controlada, y con un estándar de densidad cercana a la de las muestras.\n- **Conductímetros**: verificación con soluciones de conductividad conocida, cercanas al intervalo de medición.\n- **Estufas, incubadoras y refrigeradores**: mapeo de temperatura (uniformidad y estabilidad), no solo un punto.\n- **Cronómetros**: verificación contra una señal horaria de referencia.\n\n## Intervalos de calibración\nNo hay un intervalo universal. La guía **ILAC G24** (publicada junto con OIML como D10) describe métodos para establecer y ajustar intervalos, considerando:\n\n- Recomendaciones del **fabricante**.\n- **Frecuencia** e intensidad de uso.\n- **Condiciones** ambientales y de manejo.\n- **Historial**: resultados de calibraciones previas (¿el equipo se encontró fuera de tolerancia?, ¿qué tanto derivó?).\n- **Resultados de verificaciones intermedias**.\n- Riesgo y **consecuencias** de un equipo fuera de tolerancia.\n\nUn enfoque práctico: si las últimas calibraciones muestran que el equipo siempre está muy dentro de tolerancia y las verificaciones intermedias son estables, el intervalo puede alargarse con justificación; si se encuentra fuera de tolerancia, el intervalo se acorta.\n\n## Ideas que debes llevarte\n- Define los **requisitos de uso** antes de calibrar; verifica los certificados contra ellos.\n- Combina **calibración** periódica trazable con **verificaciones intermedias** frecuentes.\n- Ante un equipo **fuera de tolerancia**: retirar, **evaluar resultados previos**, actuar, reparar y recalibrar.\n- **Balanzas**: linealidad, repetibilidad, excentricidad, verificación diaria y **peso mínimo**.\n- **Material volumétrico**: clase A, calibración **gravimétrica** (factor ≈ 1.0029 mL/g a 20 °C), no calentar.\n- **pHímetros**: dos o más amortiguadores que encierren las muestras, pendiente de 95 a 105 %, cuidado con el error alcalino.\n- Establece **intervalos de calibración** con datos (ILAC G24), no por costumbre.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Requisitos de uso",
+     "enunciado": "¿Contra qué se verifica el certificado de calibración de un equipo?",
+     "opciones": [
+      "Contra los requisitos de uso (tolerancias) que el laboratorio definió",
+      "Contra el catálogo del fabricante únicamente",
+      "Contra el certificado anterior",
+      "No se verifica"
+     ],
+     "correcta": 0,
+     "explicacion": "La calibración da resultados; la verificación decide si sirven para el uso.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificaciones intermedias",
+     "enunciado": "¿Para qué sirven las verificaciones intermedias?",
+     "opciones": [
+      "Para confirmar que el equipo sigue en el estado de su calibración entre calibraciones",
+      "Para sustituir la calibración trazable",
+      "Para ajustar el equipo",
+      "Para validar el método"
+     ],
+     "correcta": 0,
+     "explicacion": "Son internas y más frecuentes.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuera de tolerancia",
+     "enunciado": "Una verificación muestra que una balanza está fuera de tolerancia. ¿Qué paso se omite con más frecuencia y es obligatorio?",
+     "opciones": [
+      "Evaluar el efecto sobre los resultados emitidos desde la última verificación satisfactoria",
+      "Poner una etiqueta",
+      "Llamar al técnico",
+      "Limpiar la balanza"
+     ],
+     "correcta": 0,
+     "explicacion": "Lo exigen ISO 9001 e ISO/IEC 17025.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Balanzas",
+     "enunciado": "¿Qué evalúa la prueba de excentricidad de una balanza?",
+     "opciones": [
+      "La diferencia de indicación al colocar la pesa en distintas posiciones del plato",
+      "La repetibilidad",
+      "La linealidad",
+      "La deriva con el tiempo"
+     ],
+     "correcta": 0,
+     "explicacion": "Importa cuando las muestras no se colocan siempre en el centro.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peso mínimo",
+     "enunciado": "Con el criterio 2s/m ≤ 0.10 %, una balanza con repetibilidad s = 0.05 mg tiene un peso mínimo de:",
+     "opciones": [
+      "100 mg",
+      "50 mg",
+      "10 mg",
+      "1 g"
+     ],
+     "correcta": 0,
+     "explicacion": "m = 2000 × s = 2000 × 0.05 mg = 100 mg.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pesada",
+     "enunciado": "¿Por qué no debe pesarse una muestra caliente en una balanza analítica?",
+     "opciones": [
+      "Porque genera corrientes convectivas que hacen que pese de menos",
+      "Porque daña el plato",
+      "Porque la balanza no lo permite",
+      "No hay problema"
+     ],
+     "correcta": 0,
+     "explicacion": "La muestra debe estar a temperatura ambiente.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Volumétrico",
+     "enunciado": "¿Cuál es aproximadamente la tolerancia de una bureta de 50 mL clase A?",
+     "opciones": [
+      "± 0.05 mL",
+      "± 0.5 mL",
+      "± 0.005 mL",
+      "± 1 mL"
+     ],
+     "correcta": 0,
+     "explicacion": "La clase B tiene aproximadamente el doble.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gravimétrica",
+     "enunciado": "Una pipeta entrega 9.972 g de agua a 20 °C. Con un factor de 1.0029 mL/g, ¿qué volumen entregó?",
+     "opciones": [
+      "10.001 mL",
+      "9.972 mL",
+      "9.943 mL",
+      "10.029 mL"
+     ],
+     "correcta": 0,
+     "explicacion": "9.972 × 1.0029 ≈ 10.001 mL.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Volumétrico",
+     "enunciado": "¿Por qué no debe secarse un matraz volumétrico en una estufa caliente?",
+     "opciones": [
+      "Porque el calentamiento puede deformar el vidrio y cambiar su volumen",
+      "Porque se ensucia",
+      "Porque se rompe siempre",
+      "No hay problema"
+     ],
+     "correcta": 0,
+     "explicacion": "El material volumétrico no se calienta.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH",
+     "enunciado": "Un electrodo de pH tiene una pendiente de 88 %. ¿Qué indica?",
+     "opciones": [
+      "Un electrodo envejecido o sucio que requiere limpieza o reemplazo",
+      "Un electrodo en perfecto estado",
+      "Que las soluciones amortiguadoras están vencidas, con certeza",
+      "Que la temperatura es correcta"
+     ],
+     "correcta": 0,
+     "explicacion": "El criterio típico es 95 a 105 %.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH",
+     "enunciado": "¿Qué problema aparece al medir pH en soluciones muy alcalinas con un electrodo de vidrio estándar?",
+     "opciones": [
+      "El error alcalino por interferencia del sodio, que da lecturas bajas",
+      "Lecturas más altas que las reales",
+      "Ninguno",
+      "El electrodo se vuelve más rápido"
+     ],
+     "correcta": 0,
+     "explicacion": "Se usan electrodos especiales o se mide en dilución definida.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Intervalos",
+     "enunciado": "Las últimas cuatro calibraciones de un equipo muestran errores muy pequeños y estables. ¿Qué permite ILAC G24?",
+     "opciones": [
+      "Considerar alargar el intervalo de calibración con justificación",
+      "Dejar de calibrar",
+      "Acortar el intervalo",
+      "Nada, el intervalo es fijo"
+     ],
+     "correcta": 0,
+     "explicacion": "Los intervalos se ajustan con datos del historial y riesgo.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Fuera de tolerancia",
+     "enunciado": "La verificación semanal de la balanza de formulación muestra un error de +0.8 % con la pesa de control (tolerancia ± 0.2 %). La verificación anterior, hace una semana, estaba bien. Describe qué haces.",
+     "respuesta_modelo": "1) Retiro la balanza de uso y la identifico como fuera de servicio. 2) Identifico los lotes formulados con ella desde la última verificación satisfactoria (la semana anterior). 3) Evalúo el efecto: un +0.8 % en la pesada del activo se traduce en lotes con más concentración; reviso los resultados de análisis de esos lotes contra especificación y, si alguno está cerca del límite (sobre todo un sanitizante sin enjuague), lo retengo o reanalizo muestras retenidas. 4) Si algún lote liberado no cumple, inicio el manejo de producto no conforme y, si ya salió, la notificación al cliente. 5) Solicito reparación o ajuste y calibración antes de volver a usarla. 6) Investigo la causa y reviso si el intervalo de verificación es adecuado. 7) Registro todo.",
+     "puntos_clave": [
+      "Retiro e identificación",
+      "Identificación de lotes afectados",
+      "Evaluación del efecto y acciones sobre producto",
+      "Reparación, calibración, causa y registro"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "pH",
+     "enunciado": "Diseña el procedimiento de calibración y verificación diaria del pHímetro que se usa para medir el pH al 1 % de detergentes alcalinos.",
+     "respuesta_modelo": "Antes de cada sesión: inspeccionar el electrodo (nivel de electrolito, limpieza, diafragma). Calibrar con dos soluciones amortiguadoras trazables y vigentes que encierren las muestras (por ejemplo, pH 7.00 y 10.01), frescas, a temperatura controlada o con compensación automática. Aceptar si la pendiente está entre 95 y 105 % y el offset dentro del intervalo del fabricante. Verificar con una tercera solución (por ejemplo, pH 9.18 o una solución de control) dentro de ± 0.05 unidades. Medir las muestras en dilución al 1 % preparada con agua desionizada a 25 °C, enjuagando el electrodo entre muestras y limpiándolo si hay tensioactivos. Registrar pendiente, offset, verificación y lote de soluciones. Si no cumple: limpiar, regenerar o sustituir el electrodo.",
+     "puntos_clave": [
+      "Calibración de dos puntos que encierren las muestras",
+      "Criterios de pendiente y offset",
+      "Verificación con una tercera solución",
+      "Condiciones de medición y registro"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Intervalos",
+     "enunciado": "¿Cómo justificarías el intervalo de calibración de los termómetros de CIP ante un auditor?",
+     "respuesta_modelo": "Con base en ILAC G24: consideré la recomendación del fabricante, el uso continuo en ciclos de alta temperatura y lavado químico, la criticidad (se usan para monitorear un parámetro crítico de limpieza), el historial de calibraciones (errores encontrados y deriva entre calibraciones) y los resultados de las verificaciones intermedias mensuales contra un termómetro de referencia calibrado. Inicialmente el intervalo fue de seis meses; tras tres calibraciones con deriva menor a la cuarta parte de la tolerancia y verificaciones mensuales estables, se amplió a doce meses, manteniendo las verificaciones mensuales. Si alguna verificación sale fuera de tolerancia, el intervalo vuelve a acortarse. Todo está documentado.",
+     "puntos_clave": [
+      "Factores considerados",
+      "Criticidad del uso",
+      "Datos de historial y verificaciones",
+      "Regla de ajuste del intervalo documentada"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Incertidumbre I: fuentes y evaluación tipo A y tipo B",
+   "texto": "## Por qué estimar la incertidumbre\nUn resultado sin incertidumbre es incompleto: no permite saber si dos resultados son compatibles, si un lote cumple realmente la especificación cuando el resultado está cerca del límite, ni si el método es adecuado para la decisión que se toma con él. ISO/IEC 17025 exige que los laboratorios **identifiquen las contribuciones** a la incertidumbre y la **evalúen** para sus resultados, y que la reporten cuando sea pertinente para la validez o la aplicación del resultado, cuando lo pida el cliente o cuando afecte la conformidad con un límite.\n\n## La GUM\nEl documento de referencia es la **Guía para la expresión de la incertidumbre de medida**, conocida como **GUM** (JCGM 100:2008). Para la química analítica, la guía **EURACHEM/CITAC \"Cuantificación de la incertidumbre en mediciones analíticas\"** (conocida como QUAM, tercera edición de 2012) aplica la GUM con ejemplos de laboratorio y es la lectura obligada para un químico.\n\nEl procedimiento de la GUM tiene cuatro pasos:\n\n1. **Especificar** el mensurando y la ecuación del modelo de medición.\n2. **Identificar** las fuentes de incertidumbre.\n3. **Cuantificar** cada componente como una **incertidumbre estándar**.\n4. **Combinar** los componentes y calcular la **incertidumbre expandida**.\n\nEste capítulo cubre los tres primeros; el capítulo 6, el cuarto.\n\n## Paso 1: el modelo de medición\nEl modelo es la ecuación que relaciona el resultado con las magnitudes de entrada. Por ejemplo, para la concentración de una solución patrón preparada por pesada y disolución:\n\nc = (1000 · m · P) / V\n\ndonde c es la concentración en mg/L, m la masa pesada en mg, P la pureza (fracción másica) y V el volumen del matraz en mL.\n\nPara una titulación ácido-base de un álcali:\n\nw = (V_T · c_T · M) / (m_muestra · 10)\n\ndonde w es la fracción másica en %, V_T el volumen de titulante en mL, c_T su concentración en mol/L, M la masa molar en g/mol y m_muestra la masa de muestra en g.\n\nEscribir el modelo obliga a pensar en **todas** las magnitudes que influyen. Las que no aparecen en la ecuación pero influyen (temperatura, efecto de matriz, punto final) se agregan como factores de corrección con valor 1 (o 0) y su propia incertidumbre.\n\n## Paso 2: identificar las fuentes\nUn **diagrama de causa y efecto** (Ishikawa) es la herramienta recomendada por EURACHEM: una rama por cada magnitud del modelo, con sus fuentes de incertidumbre como subramas.\n\nPara la preparación del patrón:\n\n- **Masa (m)**: calibración de la balanza (incertidumbre del certificado), repetibilidad de la pesada, resolución, efecto de la flotación del aire (normalmente despreciable).\n- **Pureza (P)**: incertidumbre declarada en el certificado del reactivo.\n- **Volumen (V)**: tolerancia de calibración del matraz, repetibilidad del llenado al aforo, diferencia entre la temperatura de uso y la de calibración (dilatación del líquido).\n\nFuentes que suelen aparecer en métodos químicos:\n\n- Muestreo y submuestreo (si está dentro del alcance).\n- Preparación de la muestra: extracción incompleta, pérdidas, contaminación.\n- Pesadas y volúmenes.\n- Pureza de los estándares.\n- Calibración del instrumento (curva de calibración).\n- Efectos de matriz e interferencias.\n- Repetibilidad global del método.\n- Condiciones ambientales (temperatura).\n- Sesgo del método y su corrección.\n\nUn consejo práctico: muchas fuentes de variación aleatoria (repetibilidad de pesadas, de lecturas, de aforos) quedan incluidas en la **repetibilidad global del método**, si se estima con el procedimiento completo. Así se evita contarlas dos veces.\n\n## Paso 3: cuantificar como incertidumbre estándar\nTodas las contribuciones se expresan como **incertidumbres estándar** (equivalentes a una desviación estándar), aunque se obtengan de formas distintas. La GUM distingue dos tipos de evaluación, que no son \"tipos de incertidumbre\" sino **formas de evaluarla**:\n\n### Evaluación tipo A\nPor **análisis estadístico** de series de observaciones. La incertidumbre estándar de una media de n observaciones es:\n\nu = s / √n\n\ndonde s es la desviación estándar experimental. Ejemplos: repetibilidad de un método estimada con réplicas; precisión intermedia de una carta de control.\n\n**Atención**: si el resultado que reportas es **una sola** determinación, la incertidumbre por repetibilidad es s (no s/√n). Si reportas la media de dos réplicas, es s/√2.\n\n### Evaluación tipo B\nPor **otros medios**: certificados de calibración, especificaciones del fabricante, tolerancias, datos de literatura, experiencia. Hay que convertir la información a una incertidumbre estándar según la distribución supuesta:\n\n| Información disponible | Distribución | Incertidumbre estándar |\n|---|---|---|\n| Certificado: U con factor k | Normal | u = U / k |\n| Certificado: intervalo con nivel de confianza (por ejemplo, 95 %) sin k | Normal | u = intervalo / 1.96 |\n| Límites ± a sin más información (por ejemplo, la pureza \"99.99 ± 0.01 %\") | Rectangular | u = a / √3 |\n| Límites ± a, con valores cercanos al centro más probables (tolerancia de material volumétrico) | Triangular | u = a / √6 |\n| Resolución de un instrumento digital d | Rectangular | u = (d/2) / √3 |\n\n**¿Rectangular o triangular?** Si no sabes nada sobre dónde puede estar el valor dentro de los límites, usa rectangular (más conservadora). Si sabes que los valores cercanos al centro son más probables (como en el material volumétrico fabricado con control de calidad), triangular es razonable. EURACHEM usa triangular para la tolerancia de matraces y pipetas.\n\n## Ejemplo: componentes del patrón\nPreparación de un patrón de 1 000 mg/L: se pesan 100.28 mg de una sustancia y se aforan a 100 mL.\n\n**Masa**: el certificado de calibración de la balanza indica una incertidumbre combinada para esta carga que, junto con la repetibilidad, da u(m) = **0.05 mg** (tipo B y A combinadas en un valor).\n\n**Pureza**: el certificado del reactivo dice 99.99 ± 0.01 %, sin más información. Rectangular: u(P) = 0.0001 / √3 = **0.000058** (en fracción).\n\n**Volumen**: tres contribuciones:\n\n1. **Calibración del matraz**: tolerancia clase A ± 0.10 mL, triangular: 0.10 / √6 = **0.041 mL**.\n2. **Repetibilidad del aforo**: de una serie de llenados y pesadas del mismo matraz: s = **0.02 mL** (tipo A).\n3. **Temperatura**: el laboratorio está a 20 ± 4 °C; el coeficiente de expansión del agua es 2.1 × 10⁻⁴ por °C. Variación máxima de volumen: 100 × 4 × 2.1 × 10⁻⁴ = 0.084 mL; rectangular: 0.084 / √3 = **0.048 mL**.\n\nEstas se combinan en u(V) en el siguiente capítulo.\n\n## Errores frecuentes al cuantificar\n- **Usar la tolerancia como incertidumbre estándar** sin dividirla (sobreestima) o dividirla entre 3 \"porque son 3 sigmas\" (sin justificación).\n- **Contar dos veces** la misma variación (por ejemplo, la repetibilidad de una pesada y la repetibilidad del método completo, que ya la incluye).\n- **Ignorar** el sesgo o la recuperación cuando no se corrige.\n- Usar la **resolución** como única incertidumbre de un instrumento.\n- **Mezclar** unidades absolutas y relativas sin cuidado.\n\n## Ideas que debes llevarte\n- Un resultado está completo solo con su **incertidumbre**; ISO/IEC 17025 exige evaluarla.\n- La **GUM** y la guía **EURACHEM/CITAC** son las referencias; el procedimiento: modelo, fuentes, cuantificación, combinación.\n- Escribe el **modelo de medición**; agrega factores para influencias que no aparecen en la ecuación.\n- Identifica fuentes con un **diagrama de Ishikawa**; evita contar dos veces la variación aleatoria.\n- **Tipo A**: estadística (s/√n según lo que se reporte). **Tipo B**: otras fuentes, convertidas a incertidumbre estándar.\n- Conversiones: certificado **U/k**; límites sin información **a/√3** (rectangular); tolerancia de material volumétrico **a/√6** (triangular).",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "GUM",
+     "enunciado": "¿Cuál es el orden del procedimiento de la GUM para estimar la incertidumbre?",
+     "opciones": [
+      "Especificar el mensurando y el modelo, identificar fuentes, cuantificar como incertidumbre estándar, combinar y expandir",
+      "Combinar, identificar, cuantificar, especificar",
+      "Medir muchas veces y reportar la desviación estándar",
+      "Usar la tolerancia del fabricante como incertidumbre"
+     ],
+     "correcta": 0,
+     "explicacion": "EURACHEM/CITAC aplica el mismo procedimiento a la química.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Modelo",
+     "enunciado": "¿Qué se hace con una influencia, como la temperatura, que no aparece en la ecuación del modelo?",
+     "opciones": [
+      "Se agrega como factor de corrección (con valor 1 o 0) con su propia incertidumbre",
+      "Se ignora",
+      "Se suma al resultado",
+      "Se elimina del análisis"
+     ],
+     "correcta": 0,
+     "explicacion": "Así se incluye su contribución a la incertidumbre.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ishikawa",
+     "enunciado": "¿Qué herramienta recomienda EURACHEM para identificar las fuentes de incertidumbre?",
+     "opciones": [
+      "Diagrama de causa y efecto (Ishikawa)",
+      "Diagrama de Pareto",
+      "Gráfica de control",
+      "Histograma"
+     ],
+     "correcta": 0,
+     "explicacion": "Una rama por cada magnitud del modelo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipo A",
+     "enunciado": "¿Qué es una evaluación tipo A?",
+     "opciones": [
+      "La evaluación por análisis estadístico de series de observaciones",
+      "La evaluación a partir de certificados",
+      "La incertidumbre más importante",
+      "La incertidumbre aleatoria"
+     ],
+     "correcta": 0,
+     "explicacion": "A y B son formas de evaluar, no tipos de incertidumbre.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipo A",
+     "enunciado": "La repetibilidad de un método es s = 0.06 %. El laboratorio reporta la media de 4 réplicas. ¿Qué incertidumbre estándar por repetibilidad corresponde?",
+     "opciones": [
+      "0.03 %",
+      "0.06 %",
+      "0.24 %",
+      "0.015 %"
+     ],
+     "correcta": 0,
+     "explicacion": "s/√n = 0.06/2 = 0.03 %. Si reportara una sola determinación, sería 0.06 %.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipo B",
+     "enunciado": "Un certificado de calibración indica U = 0.10 mg con k = 2. ¿Cuál es la incertidumbre estándar?",
+     "opciones": [
+      "0.05 mg",
+      "0.10 mg",
+      "0.20 mg",
+      "0.058 mg"
+     ],
+     "correcta": 0,
+     "explicacion": "u = U/k.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Rectangular",
+     "enunciado": "Un reactivo tiene pureza 99.5 ± 0.3 % sin más información. ¿Cuál es la incertidumbre estándar de la pureza?",
+     "opciones": [
+      "0.17 %",
+      "0.3 %",
+      "0.12 %",
+      "0.1 %"
+     ],
+     "correcta": 0,
+     "explicacion": "Rectangular: 0.3/√3 ≈ 0.173 %.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Triangular",
+     "enunciado": "Una pipeta clase A de 10 mL tiene tolerancia ± 0.02 mL. Con distribución triangular, ¿cuál es la incertidumbre estándar?",
+     "opciones": [
+      "0.0082 mL",
+      "0.0115 mL",
+      "0.02 mL",
+      "0.01 mL"
+     ],
+     "correcta": 0,
+     "explicacion": "0.02/√6 ≈ 0.0082 mL.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Resolución",
+     "enunciado": "Una balanza tiene resolución de 0.1 mg. ¿Cuál es la incertidumbre estándar por resolución?",
+     "opciones": [
+      "0.029 mg",
+      "0.1 mg",
+      "0.05 mg",
+      "0.058 mg"
+     ],
+     "correcta": 0,
+     "explicacion": "(d/2)/√3 = 0.05/1.732 ≈ 0.029 mg.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Rectangular frente a triangular",
+     "enunciado": "¿Cuándo es preferible la distribución rectangular?",
+     "opciones": [
+      "Cuando no se sabe nada sobre dónde está el valor dentro de los límites",
+      "Cuando los valores centrales son más probables",
+      "Cuando hay un certificado con k = 2",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la opción más conservadora.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Doble conteo",
+     "enunciado": "Se incluye la repetibilidad de cada pesada y además la repetibilidad del método completo estimada con réplicas de todo el procedimiento. ¿Qué error se comete?",
+     "opciones": [
+      "Contar dos veces la misma variación aleatoria",
+      "Ninguno",
+      "Subestimar la incertidumbre",
+      "Ignorar el sesgo"
+     ],
+     "correcta": 0,
+     "explicacion": "La repetibilidad del método completo ya incluye la de las pesadas.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Temperatura",
+     "enunciado": "Un matraz de 250 mL se usa a 20 ± 3 °C; el coeficiente del agua es 2.1 × 10⁻⁴ /°C. ¿Cuál es la incertidumbre estándar por temperatura (rectangular)?",
+     "opciones": [
+      "0.091 mL",
+      "0.158 mL",
+      "0.053 mL",
+      "0.21 mL"
+     ],
+     "correcta": 0,
+     "explicacion": "250 × 3 × 2.1 × 10⁻⁴ = 0.1575 mL; /√3 ≈ 0.091 mL.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Fuentes",
+     "enunciado": "Para la determinación de la fracción másica de NaOH en un detergente por titulación con HCl valorado, escribe el modelo y enumera las fuentes de incertidumbre.",
+     "respuesta_modelo": "Modelo: w(%) = V_T · c_HCl · M_NaOH / (m_muestra · 10), con V_T en mL, c en mol/L, M en g/mol y m en g. Fuentes: masa de muestra (calibración de la balanza, repetibilidad, resolución); volumen de titulante (calibración de la bureta, repetibilidad de lectura, temperatura, detección del punto final); concentración del HCl (su propia incertidumbre de valoración: masa y pureza del patrón primario, volumen, repetibilidad de la valoración); masa molar (despreciable); repetibilidad global del método; posible sesgo por interferencias (carbonatos que también se titulan, otros álcalis) y su corrección o evaluación con un material de referencia; homogeneidad y muestreo de la muestra.",
+     "puntos_clave": [
+      "Modelo de medición correcto",
+      "Fuentes para cada magnitud",
+      "Concentración del titulante y su valoración",
+      "Sesgo, interferencias y repetibilidad global"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Conversión",
+     "enunciado": "Convierte a incertidumbre estándar y justifica la distribución: a) certificado de pesa U = 0.03 mg (k = 2); b) termómetro digital con resolución 0.1 °C; c) matraz de 50 mL clase A con tolerancia ± 0.05 mL; d) pureza 99.8 ± 0.2 %.",
+     "respuesta_modelo": "a) Normal: u = 0.03/2 = 0.015 mg. b) Rectangular por resolución: (0.1/2)/√3 ≈ 0.029 °C. c) Triangular, porque el material de clase A fabricado con control tiene valores más probables cerca del nominal: 0.05/√6 ≈ 0.020 mL. d) Rectangular, sin información de distribución: 0.2/√3 ≈ 0.115 %.",
+     "puntos_clave": [
+      "a) 0.015 mg normal",
+      "b) 0.029 °C rectangular",
+      "c) 0.020 mL triangular",
+      "d) 0.115 % rectangular con justificación"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Importancia",
+     "enunciado": "Explica por qué un resultado de 15.45 % frente a un máximo de 15.5 % no puede declararse conforme con seguridad sin conocer su incertidumbre.",
+     "respuesta_modelo": "Porque el valor verdadero puede estar en un intervalo alrededor de 15.45 %. Si la incertidumbre expandida es, por ejemplo, ± 0.12 %, el intervalo va de 15.33 a 15.57 %, y una parte de él está por encima de 15.5 %: hay una probabilidad no despreciable de que el lote no cumpla. Si la incertidumbre fuera ± 0.03 %, el intervalo quedaría por debajo del límite y la conformidad sería clara. La decisión depende de la regla de decisión acordada (aceptación simple o con banda de guarda), que debe considerar la incertidumbre, como exige ISO/IEC 17025 cuando se declara conformidad.",
+     "puntos_clave": [
+      "Intervalo alrededor del resultado",
+      "Ejemplo numérico con incertidumbre",
+      "Riesgo de no conformidad",
+      "Regla de decisión"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Incertidumbre II: presupuesto, combinación e incertidumbre expandida",
+   "texto": "## Del inventario de fuentes al número final\nEn el capítulo anterior identificaste las fuentes y las expresaste como incertidumbres estándar. Ahora hay que **combinarlas** en una sola incertidumbre del resultado y **expandirla** para reportarla con un nivel de confianza. La herramienta para organizar todo es el **presupuesto de incertidumbre**: una tabla con cada componente, su valor, su incertidumbre estándar y su contribución.\n\n## La ley de propagación de la incertidumbre\nPara un modelo y = f(x₁, x₂, ..., xₙ) con magnitudes de entrada **independientes**, la incertidumbre estándar combinada es:\n\nu_c(y) = √[Σ (cᵢ · u(xᵢ))²]\n\ndonde **cᵢ** es el **coeficiente de sensibilidad**: la derivada parcial ∂f/∂xᵢ, que indica cuánto cambia y por cada unidad de cambio en xᵢ.\n\nEsto suena complicado, pero hay dos reglas simplificadas que cubren casi todos los modelos de química analítica:\n\n### Regla 1: sumas y restas\nSi y = x₁ + x₂ − x₃ (por ejemplo, un volumen calculado como lectura final menos lectura inicial, o un peso neto como bruto menos tara), se combinan las incertidumbres **absolutas**:\n\nu(y) = √[u(x₁)² + u(x₂)² + u(x₃)²]\n\n### Regla 2: productos y cocientes\nSi y = (x₁ · x₂) / x₃ (la mayoría de los cálculos de concentración), se combinan las incertidumbres **relativas**:\n\nu(y)/y = √[(u(x₁)/x₁)² + (u(x₂)/x₂)² + (u(x₃)/x₃)²]\n\nPara modelos mixtos, se aplican por partes: primero se combina lo que se suma, luego lo que se multiplica.\n\n### Correlaciones\nSi dos magnitudes de entrada están **correlacionadas** (por ejemplo, dos pesadas hechas con la misma balanza y el mismo error de calibración, cuando se restan), la fórmula necesita términos de covarianza. En la práctica, muchas correlaciones se manejan inteligentemente: en una pesada por diferencia (bruto menos tara en la misma balanza), el error sistemático de calibración se **cancela** en gran parte y se considera solo la linealidad y la repetibilidad.\n\n## Ejemplo completo: el patrón de 1 000 mg/L\nRecordemos el modelo: c = 1000 · m · P / V, con m = 100.28 mg, P = 0.9999, V = 100.00 mL.\n\nResultado: c = 1000 × 100.28 × 0.9999 / 100.00 = **1 002.7 mg/L**.\n\n### Paso 1: combinar las contribuciones del volumen (suma)\nu(V) = √(0.041² + 0.020² + 0.048²) = √(0.00168 + 0.00040 + 0.00235) ≈ **0.066 mL**\n\n### Paso 2: presupuesto con incertidumbres relativas (producto y cociente)\n| Magnitud | Valor | u estándar | u relativa | Contribución a u²relativa |\n|---|---|---|---|---|\n| m | 100.28 mg | 0.05 mg | 0.00050 | 36 % |\n| P | 0.9999 | 0.000058 | 0.000058 | menos de 1 % |\n| V | 100.00 mL | 0.066 mL | 0.00066 | 64 % |\n\nu_c(c)/c = √(0.00050² + 0.000058² + 0.00066²) ≈ **0.00083**\n\nu_c(c) = 0.00083 × 1 002.7 ≈ **0.84 mg/L**\n\n### Paso 3: interpretar el presupuesto\nEl presupuesto dice dónde está la incertidumbre:\n\n- El **volumen** aporta casi dos terceras partes, y dentro de él, la **temperatura** y la **tolerancia del matraz**.\n- La **masa** aporta un tercio.\n- La **pureza** es despreciable.\n\nSi quisieras reducir la incertidumbre, invertir en un reactivo más puro no serviría de nada. Lo eficaz sería **controlar la temperatura** del laboratorio, **calibrar el matraz** individualmente (para sustituir la tolerancia de clase por una incertidumbre de calibración menor) o pesar una masa mayor.\n\nEsta es la utilidad más importante del presupuesto: **dirige las mejoras** hacia donde realmente importan. Como las contribuciones se suman en cuadrado, las pequeñas pesan muy poco: un componente que es la tercera parte del mayor aporta solo alrededor del 10 % de la varianza.\n\n## Incertidumbre expandida\nLa incertidumbre combinada u_c equivale a una desviación estándar: cubre solo alrededor del 68 % de los valores razonables. Para reportar, se multiplica por un **factor de cobertura k**:\n\nU = k · u_c\n\n- Con **k = 2**, el intervalo y ± U tiene un nivel de confianza de **aproximadamente 95 %**, si la distribución del resultado es aproximadamente normal y la incertidumbre combinada se basa en suficientes grados de libertad.\n- Con **k = 3**, aproximadamente 99.7 %.\n\nEn el ejemplo: U = 2 × 0.84 ≈ **1.7 mg/L**.\n\n### Grados de libertad efectivos\nSi una componente importante se evaluó con pocos datos (tipo A con pocas réplicas), la incertidumbre combinada tiene pocos **grados de libertad efectivos**, y k = 2 no garantiza el 95 %. La fórmula de **Welch-Satterthwaite** estima esos grados de libertad, y k se toma de la distribución t (por ejemplo, con 10 grados de libertad, k ≈ 2.23). En la práctica de laboratorio, si los componentes tipo A se basan en suficientes datos (por ejemplo, la precisión intermedia de una carta de control con muchos puntos), k = 2 es adecuado.\n\n## Cómo reportar\n### Formato\n**c = (1 002.7 ± 1.7) mg/L**, donde la incertidumbre expandida se calculó con un factor de cobertura k = 2, que corresponde a un nivel de confianza de aproximadamente 95 %.\n\n### Reglas\n- La incertidumbre se reporta con **uno o dos dígitos significativos** (dos es lo habitual).\n- El resultado se redondea a la **misma posición decimal** que la incertidumbre.\n- Se indica el **factor k** y el nivel de confianza aproximado.\n- Se puede expresar en forma **relativa** (por ejemplo, ± 0.17 %).\n- Redondea la incertidumbre **hacia arriba** si el redondeo normal la reduciría de forma significativa (criterio conservador).\n\n## Incertidumbre de un método de titulación: estructura típica\nPara el modelo de la titulación, w = V_T · c_T · M / (m · 10), el presupuesto típico tiene estos componentes:\n\n| Componente | Fuente principal |\n|---|---|\n| Masa de muestra | Calibración de balanza y repetibilidad |\n| Volumen de titulante | Calibración de la bureta, temperatura, detección del punto final |\n| Concentración del titulante | Incertidumbre de su valoración (masa y pureza del patrón primario, volumen, repetibilidad) |\n| Repetibilidad del método | Réplicas del procedimiento completo |\n| Sesgo o recuperación | Comparación con un material de referencia |\n\nEn muchos métodos de titulación bien ejecutados, las mayores contribuciones son la **repetibilidad global** y la **concentración del titulante**, y la masa molar es despreciable.\n\n## Herramientas\n- **Hoja de cálculo**: suficiente para la mayoría de los presupuestos. El método de **Kragten** (variar cada entrada en su incertidumbre y observar el cambio del resultado) permite calcular los coeficientes de sensibilidad sin derivadas, numéricamente, y es muy práctico.\n- **Simulación de Monte Carlo** (Suplemento 1 de la GUM, JCGM 101): genera miles de valores de cada entrada según su distribución y calcula la distribución del resultado. Es útil cuando el modelo es muy no lineal o las distribuciones son muy asimétricas.\n- **Software** específico de incertidumbre.\n\n## Ideas que debes llevarte\n- La **incertidumbre combinada** se obtiene con la ley de propagación; para entradas independientes, suma en cuadratura de cᵢ·u(xᵢ).\n- **Sumas y restas**: combina incertidumbres **absolutas**. **Productos y cocientes**: combina incertidumbres **relativas**.\n- El **presupuesto de incertidumbre** muestra dónde está la incertidumbre y **dirige las mejoras**; las contribuciones pequeñas pesan muy poco.\n- **Incertidumbre expandida** U = k·u_c; **k = 2** ≈ 95 % con suficientes grados de libertad.\n- Reporta la incertidumbre con **dos cifras significativas**, el resultado a la misma posición decimal y el **valor de k**.\n- **Kragten** en hoja de cálculo y **Monte Carlo** para casos complejos.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Sumas",
+     "enunciado": "Un volumen se calcula como lectura final (u = 0.03 mL) menos lectura inicial (u = 0.04 mL). ¿Cuál es la incertidumbre del volumen?",
+     "opciones": [
+      "0.05 mL",
+      "0.07 mL",
+      "0.01 mL",
+      "0.035 mL"
+     ],
+     "correcta": 0,
+     "explicacion": "En sumas y restas se combinan incertidumbres absolutas: √(0.03² + 0.04²) = 0.05 mL.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Productos",
+     "enunciado": "y = a·b/c, con incertidumbres relativas de 0.3 %, 0.4 % y 0 %. ¿Cuál es la incertidumbre relativa de y?",
+     "opciones": [
+      "0.5 %",
+      "0.7 %",
+      "0.1 %",
+      "0.35 %"
+     ],
+     "correcta": 0,
+     "explicacion": "√(0.3² + 0.4²) = 0.5 %.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Coeficiente de sensibilidad",
+     "enunciado": "¿Qué representa el coeficiente de sensibilidad cᵢ?",
+     "opciones": [
+      "Cuánto cambia el resultado por cada unidad de cambio de la magnitud de entrada",
+      "La incertidumbre de la entrada",
+      "El factor de cobertura",
+      "La correlación entre entradas"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la derivada parcial del modelo respecto a la entrada.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Correlación",
+     "enunciado": "En una pesada por diferencia (bruto menos tara en la misma balanza), ¿qué ocurre con el error sistemático de calibración?",
+     "opciones": [
+      "Se cancela en gran parte, porque afecta igual a ambas pesadas",
+      "Se duplica",
+      "Se triplica",
+      "No cambia"
+     ],
+     "correcta": 0,
+     "explicacion": "Quedan sobre todo la linealidad y la repetibilidad.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Presupuesto",
+     "enunciado": "En el ejemplo del patrón, ¿qué componente aportó casi dos terceras partes de la varianza?",
+     "opciones": [
+      "El volumen",
+      "La masa",
+      "La pureza",
+      "La masa molar"
+     ],
+     "correcta": 0,
+     "explicacion": "Dentro del volumen, la temperatura y la tolerancia del matraz.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mejora",
+     "enunciado": "Según el presupuesto del ejemplo, ¿qué acción reduciría menos la incertidumbre?",
+     "opciones": [
+      "Comprar un reactivo de mayor pureza",
+      "Controlar la temperatura del laboratorio",
+      "Calibrar el matraz individualmente",
+      "Pesar una masa mayor"
+     ],
+     "correcta": 0,
+     "explicacion": "La pureza aportaba menos de 1 % de la varianza.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contribuciones",
+     "enunciado": "Si un componente es la tercera parte del mayor, ¿aproximadamente cuánto aporta a la varianza combinada en un presupuesto de dos componentes?",
+     "opciones": [
+      "Alrededor del 10 %",
+      "Alrededor del 33 %",
+      "Alrededor del 50 %",
+      "Alrededor del 1 %"
+     ],
+     "correcta": 0,
+     "explicacion": "(1/3)² = 1/9; 1/(9 + 1) ≈ 10 %.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Expandida",
+     "enunciado": "u_c = 0.42 mg/L. ¿Cuál es U con k = 2?",
+     "opciones": [
+      "0.84 mg/L",
+      "0.42 mg/L",
+      "0.21 mg/L",
+      "1.26 mg/L"
+     ],
+     "correcta": 0,
+     "explicacion": "U = k · u_c.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Factor k",
+     "enunciado": "¿Cuándo k = 2 puede no dar un nivel de confianza de 95 %?",
+     "opciones": [
+      "Cuando una componente importante se evaluó con pocos datos y hay pocos grados de libertad efectivos",
+      "Cuando el resultado es grande",
+      "Cuando hay muchas componentes",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "Se usa Welch-Satterthwaite y un k de la distribución t.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reporte",
+     "enunciado": "Un resultado calculado es 15.0846 % con U = 0.1237 %. ¿Cómo se reporta correctamente?",
+     "opciones": [
+      "(15.08 ± 0.12) %, k = 2",
+      "15.0846 ± 0.1237 %",
+      "15 ± 0.1 %",
+      "15.085 % sin incertidumbre"
+     ],
+     "correcta": 0,
+     "explicacion": "Dos cifras significativas en U y el resultado a la misma posición decimal, indicando k.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Kragten",
+     "enunciado": "¿Qué permite el método de Kragten en una hoja de cálculo?",
+     "opciones": [
+      "Calcular numéricamente los coeficientes de sensibilidad sin derivar, variando cada entrada en su incertidumbre",
+      "Eliminar las correlaciones",
+      "Calcular el límite de detección",
+      "Validar el método"
+     ],
+     "correcta": 0,
+     "explicacion": "Es muy práctico para modelos de laboratorio.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Monte Carlo",
+     "enunciado": "¿Cuándo es especialmente útil la simulación de Monte Carlo?",
+     "opciones": [
+      "Cuando el modelo es muy no lineal o las distribuciones son muy asimétricas",
+      "Siempre, porque es obligatoria",
+      "Nunca en química",
+      "Solo para calibrar balanzas"
+     ],
+     "correcta": 0,
+     "explicacion": "Está descrita en el Suplemento 1 de la GUM (JCGM 101).",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo completo",
+     "enunciado": "Se prepara un patrón pesando 50.00 mg (u = 0.04 mg) de un reactivo de pureza 0.998 (u = 0.0006) y aforando a 50.00 mL (u = 0.035 mL). Calcula la concentración en mg/L, su incertidumbre combinada y expandida, e identifica el componente dominante.",
+     "respuesta_modelo": "c = 1000 × 50.00 × 0.998 / 50.00 = 998.0 mg/L. Relativas: u(m)/m = 0.04/50.00 = 0.00080; u(P)/P = 0.0006/0.998 ≈ 0.00060; u(V)/V = 0.035/50.00 = 0.00070. u_c/c = √(0.00080² + 0.00060² + 0.00070²) = √(6.4 + 3.6 + 4.9) × 10⁻⁴ ≈ √14.9 × 10⁻⁴ ≈ 0.00122. u_c ≈ 1.22 mg/L; U (k = 2) ≈ 2.4 mg/L. Resultado: (998.0 ± 2.4) mg/L, k = 2. Componente dominante: la masa (43 % de la varianza), seguida del volumen (33 %) y la pureza (24 %).",
+     "puntos_clave": [
+      "c = 998.0 mg/L",
+      "Combinación de relativas",
+      "u_c ≈ 1.2 mg/L y U ≈ 2.4 mg/L",
+      "Componente dominante: masa"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Uso del presupuesto",
+     "enunciado": "Tu presupuesto de incertidumbre de una titulación muestra: repetibilidad 55 %, concentración del titulante 35 %, bureta 8 %, masa de muestra 2 %. ¿Qué acciones priorizarías para reducir la incertidumbre?",
+     "respuesta_modelo": "Priorizaría la repetibilidad y el titulante. Para la repetibilidad: mejorar la detección del punto final (titulación potenciométrica automática en lugar de indicador visual), estandarizar la técnica, controlar la temperatura y la homogeneidad de la muestra, y reportar la media de dos réplicas (lo que reduce esa contribución en √2). Para el titulante: valorarlo con más réplicas, usar un patrón primario certificado de mayor pureza y pesar más masa en la valoración, y verificar su estabilidad. La bureta y la masa aportan poco; invertir en ellas tendría poco efecto.",
+     "puntos_clave": [
+      "Prioriza los componentes dominantes",
+      "Acciones concretas para la repetibilidad",
+      "Acciones para el titulante",
+      "Reconoce el poco efecto de mejorar lo pequeño"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Reporte",
+     "enunciado": "Redacta cómo reportarías en un informe el resultado de 4.927 % con u_c = 0.0436 %, y explica cada elemento del reporte.",
+     "respuesta_modelo": "Reporte: 'Cloro disponible: (4.927 ± 0.087) %. La incertidumbre expandida se calculó con un factor de cobertura k = 2, que corresponde a un nivel de confianza de aproximadamente 95 %.' Explicación: U = 2 × 0.0436 = 0.0872, que con dos dígitos significativos es 0.087; el resultado se redondea a la misma posición decimal (4.927). Si el laboratorio reporta con un dígito significativo, sería (4.93 ± 0.09) %, redondeando U hacia arriba para ser conservador. Se indica k y el nivel de confianza aproximado para que el lector interprete el intervalo (de 4.840 a 5.014 %).",
+     "puntos_clave": [
+      "Cálculo de U = 0.087",
+      "Redondeo coherente de U y del resultado",
+      "Indicación de k y nivel de confianza",
+      "Interpretación del intervalo"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Incertidumbre III: enfoques globales y reglas de decisión",
+   "texto": "## Dos caminos para el mismo destino\nEl enfoque de la GUM que viste en los capítulos 5 y 6 se llama **de abajo hacia arriba** (bottom-up): se modela la medición, se cuantifica cada fuente y se combinan. Es riguroso y muy útil para entender el método, pero en química analítica tiene dos dificultades:\n\n1. Algunas fuentes son difíciles de modelar (efectos de matriz, extracción, interferencias).\n2. Es laborioso para laboratorios con muchos métodos.\n\nPor eso se usan también enfoques **de arriba hacia abajo** (top-down) o **globales**, que estiman la incertidumbre a partir de datos de **desempeño del método**: precisión intermedia, sesgo con materiales de referencia o ensayos de aptitud, y datos de validación. Son plenamente aceptados por ISO/IEC 17025 y por los organismos de acreditación, siempre que estén bien sustentados.\n\n## El enfoque Nordtest\nEl informe técnico **Nordtest TR 537** (\"Manual para el cálculo de la incertidumbre de medición en laboratorios ambientales\", ampliamente usado en todo tipo de laboratorios químicos) propone una fórmula sencilla:\n\nu_c = √[u(Rw)² + u(sesgo)²]\n\ndonde:\n\n- **u(Rw)** es la incertidumbre por **reproducibilidad dentro del laboratorio** (la precisión intermedia), que se obtiene típicamente de una **carta de control** con un material de control analizado en condiciones reales durante un periodo largo (meses), o de réplicas de muestras reales en días distintos.\n- **u(sesgo)** es la incertidumbre asociada al **sesgo** del método y del laboratorio, que se estima con **materiales de referencia certificados**, **ensayos de aptitud** o **pruebas de recuperación**.\n\n### Cálculo de u(sesgo)\nu(sesgo) = √[RMS_sesgo² + u(C_ref)²]\n\n- **RMS_sesgo** es la raíz cuadrática media de los sesgos observados en varias ocasiones (por ejemplo, con varios MRC, o en varias rondas de ensayos de aptitud).\n- **u(C_ref)** es la incertidumbre del valor de referencia (del certificado del MRC o del valor asignado en el ensayo de aptitud).\n\n### Ejemplo\nDeterminación de un activo por titulación, valores **relativos**:\n\n- **u(Rw)**: la carta de control del material de control interno durante seis meses da una desviación estándar relativa de **0.8 %**.\n- **Sesgo**: tres análisis de MRC en distintos momentos dan sesgos de +1.2 %, −0.5 % y +0.9 %.\n  - RMS_sesgo = √[(1.2² + 0.5² + 0.9²)/3] ≈ **0.91 %**.\n  - u(C_ref) del certificado: **0.5 %** (relativa, estándar).\n  - u(sesgo) = √(0.91² + 0.5²) ≈ **1.04 %**.\n- u_c = √(0.8² + 1.04²) ≈ **1.31 %**.\n- U (k = 2) ≈ **2.6 %** relativo.\n\nCon un resultado de 15.08 %, la incertidumbre expandida sería alrededor de 0.40 % absoluto.\n\n### Ventajas y precauciones\n- **Ventajas**: usa datos reales del desempeño del laboratorio; incluye automáticamente fuentes difíciles de modelar; se actualiza con los datos de control rutinario.\n- **Precauciones**: el material de control debe parecerse a las muestras (matriz, concentración); el periodo debe ser suficiente para incluir las variaciones reales (analistas, lotes de reactivos, calibraciones); si la incertidumbre cambia con la concentración, se estima en varios niveles; el muestreo en planta no está incluido si no está en los datos.\n\n## Otros enfoques globales\n- **Datos de validación**: la precisión intermedia y la veracidad obtenidas en la validación del método (capítulo 8).\n- **Datos interlaboratorio**: la desviación estándar de reproducibilidad de un estudio colaborativo de un método normalizado (ISO 21748 describe cómo usarla, verificando que el laboratorio tenga un desempeño consistente con ella).\n- **Ensayos de aptitud**: la dispersión de los resultados del laboratorio respecto a los valores asignados en varias rondas.\n\nEn la práctica, muchos laboratorios **combinan**: usan un enfoque global como base y agregan componentes específicos que no están en los datos (por ejemplo, el submuestreo de una muestra heterogénea o una corrección).\n\n## ¿Para qué sirve la incertidumbre? Para decidir\nLa pregunta más frecuente en un laboratorio de control de calidad no es \"¿cuál es la concentración?\", sino \"**¿el lote cumple?**\". Cuando un resultado cae cerca de un límite de especificación, la incertidumbre hace que la respuesta sea **probabilística**: hay un riesgo de aceptar un lote que en realidad no cumple (**falsa aceptación**) o de rechazar uno que sí cumple (**falso rechazo**).\n\nISO/IEC 17025:2017 exige que, cuando el laboratorio emita una **declaración de conformidad** con una especificación, documente la **regla de decisión** empleada, considerando el nivel de riesgo asociado, y la aplique. Si el cliente pide la declaración, la regla debe acordarse con él (salvo que esté definida en la propia especificación o norma).\n\n## Reglas de decisión\nLas referencias principales son la guía **ILAC G8** (directrices sobre reglas de decisión y declaraciones de conformidad) y el documento **JCGM 106** (el papel de la incertidumbre de medida en la evaluación de la conformidad).\n\n### Aceptación simple (riesgo compartido)\nSe acepta si el resultado medido está dentro de los límites, sin considerar explícitamente la incertidumbre. Es la regla más común en la industria. El riesgo de una decisión equivocada se **comparte** entre el productor y el consumidor y puede llegar a ser de hasta **50 %** para resultados justo en el límite. Es razonable solo si la incertidumbre es **pequeña** respecto a la tolerancia (por ejemplo, si la relación entre la tolerancia y la incertidumbre expandida es grande).\n\n### Banda de guarda\nSe define una zona de aceptación **más estrecha** que la especificación, desplazando los límites hacia adentro en una cantidad **w** (la banda de guarda), con frecuencia **w = U**. Un resultado se acepta solo si está dentro de la zona reducida.\n\n**Ejemplo**: especificación máxima de 15.5 %; U = 0.12 %; banda de guarda w = U. Límite de aceptación: **15.38 %**. Un resultado de 15.45 % está dentro de la especificación pero **fuera** de la zona de aceptación: no se declara conforme.\n\nCon w = U (k = 2) y una distribución normal, el riesgo de falsa aceptación en el límite de aceptación es de alrededor de **2.5 %** (una cola de 2σ). Con w = 0 es de alrededor de 50 %.\n\nLa banda de guarda **protege al consumidor** (o a la inocuidad) a costa de más falsos rechazos. Es lo adecuado para características críticas: la concentración de un sanitizante sin enjuague frente a su límite regulatorio, un contaminante frente a su límite máximo.\n\n### Banda de guarda inversa\nSe amplía la zona de aceptación (w negativa): protege al **productor** a costa del consumidor. Rara vez es apropiada en inocuidad.\n\n### Declaraciones con zonas\nILAC G8 y JCGM 106 describen también declaraciones más matizadas: \"conforme\", \"no conforme\", y zonas intermedias donde el resultado está dentro de la especificación pero el intervalo de incertidumbre la cruza (por ejemplo, \"conforme, pero sin certeza de cumplimiento al nivel de confianza indicado\").\n\n### Probabilidad de conformidad\nCon la incertidumbre estándar, se puede calcular directamente la probabilidad de que el valor verdadero exceda el límite. Si un resultado es 15.45 % con u_c = 0.06 % y el límite es 15.5 %, z = (15.5 − 15.45)/0.06 ≈ 0.83: hay aproximadamente **20 %** de probabilidad de que el valor verdadero esté por encima del límite.\n\n## Elegir la regla\n| Situación | Regla razonable |\n|---|---|\n| Característica crítica de inocuidad o regulatoria (residuos sin enjuague, contaminantes, contenido neto) | Banda de guarda (w = U) |\n| Característica de calidad con incertidumbre pequeña frente a la tolerancia | Aceptación simple |\n| Contrato con el cliente que define la regla | La regla acordada |\n| Norma o regulación que define cómo evaluar | La regla de la norma |\n\nLo importante es que la regla esté **definida antes** de analizar, **documentada**, **acordada** con el cliente cuando corresponda, y **aplicada de forma consistente**.\n\n## Ideas que debes llevarte\n- Además del enfoque **de abajo hacia arriba** (GUM), existen enfoques **globales** basados en datos de desempeño.\n- **Nordtest**: u_c = √[u(Rw)² + u(sesgo)²]; u(Rw) de cartas de control; u(sesgo) de MRC o ensayos de aptitud con RMS del sesgo y u del valor de referencia.\n- Asegura que los datos sean **representativos** de las muestras y del trabajo real.\n- ISO/IEC 17025 exige documentar y aplicar una **regla de decisión** al declarar conformidad.\n- **Aceptación simple**: riesgo compartido, hasta 50 % en el límite; adecuada solo con incertidumbre pequeña.\n- **Banda de guarda** (w = U): protege al consumidor; adecuada para características **críticas**.\n- Define la regla **antes**, documéntala y acuérdala con el cliente.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Enfoques",
+     "enunciado": "¿Qué caracteriza al enfoque global (top-down) de la incertidumbre?",
+     "opciones": [
+      "Estima la incertidumbre a partir de datos de desempeño del método: precisión intermedia y sesgo",
+      "Modela cada fuente individualmente con la GUM",
+      "No usa datos",
+      "Solo sirve para calibraciones físicas"
+     ],
+     "correcta": 0,
+     "explicacion": "Es aceptado por ISO/IEC 17025 si está bien sustentado.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Nordtest",
+     "enunciado": "En el enfoque Nordtest, ¿cómo se combina la incertidumbre?",
+     "opciones": [
+      "u_c = √[u(Rw)² + u(sesgo)²]",
+      "u_c = u(Rw) + u(sesgo)",
+      "u_c = u(Rw) × u(sesgo)",
+      "u_c = máximo de ambos"
+     ],
+     "correcta": 0,
+     "explicacion": "Suma en cuadratura de reproducibilidad dentro del laboratorio y sesgo.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "u(Rw)",
+     "enunciado": "¿De dónde se obtiene típicamente u(Rw)?",
+     "opciones": [
+      "De una carta de control de un material de control analizado durante meses en condiciones reales",
+      "De una sola corrida de 10 réplicas el mismo día",
+      "Del certificado de la balanza",
+      "Del catálogo del fabricante"
+     ],
+     "correcta": 0,
+     "explicacion": "Debe incluir variaciones reales: analistas, días, lotes de reactivos.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "u(sesgo)",
+     "enunciado": "Sesgos con MRC de +1.0 % y −1.0 %, y u(C_ref) = 0.6 %. ¿Cuál es u(sesgo)?",
+     "opciones": [
+      "≈ 1.17 %",
+      "0 %",
+      "1.6 %",
+      "0.6 %"
+     ],
+     "correcta": 0,
+     "explicacion": "RMS = √[(1 + 1)/2] = 1.0; u(sesgo) = √(1.0² + 0.6²) ≈ 1.17 %.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo",
+     "enunciado": "u(Rw) = 0.6 % y u(sesgo) = 0.8 %. ¿Cuál es U con k = 2?",
+     "opciones": [
+      "2.0 %",
+      "1.4 %",
+      "1.0 %",
+      "2.8 %"
+     ],
+     "correcta": 0,
+     "explicacion": "u_c = √(0.36 + 0.64) = 1.0 %; U = 2.0 %.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Precaución",
+     "enunciado": "¿Qué precaución es esencial al usar una carta de control para estimar u(Rw)?",
+     "opciones": [
+      "Que el material de control se parezca a las muestras y el periodo incluya las variaciones reales",
+      "Que el material sea agua destilada",
+      "Que todos los datos sean del mismo día",
+      "Que lo analice siempre el mismo analista"
+     ],
+     "correcta": 0,
+     "explicacion": "Si el material no es representativo, la incertidumbre no lo será.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regla de decisión",
+     "enunciado": "¿Qué exige ISO/IEC 17025 cuando el laboratorio declara conformidad con una especificación?",
+     "opciones": [
+      "Documentar y aplicar una regla de decisión que considere el riesgo, acordada con el cliente cuando corresponda",
+      "Nada adicional",
+      "Reportar solo el resultado sin incertidumbre",
+      "Usar siempre aceptación simple"
+     ],
+     "correcta": 0,
+     "explicacion": "Las referencias son ILAC G8 y JCGM 106.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aceptación simple",
+     "enunciado": "Con aceptación simple, ¿cuál es aproximadamente el riesgo de falsa aceptación para un resultado justo en el límite?",
+     "opciones": [
+      "Hasta 50 %",
+      "0 %",
+      "2.5 %",
+      "5 %"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso solo es adecuada con incertidumbre pequeña frente a la tolerancia.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Banda de guarda",
+     "enunciado": "Máximo 10.0 mg/kg, U = 0.4 mg/kg, banda de guarda w = U. ¿Cuál es el límite de aceptación?",
+     "opciones": [
+      "9.6 mg/kg",
+      "10.4 mg/kg",
+      "10.0 mg/kg",
+      "9.2 mg/kg"
+     ],
+     "correcta": 0,
+     "explicacion": "El límite se desplaza hacia adentro en w.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Banda de guarda",
+     "enunciado": "¿A quién protege principalmente una banda de guarda w = U?",
+     "opciones": [
+      "Al consumidor, reduciendo la falsa aceptación",
+      "Al productor",
+      "A nadie",
+      "Al laboratorio"
+     ],
+     "correcta": 0,
+     "explicacion": "A costa de más falsos rechazos.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elección",
+     "enunciado": "¿Qué regla es más adecuada para la concentración de un sanitizante sin enjuague frente a su límite regulatorio?",
+     "opciones": [
+      "Banda de guarda",
+      "Banda de guarda inversa",
+      "Aceptación simple sin evaluar la incertidumbre",
+      "Ninguna regla"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una característica crítica de inocuidad.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Probabilidad",
+     "enunciado": "Resultado 9.8 mg/kg, u_c = 0.2 mg/kg, máximo 10.0. ¿Aproximadamente qué probabilidad hay de que el valor verdadero exceda el límite?",
+     "opciones": [
+      "16 %",
+      "2.5 %",
+      "50 %",
+      "0 %"
+     ],
+     "correcta": 0,
+     "explicacion": "z = (10.0 − 9.8)/0.2 = 1; la cola superior es ≈ 16 %.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Nordtest",
+     "enunciado": "Una carta de control de seis meses da s_rel = 1.0 %. Cuatro rondas de ensayos de aptitud dieron sesgos de +0.8, −1.2, +0.5 y +1.0 %, con incertidumbre de los valores asignados de 0.4 %. Calcula u_c y U relativas.",
+     "respuesta_modelo": "RMS_sesgo = √[(0.64 + 1.44 + 0.25 + 1.00)/4] = √(3.33/4) = √0.8325 ≈ 0.91 %. u(sesgo) = √(0.91² + 0.4²) = √(0.8325 + 0.16) ≈ 1.00 %. u_c = √(1.0² + 1.00²) ≈ 1.41 %. U (k = 2) ≈ 2.8 % relativo.",
+     "puntos_clave": [
+      "RMS del sesgo ≈ 0.91 %",
+      "u(sesgo) ≈ 1.0 %",
+      "u_c ≈ 1.41 %",
+      "U ≈ 2.8 %"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Regla de decisión",
+     "enunciado": "Propón y justifica una regla de decisión para la liberación de un sanitizante sin enjuague (límite máximo de activo) y otra para la viscosidad del mismo producto (especificación de calidad).",
+     "respuesta_modelo": "Activo frente al límite máximo: banda de guarda w = U (k = 2) en el límite superior, porque un exceso genera residuos por encima del límite regulatorio en superficies en contacto con alimentos; el riesgo de falsa aceptación en el límite de aceptación queda en alrededor de 2.5 %. Esto exige que la incertidumbre sea pequeña frente a la tolerancia, o el producto se rechazaría con frecuencia; se complementa con un objetivo de formulación centrado. Viscosidad: aceptación simple, porque es una característica de calidad sin efecto en la inocuidad y la incertidumbre del método es pequeña frente a la tolerancia; el riesgo compartido es aceptable. Ambas reglas se documentan antes del análisis y se comunican o acuerdan con los clientes cuando emiten declaraciones de conformidad.",
+     "puntos_clave": [
+      "Banda de guarda para la característica crítica",
+      "Aceptación simple para la de calidad",
+      "Justificación por riesgo",
+      "Documentación y acuerdo previo"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Enfoques",
+     "enunciado": "¿Cuándo preferirías el enfoque de abajo hacia arriba (GUM) y cuándo el global (Nordtest) en tu laboratorio?",
+     "respuesta_modelo": "El enfoque de abajo hacia arriba es preferible para entender un método nuevo, identificar qué fuentes dominan para mejorarlo, para preparaciones de patrones y calibraciones donde el modelo es claro, y cuando no hay datos de desempeño suficientes. El enfoque global es preferible para métodos rutinarios con mucha historia de control de calidad, cuando hay fuentes difíciles de modelar (matriz, extracción), y cuando el laboratorio tiene muchos métodos: es más práctico y refleja el desempeño real. Una combinación es frecuente: global como base, con componentes adicionales que los datos no incluyan.",
+     "puntos_clave": [
+      "Ventajas del enfoque GUM",
+      "Ventajas del enfoque global",
+      "Situaciones adecuadas para cada uno",
+      "Posibilidad de combinarlos"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "titulo": "Validación y verificación de métodos",
+   "texto": "## Apto para el propósito\nUn método analítico no es \"bueno\" o \"malo\" en abstracto: es **adecuado o no para un propósito**. Un método con incertidumbre de ± 0.5 % puede ser excelente para verificar la concentración de un detergente con tolerancia de ± 2 % y completamente inadecuado para liberar un sanitizante cerca de un límite regulatorio estrecho. La **validación** es la confirmación, mediante evidencia objetiva, de que se cumplen los requisitos para un **uso específico previsto**.\n\nLa referencia práctica más usada en química es la guía **EURACHEM \"La adecuación al uso de los métodos analíticos\"** (*The Fitness for Purpose of Analytical Methods*, segunda edición de 2014), disponible gratuitamente en varios idiomas, incluido el español.\n\n## Validación o verificación\nISO/IEC 17025:2017 distingue:\n\n- **Verificación** de métodos **normalizados** o validados por terceros (apartado 7.2.1.5): antes de usar un método publicado por un organismo reconocido (ASTM, ISO, AOAC, normas mexicanas, farmacopeas), el laboratorio debe verificar que puede aplicarlo correctamente y lograr el desempeño requerido. No repite la validación completa, sino que demuestra que **en sus manos** el método funciona (por ejemplo, precisión y veracidad con sus equipos, analistas y matrices).\n- **Validación** de métodos **no normalizados**, desarrollados por el laboratorio, o normalizados usados **fuera de su alcance** o **modificados** (apartado 7.2.2): requiere una evaluación completa de las características de desempeño necesarias.\n\nMuchos laboratorios de control de calidad de plantas químicas usan **métodos internos** (adaptados de normas, de proveedores o desarrollados en casa) para productos propios. Esos métodos requieren **validación**.\n\n## Planificar la validación\nAntes de experimentar:\n\n1. **Definir el propósito**: ¿para qué decisiones se usará el resultado?, ¿qué analitos, matrices e intervalo de concentración?\n2. **Definir los requisitos**: incertidumbre objetivo, límite de cuantificación necesario, selectividad frente a qué interferencias.\n3. **Elegir las características** a evaluar y los **criterios de aceptación**.\n4. **Diseñar** los experimentos (número de niveles, réplicas, días, analistas).\n5. Documentar todo en un **plan de validación** aprobado.\n\n## Características de desempeño\n### Selectividad\nCapacidad del método de determinar el analito sin interferencia de otros componentes de la muestra. En un detergente alcalino clorado, ¿la titulación del cloro se ve afectada por otros oxidantes?, ¿la de alcalinidad por silicatos o carbonatos? Se evalúa analizando blancos de matriz, muestras con posibles interferentes agregados y comparando con un método independiente.\n\n### Límite de detección y de cuantificación\n- **Límite de detección (LD)**: la menor concentración que se puede **distinguir** del blanco con una confianza definida. Una estimación habitual es **LD ≈ 3 · s₀**, donde s₀ es la desviación estándar de blancos o de muestras con concentración muy baja (corrigiendo por el blanco medio si lo hay). Con curva de calibración, también LD ≈ 3.3 · σ / pendiente.\n- **Límite de cuantificación (LC)**: la menor concentración que se puede **cuantificar** con precisión y veracidad aceptables. Una estimación habitual es **LC ≈ 10 · s₀**.\n\nSon relevantes para impurezas, contaminantes y residuos (por ejemplo, clorato en un producto, residuos de cuaternario en un enjuague), no para el ensayo de un componente principal.\n\n### Intervalo de trabajo y linealidad\nEl **intervalo de trabajo** es el intervalo de concentraciones en el que el método da resultados con la incertidumbre aceptable. Dentro de él, la **linealidad** (para métodos con calibración) se evalúa como viste en el curso de estadística: gráfica de residuos, falta de ajuste, recálculo de estándares. No basta con r.\n\n### Veracidad\nSe evalúa por:\n\n- Análisis de **materiales de referencia certificados** en matriz similar: sesgo = media − valor certificado, con prueba de significancia que considere la incertidumbre del MRC.\n- **Comparación** con un método de referencia o independiente.\n- **Recuperación** de cantidades conocidas agregadas a muestras (fortificación): recuperación % = (concentración encontrada en la fortificada − concentración en la no fortificada) / cantidad agregada × 100. Útil cuando no hay MRC, aunque el analito agregado puede comportarse distinto que el nativo.\n\nLos criterios de recuperación aceptables dependen de la concentración: más estrictos para componentes mayoritarios (por ejemplo, alrededor de 98 a 102 % para ensayos de componentes principales) y más amplios para trazas. Las guías de AOAC publican tablas de referencia por nivel de concentración.\n\n### Precisión\nSe evalúa en las condiciones pertinentes:\n\n- **Repetibilidad**: réplicas en un periodo corto, mismo analista y equipo.\n- **Precisión intermedia**: réplicas en días distintos, con distintos analistas, equipos o lotes de reactivos.\n- **Reproducibilidad**: solo en estudios interlaboratorio.\n\nUn diseño eficiente es analizar una misma muestra en duplicado durante 8 a 15 días distintos, con varios analistas, y separar con un **ANOVA** la repetibilidad (dentro de días) de la variación entre días.\n\nComo referencia de lo que es razonable, la **ecuación de Horwitz** estima la desviación estándar relativa de reproducibilidad esperada entre laboratorios en función de la concentración C (expresada como fracción másica):\n\nRSD_R (%) = 2^(1 − 0.5 · log₁₀ C)\n\nPara C = 0.15 (15 %), RSD_R ≈ **2.7 %**; para C = 0.01 (1 %), **4 %**; para 1 mg/kg (10⁻⁶), **16 %**. La repetibilidad suele ser de la mitad a dos tercios de esos valores. El cociente entre la RSD observada y la predicha (**HorRat**) ayuda a juzgar si la precisión es aceptable. Es una referencia empírica, no un criterio absoluto, y para métodos clásicos muy precisos (como titulaciones de componentes mayoritarios) los laboratorios suelen lograr mucho mejor.\n\n### Robustez\nLa capacidad del método de no verse afectado por **pequeñas variaciones deliberadas** de sus parámetros: temperatura, tiempo de reacción, pH, concentración de reactivos, marca de columna, analista. Se evalúa preferiblemente con un **diseño experimental** (por ejemplo, un factorial fraccionado o un diseño de Plackett-Burman) durante el desarrollo. Los parámetros críticos encontrados se controlan en el procedimiento.\n\n### Incertidumbre de medición\nLa validación genera los datos (precisión intermedia, sesgo) para estimar la incertidumbre con un enfoque global, como viste en el capítulo 7. Al final, se compara la incertidumbre con la **incertidumbre objetivo** definida para el propósito.\n\n## ¿Qué características evaluar?\nDepende del tipo de método:\n\n| Característica | Ensayo de componente principal | Impureza o traza | Prueba cualitativa (identidad) |\n|---|---|---|---|\n| Selectividad | Sí | Sí | Sí |\n| LD | No | Sí | Sí (umbral) |\n| LC | No | Sí | No |\n| Linealidad e intervalo | Sí | Sí | No |\n| Veracidad | Sí | Sí | No |\n| Precisión | Sí | Sí | No |\n| Robustez | Sí | Sí | Sí |\n| Incertidumbre | Sí | Sí | No (tasas de falsos positivos y negativos) |\n\n## El informe de validación\nDebe incluir: alcance (analitos, matrices, intervalo), procedimiento, plan, resultados de cada característica con sus datos, comparación con los criterios, estimación de incertidumbre, conclusión sobre la **adecuación al uso** y aprobación. ISO/IEC 17025 pide además que se registren el procedimiento usado, la especificación de requisitos, las características de desempeño, los resultados y una **declaración sobre la validez** del método para el uso previsto.\n\n## Revalidación\nSe revalida (total o parcialmente) cuando cambian el método, el equipo crítico, la matriz, el intervalo, o cuando el control de calidad rutinario muestra un deterioro del desempeño.\n\n## Validación y control rutinario\nLa validación demuestra que el método **puede** funcionar; el **control de calidad rutinario** (capítulo 12) demuestra que **sigue** funcionando. Es la misma lógica de validación frente a verificación que viste en los cursos de inocuidad.\n\n## Ideas que debes llevarte\n- Un método se valida para un **propósito**: \"adecuación al uso\" (guía EURACHEM).\n- **Verificación** para métodos normalizados; **validación** para métodos internos, modificados o fuera de alcance.\n- Planifica: propósito, requisitos, características, criterios y diseño, antes de experimentar.\n- Características: **selectividad**, **LD** (≈ 3s₀) y **LC** (≈ 10s₀), **intervalo y linealidad**, **veracidad** (MRC, comparación, recuperación), **precisión** (repetibilidad e intermedia), **robustez** e **incertidumbre**.\n- La **ecuación de Horwitz** es una referencia empírica de precisión esperada.\n- El informe concluye sobre la **validez para el uso**; el **control rutinario** confirma que sigue válido.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición",
+     "enunciado": "¿Qué es la validación de un método?",
+     "opciones": [
+      "La confirmación con evidencia objetiva de que se cumplen los requisitos para un uso específico previsto",
+      "La compra de un método normalizado",
+      "La calibración del instrumento",
+      "La aprobación del método por el cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "Un método es adecuado o no para un propósito.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "El laboratorio va a usar un método ASTM sin modificaciones dentro de su alcance. ¿Qué exige ISO/IEC 17025?",
+     "opciones": [
+      "Verificar que puede aplicarlo correctamente y lograr el desempeño requerido",
+      "Una validación completa",
+      "Nada",
+      "Pedir permiso a ASTM"
+     ],
+     "correcta": 0,
+     "explicacion": "Apartado 7.2.1.5.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "¿En cuál de estos casos se requiere validación?",
+     "opciones": [
+      "Un método interno desarrollado para un producto propio",
+      "Un método normalizado usado sin cambios dentro de su alcance",
+      "Un método de farmacopea aplicado a la matriz para la que fue diseñado",
+      "Ninguno"
+     ],
+     "correcta": 0,
+     "explicacion": "También métodos normalizados modificados o fuera de alcance.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Selectividad",
+     "enunciado": "¿Qué evalúa la selectividad?",
+     "opciones": [
+      "Que el método determine el analito sin interferencia de otros componentes",
+      "La menor concentración detectable",
+      "La dispersión de las réplicas",
+      "El cambio de respuesta con la concentración"
+     ],
+     "correcta": 0,
+     "explicacion": "Se evalúa con blancos de matriz, interferentes agregados o métodos independientes.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "LD",
+     "enunciado": "La desviación estándar de 10 blancos es 0.02 mg/L. ¿Cuál es aproximadamente el LD?",
+     "opciones": [
+      "0.06 mg/L",
+      "0.02 mg/L",
+      "0.2 mg/L",
+      "0.6 mg/L"
+     ],
+     "correcta": 0,
+     "explicacion": "LD ≈ 3 · s₀.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "LC",
+     "enunciado": "Con la misma s₀ = 0.02 mg/L, ¿cuál es aproximadamente el LC?",
+     "opciones": [
+      "0.2 mg/L",
+      "0.06 mg/L",
+      "0.02 mg/L",
+      "2 mg/L"
+     ],
+     "correcta": 0,
+     "explicacion": "LC ≈ 10 · s₀.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Aplicabilidad",
+     "enunciado": "¿Es necesario determinar el LD para el ensayo de la concentración principal de un sanitizante al 15 %?",
+     "opciones": [
+      "No, es relevante para impurezas, contaminantes y residuos",
+      "Sí, siempre",
+      "Solo si el cliente lo pide",
+      "Solo con cromatografía"
+     ],
+     "correcta": 0,
+     "explicacion": "Para componentes principales importan la veracidad, la precisión y el intervalo.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Recuperación",
+     "enunciado": "Una muestra tiene 2.0 mg/kg; se fortifica con 5.0 mg/kg y se encuentran 6.8 mg/kg. ¿Cuál es la recuperación?",
+     "opciones": [
+      "96 %",
+      "136 %",
+      "68 %",
+      "100 %"
+     ],
+     "correcta": 0,
+     "explicacion": "(6.8 − 2.0)/5.0 × 100 = 96 %.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Veracidad",
+     "enunciado": "¿Cuál es la forma preferida de evaluar la veracidad cuando existe?",
+     "opciones": [
+      "Analizar un material de referencia certificado en matriz similar",
+      "Repetir el análisis muchas veces",
+      "Calcular el LD",
+      "Calibrar la balanza"
+     ],
+     "correcta": 0,
+     "explicacion": "También la comparación con un método de referencia o la recuperación.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Precisión",
+     "enunciado": "¿Qué diseño separa eficientemente la repetibilidad de la variación entre días?",
+     "opciones": [
+      "Duplicados de una misma muestra durante 8 a 15 días, analizados con ANOVA",
+      "Diez réplicas el mismo día",
+      "Una sola determinación por día",
+      "Comparar con otro laboratorio"
+     ],
+     "correcta": 0,
+     "explicacion": "El ANOVA separa la varianza dentro y entre días.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Horwitz",
+     "enunciado": "Según la ecuación de Horwitz, ¿qué RSD de reproducibilidad se espera para un analito al 1 %?",
+     "opciones": [
+      "Alrededor de 4 %",
+      "Alrededor de 16 %",
+      "Alrededor de 1 %",
+      "Alrededor de 0.1 %"
+     ],
+     "correcta": 0,
+     "explicacion": "RSD_R = 2^(1 − 0.5 log 0.01) = 2² = 4 %.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Robustez",
+     "enunciado": "¿Cómo se evalúa preferiblemente la robustez?",
+     "opciones": [
+      "Con un diseño experimental que varía deliberadamente varios parámetros a la vez",
+      "Repitiendo el método sin cambios",
+      "Con un solo analista experto",
+      "Comparando con la competencia"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, factoriales fraccionados o Plackett-Burman.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan",
+     "enunciado": "Elabora el plan de validación de un método interno de titulación yodométrica del cloro disponible en un detergente alcalino clorado.",
+     "respuesta_modelo": "Propósito: liberar lotes contra la especificación de 4.5 a 5.5 % de cloro disponible; incertidumbre objetivo, por ejemplo, ≤ 0.10 % expandida. Características: selectividad (evaluar interferencia de otros oxidantes o reductores, silicatos y tensioactivos, con blancos de matriz y comparación con un método independiente); intervalo (por ejemplo, de 3.5 a 6.5 %); veracidad (recuperación con hipoclorito de concentración conocida valorado contra un patrón trazable, en matriz, en tres niveles, y comparación con un método de referencia si existe); precisión (repetibilidad con 10 réplicas y precisión intermedia con duplicados en 10 días, dos analistas, ANOVA); robustez (factorial fraccionado con tiempo de reacción, acidez, cantidad de yoduro y temperatura); incertidumbre con enfoque global. Criterios de aceptación definidos antes, por ejemplo recuperación 98 a 102 % y RSD de precisión intermedia ≤ 1 %. Informe con conclusión de adecuación al uso.",
+     "puntos_clave": [
+      "Propósito e incertidumbre objetivo",
+      "Características pertinentes con diseño",
+      "Criterios de aceptación previos",
+      "Informe y conclusión"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Verificación",
+     "enunciado": "¿Qué evaluarías para verificar un método normalizado de determinación de pH en tu laboratorio?",
+     "respuesta_modelo": "Que el laboratorio puede aplicarlo correctamente: competencia de los analistas (capacitación y pruebas), equipo y condiciones (pHímetro y electrodos adecuados, amortiguadores trazables, control de temperatura); precisión (repetibilidad y precisión intermedia con muestras representativas de los productos, comparada con los datos de precisión de la norma si los publica); veracidad (medición de soluciones amortiguadoras de referencia independientes de las de calibración, o participación en un ensayo de aptitud); y aplicabilidad a las matrices del laboratorio (por ejemplo, soluciones alcalinas fuertes con riesgo de error alcalino). Se documenta en un informe de verificación con conclusión.",
+     "puntos_clave": [
+      "Competencia y condiciones",
+      "Precisión comparada con la norma",
+      "Veracidad con referencias independientes",
+      "Aplicabilidad a las matrices propias"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Validación y control",
+     "enunciado": "Explica la relación entre la validación de un método y su control de calidad rutinario.",
+     "respuesta_modelo": "La validación demuestra, antes de usar el método, que es capaz de cumplir los requisitos del propósito: veracidad, precisión, intervalo, incertidumbre. El control de calidad rutinario (materiales de control con cartas de control, duplicados, blancos, ensayos de aptitud) demuestra durante el uso que el método sigue funcionando como en la validación. Los criterios de control se derivan de los datos de validación (por ejemplo, los límites de la carta se basan en la precisión intermedia). Si el control muestra deterioro, se investiga y puede requerirse una revalidación. Es la misma lógica de validación y verificación de las medidas de control en inocuidad.",
+     "puntos_clave": [
+      "Validación: capacidad antes del uso",
+      "Control rutinario: desempeño continuo",
+      "Criterios derivados de la validación",
+      "Deterioro lleva a investigación o revalidación"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
