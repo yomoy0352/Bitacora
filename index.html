@@ -157,7 +157,7 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.1;stro
 .fsrow span{font-family:var(--f-mono);font-size:13px;color:var(--ink-2)}
 
 /* Lector paginado */
-.reader{position:fixed;inset:0;z-index:5;display:flex;flex-direction:column;background:var(--sheet);color:var(--ink);overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.reader{position:fixed;left:0;top:0;width:100%;height:var(--appH,100%);z-index:5;display:flex;flex-direction:column;background:var(--sheet);color:var(--ink);overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .rbar,.rfoot{position:absolute;left:0;right:0;z-index:6;display:flex;align-items:center;gap:6px;padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px));background:color-mix(in srgb,var(--sheet) 92%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:opacity .22s ease,transform .22s ease}
 .rbar{top:0;padding-top:calc(8px + env(safe-area-inset-top,0px));padding-bottom:8px;border-bottom:1px solid var(--line)}
 .reader:not(.chrome) .rbar{opacity:0;transform:translateY(-100%);pointer-events:none}
@@ -193,7 +193,7 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.1;stro
 .page.r::after{left:0;background:linear-gradient(90deg,rgba(0,0,0,.13),rgba(0,0,0,0))}
 .page.s::after{left:0;width:14px;background:linear-gradient(90deg,rgba(0,0,0,.08),rgba(0,0,0,0))}
 :root[data-tema="eink"] .page::after{display:none}
-.pc{position:absolute;inset:0;padding:calc(30px + env(safe-area-inset-top,0px)) 34px calc(52px + max(10px,env(safe-area-inset-bottom,0px)));overflow:hidden;font-family:var(--f-read);font-size:var(--fs);line-height:1.6;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.pc{position:absolute;inset:0;padding:calc(30px + env(safe-area-inset-top,0px)) 34px calc(30px + env(safe-area-inset-bottom,0px));overflow:hidden;font-family:var(--f-read);font-size:var(--fs);line-height:1.6;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .pc h2,.pc h3{font-family:var(--f-display);text-align:left;line-height:1.2;letter-spacing:-.01em;margin:.9em 0 .4em}
 .pc h2{font-size:1.18em}.pc h3{font-size:1.04em}
 .pc>:first-child{margin-top:0}
@@ -204,11 +204,12 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.1;stro
 .pc blockquote{margin:0 0 .7em;padding:.2em .9em;border-left:3px solid var(--ink-3);color:var(--ink-2)}
 .pc code{font-family:var(--f-mono);font-size:.85em;background:var(--sunk);padding:1px 4px;border-radius:4px}
 .pc .cut{text-align-last:justify}
-.pc .chead{border-bottom:1px solid var(--line);text-align:left}
+.pc .chead{border-bottom:1px solid var(--line);text-align:left;hyphens:manual;-webkit-hyphens:manual}
 .pc .chead h1{font-size:clamp(24px,1.55em,34px)}
-.folio{position:absolute;left:0;right:0;bottom:calc(16px + max(10px,env(safe-area-inset-bottom,0px)));text-align:center;font-family:var(--f-read);font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.folio{position:absolute;right:max(20px,env(safe-area-inset-right,0px));bottom:calc(8px + env(safe-area-inset-bottom,0px));font-family:var(--f-read);font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.page.l .folio{right:auto;left:max(20px,env(safe-area-inset-left,0px))}
 .measure{position:absolute;left:-10000px;top:0;visibility:hidden;pointer-events:none}
-@media (max-width:639px){.pc{padding:calc(24px + env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) calc(50px + max(10px,env(safe-area-inset-bottom,0px))) max(24px,env(safe-area-inset-left,0px))}}
+@media (max-width:639px){.pc{padding:calc(24px + env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) max(24px,env(safe-area-inset-left,0px))}}
 
 /* Hoja que gira sobre el lomo */
 .stage{position:absolute;z-index:3;pointer-events:none;perspective:2400px}
@@ -551,14 +552,6 @@ function capView() {
       ${aaBtn()}
     </div>
     <div class="vp" id="vp"><div class="bookhold" id="hold"></div></div>
-    <div class="rfoot">
-      <div class="pbar"><i id="pbar"></i></div>
-      <div class="pinfo">
-        <button class="btn ghost icon" data-act="pprev" aria-label="Página anterior">${ic('left')}</button>
-        <span id="pnum">&nbsp;</span>
-        <button class="btn ghost icon" data-act="pnext" aria-label="Página siguiente">${ic('right')}</button>
-      </div>
-    </div>
   </div>`;
 }
 
@@ -746,13 +739,13 @@ function paginate(c, curso, info, W, H, host) {
    sobre esa línea y muestra el reverso; debajo aparece la página siguiente.
    f = posición del doblez: W = hoja plana, 0 = hoja pasada por completo. */
 const RDp = { pages: [], W: 0, H: 0, T: null, anim: 0, drag: null, chromeT: 0 };
-function destroyBook() { cancelAnimationFrame(RDp.anim); RDp.T = null; RDp.drag = null; }
+function destroyBook() { cancelAnimationFrame(RDp.anim); RDp.pending = null; RDp.T = null; RDp.drag = null; }
 
 function pageEl(k, cls) {
   const d = document.createElement('div'); d.className = 'page ' + (cls || '');
   Object.assign(d.style, { width: RDp.W + 'px', height: RDp.H + 'px' });
   const html = RDp.pages[k];
-  d.innerHTML = html == null ? '' : `<div class="pc">${html}</div>${k < RD.real ? `<div class="folio">${k + 1}</div>` : ''}`;
+  d.innerHTML = html == null ? '' : `<div class="pc">${html}</div>${k < RD.real ? `<div class="folio">${k + 1} / ${RD.real}</div>` : ''}`;
   return d;
 }
 const at = (el, x) => { el.style.left = x + 'px'; return el; };
@@ -870,17 +863,23 @@ const easeOut = t => 1 - Math.pow(1 - t, 3);
 const easeInOut = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 /* Anima la hoja hasta f1; al terminar confirma o deshace el cambio de página */
 function animateTo(T, f0, f1, y0, ty0, dur, ease, done, lift) {
-  cancelAnimationFrame(RDp.anim);
+  finishAnim();
   const t0 = performance.now();
+  let ended = false;
+  const end = () => { if (ended) return; ended = true; cancelAnimationFrame(RDp.anim); RDp.pending = null; done(); };
+  RDp.pending = end;
   const step = now => {
+    if (ended) return;
     const t = Math.min(1, (now - t0) / dur), e = ease(t);
     const f = f0 + (f1 - f0) * e;
     const ty = ty0 * (1 - e) + (lift ? -Math.sin(Math.PI * e) * RDp.H * lift : 0);
     setFold(T, f, y0, ty);
-    if (t < 1) RDp.anim = requestAnimationFrame(step); else done();
+    if (t < 1) RDp.anim = requestAnimationFrame(step); else end();
   };
   RDp.anim = requestAnimationFrame(step);
 }
+/* Si llega un gesto mientras una hoja todavía cae, esa vuelta se completa al instante (no se pierde) */
+function finishAnim() { if (RDp.pending) RDp.pending(); else if (RDp.T) drawBase(); }
 /* Hoja que se pasa hacia adelante o hacia atrás desde la posición actual */
 function sheetFor(dir) {
   if (RD.per === 2) return dir > 0 ? (RD.idx + 2 < RD.count ? RD.idx + 1 : null) : (RD.idx >= 2 ? RD.idx - 1 : null);
@@ -890,7 +889,7 @@ function commit(dir) { RD.idx += dir * RD.per; drawBase(); }
 /* Paso de página con un toque o una flecha */
 function goPage(dir) {
   if (RDp.drag) return;
-  if (RDp.T) { cancelAnimationFrame(RDp.anim); drawBase(); }
+  finishAnim();
   const s = sheetFor(dir); if (s == null) return;
   if (stillMotion()) return commit(dir);
   const T = startTurn(s), W = RDp.W, y0 = RDp.H * .66;
@@ -905,7 +904,7 @@ function bindGestures() {
   const reader = document.getElementById('reader'), vp = document.getElementById('vp'); if (!vp) return;
   vp.addEventListener('pointerdown', e => {
     if (e.button > 0 || RDp.drag) return;
-    if (RDp.T) { cancelAnimationFrame(RDp.anim); drawBase(); }
+    finishAnim();
     const book = document.getElementById('book'); if (!book) return;
     const r = book.getBoundingClientRect();
     RDp.drag = { id: e.pointerId, sx: e.clientX, sy: e.clientY, r, dir: 0, T: null, hist: [[e.clientX, performance.now()]] };
@@ -1007,10 +1006,18 @@ function setupReader() {
 }
 const relayout = () => { if (S.view === 'cap' && document.getElementById('hold') && !RDp.drag) mountBook(frac()); };
 /* Alto visible real (en iPhone la ventana puede ser más alta que lo que se ve) */
+/* En la app instalada, iOS reporta una pantalla más baja (le resta la barra de estado) aunque dibuja
+   desde arriba; por eso se usa el alto real de la pantalla del teléfono. */
 function fitViewport() {
-  const vv = window.visualViewport; const h = Math.round(vv ? vv.height : window.innerHeight);
-  if (h > 100) document.documentElement.style.setProperty('--vh', h + 'px');
+  let h = window.innerHeight;
+  const standalone = navigator.standalone || matchMedia('(display-mode: standalone), (display-mode: fullscreen)').matches;
+  if (standalone && screen && screen.height) {
+    const portrait = matchMedia('(orientation: portrait)').matches;
+    h = Math.max(h, portrait ? Math.max(screen.height, screen.width) : Math.min(screen.height, screen.width));
+  }
+  if (h > 100) document.documentElement.style.setProperty('--appH', h + 'px');
 }
+window.addEventListener('orientationchange', () => setTimeout(() => { fitViewport(); relayout(); }, 250));
 fitViewport();
 if (window.visualViewport) window.visualViewport.addEventListener('resize', () => { const before = getComputedStyle(document.documentElement).getPropertyValue('--vh'); fitViewport(); if (getComputedStyle(document.documentElement).getPropertyValue('--vh') !== before) { clearTimeout(rzT); rzT = setTimeout(relayout, 180); } });
 let rzT, lastW = window.innerWidth, lastH = window.innerHeight;
