@@ -157,7 +157,7 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.1;stro
 .fsrow span{font-family:var(--f-mono);font-size:13px;color:var(--ink-2)}
 
 /* Lector paginado */
-.reader{position:fixed;left:0;right:0;top:0;height:var(--vh,100%);z-index:5;display:flex;flex-direction:column;background:var(--sheet);color:var(--ink);overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.reader{position:fixed;inset:0;z-index:5;display:flex;flex-direction:column;background:var(--sheet);color:var(--ink);overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .rbar,.rfoot{position:absolute;left:0;right:0;z-index:6;display:flex;align-items:center;gap:6px;padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px));background:color-mix(in srgb,var(--sheet) 92%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:opacity .22s ease,transform .22s ease}
 .rbar{top:0;padding-top:calc(8px + env(safe-area-inset-top,0px));padding-bottom:8px;border-bottom:1px solid var(--line)}
 .reader:not(.chrome) .rbar{opacity:0;transform:translateY(-100%);pointer-events:none}
@@ -511,53 +511,30 @@ function homeView() {
   if (!S.ready) return `<div class="note">Cargando tu bitácora…</div>`;
   if (S.dbErr) return `<div class="err">${esc(S.dbErr)}</div>`;
 
-  /* Para hoy */
-  const ord = { repaso: 0, reforzar: 1, leida: 2, nueva: 3 };
-  const due = S.caps.map(c => ({ c, e: estado(c) })).filter(x => x.e in ord)
-    .sort((a, b) => ord[a.e] - ord[b.e] || (a.c.nextReview || a.c.createdAt) - (b.c.nextReview || b.c.createdAt));
-  let hoy;
-  const hs = cursos().length ? sp([6, 4], [6, 3], [2, 3]) : sp([12, 3], [6, 3], [2, 3]);
-  if (!S.caps.length) {
-    hoy = `<div class="tile t-hoy" style="cursor:default;${hs}">
+  if (!S.caps.length) return `<section class="bento"><div class="tile t-hoy" style="cursor:default;${sp([12, 3], [6, 3], [2, 3])}">
       <span class="k">${ic('sun')} Empieza aquí</span>
       <div><h2>Dile a Claude qué quieres aprender</h2><div class="sub">En el chat, cuéntale el tema o compártele un libro. Claude prepara tus cursos y aparecerán aquí.</div></div>
-      <div class="foot"></div></div>`;
-  } else if (due.length) {
-    const x = due[0]; const nueva = x.e === 'nueva';
-    const why = { repaso: 'Toca repasar', reforzar: 'Conviene reforzar', leida: 'Falta tu evaluación', nueva: `${readMin(x.c.texto)} min de lectura` }[x.e];
-    hoy = `<button class="tile t-hoy" data-act="${nueva ? 'open' : 'quiz'}" data-id="${esc(x.c.id)}" style="${hs}">
-      <span class="k">${ic('sun')} Para hoy</span>
-      <div><h2>${esc(x.c.titulo)}</h2><div class="sub">${esc(cursoDe(x.c))} · ${why}</div></div>
-      <div class="foot"><span class="go">${nueva ? 'Leer' : 'Evaluarme'} ${ic('play')}</span>${due.length > 1 ? `<span class="more">y ${due.length - 1} más</span>` : ''}</div></button>`;
-  } else {
-    const prox = S.caps.map(c => c.nextReview).filter(Boolean).sort((a, b) => a - b)[0];
-    hoy = `<div class="tile t-hoy" style="cursor:default;${hs}">
-      <span class="k">${ic('check')} Para hoy</span>
-      <div><h2>Todo al día</h2><div class="sub">${prox ? 'Tu siguiente repaso es el ' + fmtDate(prox) + '.' : 'Cuando quieras aprender algo nuevo, díselo a Claude.'}</div></div>
-      <div class="foot"></div></div>`;
-  }
+      <div class="foot"></div></div></section>`;
 
-  /* Cursos, empaquetados para que cada fila cierre sin huecos */
-  const items = cursos().map(k => ({ k }));
-  const html = (it, st) => cursoTile(it.k, st);
+  /* Solo los cursos. Los terminados (todo leído y evaluado, sin repasos pendientes) van al final. */
+  const pend = k => k.caps.some(c => ['nueva', 'leida', 'repaso'].includes(estado(c)));
+  const ks = cursos(); const items = [...ks.filter(pend), ...ks.filter(k => !pend(k))].map(k => ({ k }));
   const d = [], t = [], m = [];
-  // Escritorio: dos al lado de "Para hoy" (3×4), luego filas de 3 (4×3), par (7/5) o uno a lo ancho (12×2)
-  const side = items.slice(0, 2), rest = items.slice(2);
-  if (side.length === 2) { d.push([3, 4], [3, 4]); } else if (side.length === 1) d.push([6, 4]);
-  let n = rest.length, flip = false;
+  // Escritorio: primera fila con dos grandes (6×4), luego filas de 3 (4×3), par (7/5) o uno a lo ancho (12×3)
+  let n = items.length, flip = false;
+  if (n === 1) { d.push([12, 4]); n = 0; } else { d.push([6, 4], [6, 4]); n -= 2; }
   while (n > 0) {
     if (n === 4 || n === 2) { d.push(flip ? [5, 3] : [7, 3], flip ? [7, 3] : [5, 3]); flip = !flip; n -= 2; }
-    else if (n === 1) { d.push([12, 2]); n -= 1; }
+    else if (n === 1) { d.push([12, 3]); n -= 1; }
     else { d.push([4, 3], [4, 3], [4, 3]); n -= 3; }
   }
-  // Tableta y móvil: en pares; el último sin pareja va a lo ancho
+  // Tableta y celular: en pares; el último sin pareja va a lo ancho
   items.forEach((it, i) => {
     const solo = i === items.length - 1 && items.length % 2 === 1;
-    t.push(solo ? [6, 2] : [3, 3]);
+    t.push(solo ? [6, 3] : [3, 3]);
     m.push(solo ? [2, 2] : [1, 2]);
   });
-  const tiles = items.map((it, i) => html(it, sp(d[i], t[i], m[i]))).join('');
-  return `<section class="bento" aria-label="Tus cursos">${hoy}${tiles}</section>`;
+  return `<section class="bento" aria-label="Tus cursos">${items.map((it, i) => cursoTile(it.k, sp(d[i], t[i], m[i]))).join('')}</section>`;
 }
 
 function capView() {
