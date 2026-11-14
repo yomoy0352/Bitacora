@@ -1286,6 +1286,434 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "7",
+   "titulo": "Hallazgos: redactar y clasificar no conformidades",
+   "texto": "## Qué es un hallazgo\nUn **hallazgo de auditoría** es el resultado de **evaluar la evidencia** recopilada **frente a los criterios** de auditoría. Puede indicar:\n\n- **Conformidad**: la evidencia demuestra que se cumple el criterio.\n- **No conformidad**: la evidencia demuestra que **no** se cumple un requisito.\n- **Oportunidad de mejora**: cuando los objetivos de la auditoría lo prevén, una posibilidad de mejorar aunque el requisito se cumpla.\n\nMuchas organizaciones usan además la categoría **observación** para situaciones que todavía no son no conformidades pero podrían llegar a serlo, o donde la evidencia no es suficiente para concluir. ISO 19011 no la define con ese nombre, pero es compatible siempre que su significado esté claro en el programa.\n\nUn hallazgo no es una opinión: siempre tiene **criterio** y **evidencia**.\n\n## Las tres partes de una no conformidad\nUna no conformidad bien redactada tiene tres elementos:\n\n1. **Requisito** (criterio): qué se debe cumplir, citando la fuente (cláusula de la norma, procedimiento, especificación, contrato, ley).\n2. **Evidencia**: qué se observó, con datos concretos y verificables.\n3. **Declaración** de la no conformidad: en qué consiste el incumplimiento.\n\n### Ejemplo mal redactado\n\"El control de calibración es deficiente.\"\n\nProblemas: no dice qué requisito, no da evidencia, es una opinión, y el auditado no sabe qué corregir.\n\n### El mismo ejemplo bien redactado\n**Requisito**: ISO 22000:2018, 8.7, establece que, cuando un equipo de seguimiento o medición se encuentra no conforme con los requisitos, la organización debe evaluar la validez de los resultados de medición previos. El procedimiento PR-MET-02, sección 6.3, establece lo mismo.\n\n**Evidencia**: el certificado de calibración del 12 de septiembre de 2026 del termómetro TT-301 (retorno del CIP del pasteurizador) muestra un error de +3.8 °C en 80 °C, fuera de la tolerancia de ± 1.0 °C. No se encontró registro de la evaluación de los ciclos de CIP realizados desde la calibración anterior (marzo de 2026), durante los cuales el límite crítico de 75 °C pudo no haberse cumplido.\n\n**Declaración**: no se evaluó la validez de los resultados previos de un equipo de medición de un PCC encontrado fuera de tolerancia.\n\n### Características de una buena redacción\n- **Factual** y **verificable**: otro auditor podría revisar lo mismo.\n- **Específica**: identifica documentos, fechas, equipos, lotes (sin necesidad de nombrar personas).\n- **Concisa**: sin adjetivos ni juicios (\"grave descuido\", \"falta total de compromiso\").\n- **Comprensible** para el auditado, que debe poder actuar.\n- Se refiere al **sistema**, no a la culpa individual.\n- Describe el **problema**, no la solución (no \"debe comprar un nuevo termómetro\").\n\n## Clasificación\nClasificar las no conformidades ayuda a priorizar. ISO 19011 indica que pueden **graduarse** según el contexto y los riesgos, y que la clasificación debería definirse en el programa y ser **conocida** por el auditado. Una clasificación común en sistemas de gestión:\n\n### No conformidad mayor\nUna no conformidad que **afecta la capacidad** del sistema de gestión de lograr sus resultados previstos. Ejemplos típicos:\n\n- **Ausencia total** o falla sistémica de un requisito (no hay análisis de peligros para una línea, no se hacen auditorías internas).\n- Varias no conformidades menores relacionadas con el mismo requisito o proceso, que juntas indican una **falla sistémica**.\n- Una falla que puede llevar a la liberación de **producto no inocuo** o no conforme con requisitos legales.\n- Un PCC sin monitorear o con desviaciones no tratadas.\n\n### No conformidad menor\nUna no conformidad que **no afecta** la capacidad del sistema de lograr sus resultados: un fallo **aislado** o parcial en un sistema que en general funciona. Ejemplos: un registro de capacitación faltante de una persona, un documento con una versión desactualizada en un punto de uso, una verificación intermedia omitida una vez.\n\n### Clasificación en esquemas de inocuidad\nLos esquemas GFSI tienen su propia clasificación, que se aplica en sus auditorías de certificación y conviene conocer porque muchas organizaciones la adoptan para sus auditorías internas:\n\n- **Crítica**: impacto directo en la **inocuidad** o la **legalidad** del producto, o falla grave del sistema, o falsificación de registros. Suele implicar la **suspensión** del certificado.\n- **Mayor**: falla sustancial en cumplir un requisito, sin impacto directo inmediato en la inocuidad.\n- **Menor**: no afecta la capacidad del sistema de lograr productos inocuos.\n\nLos esquemas fijan **plazos** para presentar y cerrar las acciones (típicamente del orden de cuatro semanas para las mayores, con verificación por el organismo de certificación). Consulta siempre las reglas vigentes de cada esquema, porque se actualizan.\n\n### Criterios útiles para clasificar\n- **Impacto** potencial en la inocuidad, la calidad, el cliente y el cumplimiento legal.\n- **Extensión**: ¿un caso aislado o un patrón?\n- **Recurrencia**: ¿ya se había encontrado antes? Una no conformidad menor que se repite después de una acción correctiva puede escalar a mayor.\n- **Detección**: ¿el sistema la habría detectado por sí mismo?\n\n## Evaluación de la evidencia: ¿es suficiente?\nAntes de escribir una no conformidad:\n\n- ¿La evidencia es **suficiente**? Un solo caso puede ser una excepción; si el requisito es crítico, un solo caso puede bastar.\n- ¿La evidencia es **corroborada**?\n- ¿El criterio es **realmente** un requisito, o es una preferencia del auditor? Un auditor no puede levantar una no conformidad por algo que \"él haría distinto\" si no hay un requisito.\n- ¿Se dio al auditado la oportunidad de presentar **evidencia adicional**?\n\n## Oportunidades de mejora\nCuando están dentro de los objetivos, las oportunidades de mejora agregan valor. Buenas prácticas:\n\n- Basarlas en evidencia (no en gustos personales).\n- Redactarlas como **observaciones del potencial**, no como instrucciones: \"Los datos de las cartas de control del laboratorio no se analizan en la revisión por la dirección; su análisis podría anticipar derivas de los métodos\" en lugar de \"Implementar análisis de tendencias\".\n- No disfrazar una no conformidad como oportunidad de mejora para \"no afectar\" al auditado.\n\n## Conformidades y puntos fuertes\nUna auditoría también identifica lo que funciona bien. Registrar **puntos fuertes** (prácticas destacadas) es parte de la **presentación imparcial**, motiva al auditado y permite replicar buenas prácticas en otras áreas.\n\n## Revisar los hallazgos en equipo\nAntes de la reunión de cierre, el equipo auditor se reúne para:\n\n- Revisar todos los hallazgos y su evidencia.\n- **Consolidar** hallazgos relacionados (varios casos del mismo problema en una no conformidad con varios ejemplos).\n- Acordar la **clasificación**.\n- Llegar a las **conclusiones** de la auditoría.\n\n## Conclusiones de la auditoría\nLas **conclusiones** son el resultado de una auditoría, después de considerar los objetivos y todos los hallazgos. Pueden abordar:\n\n- El grado de **conformidad** con los criterios y la **robustez** del sistema, incluida su eficacia para lograr los resultados previstos.\n- La **implementación eficaz**, el mantenimiento y la mejora del sistema.\n- El logro de los **objetivos** de la auditoría.\n- **Hallazgos similares** en distintas áreas que indiquen tendencias.\n\nPor ejemplo: \"El sistema de gestión de la inocuidad está implementado y es en general eficaz. Sin embargo, el control de los equipos de medición de los PCC presenta una debilidad sistémica (dos no conformidades relacionadas), que podría afectar la validez del monitoreo.\"\n\n## Ideas que debes llevarte\n- Un **hallazgo** compara evidencia con criterios: conformidad, no conformidad u oportunidad de mejora.\n- Una no conformidad tiene **requisito**, **evidencia** y **declaración**; factual, específica, concisa, sobre el sistema, sin soluciones.\n- **Mayor**: afecta la capacidad del sistema o es sistémica; **menor**: aislada. Los esquemas GFSI usan además **crítica**, con consecuencias sobre el certificado y plazos definidos.\n- Clasifica por **impacto**, **extensión**, **recurrencia** y **detección**; define la clasificación en el programa.\n- Verifica que la evidencia sea **suficiente** y que el criterio sea un **requisito real**.\n- Registra también **puntos fuertes**; consolida y acuerda en equipo; redacta **conclusiones** sobre conformidad y eficacia.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Hallazgo",
+     "enunciado": "¿Qué es un hallazgo de auditoría?",
+     "opciones": [
+      "El resultado de evaluar la evidencia frente a los criterios",
+      "La opinión del auditor sobre el auditado",
+      "Una acción correctiva",
+      "Una recomendación del auditor"
+     ],
+     "correcta": 0,
+     "explicacion": "Puede indicar conformidad, no conformidad u oportunidad de mejora.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Partes",
+     "enunciado": "¿Cuáles son los tres elementos de una no conformidad bien redactada?",
+     "opciones": [
+      "Requisito, evidencia y declaración de la no conformidad",
+      "Causa, efecto y solución",
+      "Responsable, fecha y sanción",
+      "Proceso, persona y culpa"
+     ],
+     "correcta": 0,
+     "explicacion": "El auditado debe entender qué incumplió y con qué evidencia.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Redacción",
+     "enunciado": "¿Cuál es el principal problema de la no conformidad 'el control de calibración es deficiente'?",
+     "opciones": [
+      "No cita requisito ni evidencia; es una opinión",
+      "Es demasiado larga",
+      "Nombra a una persona",
+      "Propone una solución"
+     ],
+     "correcta": 0,
+     "explicacion": "El auditado no sabe qué corregir.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Redacción",
+     "enunciado": "¿Qué debe evitarse en la redacción de una no conformidad?",
+     "opciones": [
+      "Proponer la solución, por ejemplo 'debe comprar un nuevo termómetro'",
+      "Citar el requisito",
+      "Identificar el documento revisado",
+      "Incluir fechas"
+     ],
+     "correcta": 0,
+     "explicacion": "La no conformidad describe el problema; la organización decide la solución.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mayor",
+     "enunciado": "No existe análisis de peligros para una línea nueva de producción incluida en el alcance. ¿Cómo se clasifica típicamente?",
+     "opciones": [
+      "No conformidad mayor (ausencia de un requisito fundamental)",
+      "No conformidad menor",
+      "Oportunidad de mejora",
+      "Observación"
+     ],
+     "correcta": 0,
+     "explicacion": "Afecta la capacidad del sistema de lograr sus resultados.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Menor",
+     "enunciado": "Falta el registro de capacitación de una persona en un procedimiento, mientras el resto del personal está capacitado. ¿Cómo se clasifica típicamente?",
+     "opciones": [
+      "No conformidad menor",
+      "No conformidad crítica",
+      "No conformidad mayor",
+      "No es un hallazgo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un fallo aislado en un sistema que en general funciona.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Escalamiento",
+     "enunciado": "Una no conformidad menor se repite después de la acción correctiva de la auditoría anterior. ¿Qué puede ocurrir?",
+     "opciones": [
+      "Puede escalar a mayor por recurrencia, porque indica una acción correctiva ineficaz",
+      "Se elimina",
+      "Se convierte en oportunidad de mejora",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "La recurrencia es un criterio de clasificación.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Crítica",
+     "enunciado": "En esquemas GFSI, ¿qué caracteriza típicamente a una no conformidad crítica?",
+     "opciones": [
+      "Impacto directo en la inocuidad o legalidad del producto, falla grave o falsificación de registros, con posible suspensión del certificado",
+      "Un error de formato",
+      "Un registro sin firma aislado",
+      "Una oportunidad de mejora"
+     ],
+     "correcta": 0,
+     "explicacion": "Cada esquema define sus reglas y plazos vigentes.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Criterio real",
+     "enunciado": "Un auditor quiere levantar una no conformidad porque 'él usaría otro formato de registro', aunque el formato actual cumple los requisitos. ¿Es correcto?",
+     "opciones": [
+      "No, solo se levantan no conformidades contra requisitos reales",
+      "Sí, el auditor decide",
+      "Sí, si es más bonito",
+      "Solo en auditorías internas"
+     ],
+     "correcta": 0,
+     "explicacion": "Las preferencias personales no son criterios.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Oportunidad de mejora",
+     "enunciado": "¿Qué práctica es incorrecta con las oportunidades de mejora?",
+     "opciones": [
+      "Disfrazar una no conformidad como oportunidad de mejora para no afectar al auditado",
+      "Basarlas en evidencia",
+      "Redactarlas como potencial de mejora",
+      "Incluirlas cuando están en los objetivos"
+     ],
+     "correcta": 0,
+     "explicacion": "Viola la presentación imparcial.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Consolidación",
+     "enunciado": "Se encuentran tres registros de CIP incompletos en tanques distintos. ¿Qué hace el equipo auditor?",
+     "opciones": [
+      "Consolidarlos en una no conformidad con varios ejemplos, valorando si indica un problema sistémico",
+      "Escribir tres no conformidades separadas sin relación",
+      "Ignorarlos",
+      "Escribir una oportunidad de mejora"
+     ],
+     "correcta": 0,
+     "explicacion": "La consolidación muestra la extensión del problema.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Conclusiones",
+     "enunciado": "¿Qué abordan las conclusiones de la auditoría?",
+     "opciones": [
+      "El grado de conformidad, la eficacia del sistema, el logro de los objetivos y las tendencias",
+      "Solo el número de no conformidades",
+      "Las sanciones al personal",
+      "El presupuesto del área"
+     ],
+     "correcta": 0,
+     "explicacion": "Son el resultado final considerando todos los hallazgos.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Redacción",
+     "enunciado": "Redacta una no conformidad completa (requisito, evidencia, declaración) a partir de esta situación: en la auditoría encontraste que el lote 2610-12 de sanitizante se liberó con 15.48 % de activo, cuando la regla de decisión del laboratorio establece un límite de aceptación de 15.32 % con banda de guarda.",
+     "respuesta_modelo": "Requisito: ISO/IEC 17025:2017, 7.8.6, y el procedimiento de liberación PR-LAB-05, sección 5.2, establecen que la declaración de conformidad se realiza aplicando la regla de decisión documentada; para el activo del sanitizante sin enjuague, la regla establece un límite de aceptación de 15.32 % (banda de guarda w = U). Evidencia: el registro de liberación del lote 2610-12 del 14 de octubre de 2026 muestra un resultado de 15.48 % y la decisión 'conforme', firmada por el analista autorizado; no se encontró registro de evaluación de desviación ni de autorización especial. Declaración: se declaró conforme y se liberó un lote con resultado fuera de la zona de aceptación definida por la regla de decisión.",
+     "puntos_clave": [
+      "Requisito con fuente",
+      "Evidencia concreta y verificable",
+      "Declaración clara del incumplimiento",
+      "Sin juicios ni soluciones"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clasificación",
+     "enunciado": "Clasifica y justifica: a) un procedimiento con versión obsoleta en el área de envasado; b) el PCC de concentración sin registros de monitoreo durante una semana; c) registros de temperatura de CIP llenados con anticipación para todo el mes.",
+     "respuesta_modelo": "a) Menor, si es un caso aislado y la diferencia de versión no afecta un control crítico; si la versión obsoleta omite un control de inocuidad, podría ser mayor. b) Mayor (o crítica en esquemas GFSI si hubo producto liberado sin evidencia de control), porque un PCC sin monitoreo compromete la capacidad del sistema de asegurar la inocuidad. c) Crítica en esquemas GFSI por falsificación de registros, y mayor en cualquier sistema: destruye la confianza en el monitoreo y puede ocultar desviaciones reales; además requiere evaluar el producto afectado.",
+     "puntos_clave": [
+      "Clasificación de a con matiz",
+      "Clasificación de b como mayor o crítica",
+      "Clasificación de c como crítica por integridad",
+      "Justificación por impacto"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Conclusiones",
+     "enunciado": "Una auditoría encontró: una no conformidad mayor por falta de evaluación de resultados previos de equipos de PCC fuera de tolerancia, dos menores en capacitación, y un punto fuerte en la gestión de proveedores. Redacta las conclusiones.",
+     "respuesta_modelo": "El sistema de gestión de la inocuidad está implementado y, en general, es eficaz para lograr sus resultados previstos; la gestión de proveedores destaca por su verificación sistemática de COA y gestión de cambios. Sin embargo, se identificó una debilidad sistémica en el control de los equipos de medición asociados a PCC, que afecta la confianza en la validez del monitoreo y requiere atención prioritaria. Las no conformidades menores en capacitación son aisladas y no indican una falla del proceso. Se cumplieron los objetivos de la auditoría, salvo [si aplica] la observación del CIP, que no estaba operando.",
+     "puntos_clave": [
+      "Conclusión general sobre conformidad y eficacia",
+      "Mención de la debilidad sistémica prioritaria",
+      "Reconocimiento de puntos fuertes",
+      "Logro de objetivos y limitaciones"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "titulo": "Cierre, informe y seguimiento",
+   "texto": "## La reunión de cierre\nLa **reunión de cierre**, presidida por el auditor líder, presenta los hallazgos y conclusiones de la auditoría. Participan la dirección del auditado y, cuando corresponde, los responsables de los procesos auditados. Su propósito es que el auditado **entienda y reconozca** los hallazgos.\n\n### Contenido típico\n- **Agradecimiento** por la cooperación.\n- Recordatorio de que la evidencia se basa en **muestras** de la información disponible, y que puede no ser totalmente representativa.\n- Los **hallazgos**, empezando por los puntos fuertes y luego las no conformidades, con su clasificación.\n- Las **conclusiones** de la auditoría.\n- El **método** de informe y los plazos.\n- Las **consecuencias** posibles de no tratar adecuadamente las no conformidades (por ejemplo, en una auditoría de proveedor: estatus de aprobación; en certificación: estado del certificado).\n- Los **plazos** para presentar las correcciones y acciones correctivas, y cómo se verificarán.\n- Las actividades **posteriores** a la auditoría.\n\n### Desacuerdos\nSi hay **opiniones divergentes** sobre los hallazgos o conclusiones, se discuten y, si es posible, se resuelven. Si no se resuelven, se **registran** en el informe. El auditor líder escucha con apertura; si se presenta evidencia nueva válida, la evalúa. Si no, mantiene el hallazgo con respeto.\n\n### Cómo hacerla bien\n- **Sin sorpresas**: los hallazgos ya se comunicaron durante la auditoría.\n- **Lenguaje claro y neutral**, centrado en el sistema, no en las personas.\n- Leer las no conformidades tal como quedarán en el informe.\n- No dar **consultoría** sobre cómo corregir, aunque se puede aclarar qué se espera (corrección, análisis de causa, acción correctiva, evidencia).\n- En auditorías internas, la reunión de cierre es una oportunidad de **aprendizaje** para el auditado: mostrar el porqué de cada hallazgo.\n\n## El informe de auditoría\nEl auditor líder es responsable de preparar el informe y comunicarlo. Debería proporcionar un registro **completo, exacto, conciso y claro** de la auditoría. ISO 19011 sugiere incluir:\n\n- **Objetivos** de la auditoría.\n- **Alcance**: organizaciones, funciones, procesos, ubicaciones físicas y virtuales, periodo.\n- Identificación del **cliente** de la auditoría.\n- Identificación del **equipo auditor** y de los participantes del auditado.\n- **Fechas** y **lugares** (incluido si se usaron métodos remotos).\n- **Criterios** de auditoría.\n- **Hallazgos** y la evidencia relacionada.\n- **Conclusiones**.\n- Una declaración sobre el grado en que se cumplieron los **criterios**.\n\nY, cuando corresponda:\n\n- El **plan** de auditoría y el programa.\n- Un resumen del **proceso**, incluidos los **obstáculos** que pudieron afectar la confiabilidad de las conclusiones.\n- Confirmación de que se lograron los objetivos dentro del alcance según el plan.\n- Áreas **no cubiertas** dentro del alcance, incluida la disponibilidad de evidencia y recursos.\n- **Puntos fuertes** y oportunidades de mejora.\n- **Opiniones divergentes** no resueltas.\n- Una declaración sobre la **naturaleza confidencial** del contenido.\n- Las acciones de **seguimiento** acordadas.\n\n### Plazo y distribución\nEl informe se emite en el plazo acordado (en auditorías internas, conviene que sea pronto, por ejemplo en una semana) y se distribuye a quienes defina el programa. Si hay retrasos, se comunican al auditado y al cliente de la auditoría.\n\n## Finalizar la auditoría\nLa auditoría termina cuando se completan todas las actividades planificadas o se acuerda con el cliente (por ejemplo, si surge una situación inesperada que impide completar el plan). La información documentada de la auditoría se conserva o se elimina según el programa y los acuerdos, respetando la confidencialidad.\n\n## Seguimiento: de la no conformidad a la acción eficaz\n### Lo que hace el auditado\nAnte cada no conformidad, el auditado debería:\n\n1. **Corrección**: eliminar la no conformidad detectada (por ejemplo, evaluar los ciclos de CIP afectados y el producto).\n2. **Análisis de causa raíz**: entender por qué ocurrió (el curso de causa raíz y CAPA profundiza en esto).\n3. **Acción correctiva**: eliminar la causa para evitar que se repita.\n4. **Evidencia** de implementación.\n5. **Verificación de eficacia** después de un tiempo razonable.\n\nLos plazos dependen de la clasificación y de las reglas del programa o del esquema.\n\n### Lo que hace el auditor (o el gestor del programa)\nEl seguimiento de las acciones **no es parte de la auditoría** en sí, salvo que se especifique en sus objetivos o en el programa. Cuando se hace, el auditor:\n\n- **Revisa** el plan de acción: ¿la corrección atiende el problema inmediato?, ¿el análisis de causa es razonable o es superficial (\"error humano\", \"falta de capacitación\")?, ¿la acción correctiva ataca la causa identificada?\n- **Verifica** la implementación con evidencia (documental, o con una visita si es necesario).\n- **Verifica la eficacia**: que el problema no se repita, con datos de un periodo adecuado.\n\n### Señales de un análisis de causa débil\n- La causa es **\"error humano\"** sin preguntar por qué el sistema permitió el error.\n- La acción correctiva es solo **\"capacitar\"** o **\"recordar\"** al personal.\n- La acción correctiva es igual a la **corrección**.\n- No hay **evidencia** de que se consideraron otras áreas con el mismo riesgo.\n- La fecha de cierre es el **mismo día** de la auditoría.\n\nUn auditor puede **rechazar** un plan de acción que no atiende la causa y pedir que se replantee.\n\n## Indicadores del programa a partir de los informes\nLos informes alimentan el seguimiento del programa:\n\n- Número y clasificación de hallazgos por proceso (¿dónde se concentran?).\n- Hallazgos **repetidos** (indicador de acciones correctivas ineficaces).\n- Tiempo de cierre de acciones.\n- Comparación con hallazgos **externos** (¿la auditoría interna detecta lo mismo que el organismo de certificación?).\n\n## Ideas que debes llevarte\n- La **reunión de cierre** presenta hallazgos (sin sorpresas), conclusiones, plazos y consecuencias; registra opiniones divergentes.\n- El **informe** es completo, exacto, conciso y claro: objetivos, alcance (incluidas ubicaciones virtuales y métodos remotos), criterios, hallazgos con evidencia, conclusiones, obstáculos y áreas no cubiertas.\n- El auditado aplica **corrección**, **análisis de causa**, **acción correctiva** y **verificación de eficacia**.\n- El seguimiento revisa la calidad del **análisis de causa**: \"error humano\" y \"capacitar\" suelen ser señales de un análisis débil.\n- Los informes alimentan **indicadores** del programa: concentración, repetición, tiempos y comparación con auditorías externas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Cierre",
+     "enunciado": "¿Cuál es el propósito principal de la reunión de cierre?",
+     "opciones": [
+      "Que el auditado entienda y reconozca los hallazgos y conclusiones",
+      "Sancionar a los responsables",
+      "Proponer soluciones a cada problema",
+      "Firmar el contrato de la siguiente auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "También se comunican plazos, consecuencias y seguimiento.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sin sorpresas",
+     "enunciado": "¿Por qué no deberían presentarse hallazgos nuevos por primera vez en la reunión de cierre?",
+     "opciones": [
+      "Porque el auditado debe tener la oportunidad de presentar evidencia adicional durante la auditoría",
+      "Porque la norma lo prohíbe",
+      "Porque alarga la reunión",
+      "Porque no hay tiempo de escribirlos"
+     ],
+     "correcta": 0,
+     "explicacion": "Los posibles hallazgos se comunican durante la auditoría.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desacuerdos",
+     "enunciado": "El auditado no está de acuerdo con un hallazgo y no presenta evidencia nueva. ¿Qué hace el auditor líder?",
+     "opciones": [
+      "Mantiene el hallazgo con respeto y registra la opinión divergente",
+      "Elimina el hallazgo",
+      "Lo cambia a oportunidad de mejora",
+      "Suspende la reunión"
+     ],
+     "correcta": 0,
+     "explicacion": "Si hay evidencia nueva válida, la evalúa.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Informe",
+     "enunciado": "¿Cuál de estos elementos debería incluir el informe de auditoría?",
+     "opciones": [
+      "Objetivos, alcance, criterios, hallazgos con evidencia y conclusiones",
+      "Las acciones correctivas ya diseñadas por el auditor",
+      "La evaluación de desempeño de cada empleado",
+      "El presupuesto del auditado"
+     ],
+     "correcta": 0,
+     "explicacion": "También obstáculos, áreas no cubiertas, puntos fuertes y opiniones divergentes cuando corresponde.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Informe",
+     "enunciado": "¿Debe el informe indicar que parte de la auditoría se hizo por métodos remotos?",
+     "opciones": [
+      "Sí, junto con las ubicaciones físicas y virtuales auditadas y cualquier limitación",
+      "No, es irrelevante",
+      "Solo si el auditado lo pide",
+      "Solo en auditorías de tercera parte"
+     ],
+     "correcta": 0,
+     "explicacion": "Afecta la interpretación de las conclusiones.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Seguimiento",
+     "enunciado": "¿Es el seguimiento de las acciones correctivas parte de la auditoría?",
+     "opciones": [
+      "No, salvo que se especifique en los objetivos de la auditoría o en el programa",
+      "Sí, siempre",
+      "Nunca",
+      "Solo en auditorías remotas"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 19011 lo trata como actividad posterior.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Secuencia",
+     "enunciado": "¿Cuál es la secuencia correcta de respuesta del auditado a una no conformidad?",
+     "opciones": [
+      "Corrección, análisis de causa, acción correctiva, evidencia, verificación de eficacia",
+      "Acción correctiva, corrección, cierre",
+      "Capacitación y cierre",
+      "Cierre inmediato"
+     ],
+     "correcta": 0,
+     "explicacion": "La corrección atiende lo detectado; la acción correctiva, la causa.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis débil",
+     "enunciado": "¿Cuál de estas es una señal de un análisis de causa débil?",
+     "opciones": [
+      "La causa declarada es 'error humano' sin preguntar por qué el sistema lo permitió",
+      "Se usaron los 5 porqués",
+      "Se revisaron otras áreas con el mismo riesgo",
+      "Se definió verificar la eficacia en tres meses"
+     ],
+     "correcta": 0,
+     "explicacion": "También 'capacitar' como única acción o cerrar el mismo día.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Rechazo",
+     "enunciado": "¿Puede el auditor rechazar un plan de acción?",
+     "opciones": [
+      "Sí, si no atiende la causa y pedir que se replantee",
+      "No, el auditado decide todo",
+      "Solo el organismo de acreditación",
+      "Solo si es una no conformidad crítica"
+     ],
+     "correcta": 0,
+     "explicacion": "La revisión del plan es parte del seguimiento.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "¿Cómo se verifica la eficacia de una acción correctiva?",
+     "opciones": [
+      "Con datos de un periodo adecuado que muestren que el problema no se repite",
+      "Con la firma del responsable",
+      "Con la fecha de implementación",
+      "Con el informe de auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Implementar no es lo mismo que ser eficaz.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Indicadores",
+     "enunciado": "¿Qué indica un número alto de hallazgos repetidos en el programa de auditoría?",
+     "opciones": [
+      "Que las acciones correctivas son ineficaces",
+      "Que los auditores son muy buenos",
+      "Que el sistema es maduro",
+      "Que hay que auditar menos"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un indicador clave del programa.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cierre",
+     "enunciado": "¿Qué se debe evitar en la reunión de cierre?",
+     "opciones": [
+      "Dar consultoría sobre cómo corregir cada hallazgo",
+      "Agradecer la cooperación",
+      "Presentar puntos fuertes",
+      "Explicar los plazos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se puede aclarar qué se espera, sin diseñar soluciones.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Revisión de plan",
+     "enunciado": "Para la no conformidad 'no se evaluaron los resultados previos de un termómetro de PCC fuera de tolerancia', el auditado propone: corrección: 'se cambió el termómetro'; causa: 'descuido del técnico'; acción: 'se capacitó al técnico'. Evalúa el plan.",
+     "respuesta_modelo": "El plan es débil. La corrección es incompleta: cambiar el termómetro no atiende el problema detectado, que es la falta de evaluación de los ciclos de CIP y del producto afectado desde la última calibración; esa evaluación debe hacerse. La causa 'descuido del técnico' es superficial: hay que preguntar por qué el sistema no aseguró la evaluación (¿el procedimiento no lo indica claramente?, ¿quién recibe los certificados?, ¿hay un disparador automático cuando un equipo sale fuera de tolerancia?, ¿se aplica a otros equipos?). La acción 'capacitar' no elimina una causa sistémica. Pediría replantear con un análisis de causa real, acciones como un flujo obligatorio de evaluación de impacto al recibir certificados fuera de tolerancia, revisión de otros equipos de PCC, y verificación de eficacia en las siguientes calibraciones.",
+     "puntos_clave": [
+      "Corrección incompleta",
+      "Causa superficial",
+      "Acción no ataca la causa",
+      "Propuesta de replanteamiento con verificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Informe",
+     "enunciado": "Enumera los elementos del informe de una auditoría combinada (presencial y remota) a un proveedor.",
+     "respuesta_modelo": "Objetivos; alcance (organización, procesos, sitios físicos y ubicaciones virtuales, periodo de registros); cliente de la auditoría; equipo auditor y participantes del proveedor; fechas y lugares, indicando qué partes se auditaron a distancia y con qué métodos; criterios (especificaciones, contrato, normas, requisitos legales); hallazgos con evidencia (no conformidades clasificadas, puntos fuertes, oportunidades de mejora si están en los objetivos); conclusiones y grado de cumplimiento de criterios; obstáculos y limitaciones (por ejemplo, áreas que no se pudieron observar por video); áreas no cubiertas; opiniones divergentes; seguimiento acordado y plazos; declaración de confidencialidad; consecuencias para el estatus de aprobación del proveedor.",
+     "puntos_clave": [
+      "Elementos básicos del informe",
+      "Métodos remotos y ubicaciones virtuales",
+      "Limitaciones y áreas no cubiertas",
+      "Seguimiento y consecuencias"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cierre",
+     "enunciado": "Escribe el guion breve de una reunión de cierre de una auditoría interna con dos no conformidades y un punto fuerte.",
+     "respuesta_modelo": "1) Agradecer la disponibilidad y cooperación del equipo. 2) Recordar objetivos, alcance y que la auditoría se basó en muestras. 3) Presentar el punto fuerte: por ejemplo, la verificación sistemática de COA de proveedores con análisis de tendencias. 4) Presentar las dos no conformidades leyendo requisito, evidencia y declaración, y su clasificación, confirmando que se comentaron durante la auditoría. 5) Presentar las conclusiones generales. 6) Preguntar si hay dudas o desacuerdos y escuchar; registrar opiniones divergentes si las hay. 7) Explicar lo que se espera: corrección, análisis de causa, acción correctiva y plazo para presentar el plan (por ejemplo, dos semanas), y cómo se verificará. 8) Indicar cuándo se emitirá el informe. 9) Cerrar agradeciendo.",
+     "puntos_clave": [
+      "Agradecimiento y recordatorio de muestreo",
+      "Puntos fuertes y no conformidades leídas",
+      "Espacio para desacuerdos",
+      "Expectativas, plazos e informe"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
