@@ -2058,6 +2058,434 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "11",
+   "titulo": "Capacidad de proceso",
+   "texto": "## La pregunta del cliente\nUna gráfica de control responde \"¿el proceso es estable?\". Pero el cliente pregunta otra cosa: **¿el proceso produce dentro de mis especificaciones, y con qué margen?** Esa es la pregunta de la **capacidad de proceso**: comparar la variación natural del proceso con la tolerancia permitida.\n\nLos índices de capacidad (Cp, Cpk, Pp, Ppk) resumen esa comparación en un número. Son muy usados en requisitos de clientes, en la aprobación de procesos y en auditorías. También son muy **malinterpretados**.\n\n## Requisito previo: estabilidad\nLa capacidad solo tiene sentido para un proceso **en control estadístico**. Si el proceso tiene causas especiales, su comportamiento futuro no es predecible, y ningún índice calculado con datos pasados describe lo que hará. El orden correcto es:\n\n1. Verificar el **sistema de medición**.\n2. Llevar el proceso a **control estadístico** (gráfica de control).\n3. Verificar la **forma de la distribución** (normalidad u otra).\n4. Calcular la **capacidad**.\n\n## Variación natural del proceso\nSe define como el intervalo de **6σ** (± 3σ alrededor de la media), que en un proceso normal contiene el 99.73 % de los valores.\n\n## Índice Cp: capacidad potencial\nCp = (LSE − LIE) / (6σ)\n\nCompara el **ancho** de la especificación con el ancho de la variación del proceso, **sin considerar dónde está centrado**.\n\n- Cp = 1: la variación natural ocupa exactamente la tolerancia.\n- Cp = 1.33: la tolerancia es un 33 % más ancha que la variación natural.\n- Cp < 1: el proceso no cabe en la especificación aunque esté perfectamente centrado.\n\nCp es lo que el proceso **podría** lograr si estuviera centrado.\n\n## Índice Cpk: capacidad real considerando el centrado\nCpk = mín[(LSE − μ) / (3σ), (μ − LIE) / (3σ)]\n\nMide la distancia de la media al límite de especificación **más cercano**, en unidades de 3σ.\n\n- Si el proceso está centrado, Cpk = Cp.\n- Si está descentrado, Cpk < Cp.\n- Con una especificación unilateral (por ejemplo, solo un máximo de impureza), se usa solo el lado que existe: Cpk = (LSE − μ) / (3σ).\n\n## Capacidad (Cp, Cpk) frente a desempeño (Pp, Ppk)\nLas fórmulas son iguales, pero cambia la **σ** que se usa:\n\n- **Cp y Cpk** usan la σ de **corto plazo** o \"dentro\" (σ dentro), estimada con R̄/d₂ o MR̄/1.128 de la gráfica de control. Describen lo que el proceso es capaz de hacer cuando solo actúan causas comunes de corto plazo.\n- **Pp y Ppk** usan la σ **global** o de **largo plazo** (σ global), la desviación estándar de todos los datos. Describen lo que el proceso **realmente entregó** en el periodo, incluidos cambios entre subgrupos o lotes.\n\nSi el proceso está en control, ambos son parecidos. Si Ppk es mucho menor que Cpk, hay variación entre subgrupos o lotes (derivas, cambios de materia prima) que el proceso podría eliminar.\n\n> La nomenclatura varía entre autores y guías (por ejemplo, el manual de CEP de la AIAG y la norma ISO 22514 usan convenciones ligeramente distintas). Lo importante es saber qué σ se usó.\n\n## Ejemplo\nConcentración de un sanitizante, especificación de 14.5 a 15.5 %. Datos de 30 lotes en control:\n\n- Media: 15.10 %\n- σ dentro (MR̄/1.128): 0.089 %\n- σ global: 0.110 %\n\nCálculos:\n\n- Cp = 1.0 / (6 × 0.089) ≈ **1.87**\n- Cpk = mín[(15.5 − 15.10) / (3 × 0.089), (15.10 − 14.5) / (3 × 0.089)] = mín[1.50, 2.25] = **1.50**\n- Pp = 1.0 / (6 × 0.110) ≈ **1.52**\n- Ppk = mín[(0.40) / (0.33), (0.60) / (0.33)] = mín[1.21, 1.82] = **1.21**\n\nInterpretación:\n\n1. El proceso tiene **potencial** amplio (Cp ≈ 1.87).\n2. Está **descentrado** hacia el límite superior: Cpk (1.50) es menor que Cp. Centrarlo en 15.00 subiría Cpk a cerca de 1.87.\n3. Hay **variación entre lotes** adicional a la de corto plazo: Ppk (1.21) es bastante menor que Cpk (1.50). Hay algo que cambia de un periodo a otro (materias primas, estacionalidad, método) que vale la pena investigar.\n\n## ¿Qué valor es \"bueno\"?\nValores de referencia frecuentes en requisitos de clientes:\n\n| Cpk | Fracción fuera (un lado, proceso normal) | Uso típico |\n|---|---|---|\n| 1.00 | ≈ 1 350 ppm | Mínimo histórico; insuficiente para la mayoría de los clientes |\n| 1.33 | ≈ 32 ppm | Requisito común para procesos existentes |\n| 1.50 | ≈ 3.4 ppm | Objetivo frecuente; base del concepto \"seis sigma\" con su desplazamiento de 1.5σ |\n| 1.67 | ≈ 0.3 ppm | Requisito común para características críticas o procesos nuevos |\n| 2.00 | ≈ 0.001 ppm | Seis sigma estricto |\n\nRecuerda que las fracciones en partes por millón dependen de que la distribución sea normal **en las colas**, algo que pocas veces se puede verificar. Úsalas como orden de magnitud.\n\n## La incertidumbre de los índices\nLos índices de capacidad son **estimaciones**, y con pocos datos son muy inciertas. Una aproximación del error estándar de Cpk es:\n\nee(Cpk) ≈ √[1/(9n) + Cpk²/(2(n − 1))]\n\nCon Cpk = 1.33 calculado con **30 datos**, el límite inferior de confianza de 95 % (una cola) es aproximadamente **1.03**. Con **100 datos**, es aproximadamente **1.17**.\n\nLección: un Cpk de 1.33 con 30 datos **no demuestra** que el proceso cumple un requisito de Cpk ≥ 1.33. Si el cliente exige demostrarlo, hay que usar el **límite inferior de confianza** o pedir más datos, y acordar el criterio de antemano.\n\n## Datos no normales\nSi los datos no son normales (por ejemplo, impurezas acotadas en cero, con cola derecha), las fórmulas basadas en 6σ dan resultados engañosos. Opciones:\n\n1. **Investigar la causa** de la no normalidad (mezcla de poblaciones, causas especiales).\n2. Ajustar una **distribución adecuada** (lognormal, Weibull) y calcular la capacidad con sus percentiles: se sustituye el intervalo de 6σ por el intervalo entre los percentiles 0.135 % y 99.865 % de esa distribución.\n3. **Transformar** los datos (logaritmo, Box-Cox) junto con las especificaciones, y calcular los índices en la escala transformada.\n\nLos programas estadísticos ofrecen estas opciones; lo importante es no aplicar fórmulas normales a datos que claramente no lo son.\n\n## Capacidad con datos de atributos\nPara atributos, la capacidad se expresa directamente como la **proporción** de defectuosos (o defectos por millón de oportunidades), con su intervalo de confianza. No tiene sentido calcular un Cpk con datos de \"pasa / no pasa\".\n\n## Errores frecuentes\n- Calcular Cpk de un proceso **fuera de control**.\n- No decir **qué σ** se usó.\n- Calcular capacidad con **pocos datos** y reportarla sin incertidumbre.\n- Usar fórmulas normales con datos **no normales**.\n- Calcular capacidad con datos **seleccionados** (solo los lotes buenos, o solo después de un ajuste).\n- Ignorar la contribución del **sistema de medición** a la σ observada.\n- Mejorar el Cpk **ampliando la especificación** sin justificación técnica.\n\n## Cómo mejorar la capacidad\n1. **Centrar** el proceso: cierra la brecha entre Cpk y Cp. Suele ser lo más barato.\n2. Reducir la **variación entre lotes**: cierra la brecha entre Ppk y Cpk (controlar materias primas, estandarizar procedimientos, eliminar derivas).\n3. Reducir la **variación de corto plazo**: aumenta Cp (mejores equipos de dosificación, mejor mezclado, mejor método analítico si contribuye mucho).\n4. Revisar la **especificación**, solo si hay justificación técnica o del cliente.\n\n## Ideas que debes llevarte\n- La capacidad compara la variación del proceso con la **tolerancia**; solo vale para procesos **estables**.\n- **Cp**: potencial, sin centrado. **Cpk**: real, con centrado.\n- **Cp/Cpk** usan σ de corto plazo; **Pp/Ppk**, σ global. La diferencia revela variación entre periodos.\n- Referencias habituales: Cpk ≥ 1.33 (existentes), ≥ 1.67 (críticos o nuevos).\n- Los índices tienen mucha **incertidumbre** con pocos datos: reporta el límite inferior de confianza.\n- Con datos **no normales**, usa la distribución adecuada o transforma.\n- Mejora centrando, reduciendo variación entre lotes y reduciendo variación de corto plazo.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Requisito previo",
+     "enunciado": "¿Qué condición debe cumplirse antes de calcular la capacidad de un proceso?",
+     "opciones": [
+      "Que el proceso esté en control estadístico",
+      "Que no haya ningún lote fuera de especificación",
+      "Que la especificación sea simétrica",
+      "Que haya más de 1000 datos"
+     ],
+     "correcta": 0,
+     "explicacion": "Un proceso inestable no es predecible y sus índices no describen su comportamiento futuro.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cp",
+     "enunciado": "Especificación de 9.0 a 11.0 y σ = 0.25. ¿Cuál es Cp?",
+     "opciones": [
+      "1.33",
+      "2.00",
+      "0.67",
+      "1.00"
+     ],
+     "correcta": 0,
+     "explicacion": "Cp = 2.0 / (6 × 0.25) = 2.0/1.5 = 1.33.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cpk",
+     "enunciado": "Especificación 9.0 a 11.0, μ = 10.5, σ = 0.25. ¿Cuál es Cpk?",
+     "opciones": [
+      "0.67",
+      "1.33",
+      "2.00",
+      "1.00"
+     ],
+     "correcta": 0,
+     "explicacion": "(11.0 − 10.5)/(0.75) = 0.67; (10.5 − 9.0)/0.75 = 2.0; el mínimo es 0.67.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cp frente a Cpk",
+     "enunciado": "Un proceso tiene Cp = 1.8 y Cpk = 0.9. ¿Qué indica?",
+     "opciones": [
+      "Tiene buen potencial pero está muy descentrado",
+      "Tiene demasiada variación",
+      "Está perfectamente centrado",
+      "Está fuera de control con certeza"
+     ],
+     "correcta": 0,
+     "explicacion": "Centrarlo acercaría Cpk a Cp.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Unilateral",
+     "enunciado": "Una impureza tiene solo un máximo de 50 ppm; μ = 20 ppm y σ = 6 ppm (datos normales). ¿Cuál es Cpk?",
+     "opciones": [
+      "1.67",
+      "1.11",
+      "2.50",
+      "0.83"
+     ],
+     "correcta": 0,
+     "explicacion": "(50 − 20)/(3 × 6) = 30/18 = 1.67.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pp frente a Cp",
+     "enunciado": "¿Qué diferencia hay entre Cpk y Ppk?",
+     "opciones": [
+      "Cpk usa σ de corto plazo (dentro); Ppk usa σ global de todos los datos",
+      "Cpk es para atributos y Ppk para variables",
+      "Ppk no considera el centrado",
+      "Son idénticos siempre"
+     ],
+     "correcta": 0,
+     "explicacion": "Si Ppk es mucho menor que Cpk, hay variación entre subgrupos o lotes.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Interpretación",
+     "enunciado": "Cpk = 1.50 y Ppk = 1.21. ¿Qué sugiere?",
+     "opciones": [
+      "Hay variación entre lotes o periodos adicional a la de corto plazo que vale la pena investigar",
+      "El proceso está perfectamente estable",
+      "El sistema de medición es perfecto",
+      "Hay que ampliar la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Derivas, cambios de materias primas o estacionalidad suelen explicarla.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Referencias",
+     "enunciado": "¿Qué fracción aproximada fuera de especificación (un lado) corresponde a Cpk = 1.33 en un proceso normal?",
+     "opciones": [
+      "Unas 32 ppm",
+      "Unas 1 350 ppm",
+      "Unas 3.4 ppm",
+      "Cero"
+     ],
+     "correcta": 0,
+     "explicacion": "z = 3 × 1.33 = 4; la cola de z > 4 es ≈ 32 ppm.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Incertidumbre",
+     "enunciado": "Un Cpk = 1.33 se calculó con 30 datos. ¿Qué se puede afirmar?",
+     "opciones": [
+      "No demuestra Cpk ≥ 1.33; su límite inferior de confianza de 95 % es de alrededor de 1.03",
+      "Demuestra con certeza Cpk ≥ 1.33",
+      "Demuestra Cpk ≥ 1.67",
+      "No tiene incertidumbre"
+     ],
+     "correcta": 0,
+     "explicacion": "Con pocos datos los índices son muy inciertos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No normalidad",
+     "enunciado": "Los datos de una impureza son claramente lognormales. ¿Cómo se calcula la capacidad?",
+     "opciones": [
+      "Con los percentiles 0.135 % y 99.865 % de la distribución lognormal ajustada o transformando los datos y las especificaciones",
+      "Con la fórmula normal sin cambios",
+      "No se puede calcular",
+      "Eliminando los datos altos"
+     ],
+     "correcta": 0,
+     "explicacion": "Aplicar fórmulas normales a datos no normales da índices engañosos.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Atributos",
+     "enunciado": "¿Cómo se expresa la capacidad con datos de pasa / no pasa?",
+     "opciones": [
+      "Como proporción de defectuosos (o defectos por millón) con su intervalo de confianza",
+      "Con Cpk",
+      "Con Cp",
+      "No se puede expresar"
+     ],
+     "correcta": 0,
+     "explicacion": "Los índices basados en σ requieren datos de variables.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mejora",
+     "enunciado": "¿Cuál suele ser la forma más barata de mejorar Cpk cuando Cp es alto?",
+     "opciones": [
+      "Centrar el proceso",
+      "Comprar un equipo nuevo",
+      "Ampliar la especificación",
+      "Reducir la frecuencia de muestreo"
+     ],
+     "correcta": 0,
+     "explicacion": "Centrar cierra la brecha entre Cpk y Cp.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo completo",
+     "enunciado": "Peso neto de garrafas: especificación 19.9 a 20.5 kg; μ = 20.15 kg; σ dentro = 0.052 kg; σ global = 0.070 kg. Calcula Cp, Cpk, Pp y Ppk e interpreta.",
+     "respuesta_modelo": "Tolerancia = 0.6 kg. Cp = 0.6/(6 × 0.052) = 0.6/0.312 ≈ 1.92. Cpk = mín[(20.5 − 20.15)/0.156, (20.15 − 19.9)/0.156] = mín[2.24, 1.60] = 1.60. Pp = 0.6/(6 × 0.070) = 0.6/0.42 ≈ 1.43. Ppk = mín[0.35/0.21, 0.25/0.21] = mín[1.67, 1.19] = 1.19. Interpretación: buen potencial; descentrado hacia el límite inferior (el lado crítico por contenido neto); y una variación entre periodos que reduce el desempeño real a Ppk ≈ 1.19. Acciones: investigar la variación entre turnos o lotes y, si se centra, considerar el costo del producto regalado frente al riesgo de contenido neto.",
+     "puntos_clave": [
+      "Cp ≈ 1.92 y Cpk ≈ 1.60",
+      "Pp ≈ 1.43 y Ppk ≈ 1.19",
+      "Identifica el lado crítico",
+      "Interpreta la brecha entre Cpk y Ppk"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Requisito de cliente",
+     "enunciado": "Un cliente exige demostrar Cpk ≥ 1.33 en la concentración de un producto. Tienes 25 lotes con Cpk = 1.45. ¿Qué le respondes y qué propones?",
+     "respuesta_modelo": "Con 25 datos, Cpk = 1.45 tiene un error estándar aproximado de √[1/(225) + 1.45²/48] ≈ √(0.0044 + 0.0438) ≈ 0.22; el límite inferior de 95 % sería de alrededor de 1.45 − 1.645 × 0.22 ≈ 1.09. Los datos son consistentes con el requisito, pero no lo demuestran con 95 % de confianza. Le explicaría esto y propondría acordar el criterio: por ejemplo, reportar el límite inferior de confianza, acumular más lotes (con 100 lotes la incertidumbre se reduce mucho), confirmar estabilidad con la gráfica de control, verificar la normalidad y el sistema de medición, y mientras tanto trabajar en centrar o reducir la variación para tener margen.",
+     "puntos_clave": [
+      "Calcula o estima la incertidumbre",
+      "Distingue consistencia de demostración",
+      "Propone criterio con límite de confianza o más datos",
+      "Menciona estabilidad, normalidad y medición"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Errores",
+     "enunciado": "Un informe de un proveedor muestra Cpk = 2.1 para la pureza de una materia prima, calculado con los 12 lotes 'aprobados' del año. ¿Qué cuestionarías?",
+     "respuesta_modelo": "1) Solo se usaron lotes aprobados: si hubo lotes rechazados, se excluyeron datos y el índice está sesgado. 2) Con 12 datos la incertidumbre es muy grande. 3) No dice si el proceso está en control ni qué σ se usó (corto plazo o global). 4) No dice si los datos son normales. 5) No se sabe la contribución del método analítico ni si los resultados son de su laboratorio o verificados. Pediría todos los datos del periodo, la gráfica de control, el método de cálculo y, si es crítico, haría verificación propia con análisis de lotes recibidos.",
+     "puntos_clave": [
+      "Selección de datos",
+      "Pocos datos e incertidumbre",
+      "Estabilidad y tipo de σ",
+      "Normalidad, medición y verificación propia"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "titulo": "Análisis del sistema de medición",
+   "texto": "## Toda decisión depende de una medición\nCada decisión de calidad descansa en una medición: liberar un lote, ajustar un proceso, aceptar una materia prima, declarar un proceso capaz. Si la medición tiene mucha variación o un sesgo, las decisiones serán equivocadas: lotes buenos rechazados, lotes malos aceptados, procesos estables \"ajustados\" por ruido, índices de capacidad subestimados.\n\nEl **análisis del sistema de medición** (MSA, por sus siglas en inglés) evalúa si la medición es adecuada para su propósito. El \"sistema\" no es solo el instrumento: incluye el método, los operadores o analistas, el procedimiento de preparación de la muestra, los estándares, el ambiente y el software.\n\nLa referencia más usada en la industria es el manual **MSA** de la **AIAG** (Grupo de Acción de la Industria Automotriz), cuyos criterios se aplican en muchos sectores. En los laboratorios analíticos, conceptos equivalentes se abordan en la **validación de métodos** y en la **incertidumbre de medición** (ISO/IEC 17025), que verás en el curso de metrología.\n\n## Propiedades de un sistema de medición\n### Exactitud (sesgo)\nEl **sesgo** es la diferencia entre el promedio de muchas mediciones de una referencia y su valor de referencia. Un método con sesgo mide sistemáticamente de más o de menos.\n\n### Precisión\nLa dispersión de mediciones repetidas. Se divide en:\n\n- **Repetibilidad**: variación cuando **el mismo** operador mide **la misma** muestra varias veces con el mismo equipo en condiciones iguales. También llamada variación del equipo.\n- **Reproducibilidad**: variación adicional cuando **distintos** operadores (o laboratorios, o equipos) miden la misma muestra. También llamada variación del evaluador.\n\n### Linealidad\nSi el sesgo cambia a lo largo del intervalo de medición (por ejemplo, el método es exacto a concentraciones bajas pero mide de menos a concentraciones altas).\n\n### Estabilidad\nSi el sesgo y la precisión se mantienen en el tiempo. Se evalúa midiendo periódicamente un **material de referencia** o una **muestra de control** y graficando los resultados en una gráfica de control.\n\n### Resolución (discriminación)\nLa unidad más pequeña que el sistema distingue. Regla práctica: la resolución debería ser como máximo una décima parte de la tolerancia o de la variación del proceso. Un pHímetro que solo lee con un decimal no sirve para controlar un proceso con especificación de 7.00 ± 0.05.\n\n## Estudio de repetibilidad y reproducibilidad (R&R)\n### Diseño típico\n- **10 partes** (muestras) que representen **todo el intervalo** de variación del proceso. Es crucial: si todas las muestras son casi iguales, el estudio no podrá distinguir la variación de las partes.\n- **2 o 3 operadores** (analistas) que normalmente hacen la medición.\n- **2 o 3 réplicas** por operador y parte.\n- Orden **aleatorio** de medición y, si es posible, **a ciegas** (el operador no sabe qué muestra mide ni sus resultados previos).\n\nPara mediciones destructivas (la muestra se consume al analizarla, como en muchas titulaciones), se usan muestras homogéneas divididas y un diseño **anidado**.\n\n### Análisis\nHay dos métodos: el de **promedios y rangos** (manual) y el de **ANOVA** (preferido, porque además estima la interacción operador por parte). Ambos descomponen la variación total en:\n\nσ²total = σ²partes + σ²R&R\n\nσ²R&R = σ²repetibilidad + σ²reproducibilidad\n\n### Ejemplo\nEstudio de la titulación de un activo, con 10 muestras, 3 analistas y 2 réplicas. Resultados del ANOVA:\n\n- σ repetibilidad = 0.020 %\n- σ reproducibilidad = 0.010 %\n- σ R&R = √(0.020² + 0.010²) ≈ **0.022 %**\n- σ partes = 0.080 %\n- σ total = √(0.022² + 0.080²) ≈ **0.083 %**\n\n## Criterios de aceptación\n### % R&R respecto a la variación total\n%R&R = 100 × σR&R / σtotal = 100 × 0.022 / 0.083 ≈ **27 %**\n\n### % R&R respecto a la tolerancia\n%Tol = 100 × 6σR&R / (LSE − LIE). Con una tolerancia de 1.0 % (14.5 a 15.5): 100 × 6 × 0.022 / 1.0 ≈ **13 %**.\n\n### Criterios de la AIAG\n| % R&R | Decisión |\n|---|---|\n| Menor de 10 % | Aceptable |\n| De 10 % a 30 % | Puede ser aceptable según la importancia de la aplicación, el costo del equipo y de la reparación |\n| Mayor de 30 % | No aceptable; hay que mejorar el sistema de medición |\n\n### Número de categorías distintas (ndc)\nndc = 1.41 × σpartes / σR&R = 1.41 × 0.080 / 0.022 ≈ **5**\n\nIndica cuántos grupos de valores distintos puede distinguir el sistema dentro de la variación del proceso. La AIAG recomienda **ndc ≥ 5**.\n\n### Interpretación del ejemplo\n- Respecto a la **tolerancia** (13 %), el método es marginalmente aceptable para **liberar** lotes (decidir si cumplen la especificación).\n- Respecto a la **variación del proceso** (27 %), está en la zona condicional para **controlar** el proceso (gráficas de control, capacidad).\n- La **repetibilidad** domina: la variación está más en el método y el equipo que en los analistas. Mejoras posibles: mejorar la técnica de la titulación (bureta automática, detección potenciométrica del punto final), controlar la temperatura, mejorar la preparación de la muestra.\n\nSi la reproducibilidad dominara, la mejora estaría en **estandarizar** el procedimiento entre analistas y capacitar.\n\n### ¿Contra qué comparar?\n- Para decisiones de **conformidad** (liberación, aceptación): compara contra la **tolerancia**.\n- Para **control de procesos y capacidad**: compara contra la **variación del proceso**.\n\nUn sistema puede ser adecuado para una cosa y no para la otra.\n\n## El efecto de la medición en la capacidad\nLa σ observada incluye la de medición. En el ejemplo, la σ de las partes (proceso real) es 0.080, pero la observada es 0.083. Con un %R&R mayor, la diferencia crece: con %R&R de 50 %, la capacidad real es apreciablemente mayor que la calculada. Un mal sistema de medición **hace parecer peor al proceso**.\n\n## Sesgo y linealidad\n### Estudio de sesgo\nSe mide un **material de referencia** (de valor conocido, idealmente certificado y trazable) al menos 10 a 15 veces. Se calcula el sesgo (promedio − referencia) y se prueba con una prueba t si es significativamente distinto de cero.\n\n### Estudio de linealidad\nSe miden varios materiales de referencia a lo largo del intervalo (por ejemplo, 5 niveles), varias veces cada uno. Se hace una regresión del sesgo contra el valor de referencia: si la pendiente es significativa, el sesgo depende del nivel.\n\n## Atributos: análisis de concordancia\nCuando la medición es una **clasificación** (inspección visual de envases, aprobación de color, evaluación sensorial), se usa un **análisis de concordancia por atributos**:\n\n- Varios evaluadores clasifican varias muestras (algunas claramente buenas, otras claramente malas y otras en el límite), varias veces, a ciegas.\n- Se mide la concordancia de cada evaluador **consigo mismo**, **entre evaluadores** y **con el estándar**.\n- Se usa el estadístico **kappa** de Cohen o Fleiss: kappa corrige la concordancia que ocurriría por azar. Como referencia frecuente, kappa mayor de 0.9 es excelente y menor de 0.7 requiere mejorar (criterios de capacitación, estándares visuales, iluminación).\n\n## Errores frecuentes\n- Usar muestras que **no cubren** la variación del proceso: el %R&R sale artificialmente alto y el ndc bajo.\n- Que los evaluadores **sepan** qué muestra están midiendo.\n- Usar analistas que **no** son los que normalmente miden.\n- Hacer el estudio **una vez** y no volver a evaluar tras cambios de equipo, método o personal.\n- Confundir **calibración** (comparar contra un patrón y ajustar) con MSA (evaluar la variación del sistema completo).\n\n## Ideas que debes llevarte\n- El MSA evalúa si el **sistema de medición** completo es adecuado para su propósito.\n- Propiedades: **sesgo**, **repetibilidad**, **reproducibilidad**, **linealidad**, **estabilidad** y **resolución**.\n- El estudio **R&R** con 10 partes que cubran el proceso, 2 o 3 operadores y 2 o 3 réplicas, a ciegas y aleatorio.\n- Criterios AIAG: **< 10 %** aceptable, **10 a 30 %** condicional, **> 30 %** no aceptable; **ndc ≥ 5**.\n- Compara con la **tolerancia** para liberar y con la **variación del proceso** para controlar.\n- Si domina la **repetibilidad**, mejora el método o el equipo; si domina la **reproducibilidad**, estandariza y capacita.\n- Para atributos, usa **concordancia** y **kappa**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Repetibilidad",
+     "enunciado": "¿Qué es la repetibilidad?",
+     "opciones": [
+      "La variación cuando el mismo operador mide la misma muestra varias veces con el mismo equipo",
+      "La variación entre distintos operadores",
+      "La diferencia entre el promedio y el valor de referencia",
+      "El cambio del sesgo en el tiempo"
+     ],
+     "correcta": 0,
+     "explicacion": "También se llama variación del equipo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reproducibilidad",
+     "enunciado": "¿Qué es la reproducibilidad en un estudio R&R?",
+     "opciones": [
+      "La variación adicional cuando distintos operadores miden la misma muestra",
+      "La variación de una sola persona",
+      "El sesgo del instrumento",
+      "La resolución del equipo"
+     ],
+     "correcta": 0,
+     "explicacion": "También se llama variación del evaluador.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sesgo",
+     "enunciado": "Un material de referencia de 10.00 % se mide 15 veces con promedio 10.12 %. ¿Qué es 0.12 %?",
+     "opciones": [
+      "El sesgo estimado",
+      "La repetibilidad",
+      "La reproducibilidad",
+      "La resolución"
+     ],
+     "correcta": 0,
+     "explicacion": "Sesgo = promedio − valor de referencia; se prueba con una t si es significativo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Resolución",
+     "enunciado": "La especificación de pH es 7.00 ± 0.05. ¿Qué resolución mínima debería tener el pHímetro según la regla práctica?",
+     "opciones": [
+      "0.01 unidades de pH",
+      "0.1 unidades de pH",
+      "1 unidad de pH",
+      "0.5 unidades de pH"
+     ],
+     "correcta": 0,
+     "explicacion": "La resolución debería ser como máximo una décima parte de la tolerancia (0.10/10 = 0.01).",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diseño",
+     "enunciado": "¿Por qué las 10 partes de un estudio R&R deben cubrir todo el intervalo de variación del proceso?",
+     "opciones": [
+      "Porque si son casi iguales el %R&R sale artificialmente alto y el ndc bajo",
+      "Porque así el estudio es más barato",
+      "Porque la AIAG exige muestras fuera de especificación",
+      "No importa qué muestras se usen"
+     ],
+     "correcta": 0,
+     "explicacion": "El estudio compara la variación de medición con la variación de las partes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo",
+     "enunciado": "σ repetibilidad = 0.03 y σ reproducibilidad = 0.04. ¿Cuál es σ R&R?",
+     "opciones": [
+      "0.05",
+      "0.07",
+      "0.01",
+      "0.0025"
+     ],
+     "correcta": 0,
+     "explicacion": "√(0.03² + 0.04²) = √0.0025 = 0.05. Las varianzas se suman.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Criterios",
+     "enunciado": "Un estudio da %R&R = 35 % respecto a la variación total. ¿Qué decisión corresponde según la AIAG?",
+     "opciones": [
+      "No aceptable; hay que mejorar el sistema de medición",
+      "Aceptable",
+      "Aceptable si el auditor lo aprueba",
+      "Excelente"
+     ],
+     "correcta": 0,
+     "explicacion": "Más de 30 % no es aceptable.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ndc",
+     "enunciado": "σ partes = 0.06 y σ R&R = 0.03. ¿Cuál es aproximadamente el ndc?",
+     "opciones": [
+      "2.8, insuficiente",
+      "5.0, suficiente",
+      "0.7",
+      "10"
+     ],
+     "correcta": 0,
+     "explicacion": "1.41 × 0.06/0.03 = 2.82; se recomienda ndc ≥ 5.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contra qué comparar",
+     "enunciado": "Para decidir si un método sirve para liberar lotes contra especificación, ¿contra qué se compara la variación de medición?",
+     "opciones": [
+      "Contra la tolerancia de la especificación",
+      "Contra la variación del proceso",
+      "Contra la media del proceso",
+      "Contra la resolución"
+     ],
+     "correcta": 0,
+     "explicacion": "Para control de procesos y capacidad se compara contra la variación del proceso.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diagnóstico",
+     "enunciado": "En un estudio R&R la reproducibilidad domina sobre la repetibilidad. ¿Qué mejora es más probable que funcione?",
+     "opciones": [
+      "Estandarizar el procedimiento entre analistas y capacitarlos",
+      "Comprar un equipo más preciso",
+      "Aumentar el número de muestras del estudio",
+      "Cambiar la especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "La reproducibilidad refleja diferencias entre personas o técnicas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Atributos",
+     "enunciado": "¿Para qué sirve el estadístico kappa en un análisis de concordancia por atributos?",
+     "opciones": [
+      "Mide la concordancia corrigiendo la que ocurriría por azar",
+      "Calcula la media de los evaluadores",
+      "Mide el sesgo de un instrumento",
+      "Estima el Cpk"
+     ],
+     "correcta": 0,
+     "explicacion": "Se usa en inspección visual, color y evaluaciones sensoriales.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Calibración frente a MSA",
+     "enunciado": "¿En qué se diferencia la calibración del MSA?",
+     "opciones": [
+      "La calibración compara contra un patrón y ajusta; el MSA evalúa la variación del sistema de medición completo",
+      "Son lo mismo",
+      "El MSA sustituye a la calibración",
+      "La calibración evalúa la reproducibilidad entre operadores"
+     ],
+     "correcta": 0,
+     "explicacion": "Un equipo calibrado puede tener mala repetibilidad o reproducibilidad.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo completo",
+     "enunciado": "Un estudio R&R da σ repetibilidad = 0.015, σ reproducibilidad = 0.020 y σ partes = 0.100. La tolerancia es 0.60. Calcula σ R&R, %R&R (variación total), %Tol y ndc, e interpreta.",
+     "respuesta_modelo": "σ R&R = √(0.015² + 0.020²) = √(0.000625) = 0.025. σ total = √(0.025² + 0.100²) = √0.010625 ≈ 0.103. %R&R = 0.025/0.103 × 100 ≈ 24 %. %Tol = 6 × 0.025/0.60 × 100 = 25 %. ndc = 1.41 × 0.100/0.025 ≈ 5.6. Interpretación: en la zona condicional tanto para tolerancia como para proceso; el ndc es suficiente. Domina la reproducibilidad, así que la mejora más eficaz es estandarizar el procedimiento entre analistas y capacitarlos; después, reevaluar.",
+     "puntos_clave": [
+      "σ R&R = 0.025",
+      "%R&R ≈ 24 % y %Tol = 25 %",
+      "ndc ≈ 5.6",
+      "Interpretación y mejora dirigida a reproducibilidad"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diseño",
+     "enunciado": "Diseña un estudio R&R para el método de titulación de cloro disponible en hipoclorito, considerando que la medición consume la muestra.",
+     "respuesta_modelo": "Selecciono 10 lotes o muestras que cubran el intervalo de concentración real del proceso (de bajo a alto dentro y cerca de la especificación). De cada muestra preparo alícuotas homogéneas suficientes, en recipientes cerrados y protegidos de la luz, y las analizo en un periodo corto para evitar la degradación. Participan los 3 analistas que normalmente titulan; cada uno analiza cada muestra 2 veces, en orden aleatorio y con códigos ciegos. Como la titulación consume la alícuota, el diseño es anidado (cada réplica usa una alícuota distinta, supuestas idénticas). Analizo con ANOVA, obtengo repetibilidad, reproducibilidad, %R&R contra tolerancia y contra proceso, y ndc. Documento condiciones, reactivos y patrones.",
+     "puntos_clave": [
+      "Muestras que cubren el intervalo",
+      "Alícuotas homogéneas y control de degradación",
+      "Analistas habituales, orden aleatorio y a ciegas",
+      "Diseño anidado y análisis ANOVA"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Efecto en la capacidad",
+     "enunciado": "Explica cómo un sistema de medición con %R&R alto afecta el cálculo de Cpk y qué decisiones equivocadas puede provocar.",
+     "respuesta_modelo": "La σ observada incluye la de medición (σ²observada = σ²proceso + σ²medición). Con un %R&R alto, la σ observada es mayor que la del proceso real, así que el Cpk calculado subestima la capacidad real. Decisiones equivocadas: invertir en mejorar un proceso que en realidad es capaz, rechazar lotes buenos cerca de los límites, aceptar lotes malos por error de medición, ajustar el proceso por ruido de medición y perder la confianza de un cliente con índices que parecen bajos. Por eso se evalúa el sistema de medición antes de calcular la capacidad.",
+     "puntos_clave": [
+      "Suma de varianzas",
+      "Subestimación de Cpk",
+      "Decisiones equivocadas concretas",
+      "Orden correcto: MSA antes de capacidad"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
