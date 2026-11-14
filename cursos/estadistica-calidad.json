@@ -1,0 +1,807 @@
+{
+ "id": "estadistica-calidad",
+ "titulo": "Estadística aplicada a la calidad",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Variación: el problema central de la calidad",
+   "texto": "## Ningún lote es igual a otro\nSi fabricas cien lotes de un sanitizante con la misma fórmula, el mismo equipo y el mismo operador, y mides la concentración de activo en cada uno, no obtendrás cien números iguales. Obtendrás algo como 15.12, 14.98, 15.05, 15.21, 14.93... Esa diferencia es la **variación**, y es inevitable. Viene de la variación de las materias primas, de la precisión de las básculas, de la temperatura, del tiempo de mezclado, del muestreo y del propio método analítico.\n\nLa calidad, vista desde la estadística, es en gran medida el arte de **entender, medir y reducir la variación**. Un producto con concentración promedio perfecta pero mucha variación tendrá lotes fuera de especificación. Un método analítico con mucha variación no permite decidir si un lote cumple. Un proceso cuya variación cambia sin que nadie lo note es un proceso fuera de control.\n\nEste curso te da las herramientas estadísticas que se usan en sistemas de calidad e inocuidad: describir datos, entender distribuciones, inferir a partir de muestras, comparar, controlar procesos, evaluar su capacidad, evaluar sistemas de medición, muestrear lotes y diseñar experimentos.\n\n## Dos tipos de variación\nWalter Shewhart, en la década de 1920, propuso la distinción que sigue siendo el fundamento del control estadístico de procesos. W. Edwards Deming la popularizó:\n\n### Causas comunes\nSon las numerosas fuentes pequeñas de variación que están **siempre presentes** en el proceso: pequeñas diferencias de pesado, fluctuaciones de temperatura, variación normal de las materias primas, ruido del método analítico. Ninguna domina; juntas producen una variación **estable y predecible**.\n\nUn proceso que solo tiene causas comunes está **en control estadístico**: no sabes cuál será el próximo valor, pero sabes **dentro de qué intervalo** caerá con alta probabilidad.\n\n### Causas especiales (o asignables)\nSon fuentes de variación **no siempre presentes**, que aparecen por algo identificable: un lote de materia prima fuera de especificación, una báscula descalibrada, un operador nuevo sin capacitar, una válvula que falla, un cambio de turno con otro procedimiento. Producen variación **inusual**: puntos alejados, tendencias, saltos.\n\n### Por qué importa la distinción\nLas dos se atienden de forma distinta, y confundirlas es costoso:\n\n- Ante una **causa especial**, se busca la causa y se elimina. Esto lo puede hacer el personal cercano al proceso.\n- Para reducir la **variación de causas comunes**, hay que cambiar el **sistema**: equipo, método, materias primas, diseño. Eso suele requerir decisiones de la dirección.\n\nDeming advirtió dos errores:\n\n1. **Reaccionar a causas comunes como si fueran especiales**: ajustar el proceso cada vez que un valor sale un poco alto o bajo. Esto se llama **sobreajuste** o \"manipulación\" del proceso, y **aumenta** la variación.\n2. **No reaccionar a causas especiales**: tratar un cambio real como si fuera ruido, y dejar que el problema continúe.\n\nLas **gráficas de control** (capítulos 8 a 10) son la herramienta para distinguir una de otra.\n\n## El experimento del embudo\nDeming ilustraba el sobreajuste con un experimento: se deja caer una canica por un embudo sobre un blanco en una mesa. La canica cae cerca del blanco, con cierta dispersión. Si después de cada caída se **mueve el embudo** para compensar el error (si cayó 2 cm a la derecha, se mueve el embudo 2 cm a la izquierda), la dispersión **aumenta**. La mejor estrategia, si el proceso está centrado y estable, es **no tocar el embudo**.\n\nEn planta, el equivalente es el operador que ajusta la concentración de cada lote con base en el resultado del lote anterior, sin que haya una causa especial. Parece diligente; en realidad, aumenta la variación.\n\n## Variación del proceso y variación de la medición\nLo que observas es siempre la suma de dos variaciones:\n\n**Variación observada = variación del proceso + variación del sistema de medición**\n\nMás exactamente, como verás en el capítulo de distribuciones, las **varianzas** se suman (si las fuentes son independientes):\n\nσ²observada = σ²proceso + σ²medición\n\nSi tu método analítico tiene mucha variación, los datos parecerán más dispersos de lo que el proceso realmente es, y podrías tomar decisiones equivocadas: rechazar lotes buenos, aceptar lotes malos, o ajustar el proceso por ruido de medición. Por eso, antes de analizar un proceso, hay que saber si el sistema de medición es adecuado (capítulo 12).\n\n## Datos: tipos y escalas\nEl tipo de dato determina qué herramientas estadísticas puedes usar.\n\n### Variables (continuas)\nSe miden en una escala continua: concentración (%), pH, densidad (g/mL), temperatura (°C), viscosidad (mPa·s), peso neto (kg). Contienen mucha información por dato. Se analizan con medias, desviaciones estándar, gráficas X̄-R o I-MR, capacidad Cp/Cpk.\n\n### Atributos (discretos)\nSe cuentan o clasifican: número de envases con fuga, lote conforme o no conforme, número de defectos de etiqueta por lote, número de quejas por mes. Contienen menos información por dato, así que se necesitan muestras más grandes. Se analizan con proporciones, gráficas p, np, c, u.\n\n### Escalas\n- **Nominal**: categorías sin orden (tipo de defecto, proveedor).\n- **Ordinal**: categorías con orden pero sin distancia definida (calificación de olor de 1 a 5).\n- **De intervalo**: distancias definidas pero cero arbitrario (temperatura en °C).\n- **De razón**: con cero absoluto (masa, concentración).\n\nSiempre que puedas, **mide en lugar de clasificar**: es mejor registrar la concentración real (15.08 %) que solo \"cumple\" o \"no cumple\". Con el valor puedes ver tendencias antes de que se convierta en un incumplimiento.\n\n## Población y muestra\n- La **población** es el conjunto completo sobre el que quieres concluir: todos los envases de un lote, todos los lotes que producirá el proceso.\n- La **muestra** es la parte que realmente mides.\n- Los **parámetros** describen la población (media μ, desviación estándar σ); los **estadísticos** se calculan con la muestra (media x̄, desviación estándar s) y estiman los parámetros.\n\nLa estadística inferencial consiste en sacar conclusiones sobre la población a partir de la muestra, **cuantificando la incertidumbre** de esas conclusiones.\n\n### La muestra debe ser representativa\nNinguna estadística corrige una muestra mal tomada. En una planta química:\n\n- Un tanque mal mezclado da muestras distintas según la altura de donde se toman.\n- Una muestra tomada solo del primer envase de la línea no representa los últimos.\n- Una muestra que se deja destapada pierde volátiles (por ejemplo, el ácido peracético se descompone).\n- Muestrear siempre en el mismo momento del turno puede ocultar efectos de otros momentos.\n\nEl muestreo es un procedimiento técnico que debe diseñarse con la misma seriedad que el análisis.\n\n## Pensamiento estadístico\nLa **ASQ** (Sociedad Estadounidense para la Calidad) resume el pensamiento estadístico en tres principios:\n\n1. Todo trabajo ocurre en un **sistema de procesos interconectados**.\n2. La **variación** existe en todos los procesos.\n3. **Entender y reducir la variación** es la clave del éxito.\n\nCon este marco, la estadística deja de ser un conjunto de fórmulas y se convierte en una forma de pensar sobre los procesos.\n\n## Herramientas que usarás\nPara seguir el curso necesitas una herramienta de cálculo. Las opciones habituales:\n\n- **Hoja de cálculo** (Excel o Google Sheets): suficiente para casi todo el curso. Las funciones PROMEDIO, DESVEST.M, DISTR.NORM.N, INV.T, PRUEBA.T y el complemento de análisis de datos cubren mucho.\n- **Software estadístico** (Minitab, JMP, R, Python): más potente para gráficas de control, capacidad, análisis de sistemas de medición y diseño de experimentos.\n\nEn el curso los cálculos se muestran paso a paso para que entiendas lo que el software hace por dentro.\n\n## Ideas que debes llevarte\n- La **variación** es inevitable; la calidad consiste en entenderla, medirla y reducirla.\n- **Causas comunes**: siempre presentes, variación estable y predecible; se reducen cambiando el sistema.\n- **Causas especiales**: identificables, producen variación inusual; se buscan y se eliminan.\n- **Sobreajustar** un proceso estable aumenta la variación (experimento del embudo).\n- La variación observada incluye la del **sistema de medición**: varianzas que se suman.\n- Distingue **variables** de **atributos**; mide en lugar de clasificar cuando sea posible.\n- La **muestra** debe ser representativa; ninguna estadística corrige un mal muestreo.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Causas comunes",
+     "enunciado": "¿Qué caracteriza a la variación por causas comunes?",
+     "opciones": [
+      "Está siempre presente, proviene de muchas fuentes pequeñas y es estable y predecible",
+      "Aparece por un evento identificable y produce puntos inusuales",
+      "Solo existe en procesos mal diseñados",
+      "Se elimina ajustando el proceso después de cada lote"
+     ],
+     "correcta": 0,
+     "explicacion": "Un proceso con solo causas comunes está en control estadístico; su variación se reduce cambiando el sistema.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Causas especiales",
+     "enunciado": "¿Cuál de estos es un ejemplo de causa especial de variación?",
+     "opciones": [
+      "Un lote de materia prima fuera de especificación",
+      "Las pequeñas fluctuaciones normales de temperatura del cuarto",
+      "La variación normal entre lecturas de una báscula calibrada",
+      "El ruido inherente del método analítico"
+     ],
+     "correcta": 0,
+     "explicacion": "Las causas especiales son identificables y no siempre presentes.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sobreajuste",
+     "enunciado": "Un operador ajusta la concentración de cada lote compensando la desviación del lote anterior, sin que haya ninguna causa especial. ¿Qué efecto tiene?",
+     "opciones": [
+      "Aumenta la variación del proceso",
+      "Reduce la variación a cero",
+      "No tiene efecto",
+      "Centra el proceso sin afectar la variación"
+     ],
+     "correcta": 0,
+     "explicacion": "Es el error de reaccionar a causas comunes como si fueran especiales, ilustrado por el experimento del embudo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Responsabilidad",
+     "enunciado": "¿Quién suele poder reducir la variación por causas comunes?",
+     "opciones": [
+      "La dirección, porque requiere cambiar el sistema: equipo, método, materias primas o diseño",
+      "El operador, ajustando cada lote",
+      "El laboratorio, repitiendo los análisis",
+      "Nadie, es imposible reducirla"
+     ],
+     "correcta": 0,
+     "explicacion": "Las causas especiales se atienden cerca del proceso; las comunes requieren cambiar el sistema.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Variación observada",
+     "enunciado": "Si las fuentes son independientes, ¿cómo se combinan la variación del proceso y la del sistema de medición?",
+     "opciones": [
+      "Se suman las varianzas: σ²observada = σ²proceso + σ²medición",
+      "Se suman las desviaciones estándar",
+      "Se multiplican las varianzas",
+      "La de medición no afecta la observada"
+     ],
+     "correcta": 0,
+     "explicacion": "Las varianzas de fuentes independientes son aditivas; las desviaciones estándar no.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos de datos",
+     "enunciado": "¿Cuál de estos es un dato de tipo atributo?",
+     "opciones": [
+      "Número de envases con fuga en una muestra de 200",
+      "Concentración de activo en %",
+      "pH de la solución",
+      "Densidad en g/mL"
+     ],
+     "correcta": 0,
+     "explicacion": "Los atributos se cuentan o clasifican; las variables se miden en escala continua.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Medir frente a clasificar",
+     "enunciado": "¿Por qué conviene registrar la concentración real en lugar de solo 'cumple / no cumple'?",
+     "opciones": [
+      "Porque el valor permite ver tendencias y tomar acción antes de que haya un incumplimiento",
+      "Porque ocupa menos espacio",
+      "Porque los atributos son ilegales en calidad",
+      "No conviene; el atributo es suficiente"
+     ],
+     "correcta": 0,
+     "explicacion": "Los datos de variables contienen más información por medición.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Escalas",
+     "enunciado": "Una calificación de olor de 1 a 5 por un panel es un dato en escala:",
+     "opciones": [
+      "Ordinal",
+      "Nominal",
+      "De razón",
+      "De intervalo con cero absoluto"
+     ],
+     "correcta": 0,
+     "explicacion": "Hay orden, pero la distancia entre 2 y 3 no necesariamente es igual a la de 4 y 5.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Parámetros y estadísticos",
+     "enunciado": "¿Qué es x̄?",
+     "opciones": [
+      "La media de la muestra, un estadístico que estima la media de la población μ",
+      "La media de la población",
+      "La desviación estándar de la población",
+      "Un límite de especificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Los parámetros (μ, σ) describen la población; los estadísticos (x̄, s) se calculan con la muestra.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Muestreo",
+     "enunciado": "Se toman muestras solo de la superficie de un tanque de 5 000 L mal mezclado. ¿Qué problema hay?",
+     "opciones": [
+      "La muestra no es representativa y ninguna estadística lo corrige",
+      "Ninguno si se analizan muchas muestras",
+      "Solo afecta la precisión del método",
+      "Es la práctica recomendada"
+     ],
+     "correcta": 0,
+     "explicacion": "El muestreo es un procedimiento técnico; un sesgo de muestreo invalida las conclusiones.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pensamiento estadístico",
+     "enunciado": "¿Cuál de estos es un principio del pensamiento estadístico según la ASQ?",
+     "opciones": [
+      "La variación existe en todos los procesos",
+      "La variación solo existe en procesos fuera de control",
+      "Los procesos son independientes entre sí",
+      "La variación es siempre culpa del operador"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros dos principios: todo trabajo ocurre en sistemas de procesos interconectados, y entender y reducir la variación es la clave.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Causas comunes y especiales",
+     "enunciado": "Explica a un supervisor de producción la diferencia entre causas comunes y especiales, y por qué no debe ajustar el proceso después de cada resultado de laboratorio.",
+     "respuesta_modelo": "Las causas comunes son las muchas fuentes pequeñas de variación siempre presentes (pesado, temperatura, materias primas, método): producen una variación estable dentro de un intervalo predecible. Las causas especiales son eventos identificables (una materia prima mala, una báscula descalibrada) que producen resultados inusuales. Si el proceso está estable y ajustas cada lote según el resultado anterior, estás reaccionando al ruido: cada ajuste agrega una variación nueva y el resultado es más dispersión, como en el experimento del embudo. Solo hay que actuar cuando una herramienta como la gráfica de control indica una causa especial; para reducir la variación común hay que mejorar el sistema.",
+     "puntos_clave": [
+      "Define causas comunes",
+      "Define causas especiales",
+      "Explica el efecto del sobreajuste",
+      "Indica cuándo actuar y cómo reducir la variación común"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Variación de medición",
+     "enunciado": "Un proceso tiene una desviación estándar real de 0.08 % y el método analítico tiene una desviación estándar de 0.06 %. Calcula la desviación estándar observada y comenta su implicación.",
+     "respuesta_modelo": "σ²observada = 0.08² + 0.06² = 0.0064 + 0.0036 = 0.0100, así que σobservada = 0.10 %. La variación observada es 25 % mayor que la real del proceso; el método aporta una parte importante (36 % de la varianza total). Implicación: las decisiones sobre el proceso (capacidad, ajustes, rechazos) se ven afectadas por el método; antes de concluir sobre el proceso conviene evaluar y, si es posible, mejorar el sistema de medición.",
+     "puntos_clave": [
+      "Suma correcta de varianzas",
+      "Resultado 0.10 %",
+      "Proporción aportada por la medición",
+      "Implicación sobre decisiones y sistema de medición"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Muestreo",
+     "enunciado": "Describe tres errores de muestreo posibles en una planta de sanitizantes líquidos y cómo evitarlos.",
+     "respuesta_modelo": "1) Tomar la muestra de un tanque mal mezclado o solo de la superficie: asegurar mezclado definido y tomar muestras de válvula de fondo o de varios niveles según el procedimiento. 2) Muestrear solo el primer envase de la línea: muestrear al inicio, mitad y final del envasado, o aleatoriamente. 3) Dejar la muestra destapada o caliente, con pérdida de activos volátiles o inestables como el APA: usar envases adecuados, cerrados, protegidos de la luz y analizar en un tiempo máximo definido. También: contaminar la muestra con utensilios sucios, muestrear siempre en el mismo momento del turno.",
+     "puntos_clave": [
+      "Tres errores plausibles",
+      "Causa del sesgo en cada uno",
+      "Medida preventiva concreta",
+      "Relación con la representatividad"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "Estadística descriptiva para datos de planta",
+   "texto": "## Antes de calcular, mira los datos\nLa primera regla del análisis de datos es **graficar antes de calcular**. Dos conjuntos de datos pueden tener la misma media y la misma desviación estándar y ser completamente distintos: uno puede tener dos grupos separados (dos turnos con métodos distintos), otro una tendencia en el tiempo, otro un valor extremo que distorsiona todo. Los números resumen; las gráficas muestran.\n\nEn este capítulo usaremos un ejemplo: la concentración de activo (%) de diez lotes consecutivos de un sanitizante con especificación de 14.5 a 15.5 %:\n\n15.12, 14.98, 15.05, 15.21, 14.93, 15.08, 15.02, 15.15, 14.97, 15.09\n\n## Medidas de tendencia central\n### Media\nLa media aritmética es la suma de los valores dividida entre el número de valores:\n\nx̄ = Σxᵢ / n\n\nEn el ejemplo: suma = 150.60; n = 10; **x̄ = 15.06 %**.\n\nLa media usa toda la información, pero es **sensible a valores extremos**: un solo resultado erróneo de 17.0 cambiaría la media de 10 lotes en casi 0.2 %.\n\n### Mediana\nLa mediana es el valor central de los datos ordenados. Con n par, es el promedio de los dos centrales.\n\nOrdenados: 14.93, 14.97, 14.98, 15.02, 15.05, 15.08, 15.09, 15.12, 15.15, 15.21\n\nMediana = (15.05 + 15.08) / 2 = **15.065 %**.\n\nLa mediana es **robusta**: no le afectan los valores extremos. Cuando la media y la mediana difieren mucho, hay asimetría o valores atípicos.\n\n### Moda\nEl valor más frecuente. Útil en datos de atributos (el defecto más común); poco útil en datos continuos con muchos decimales.\n\n## Medidas de dispersión\n### Rango\nR = máximo − mínimo = 15.21 − 14.93 = **0.28 %**.\n\nFácil de calcular y de entender, pero solo usa dos valores y crece con el tamaño de la muestra. Se usa en las gráficas de control con subgrupos pequeños.\n\n### Varianza y desviación estándar\nLa **varianza muestral** es el promedio de los cuadrados de las desviaciones respecto a la media, dividido entre n − 1:\n\ns² = Σ(xᵢ − x̄)² / (n − 1)\n\nLa **desviación estándar** es su raíz cuadrada:\n\ns = √s²\n\nEn el ejemplo: s² = 0.00762 y **s = 0.087 %**.\n\n**¿Por qué n − 1?** Porque la media muestral se calculó con los mismos datos y \"se ajusta\" a ellos; dividir entre n subestimaría la varianza de la población. Dividir entre n − 1 (los **grados de libertad**) corrige ese sesgo. En hojas de cálculo, usa DESVEST.M (muestra), no DESVEST.P (población).\n\nLa desviación estándar tiene las **mismas unidades** que los datos, lo que la hace interpretable: los lotes se alejan típicamente unas 0.09 unidades de porcentaje de la media.\n\n### Coeficiente de variación\nCV = (s / x̄) × 100 = (0.087 / 15.06) × 100 = **0.58 %**.\n\nEs la variación relativa. Permite comparar la dispersión de mediciones con escalas distintas. En química analítica se llama también **desviación estándar relativa** (RSD o DER) y se usa para expresar la precisión de un método.\n\n### Rango intercuartílico\nLos **cuartiles** dividen los datos ordenados en cuatro partes. Q1 (percentil 25) y Q3 (percentil 75); el rango intercuartílico es RIC = Q3 − Q1. Es una medida robusta de dispersión. En el ejemplo, con el método de interpolación habitual, Q1 ≈ 14.99, Q3 ≈ 15.11 y RIC ≈ 0.12. (Los distintos programas usan métodos de interpolación ligeramente distintos, así que los cuartiles pueden variar en el último decimal.)\n\n## Gráficas esenciales\n### Gráfica de corrida (serie de tiempo)\nLos valores en el orden en que se produjeron. Es **la gráfica más importante** para datos de proceso, porque muestra tendencias, saltos, ciclos y patrones que el histograma oculta. Si solo puedes hacer una gráfica, haz esta.\n\n### Histograma\nBarras con la frecuencia de valores en intervalos. Muestra la **forma** de la distribución: simétrica, sesgada, con dos picos (bimodal), con colas largas. Necesita suficientes datos (idealmente 50 o más) para ser informativo; con 10 datos dice poco.\n\nFormas que deben llamarte la atención:\n\n- **Bimodal**: dos poblaciones mezcladas (dos turnos, dos equipos, dos proveedores).\n- **Sesgada**: datos limitados por un lado (por ejemplo, contaminantes cerca de cero, que no pueden ser negativos).\n- **Truncada**: un lado cortado abruptamente, típico cuando se han **eliminado** valores fuera de especificación (o se ha \"seleccionado\" lo que se reporta).\n- **Pico aislado** cerca de un límite de especificación: posible ajuste de datos para cumplir.\n\n### Diagrama de caja\nMuestra mediana, cuartiles, rango y valores atípicos. Es excelente para **comparar grupos**: concentración por turno, por operador, por proveedor de materia prima.\n\n### Diagrama de dispersión\nMuestra la relación entre dos variables (por ejemplo, temperatura de almacenamiento y pérdida de activo). Lo verás con más detalle en el capítulo de regresión.\n\n### Diagrama de Pareto\nBarras ordenadas de mayor a menor frecuencia (o costo), con una línea de porcentaje acumulado. Aplica el principio de que **pocas causas explican la mayor parte** de los problemas. Útil para priorizar: tipos de quejas, causas de rechazos, defectos de envasado.\n\n## Valores atípicos\nUn valor atípico es un dato muy distinto del resto. Ante uno:\n\n1. **No lo borres** sin investigar. Puede ser un error (de transcripción, de dilución, de muestreo) o una señal real (una causa especial).\n2. **Investiga**: revisa el registro, la muestra, el equipo, el método.\n3. Si encuentras un **error comprobado**, corrígelo o exclúyelo **documentando** la razón.\n4. Si no encuentras error, el dato es **real**. Excluirlo para que el análisis \"se vea mejor\" es una falta de integridad.\n\nExisten pruebas estadísticas para atípicos (Grubbs, Dixon), pero ninguna sustituye la investigación técnica. Y nunca se usan para eliminar resultados fuera de especificación de un producto: esos se investigan con el procedimiento de resultados fuera de especificación.\n\n## Redondeo y cifras significativas\n- Haz los cálculos con todos los decimales y **redondea al final**.\n- Reporta los estadísticos con una cifra más que los datos originales como máximo (la media de datos con dos decimales se puede reportar con tres).\n- Al comparar con una especificación, define la **regla de redondeo** antes: si la especificación es ≤ 15.5 % y el resultado es 15.54 %, ¿cumple? Depende de si la especificación se interpreta con un decimal (15.5, cumple) o con el valor completo (no cumple). Esa regla debe estar escrita.\n\n## Estratificación\n**Estratificar** es separar los datos por una variable que podría explicar diferencias: turno, operador, línea, proveedor, lote de materia prima, día de la semana. Muchos problemas que parecen variación aleatoria se aclaran al estratificar.\n\nEjemplo: la concentración de un producto tiene una desviación estándar de 0.15 %. Al separar por turno, el turno A tiene media 15.00 y s = 0.06; el turno B tiene media 15.20 y s = 0.06. El problema no es la variación de cada turno, sino la **diferencia entre turnos**: probablemente un procedimiento distinto.\n\n## Ideas que debes llevarte\n- **Grafica antes de calcular**: la gráfica de corrida es la más importante para datos de proceso.\n- **Media** (sensible a extremos) y **mediana** (robusta) describen el centro.\n- **Desviación estándar** muestral con n − 1; mismas unidades que los datos.\n- **CV** o RSD para comparar dispersión relativa.\n- Histograma para la forma, diagrama de caja para comparar grupos, Pareto para priorizar.\n- Los **atípicos** se investigan, no se borran sin causa documentada.\n- Define reglas de **redondeo** antes de comparar con especificaciones.\n- **Estratifica** para descubrir fuentes de variación ocultas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Media",
+     "enunciado": "Los valores 14.8, 15.0, 15.1 y 15.3 tienen una media de:",
+     "opciones": [
+      "15.05",
+      "15.0",
+      "15.1",
+      "15.2"
+     ],
+     "correcta": 0,
+     "explicacion": "(14.8 + 15.0 + 15.1 + 15.3) / 4 = 60.2 / 4 = 15.05.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mediana",
+     "enunciado": "¿Cuál es la mediana de 12, 15, 11, 30, 14?",
+     "opciones": [
+      "14",
+      "16.4",
+      "15",
+      "12"
+     ],
+     "correcta": 0,
+     "explicacion": "Ordenados: 11, 12, 14, 15, 30. El valor central es 14. La media (16.4) está inflada por el 30.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Robustez",
+     "enunciado": "Un resultado erróneo de 17.0 % se cuela entre diez valores cercanos a 15 %. ¿Qué estadístico se ve menos afectado?",
+     "opciones": [
+      "La mediana",
+      "La media",
+      "El rango",
+      "La desviación estándar"
+     ],
+     "correcta": 0,
+     "explicacion": "La mediana es robusta a valores extremos; media, rango y desviación estándar se ven muy afectados.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desviación estándar",
+     "enunciado": "¿Por qué la desviación estándar muestral divide entre n − 1?",
+     "opciones": [
+      "Porque la media se estimó con los mismos datos; dividir entre n subestimaría la varianza de la población",
+      "Porque es más fácil de calcular",
+      "Porque así lo exige ISO 9001",
+      "Para que el resultado sea siempre mayor que la media"
+     ],
+     "correcta": 0,
+     "explicacion": "n − 1 son los grados de libertad; corrige el sesgo del estimador.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Hoja de cálculo",
+     "enunciado": "Para la desviación estándar de una muestra de lotes en una hoja de cálculo en español, ¿qué función se usa?",
+     "opciones": [
+      "DESVEST.M",
+      "DESVEST.P",
+      "PROMEDIO",
+      "MEDIANA"
+     ],
+     "correcta": 0,
+     "explicacion": "DESVEST.M usa n − 1 (muestra); DESVEST.P divide entre n (población completa).",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Coeficiente de variación",
+     "enunciado": "Un método da una media de 50.0 mg/L con s = 0.5 mg/L. ¿Cuál es su CV?",
+     "opciones": [
+      "1 %",
+      "0.5 %",
+      "10 %",
+      "0.01 %"
+     ],
+     "correcta": 0,
+     "explicacion": "CV = 0.5 / 50.0 × 100 = 1 %.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gráficas",
+     "enunciado": "¿Qué gráfica muestra mejor una tendencia de la concentración a lo largo de los lotes?",
+     "opciones": [
+      "Gráfica de corrida (valores en orden de producción)",
+      "Histograma",
+      "Diagrama de Pareto",
+      "Diagrama de pastel"
+     ],
+     "correcta": 0,
+     "explicacion": "El histograma pierde el orden temporal; la gráfica de corrida lo conserva.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Formas",
+     "enunciado": "Un histograma de concentración muestra dos picos separados. ¿Qué sugiere?",
+     "opciones": [
+      "Dos poblaciones mezcladas, por ejemplo dos turnos, equipos o proveedores distintos",
+      "Que el proceso es perfectamente normal",
+      "Que hay demasiados datos",
+      "Que el método analítico es exacto"
+     ],
+     "correcta": 0,
+     "explicacion": "Una distribución bimodal invita a estratificar.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Formas",
+     "enunciado": "Un histograma de resultados se corta abruptamente justo en el límite de especificación, sin valores fuera. ¿Qué debe sospecharse?",
+     "opciones": [
+      "Que se eliminaron o 'seleccionaron' valores fuera de especificación antes de reportar",
+      "Que el proceso es excelente",
+      "Que el método es muy preciso",
+      "Nada, es normal"
+     ],
+     "correcta": 0,
+     "explicacion": "La truncación en un límite es una señal de alerta sobre integridad de datos.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Atípicos",
+     "enunciado": "Un resultado atípico no tiene ningún error identificable tras investigar. ¿Qué se hace?",
+     "opciones": [
+      "Se considera real y se conserva en el análisis",
+      "Se elimina para mejorar el análisis",
+      "Se reemplaza por la media",
+      "Se repite el análisis hasta que salga normal"
+     ],
+     "correcta": 0,
+     "explicacion": "Excluir datos reales sin causa es una falta de integridad; puede ser una señal de causa especial.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pareto",
+     "enunciado": "¿Para qué sirve principalmente un diagrama de Pareto?",
+     "opciones": [
+      "Para priorizar, mostrando que pocas causas explican la mayor parte de los problemas",
+      "Para ver la tendencia en el tiempo",
+      "Para calcular la capacidad",
+      "Para comparar medias de dos grupos"
+     ],
+     "correcta": 0,
+     "explicacion": "Ordena categorías de mayor a menor con porcentaje acumulado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo",
+     "enunciado": "Calcula la media, el rango y la desviación estándar muestral de estos pH: 7.0, 7.2, 6.9, 7.1, 7.3. Muestra el procedimiento.",
+     "respuesta_modelo": "Media: (7.0 + 7.2 + 6.9 + 7.1 + 7.3) / 5 = 35.5 / 5 = 7.10. Rango: 7.3 − 6.9 = 0.4. Desviaciones: −0.1, 0.1, −0.2, 0, 0.2; cuadrados: 0.01, 0.01, 0.04, 0, 0.04; suma = 0.10. Varianza muestral: 0.10 / (5 − 1) = 0.025. Desviación estándar: √0.025 ≈ 0.158.",
+     "puntos_clave": [
+      "Media 7.10",
+      "Rango 0.4",
+      "Suma de cuadrados 0.10 y división entre n − 1",
+      "s ≈ 0.16"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Estratificación",
+     "enunciado": "La desviación estándar de la densidad de un producto es alta. Describe cómo usarías la estratificación para investigarla y qué podrías encontrar.",
+     "respuesta_modelo": "Separaría los datos por variables que podrían explicar diferencias: turno, operador, tanque de mezcla, lote de materia prima principal, temperatura de medición, equipo de medición. Para cada estrato calcularía media y desviación estándar y haría diagramas de caja comparativos y gráficas de corrida por estrato. Podría encontrar que la variación dentro de cada estrato es pequeña y que la diferencia está entre estratos (por ejemplo, un densímetro mide más alto que otro, o un turno no controla la temperatura de la muestra), lo que indica una causa especificable que se puede corregir sin cambiar todo el proceso.",
+     "puntos_clave": [
+      "Variables de estratificación pertinentes",
+      "Comparación de estadísticos y gráficas por estrato",
+      "Distinguir variación dentro y entre estratos",
+      "Hallazgos posibles y acción"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Redondeo",
+     "enunciado": "La especificación de un producto es 'cloro disponible ≤ 12.5 %'. Un resultado es 12.54 %. ¿Cumple? Explica qué debe estar definido de antemano.",
+     "respuesta_modelo": "Depende de la regla de redondeo definida. Si la especificación se interpreta con un decimal, 12.54 se redondea a 12.5 y cumple. Si se compara el valor completo, 12.54 > 12.5 y no cumple. Esa regla debe estar escrita en la especificación o en el procedimiento de liberación antes de analizar, junto con el número de decimales a reportar, y debe aplicarse de forma consistente; decidir después de ver el resultado es una mala práctica. En casos críticos también conviene considerar la incertidumbre de medición en la regla de decisión.",
+     "puntos_clave": [
+      "Respuesta condicionada a la regla",
+      "Ambas interpretaciones",
+      "La regla se define antes",
+      "Mención de consistencia o incertidumbre"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Distribuciones de probabilidad",
+   "texto": "## Del histograma al modelo\nUn histograma con muchos datos muestra una forma. Una **distribución de probabilidad** es un modelo matemático de esa forma: describe con qué probabilidad aparece cada valor (o cada intervalo de valores). Tener un modelo permite responder preguntas que los datos solos no responden directamente: ¿qué fracción de lotes saldrá fuera de especificación si el proceso sigue así?, ¿cuántos envases defectuosos esperar en una muestra de 50?, ¿es raro este resultado?\n\n## La distribución normal\n### Forma y parámetros\nLa distribución **normal** (o gaussiana) tiene forma de campana simétrica y queda completamente definida por dos parámetros:\n\n- **μ**: la media, que ubica el centro.\n- **σ**: la desviación estándar, que determina el ancho.\n\nMuchas variables de proceso son aproximadamente normales cuando el proceso está en control: concentraciones, pesos netos, densidades, errores de medición. La razón es el **teorema central del límite** (más abajo): cuando una variable es el resultado de muchas causas pequeñas e independientes que se suman, tiende a distribuirse normalmente. Eso es exactamente lo que describen las causas comunes.\n\n### La regla empírica\nEn una distribución normal:\n\n- Alrededor del **68 %** de los valores cae dentro de μ ± 1σ.\n- Alrededor del **95 %** cae dentro de μ ± 2σ (exactamente, 95 % dentro de ± 1.96σ).\n- Alrededor del **99.73 %** cae dentro de μ ± 3σ.\n\nEsta última cifra es la base de los límites de control de Shewhart: un punto fuera de ± 3σ es tan raro (unos 3 de cada 1000) en un proceso estable que sugiere una causa especial.\n\n### Estandarización: el valor z\nPara cualquier normal, el valor z indica a cuántas desviaciones estándar está un valor de la media:\n\nz = (x − μ) / σ\n\nCon z, se usa una sola tabla (la normal estándar, con μ = 0 y σ = 1) o una función de hoja de cálculo (DISTR.NORM.ESTAND.N) para obtener probabilidades.\n\n### Ejemplo: fracción fuera de especificación\nUn proceso de un sanitizante tiene μ = 15.10 % y σ = 0.15 %. La especificación es de 14.5 a 15.5 %.\n\n- Límite superior: z = (15.5 − 15.10) / 0.15 = **2.67**. La probabilidad de superar z = 2.67 es aproximadamente **0.38 %**.\n- Límite inferior: z = (14.5 − 15.10) / 0.15 = **−4.00**. La probabilidad de quedar debajo es aproximadamente **0.003 %**.\n- Total fuera de especificación: alrededor de **0.39 %**, es decir, unos 4 lotes de cada 1000.\n\nObserva algo importante: casi todo el riesgo está en el lado superior porque el proceso **no está centrado**. Si se centrara en 15.00, cada lado tendría z = 3.33 y el total fuera de especificación bajaría a cerca de 0.09 %. Centrar el proceso, sin reducir la variación, ya reduce el riesgo a menos de la cuarta parte.\n\n### Cuidado con las colas\nEl cálculo anterior supone que el proceso es normal **también en las colas**, donde hay muy pocos datos para comprobarlo. Las estimaciones de fracciones muy pequeñas (partes por millón) son muy sensibles a esa suposición. Úsalas como orden de magnitud, no como cifra exacta.\n\n## Comprobar la normalidad\nAntes de usar herramientas que suponen normalidad (capacidad de proceso, algunos intervalos y pruebas), conviene comprobarla:\n\n- **Histograma**: ¿forma de campana razonablemente simétrica?\n- **Gráfica de probabilidad normal** (Q-Q): si los datos son normales, los puntos caen cerca de una línea recta. Es la herramienta visual más útil.\n- **Pruebas formales**: Anderson-Darling, Shapiro-Wilk. Un valor p pequeño (por ejemplo, menor de 0.05) indica evidencia contra la normalidad. Con muestras muy grandes, detectan desviaciones irrelevantes; con muestras pequeñas, casi nunca rechazan. Úsalas junto con la gráfica.\n\nSi los datos no son normales, primero pregunta **por qué**: ¿hay mezcla de poblaciones?, ¿causas especiales?, ¿la variable está acotada (por ejemplo, impurezas cerca de cero)? A veces la respuesta es estratificar o eliminar causas especiales; otras, usar una distribución distinta o una transformación.\n\n## Otras distribuciones continuas\n### Lognormal\nSi el **logaritmo** de una variable es normal, la variable es lognormal. Es asimétrica, con cola larga a la derecha, y solo toma valores positivos. Modela bien concentraciones de contaminantes, impurezas traza, conteos microbianos (por eso los conteos se analizan en log UFC) y tamaños de partícula.\n\n### Distribución t de Student\nParecida a la normal pero con colas más pesadas; depende de los **grados de libertad**. Aparece cuando se estima σ con una muestra pequeña. La usarás en intervalos de confianza y pruebas de hipótesis.\n\n### Chi-cuadrado y F\nAparecen al trabajar con **varianzas**: la chi-cuadrado para intervalos de una varianza y pruebas de bondad de ajuste; la F para comparar dos varianzas y en el ANOVA.\n\n### Weibull y exponencial\nModelan tiempos de falla y vida útil: por ejemplo, el tiempo hasta que una junta se degrada o un producto pierde su actividad.\n\n## Distribuciones discretas\n### Binomial\nModela el **número de éxitos** (o de defectuosos) en **n ensayos independientes**, cada uno con la misma probabilidad p. Ejemplo: número de envases con fuga en una muestra de n envases, si la fracción defectuosa del lote es p.\n\nP(X = k) = C(n, k) · pᵏ · (1 − p)ⁿ⁻ᵏ\n\nMedia = np; varianza = np(1 − p).\n\n**Ejemplo**: si un lote tiene 2 % de envases con fuga y se inspeccionan 50 al azar:\n\n- Probabilidad de **no encontrar ninguno**: 0.98⁵⁰ ≈ **0.36**.\n- Probabilidad de encontrar **dos o más**: ≈ **0.26**.\n\nLectura práctica: con una muestra de 50, un lote con 2 % defectuoso pasaría sin que se encuentre ningún defecto más de una tercera parte de las veces. Esta lógica es la base del muestreo de aceptación (capítulo 13).\n\n### Poisson\nModela el **número de eventos** en un intervalo (tiempo, área, volumen) cuando los eventos son raros e independientes: defectos de etiqueta por lote, quejas por mes, colonias en una placa.\n\nP(X = k) = e^(−λ) · λᵏ / k!\n\ndonde λ es el número medio de eventos. Su media y su varianza son iguales a λ.\n\n**Ejemplo**: si en promedio hay 2 defectos de impresión por lote:\n\n- P(0 defectos) = e⁻² ≈ **0.135**.\n- P(3 o menos) ≈ **0.857**; por lo tanto, P(4 o más) ≈ **0.143**.\n\nUn lote con 4 defectos no es especialmente raro (14 %); uno con 7 sí lo sería. Las gráficas c y u (capítulo 9) usan esta lógica.\n\n### Hipergeométrica\nComo la binomial, pero sin reemplazo en una población **finita**. Cuando la muestra es pequeña respecto al lote (menos del 10 %), la binomial es una buena aproximación.\n\n## El teorema central del límite\nEste teorema es una de las ideas más importantes de la estadística aplicada:\n\n> Las **medias** de muestras de tamaño n, tomadas de cualquier población con media μ y desviación estándar σ, se distribuyen aproximadamente como una normal con media μ y desviación estándar σ/√n, y la aproximación mejora al aumentar n.\n\nConsecuencias prácticas:\n\n1. Las medias son **más estables** que los valores individuales. La desviación estándar de la media, llamada **error estándar**, es σ/√n. Con n = 5 y σ = 0.15, el error estándar es 0.15/√5 ≈ **0.067**.\n2. Las medias de subgrupos tienden a ser **normales** aunque los datos individuales no lo sean del todo. Por eso las gráficas X̄ funcionan bien.\n3. Para reducir a la mitad la incertidumbre de una media, hay que **cuadruplicar** el tamaño de la muestra.\n\n## Suma de variables: propagación de la variación\nSi una variable es la suma (o la diferencia) de variables independientes, su varianza es la **suma de las varianzas**:\n\nσ²total = σ²₁ + σ²₂ + ... + σ²ₖ\n\nEjemplo: el peso neto de un envase es el peso bruto menos la tara. Si el peso bruto tiene σ = 4 g y la tara tiene σ = 3 g, el peso neto tiene σ = √(16 + 9) = **5 g**, no 1 g ni 7 g.\n\nEsta propiedad explica por qué la variación de la medición se suma a la del proceso, y es la base de la **propagación de incertidumbre** en metrología.\n\n## Ideas que debes llevarte\n- La **normal** (μ, σ) modela bien muchas variables de procesos estables; 68-95-99.73 % dentro de 1, 2 y 3σ.\n- El **valor z** permite calcular fracciones fuera de especificación; **centrar** el proceso puede reducir mucho el riesgo.\n- Comprueba la **normalidad** con la gráfica de probabilidad y, si falla, pregunta por qué.\n- **Lognormal** para contaminantes y conteos microbianos; **t**, **chi-cuadrado** y **F** para inferencia.\n- **Binomial** para defectuosos en una muestra; **Poisson** para conteos de eventos.\n- El **teorema central del límite**: las medias se distribuyen normalmente con error estándar σ/√n.\n- Las **varianzas** de variables independientes se suman.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Regla empírica",
+     "enunciado": "En una distribución normal, ¿qué porcentaje aproximado de valores cae dentro de μ ± 3σ?",
+     "opciones": [
+      "99.73 %",
+      "95 %",
+      "68 %",
+      "100 %"
+     ],
+     "correcta": 0,
+     "explicacion": "68 % en ± 1σ, 95 % en ± 2σ y 99.73 % en ± 3σ.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Valor z",
+     "enunciado": "Un proceso tiene μ = 50.0 g y σ = 2.0 g. ¿Cuál es el valor z de 55.0 g?",
+     "opciones": [
+      "2.5",
+      "5.0",
+      "0.4",
+      "−2.5"
+     ],
+     "correcta": 0,
+     "explicacion": "z = (55.0 − 50.0) / 2.0 = 2.5.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Centrado",
+     "enunciado": "Un proceso con especificación simétrica no está centrado. ¿Qué efecto tiene centrarlo sin reducir σ?",
+     "opciones": [
+      "Reduce la fracción fuera de especificación, porque disminuye la cola más cercana al límite",
+      "No tiene efecto",
+      "Aumenta la fracción fuera de especificación",
+      "Reduce σ"
+     ],
+     "correcta": 0,
+     "explicacion": "En el ejemplo del capítulo, centrar bajó la fracción fuera de especificación de 0.39 % a cerca de 0.09 %.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Normalidad",
+     "enunciado": "¿Cuál es la herramienta visual más útil para comprobar la normalidad?",
+     "opciones": [
+      "La gráfica de probabilidad normal (Q-Q)",
+      "El diagrama de Pareto",
+      "El diagrama de pastel",
+      "La gráfica de barras de frecuencias por día"
+     ],
+     "correcta": 0,
+     "explicacion": "Si los datos son normales, los puntos caen cerca de una recta.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Lognormal",
+     "enunciado": "¿Qué distribución modela mejor los conteos microbianos o las impurezas traza?",
+     "opciones": [
+      "Lognormal",
+      "Normal simétrica",
+      "Uniforme",
+      "Binomial"
+     ],
+     "correcta": 0,
+     "explicacion": "Son positivas y con cola larga a la derecha; por eso se analizan en logaritmos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Binomial",
+     "enunciado": "¿Qué modela la distribución binomial?",
+     "opciones": [
+      "El número de defectuosos en n ensayos independientes con probabilidad p constante",
+      "El tiempo hasta la falla",
+      "La concentración de un activo",
+      "El número de defectos por metro cuadrado sin un número fijo de ensayos"
+     ],
+     "correcta": 0,
+     "explicacion": "El último caso es Poisson; la binomial requiere n ensayos y p fija.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Binomial",
+     "enunciado": "Un lote tiene 2 % de envases con fuga. Se inspeccionan 50 al azar. ¿Cuál es aproximadamente la probabilidad de no encontrar ninguno?",
+     "opciones": [
+      "0.36",
+      "0.02",
+      "0.98",
+      "0.10"
+     ],
+     "correcta": 0,
+     "explicacion": "0.98⁵⁰ ≈ 0.364: más de un tercio de las veces el lote pasaría sin detectar defectos.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Poisson",
+     "enunciado": "En la distribución de Poisson, ¿qué relación hay entre la media y la varianza?",
+     "opciones": [
+      "Son iguales a λ",
+      "La varianza es el cuadrado de la media",
+      "La varianza es cero",
+      "No tienen relación"
+     ],
+     "correcta": 0,
+     "explicacion": "Media = varianza = λ.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Teorema central del límite",
+     "enunciado": "Si σ = 0.20 y se promedian subgrupos de n = 4, ¿cuál es el error estándar de la media?",
+     "opciones": [
+      "0.10",
+      "0.05",
+      "0.20",
+      "0.80"
+     ],
+     "correcta": 0,
+     "explicacion": "σ/√n = 0.20/2 = 0.10.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tamaño de muestra",
+     "enunciado": "¿Cuánto hay que aumentar el tamaño de muestra para reducir a la mitad el error estándar de una media?",
+     "opciones": [
+      "Cuadruplicarlo",
+      "Duplicarlo",
+      "Triplicarlo",
+      "No depende del tamaño de muestra"
+     ],
+     "correcta": 0,
+     "explicacion": "El error estándar es σ/√n; para dividirlo entre 2, n debe multiplicarse por 4.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Suma de varianzas",
+     "enunciado": "El peso bruto tiene σ = 6 g y la tara σ = 8 g, independientes. ¿Cuál es σ del peso neto?",
+     "opciones": [
+      "10 g",
+      "2 g",
+      "14 g",
+      "48 g"
+     ],
+     "correcta": 0,
+     "explicacion": "√(36 + 64) = √100 = 10 g. Las varianzas se suman, también en una diferencia.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Fracción fuera de especificación",
+     "enunciado": "Un proceso de llenado tiene μ = 1 010 g y σ = 4 g; el mínimo legal es 1 000 g. Estima la fracción de envases por debajo del mínimo y qué harías para reducirla.",
+     "respuesta_modelo": "z = (1 000 − 1 010) / 4 = −2.5. La probabilidad de z < −2.5 es aproximadamente 0.62 %, unos 6 de cada 1000 envases. Para reducirla: aumentar la media (por ejemplo, a 1 012 g da z = −3, alrededor de 0.13 %), con el costo de regalar producto; o, mejor, reducir σ mejorando la llenadora, lo que permite bajar la media sin aumentar el riesgo. Además, comprobar que la distribución sea normal en la cola inferior y que el proceso esté en control.",
+     "puntos_clave": [
+      "Cálculo de z = −2.5",
+      "Fracción ≈ 0.6 %",
+      "Opciones: mover la media o reducir σ",
+      "Mención del costo o de la validez del modelo"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Poisson",
+     "enunciado": "Un proceso de etiquetado produce en promedio 1.5 defectos por lote. Un lote presenta 5 defectos. ¿Es un resultado inusual? Justifica con Poisson.",
+     "respuesta_modelo": "Con λ = 1.5, P(X ≥ 5) = 1 − P(X ≤ 4). P(0) = 0.223, P(1) = 0.335, P(2) = 0.251, P(3) = 0.126, P(4) = 0.047; suma ≈ 0.981. Entonces P(X ≥ 5) ≈ 0.019, alrededor de 2 %. Es poco probable si el proceso no ha cambiado; sugiere investigar una posible causa especial (rollo de etiquetas defectuoso, ajuste de la etiquetadora), aunque un 2 % no es imposible. Una gráfica c con los datos del proceso ayudaría a decidir.",
+     "puntos_clave": [
+      "Modelo de Poisson con λ = 1.5",
+      "Cálculo aproximado de P(X ≥ 5) ≈ 2 %",
+      "Interpretación como poco probable",
+      "Recomendación de investigar o usar gráfica c"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "No normalidad",
+     "enunciado": "Los datos de una impureza (ppm) muestran un histograma sesgado a la derecha y la prueba de Anderson-Darling rechaza la normalidad. ¿Qué harías antes de calcular la capacidad del proceso?",
+     "respuesta_modelo": "Primero preguntaría por qué no son normales: una impureza cercana a cero está acotada en cero y suele ser lognormal, pero también podría haber mezcla de proveedores o causas especiales. Revisaría la gráfica de corrida y estratificaría por proveedor o lote de materia prima. Si el sesgo es inherente, probaría una distribución lognormal (gráfica de probabilidad de los logaritmos) o una transformación, y calcularía la capacidad con el modelo adecuado, no con fórmulas normales. También verificaría que el proceso esté en control antes de hablar de capacidad.",
+     "puntos_clave": [
+      "Preguntar la causa de la no normalidad",
+      "Revisar estabilidad y estratificar",
+      "Considerar lognormal o transformación",
+      "Calcular capacidad con el modelo adecuado y en control"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "titulo": "Muestreo e intervalos de confianza",
+   "texto": "## Una media sin incertidumbre es media información\nSi analizas diez lotes y su media es 15.06 %, ¿cuál es la media \"verdadera\" del proceso? No lo sabes con certeza: otros diez lotes darían otra media. Lo que sí puedes hacer es construir un **intervalo** que, con un nivel de confianza definido, contenga la media verdadera. Ese es el **intervalo de confianza**, y es la forma honesta de reportar una estimación.\n\n## Estimación puntual y por intervalo\n- **Estimación puntual**: un solo número que estima el parámetro (x̄ estima μ; s estima σ; la proporción muestral p̂ estima la proporción real p).\n- **Estimación por intervalo**: un rango de valores plausibles para el parámetro, con un nivel de confianza.\n\n## Intervalo de confianza para una media\n### Con σ conocida (raro en la práctica)\nx̄ ± z · σ/√n\n\nPara 95 % de confianza, z = 1.96.\n\n### Con σ desconocida (lo habitual)\nCuando σ se estima con s a partir de la misma muestra, se usa la distribución **t de Student** con n − 1 grados de libertad:\n\nx̄ ± t · s/√n\n\nEl valor t es mayor que z para muestras pequeñas, lo que **ensancha** el intervalo para reflejar la incertidumbre adicional de estimar σ. Algunos valores de t para 95 % de confianza (dos colas):\n\n| Grados de libertad | t |\n|---|---|\n| 2 | 4.30 |\n| 4 | 2.78 |\n| 9 | 2.26 |\n| 19 | 2.09 |\n| 29 | 2.05 |\n| muy grande | 1.96 |\n\nEn hoja de cálculo: INV.T.2C(0.05; gl).\n\n### Ejemplo\nDiez lotes: x̄ = 15.06 %, s = 0.087 %. Con 9 grados de libertad, t = 2.262.\n\nMargen = 2.262 × 0.087 / √10 = 2.262 × 0.0275 ≈ **0.062**\n\nIntervalo de 95 %: **15.00 a 15.12 %**.\n\n### Interpretación correcta\nLa interpretación rigurosa es: si repitiéramos el procedimiento (tomar 10 lotes y calcular el intervalo) muchas veces, alrededor del 95 % de los intervalos contendría la media verdadera. **No** significa que \"hay 95 % de probabilidad de que μ esté en este intervalo\" en sentido estricto (μ es un valor fijo), aunque en la práctica se usa así de manera informal.\n\nLo útil para la toma de decisiones: si el valor objetivo de 15.00 % está dentro del intervalo, los datos son **compatibles** con un proceso centrado en el objetivo; si estuviera fuera, habría evidencia de que el proceso está descentrado.\n\n### Lo que afecta el ancho\n- **Mayor variabilidad** (s): intervalo más ancho.\n- **Mayor tamaño de muestra** (n): intervalo más angosto, en proporción a 1/√n.\n- **Mayor confianza** (99 % en lugar de 95 %): intervalo más ancho.\n\n## El uso típico en el laboratorio: réplicas\nUn caso frecuente: reportar el resultado de un análisis como la media de tres réplicas. Con n = 3 (2 grados de libertad), t = 4.30: el intervalo es muy ancho. Por ejemplo, con réplicas de 15.05, 15.11 y 15.08 (x̄ = 15.08, s = 0.03), el margen es 4.30 × 0.03/√3 ≈ 0.074.\n\nEsto ilustra que **tres réplicas dicen poco sobre la incertidumbre** si la desviación estándar se estima solo con ellas. En la práctica, los laboratorios usan la **precisión del método** obtenida en la validación (con muchos más datos) para estimar la incertidumbre de un resultado, no la s de tres réplicas.\n\n## Intervalo de confianza para una desviación estándar\nLa variabilidad también se estima con incertidumbre, y bastante. Con la distribución chi-cuadrado:\n\n√[(n − 1)s² / χ²superior] ≤ σ ≤ √[(n − 1)s² / χ²inferior]\n\nPara el ejemplo (n = 10, s = 0.087), el intervalo de 95 % para σ es aproximadamente **0.060 a 0.159 %**. Observa lo ancho que es: con diez datos, la desviación estándar real podría ser casi el doble de la estimada. Por eso los índices de capacidad calculados con pocos datos (capítulo 11) son muy inciertos.\n\n## Intervalo de confianza para una proporción\nPara datos de atributos, la proporción muestral es p̂ = x/n. El intervalo aproximado clásico (de Wald) es:\n\np̂ ± z · √[p̂(1 − p̂)/n]\n\n**Ejemplo**: 4 envases con fuga en 200 inspeccionados: p̂ = 0.020.\n\nMargen = 1.96 × √(0.02 × 0.98 / 200) ≈ 0.019. Intervalo: 0.1 % a 3.9 %.\n\nEste intervalo funciona mal con proporciones pequeñas o muestras chicas. El **intervalo de Wilson**, que calculan la mayoría de los programas, es más confiable: para el ejemplo da aproximadamente **0.8 % a 5.0 %**. Observa que es asimétrico, como debe ser cerca de cero.\n\n### El caso de cero defectos\nSi inspeccionas n unidades y no encuentras ningún defecto, no puedes concluir que la proporción es cero. La **regla del tres** da un límite superior aproximado de 95 %: p ≤ 3/n. Con 300 envases sin defectos, la proporción real podría ser de hasta alrededor de 1 %.\n\n## Tamaño de muestra\n### Para estimar una media\nSi quieres estimar una media con un margen de error E y confianza dada:\n\nn = (z · σ / E)²\n\n**Ejemplo**: σ ≈ 0.15 %; quieres un margen de ± 0.05 % con 95 % de confianza:\n\nn = (1.96 × 0.15 / 0.05)² = (5.88)² ≈ 34.6 → **35 lotes**.\n\nSi no conoces σ, usa una estimación de datos históricos o de un estudio piloto.\n\n### Para estimar una proporción\nn = z² · p(1 − p) / E²\n\nEl peor caso es p = 0.5. Para proporciones pequeñas, el tamaño de muestra necesario para detectar defectos crece mucho: no hay atajos.\n\n## Intervalos de confianza, de predicción y de tolerancia\nTres tipos de intervalos que se confunden con frecuencia:\n\n| Intervalo | Responde a | Ejemplo |\n|---|---|---|\n| De confianza | ¿Dónde está el parámetro (la media del proceso)? | La media del proceso está entre 15.00 y 15.12 % |\n| De predicción | ¿Dónde caerá el próximo valor individual? | El próximo lote estará entre 14.85 y 15.27 % |\n| De tolerancia | ¿Dónde está una proporción dada de la población? | El 99 % de los lotes, con 95 % de confianza, está entre 14.7 y 15.4 % |\n\nPara comparar con especificaciones, lo que importa es dónde caen los **lotes individuales**, no la media. Un intervalo de confianza de la media dentro de especificación **no garantiza** que los lotes individuales cumplan. Para eso se usan intervalos de **tolerancia** o los índices de capacidad.\n\n## Muestreo: cómo elegir la muestra\n### Aleatorio simple\nCada unidad tiene la misma probabilidad de ser elegida. Requiere numerar las unidades y usar números aleatorios.\n\n### Sistemático\nUna unidad cada k unidades (por ejemplo, cada 50 envases). Práctico, pero peligroso si el proceso tiene un ciclo que coincide con k.\n\n### Estratificado\nSe divide la población en estratos (por ejemplo, tarimas, turnos o niveles del tanque) y se muestrea en cada uno. Asegura la cobertura de todas las partes.\n\n### Por conglomerados\nSe eligen grupos completos (por ejemplo, cajas) y se inspeccionan todas las unidades. Más barato, pero menos preciso si los grupos son distintos entre sí.\n\n### Muestras compuestas\nEn productos a granel (líquidos en tanques, polvos), se combinan submuestras de distintos puntos en una muestra compuesta. Da una buena estimación de la **media**, pero **oculta** la variación entre puntos. Si te interesa la homogeneidad, analiza las submuestras por separado.\n\n## Ideas que debes llevarte\n- Reporta las estimaciones con su **intervalo de confianza**.\n- Para la media con σ desconocida: x̄ ± t · s/√n con n − 1 grados de libertad.\n- El ancho depende de la **variabilidad**, el **tamaño de muestra** (1/√n) y el **nivel de confianza**.\n- La **desviación estándar** estimada con pocos datos es muy incierta.\n- Para **proporciones** usa el intervalo de **Wilson**; con cero defectos, la **regla del tres**.\n- Calcula el **tamaño de muestra** antes de muestrear: n = (zσ/E)².\n- Distingue intervalos de **confianza** (parámetro), **predicción** (próximo valor) y **tolerancia** (proporción de la población).\n- Elige el **método de muestreo** según la estructura de la población.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Intervalo de la media",
+     "enunciado": "¿Por qué se usa t en lugar de z para el intervalo de confianza de una media cuando σ es desconocida?",
+     "opciones": [
+      "Porque estimar σ con s agrega incertidumbre, y t ensancha el intervalo en consecuencia",
+      "Porque t siempre da intervalos más angostos",
+      "Porque z solo aplica a proporciones",
+      "Por convención sin razón técnica"
+     ],
+     "correcta": 0,
+     "explicacion": "Con muchos grados de libertad, t se aproxima a z = 1.96.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cálculo",
+     "enunciado": "n = 9, x̄ = 20.0, s = 0.6. Con t = 2.31 (8 gl), ¿cuál es el margen de un intervalo de 95 %?",
+     "opciones": [
+      "0.46",
+      "0.15",
+      "1.39",
+      "0.20"
+     ],
+     "correcta": 0,
+     "explicacion": "2.31 × 0.6/√9 = 2.31 × 0.2 = 0.462.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ancho del intervalo",
+     "enunciado": "Si cuadruplicas el tamaño de muestra, manteniendo s y la confianza, ¿qué pasa con el ancho del intervalo?",
+     "opciones": [
+      "Se reduce aproximadamente a la mitad",
+      "Se reduce a la cuarta parte",
+      "No cambia",
+      "Se duplica"
+     ],
+     "correcta": 0,
+     "explicacion": "El ancho es proporcional a 1/√n.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Interpretación",
+     "enunciado": "El intervalo de 95 % de la media es 15.00 a 15.12 % y el objetivo es 15.00 %. ¿Qué se concluye?",
+     "opciones": [
+      "Los datos son compatibles con un proceso centrado en el objetivo",
+      "El proceso está descentrado con certeza",
+      "Todos los lotes individuales están entre 15.00 y 15.12 %",
+      "La media verdadera es exactamente 15.06 %"
+     ],
+     "correcta": 0,
+     "explicacion": "El objetivo está dentro del intervalo; el intervalo es sobre la media, no sobre lotes individuales.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Réplicas",
+     "enunciado": "¿Por qué un intervalo calculado con solo tres réplicas es muy ancho?",
+     "opciones": [
+      "Porque con 2 grados de libertad t ≈ 4.30 y la s se estima con muy pocos datos",
+      "Porque tres réplicas siempre son exactas",
+      "Porque la media de tres datos no existe",
+      "Porque z es mayor con muestras pequeñas"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso se usa la precisión del método obtenida en la validación para estimar la incertidumbre.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desviación estándar",
+     "enunciado": "Con 10 datos y s = 0.087, el intervalo de 95 % para σ es aproximadamente 0.060 a 0.159. ¿Qué enseña esto?",
+     "opciones": [
+      "Que la desviación estándar estimada con pocos datos es muy incierta",
+      "Que la desviación estándar es exacta",
+      "Que la media es incierta pero σ no",
+      "Que hay un error de cálculo"
+     ],
+     "correcta": 0,
+     "explicacion": "Esto afecta directamente la confiabilidad de índices de capacidad calculados con pocos datos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporciones",
+     "enunciado": "¿Qué intervalo para proporciones es más confiable con proporciones pequeñas o muestras chicas?",
+     "opciones": [
+      "El de Wilson",
+      "El de Wald (p̂ ± z√[p̂(1−p̂)/n])",
+      "El de la media con t",
+      "Ninguno funciona"
+     ],
+     "correcta": 0,
+     "explicacion": "El de Wald puede dar límites negativos o demasiado angostos cerca de cero.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regla del tres",
+     "enunciado": "Se inspeccionan 600 envases sin encontrar defectos. ¿Cuál es aproximadamente el límite superior de 95 % de la proporción defectuosa?",
+     "opciones": [
+      "0.5 %",
+      "0 %",
+      "3 %",
+      "0.05 %"
+     ],
+     "correcta": 0,
+     "explicacion": "3/n = 3/600 = 0.005 = 0.5 %.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tamaño de muestra",
+     "enunciado": "σ = 0.2; se quiere estimar la media con un margen de ± 0.1 y 95 % de confianza. ¿Qué tamaño de muestra aproximado se necesita?",
+     "opciones": [
+      "16",
+      "4",
+      "8",
+      "40"
+     ],
+     "correcta": 0,
+     "explicacion": "n = (1.96 × 0.2/0.1)² = 3.92² ≈ 15.4 → 16.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos de intervalo",
+     "enunciado": "¿Qué intervalo indica dónde está, con cierta confianza, el 99 % de los lotes individuales?",
+     "opciones": [
+      "De tolerancia",
+      "De confianza de la media",
+      "De predicción de un solo valor",
+      "De confianza de σ"
+     ],
+     "correcta": 0,
+     "explicacion": "Para comparar la población de lotes con especificaciones se usan intervalos de tolerancia o índices de capacidad.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Muestras compuestas",
+     "enunciado": "¿Qué limitación tiene una muestra compuesta de varios puntos de un tanque?",
+     "opciones": [
+      "Estima bien la media pero oculta la variación entre puntos",
+      "Siempre sesga la media",
+      "No sirve para líquidos",
+      "Aumenta la variación del resultado"
+     ],
+     "correcta": 0,
+     "explicacion": "Si interesa la homogeneidad, se analizan las submuestras por separado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cálculo e interpretación",
+     "enunciado": "Cinco lotes de un detergente dan alcalinidad total de 10.2, 10.5, 10.1, 10.4 y 10.3 % (como NaOH). Calcula el intervalo de 95 % para la media (t = 2.78 con 4 gl) e interprétalo respecto a un objetivo de 10.0 %.",
+     "respuesta_modelo": "x̄ = 51.5/5 = 10.30. Desviaciones: −0.1, 0.2, −0.2, 0.1, 0; cuadrados: 0.01, 0.04, 0.04, 0.01, 0; suma 0.10; s² = 0.10/4 = 0.025; s ≈ 0.158. Margen = 2.78 × 0.158/√5 ≈ 2.78 × 0.0707 ≈ 0.197. Intervalo ≈ 10.10 a 10.50 %. El objetivo de 10.0 % está fuera del intervalo: hay evidencia de que el proceso está centrado por encima del objetivo; conviene investigar la causa (formulación, dosificación, método) y considerar ajustar el centro.",
+     "puntos_clave": [
+      "x̄ = 10.30 y s ≈ 0.158",
+      "Margen ≈ 0.20",
+      "Intervalo ≈ 10.10 a 10.50",
+      "Interpretación: objetivo fuera, proceso descentrado"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Confianza frente a tolerancia",
+     "enunciado": "Un gerente dice: 'el intervalo de confianza de la media está dentro de especificación, así que todos los lotes cumplen'. Explica el error.",
+     "respuesta_modelo": "El intervalo de confianza describe dónde está la media del proceso, no dónde caen los lotes individuales. Los lotes se dispersan alrededor de la media con la desviación estándar del proceso, que es mucho mayor que el error estándar de la media. Un proceso puede tener su media bien estimada dentro de especificación y, aun así, una fracción de lotes fuera si la variación es grande. Para saber si los lotes cumplen hay que usar un intervalo de tolerancia, la fracción fuera de especificación con el modelo de la distribución o índices de capacidad, con el proceso en control.",
+     "puntos_clave": [
+      "El intervalo de confianza es sobre la media",
+      "Los lotes individuales varían con σ, no con σ/√n",
+      "Puede haber lotes fuera aunque la media esté bien",
+      "Herramientas correctas: tolerancia, capacidad"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tamaño de muestra",
+     "enunciado": "Quieres demostrar a un cliente que la fracción de envases con fuga es menor de 0.5 % con 95 % de confianza, sin encontrar defectos. ¿Cuántos envases debes inspeccionar como mínimo y qué limitación tiene ese plan?",
+     "respuesta_modelo": "Con la regla del tres, el límite superior de 95 % es 3/n. Para 3/n ≤ 0.005, n ≥ 600 envases, y no debe aparecer ningún defecto. Limitaciones: si aparece un solo defecto el plan ya no demuestra la meta con esa muestra; la muestra debe ser aleatoria y representativa de todo el lote o periodo; y la conclusión solo aplica al proceso en las condiciones muestreadas. Si el proceso es estable, datos acumulados de varios lotes podrían usarse para fortalecer la conclusión.",
+     "puntos_clave": [
+      "Uso de la regla del tres",
+      "n ≥ 600 sin defectos",
+      "Limitación si aparece un defecto",
+      "Representatividad y estabilidad"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
