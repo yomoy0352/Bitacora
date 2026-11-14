@@ -1,0 +1,607 @@
+{
+ "id": "haccp-iso22000",
+ "titulo": "HACCP avanzado e ISO 22000 para auxiliares de proceso",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Auxiliares de proceso: qué son y por qué su inocuidad importa",
+   "texto": "## Un producto que no está en la etiqueta del alimento\nCuando una persona compra un yogur, lee en la etiqueta leche, cultivos, azúcar y quizá un estabilizante. No lee \"sosa cáustica\", \"ácido nítrico\", \"ácido peracético\" ni \"antiespumante de silicona\". Sin embargo, todas esas sustancias pudieron tocar el yogur o las superficies por donde pasó. Son **auxiliares de proceso** o **sustancias de contacto incidental**, y su inocuidad es responsabilidad de quien las fabrica.\n\nEste curso trata de cómo aplicar HACCP e ISO 22000 con profundidad en una planta que fabrica ese tipo de productos. La mayor parte de la literatura sobre HACCP está escrita para quien fabrica alimentos; aquí vamos a trasladar los principios a un contexto químico, donde los peligros, los controles y el uso previsto son distintos.\n\n## Definiciones que importan\n### Auxiliar de proceso (coadyuvante de elaboración)\nEl **Codex Alimentarius** define un auxiliar de proceso, en esencia, como una sustancia o material, sin incluir aparatos ni utensilios, que no se consume como ingrediente alimentario por sí mismo, que se usa **intencionalmente** en la elaboración de materias primas, alimentos o sus ingredientes para cumplir un **propósito tecnológico durante el tratamiento o la elaboración**, y que puede dar lugar a la presencia **no intencional pero inevitable** de residuos o derivados en el producto final.\n\nTres ideas clave de esa definición:\n\n1. Se usa **durante el proceso**, no para cumplir una función en el producto terminado.\n2. Su presencia en el alimento final es **residual**, no intencional, pero **inevitable**.\n3. Los residuos **no deben representar un riesgo** para la salud ni tener una función tecnológica en el producto final.\n\nEl Codex tiene además unas **Directrices sobre sustancias utilizadas como auxiliares de elaboración** (CXG 75-2010), que establecen principios para su uso: que se usen en la cantidad mínima necesaria, que los residuos se reduzcan tanto como sea razonablemente posible, que sean de calidad alimentaria adecuada y que su inocuidad esté evaluada.\n\n### Ejemplos\n- **Antiespumantes** (silicona, aceites, polímeros) en fermentaciones, procesamiento de papa o de jugos.\n- **Enzimas** usadas en el proceso que se inactivan o eliminan.\n- **Agentes de clarificación y filtración** (bentonita, carbón activado, tierra de diatomeas).\n- **Solventes de extracción**.\n- **Agentes de pelado** químico (soluciones alcalinas para pelar frutas y hortalizas).\n- **Agentes antimicrobianos** en agua de lavado de productos o de canales.\n- **Lubricantes** grado alimentario y desmoldantes.\n- **Ácidos y álcalis** para ajuste de pH en el proceso.\n\n### Sustancias de contacto incidental\nLos **detergentes** y **sanitizantes** para superficies en contacto con alimentos no se agregan al alimento; se aplican a equipos y superficies. Pero pueden dejar residuos que pasen al alimento, sobre todo los sanitizantes **sin enjuague**. Por eso se tratan con lógica regulatoria propia: en Estados Unidos, el **21 CFR 178.1010** define qué sustancias y concentraciones se permiten en sanitizantes sin enjuague, y la **EPA** registra los productos con afirmaciones antimicrobianas. Otros marcos usan el término **químicos de contacto incidental** con alimentos.\n\nPara efectos de un sistema de inocuidad, un fabricante de detergentes y sanitizantes para la industria de alimentos debe pensar como un fabricante de auxiliares de proceso: **su producto puede llegar al alimento**.\n\n### Lo que dice el marco regulatorio en distintos lugares\n- **Estados Unidos**: el **21 CFR 101.100** describe cuándo un auxiliar de proceso queda exento de declararse en la etiqueta del alimento (por ejemplo, cuando se elimina, se convierte o queda en niveles insignificantes sin efecto técnico). Su seguridad se sustenta por vías como el reconocimiento GRAS, los aditivos alimentarios aprobados o las notificaciones de sustancias de contacto con alimentos.\n- **México**: el acuerdo de **COFEPRIS** que determina los **aditivos y coadyuvantes** en alimentos, bebidas y suplementos alimenticios, sus usos y disposiciones sanitarias, lista coadyuvantes permitidos con sus usos y límites.\n- **Codex**: además de las definiciones y directrices, las especificaciones de identidad y pureza del **JECFA** (Comité Mixto FAO/OMS de Expertos en Aditivos Alimentarios) son una referencia frecuente.\n- **Especificaciones de grado alimentario**: el **Food Chemicals Codex** (FCC) publica monografías con requisitos de identidad y pureza (por ejemplo, límites de plomo y arsénico) para sustancias químicas de uso alimentario.\n\n## Por qué los auxiliares de proceso son un tema de inocuidad\nUn fabricante de alimentos espera que lo que compra sea inocuo para el uso previsto. Si un auxiliar de proceso llega con un problema, este se multiplica en todos los alimentos donde se usa. Algunos escenarios realistas:\n\n- Un **ácido** grado técnico, con metales pesados por encima de las especificaciones alimentarias, se vende o se envasa por error como grado alimentario.\n- Un **antiespumante** se contamina microbiológicamente en el tanque de almacenamiento y lleva carga microbiana a una fermentación.\n- Un **sanitizante sin enjuague** se formula con una concentración mayor de la declarada y deja residuos por encima de los límites.\n- Un producto se envasa en un **tambor reciclado** que contuvo un químico incompatible o tóxico.\n- La **etiqueta** de un producto no destinado a contacto con alimentos se coloca por error en un producto equivocado, o al revés.\n- Un aditivo de la formulación es de **origen alergénico** (por ejemplo, una enzima o un emulsificante derivado de soya) y no se declara.\n\nEstos peligros son principalmente **químicos**, pero también hay **físicos** (partículas, fragmentos de empaque), **biológicos** (productos acuosos, emulsiones, enzimas) y de **alérgenos**.\n\n## Esquemas de certificación para estos fabricantes\nLos clientes de la industria de alimentos piden con frecuencia a sus proveedores de auxiliares de proceso una certificación reconocida por la **GFSI** (Iniciativa Global de Inocuidad Alimentaria). Las más comunes:\n\n- **SQF**: en su clasificación de categorías del sector alimentario, la **FSC 33** corresponde a la **fabricación de auxiliares de proceso**, auditada contra el código de seguridad alimentaria para la fabricación de alimentos.\n- **FSSC 22000**: combina **ISO 22000** con un programa de prerrequisitos técnico y requisitos adicionales propios del esquema. La producción de químicos y bioquímicos para la cadena alimentaria se ubica en una categoría específica del esquema.\n- **ISO 22000** sola, certificada por un organismo acreditado, sin el reconocimiento GFSI.\n\nEn todos los casos, el núcleo es el mismo: **programas de prerrequisitos** sólidos, un **análisis de peligros** basado en el uso previsto y un **plan de control** con validación, monitoreo y verificación.\n\n## La diferencia con una planta de alimentos\nAplicar HACCP en una planta química que fabrica auxiliares de proceso tiene particularidades:\n\n| Aspecto | Planta de alimentos | Planta de auxiliares |\n|---|---|---|\n| Peligro dominante | Biológico | Químico |\n| Uso del producto | Consumo directo | Insumo del proceso del cliente |\n| Riesgo de grado | Bajo | Grado técnico frente a alimentario |\n| Exposición final | Directa | Por residuos en el alimento |\n| Control crítico típico | Tratamiento térmico | Especificación y formulación |\n\nEl **uso previsto** es aún más importante que en alimentos: un mismo ácido fosfórico puede usarse para ajustar el pH de una bebida (ingrediente o aditivo), como limpiador ácido de equipos (contacto incidental) o en tratamiento de aguas industriales (sin relación con alimentos). La evaluación de peligros y las especificaciones cambian según el uso.\n\nOtra particularidad: muchas plantas químicas fabrican **en las mismas instalaciones** productos para la industria de alimentos y productos para usos industriales sin requisitos alimentarios. La **segregación** y el control de la contaminación cruzada entre grados se vuelven centrales.\n\n## Qué aprenderás en este curso\n1. La arquitectura de ISO 22000 y su relación con los principios HACCP del Codex.\n2. Cómo se construye el contexto, el liderazgo y la planificación del sistema.\n3. Los prerrequisitos que necesita una planta química.\n4. Los pasos preliminares y el análisis de peligros con profundidad.\n5. La clasificación de medidas de control en PCC y PPRO, su validación y el plan de control.\n6. El control de proveedores, la trazabilidad, las emergencias y el retiro de producto.\n7. La verificación, la auditoría y la mejora.\n8. Un caso integrador.\n\n## Ideas que debes llevarte\n- Un **auxiliar de proceso** se usa durante el proceso con un propósito tecnológico y deja residuos no intencionales pero inevitables, que deben ser inocuos.\n- Los detergentes y sanitizantes para superficies en contacto con alimentos son **sustancias de contacto incidental**: también pueden llegar al alimento.\n- Los peligros dominantes son **químicos**: impurezas, grado equivocado, sobreconcentración, contaminación cruzada, empaques y etiquetado.\n- El **uso previsto** define la evaluación y las especificaciones.\n- SQF **FSC 33**, FSSC 22000 e ISO 22000 son los marcos de certificación habituales para estos fabricantes.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Definición de auxiliar de proceso",
+     "enunciado": "Según la lógica de la definición del Codex, ¿qué distingue a un auxiliar de proceso de un aditivo alimentario?",
+     "opciones": [
+      "El auxiliar cumple su función durante el proceso y su presencia en el producto final es un residuo no intencional sin función tecnológica",
+      "El auxiliar siempre se elimina por completo y nunca deja residuos",
+      "El auxiliar se agrega para cumplir una función en el producto terminado",
+      "El auxiliar no está sujeto a ninguna evaluación de inocuidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El aditivo cumple una función en el alimento; el auxiliar actúa durante el proceso y puede dejar residuos inevitables, que deben ser inocuos y sin efecto técnico.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Definición de auxiliar de proceso",
+     "enunciado": "¿Cuál de estos es un ejemplo típico de auxiliar de proceso?",
+     "opciones": [
+      "Un antiespumante de silicona usado en una fermentación",
+      "Un colorante agregado a una bebida",
+      "Un edulcorante en un yogur",
+      "Un conservador en una salsa"
+     ],
+     "correcta": 0,
+     "explicacion": "El antiespumante actúa durante el proceso; colorante, edulcorante y conservador cumplen funciones en el producto final: son aditivos.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contacto incidental",
+     "enunciado": "¿Por qué un fabricante de sanitizantes para superficies en contacto con alimentos debe gestionar la inocuidad como si fabricara un auxiliar de proceso?",
+     "opciones": [
+      "Porque su producto puede dejar residuos que pasen al alimento, sobre todo cuando se usa sin enjuague",
+      "Porque los sanitizantes se agregan como ingrediente al alimento",
+      "Porque la ley lo obliga a declararse en la etiqueta del alimento",
+      "Porque los sanitizantes no tienen ningún riesgo químico"
+     ],
+     "correcta": 0,
+     "explicacion": "Los sanitizantes son sustancias de contacto incidental: sus residuos pueden migrar al alimento, por eso existen límites como los del 21 CFR 178.1010.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Directrices Codex",
+     "enunciado": "¿Qué principio establecen las directrices del Codex sobre sustancias usadas como auxiliares de elaboración?",
+     "opciones": [
+      "Usar la cantidad mínima necesaria y reducir los residuos tanto como sea razonablemente posible",
+      "Usar la máxima cantidad disponible para asegurar la función",
+      "Que nunca se requiere evaluación de inocuidad",
+      "Que los residuos pueden tener una función en el producto final"
+     ],
+     "correcta": 0,
+     "explicacion": "CXG 75-2010 promueve el uso mínimo necesario, residuos tan bajos como sea razonable, calidad adecuada y evaluación de inocuidad.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especificaciones",
+     "enunciado": "¿Qué publica el Food Chemicals Codex (FCC)?",
+     "opciones": [
+      "Monografías con requisitos de identidad y pureza para sustancias químicas de uso alimentario",
+      "Límites microbiológicos para alimentos listos para consumo",
+      "El listado de plaguicidas registrados por la EPA",
+      "La norma de certificación SQF"
+     ],
+     "correcta": 0,
+     "explicacion": "El FCC define especificaciones de grado alimentario, por ejemplo límites de plomo y arsénico; el JECFA publica especificaciones similares en el ámbito Codex.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peligros dominantes",
+     "enunciado": "En una planta que fabrica auxiliares de proceso químicos, ¿qué tipo de peligro suele ser el dominante?",
+     "opciones": [
+      "Químico",
+      "Biológico",
+      "Físico",
+      "Radiológico"
+     ],
+     "correcta": 0,
+     "explicacion": "Impurezas, grado equivocado, sobreconcentración, contaminación cruzada y empaques son peligros químicos. Los biológicos y físicos existen, pero suelen ser secundarios.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Uso previsto",
+     "enunciado": "Un mismo ácido fosfórico se vende para ajuste de pH de bebidas, como limpiador de equipos y para tratamiento de aguas industriales. ¿Qué implica para el sistema de inocuidad?",
+     "opciones": [
+      "La evaluación de peligros y las especificaciones dependen del uso previsto de cada presentación",
+      "El análisis es el mismo porque la sustancia es la misma",
+      "Solo importa el uso más común",
+      "Ninguno de esos usos requiere control de inocuidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El uso previsto define la exposición, las especificaciones (grado alimentario o técnico) y los controles necesarios.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Certificación",
+     "enunciado": "En SQF, ¿a qué corresponde la categoría del sector alimentario FSC 33?",
+     "opciones": [
+      "Fabricación de auxiliares de proceso",
+      "Fabricación de empaques para alimentos",
+      "Procesamiento de lácteos",
+      "Fabricación de alimento para mascotas"
+     ],
+     "correcta": 0,
+     "explicacion": "FSC 33 corresponde a la fabricación de auxiliares de proceso; FSC 27 es empaques, FSC 10 lácteos y FSC 32 alimento para mascotas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Certificación",
+     "enunciado": "¿Qué combina FSSC 22000?",
+     "opciones": [
+      "ISO 22000 con un programa de prerrequisitos técnico y requisitos adicionales del esquema",
+      "Solo un programa de buenas prácticas de manufactura",
+      "ISO 9001 con ISO 14001",
+      "El código SQF con HACCP del Codex"
+     ],
+     "correcta": 0,
+     "explicacion": "FSSC 22000 es un esquema reconocido por la GFSI basado en ISO 22000, prerrequisitos técnicos por sector y requisitos adicionales.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Segregación",
+     "enunciado": "¿Por qué la segregación entre grados es un tema central en muchas plantas químicas que fabrican auxiliares?",
+     "opciones": [
+      "Porque suelen fabricar en las mismas instalaciones productos grado alimentario y grado técnico, con riesgo de contaminación cruzada o confusión",
+      "Porque los productos grado técnico son siempre más tóxicos que los alimentarios",
+      "Porque la ley prohíbe fabricar ambos grados en el mismo país",
+      "Porque el grado técnico no tiene especificaciones"
+     ],
+     "correcta": 0,
+     "explicacion": "La convivencia de grados exige segregación de materias primas, equipos, envases, etiquetas e inventarios.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regulación EUA",
+     "enunciado": "¿Qué describe el 21 CFR 101.100 respecto a los auxiliares de proceso?",
+     "opciones": [
+      "Las condiciones en las que un auxiliar de proceso queda exento de declararse en la etiqueta del alimento",
+      "Los límites de cloro en agua potable",
+      "Los requisitos de registro de sanitizantes ante la EPA",
+      "La lista de alérgenos mayores"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, cuando se elimina, se convierte o queda en niveles insignificantes sin efecto técnico o funcional en el alimento.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Escenarios de peligro",
+     "enunciado": "Describe tres escenarios realistas en los que un auxiliar de proceso fabricado en tu planta podría afectar la inocuidad de un alimento, y el tipo de peligro de cada uno.",
+     "respuesta_modelo": "1) Químico: se envasa como grado alimentario un ácido grado técnico con metales pesados fuera de especificación. 2) Químico: un sanitizante sin enjuague se formula con sobreconcentración y deja residuos por encima del límite regulatorio. 3) Biológico: un antiespumante en emulsión acuosa se contamina en un tanque mal limpiado y lleva microorganismos a la fermentación del cliente. También son válidos: tambor reciclado con residuo incompatible (químico), fragmentos de empaque (físico), ingrediente de origen alergénico no declarado (alérgeno) o error de etiqueta.",
+     "puntos_clave": [
+      "Tres escenarios plausibles",
+      "Clasifica correctamente el tipo de peligro",
+      "Relaciona el escenario con la llegada al alimento",
+      "Considera fuentes como grado, formulación, empaque o etiqueta"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Uso previsto",
+     "enunciado": "Explica por qué el uso previsto es todavía más importante para un fabricante de auxiliares que para un fabricante de alimentos.",
+     "respuesta_modelo": "Porque el producto no se consume directamente: llega al alimento a través del proceso del cliente, en cantidades y condiciones que dependen de cómo se use (dosis, enjuague o no, eliminación posterior, tipo de alimento). Una misma sustancia puede ser ingrediente, auxiliar, contacto incidental o uso industrial sin relación con alimentos, y cada uso implica especificaciones distintas (grado alimentario o técnico), exposición distinta y controles distintos. Si el uso previsto no está bien definido, el análisis de peligros puede subestimar riesgos o aplicar especificaciones equivocadas, y las instrucciones de uso al cliente pueden ser insuficientes.",
+     "puntos_clave": [
+      "El producto llega al alimento a través del cliente",
+      "La misma sustancia tiene usos distintos",
+      "Cada uso cambia especificaciones y exposición",
+      "Consecuencias de definirlo mal"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diferencias",
+     "enunciado": "Compara la aplicación de HACCP en una planta de alimentos y en una planta de auxiliares de proceso en tres aspectos.",
+     "respuesta_modelo": "1) Peligro dominante: en alimentos suele ser biológico; en auxiliares, químico (impurezas, grado, concentración, contaminación cruzada). 2) Controles críticos: en alimentos con frecuencia es un tratamiento letal como la pasteurización; en auxiliares suelen ser controles de especificación de materias primas, formulación, segregación de grados, envases y etiquetado. 3) Exposición: en alimentos el consumidor ingiere el producto; en auxiliares la exposición es por residuos en el alimento, dependiente del uso del cliente, por lo que la comunicación de condiciones de uso es parte del control. También: convivencia de grados en la misma planta y especificaciones tipo FCC o JECFA.",
+     "puntos_clave": [
+      "Peligro dominante",
+      "Tipo de control crítico",
+      "Vía de exposición y papel del cliente",
+      "Al menos tres aspectos comparados"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "La arquitectura de ISO 22000:2018",
+   "texto": "## De HACCP a un sistema de gestión\n**HACCP** nació como una metodología para controlar peligros en un proceso: analizar peligros, determinar puntos críticos, establecer límites, monitorear, corregir, verificar y documentar. El Codex Alimentarius la formalizó en sus **siete principios** y doce pasos de aplicación, y en la revisión de 2020 de los *Principios generales de higiene de los alimentos* (CXC 1-1969) la integró junto con las buenas prácticas de higiene.\n\nHACCP es poderoso, pero por sí solo no responde preguntas como: ¿quién decide los recursos?, ¿cómo se gestionan los cambios?, ¿cómo se asegura la competencia del personal?, ¿cómo se comunica con proveedores y clientes?, ¿cómo mejora el sistema con el tiempo? Para eso existe **ISO 22000**: un **sistema de gestión de la inocuidad de los alimentos** (SGIA) que integra HACCP dentro de una estructura de gestión.\n\nLa versión vigente es **ISO 22000:2018**, que sustituyó a la de 2005. En 2024 se publicó una enmienda que agrega la consideración del **cambio climático** en el contexto de la organización y en las partes interesadas, igual que en otras normas de sistemas de gestión.\n\n## La estructura de alto nivel\nISO 22000:2018 sigue la **estructura armonizada** (antes llamada estructura de alto nivel) que comparten las normas ISO de sistemas de gestión, como ISO 9001 e ISO 14001. Esto facilita integrar sistemas. Los capítulos son:\n\n| Capítulo | Contenido |\n|---|---|\n| 4 | Contexto de la organización |\n| 5 | Liderazgo |\n| 6 | Planificación |\n| 7 | Apoyo |\n| 8 | Operación |\n| 9 | Evaluación del desempeño |\n| 10 | Mejora |\n\nLos capítulos 1 a 3 son objeto y campo de aplicación, referencias normativas y términos y definiciones.\n\nSi conoces ISO 9001, reconocerás los capítulos 4 a 7 y 9 a 10. La gran diferencia está en el **capítulo 8**, que contiene toda la parte técnica de inocuidad.\n\n## Los dos ciclos PHVA\nUna idea central de ISO 22000:2018 es que funciona con **dos ciclos PHVA** (planificar, hacer, verificar, actuar) que giran uno dentro del otro:\n\n- El **ciclo de la organización**: abarca el sistema de gestión completo (capítulos 4 a 7, 9 y 10). Planifica el sistema, lo implementa, evalúa su desempeño y lo mejora.\n- El **ciclo operativo**: está dentro del capítulo 8. Abarca los programas de prerrequisitos, el análisis de peligros, el plan de control de peligros, la verificación y la actualización.\n\nLos dos ciclos se comunican: los resultados de la verificación operativa alimentan el análisis del desempeño y la revisión por la dirección, y las decisiones de la dirección cambian recursos, objetivos y procesos operativos.\n\n## Dos tipos de riesgo\nISO 22000:2018 distingue con cuidado dos conceptos que en planta se mezclan:\n\n- **Riesgos y oportunidades de la organización** (capítulo 6.1): todo lo que puede afectar la capacidad del sistema de lograr sus resultados. Por ejemplo: dependencia de un solo proveedor de una materia prima crítica, rotación alta de personal en calidad, un cliente clave que exige una certificación nueva, cambios regulatorios, una oportunidad de automatizar registros.\n- **Peligros para la inocuidad** (capítulo 8.5): agentes biológicos, químicos o físicos en el alimento (o en el producto) con potencial de causar un efecto adverso para la salud. Se gestionan con el análisis de peligros.\n\nEsta distinción es útil: el análisis de peligros no debe llenarse de riesgos de negocio, y la matriz de riesgos de la organización no sustituye el análisis de peligros.\n\n## El capítulo 8 por dentro\nEl capítulo 8 es el corazón técnico. Sus apartados principales:\n\n- **8.1 Planificación y control operacional.**\n- **8.2 Programas de prerrequisitos (PPR)**: las condiciones y actividades básicas para mantener la higiene, con referencia a especificaciones técnicas sectoriales (como la serie ISO/TS 22002) y requisitos legales y de clientes.\n- **8.3 Sistema de trazabilidad.**\n- **8.4 Preparación y respuesta ante emergencias.**\n- **8.5 Control de peligros**:\n  - 8.5.1 Pasos preliminares para el análisis de peligros (equipo, características de materias primas y productos, uso previsto, diagramas de flujo, descripción del proceso).\n  - 8.5.2 Análisis de peligros (identificación, determinación de niveles aceptables, evaluación, selección y categorización de medidas de control).\n  - 8.5.3 Validación de las medidas de control.\n  - 8.5.4 Plan de control de peligros (plan HACCP/PPRO).\n- **8.6 Actualización** de la información de los PPR y del plan de control de peligros.\n- **8.7 Control del seguimiento y la medición** (equipos de medición, calibración).\n- **8.8 Verificación** relacionada con PPR y el plan de control de peligros, y análisis de los resultados.\n- **8.9 Control de las no conformidades** del producto y del proceso (correcciones, acciones correctivas, manejo de productos potencialmente no inocuos, retiro).\n\n## Cómo encajan los principios HACCP\nLos siete principios del Codex se reconocen dentro del capítulo 8:\n\n| Principio HACCP | ISO 22000:2018 |\n|---|---|\n| 1. Análisis de peligros y medidas de control | 8.5.2 |\n| 2. Determinar los PCC | 8.5.2.4 (categorización) |\n| 3. Límites críticos validados | 8.5.3 y 8.5.4 |\n| 4. Sistema de monitoreo | 8.5.4.3 |\n| 5. Acciones correctivas | 8.5.4.4 y 8.9 |\n| 6. Verificación | 8.8 |\n| 7. Documentación y registros | 7.5 y en todo el capítulo 8 |\n\nDiferencias importantes respecto al HACCP clásico:\n\n- ISO 22000 introduce explícitamente los **PPRO** (programas de prerrequisitos operativos): medidas de control que se aplican para prevenir o reducir un peligro significativo a un nivel aceptable, con **criterios de acción** y monitoreo, pero que no tienen la naturaleza de un PCC. Los veremos a fondo en el capítulo 8 del curso.\n- Pide **determinar el nivel aceptable** de cada peligro en el producto final antes de evaluarlo.\n- Exige **validación** de las medidas de control **antes** de su implementación.\n- Integra la **comunicación externa** e **interna** como requisito del sistema (capítulo 7.4), algo crítico en la cadena alimentaria.\n\n## Términos que debes dominar\n- **Inocuidad de los alimentos**: garantía de que el alimento no causará un efecto adverso para la salud del consumidor cuando se prepare o consuma de acuerdo con su uso previsto.\n- **Peligro para la inocuidad**: agente biológico, químico o físico en el alimento con potencial de causar un efecto adverso para la salud. En ISO 22000 incluye los **alérgenos**.\n- **Peligro significativo**: el que, por la evaluación, necesita ser controlado mediante medidas de control.\n- **Medida de control**: acción o actividad esencial para prevenir un peligro significativo o reducirlo a un nivel aceptable.\n- **PCC**: etapa del proceso en la que se aplica una medida de control para prevenir o reducir un peligro significativo a un nivel aceptable, con **límites críticos** medibles que separan lo aceptable de lo inaceptable.\n- **PPRO**: medida de control o combinación de ellas aplicada para prevenir o reducir un peligro significativo a un nivel aceptable, con **criterios de acción** medibles u **observables**.\n- **Límite crítico**: valor medible que separa lo aceptable de lo inaceptable.\n- **Criterio de acción**: especificación medible u observable para el monitoreo de un PPRO.\n- **Corrección** frente a **acción correctiva**: la corrección elimina la no conformidad detectada (por ejemplo, reprocesar un lote); la acción correctiva elimina su **causa** para evitar que se repita.\n- **Validación** y **verificación** (como viste en el curso de limpieza).\n\nLas definiciones exactas están en el capítulo 3 de la norma; conviene leerlas directamente porque los auditores las usan con precisión.\n\n## ISO 22000 en la cadena alimentaria\nISO 22000 es aplicable a **cualquier organización de la cadena alimentaria**, incluidas las que producen insumos que no son alimentos: fabricantes de empaques, de equipos, de químicos de limpieza, de auxiliares de proceso y de aditivos. Para estas organizaciones, el \"alimento\" del análisis es su propio producto y su efecto en el alimento del cliente.\n\n## Ideas que debes llevarte\n- ISO 22000:2018 integra HACCP dentro de un **sistema de gestión** con estructura armonizada (capítulos 4 a 10).\n- Funciona con **dos ciclos PHVA**: el de la organización y el operativo (capítulo 8).\n- Distingue **riesgos de la organización** (6.1) de **peligros para la inocuidad** (8.5).\n- El capítulo 8 contiene PPR, trazabilidad, emergencias, control de peligros, actualización, medición, verificación y no conformidades.\n- Introduce los **PPRO** junto con los PCC, exige **niveles aceptables** y **validación** previa.\n- Aplica a toda la cadena, incluidos los fabricantes de auxiliares de proceso.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura",
+     "enunciado": "¿En qué capítulo de ISO 22000:2018 se encuentran los programas de prerrequisitos, el análisis de peligros y el plan de control de peligros?",
+     "opciones": [
+      "Capítulo 8, Operación",
+      "Capítulo 6, Planificación",
+      "Capítulo 7, Apoyo",
+      "Capítulo 9, Evaluación del desempeño"
+     ],
+     "correcta": 0,
+     "explicacion": "El capítulo 8 contiene toda la parte técnica: PPR, trazabilidad, emergencias, control de peligros, actualización, medición, verificación y no conformidades.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Dos ciclos PHVA",
+     "enunciado": "¿Qué describe mejor los dos ciclos PHVA de ISO 22000:2018?",
+     "opciones": [
+      "Un ciclo de la organización que abarca el sistema de gestión y un ciclo operativo dentro del capítulo 8 que abarca PPR y control de peligros",
+      "Un ciclo para calidad y otro para medio ambiente",
+      "Un ciclo para producción y otro para mantenimiento",
+      "Un ciclo anual y otro mensual"
+     ],
+     "correcta": 0,
+     "explicacion": "Los dos ciclos se comunican: la verificación operativa alimenta la evaluación del desempeño y la revisión por la dirección.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos frente a peligros",
+     "enunciado": "¿Cuál de estos es un riesgo de la organización (6.1) y no un peligro para la inocuidad (8.5)?",
+     "opciones": [
+      "Depender de un solo proveedor para una materia prima crítica",
+      "Plomo en un ácido por encima de la especificación alimentaria",
+      "Fragmentos de plástico de una tapa",
+      "Contaminación microbiana de un antiespumante"
+     ],
+     "correcta": 0,
+     "explicacion": "La dependencia de un proveedor afecta la capacidad del sistema; los otros son agentes químicos, físicos o biológicos en el producto.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PPRO",
+     "enunciado": "¿Qué caracteriza a un PPRO en ISO 22000?",
+     "opciones": [
+      "Es una medida de control para un peligro significativo, con criterios de acción medibles u observables",
+      "Es una buena práctica general de higiene sin relación con peligros específicos",
+      "Es lo mismo que un PCC pero con otro nombre",
+      "Es una medida que solo se verifica una vez al año"
+     ],
+     "correcta": 0,
+     "explicacion": "Los PPRO controlan peligros significativos, pero se monitorean con criterios de acción (incluso observables), no con límites críticos.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Límite crítico",
+     "enunciado": "¿Cuál es la diferencia esencial entre un límite crítico y un criterio de acción?",
+     "opciones": [
+      "El límite crítico es medible y separa lo aceptable de lo inaceptable en un PCC; el criterio de acción, para un PPRO, puede ser medible u observable",
+      "Son equivalentes",
+      "El criterio de acción siempre es más estricto",
+      "El límite crítico puede ser solo observable"
+     ],
+     "correcta": 0,
+     "explicacion": "Los PCC requieren límites medibles; los PPRO admiten criterios observables, por ejemplo la integridad de un tamiz.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Corrección y acción correctiva",
+     "enunciado": "Se detecta un lote de sanitizante con concentración alta. Se diluye y se reanaliza. Además, se descubre que la báscula estaba descalibrada y se implementa calibración semanal. ¿Qué es cada acción?",
+     "opciones": [
+      "Diluir es una corrección; calibrar semanalmente es una acción correctiva",
+      "Ambas son correcciones",
+      "Ambas son acciones correctivas",
+      "Diluir es una acción correctiva; calibrar es una corrección"
+     ],
+     "correcta": 0,
+     "explicacion": "La corrección elimina la no conformidad detectada; la acción correctiva elimina la causa para evitar la recurrencia.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "HACCP en ISO",
+     "enunciado": "¿Qué apartado de ISO 22000:2018 corresponde a la validación de las medidas de control?",
+     "opciones": [
+      "8.5.3",
+      "8.2",
+      "8.7",
+      "9.2"
+     ],
+     "correcta": 0,
+     "explicacion": "8.5.3 es validación de medidas de control; 8.2 son PPR, 8.7 control del seguimiento y la medición, 9.2 auditoría interna.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "¿Puede un fabricante de químicos de limpieza certificarse en ISO 22000?",
+     "opciones": [
+      "Sí, la norma aplica a cualquier organización de la cadena alimentaria, incluidos los proveedores de insumos",
+      "No, solo aplica a fabricantes de alimentos",
+      "Solo si también fabrica alimentos",
+      "Solo si sus productos son ingredientes"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 22000 aplica a toda la cadena alimentaria, incluidos empaques, equipos, químicos de limpieza y auxiliares de proceso.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura armonizada",
+     "enunciado": "¿Qué ventaja práctica tiene que ISO 22000 comparta la estructura armonizada con ISO 9001?",
+     "opciones": [
+      "Facilita integrar ambos sistemas de gestión en una sola estructura documental y de procesos",
+      "Hace que los requisitos técnicos de inocuidad sean idénticos a los de calidad",
+      "Permite que una auditoría de ISO 9001 certifique ISO 22000",
+      "Elimina la necesidad de análisis de peligros"
+     ],
+     "correcta": 0,
+     "explicacion": "Capítulos comunes como contexto, liderazgo, apoyo, evaluación y mejora pueden integrarse; el capítulo 8 sigue siendo específico.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Niveles aceptables",
+     "enunciado": "¿Qué exige ISO 22000:2018 antes de evaluar un peligro identificado?",
+     "opciones": [
+      "Determinar el nivel aceptable del peligro en el producto final",
+      "Asignarlo automáticamente como PCC",
+      "Eliminarlo del análisis si es químico",
+      "Esperar una queja del cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "El nivel aceptable, basado en requisitos legales, de clientes, del uso previsto y otros datos, es la referencia contra la que se diseñan las medidas de control.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alérgenos",
+     "enunciado": "En ISO 22000:2018, ¿cómo se consideran los alérgenos?",
+     "opciones": [
+      "Como peligros para la inocuidad de los alimentos dentro del análisis de peligros",
+      "Como un tema solo de etiquetado comercial",
+      "Como riesgos de la organización del capítulo 6",
+      "No se consideran"
+     ],
+     "correcta": 0,
+     "explicacion": "La definición de peligro en ISO 22000:2018 incluye a los alérgenos.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Dos ciclos PHVA",
+     "enunciado": "Explica con un ejemplo de tu planta cómo se comunican el ciclo PHVA operativo y el de la organización.",
+     "respuesta_modelo": "Ejemplo: la verificación operativa (8.8) muestra que en tres meses hubo cinco desviaciones del criterio de acción de la etapa de filtración de un antiespumante. Ese resultado se analiza en la evaluación del desempeño (9.1) y llega a la revisión por la dirección (9.3), que decide invertir en un filtro de mayor capacidad y capacitar a operadores (recursos y competencia, 7.1 y 7.2) y fijar un objetivo de reducción de desviaciones (6.2). Esas decisiones regresan al ciclo operativo como cambio planificado (6.3), con actualización del plan de control (8.6) y nueva validación (8.5.3) si cambia la medida.",
+     "puntos_clave": [
+      "Dato de verificación operativa",
+      "Evaluación del desempeño y revisión por la dirección",
+      "Decisión de recursos, objetivos o cambios",
+      "Regreso al ciclo operativo con actualización y validación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Riesgos frente a peligros",
+     "enunciado": "¿Por qué es útil distinguir los riesgos de la organización de los peligros para la inocuidad? Da un ejemplo de cada uno en una planta de auxiliares de proceso.",
+     "respuesta_modelo": "Porque se gestionan con herramientas y propósitos distintos: los riesgos de la organización afectan la capacidad del sistema para lograr resultados y se tratan con planificación, recursos y objetivos; los peligros para la inocuidad son agentes en el producto que pueden dañar la salud y se tratan con análisis de peligros, medidas de control validadas y monitoreo. Mezclarlos llena el análisis de peligros de temas de negocio o hace que la matriz de riesgos sustituya al control técnico. Ejemplo de riesgo: rotación de analistas de laboratorio que pone en riesgo la liberación oportuna de lotes. Ejemplo de peligro: arsénico en un ácido fosfórico por encima de la especificación de grado alimentario.",
+     "puntos_clave": [
+      "Distingue propósito y herramientas",
+      "Consecuencia de mezclarlos",
+      "Ejemplo correcto de riesgo",
+      "Ejemplo correcto de peligro"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "HACCP en ISO",
+     "enunciado": "Menciona tres diferencias entre el HACCP clásico del Codex y el control de peligros de ISO 22000:2018.",
+     "respuesta_modelo": "1) ISO 22000 introduce los PPRO como categoría de medidas de control para peligros significativos, con criterios de acción, además de los PCC. 2) Exige determinar el nivel aceptable de cada peligro en el producto final antes de evaluarlo. 3) Requiere validar las medidas de control antes de su implementación de forma explícita. Además, integra todo en un sistema de gestión con contexto, liderazgo, comunicación interna y externa, gestión de cambios, evaluación del desempeño y mejora, y distingue riesgos de la organización de peligros.",
+     "puntos_clave": [
+      "PPRO además de PCC",
+      "Nivel aceptable",
+      "Validación previa",
+      "Integración en un sistema de gestión"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Contexto, liderazgo y planificación del sistema",
+   "texto": "## Por qué empezar por aquí\nMuchas plantas construyen su sistema de inocuidad empezando por el análisis de peligros y dejan los capítulos 4 a 7 de ISO 22000 como \"papeles para el auditor\". Es un error. Esos capítulos responden preguntas que determinan si el análisis de peligros tendrá recursos, alcance correcto y apoyo de la dirección. Un estudio HACCP técnicamente impecable fracasa si nadie tiene autoridad para detener un lote, si el alcance excluye la línea donde está el problema o si los cambios se hacen sin avisar al equipo de inocuidad.\n\n## Capítulo 4: contexto de la organización\n### 4.1 Comprender la organización y su contexto\nLa organización determina las **cuestiones externas e internas** que afectan su capacidad de lograr los resultados del SGIA. Para un fabricante de auxiliares de proceso, por ejemplo:\n\n**Externas**\n- Requisitos regulatorios del país y de los mercados de exportación (por ejemplo, cambios en límites de residuos de sanitizantes o de contaminantes como el clorato).\n- Exigencias de clientes: certificación GFSI, especificaciones, auditorías de segunda parte, cuestionarios.\n- Disponibilidad y calidad de materias primas, dependencia de importaciones.\n- Tecnología: nuevos métodos analíticos que permiten detectar residuos más bajos.\n- Clima: la enmienda de 2024 pide considerar si el **cambio climático** es una cuestión pertinente (por ejemplo, disponibilidad y calidad de agua, temperaturas de almacenamiento).\n\n**Internas**\n- Cultura de inocuidad, competencia del personal, rotación.\n- Infraestructura: si la planta comparte equipos entre grado técnico y alimentario.\n- Sistemas de información y registros.\n- Desempeño histórico: quejas, desviaciones, resultados de auditoría.\n\nUna buena práctica es documentarlo con una herramienta sencilla (por ejemplo, un análisis FODA o PESTEL) y **revisarlo** al menos en cada revisión por la dirección.\n\n### 4.2 Partes interesadas\nLa organización identifica las **partes interesadas pertinentes** y sus **requisitos**. Ejemplos:\n\n| Parte interesada | Requisitos típicos |\n|---|---|\n| Clientes de la industria de alimentos | Grado alimentario, certificados de análisis, fichas técnicas, cartas de garantía, certificación GFSI, notificación de cambios |\n| Autoridades sanitarias | Cumplimiento de regulación de coadyuvantes, registro de productos, etiquetado |\n| Organismo de certificación | Requisitos del esquema |\n| Proveedores | Especificaciones claras, comunicación de cambios |\n| Personal | Capacitación, condiciones seguras |\n| Consumidor final | Alimento inocuo (indirectamente) |\n\nEstos requisitos alimentan el análisis de peligros (por ejemplo, el **nivel aceptable** de un contaminante) y la comunicación externa.\n\n### 4.3 Alcance\nEl alcance define **productos, procesos y sitios** cubiertos. Para un fabricante con productos grado alimentario y grado técnico, debe responder:\n\n- ¿Qué productos están dentro? ¿Todos los destinados a la industria de alimentos, incluidos los de contacto incidental?\n- ¿Las instalaciones compartidas están dentro? Si un equipo procesa ambos grados, el equipo y sus controles **deben** estar dentro del alcance, porque afectan la inocuidad de los productos certificados.\n- ¿Qué procesos subcontratados afectan la conformidad? (Por ejemplo, maquila de envasado, transporte, análisis externos.)\n\nUn alcance mal definido es una fuente frecuente de no conformidades: excluir un almacén compartido o una línea de envasado que también maneja producto alimentario debilita todo el sistema.\n\n### 4.4 Sistema de gestión\nLa organización establece, implementa, mantiene, actualiza y mejora el SGIA, con sus procesos e interacciones.\n\n## Capítulo 5: liderazgo\n### 5.1 Liderazgo y compromiso\nLa alta dirección debe **demostrar** liderazgo, no solo firmar la política. En la práctica, un auditor lo busca en evidencias como:\n\n- Que la inocuidad esté integrada en los procesos de negocio (compras, ventas, desarrollo de productos, mantenimiento), no aislada en el departamento de calidad.\n- Que los recursos estén disponibles: personal de laboratorio, equipos, capacitación, tiempo.\n- Que la dirección revise resultados y tome decisiones.\n- Que se promueva la mejora y se apoye a otros roles de gestión.\n\n### Cultura de inocuidad\nAunque ISO 22000:2018 no tiene un apartado con ese nombre, la **cultura de inocuidad** está implícita en el liderazgo, la comunicación y la competencia. El Codex, en su revisión de 2020 de los principios generales de higiene, la incorporó explícitamente, y esquemas como FSSC 22000 y SQF la exigen como requisito adicional, con objetivos y medición. Se refleja en preguntas como: ¿un operador se siente con autoridad para detener el envasado si ve una etiqueta incorrecta?, ¿los errores se reportan o se ocultan?, ¿ventas presiona para liberar un lote fuera de especificación?\n\n### 5.2 Política de inocuidad\nLa política debe ser apropiada al propósito y contexto, proporcionar un marco para los objetivos, incluir el compromiso de cumplir requisitos aplicables (incluidos legales y acordados con clientes), abordar la **comunicación** interna y externa, comprometerse con la **mejora continua** y con la **competencia**. Debe estar disponible, comunicada y entendida. Una política genérica copiada de otra empresa no demuestra nada.\n\n### 5.3 Roles, responsabilidades y autoridades\nDos roles específicos:\n\n- **Líder del equipo de inocuidad**: responsable de asegurar que el SGIA se establezca, implemente, mantenga y actualice; de dirigir y organizar el trabajo del equipo; de asegurar la capacitación pertinente; y de informar a la dirección sobre la eficacia y adecuación del sistema.\n- Todas las personas tienen la responsabilidad de **informar problemas** del SGIA a quien corresponda.\n\nAdemás, la organización debe asignar autoridad clara para acciones críticas: ¿quién puede **retener** un lote?, ¿quién puede **liberar** un producto después de una desviación?, ¿quién inicia un **retiro**?\n\n## Capítulo 6: planificación\n### 6.1 Acciones para abordar riesgos y oportunidades\nCon base en el contexto (4.1), las partes interesadas (4.2) y el alcance (4.3), la organización determina los **riesgos y oportunidades** que deben abordarse para asegurar que el SGIA logre sus resultados, prevenir efectos no deseados y lograr la mejora. Las acciones deben ser **proporcionales** al impacto potencial en la inocuidad.\n\nEjemplos en una planta de auxiliares:\n\n| Riesgo u oportunidad | Acción |\n|---|---|\n| Proveedor único de una materia prima crítica | Calificar un segundo proveedor con verificación analítica |\n| Nueva regulación de límites de clorato | Evaluar formulaciones y métodos de análisis |\n| Rotación en laboratorio | Plan de capacitación cruzada y matriz de competencias |\n| Oportunidad: cliente que pide certificado electrónico | Digitalizar certificados de análisis con trazabilidad |\n\n### 6.2 Objetivos del SGIA\nLos objetivos deben ser **coherentes con la política**, **medibles** (si es posible), considerar los requisitos aplicables, ser objeto de seguimiento, comunicarse y actualizarse. Para cada uno se planifica qué se hará, con qué recursos, quién es responsable, cuándo se terminará y cómo se evaluarán los resultados.\n\nEjemplos de objetivos útiles:\n\n- Reducir en 50 % las desviaciones de etiquetado en el año.\n- Lograr 100 % de proveedores de materias primas críticas aprobados con verificación analítica anual.\n- Completar dos simulacros de retiro con trazabilidad del 100 % en menos de 4 horas.\n- Bajar las quejas de clientes relacionadas con inocuidad a cero.\n\nUn objetivo como \"mejorar la inocuidad\" no es medible ni planificable.\n\n### 6.3 Planificación de los cambios\nCuando la organización determina la necesidad de cambios en el SGIA, incluidos cambios de personal, deben planificarse considerando: el propósito del cambio y sus consecuencias potenciales, la integridad del SGIA, la disponibilidad de recursos y la asignación o reasignación de responsabilidades.\n\nEn la práctica, esto se materializa en un procedimiento de **gestión del cambio** que obliga a evaluar, antes de implementarlo, el impacto en inocuidad de cambios como:\n\n- Nueva materia prima o nuevo proveedor.\n- Cambio de formulación o de proceso.\n- Nuevo equipo o modificación de uno existente.\n- Nuevo producto en una línea compartida.\n- Cambio de empaque o de etiqueta.\n- Cambio en las instalaciones.\n\nEn el curso de química de la limpieza viste lo que pasa cuando se cambian parámetros de CIP sin evaluación: este es el apartado que lo previene.\n\n## Capítulo 7: apoyo (lo esencial)\n- **7.1 Recursos**: personas, infraestructura, ambiente de trabajo, y **elementos desarrollados externamente** (por ejemplo, si un consultor diseñó el estudio HACCP, la organización debe entenderlo, adoptarlo y mantenerlo) y **control de procesos, productos o servicios suministrados externamente** (proveedores).\n- **7.2 Competencia**: incluido el equipo de inocuidad y quienes operan PCC y PPRO.\n- **7.3 Toma de conciencia**: el personal conoce la política, los objetivos pertinentes, su contribución y las consecuencias de no cumplir.\n- **7.4 Comunicación**: externa (proveedores, clientes, autoridades) e interna (sobre todo, informar al equipo de inocuidad de los **cambios** que afectan la inocuidad).\n- **7.5 Información documentada**.\n\n## Ideas que debes llevarte\n- El **contexto** (4.1) y las **partes interesadas** (4.2) alimentan los niveles aceptables, la comunicación y los riesgos.\n- El **alcance** (4.3) debe incluir todo lo que afecta la inocuidad de los productos cubiertos, incluidos equipos e instalaciones compartidas.\n- El **liderazgo** se demuestra con recursos, decisiones e integración, y sostiene la **cultura de inocuidad**.\n- La **política** y los **objetivos** deben ser específicos y medibles.\n- Los **riesgos de la organización** se abordan con acciones proporcionales.\n- La **gestión del cambio** (6.3, 7.4, 8.6) evita que modificaciones bien intencionadas creen peligros nuevos.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Contexto",
+     "enunciado": "¿Cuál de estas es una cuestión externa pertinente para el contexto (4.1) de un fabricante de sanitizantes?",
+     "opciones": [
+      "Un cambio regulatorio en los límites de residuos de clorato en alimentos",
+      "La rotación de personal del laboratorio",
+      "La antigüedad de los reactores",
+      "La cultura de inocuidad de la planta"
+     ],
+     "correcta": 0,
+     "explicacion": "Las cuestiones regulatorias son externas; rotación, infraestructura y cultura son internas.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "Una planta excluye del alcance de su SGIA un tanque que se usa para producto grado técnico y, una vez por semana, para un antiespumante grado alimentario. ¿Es correcto?",
+     "opciones": [
+      "No, porque el tanque afecta la inocuidad del producto alimentario y debe estar dentro del alcance con sus controles",
+      "Sí, porque la mayor parte del tiempo procesa grado técnico",
+      "Sí, siempre que se mencione en el manual",
+      "No importa, el alcance es solo administrativo"
+     ],
+     "correcta": 0,
+     "explicacion": "Todo lo que afecta la conformidad de los productos cubiertos debe estar en el alcance, incluidos equipos compartidos y su limpieza y segregación.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Partes interesadas",
+     "enunciado": "¿Cómo se usan los requisitos de los clientes identificados en 4.2 dentro del análisis de peligros?",
+     "opciones": [
+      "Ayudan a definir los niveles aceptables de los peligros y las especificaciones del producto",
+      "No tienen relación con el análisis de peligros",
+      "Solo se usan para la encuesta de satisfacción",
+      "Sustituyen al análisis de peligros"
+     ],
+     "correcta": 0,
+     "explicacion": "Por ejemplo, un límite de metales pesados exigido por un cliente se vuelve parte del nivel aceptable del peligro.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Liderazgo",
+     "enunciado": "¿Cuál de estas evidencias demuestra mejor el liderazgo de la alta dirección en el SGIA?",
+     "opciones": [
+      "Actas de revisión por la dirección con decisiones de recursos basadas en resultados de inocuidad",
+      "La firma del director en la política",
+      "Un cuadro con la política en recepción",
+      "La asistencia del director a la reunión de apertura de la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "El liderazgo se demuestra con decisiones, recursos e integración en los procesos del negocio, no con firmas.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura de inocuidad",
+     "enunciado": "¿Cuál de estas situaciones indica una cultura de inocuidad débil?",
+     "opciones": [
+      "Ventas presiona para liberar un lote fuera de especificación por un pedido urgente y se libera sin evaluación",
+      "Un operador detiene el envasado al ver una etiqueta incorrecta",
+      "Los casi incidentes se reportan y se analizan",
+      "La dirección reconoce públicamente un reporte de error"
+     ],
+     "correcta": 0,
+     "explicacion": "La presión comercial sobre decisiones de inocuidad sin evaluación es una señal clara de cultura débil.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Roles",
+     "enunciado": "¿Cuál de estas es una responsabilidad del líder del equipo de inocuidad según ISO 22000?",
+     "opciones": [
+      "Informar a la alta dirección sobre la eficacia y adecuación del SGIA",
+      "Aprobar el presupuesto anual de la empresa",
+      "Firmar todas las órdenes de compra",
+      "Sustituir a la alta dirección en la revisión"
+     ],
+     "correcta": 0,
+     "explicacion": "El líder asegura que el sistema se establezca y mantenga, dirige al equipo, asegura su capacitación e informa a la dirección.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivos",
+     "enunciado": "¿Cuál es un objetivo del SGIA bien formulado?",
+     "opciones": [
+      "Reducir en 50 % las desviaciones de etiquetado en el año, con responsable y seguimiento mensual",
+      "Mejorar la inocuidad",
+      "Ser los mejores del mercado",
+      "Cumplir con todo"
+     ],
+     "correcta": 0,
+     "explicacion": "Los objetivos deben ser medibles, coherentes con la política, con responsable, plazo y forma de evaluación.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos y oportunidades",
+     "enunciado": "¿Qué acción es proporcional al riesgo de depender de un único proveedor de una materia prima crítica?",
+     "opciones": [
+      "Calificar un segundo proveedor con verificación analítica de sus lotes",
+      "Ignorarlo porque el proveedor actual nunca ha fallado",
+      "Comprar inventario para diez años",
+      "Eliminar el producto del portafolio de inmediato"
+     ],
+     "correcta": 0,
+     "explicacion": "Las acciones deben ser proporcionales al impacto potencial; un segundo proveedor calificado reduce el riesgo sin decisiones extremas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Gestión del cambio",
+     "enunciado": "Compras cambia de proveedor de ácido cítrico por precio, sin informar a calidad. ¿Qué requisitos de ISO 22000 se incumplen principalmente?",
+     "opciones": [
+      "Planificación de los cambios y comunicación interna al equipo de inocuidad",
+      "Revisión por la dirección y auditoría interna",
+      "Política de inocuidad",
+      "Control de equipos de medición"
+     ],
+     "correcta": 0,
+     "explicacion": "6.3 y 7.4 piden evaluar el impacto de los cambios e informar al equipo de inocuidad; 8.6 pide actualizar el plan de control si aplica.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Elementos externos",
+     "enunciado": "Un consultor diseñó el estudio HACCP de la planta. ¿Qué exige ISO 22000 sobre este elemento desarrollado externamente?",
+     "opciones": [
+      "Que la organización lo entienda, lo adopte como propio, lo mantenga y lo actualice",
+      "Que el consultor lo mantenga de por vida",
+      "Que no se modifique nunca",
+      "Que se excluya de la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Los elementos del SGIA desarrollados externamente deben ser apropiados para la organización, que debe entenderlos y mantenerlos.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Política",
+     "enunciado": "¿Qué compromiso debe incluir la política de inocuidad según ISO 22000?",
+     "opciones": [
+      "Cumplir los requisitos aplicables, incluidos los legales y los acordados con clientes, y la mejora continua",
+      "Ser la empresa con mayores ventas del sector",
+      "Certificarse en todas las normas ISO",
+      "Eliminar cualquier riesgo de negocio"
+     ],
+     "correcta": 0,
+     "explicacion": "La política también aborda la comunicación interna y externa y la competencia.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Alcance",
+     "enunciado": "Redacta el alcance del SGIA de una planta que fabrica detergentes y sanitizantes para la industria de alimentos y, en las mismas instalaciones, desengrasantes industriales para talleres. Justifica qué incluyes.",
+     "respuesta_modelo": "Ejemplo: 'Diseño, formulación, fabricación, envasado, almacenamiento y distribución de detergentes y sanitizantes para superficies en contacto con alimentos y de auxiliares de proceso para la industria alimentaria, en la planta ubicada en [dirección], incluidas las instalaciones, equipos, servicios y almacenes compartidos con la fabricación de productos industriales en la medida en que afectan la inocuidad de los productos cubiertos.' Justificación: los desengrasantes industriales no son productos del alcance, pero los equipos, tanques, líneas de envasado, almacenes y agua compartidos pueden contaminar o confundirse con los productos alimentarios, por lo que sus controles de segregación, limpieza, identificación y almacenamiento deben estar dentro. También se consideran los procesos subcontratados que afectan la conformidad, como transporte o análisis externos.",
+     "puntos_clave": [
+      "Productos, procesos y sitio",
+      "Inclusión de instalaciones y equipos compartidos",
+      "Justificación por riesgo de contaminación o confusión",
+      "Procesos subcontratados"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Gestión del cambio",
+     "enunciado": "Diseña los pasos mínimos de un procedimiento de gestión del cambio para introducir una materia prima nueva en un sanitizante grado alimentario.",
+     "respuesta_modelo": "1) Solicitud del cambio con descripción, motivo y alcance. 2) Revisión del equipo de inocuidad: impacto en el análisis de peligros (nuevas impurezas, alérgenos, grado, especificaciones), en la regulación (sustancia permitida para el uso y límites, por ejemplo 21 CFR 178.1010 o acuerdo de coadyuvantes), en la formulación y en la eficacia. 3) Aprobación del proveedor y especificación de grado alimentario con COA y verificación analítica inicial. 4) Pruebas de laboratorio y piloto, incluida estabilidad y eficacia si aplica. 5) Actualización de documentos: fórmula, análisis de peligros, plan de control, fichas técnicas y hojas de seguridad. 6) Comunicación interna (producción, almacén, laboratorio) y externa (clientes que exigen notificación de cambios). 7) Validación de medidas de control si cambian. 8) Aprobación formal antes de la implementación y verificación posterior.",
+     "puntos_clave": [
+      "Solicitud y evaluación de impacto en inocuidad",
+      "Proveedor, especificaciones y regulación",
+      "Actualización documental y comunicación a clientes",
+      "Aprobación previa y verificación posterior"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Contexto y riesgos",
+     "enunciado": "Identifica dos cuestiones internas y dos externas de una planta de auxiliares de proceso y propón para una de ellas un riesgo u oportunidad con su acción.",
+     "respuesta_modelo": "Internas: equipos compartidos entre grado técnico y alimentario; dependencia de una sola persona que conoce las formulaciones. Externas: clientes que exigen certificación GFSI; nueva regulación sobre contaminantes como el clorato. Riesgo derivado: la dependencia de una sola persona puede provocar errores de formulación si se ausenta. Acción: documentar las fórmulas con controles de pesaje y verificación independiente, capacitar a un segundo formulador y registrar la competencia en la matriz de habilidades.",
+     "puntos_clave": [
+      "Dos cuestiones internas correctas",
+      "Dos cuestiones externas correctas",
+      "Riesgo u oportunidad derivado",
+      "Acción proporcional"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
