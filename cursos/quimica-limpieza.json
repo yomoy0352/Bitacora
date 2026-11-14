@@ -1,0 +1,418 @@
+{
+ "id": "quimica-limpieza",
+ "titulo": "Química de la limpieza y la sanitización",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "La suciedad como problema químico",
+   "texto": "## Por qué empezar por la suciedad\nCuando un cliente dice \"su detergente no limpia\", casi nunca el problema es el detergente en abstracto: es la combinación entre **qué suciedad hay**, **sobre qué superficie está**, **con qué agua se prepara la solución** y **cómo se aplica**. Un limpiador alcalino excelente para una línea de embutidos puede fallar por completo en una embotelladora de agua mineral, y viceversa. Antes de hablar de tensioactivos, quelantes u oxidantes, el químico de limpieza tiene que hacer lo mismo que haría con cualquier muestra desconocida: **caracterizarla**.\n\nEn la industria de alimentos la suciedad no es \"mugre\": es materia orgánica e inorgánica con propiedades fisicoquímicas definidas. Su solubilidad, su punto de fusión, su comportamiento con el calor y su afinidad por la superficie determinan qué mecanismo de limpieza funcionará. Este capítulo te da el marco que usarás en todo el curso.\n\n## Clasificación química de la suciedad\nUna clasificación útil en planta agrupa la suciedad por el mecanismo químico que se necesita para removerla.\n\n### Grasas y aceites\nSon principalmente **triglicéridos**: ésteres de glicerol con ácidos grasos. Son insolubles en agua y su comportamiento depende mucho de la temperatura:\n\n- **Por arriba de su punto de fusión** se comportan como líquidos y se pueden emulsificar con tensioactivos.\n- **Por debajo** son sólidos cerosos que se adhieren con fuerza y casi no se dejan dispersar.\n- Con **álcali fuerte** se **saponifican**: el enlace éster se hidroliza y se forman sales de ácidos grasos (jabones) y glicerol, ambos dispersables en agua.\n\nHay grasas que no se saponifican: las **ceras**, los aceites minerales (como los lubricantes que fabrica tu propia planta) y los esteroles. Para ellas la saponificación no sirve y todo depende de la **emulsificación** y la **solubilización** con tensioactivos. Esto es importante en mantenimiento: una grasa de grado alimenticio H1 de base mineral o sintética no se \"deshace\" con sosa como lo haría el sebo de res.\n\nLas grasas además **polimerizan** con calor y oxígeno. El aceite de una freidora, horneado sobre una superficie caliente durante semanas, se convierte en una capa barnizada, entrecruzada, que ya no se comporta como grasa sino como un polímero. Ahí hace falta álcali concentrado, temperatura y tiempo, a veces ayudados por solventes o por oxidantes.\n\n### Proteínas\nLas proteínas (de carne, leche, huevo, sangre) son el tipo de suciedad que más se subestima. En estado nativo muchas son solubles o dispersables en agua. El problema aparece con el **calor**:\n\n- Al calentarlas se **desnaturalizan**: pierden su estructura terciaria, exponen grupos hidrofóbicos y forman agregados insolubles fuertemente adheridos.\n- Por eso un enjuague inicial con agua muy caliente puede **empeorar** la limpieza: \"cocina\" la proteína sobre la superficie. El preenjuague en sistemas con proteína suele hacerse con agua tibia o a temperatura ambiente.\n\nPara remover proteína desnaturalizada se usan dos mecanismos:\n\n1. **Hidrólisis y peptización alcalina**: a pH alto los enlaces peptídicos se hidrolizan parcialmente y las cadenas se cargan negativamente, se repelen y se dispersan.\n2. **Oxidación**: el cloro y otros oxidantes rompen enlaces de la proteína y la vuelven más soluble. Por eso existen los limpiadores alcalinos clorados.\n\nLas **enzimas proteolíticas** (proteasas) son la tercera vía, útil cuando no se pueden usar condiciones agresivas.\n\n### Carbohidratos\n- Los **azúcares simples** son muy solubles en agua y en general son la suciedad más fácil.\n- Los **almidones** se hinchan y gelatinizan con calor; a temperatura alta pueden formar películas adherentes.\n- Los azúcares **caramelizados** o las reacciones de **Maillard** (azúcar + proteína + calor) producen residuos oscuros, insolubles y muy adherentes en hornos, marmitas y evaporadores. Requieren álcali fuerte, temperatura y tiempo.\n\n### Minerales\nSon sales inorgánicas que precipitan sobre las superficies:\n\n- **Carbonato de calcio** (sarro) de aguas duras calentadas.\n- **Fosfato de calcio** asociado a proteína: la **piedra de leche**, típica de pasteurizadores y evaporadores lácteos.\n- **Oxalato de calcio**: la **piedra de cerveza**, en tanques de fermentación y maduración.\n- Óxidos de hierro y sílice en ciertas aguas.\n\nLos minerales **no se remueven con álcali**: ahí el pH alto incluso favorece la precipitación de sales de calcio. Se disuelven con **ácidos** o se mantienen en solución con **secuestrantes**. Más adelante verás que una buena parte del arte de la limpieza consiste en decidir cuándo el ácido va antes o después del álcali.\n\n### Suciedad biológica\nAdemás de la suciedad \"química\", en la superficie hay **microorganismos**. Cuando se adhieren y producen una matriz de polímeros extracelulares forman **biopelículas**, que son a la vez suciedad y riesgo sanitario. Les dedicaremos un capítulo completo, porque cambian la lógica de todo el programa: una biopelícula protege a las bacterias del desinfectante, así que no basta con desinfectar; hay que **limpiar primero**.\n\n## La suciedad real es una mezcla\nEn planta casi nunca hay un solo tipo de suciedad. Un residuo lácteo tiene grasa, proteína (caseína, proteínas del suero), lactosa y fosfato de calcio. Un residuo de cárnicos tiene grasa animal, proteína muscular y sangre. Un residuo de panificación tiene almidón, azúcar, grasa y proteína del trigo.\n\nEsto obliga a pensar la limpieza como una **secuencia**: cada paso ataca un componente y prepara el siguiente. El ejemplo clásico es el lácteo:\n\n1. Preenjuague para retirar lo soluble y lo suelto.\n2. Paso alcalino (a menudo con oxidante) para la grasa y la proteína.\n3. Enjuague.\n4. Paso ácido para el fosfato de calcio y el carbonato.\n5. Enjuague y desinfección.\n\nSi se invierte el orden sin pensar, el ácido puede **fijar** la proteína (a pH bajo cerca de su punto isoeléctrico precipita) y el residuo orgánico protege a la capa mineral del ácido. La caracterización de la suciedad no es teoría: decide la secuencia.\n\n## El círculo de Sinner\nEn 1959 Herbert Sinner, químico de Henkel, propuso un modelo sencillo que sigue siendo la base del diseño de cualquier proceso de limpieza. La remoción de suciedad depende de **cuatro factores**:\n\n1. **Acción química**: tipo y concentración del producto.\n2. **Temperatura**.\n3. **Acción mecánica**: fricción, turbulencia, presión, flujo.\n4. **Tiempo** de contacto.\n\nLa idea central es que los cuatro factores se **compensan entre sí**. Si uno disminuye, otro tiene que aumentar para lograr el mismo resultado. Si una planta no puede calentar la solución, necesitará más concentración, más tiempo o más acción mecánica. Si reduce el tiempo de limpieza para ganar producción, tendrá que subir temperatura o concentración.\n\nMuchos autores añaden un quinto elemento, el **agua** (o la propia naturaleza de la suciedad), porque condiciona a los cuatro. En la práctica a veces se habla de **TACT**: tiempo, acción, concentración, temperatura.\n\n### Cómo influye cada factor\n**Química**. Determina el mecanismo: saponificación, emulsificación, disolución, oxidación, quelación. Más concentración no siempre es mejor: por arriba de cierto punto el beneficio se aplana y aumentan el costo, la carga de enjuague, la corrosión y el riesgo de residuos. Cada formulación tiene una **zona útil** de concentración.\n\n**Temperatura**. Acelera las reacciones químicas (como regla general muy aproximada, la velocidad de muchas reacciones se duplica por cada 10 °C), baja la viscosidad, funde las grasas y mejora la difusión. Pero tiene límites:\n\n- Desnaturaliza proteína si se aplica en el momento equivocado.\n- Puede precipitar sales de dureza (el carbonato de calcio es **menos** soluble en caliente).\n- Algunos tensioactivos no iónicos se separan de la solución por arriba de su **punto de nube**.\n- Los oxidantes, como el cloro y el ácido peracético, se descomponen más rápido.\n- Aumenta la corrosión.\n\n**Acción mecánica**. Rompe la capa de suciedad, renueva la solución en contacto con la superficie y arrastra lo desprendido. En limpieza manual es el cepillado; en limpieza a presión es el impacto del chorro; en sistemas CIP es la **turbulencia** del flujo. Es el factor que más se olvida en las validaciones: una solución perfecta que no se renueva sobre la superficie forma una capa estancada y deja de trabajar.\n\n**Tiempo**. Las reacciones de limpieza no son instantáneas. La solución necesita penetrar la suciedad, reaccionar y desprenderla. Los tiempos demasiado cortos dejan residuo; los demasiado largos pueden volver a depositar suciedad (redeposición) o simplemente desperdiciar recursos.\n\n### Ejemplo de compensación\nUna planta lava un tanque con 1.5 % de limpiador alcalino a 75 °C durante 20 minutos y obtiene superficies limpias. Mantenimiento informa que el intercambiador que calienta la solución está dañado y solo se alcanzan 50 °C durante dos semanas. ¿Qué ajustar?\n\n- Lo razonable es compensar con **tiempo** y, dentro de lo que permite la etiqueta y la compatibilidad de materiales, con **concentración**. Por ejemplo, alargar el ciclo y subir moderadamente la concentración.\n- Pero hay que revisar qué suciedad hay: si es grasa animal con punto de fusión alto, a 50 °C quizá no se funda, y ni el tiempo ni la concentración compensarán del todo. Ahí se necesita un producto con mejor sistema tensioactivo, o reforzar la acción mecánica.\n- Y hay que **verificar** el resultado (inspección visual, ATP, proteína residual) en lugar de asumir que la compensación funcionó.\n\nEl círculo de Sinner es un modelo cualitativo: no da números exactos, pero obliga a hacer las preguntas correctas cuando un cliente cambia una condición.\n\n## La superficie también cuenta\nLa misma suciedad se remueve distinto según la superficie:\n\n- **Rugosidad**: una superficie rugosa (soldaduras mal pulidas, acero rayado, plásticos desgastados) ofrece refugios donde la suciedad y las bacterias quedan protegidas de la acción mecánica. En equipo higiénico se especifica el acabado superficial (por ejemplo, una rugosidad Ra baja) por esta razón.\n- **Energía superficial**: los metales limpios tienen alta energía superficial y se mojan bien; muchos plásticos (polietileno, polipropileno, teflón) tienen baja energía superficial, se mojan mal y retienen grasa. Ahí el tensioactivo correcto es decisivo.\n- **Porosidad**: el concreto, la madera, las juntas y los empaques porosos absorben suciedad y solución. Son difíciles de limpiar y de desinfectar.\n- **Reactividad**: el aluminio, el cobre, el acero galvanizado y algunos elastómeros se dañan con ciertos químicos. La compatibilidad de materiales limita qué tan agresiva puede ser la química (lo verás en el capítulo de corrosión).\n\n## Del diagnóstico a la recomendación\nCuando atiendas una queja de \"no limpia\", un procedimiento de diagnóstico ordenado ahorra tiempo:\n\n1. **¿Qué suciedad es?** Observa, toca, pregunta por el proceso. ¿Es grasa, proteína, mineral, una mezcla? ¿Está quemada o polimerizada? Una gota de ácido que efervesce sugiere carbonatos; un residuo que se vuelve resbaloso con sosa sugiere grasa saponificable.\n2. **¿Sobre qué superficie?** Material, acabado, estado.\n3. **¿Con qué agua?** Dureza y temperatura del agua de preparación (siguiente capítulo).\n4. **¿Cómo se aplica?** Concentración real (titúlala; no confíes en la dosificación teórica), temperatura real en el punto de uso, tiempo real de contacto, acción mecánica.\n5. **¿En qué orden?** Secuencia de pasos y enjuagues.\n\nMuchas veces el problema no es el producto sino una de estas condiciones: un dosificador descalibrado, agua más dura de lo que se creía, una temperatura que se pierde en la tubería, un preenjuague con agua demasiado caliente. El químico que diagnostica con este orden se gana la confianza del cliente.\n\n## Ideas que debes llevarte\n- La suciedad tiene química: **grasas** (saponificables o no), **proteínas** (sensibles al calor), **carbohidratos** (solubles o caramelizados), **minerales** (requieren ácido o secuestrante) y **suciedad biológica**.\n- La suciedad real es una **mezcla** y por eso la limpieza es una **secuencia** de pasos con orden lógico.\n- El **círculo de Sinner** relaciona química, temperatura, acción mecánica y tiempo: lo que se quita a uno hay que dárselo a otro, dentro de los límites de cada factor.\n- La **superficie** condiciona la limpieza tanto como la suciedad.\n- Ante una falla, diagnostica en orden: suciedad, superficie, agua, aplicación y secuencia.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "saponificación",
+     "enunciado": "Un cliente usa un limpiador alcalino fuerte en una línea donde se acumula grasa lubricante H1 de base mineral, y la grasa no se remueve. ¿Cuál es la explicación química más probable?",
+     "opciones": [
+      "El aceite mineral no tiene enlaces éster que el álcali pueda hidrolizar; depende de la emulsificación y la solubilización con tensioactivos",
+      "La concentración del álcali es demasiado alta y forma jabones insolubles sobre la grasa",
+      "Las grasas minerales solo se remueven con ácidos fuertes",
+      "El álcali saponifica la grasa, pero el jabón formado se vuelve a depositar por falta de enjuague"
+     ],
+     "correcta": 0,
+     "explicacion": "La saponificación requiere ésteres (triglicéridos). Los aceites minerales y sintéticos no son saponificables, así que el álcali solo no los remueve; se necesita un buen sistema tensioactivo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "proteína y temperatura",
+     "enunciado": "En una planta de embutidos el preenjuague se hace con agua a 85 °C y quedan películas difíciles sobre las superficies. ¿Qué cambio tiene más sentido?",
+     "opciones": [
+      "Hacer el preenjuague con agua tibia o a temperatura ambiente para no desnaturalizar la proteína sobre la superficie",
+      "Subir el preenjuague a más de 90 °C para fundir mejor la grasa",
+      "Eliminar el preenjuague y aplicar directamente el limpiador alcalino",
+      "Hacer el preenjuague con solución ácida caliente"
+     ],
+     "correcta": 0,
+     "explicacion": "El agua muy caliente desnaturaliza la proteína y la fija a la superficie. El preenjuague con proteína se hace tibio y el calor se reserva para el paso alcalino.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "minerales",
+     "enunciado": "¿Por qué un limpiador alcalino no remueve la piedra de leche (fosfato de calcio) y puede incluso favorecer su formación?",
+     "opciones": [
+      "A pH alto las sales de calcio son menos solubles y precipitan; los minerales se disuelven con ácido o se mantienen en solución con secuestrantes",
+      "El álcali oxida el fosfato y lo vuelve insoluble",
+      "El fosfato de calcio solo se remueve con tensioactivos no iónicos",
+      "El álcali reacciona con la proteína y forma un gel protector, pero no afecta al mineral"
+     ],
+     "correcta": 0,
+     "explicacion": "Las sales minerales de calcio se disuelven a pH bajo. Un pH alto favorece su precipitación, por eso se usan ácidos o secuestrantes.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "secuencia de limpieza",
+     "enunciado": "En un pasteurizador lácteo, ¿por qué el paso alcalino suele ir antes que el ácido?",
+     "opciones": [
+      "Porque el residuo orgánico (grasa y proteína) recubre la capa mineral; retirarlo primero permite que el ácido llegue al fosfato de calcio",
+      "Porque el ácido neutraliza el álcali y así se ahorra un enjuague",
+      "Porque el ácido solo funciona en caliente y el álcali calienta el equipo",
+      "Por costumbre; el orden no afecta el resultado"
+     ],
+     "correcta": 0,
+     "explicacion": "La materia orgánica protege a la capa mineral y el ácido puede precipitar proteína; por eso primero se retira lo orgánico con álcali.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "círculo de Sinner",
+     "enunciado": "Según el círculo de Sinner, si una planta reduce el tiempo de limpieza a la mitad para ganar producción, ¿qué debe ocurrir para mantener el resultado?",
+     "opciones": [
+      "Compensar con más temperatura, concentración o acción mecánica, dentro de sus límites, y verificar el resultado",
+      "Nada: el tiempo es el factor menos importante",
+      "Bajar la temperatura para que la química actúe más rápido",
+      "Usar menos producto porque la exposición es más corta"
+     ],
+     "correcta": 0,
+     "explicacion": "Los cuatro factores se compensan: si uno baja, otro debe subir, siempre dentro de los límites de cada factor y con verificación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "límites de la temperatura",
+     "enunciado": "¿Cuál de estos es un efecto NEGATIVO de subir demasiado la temperatura de una solución de limpieza?",
+     "opciones": [
+      "Puede precipitar carbonato de calcio y acelerar la descomposición de oxidantes como el cloro",
+      "Disminuye la velocidad de saponificación",
+      "Aumenta la viscosidad de la solución",
+      "Impide que las grasas se fundan"
+     ],
+     "correcta": 0,
+     "explicacion": "El carbonato de calcio es menos soluble en caliente y los oxidantes se descomponen más rápido; además aumenta la corrosión y puede desnaturalizar proteína.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "acción mecánica",
+     "enunciado": "En una validación, la solución tiene la concentración y la temperatura correctas pero el tanque queda sucio en una zona donde el flujo es casi nulo. ¿Qué factor del círculo de Sinner está fallando?",
+     "opciones": [
+      "La acción mecánica: la solución no se renueva ni desprende la suciedad en esa zona",
+      "La acción química, porque la concentración es insuficiente",
+      "El tiempo, porque las reacciones de limpieza son instantáneas",
+      "Ninguno; es un problema de la superficie"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin flujo o turbulencia se forma una capa estancada que deja de trabajar. Es el factor que más se olvida.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Maillard y caramelizado",
+     "enunciado": "En un horno industrial se acumulan residuos oscuros, duros e insolubles formados por azúcar y proteína expuestos a calor. ¿Qué tipo de suciedad es y qué la remueve mejor?",
+     "opciones": [
+      "Productos de Maillard y caramelización; requieren álcali fuerte, temperatura y tiempo",
+      "Azúcares simples; basta un enjuague con agua tibia",
+      "Sales minerales; se remueven con ácido",
+      "Biopelícula; se remueve con un desinfectante cuaternario"
+     ],
+     "correcta": 0,
+     "explicacion": "Las reacciones de Maillard y la caramelización forman residuos insolubles y adherentes que necesitan condiciones alcalinas agresivas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "superficie",
+     "enunciado": "¿Por qué una superficie de polipropileno retiene más grasa que una de acero inoxidable limpio?",
+     "opciones": [
+      "Por su baja energía superficial: se moja mal con soluciones acuosas y favorece la adhesión de grasas",
+      "Porque el plástico reacciona químicamente con la grasa",
+      "Porque el acero inoxidable es poroso y absorbe la grasa",
+      "Porque el polipropileno es más rugoso por naturaleza"
+     ],
+     "correcta": 0,
+     "explicacion": "Los plásticos de baja energía superficial se mojan mal; el tensioactivo correcto es decisivo para que la solución desplace la grasa.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "diagnóstico",
+     "enunciado": "Un cliente reclama que el limpiador 'dejó de funcionar' tras años sin problemas. ¿Qué verificarías primero?",
+     "opciones": [
+      "La concentración real titulando la solución, la temperatura en el punto de uso y la dureza del agua",
+      "Cambiar de inmediato a un producto más concentrado",
+      "La fecha de caducidad del producto únicamente",
+      "El color de la solución"
+     ],
+     "correcta": 0,
+     "explicacion": "Muchas fallas vienen de las condiciones de aplicación: dosificación, temperatura real, agua. Se diagnostica antes de cambiar el producto.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "grasa polimerizada",
+     "enunciado": "Una capa barnizada de aceite de freidora, horneada durante semanas sobre una superficie caliente, es difícil de limpiar porque:",
+     "opciones": [
+      "El aceite se oxidó y polimerizó en una red entrecruzada que ya no se comporta como grasa",
+      "El aceite se convirtió en sal mineral",
+      "El aceite se hidrolizó y formó azúcares",
+      "La temperatura evaporó los triglicéridos y solo quedó proteína"
+     ],
+     "correcta": 0,
+     "explicacion": "El calor y el oxígeno polimerizan los aceites insaturados; el residuo es un polímero que requiere álcali concentrado, temperatura y tiempo.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "secuencia de limpieza",
+     "enunciado": "Describe una secuencia de limpieza para un tanque con residuos de leche y justifica químicamente el orden de cada paso.",
+     "respuesta_modelo": "Preenjuague tibio para retirar lo soluble sin desnaturalizar proteína; paso alcalino caliente (a veces con oxidante) para saponificar y emulsificar grasa y peptizar proteína; enjuague; paso ácido para disolver fosfato y carbonato de calcio que ya quedaron expuestos; enjuague y desinfección.",
+     "puntos_clave": [
+      "preenjuague tibio, no caliente",
+      "álcali para grasa y proteína",
+      "ácido después para minerales",
+      "enjuagues entre pasos y desinfección al final"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "círculo de Sinner",
+     "enunciado": "Tu cliente no puede calentar su solución de limpieza por dos semanas. Explica cómo usarías el círculo de Sinner para recomendarle ajustes y qué límites considerarías.",
+     "respuesta_modelo": "Compensaría la falta de temperatura con más tiempo, más concentración dentro de lo que permiten la etiqueta y la compatibilidad de materiales, y más acción mecánica. Revisaría si la suciedad (por ejemplo, una grasa de punto de fusión alto) puede removerse sin calor, y verificaría el resultado con inspección o ATP en lugar de asumirlo.",
+     "puntos_clave": [
+      "compensar con tiempo, concentración o acción mecánica",
+      "respetar límites de etiqueta y materiales",
+      "considerar el tipo de suciedad",
+      "verificar el resultado"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "proteína",
+     "enunciado": "Explica por qué la proteína desnaturalizada es más difícil de remover y qué dos mecanismos químicos se usan para quitarla.",
+     "respuesta_modelo": "Al desnaturalizarse pierde su estructura, expone zonas hidrofóbicas y forma agregados insolubles que se adhieren a la superficie. Se remueve por hidrólisis y peptización alcalina (a pH alto se hidroliza y las cadenas cargadas se repelen y dispersan) y por oxidación (el cloro rompe enlaces y la solubiliza); las proteasas son una tercera vía.",
+     "puntos_clave": [
+      "agregados insolubles y adherentes",
+      "peptización/hidrólisis alcalina",
+      "oxidación con cloro"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "diagnóstico",
+     "enunciado": "Enumera en orden las preguntas de diagnóstico que harías ante una queja de 'el producto no limpia' y por qué ese orden.",
+     "respuesta_modelo": "Qué suciedad es, sobre qué superficie, con qué agua, cómo se aplica (concentración real, temperatura en el punto de uso, tiempo, acción mecánica) y en qué secuencia. Primero se entiende el problema químico y después se revisan las condiciones de aplicación, que suelen ser la causa real antes que el producto.",
+     "puntos_clave": [
+      "suciedad, superficie, agua, aplicación, secuencia",
+      "medir concentración y temperatura reales",
+      "no cambiar el producto antes de diagnosticar"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "El agua: dureza, alcalinidad e incrustación",
+   "texto": "## El ingrediente que nadie formula\nEn una solución de limpieza típica el producto químico representa del 0.5 al 3 % y el agua el resto. Sin embargo, el agua casi nunca aparece en la ficha técnica ni en la especificación del cliente. Es un error caro: la misma formulación rinde distinto en Guadalajara, en Monterrey o en una planta que usa agua de pozo, porque el agua trae disueltas sales que **reaccionan** con el producto, **consumen** parte de sus ingredientes activos y **dejan depósitos** en el equipo.\n\nUn químico que entiende el agua de su cliente puede explicar fallas que parecen misteriosas: un detergente que \"ya no hace espuma\", manchas blancas después del enjuague, un desinfectante que pierde eficacia o un intercambiador de calor que cada mes calienta peor.\n\n## Dureza: qué es y cómo se expresa\nLa **dureza** es la concentración de cationes multivalentes, principalmente **calcio** (Ca²⁺) y **magnesio** (Mg²⁺). Por convención se expresa como si todo fuera **carbonato de calcio**, en mg/L de CaCO₃ (equivalente a ppm en agua).\n\nConversiones que vas a encontrar en hojas técnicas de distintos países:\n\n| Unidad | Equivalencia en mg/L de CaCO₃ |\n|---|---|\n| 1 grado alemán (°dH) | 17.8 |\n| 1 grado francés (°fH) | 10 |\n| 1 grano por galón (gpg) | 17.1 |\n\nUna clasificación usada con frecuencia (la del Servicio Geológico de Estados Unidos) es:\n\n- **Blanda**: 0 a 60 mg/L\n- **Moderadamente dura**: 61 a 120 mg/L\n- **Dura**: 121 a 180 mg/L\n- **Muy dura**: más de 180 mg/L\n\nMuchas aguas de pozo del occidente y norte de México están en el rango de dura a muy dura. Nunca supongas la dureza del cliente: **mídela** (titulación con EDTA o tiras reactivas como primera aproximación).\n\n### Dureza temporal y permanente\n- La **dureza temporal** (o de carbonatos) corresponde al calcio y magnesio asociados a **bicarbonato**. Se llama temporal porque al calentar el agua el bicarbonato se descompone y precipita carbonato de calcio:\n\n  Ca(HCO₃)₂ → CaCO₃↓ + CO₂ + H₂O\n\n  Por eso el sarro aparece donde hay calor: calderas, intercambiadores, marmitas, lavadoras de botellas.\n- La **dureza permanente** corresponde al calcio y magnesio asociados a sulfatos y cloruros. No precipita con el calor, pero igual reacciona con detergentes y forma depósitos cuando cambian las condiciones.\n\n## Alcalinidad del agua\nLa **alcalinidad** es la capacidad del agua para neutralizar ácido. En aguas naturales proviene casi toda de bicarbonatos, con algo de carbonatos e hidróxidos a pH alto. Se mide por titulación con ácido usando dos puntos finales:\n\n- **Alcalinidad P** (fenolftaleína, alrededor de pH 8.3): hidróxidos y la mitad de los carbonatos.\n- **Alcalinidad M o total** (anaranjado de metilo o pH cercano a 4.5): toda la alcalinidad.\n\nImporta por dos razones:\n\n1. Un agua muy alcalina **consume ácido**. En un paso de limpieza ácida o en un desinfectante ácido, parte del producto se gasta en neutralizar el bicarbonato del agua antes de hacer su trabajo.\n2. El bicarbonato es la fuente del carbonato que precipita como sarro cuando se calienta el agua o se sube el pH.\n\n## Cómo el agua dura sabotea la limpieza\nLa dureza interfiere con casi todos los ingredientes de un limpiador.\n\n### Con los tensioactivos aniónicos y los jabones\nEl calcio y el magnesio forman sales **insolubles** con los tensioactivos aniónicos de tipo carboxilato (los jabones) y, en menor medida, con otros aniónicos. El resultado es la \"nata de jabón\": un precipitado que no limpia, se deposita sobre las superficies y consume tensioactivo. Por eso un mismo producto \"hace menos espuma\" y \"limpia menos\" en agua dura.\n\n### Con la alcalinidad del limpiador\nAl subir el pH con sosa cáustica, el bicarbonato del agua se convierte en carbonato, y el carbonato precipita con el calcio:\n\nHCO₃⁻ + OH⁻ → CO₃²⁻ + H₂O\nCa²⁺ + CO₃²⁻ → CaCO₃↓\n\nAdemás, el magnesio precipita como **hidróxido de magnesio** cuando el pH es muy alto. Estos precipitados forman una película blanca y opaca sobre el acero y el vidrio, y pueden atrapar suciedad orgánica debajo.\n\n### Con los fosfatos\nLos fosfatos simples (ortofosfato) precipitan con el calcio como fosfato de calcio, la misma química de la piedra de leche. Por eso las formulaciones que usan fosfatos recurren a polifosfatos que secuestran calcio, o a otros secuestrantes.\n\n### Con los desinfectantes\n- Algunos **cuaternarios de amonio** pierden eficacia en agua dura. Las etiquetas registradas indican hasta qué dureza se probó el producto: si el cliente tiene agua más dura que la de la prueba, la eficacia declarada ya no está demostrada.\n- Los aniónicos ácidos y otros biocidas también tienen límites de dureza en su etiqueta.\n\n### En el enjuague\nUn enjuague final con agua dura deja **manchas** al evaporarse: las sales disueltas se quedan en la superficie. En envases, vidrio y equipo de acero pulido es un defecto visible y, en superficies con calor, la semilla de nuevas incrustaciones.\n\n## La incrustación: un problema que crece solo\nLa incrustación (sarro) no es solo estética:\n\n- **Aísla térmicamente**. Una capa delgada de carbonato en un intercambiador reduce la transferencia de calor; para alcanzar la misma temperatura el equipo consume más energía, y en pasteurizadores eso se vuelve un riesgo de inocuidad si no se alcanza la temperatura de proceso.\n- **Atrapa suciedad y microorganismos**. La superficie rugosa y porosa del depósito protege bacterias del desinfectante.\n- **Crece**. Una superficie ya incrustada nuclea más precipitado que una superficie limpia.\n\n### El índice de saturación de Langelier\nPara estimar si un agua tiende a incrustar o a corroer se usa el **índice de Langelier**:\n\nLSI = pH − pHs\n\ndonde **pHs** es el pH al cual el agua estaría exactamente saturada de carbonato de calcio, calculado a partir de la dureza cálcica, la alcalinidad, los sólidos disueltos y la temperatura.\n\n- **LSI positivo**: el agua está sobresaturada y tiende a **incrustar**.\n- **LSI cercano a cero**: equilibrio.\n- **LSI negativo**: el agua está subsaturada y tiende a **disolver** carbonato y a ser **corrosiva**.\n\nComo pHs **baja** cuando sube la temperatura, la misma agua que es estable a temperatura ambiente puede volverse incrustante al calentarse. El LSI es una herramienta de tendencia, no una predicción exacta, pero sirve para explicarle al cliente por qué su caldera incrusta y su tubería fría no.\n\n## Otros componentes del agua que importan\n- **Hierro y manganeso**. Producen manchas cafés o negras y **catalizan la descomposición** de oxidantes: el peróxido de hidrógeno, el ácido peracético y el cloro se pierden más rápido en presencia de estos metales. Un desinfectante oxidante que \"dura poco\" en una planta con agua de pozo puede tener aquí su explicación.\n- **Cloruros**. Favorecen la **corrosión por picadura** del acero inoxidable, sobre todo con calor y pH bajo. Lo verás en el capítulo de corrosión.\n- **Sílice**. Forma depósitos vítreos muy duros, difíciles de disolver con los ácidos usuales. La estrategia es la prevención (tratamiento del agua y control de temperatura y concentración en evaporadores).\n- **Calidad microbiológica**. El agua de enjuague final entra en contacto con la superficie desinfectada: si está contaminada, recontamina. Debe cumplir los criterios de agua potable aplicables (en México, la NOM-127-SSA1) y en muchos programas se monitorea en los puntos de uso.\n\n## Tratamiento del agua\nCuando la dureza es alta, hay dos estrategias que se combinan:\n\n1. **Tratar el agua** antes de usarla:\n   - **Ablandamiento por intercambio iónico**: una resina intercambia el calcio y el magnesio por sodio. Elimina la dureza pero no reduce los sólidos disueltos totales ni la alcalinidad.\n   - **Ósmosis inversa** y desmineralización: eliminan la mayoría de las sales. El agua resultante tiene muy baja alcalinidad y puede ser **agresiva** (LSI negativo) con algunos metales.\n2. **Formular para el agua**: incluir **secuestrantes y quelantes** que mantengan el calcio y el magnesio en solución (capítulo 7), elegir tensioactivos tolerantes a la dureza y ajustar la dosis.\n\nEn la práctica, muchas plantas usan agua blanda para preparar soluciones y para el enjuague final, y agua sin tratar para preenjuagues y usos generales.\n\n## Cuánto producto \"se come\" la dureza: un cálculo\nSupón que un cliente prepara su solución alcalina con agua de **250 mg/L de dureza como CaCO₃** y quiere saber cuánto secuestrante necesita solo para neutralizar esa dureza.\n\n1. Pasa la dureza a milimoles: el CaCO₃ tiene masa molar de 100 g/mol, así que 250 mg/L equivalen a **2.5 mmol/L** de cationes de dureza.\n2. El EDTA se une a los metales en proporción **1:1** molar. Necesitas 2.5 mmol/L de EDTA.\n3. Con la sal tetrasódica anhidra (Na₄EDTA, masa molar aproximada de 380 g/mol): 2.5 mmol/L × 380 mg/mmol ≈ **950 mg/L**, casi **1 g/L** de Na₄EDTA anhidro.\n4. Si el producto comercial es una solución al 40 %, eso es cerca de **2.4 g/L** de la solución comercial, **solo para el agua**, antes de que el quelante ayude con la suciedad.\n\nEste cálculo explica por qué un producto bien formulado para agua blanda puede quedarse corto en agua muy dura: buena parte de su secuestrante se agota en el agua de preparación.\n\n## Ideas que debes llevarte\n- El agua es el componente mayoritario de cualquier solución de limpieza y **reacciona** con el producto.\n- La **dureza** (calcio y magnesio, expresados como CaCO₃) precipita tensioactivos aniónicos y fosfatos, forma sarro con la alcalinidad y el calor, y reduce la eficacia de algunos desinfectantes.\n- La **alcalinidad** del agua consume ácido y es la fuente del carbonato que incrusta.\n- El **índice de Langelier** indica si un agua tiende a incrustar o a corroer, y cambia con la temperatura.\n- Hierro, manganeso, cloruros y sílice tienen efectos específicos: descomposición de oxidantes, picaduras y depósitos vítreos.\n- La dureza se maneja tratando el agua, formulando con secuestrantes, o ambas cosas, y su consumo de producto se puede **calcular**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "unidades de dureza",
+     "enunciado": "Una hoja técnica europea indica que el producto funciona hasta 20 °dH. ¿A cuántos mg/L de CaCO₃ equivale aproximadamente?",
+     "opciones": [
+      "356 mg/L",
+      "200 mg/L",
+      "342 mg/L",
+      "178 mg/L"
+     ],
+     "correcta": 0,
+     "explicacion": "1 °dH equivale a 17.8 mg/L de CaCO₃, así que 20 °dH son unos 356 mg/L.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "dureza temporal",
+     "enunciado": "¿Por qué el sarro aparece sobre todo en calderas, intercambiadores y marmitas?",
+     "opciones": [
+      "Porque con el calor el bicarbonato se descompone y precipita carbonato de calcio (dureza temporal)",
+      "Porque el calor convierte el sulfato de calcio en carbonato",
+      "Porque el calor aumenta la solubilidad del carbonato de calcio",
+      "Porque el magnesio se oxida con la temperatura"
+     ],
+     "correcta": 0,
+     "explicacion": "Ca(HCO₃)₂ → CaCO₃ + CO₂ + H₂O al calentar; además el carbonato de calcio es menos soluble en caliente.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "dureza y tensioactivos",
+     "enunciado": "Un cliente cambió de agua de red a agua de pozo y reporta que su detergente con jabón 'ya no hace espuma'. ¿Qué está pasando?",
+     "opciones": [
+      "El calcio y el magnesio precipitan los tensioactivos aniónicos tipo jabón y consumen el activo",
+      "El agua de pozo tiene menos oxígeno disuelto",
+      "La espuma depende solo de la temperatura del agua",
+      "El agua de pozo es más ácida y neutraliza el jabón"
+     ],
+     "correcta": 0,
+     "explicacion": "Los jabones forman sales insolubles con calcio y magnesio (nata de jabón), que no limpian y consumen tensioactivo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "pH alto y precipitación",
+     "enunciado": "¿Qué ocurre al agregar sosa cáustica a un agua dura con alta alcalinidad de bicarbonatos?",
+     "opciones": [
+      "El bicarbonato pasa a carbonato y precipita carbonato de calcio; a pH muy alto también precipita hidróxido de magnesio",
+      "El calcio se disuelve más y la dureza desaparece",
+      "Se forma cloruro de calcio soluble",
+      "No ocurre nada porque la sosa no reacciona con el bicarbonato"
+     ],
+     "correcta": 0,
+     "explicacion": "HCO₃⁻ + OH⁻ → CO₃²⁻ + H₂O, y el carbonato precipita con el calcio; el Mg(OH)₂ precipita a pH muy alto.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "índice de Langelier",
+     "enunciado": "Un agua tiene LSI de −0.8 a temperatura ambiente. ¿Qué tendencia tiene?",
+     "opciones": [
+      "Está subsaturada de carbonato: tiende a disolverlo y a ser corrosiva",
+      "Está sobresaturada y tiende a incrustar",
+      "Está en equilibrio perfecto",
+      "Tiende a formar depósitos de sílice"
+     ],
+     "correcta": 0,
+     "explicacion": "Un LSI negativo indica subsaturación: el agua disuelve carbonato y tiende a ser corrosiva.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "temperatura e incrustación",
+     "enunciado": "¿Por qué una misma agua puede ser estable en la tubería fría e incrustante en el intercambiador?",
+     "opciones": [
+      "Porque el pH de saturación (pHs) baja al subir la temperatura, y el LSI se vuelve positivo",
+      "Porque el agua fría tiene más calcio disuelto que la caliente por definición",
+      "Porque el intercambiador agrega calcio al agua",
+      "Porque la presión del intercambiador precipita sílice"
+     ],
+     "correcta": 0,
+     "explicacion": "El pHs disminuye con la temperatura, así que el LSI sube y el agua caliente tiende a incrustar.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "alcalinidad y ácidos",
+     "enunciado": "En un paso de limpieza ácida preparado con agua de alta alcalinidad, ¿qué efecto tiene esa alcalinidad?",
+     "opciones": [
+      "Consume parte del ácido en neutralizar el bicarbonato antes de que actúe sobre la incrustación",
+      "Aumenta la fuerza del ácido",
+      "Evita la corrosión del acero sin afectar al ácido",
+      "No influye porque el ácido es fuerte"
+     ],
+     "correcta": 0,
+     "explicacion": "La alcalinidad neutraliza ácido; parte del producto se gasta en el agua y queda menos para la suciedad mineral.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "hierro y oxidantes",
+     "enunciado": "En una planta con agua de pozo rica en hierro y manganeso, el ácido peracético pierde concentración mucho más rápido que en la planta de la ciudad. ¿Por qué?",
+     "opciones": [
+      "El hierro y el manganeso catalizan la descomposición de los oxidantes",
+      "El hierro reacciona con el ácido acético y lo neutraliza",
+      "El manganeso aumenta el pH y estabiliza el peracético",
+      "La dureza del agua de pozo es la única causa"
+     ],
+     "correcta": 0,
+     "explicacion": "Los metales de transición catalizan la descomposición del peróxido, el ácido peracético y el cloro.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ablandamiento",
+     "enunciado": "¿Qué hace un suavizador de intercambio iónico y qué NO hace?",
+     "opciones": [
+      "Cambia calcio y magnesio por sodio, pero no reduce los sólidos disueltos totales ni la alcalinidad",
+      "Elimina todas las sales y deja agua desmineralizada",
+      "Reduce la alcalinidad pero deja el calcio",
+      "Elimina cloruros y sílice"
+     ],
+     "correcta": 0,
+     "explicacion": "La resina intercambia cationes de dureza por sodio; los sólidos disueltos y la alcalinidad se mantienen.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "cuaternarios y dureza",
+     "enunciado": "La etiqueta de un cuaternario indica eficacia probada hasta 400 ppm de dureza, y el cliente usa agua de 550 ppm. ¿Qué conclusión es correcta?",
+     "opciones": [
+      "La eficacia declarada no está demostrada para esa agua; hay que tratar el agua o elegir un producto probado a esa dureza",
+      "Basta con duplicar la dosis por encima de la etiqueta",
+      "No importa: la dureza no afecta a los cuaternarios",
+      "El producto funcionará mejor porque el agua dura aporta iones"
+     ],
+     "correcta": 0,
+     "explicacion": "La eficacia registrada vale para las condiciones probadas; usar dosis fuera de etiqueta no es aceptable.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "cálculo de secuestrante",
+     "enunciado": "Un agua tiene 300 mg/L de dureza como CaCO₃. ¿Cuántos mmol/L de EDTA se necesitan como mínimo solo para secuestrar esa dureza?",
+     "opciones": [
+      "3.0 mmol/L",
+      "0.3 mmol/L",
+      "30 mmol/L",
+      "1.5 mmol/L"
+     ],
+     "correcta": 0,
+     "explicacion": "300 mg/L ÷ 100 g/mol = 3 mmol/L de cationes; el EDTA se une 1:1, así que se necesitan 3 mmol/L.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "cálculo de secuestrante",
+     "enunciado": "Un cliente usa agua de 400 mg/L de dureza como CaCO₃. Calcula cuántos gramos por litro de Na₄EDTA anhidro (aprox. 380 g/mol) se consumen solo en secuestrar esa dureza, y qué implica para la formulación.",
+     "respuesta_modelo": "400 mg/L ÷ 100 = 4 mmol/L; con proporción 1:1 se requieren 4 mmol/L × 380 mg/mmol ≈ 1.5 g/L de Na₄EDTA anhidro. Implica que una parte importante del secuestrante del producto se gasta en el agua; habría que subir la dosis, ablandar el agua o elegir una formulación diseñada para agua muy dura.",
+     "puntos_clave": [
+      "4 mmol/L de dureza",
+      "≈1.5 g/L de Na₄EDTA",
+      "el secuestrante se agota en el agua",
+      "ajustar dosis, tratar el agua o reformular"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "incrustación",
+     "enunciado": "Explica a un gerente de producción por qué la incrustación en un pasteurizador no es solo un problema estético.",
+     "respuesta_modelo": "La incrustación aísla térmicamente: reduce la transferencia de calor, aumenta el consumo de energía y puede impedir que el producto alcance la temperatura de pasteurización, lo que es un riesgo de inocuidad. Además su superficie rugosa protege microorganismos y suciedad del desinfectante, y una superficie incrustada favorece que se deposite más.",
+     "puntos_clave": [
+      "aislamiento térmico y energía",
+      "riesgo de no alcanzar la temperatura de proceso",
+      "refugio de microorganismos",
+      "la incrustación crece sobre sí misma"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "diagnóstico del agua",
+     "enunciado": "Un cliente reporta manchas blancas en botellas de vidrio después del enjuague final. ¿Qué causa probable investigarías y qué propondrías?",
+     "respuesta_modelo": "Dureza y sólidos disueltos en el agua del enjuague final que quedan sobre el vidrio al evaporarse, posiblemente carbonato de calcio. Mediría la dureza y propondría usar agua ablandada u ósmosis inversa en el enjuague final, y revisar que la solución alcalina tenga suficiente secuestrante para no precipitar carbonato.",
+     "puntos_clave": [
+      "sales del agua de enjuague",
+      "medir dureza",
+      "enjuague final con agua tratada",
+      "secuestrante suficiente en el paso alcalino"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
