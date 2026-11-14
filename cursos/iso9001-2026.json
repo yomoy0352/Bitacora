@@ -1,0 +1,1007 @@
+{
+ "id": "iso9001-2026",
+ "titulo": "Transición a ISO 9001:2026",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Por qué cambió ISO 9001 y qué tan grande es el cambio",
+   "texto": "## Una norma de once años\nISO 9001 es la norma de sistemas de gestión más usada del mundo, con cientos de miles de certificados. Su edición de 2015 introdujo cambios profundos: la estructura de alto nivel compartida con otras normas, el pensamiento basado en riesgos, el contexto de la organización y las partes interesadas, y una visión menos documental y más orientada a resultados. Si trabajaste en sistemas de gestión en los últimos años, has trabajado con esa lógica.\n\nISO revisa periódicamente sus normas. En 2021 la revisión sistemática de ISO 9001:2015 concluyó que la norma seguía siendo pertinente, pero que convenía actualizarla para reflejar cambios en el entorno de las organizaciones y para alinearla con la versión más reciente de la estructura común de las normas de sistemas de gestión. El resultado es **ISO 9001:2026**, la sexta edición, publicada el **16 de septiembre de 2026**.\n\n> Este curso se basa en la norma publicada y en los análisis de organismos de certificación y especialistas. Los requisitos se describen con tus propias palabras de trabajo, no con el texto literal de la norma; para auditar o documentar, consulta siempre el texto oficial que tu organización adquiera.\n\n## Cronología\n- **2015**: publicación de ISO 9001:2015.\n- **Febrero de 2024**: enmienda sobre **cambio climático** a ISO 9001:2015 (y a otras normas de sistemas de gestión), que pide determinar si el cambio climático es una cuestión pertinente en el contexto y considerar que las partes interesadas pueden tener requisitos relacionados. Entró en vigor de inmediato.\n- **Agosto de 2025**: borrador de norma internacional (DIS).\n- **Mayo de 2026**: nueva edición de **ISO 9000** (fundamentos y vocabulario).\n- **Julio de 2026**: aprobación del borrador final (FDIS).\n- **16 de septiembre de 2026**: publicación de ISO 9001:2026.\n\n## La transición\nLas reglas de transición para la certificación acreditada las publicó **Global ACI** (Global Accreditation Cooperation), la organización que asumió en 2026 el papel que tenía el IAF (Foro Internacional de Acreditación) en la coordinación mundial de la acreditación. Según esas reglas, tal como las reportan organismos de certificación:\n\n- El periodo de transición es de **tres años**.\n- Los organismos de acreditación deben estar listos para evaluar a los organismos de certificación contra la nueva edición durante el primer semestre de 2027.\n- Los primeros certificados acreditados en ISO 9001:2026 se emiten a lo largo de **2027**, a medida que cada organismo de certificación obtiene su acreditación.\n- Después del **31 de marzo de 2028**, las **certificaciones iniciales** solo se emiten en la edición 2026.\n- Después del **30 de septiembre de 2029**, los certificados en ISO 9001:2015 **dejan de ser válidos**.\n\nPara una organización certificada, esto significa que hay tiempo, pero no tanto como parece: lo normal es hacer la transición en una auditoría de **vigilancia** o de **recertificación** programada, y el calendario de esas auditorías no siempre coincide con la fecha límite. Si tu recertificación cae en 2028, conviene hacer la transición en ella; si cae en 2029, cerca de la fecha límite, el margen para corregir hallazgos es estrecho.\n\n## ¿Qué tan grande es el cambio?\nLa conclusión de prácticamente todos los análisis publicados es la misma: **la edición 2026 actualiza el marco de 2015, no lo reemplaza**. Los organismos de certificación describen el alcance de los cambios como **moderado**, mucho menor que el salto de 2008 a 2015.\n\n### Lo que se mantiene\n- La estructura de capítulos 4 a 10.\n- El **enfoque a procesos**.\n- El ciclo **PHVA**.\n- El **pensamiento basado en riesgos**.\n- La lógica de **contexto, partes interesadas y alcance**.\n- La flexibilidad documental: no hay obligación de manual de calidad ni de cambiar la terminología de tus documentos.\n- No hay requisitos nuevos específicos sobre inteligencia artificial, digitalización, ciberseguridad o sostenibilidad, aunque el Anexo A menciona la tecnología como fuente de mejora.\n\n### Los cambios principales\n1. **Cultura de calidad y comportamiento ético** como responsabilidad explícita de la alta dirección (5.1.1), con referencias en el ambiente para la operación de los procesos (7.1.4) y en la toma de conciencia (7.3).\n2. **Riesgos y oportunidades separados** en subapartados distintos (6.1.1 a 6.1.3), cada uno con requisitos para determinarlos y abordarlos; las oportunidades ya no son una columna junto a los riesgos.\n3. **Planificación de los cambios reforzada** (6.3): además de planificar, comunicar el cambio, dar seguimiento a su eficacia y revisar los resultados.\n4. **Cambio climático** integrado en el texto de contexto y partes interesadas (4.1 y 4.2).\n5. **Términos y definiciones** incluidos directamente en la norma: los de la estructura armonizada y algunos propios de calidad, con ISO 9000 como referencia normativa para el resto.\n6. **Mejora continua** consolidada en un apartado (10.1), con orientación sobre las fuentes de mejora.\n7. **Anexo A** muy ampliado, con orientación informativa sobre la intención de los requisitos de los capítulos 4 a 10.\n8. Ajustes menores: la auditoría interna con **objetivos** definidos; la información a clientes sobre **contingencias**; los cambios de diseño que deben **determinarse**; el **conocimiento** de la organización con un alcance más amplio; algunas redacciones sobre información documentada.\n\n## Por qué estos cambios\nDetrás de cada cambio hay una lección aprendida de una década de certificaciones:\n\n- **Cultura y ética**: muchas organizaciones tenían sistemas impecables en papel y prácticas que los contradecían. Los grandes escándalos de calidad de la década (datos de ensayo alterados, especificaciones \"ajustadas\") no fueron fallas de procedimiento, sino de cultura.\n- **Oportunidades**: la mayoría de los sistemas trataron las oportunidades como un apéndice de la matriz de riesgos y nunca las gestionaron de verdad.\n- **Cambios**: los cambios no planificados o mal implementados son una causa frecuente de fallas de calidad.\n- **Clima**: los fenómenos climáticos afectan cadenas de suministro, instalaciones y requisitos de clientes.\n- **Anexo A**: muchas interpretaciones divergentes entre auditores y organizaciones; la orientación busca mayor consistencia.\n\n## Cómo encaja con tu trabajo\nSi coordinas un sistema integrado de calidad e inocuidad, la transición no es un proyecto aislado. ISO 22000:2018 comparte la estructura armonizada y tiene sus propias reglas de revisión; los esquemas como FSSC 22000 y SQF tienen sus propias versiones. Una transición bien hecha aprovecha la oportunidad para **mejorar el sistema integrado**, no solo para cambiar un número de edición en los documentos.\n\n## Ideas que debes llevarte\n- ISO 9001:2026 se publicó el **16 de septiembre de 2026**; es la sexta edición.\n- La transición es de **tres años**: certificados 2015 válidos hasta el **30 de septiembre de 2029**; certificaciones iniciales solo en 2026 después del **31 de marzo de 2028**.\n- El cambio es **moderado**: se mantienen la estructura, el enfoque a procesos, PHVA y el pensamiento basado en riesgos.\n- Cambios principales: **cultura de calidad y ética**, **oportunidades separadas de riesgos**, **gestión de cambios reforzada**, **clima integrado**, **términos en la norma**, **mejora continua consolidada** y **Anexo A ampliado**.\n- Planifica la transición según el calendario de tus auditorías, no solo según la fecha límite.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Cronología",
+     "enunciado": "¿Cuándo se publicó ISO 9001:2026?",
+     "opciones": [
+      "16 de septiembre de 2026",
+      "1 de enero de 2026",
+      "Febrero de 2024",
+      "30 de septiembre de 2029"
+     ],
+     "correcta": 0,
+     "explicacion": "Febrero de 2024 fue la enmienda climática a la edición 2015; el 30 de septiembre de 2029 es el fin de la transición.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Transición",
+     "enunciado": "¿Hasta cuándo son válidos los certificados acreditados en ISO 9001:2015?",
+     "opciones": [
+      "Hasta el 30 de septiembre de 2029",
+      "Hasta el 16 de septiembre de 2027",
+      "Indefinidamente",
+      "Hasta el 31 de diciembre de 2026"
+     ],
+     "correcta": 0,
+     "explicacion": "La transición dura tres años según las reglas publicadas por Global ACI.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Transición",
+     "enunciado": "Después del 31 de marzo de 2028, ¿qué cambia para las certificaciones iniciales?",
+     "opciones": [
+      "Solo se emiten en ISO 9001:2026",
+      "Solo se emiten en ISO 9001:2015",
+      "Se suspenden todas las certificaciones",
+      "No cambia nada"
+     ],
+     "correcta": 0,
+     "explicacion": "A partir de esa fecha, las organizaciones que se certifican por primera vez lo hacen en la edición 2026.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Transición",
+     "enunciado": "¿Qué organización publicó las reglas de transición para la certificación acreditada?",
+     "opciones": [
+      "Global ACI, que asumió el papel del IAF",
+      "ISO directamente",
+      "Cada organismo de certificación por separado",
+      "El gobierno de cada país"
+     ],
+     "correcta": 0,
+     "explicacion": "Global Accreditation Cooperation coordina la acreditación mundial desde 2026.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Magnitud",
+     "enunciado": "¿Cómo describen los organismos de certificación la magnitud de los cambios de la edición 2026?",
+     "opciones": [
+      "Moderada: actualiza el marco de 2015 sin reemplazarlo",
+      "Radical: una norma completamente nueva",
+      "Nula: solo cambia el año",
+      "Mayor que el cambio de 2008 a 2015"
+     ],
+     "correcta": 0,
+     "explicacion": "La estructura, el enfoque a procesos, PHVA y el pensamiento basado en riesgos se mantienen.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cambios principales",
+     "enunciado": "¿Cuál de estos es un cambio principal de ISO 9001:2026?",
+     "opciones": [
+      "La alta dirección debe promover una cultura de calidad y un comportamiento ético",
+      "Se vuelve obligatorio el manual de calidad",
+      "Se eliminan las auditorías internas",
+      "Se eliminan los objetivos de calidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El requisito está en 5.1.1, con referencias en 7.1.4 y 7.3.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cambios principales",
+     "enunciado": "¿Qué cambia en el tratamiento de riesgos y oportunidades?",
+     "opciones": [
+      "Se separan en subapartados distintos, cada uno con requisitos propios para determinarlos y abordarlos",
+      "Se eliminan los riesgos y quedan solo oportunidades",
+      "Se exige un método FMEA obligatorio",
+      "No cambia nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Las oportunidades ya no se tratan como una columna de la matriz de riesgos.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Lo que se mantiene",
+     "enunciado": "¿Cuál de estos elementos se mantiene sin cambios de fondo en la edición 2026?",
+     "opciones": [
+      "El enfoque a procesos y el ciclo PHVA",
+      "El texto de 6.1 sobre riesgos y oportunidades",
+      "El texto de 6.3 sobre planificación de cambios",
+      "La ausencia de referencias a cultura de calidad"
+     ],
+     "correcta": 0,
+     "explicacion": "La lógica de 2015 se conserva; los cambios se concentran en liderazgo, riesgos y oportunidades, cambios, clima, términos, mejora y Anexo A.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Nuevos temas",
+     "enunciado": "¿Incluye ISO 9001:2026 requisitos nuevos específicos sobre inteligencia artificial o ciberseguridad?",
+     "opciones": [
+      "No; el Anexo A menciona la tecnología como fuente de mejora, sin requisitos específicos",
+      "Sí, un capítulo nuevo sobre inteligencia artificial",
+      "Sí, exige certificación en ISO 27001",
+      "Sí, exige un plan de digitalización"
+     ],
+     "correcta": 0,
+     "explicacion": "Los análisis coinciden en que no hay requisitos nuevos sobre IA, digitalización, ciberseguridad o sostenibilidad.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "¿Qué pasó con la enmienda climática de 2024?",
+     "opciones": [
+      "Se integró en el texto de contexto y partes interesadas (4.1 y 4.2)",
+      "Se eliminó",
+      "Se convirtió en un capítulo nuevo",
+      "Solo aplica a ISO 14001"
+     ],
+     "correcta": 0,
+     "explicacion": "La edición 2026 incorpora la consideración del cambio climático en el texto base.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Planeación",
+     "enunciado": "Tu recertificación cae en agosto de 2029. ¿Cuál es el riesgo de hacer la transición en esa auditoría?",
+     "opciones": [
+      "Queda muy poco margen para cerrar hallazgos antes de que el certificado 2015 deje de ser válido",
+      "Ninguno, porque es antes de la fecha límite",
+      "Que el organismo no pueda auditar en agosto",
+      "Que la norma cambie otra vez"
+     ],
+     "correcta": 0,
+     "explicacion": "Conviene hacer la transición en una auditoría con margen suficiente antes del 30 de septiembre de 2029.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Motivos",
+     "enunciado": "Explica, con tus palabras, por qué ISO incorporó la cultura de calidad y el comportamiento ético como responsabilidad de la alta dirección.",
+     "respuesta_modelo": "Porque una década de certificaciones mostró que un sistema puede cumplir en papel y fallar en la práctica. Muchos problemas graves de calidad no fueron fallas de procedimientos, sino de comportamientos: datos de ensayo alterados, especificaciones ajustadas para liberar producto, presión para no reportar errores. Eso se origina en la cultura y en lo que la dirección tolera o premia. Al hacerlo explícito en 5.1.1, la norma pide que la dirección promueva activamente una cultura donde la calidad y la honestidad se valoren, y que pueda demostrarlo con decisiones y comunicaciones, no con un procedimiento.",
+     "puntos_clave": [
+      "Brecha entre sistema documentado y práctica",
+      "Ejemplos de fallas de comportamiento",
+      "Papel de la dirección en la cultura",
+      "Evidencia con decisiones, no con procedimientos"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Planeación",
+     "enunciado": "Tu organización tiene certificación ISO 9001:2015 con vigilancias en marzo de 2027 y marzo de 2028, y recertificación en marzo de 2029. Propón en qué auditoría harías la transición y justifica.",
+     "respuesta_modelo": "Haría la transición en la vigilancia de marzo de 2028, o incluso en la de 2027 si el organismo de certificación ya está acreditado y la organización está lista. En 2027 el organismo podría no estar acreditado todavía; en 2028 hay tiempo para preparar el análisis de brechas, implementar y cerrar hallazgos, y queda la recertificación de 2029 como respaldo. Dejarlo para marzo de 2029 deja solo seis meses antes del 30 de septiembre de 2029 para cerrar no conformidades, sin margen ante retrasos. Además, conviene confirmar con el organismo de certificación sus fechas de acreditación y si la transición en vigilancia requiere tiempo adicional de auditoría.",
+     "puntos_clave": [
+      "Elección justificada",
+      "Considera la acreditación del organismo",
+      "Margen para cerrar hallazgos",
+      "Coordinación con el organismo de certificación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Integración",
+     "enunciado": "¿Por qué la transición a ISO 9001:2026 es una oportunidad para un sistema integrado de calidad e inocuidad, y no solo un trámite?",
+     "respuesta_modelo": "Porque los cambios principales (cultura y ética, oportunidades, gestión de cambios, clima) también fortalecen la inocuidad: la cultura de inocuidad ya es exigida por esquemas como FSSC 22000 y SQF; la gestión del cambio es crítica en ISO 22000; y los riesgos climáticos afectan proveedores y operaciones de ambos sistemas. Al compartir la estructura armonizada con ISO 22000, se pueden integrar procesos comunes (contexto, liderazgo, cambios, auditoría, revisión por la dirección) y eliminar duplicidades. Si solo se cambia el número de edición, se pierde la oportunidad de mejorar el sistema completo.",
+     "puntos_clave": [
+      "Relación de los cambios con la inocuidad",
+      "Estructura armonizada compartida",
+      "Integración de procesos comunes",
+      "Riesgo de tratarlo como trámite"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "Estructura armonizada, términos y el nuevo Anexo A",
+   "texto": "## Una estructura común, ahora actualizada\nDesde 2012, ISO usa una estructura común para todas sus normas de sistemas de gestión: el mismo orden de capítulos, un texto central idéntico y términos comunes. Primero se llamó **estructura de alto nivel**; en su revisión de 2021 pasó a llamarse **estructura armonizada**. Por eso ISO 9001, ISO 14001, ISO 45001, ISO 22000 e ISO 27001 se parecen tanto en sus capítulos 4 a 10.\n\nISO 9001:2026 se alinea con la versión vigente de esa estructura armonizada. Esto explica una parte de los cambios de redacción: no son ocurrencias de los redactores de ISO 9001, sino ajustes que llegarán (o ya llegaron) a todas las normas de sistemas de gestión.\n\n## Los capítulos\nLa estructura no cambia:\n\n| Capítulo | Contenido |\n|---|---|\n| 1 | Objeto y campo de aplicación |\n| 2 | Referencias normativas |\n| 3 | Términos y definiciones |\n| 4 | Contexto de la organización |\n| 5 | Liderazgo |\n| 6 | Planificación |\n| 7 | Apoyo |\n| 8 | Operación |\n| 9 | Evaluación del desempeño |\n| 10 | Mejora |\n\nSi tu sistema está documentado con la numeración de 2015, **no hay obligación de renumerar** documentos. La norma nunca exigió que tu documentación siguiera su numeración.\n\n## Términos y definiciones\n### Qué cambia\nEn ISO 9001:2015, el capítulo 3 solo remitía a ISO 9000:2015. En la edición 2026:\n\n- El capítulo 3 incluye directamente los **términos comunes de la estructura armonizada** (por ejemplo, organización, parte interesada, alta dirección, sistema de gestión, política, objetivo, riesgo, competencia, información documentada, proceso, desempeño, conformidad, no conformidad, acción correctiva, auditoría, medición, seguimiento, eficacia, mejora continua).\n- Incluye también algunos **términos propios de calidad**, como sistema de gestión de la calidad, política de la calidad y objetivo de la calidad.\n- **ISO 9000** sigue siendo **referencia normativa** para el resto del vocabulario. Su nueva edición se publicó en **2026**.\n\n### Por qué importa\nTener las definiciones dentro de la norma reduce interpretaciones divergentes. Un ejemplo clásico es **riesgo**: la definición común lo describe como el efecto de la incertidumbre, que puede ser positivo o negativo. Esto generó confusión en 2015 sobre si \"riesgo\" incluía las oportunidades. La edición 2026 aclara la separación operativa entre riesgos y oportunidades en el capítulo 6, como verás en el capítulo 5 de este curso.\n\n### Términos que siguen igual en la práctica\n- **Información documentada**: sigue siendo el término. Puedes seguir llamando \"procedimientos\" y \"registros\" a tus documentos.\n- **Proveedor externo**: puedes seguir diciendo \"proveedor\".\n- Algunas redacciones cambian de \"mantener información documentada\" a que algo esté \"disponible como información documentada\". Para fines prácticos, significa lo mismo: que exista y sea accesible.\n\n## Los verbos de la norma\nLeer bien una norma empieza por los verbos auxiliares. Las directivas de ISO establecen su significado:\n\n- **Debe**: requisito.\n- **Debería**: recomendación.\n- **Puede** (permiso): algo permitido.\n- **Puede** (capacidad): una posibilidad o capacidad.\n\nLas **notas** dan orientación para comprender o aclarar un requisito; no son requisitos en sí.\n\nEl nuevo Anexo A, además, explica qué implican palabras que aparecen en los requisitos y que generan discusión en auditoría:\n\n- **Considerar**: hay que pensar sobre el tema, pero se puede decidir excluirlo si se justifica.\n- **Tener en cuenta**: el tema debe incluirse en la decisión.\n- **Asegurar**: la organización puede delegar la actividad, pero conserva la responsabilidad de que ocurra.\n- **Apropiado** o **pertinente**: la organización decide con criterio y debe poder justificarlo.\n\nEsta distinción tiene consecuencias reales en auditoría. Por ejemplo, si un requisito pide **considerar** un tema, el auditor no puede exigir que lo apliques, pero sí puede pedir evidencia de que lo evaluaste. Si pide **tener en cuenta**, el tema debe estar en la decisión.\n\n## El Anexo A: orientación ampliada\nEn la edición 2015, el Anexo A era una aclaración breve de la nueva estructura y algunos conceptos. En la edición 2026, el Anexo A se amplió considerablemente: cubre los capítulos 4 a 10 y explica la **intención** de los requisitos, con ejemplos y aclaraciones.\n\nPuntos clave:\n\n- Es **informativo**: **no agrega requisitos**. Un auditor no puede levantar una no conformidad contra el Anexo A.\n- Pero es muy útil para **interpretar** los requisitos y para preparar la transición.\n- Contiene orientación sobre temas como la cultura de calidad, la diferencia entre riesgos y oportunidades, la gestión de cambios y las fuentes de mejora (incluidas la tecnología y los datos).\n\nUna buena práctica en la transición es **leer cada requisito junto con su orientación del Anexo A**, y documentar en tu análisis de brechas cómo tu sistema cumple la intención, no solo la letra.\n\n## Otras normas de la familia\n- **ISO 9000**: fundamentos y vocabulario; contiene los **principios de la gestión de la calidad** (enfoque al cliente, liderazgo, compromiso de las personas, enfoque a procesos, mejora, toma de decisiones basada en la evidencia y gestión de las relaciones). Revisa la edición 2026 para conocer los cambios en su redacción.\n- **ISO 9004**: orientación para lograr el éxito sostenido.\n- **ISO 19011**: directrices para la auditoría de sistemas de gestión.\n- **ISO 10001 a 10019**: normas de apoyo (satisfacción del cliente, quejas, planes de calidad, gestión de la configuración, competencia, etc.).\n\n## Cómo leer la norma para la transición\nUna metodología práctica:\n\n1. Consigue el **texto oficial** de ISO 9001:2026 (y la versión en español cuando esté disponible por el organismo nacional de normalización).\n2. Prepara una **tabla de correspondencia** de 2015 a 2026, apartado por apartado.\n3. Para cada apartado, marca: **sin cambio**, **cambio de redacción** o **cambio de requisito**.\n4. Para cada cambio de requisito, lee la orientación del **Anexo A**.\n5. Compara con tu sistema actual y define la **brecha** y la acción.\n\nLo verás aplicado en el capítulo 9 de este curso.\n\n## Ideas que debes llevarte\n- ISO 9001:2026 se alinea con la **estructura armonizada** vigente; la estructura de capítulos no cambia y no hay que renumerar documentos.\n- El capítulo 3 ahora incluye los **términos comunes** de la estructura armonizada y algunos **términos de calidad**; **ISO 9000** sigue siendo referencia normativa.\n- Puedes seguir usando \"procedimientos\", \"registros\" y \"proveedores\".\n- Lee los verbos: **debe** (requisito), **debería** (recomendación), **puede**; y los matices de **considerar**, **tener en cuenta** y **asegurar**.\n- El **Anexo A** ampliado es **informativo**: no agrega requisitos, pero aclara la intención y es la mejor guía para la transición.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura armonizada",
+     "enunciado": "¿Por qué ISO 9001, ISO 14001 e ISO 22000 se parecen tanto en sus capítulos 4 a 10?",
+     "opciones": [
+      "Porque comparten la estructura armonizada de ISO para normas de sistemas de gestión",
+      "Porque las redactó el mismo comité técnico",
+      "Por coincidencia",
+      "Porque ISO 22000 copia a ISO 9001"
+     ],
+     "correcta": 0,
+     "explicacion": "La estructura armonizada define el orden de capítulos, un texto central y términos comunes.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Numeración",
+     "enunciado": "¿Debe una organización renumerar sus documentos para seguir la numeración de ISO 9001:2026?",
+     "opciones": [
+      "No, la norma no exige que la documentación siga su numeración",
+      "Sí, es obligatorio",
+      "Solo el manual de calidad",
+      "Solo si el auditor lo pide"
+     ],
+     "correcta": 0,
+     "explicacion": "La documentación se organiza como convenga a la organización.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Términos",
+     "enunciado": "¿Qué cambia en el capítulo 3 de ISO 9001:2026?",
+     "opciones": [
+      "Incluye directamente los términos comunes de la estructura armonizada y algunos de calidad; ISO 9000 sigue como referencia normativa",
+      "Elimina la referencia a ISO 9000",
+      "Define solo el término calidad",
+      "No incluye ningún término"
+     ],
+     "correcta": 0,
+     "explicacion": "En 2015 solo remitía a ISO 9000; ahora contiene definiciones clave.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Términos",
+     "enunciado": "¿Es obligatorio cambiar la palabra 'registro' por 'información documentada' en tus documentos?",
+     "opciones": [
+      "No, puedes seguir usando la terminología de tu organización",
+      "Sí, en todos los documentos",
+      "Solo en los registros de auditoría",
+      "Solo en la política"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma no impone terminología a la documentación de la organización.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verbos",
+     "enunciado": "En una norma ISO, ¿qué expresa 'debería'?",
+     "opciones": [
+      "Una recomendación",
+      "Un requisito",
+      "Un permiso",
+      "Una capacidad"
+     ],
+     "correcta": 0,
+     "explicacion": "'Debe' expresa requisito; 'debería', recomendación; 'puede', permiso o capacidad.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verbos",
+     "enunciado": "Si un requisito pide 'considerar' un tema, ¿qué puede exigir el auditor?",
+     "opciones": [
+      "Evidencia de que el tema se evaluó, aunque se haya decidido justificadamente no aplicarlo",
+      "Que el tema se aplique obligatoriamente",
+      "Nada, porque considerar no implica ninguna acción",
+      "Un procedimiento documentado específico"
+     ],
+     "correcta": 0,
+     "explicacion": "Considerar implica pensar el tema; se puede excluir con justificación.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verbos",
+     "enunciado": "¿Qué implica el verbo 'asegurar' en un requisito?",
+     "opciones": [
+      "La organización puede delegar la actividad, pero conserva la responsabilidad de que ocurra",
+      "La organización debe hacer la actividad personalmente",
+      "La actividad es opcional",
+      "Se debe contratar un seguro"
+     ],
+     "correcta": 0,
+     "explicacion": "Asegurar permite delegar sin transferir la responsabilidad.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Anexo A",
+     "enunciado": "¿Puede un auditor levantar una no conformidad contra el Anexo A de ISO 9001:2026?",
+     "opciones": [
+      "No, el Anexo A es informativo y no agrega requisitos",
+      "Sí, es obligatorio",
+      "Solo en auditorías de transición",
+      "Solo si el cliente lo exige"
+     ],
+     "correcta": 0,
+     "explicacion": "El Anexo A orienta la interpretación; las no conformidades se levantan contra requisitos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Notas",
+     "enunciado": "¿Qué función tienen las notas en una norma ISO?",
+     "opciones": [
+      "Dar orientación para comprender o aclarar un requisito, sin ser requisitos",
+      "Establecer requisitos adicionales",
+      "Indicar sanciones",
+      "Definir el alcance de la certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "Las notas ayudan a interpretar; no son exigibles por sí mismas.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Familia de normas",
+     "enunciado": "¿Dónde se encuentran los principios de la gestión de la calidad?",
+     "opciones": [
+      "En ISO 9000",
+      "En el capítulo 10 de ISO 9001",
+      "En ISO 19011",
+      "En el Anexo SL"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 9000 contiene fundamentos, principios y vocabulario.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgo",
+     "enunciado": "¿Qué confusión de 2015 aclara la edición 2026 respecto al término riesgo?",
+     "opciones": [
+      "Si 'riesgo' incluía las oportunidades, al separar operativamente riesgos y oportunidades en el capítulo 6",
+      "Si el riesgo debía calcularse con FMEA",
+      "Si el riesgo solo aplicaba a seguridad",
+      "Si el riesgo debía documentarse en el manual"
+     ],
+     "correcta": 0,
+     "explicacion": "La definición común de riesgo admite efectos positivos y negativos; la edición 2026 separa la gestión de oportunidades.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Verbos",
+     "enunciado": "Explica la diferencia entre 'considerar' y 'tener en cuenta' con un ejemplo de auditoría.",
+     "respuesta_modelo": "Considerar significa que la organización debe pensar en el tema y puede decidir excluirlo si lo justifica; tener en cuenta significa que el tema debe incluirse en la decisión. Ejemplo: si un requisito pide considerar el cambio climático como cuestión de contexto, el auditor puede pedir evidencia de que se evaluó (por ejemplo, un análisis que concluyó que no es pertinente por razones documentadas), pero no puede exigir acciones si la conclusión está justificada. Si un requisito pide tener en cuenta los requisitos de las partes interesadas al planificar, el auditor puede verificar que esos requisitos efectivamente forman parte de la planificación.",
+     "puntos_clave": [
+      "Definición de considerar",
+      "Definición de tener en cuenta",
+      "Ejemplo de auditoría",
+      "Qué evidencia puede pedir el auditor en cada caso"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Anexo A",
+     "enunciado": "¿Cómo usarías el Anexo A en un análisis de brechas de transición, sabiendo que no agrega requisitos?",
+     "respuesta_modelo": "Para cada requisito modificado, leería la orientación del Anexo A para entender la intención y los ejemplos, y evaluaría si mi sistema cumple esa intención y no solo la letra. Me sirve para anticipar cómo interpretarán los auditores los requisitos nuevos, como cultura de calidad u oportunidades, y para elegir evidencias adecuadas. Pero en el análisis distinguiría claramente entre brechas contra requisitos (obligatorias) y oportunidades de mejora inspiradas en el Anexo A (opcionales), para no sobredimensionar la transición.",
+     "puntos_clave": [
+      "Lectura del requisito con su orientación",
+      "Cumplir la intención",
+      "Anticipar interpretaciones de auditoría",
+      "Distinguir brechas obligatorias de mejoras opcionales"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Estructura armonizada",
+     "enunciado": "¿Qué ventaja da la estructura armonizada a quien coordina un sistema integrado de calidad e inocuidad?",
+     "respuesta_modelo": "Permite integrar en un solo proceso los requisitos comunes de ISO 9001 e ISO 22000: contexto, partes interesadas, alcance, liderazgo, política, riesgos y oportunidades, objetivos, planificación de cambios, recursos, competencia, toma de conciencia, comunicación, información documentada, auditoría interna, revisión por la dirección y mejora. Así se evita duplicar procedimientos y reuniones, se facilitan auditorías combinadas y se gestionan juntos los cambios. Las diferencias técnicas quedan en el capítulo 8 de cada norma (operación de calidad y control de peligros de inocuidad). Además, los ajustes de la estructura armonizada que llegan con la edición 2026 de ISO 9001 se anticipan a las futuras revisiones de ISO 22000.",
+     "puntos_clave": [
+      "Integración de capítulos comunes",
+      "Eliminación de duplicidades",
+      "Auditorías combinadas",
+      "Diferencias en el capítulo 8"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Contexto, partes interesadas y cambio climático",
+   "texto": "## Lo que ya conoces\nLos apartados **4.1** (comprender la organización y su contexto) y **4.2** (necesidades y expectativas de las partes interesadas) existen desde 2015. Su lógica no cambió: la organización determina las cuestiones externas e internas pertinentes para su propósito y dirección estratégica, y que afectan su capacidad de lograr los resultados previstos del sistema; identifica las partes interesadas pertinentes y sus requisitos; y da seguimiento y revisa esa información.\n\nLo que cambia en 2026 es la incorporación formal del **cambio climático** en el texto base y algunos ajustes de redacción. Pero la transición es también una buena ocasión para revisar si tu análisis de contexto **sirve para algo**.\n\n## El problema típico del análisis de contexto\nEn muchas organizaciones, el análisis de contexto se hizo en 2016 o 2017 para la transición anterior: un FODA o un PESTEL bonito, archivado y actualizado cada año con cambios cosméticos. El auditor lo revisa, verifica que exista y sigue adelante.\n\nUn análisis de contexto útil cumple tres funciones:\n\n1. **Alimenta** la determinación de riesgos y oportunidades (6.1).\n2. **Justifica** el alcance (4.3).\n3. **Cambia** cuando el mundo cambia, y esos cambios llegan a la revisión por la dirección (9.3).\n\nSi tu análisis no hace esas tres cosas, la transición es el momento de rehacerlo.\n\n## Cambio climático en el contexto\n### Qué pide la norma\nDesde la enmienda de febrero de 2024, y ahora integrado en el texto de 2026:\n\n- La organización debe determinar si el **cambio climático es una cuestión pertinente** en su contexto.\n- En las partes interesadas, se reconoce que estas pueden tener **requisitos relacionados con el cambio climático**.\n\nNo es un requisito de reducir emisiones, ni convierte a ISO 9001 en una norma ambiental. Es un requisito de **evaluar** si el clima afecta la capacidad de la organización de entregar productos y servicios conformes y de satisfacer a sus clientes.\n\n### Cómo evaluarlo en la práctica\nPiensa en el clima en dos dimensiones:\n\n**Riesgos físicos**: efectos directos de fenómenos climáticos.\n- Olas de calor que afectan la **estabilidad de productos** en almacén o en transporte (por ejemplo, hipoclorito y peróxidos que se degradan con la temperatura).\n- **Escasez de agua** cuando el agua es materia prima o servicio crítico.\n- **Inundaciones**, huracanes o sequías que interrumpen **proveedores** o rutas logísticas.\n- Temperaturas extremas que afectan **equipos**, condiciones de trabajo o procesos sensibles.\n- Cambios en la disponibilidad o calidad de **materias primas** de origen agrícola.\n\n**Riesgos y requisitos de transición**: cambios en mercados, regulación y expectativas.\n- **Clientes** que exigen datos de huella de carbono, reducción de empaques o materias primas de menor impacto.\n- **Regulación** sobre empaques, sustancias o reportes.\n- **Cambios tecnológicos** en formulaciones (por ejemplo, productos concentrados que reducen transporte).\n\n### La conclusión puede ser \"no es pertinente\"\nLa norma pide **determinar si** el cambio climático es pertinente. Una organización puede concluir que no lo es, pero debe poder **justificarlo**. Para una planta química en México que usa agua como materia prima principal, almacena productos sensibles a la temperatura y depende de proveedores importados, es difícil sostener que el clima no es pertinente.\n\n### Qué evidencia esperar en auditoría\n- El análisis de contexto incluye una evaluación explícita del clima (física y de transición).\n- Si es pertinente, se refleja en **riesgos u oportunidades** (6.1) con acciones proporcionales.\n- Los requisitos climáticos de **partes interesadas** (clientes, autoridades) están identificados en 4.2 y, si se aceptan, se gestionan como requisitos.\n- La información se revisa periódicamente.\n\n## Partes interesadas: más allá de la lista\n### Pertinencia\nLa norma pide determinar las partes interesadas **pertinentes** al sistema de gestión de la calidad y sus requisitos **pertinentes**. No todas las partes ni todas sus expectativas: solo las que pueden afectar o verse afectadas por la capacidad de proporcionar productos conformes y aumentar la satisfacción del cliente.\n\n### De expectativa a requisito\nUna distinción útil del Anexo A y de la práctica: algunas necesidades y expectativas son **obligatorias** (leyes, contratos), otras son **voluntarias** y la organización decide si las adopta como requisitos propios. Una vez adoptadas, se convierten en requisitos del sistema y deben cumplirse.\n\nEjemplo: un cliente pide (sin obligación contractual) que reportes la huella de carbono por kilogramo de producto. Puedes decidir adoptarlo o no; si lo adoptas, entra a tu sistema como requisito.\n\n### Una matriz que sirve\n| Parte interesada | Requisito pertinente | Obligatorio o adoptado | Dónde se gestiona |\n|---|---|---|---|\n| Cliente de alimentos | Certificación GFSI, especificación, COA | Contractual | 8.2, 8.6 |\n| Cliente multinacional | Datos de huella de carbono | Adoptado | Objetivo 6.2, proyecto |\n| Autoridad sanitaria | Regulación de coadyuvantes | Legal | 8.2.2 |\n| Comunidad vecina | Sin olores ni derrames | Adoptado | Riesgo 6.1 |\n| Personal | Capacitación y condiciones seguras | Legal y adoptado | 7.2, 7.1.4 |\n| Proveedores | Especificaciones y pagos claros | Adoptado | 8.4 |\n\nLa última columna es lo que convierte la matriz en una herramienta: muestra **cómo** se gestiona cada requisito en el sistema.\n\n## Alcance\nEl apartado **4.3** no tiene cambios de fondo. Sigue pidiendo determinar los límites y la aplicabilidad del sistema considerando el contexto, las partes interesadas y los productos y servicios, y justificar cualquier requisito que se determine **no aplicable** (lo cual no debe afectar la capacidad de asegurar la conformidad). La exclusión típica sigue siendo el diseño y desarrollo (8.3) cuando la organización no diseña, aunque cada vez es menos frecuente en empresas químicas que formulan productos.\n\n## Sistema de gestión y procesos\nEl apartado **4.4** mantiene el **enfoque a procesos**: determinar los procesos necesarios, sus entradas y salidas, secuencia e interacción, criterios y métodos, recursos, responsabilidades, riesgos y oportunidades, evaluación y mejora. Revisa si tu mapa de procesos refleja la realidad actual (por ejemplo, procesos digitales nuevos o tercerizados).\n\n## Ideas que debes llevarte\n- 4.1 y 4.2 mantienen su lógica; la edición 2026 integra el **cambio climático** en el texto base.\n- Debes **determinar si** el clima es pertinente: riesgos **físicos** (calor, agua, inundaciones, proveedores) y de **transición** (clientes, regulación, tecnología). Si concluyes que no, **justifícalo**.\n- Las partes interesadas pueden tener **requisitos climáticos**; los voluntarios se gestionan si se adoptan.\n- Un análisis de contexto útil **alimenta** riesgos y oportunidades, **justifica** el alcance y **cambia** con el entorno.\n- Alcance (4.3) y enfoque a procesos (4.4) no cambian de fondo.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "¿Qué pide ISO 9001:2026 respecto al cambio climático en el contexto?",
+     "opciones": [
+      "Determinar si el cambio climático es una cuestión pertinente para la organización",
+      "Reducir las emisiones de gases de efecto invernadero un porcentaje fijo",
+      "Certificarse en ISO 14001",
+      "Publicar un reporte anual de sostenibilidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Es un requisito de evaluación de pertinencia, no de desempeño ambiental.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "¿Cuál es un riesgo climático físico para un fabricante de sanitizantes?",
+     "opciones": [
+      "Olas de calor que degradan productos sensibles a la temperatura en almacén y transporte",
+      "Un cliente que pide datos de huella de carbono",
+      "Una nueva regulación sobre empaques",
+      "Un cambio de tecnología de formulación"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros ejemplos son riesgos o requisitos de transición.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "Una organización concluye que el cambio climático no es pertinente. ¿Qué espera el auditor?",
+     "opciones": [
+      "Evidencia de que se evaluó y una justificación razonable de la conclusión",
+      "Que se cambie la conclusión obligatoriamente",
+      "Nada, la conclusión no se revisa",
+      "Un plan de reducción de emisiones"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma pide determinar si es pertinente; la conclusión negativa es válida si está justificada.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Partes interesadas",
+     "enunciado": "Un cliente pide voluntariamente datos de huella de carbono, sin obligación contractual. ¿Cómo se trata?",
+     "opciones": [
+      "La organización decide si lo adopta; si lo adopta, se convierte en requisito de su sistema",
+      "Es obligatorio cumplirlo desde que se solicita",
+      "Se ignora porque no es contractual",
+      "Se debe certificar en ISO 14064"
+     ],
+     "correcta": 0,
+     "explicacion": "Las expectativas voluntarias se convierten en requisitos solo si la organización las adopta.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Partes interesadas",
+     "enunciado": "¿Qué partes interesadas debe considerar la organización según 4.2?",
+     "opciones": [
+      "Las pertinentes para el sistema de gestión de la calidad, con sus requisitos pertinentes",
+      "Todas las personas y organizaciones del mundo",
+      "Solo los clientes",
+      "Solo los accionistas"
+     ],
+     "correcta": 0,
+     "explicacion": "La pertinencia se determina por su efecto sobre la capacidad de proporcionar productos conformes y satisfacer al cliente.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contexto útil",
+     "enunciado": "¿Cuál de estas es una función de un análisis de contexto útil?",
+     "opciones": [
+      "Alimentar la determinación de riesgos y oportunidades",
+      "Decorar el manual de calidad",
+      "Cumplir con un formato del organismo de certificación",
+      "Sustituir la revisión por la dirección"
+     ],
+     "correcta": 0,
+     "explicacion": "También justifica el alcance y se actualiza con el entorno, llegando a la revisión por la dirección.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "¿Qué debe hacer una organización si determina que un requisito no es aplicable?",
+     "opciones": [
+      "Justificarlo, y asegurar que no afecta su capacidad de asegurar la conformidad de productos y servicios",
+      "Eliminarlo sin documentar",
+      "Pedir permiso a ISO",
+      "Excluir el capítulo completo"
+     ],
+     "correcta": 0,
+     "explicacion": "El apartado 4.3 no cambió de fondo en este punto.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clima de transición",
+     "enunciado": "¿Cuál de estos es un riesgo o requisito climático de transición?",
+     "opciones": [
+      "Regulación nueva sobre reducción de empaques",
+      "Una inundación en la planta del proveedor",
+      "Escasez de agua en la región",
+      "Temperaturas que afectan equipos"
+     ],
+     "correcta": 0,
+     "explicacion": "Los riesgos de transición vienen de cambios en mercados, regulación y tecnología.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Enfoque a procesos",
+     "enunciado": "¿Cambió el enfoque a procesos de 4.4 en la edición 2026?",
+     "opciones": [
+      "No de fondo; conviene revisar que el mapa de procesos refleje la realidad actual",
+      "Sí, se eliminó",
+      "Sí, ahora se exige BPMN",
+      "Sí, ahora solo aplica a producción"
+     ],
+     "correcta": 0,
+     "explicacion": "El enfoque a procesos se mantiene como base del sistema.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clima",
+     "enunciado": "¿Convierte la incorporación del clima a ISO 9001 en una norma de sostenibilidad?",
+     "opciones": [
+      "No, la pregunta es si el clima afecta la capacidad de entregar productos conformes y satisfacer a los clientes",
+      "Sí, ahora exige metas ambientales",
+      "Sí, reemplaza a ISO 14001",
+      "Sí, exige reportar emisiones"
+     ],
+     "correcta": 0,
+     "explicacion": "El enfoque sigue siendo la calidad; el clima se evalúa como cuestión de contexto.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Matriz de partes interesadas",
+     "enunciado": "¿Qué columna convierte una matriz de partes interesadas en una herramienta de gestión?",
+     "opciones": [
+      "La que indica dónde y cómo se gestiona cada requisito en el sistema",
+      "La que tiene el logotipo de cada parte",
+      "La que ordena alfabéticamente",
+      "La que indica el tamaño de cada empresa"
+     ],
+     "correcta": 0,
+     "explicacion": "Mostrar el vínculo con procesos y apartados del sistema demuestra que los requisitos se gestionan.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clima",
+     "enunciado": "Evalúa la pertinencia del cambio climático para una planta química mexicana que fabrica detergentes y sanitizantes, usa agua como materia prima principal e importa tensioactivos. Propón dos riesgos u oportunidades derivados.",
+     "respuesta_modelo": "Es pertinente. Riesgos físicos: escasez o deterioro de la calidad del agua en la región, que afecta la materia prima principal; olas de calor que degradan productos sensibles (hipoclorito, peróxidos, APA) en almacén y transporte; eventos climáticos que interrumpen la logística de importación de tensioactivos. Transición: clientes multinacionales que piden datos de huella de carbono o productos concentrados para reducir transporte. Riesgo derivado: interrupción de suministro de agua; acción: plan de contingencia con almacenamiento, tratamiento alternativo o pozo de respaldo y monitoreo de calidad. Oportunidad derivada: desarrollar líneas de productos concentrados que reducen transporte y empaques; acción: proyecto de desarrollo con evaluación de mercado y estabilidad.",
+     "puntos_clave": [
+      "Conclusión de pertinencia justificada",
+      "Riesgos físicos y de transición",
+      "Un riesgo con acción",
+      "Una oportunidad con acción"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Contexto útil",
+     "enunciado": "Tu análisis de contexto es un FODA de 2017 actualizado con cambios menores cada año. Describe cómo lo rediseñarías para que sea útil en la transición.",
+     "respuesta_modelo": "Lo rehacería con el equipo directivo y de procesos clave, usando una herramienta como PESTEL para cuestiones externas (incluido clima) y una revisión de capacidades internas (personas, infraestructura, conocimiento, cultura, desempeño). Cada cuestión se escribiría de forma específica y con su efecto en la capacidad de entregar productos conformes. Después, vincularía cada cuestión con riesgos u oportunidades concretos en 6.1, con responsables y acciones. Definiría un mecanismo de actualización: revisión formal en cada revisión por la dirección y disparadores (cambios regulatorios, clientes nuevos, incidentes). Así el contexto dejaría de ser un documento estático y alimentaría decisiones.",
+     "puntos_clave": [
+      "Participación de la dirección y procesos",
+      "Cuestiones específicas, incluido clima",
+      "Vínculo con riesgos y oportunidades",
+      "Mecanismo de actualización"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Partes interesadas",
+     "enunciado": "Construye tres filas de una matriz de partes interesadas para tu planta, indicando requisito, si es obligatorio o adoptado y dónde se gestiona.",
+     "respuesta_modelo": "1) Clientes de la industria de alimentos: certificación reconocida, especificación de producto y COA por lote; obligatorio por contrato; se gestiona en requisitos del cliente y liberación (8.2, 8.6). 2) COFEPRIS: cumplimiento de la regulación de coadyuvantes y etiquetado; legal; se gestiona en requisitos legales del producto y control de etiquetas (8.2.2, 8.5). 3) Comunidad vecina: ausencia de olores, ruido y derrames; adoptado; se gestiona como riesgo en 6.1 con controles operativos y plan de emergencias. También válidos: personal, proveedores, organismo de certificación, clientes con requisitos climáticos.",
+     "puntos_clave": [
+      "Tres partes interesadas pertinentes",
+      "Requisito específico",
+      "Clasificación obligatorio o adoptado",
+      "Vínculo con apartados o procesos"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "titulo": "Cultura de calidad y comportamiento ético",
+   "texto": "## El cambio con más fondo\nDe todos los cambios de ISO 9001:2026, este es el que más trabajo real exige y el que menos se resuelve con un documento. El apartado **5.1.1** (liderazgo y compromiso, generalidades) incorpora la responsabilidad de la alta dirección de **promover una cultura de calidad y un comportamiento ético**. El tema se refleja también en el **ambiente para la operación de los procesos** (7.1.4) y en la **toma de conciencia** (7.3).\n\nLos análisis de organismos de certificación coinciden en tres puntos:\n\n1. No se cumple escribiendo un procedimiento.\n2. Debe ser **visible** en la comunicación, las expectativas y, sobre todo, las **decisiones** de la dirección.\n3. La norma **no prescribe** una cultura específica ni un marco ético particular.\n\n## Qué es una cultura de calidad\nUna definición práctica: la cultura de calidad es el conjunto de **valores, creencias y comportamientos compartidos** que determinan cómo las personas de una organización piensan y actúan respecto a la calidad, especialmente **cuando nadie las está viendo** y cuando la calidad compite con otras presiones (costo, plazo, volumen).\n\nEn la industria de alimentos, el concepto paralelo de **cultura de inocuidad** está más desarrollado: el Codex lo incorporó en 2020 a sus principios generales de higiene, la GFSI publicó documentos de orientación y esquemas como FSSC 22000 y SQF lo exigen con objetivos y medición. Si ya trabajas con cultura de inocuidad, tienes ventaja: los mecanismos son los mismos.\n\n### Dimensiones útiles\nLas metodologías de evaluación de cultura (por ejemplo, las usadas en inocuidad) suelen agrupar el concepto en dimensiones como:\n\n- **Visión y misión**: ¿la calidad está en el propósito real de la organización o solo en el discurso?\n- **Personas**: ¿se contrata, se capacita, se reconoce y se corrige con criterios que incluyen la calidad?\n- **Consistencia**: ¿las decisiones de la dirección son coherentes con lo que dice?\n- **Adaptabilidad**: ¿la organización aprende de los errores y se ajusta?\n- **Conciencia de riesgos**: ¿las personas entienden los riesgos de su trabajo y se sienten con autoridad para actuar?\n\n## Qué es el comportamiento ético en un sistema de calidad\nEl comportamiento ético en este contexto se refiere, sobre todo, a la **integridad** en todo lo que sostiene la confianza en los productos y servicios:\n\n- **Integridad de datos**: resultados de laboratorio, registros de producción, calibraciones y certificados reales, completos y no alterados.\n- **Honestidad con el cliente**: no ocultar desviaciones, comunicar cambios, no prometer lo que no se puede cumplir.\n- **Liberación de producto**: no \"ajustar\" especificaciones ni repetir análisis hasta obtener un resultado favorable sin justificación técnica.\n- **Relación con proveedores y auditores**: sin presiones indebidas ni ocultamiento de información.\n- **Reporte de problemas** sin represalias.\n\nEn una planta química, un ejemplo concreto de riesgo ético es el **\"testing into compliance\"**: repetir un análisis fuera de especificación hasta que salga dentro, sin investigación, y reportar solo el resultado favorable. Otro es firmar registros de actividades que no se hicieron.\n\n## Cómo se promueve: mecanismos concretos\n### Liderazgo visible\n- La dirección **habla** de calidad en reuniones operativas, no solo en la revisión anual.\n- La dirección **recorre** la planta y pregunta por problemas de calidad.\n- La dirección **asigna recursos** cuando la calidad lo requiere.\n\n### Decisiones coherentes\nLas decisiones son el mensaje más fuerte. Un solo episodio en el que la dirección libera un lote fuera de especificación por presión comercial, sin evaluación técnica, destruye años de discursos. Al revés, un episodio en el que la dirección respalda a un analista que detuvo un embarque crea cultura.\n\n### Canales de reporte seguros\n- Mecanismos para reportar errores, casi incidentes y preocupaciones éticas, incluido algún canal **confidencial**.\n- Una política explícita de **no represalia**.\n- **Respuesta** visible a los reportes: si nadie ve que pasa algo, dejan de reportar.\n\n### Personas\n- Inducción que incluya expectativas de calidad e integridad.\n- Capacitación con casos reales, no solo con procedimientos.\n- **Reconocimiento** de comportamientos que protegen la calidad.\n- Consecuencias proporcionales ante faltas de integridad.\n- Indicadores de desempeño que no premien solo volumen o velocidad.\n\n### Integridad de datos por diseño\n- Sistemas que conservan **todos** los resultados, no solo el último.\n- Registros con trazabilidad de quién, cuándo y qué se cambió.\n- Procedimientos de investigación de resultados fuera de especificación antes de repetir análisis.\n- Segregación de funciones entre quien produce, quien analiza y quien libera.\n\n## Ambiente para la operación de los procesos (7.1.4)\nEl apartado 7.1.4 ya mencionaba factores **sociales** (no discriminatorio, tranquilo, sin confrontaciones) y **psicológicos** (reducción del estrés, prevención del agotamiento, protección emocional), además de los físicos. La edición 2026 refuerza la conexión con la cultura de calidad y el comportamiento ético: un ambiente donde las personas temen reportar o están presionadas a cumplir metas a toda costa no es un ambiente adecuado para la operación de los procesos.\n\n## Toma de conciencia (7.3)\nLa toma de conciencia de las personas incluye ahora la cultura de calidad y el comportamiento ético, además de la política, los objetivos pertinentes, su contribución a la eficacia del sistema y las implicaciones de no cumplir. En la práctica: las personas deben poder explicar, con sus palabras, qué se espera de ellas en términos de calidad e integridad y qué hacer si ven algo incorrecto.\n\n## Cómo se audita\nLos análisis advierten que las primeras auditorías pueden abordar este tema de forma desigual. Las evidencias que un auditor razonable buscará:\n\n- **Entrevistas** con la dirección: ¿cómo promueven la cultura de calidad? ¿Qué decisiones recientes lo demuestran?\n- **Entrevistas** con personal operativo: ¿qué harías si ves un error? ¿Te sientes respaldado para detener algo?\n- **Registros** de reportes de casi incidentes y su tratamiento.\n- Evidencia de **comunicaciones** de la dirección.\n- **Coherencia**: ¿hay liberaciones con desviación sin evaluación? ¿Repeticiones de análisis sin investigación?\n- **Encuestas** o evaluaciones de cultura, si la organización las hace (no son obligatorias, pero son buena evidencia).\n\n## Cómo medirlo\nNo es obligatorio medir la cultura, pero lo que no se mide se gestiona mal. Indicadores posibles:\n\n- Número de reportes de casi incidentes (un aumento al principio suele ser **buena** señal: más confianza para reportar).\n- Tiempo de respuesta a los reportes.\n- Resultados de encuestas de percepción por área.\n- Hallazgos de auditoría relacionados con integridad de datos.\n- Desviaciones liberadas sin evaluación (meta: cero).\n\n## Ideas que debes llevarte\n- La alta dirección debe **promover una cultura de calidad y un comportamiento ético** (5.1.1), con referencias en 7.1.4 y 7.3.\n- No se cumple con un procedimiento: se demuestra con **comunicación, expectativas y decisiones coherentes**.\n- El comportamiento ético se centra en la **integridad**: datos, liberación, honestidad con clientes, reporte sin represalias.\n- Mecanismos: liderazgo visible, decisiones coherentes, canales de reporte seguros, gestión de personas e **integridad de datos por diseño**.\n- La experiencia en **cultura de inocuidad** es directamente aplicable.\n- Mídelo con indicadores de reporte, respuesta, percepción e integridad.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Requisito",
+     "enunciado": "¿En qué apartado de ISO 9001:2026 se incorpora la responsabilidad de promover una cultura de calidad y un comportamiento ético?",
+     "opciones": [
+      "5.1.1, liderazgo y compromiso",
+      "8.5.1, control de la producción",
+      "9.2, auditoría interna",
+      "4.3, alcance"
+     ],
+     "correcta": 0,
+     "explicacion": "También se refleja en 7.1.4 (ambiente para la operación) y 7.3 (toma de conciencia).",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "¿Cuál es la evidencia más fuerte de que la dirección promueve una cultura de calidad?",
+     "opciones": [
+      "Decisiones coherentes, como respaldar a quien detuvo un embarque por un problema de calidad",
+      "Un procedimiento de cultura de calidad firmado",
+      "Un póster con valores en recepción",
+      "Una frase en la política"
+     ],
+     "correcta": 0,
+     "explicacion": "La cultura se demuestra con decisiones, comunicación y expectativas visibles.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ética",
+     "enunciado": "¿Qué es el 'testing into compliance'?",
+     "opciones": [
+      "Repetir un análisis fuera de especificación hasta obtener un resultado favorable, sin investigación, y reportar solo ese resultado",
+      "Validar un método analítico",
+      "Hacer análisis por duplicado como práctica normal",
+      "Verificar el COA de un proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una falta de integridad de datos; se previene con investigación de resultados fuera de especificación y conservación de todos los resultados.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integridad de datos",
+     "enunciado": "¿Cuál de estas medidas favorece la integridad de datos por diseño?",
+     "opciones": [
+      "Sistemas que conservan todos los resultados con registro de quién, cuándo y qué se cambió",
+      "Permitir borrar resultados preliminares",
+      "Que el mismo analista produzca, analice y libere",
+      "Registrar solo el resultado final"
+     ],
+     "correcta": 0,
+     "explicacion": "La trazabilidad de cambios y la segregación de funciones reducen el riesgo de manipulación.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reporte",
+     "enunciado": "Tras lanzar un canal de reporte de casi incidentes, el número de reportes aumenta. ¿Cómo se interpreta típicamente al inicio?",
+     "opciones": [
+      "Como buena señal: más confianza para reportar",
+      "Como deterioro de la calidad",
+      "Como fallo del canal",
+      "Como motivo para cerrar el canal"
+     ],
+     "correcta": 0,
+     "explicacion": "Un aumento inicial suele reflejar confianza; lo importante es la respuesta visible a los reportes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No prescriptivo",
+     "enunciado": "¿Prescribe ISO 9001:2026 un marco ético o un tipo de cultura específicos?",
+     "opciones": [
+      "No, la organización define cómo promoverlos y demostrarlos",
+      "Sí, exige un código de ética de ISO",
+      "Sí, exige la metodología de la GFSI",
+      "Sí, exige una encuesta anual"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma pide promover y demostrar, sin imponer modelos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ambiente",
+     "enunciado": "¿Qué factores incluye el ambiente para la operación de los procesos (7.1.4)?",
+     "opciones": [
+      "Factores sociales, psicológicos y físicos",
+      "Solo temperatura e iluminación",
+      "Solo el orden y la limpieza",
+      "Solo la seguridad industrial"
+     ],
+     "correcta": 0,
+     "explicacion": "Un ambiente con miedo a reportar o presión excesiva no es adecuado para la operación.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Toma de conciencia",
+     "enunciado": "¿Qué evidencia de toma de conciencia (7.3) buscaría un auditor sobre cultura y ética?",
+     "opciones": [
+      "Que las personas puedan explicar qué se espera de ellas en calidad e integridad y qué hacer si ven algo incorrecto",
+      "Que firmen una lista de asistencia",
+      "Que memoricen la política palabra por palabra",
+      "Que tengan el manual impreso"
+     ],
+     "correcta": 0,
+     "explicacion": "La toma de conciencia se demuestra con comprensión, no con firmas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Inocuidad",
+     "enunciado": "¿Por qué la experiencia en cultura de inocuidad ayuda a cumplir este requisito?",
+     "opciones": [
+      "Porque los mecanismos (liderazgo, comunicación, reporte, medición) son los mismos y esquemas como FSSC 22000 ya la exigen",
+      "Porque la cultura de inocuidad sustituye la de calidad automáticamente",
+      "Porque ISO 9001 remite a FSSC 22000",
+      "No ayuda"
+     ],
+     "correcta": 0,
+     "explicacion": "Se pueden integrar ambos enfoques en un solo programa de cultura.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Decisiones",
+     "enunciado": "La dirección libera un lote fuera de especificación por presión comercial sin evaluación técnica. ¿Qué efecto tiene en la cultura?",
+     "opciones": [
+      "Envía el mensaje de que la calidad es negociable y deshace años de discurso",
+      "Ninguno, si el cliente no se entera",
+      "Fortalece la flexibilidad",
+      "Mejora la cultura porque satisface al cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "Las decisiones son el mensaje más fuerte sobre la cultura real.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Indicadores",
+     "enunciado": "¿Cuál es un indicador adecuado de cultura de calidad?",
+     "opciones": [
+      "Desviaciones liberadas sin evaluación, con meta de cero",
+      "Número de procedimientos aprobados",
+      "Número de páginas del manual",
+      "Horas de reunión de la dirección"
+     ],
+     "correcta": 0,
+     "explicacion": "Otros: reportes de casi incidentes, tiempo de respuesta, encuestas y hallazgos de integridad.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa",
+     "enunciado": "Diseña un programa de cultura de calidad y comportamiento ético para una planta química de 150 personas, con al menos cinco acciones y cómo demostrarías su eficacia.",
+     "respuesta_modelo": "Acciones: 1) La dirección incluye un punto de calidad en cada reunión operativa semanal y hace recorridos mensuales con preguntas sobre problemas de calidad. 2) Canal de reporte de casi incidentes y preocupaciones éticas, con opción confidencial, política de no represalia y respuesta publicada en menos de 15 días. 3) Procedimiento de investigación de resultados fuera de especificación antes de repetir análisis y sistema de laboratorio que conserva todos los resultados con registro de cambios. 4) Inducción y capacitación anual con casos reales de integridad. 5) Reconocimiento trimestral a comportamientos que protegieron la calidad. 6) Indicadores de desempeño de producción que incluyen calidad, no solo volumen. Eficacia: tendencia de reportes, tiempo de respuesta, encuesta anual de percepción por área, hallazgos de integridad en auditorías internas, desviaciones liberadas sin evaluación, y evidencia en la revisión por la dirección.",
+     "puntos_clave": [
+      "Acciones de liderazgo visible",
+      "Canal de reporte con no represalia",
+      "Integridad de datos por diseño",
+      "Gestión de personas e indicadores de eficacia"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Auditoría",
+     "enunciado": "Como auditor interno, ¿qué tres preguntas harías a la alta dirección y tres al personal operativo para evaluar este requisito?",
+     "respuesta_modelo": "Dirección: 1) ¿Cómo promueven la cultura de calidad y el comportamiento ético, y qué decisión reciente lo demuestra? 2) ¿Cómo se enteran de los problemas de calidad que el personal detecta y qué hicieron con el último reporte? 3) ¿Qué pasó la última vez que la calidad entró en conflicto con un compromiso de entrega? Personal operativo: 1) ¿Qué haces si ves un error o un resultado fuera de especificación? 2) ¿Te sientes respaldado para detener un proceso o un embarque? ¿Te ha pasado? 3) ¿Sabes cómo reportar una preocupación de integridad y qué pasa después? Además, contrastaría las respuestas con registros de desviaciones, liberaciones y reportes.",
+     "puntos_clave": [
+      "Preguntas abiertas basadas en hechos",
+      "Enfoque en decisiones y respuestas reales",
+      "Preguntas al personal sobre seguridad para reportar",
+      "Contraste con registros"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ética",
+     "enunciado": "Un analista repite tres veces un análisis de concentración fuera de especificación y reporta solo el tercer resultado, que cumple. Analiza el problema y propone medidas.",
+     "respuesta_modelo": "Es una falta de integridad de datos (testing into compliance): se ocultan resultados y se libera un lote sin investigar si realmente cumple. Puede deberse a presión por liberar, desconocimiento del procedimiento o un sistema que permite descartar resultados. Medidas: procedimiento de investigación de resultados fuera de especificación (revisión del error analítico con criterios definidos antes de cualquier repetición, y documentación de todos los resultados); sistema que conserve todos los datos con registro de cambios; revisión independiente antes de la liberación; capacitación con este caso; revisar indicadores que presionen la velocidad de liberación; y tratar el caso con proporcionalidad, analizando la causa sistémica y no solo culpando al individuo. Además, evaluar el lote con evidencia antes de cualquier liberación.",
+     "puntos_clave": [
+      "Identifica la falta de integridad",
+      "Causas posibles, incluidas sistémicas",
+      "Procedimiento OOS y conservación de datos",
+      "Medidas de cultura y evaluación del lote"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Riesgos y oportunidades por separado",
+   "texto": "## Lo que pasó con 6.1 desde 2015\nISO 9001:2015 introdujo el **pensamiento basado en riesgos** y el apartado 6.1, que pedía determinar los riesgos y oportunidades que debían abordarse y planificar acciones. Fue un avance, pero en la práctica produjo un patrón casi universal: una **matriz de riesgos** con decenas de filas, probabilidad, impacto, nivel y acciones, y una **columna de oportunidades** al lado, con frases como \"mejorar la satisfacción del cliente\" o \"capacitar al personal\", sin análisis ni seguimiento.\n\nLa edición 2026 responde a eso separando el apartado en subapartados: **6.1.1** (generalidades), **6.1.2** (riesgos) y **6.1.3** (oportunidades), con requisitos propios para cada uno, y con orientación ampliada en el Anexo A. Según los análisis publicados, las oportunidades deben **determinarse, analizarse y evaluarse**, y las acciones para abordarlas deben **integrarse** en los procesos y su **eficacia evaluarse**: no basta con una lista.\n\n## Por qué separar riesgos y oportunidades\nAunque la definición general de riesgo admite efectos positivos y negativos, en la gestión práctica son cosas distintas:\n\n| | Riesgo | Oportunidad |\n|---|---|---|\n| Pregunta | ¿Qué podría impedir lograr los resultados? | ¿Qué podría permitir lograr mejores resultados? |\n| Respuesta típica | Prevenir, reducir, transferir, aceptar | Aprovechar, explorar, descartar con criterio |\n| Horizonte | Proteger lo que se tiene | Crear valor nuevo |\n| Quién la detecta | Procesos, auditoría, incidentes | Clientes, mercado, tecnología, personas |\n\nMezclarlos en una misma matriz suele hacer que las oportunidades se traten con la lógica del riesgo (o, peor, que no se traten).\n\n## Riesgos (6.1.2)\n### Qué se espera\n- **Determinar** los riesgos pertinentes, con base en el contexto (4.1), las partes interesadas (4.2) y el alcance (4.3).\n- **Analizarlos y evaluarlos** para priorizar.\n- **Planificar acciones** proporcionales a su impacto potencial en la conformidad de productos y servicios y en la satisfacción del cliente.\n- **Integrar** las acciones en los procesos del sistema y **evaluar su eficacia**.\n\nLa norma sigue sin exigir un método formal de gestión de riesgos ni un proceso documentado según ISO 31000. Cada organización elige el método apropiado.\n\n### Errores frecuentes que conviene corregir en la transición\n- **Riesgos genéricos**: \"falta de capacitación\", \"falla de equipos\". Un riesgo útil es específico: \"falla del reactor 3 durante la temporada alta sin repuesto del sello mecánico, que deja sin producir el sanitizante de mayor venta durante dos semanas\".\n- **Acciones que ya existen**: listar como acción algo que ya se hace no reduce el riesgo; el análisis debe considerar los controles actuales y decidir si son suficientes.\n- **Sin vínculo con procesos**: la acción vive en la matriz, no en el proceso. La norma pide integrarla.\n- **Sin evaluación de eficacia**: nadie revisa si la acción redujo el riesgo.\n- **Matriz enorme**: doscientos riesgos que nadie lee. Mejor pocos, bien analizados y gestionados.\n\n### Métodos útiles\n- Matriz de **probabilidad e impacto** con criterios definidos.\n- **AMEF** (análisis de modo y efecto de falla) para procesos o productos críticos.\n- **Análisis de escenarios** para riesgos estratégicos (pérdida de un cliente clave, cambio regulatorio).\n- **Bow-tie** (corbatín) para visualizar causas, evento, consecuencias y barreras.\n\n## Oportunidades (6.1.3)\n### Qué se espera\nSegún los análisis publicados del nuevo apartado, las oportunidades se:\n\n1. **Determinan**: se identifican de forma sistemática, no solo cuando a alguien se le ocurren.\n2. **Analizan**: qué beneficio podrían traer, qué requieren, qué riesgos implican.\n3. **Evalúan**: se priorizan y se decide cuáles abordar.\n4. **Abordan**: se planifican acciones.\n5. **Integran** en los procesos del sistema.\n6. Se **evalúa la eficacia** de las acciones.\n\n### De dónde vienen las oportunidades\n- **Clientes**: necesidades no atendidas, quejas que revelan una necesidad, solicitudes de productos nuevos.\n- **Mercado**: tendencias (productos concentrados, menor huella ambiental), competidores, nuevos segmentos.\n- **Tecnología**: automatización, digitalización de registros, análisis de datos, instrumentos en línea, nuevas químicas.\n- **Regulación**: cambios que abren espacio a productos nuevos (por ejemplo, restricciones a una sustancia que tus productos no contienen).\n- **Personas**: ideas del personal, competencias disponibles.\n- **Desempeño**: datos que muestran dónde se puede mejorar.\n- **Contexto**: el clima, la cadena de suministro, alianzas.\n\nEl Anexo A menciona expresamente que la adopción de **tecnologías** y el uso de **datos** pueden ser fuente de oportunidades y de mejora.\n\n### Cómo analizar y evaluar una oportunidad\nUna ficha breve por oportunidad:\n\n| Campo | Contenido |\n|---|---|\n| Descripción | Qué es, de dónde surge |\n| Beneficio esperado | Para clientes, conformidad, eficiencia, mercado |\n| Requisitos | Recursos, inversión, competencias, tiempo |\n| Riesgos asociados | Qué podría salir mal al aprovecharla |\n| Prioridad | Con criterios como beneficio, esfuerzo, alineación estratégica |\n| Decisión | Abordar, explorar más o descartar, con justificación |\n| Acción | Proyecto, objetivo, cambio en un proceso |\n| Eficacia | Cómo y cuándo se evalúa |\n\nUna matriz de **beneficio contra esfuerzo** ayuda a priorizar: primero las de alto beneficio y bajo esfuerzo; las de alto beneficio y alto esfuerzo se convierten en proyectos u objetivos.\n\n### Ejemplos en una planta química\n- **Digitalizar los certificados de análisis** con firma electrónica y entrega automática al cliente: reduce errores de transcripción, acelera la entrega y mejora la satisfacción. Riesgo asociado: integridad de datos y ciberseguridad; requiere validación del sistema.\n- **Analizadores en línea** de concentración en la línea de envasado: reduce la variabilidad y el reproceso.\n- **Línea de productos concentrados**: responde a requisitos climáticos de clientes y reduce costos logísticos.\n- **Programa de soporte técnico** para clientes: convierte quejas en servicio y fideliza.\n\n## Integración: el requisito que más se olvida\nTanto para riesgos como para oportunidades, la acción debe **integrarse** en los procesos del sistema. Formas concretas:\n\n- Una acción se convierte en un **objetivo de calidad** (6.2) con plan.\n- Se modifica un **procedimiento** o un **control operativo**.\n- Se incluye en el **plan de mantenimiento**, de **capacitación** o de **compras**.\n- Se convierte en un **proyecto** con responsable y seguimiento en la revisión por la dirección.\n\nY la eficacia se evalúa en la **evaluación del desempeño** (9.1) y en la **revisión por la dirección** (9.3), que incluye la eficacia de las acciones tomadas para abordar riesgos y oportunidades.\n\n## Relación con el análisis de peligros\nSi coordinas también un sistema de inocuidad, recuerda: los **riesgos de la organización** de 6.1 no son los **peligros** del análisis de peligros de ISO 22000. Puedes integrar la gestión de riesgos y oportunidades de ambos sistemas en un solo proceso, pero mantén el análisis de peligros como herramienta técnica separada.\n\n## Ideas que debes llevarte\n- La edición 2026 separa **riesgos (6.1.2)** y **oportunidades (6.1.3)**; las oportunidades ya no pueden ser una columna sin gestión.\n- Ambos se **determinan, analizan, evalúan, abordan, integran** y se **evalúa su eficacia**.\n- Los riesgos deben ser **específicos**, considerar los controles existentes y vincularse a procesos.\n- Las oportunidades vienen de clientes, mercado, **tecnología**, **datos**, regulación, personas y contexto.\n- Usa una **ficha** por oportunidad y prioriza por beneficio y esfuerzo.\n- La **integración** en procesos, objetivos y proyectos es lo que hace real la gestión.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Estructura de 6.1",
+     "enunciado": "¿Cómo se organiza el apartado 6.1 en ISO 9001:2026?",
+     "opciones": [
+      "En subapartados separados: generalidades, riesgos y oportunidades",
+      "En un solo párrafo como en 2015",
+      "Se elimina y pasa al capítulo 10",
+      "Se fusiona con 6.2"
+     ],
+     "correcta": 0,
+     "explicacion": "6.1.1, 6.1.2 y 6.1.3, con requisitos propios para riesgos y oportunidades.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Oportunidades",
+     "enunciado": "¿Cuál de estas prácticas ya no es suficiente para las oportunidades bajo la edición 2026?",
+     "opciones": [
+      "Una columna de oportunidades junto a la matriz de riesgos sin análisis ni seguimiento",
+      "Una ficha por oportunidad con beneficio, prioridad y acción",
+      "Integrar oportunidades en objetivos de calidad",
+      "Evaluar la eficacia de las acciones"
+     ],
+     "correcta": 0,
+     "explicacion": "Las oportunidades deben determinarse, analizarse, evaluarse, abordarse, integrarse y evaluarse en eficacia.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diferencia",
+     "enunciado": "¿Qué pregunta guía la identificación de oportunidades?",
+     "opciones": [
+      "¿Qué podría permitir lograr mejores resultados?",
+      "¿Qué podría impedir lograr los resultados?",
+      "¿Quién tiene la culpa?",
+      "¿Cuánto cuesta el sistema?"
+     ],
+     "correcta": 0,
+     "explicacion": "Los riesgos se enfocan en lo que impide; las oportunidades, en lo que permite mejorar.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Método",
+     "enunciado": "¿Exige ISO 9001:2026 un método formal de gestión de riesgos como ISO 31000?",
+     "opciones": [
+      "No, la organización elige el método apropiado",
+      "Sí, ISO 31000 es obligatoria",
+      "Sí, AMEF es obligatorio",
+      "Sí, bow-tie es obligatorio"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma pide determinar y abordar; el método es decisión de la organización.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos específicos",
+     "enunciado": "¿Cuál de estos riesgos está mejor formulado?",
+     "opciones": [
+      "Falla del reactor 3 en temporada alta sin repuesto del sello mecánico, que deja sin producir el sanitizante principal dos semanas",
+      "Falla de equipos",
+      "Problemas de producción",
+      "Riesgo operativo general"
+     ],
+     "correcta": 0,
+     "explicacion": "Un riesgo específico permite analizarlo y diseñar acciones concretas.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acciones",
+     "enunciado": "¿Qué error comete una matriz que lista como acción 'capacitación anual' cuando esa capacitación ya existía?",
+     "opciones": [
+      "No reduce el riesgo, porque el análisis debe considerar los controles existentes y decidir si son suficientes",
+      "Ninguno, cualquier acción cuenta",
+      "Que la capacitación no es una acción válida",
+      "Que debería ser semestral"
+     ],
+     "correcta": 0,
+     "explicacion": "Las acciones deben agregar control donde los existentes no bastan.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuentes",
+     "enunciado": "¿Qué fuente de oportunidades menciona expresamente el Anexo A de la edición 2026?",
+     "opciones": [
+      "La adopción de tecnologías y el uso de datos",
+      "Las sanciones regulatorias",
+      "La rotación de personal",
+      "Los litigios"
+     ],
+     "correcta": 0,
+     "explicacion": "El Anexo A menciona cambios de contexto, riesgos, oportunidades y tecnología como fuentes de mejora.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Priorización",
+     "enunciado": "En una matriz de beneficio contra esfuerzo, ¿qué oportunidades se abordan primero?",
+     "opciones": [
+      "Las de alto beneficio y bajo esfuerzo",
+      "Las de bajo beneficio y alto esfuerzo",
+      "Las que propone el director",
+      "Las más antiguas"
+     ],
+     "correcta": 0,
+     "explicacion": "Las de alto beneficio y alto esfuerzo suelen convertirse en proyectos u objetivos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Integración",
+     "enunciado": "¿Cuál es una forma válida de integrar una acción de riesgo u oportunidad en el sistema?",
+     "opciones": [
+      "Convertirla en un objetivo de calidad con plan, responsable y seguimiento",
+      "Dejarla solo en la matriz",
+      "Mencionarla en una reunión sin registro",
+      "Publicarla en el periódico mural"
+     ],
+     "correcta": 0,
+     "explicacion": "También: modificar procedimientos, controles, planes de mantenimiento, capacitación o compras.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "¿Dónde se revisa la eficacia de las acciones para abordar riesgos y oportunidades?",
+     "opciones": [
+      "En la evaluación del desempeño y en la revisión por la dirección",
+      "Solo en la auditoría externa",
+      "En la inducción del personal",
+      "En el análisis de contexto"
+     ],
+     "correcta": 0,
+     "explicacion": "La revisión por la dirección incluye la eficacia de las acciones tomadas.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peligros",
+     "enunciado": "En un sistema integrado con ISO 22000, ¿los riesgos de 6.1 sustituyen al análisis de peligros?",
+     "opciones": [
+      "No, el análisis de peligros sigue siendo una herramienta técnica separada",
+      "Sí, la matriz de riesgos lo sustituye",
+      "Sí, si se usa AMEF",
+      "Solo para peligros físicos"
+     ],
+     "correcta": 0,
+     "explicacion": "Se pueden integrar los procesos de riesgos de ambos sistemas, pero el análisis de peligros se mantiene.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ficha de oportunidad",
+     "enunciado": "Elabora la ficha de una oportunidad para tu planta: digitalizar los certificados de análisis con entrega automática al cliente.",
+     "respuesta_modelo": "Descripción: emitir COA desde el sistema del laboratorio con firma electrónica y enviarlos automáticamente al cliente al embarcar; surge de quejas por COA tardíos y errores de transcripción. Beneficio: menos errores, entrega inmediata, mejor satisfacción, menos horas administrativas. Requisitos: sistema de laboratorio con módulo de certificados, integración con el sistema de embarques, validación del sistema, capacitación, inversión estimada. Riesgos asociados: integridad de datos, ciberseguridad, fallas del sistema; se mitigan con validación, control de accesos, registro de cambios y procedimiento de contingencia manual. Prioridad: alto beneficio, esfuerzo medio. Decisión: abordar. Acción: proyecto con responsable, convertido en objetivo de calidad con fecha. Eficacia: reducción de quejas por COA y de errores, tiempo de entrega del COA, revisados trimestralmente y en la revisión por la dirección.",
+     "puntos_clave": [
+      "Descripción y origen",
+      "Beneficio y requisitos",
+      "Riesgos asociados y mitigación",
+      "Decisión, integración y evaluación de eficacia"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Rediseño",
+     "enunciado": "Tu matriz actual tiene 180 riesgos genéricos y una columna de oportunidades. Describe cómo la rediseñarías para la edición 2026.",
+     "respuesta_modelo": "1) Revisaría el contexto y las partes interesadas para identificar las fuentes reales de riesgo y oportunidad. 2) Consolidaría los riesgos en un número manejable de riesgos específicos por proceso, eliminando duplicados y genéricos, y considerando los controles existentes. 3) Usaría criterios definidos de probabilidad e impacto para priorizar y AMEF para procesos críticos. 4) Para cada riesgo prioritario, definiría acciones adicionales integradas en procesos, con responsable y evaluación de eficacia. 5) Separaría las oportunidades en un registro propio con ficha por oportunidad, análisis de beneficio, requisitos y riesgos, priorización por beneficio y esfuerzo, decisión y acción integrada. 6) Definiría la frecuencia de revisión y el reporte a la revisión por la dirección.",
+     "puntos_clave": [
+      "Partir del contexto",
+      "Riesgos específicos y menos numerosos",
+      "Registro separado de oportunidades con análisis",
+      "Integración, eficacia y revisión"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Riesgo y oportunidad",
+     "enunciado": "Una nueva regulación restringirá una sustancia que usan tus competidores pero tú no. Analízala como riesgo y como oportunidad.",
+     "respuesta_modelo": "Como oportunidad: tus productos ya cumplen, lo que permite comunicarlo a clientes, captar clientes de competidores y desarrollar una línea o mensaje comercial; requiere confirmar el cumplimiento con datos, preparar documentación técnica y capacidad para aumentar la producción. Como riesgo: un aumento repentino de demanda puede superar la capacidad y afectar la entrega y la calidad; proveedores de materias primas sustitutas pueden saturarse; la regulación podría ampliarse a sustancias que sí usas. Acciones: planificar capacidad y suministro, asegurar evidencia regulatoria, vigilar la evolución de la regulación. Ambos se registran por separado y se integran en objetivos y planes.",
+     "puntos_clave": [
+      "Análisis como oportunidad",
+      "Análisis como riesgo",
+      "Acciones concretas para ambos",
+      "Gestión separada e integrada"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
