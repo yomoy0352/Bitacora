@@ -644,6 +644,648 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "4",
+   "titulo": "Preparar una auditoría",
+   "texto": "## La auditoría se gana antes de llegar\nLa diferencia entre una auditoría que encuentra lo importante y una que se pierde en detalles casi siempre está en la **preparación**. Un auditor que llega sin conocer el proceso, sin datos y sin plan termina revisando lo que el auditado le muestra, en el orden que el auditado elige. Un auditor preparado sabe qué buscar, dónde y en qué muestras.\n\nISO 19011 (capítulo 6) divide el inicio y la preparación de una auditoría en varias actividades.\n\n## 1. Iniciar la auditoría\n### Establecer contacto con el auditado\nEl auditor líder contacta al auditado para:\n\n- Confirmar la **comunicación** y la autoridad para realizar la auditoría.\n- Dar información sobre los **objetivos, alcance, criterios, métodos** y composición del equipo.\n- Solicitar acceso a **información** pertinente para la planificación (documentos, registros, resultados de auditorías previas).\n- Determinar los **requisitos** legales, contractuales y otros aplicables a las actividades y productos del auditado.\n- Acordar la **fecha**, la duración y la logística.\n- Conocer los requisitos de **seguridad**, salud e higiene del sitio (por ejemplo, equipo de protección personal en una planta química, reglas de higiene en áreas de producción de alimentos).\n- Acordar la presencia de **observadores** o guías.\n- Identificar áreas de **interés o preocupación** del auditado.\n- Determinar si la auditoría será **presencial, remota o combinada**.\n\n### Determinar la viabilidad\nSe confirma que existe información suficiente y apropiada para planificar, que el auditado cooperará, y que hay tiempo y recursos. Si no es viable, se propone una alternativa al cliente de la auditoría.\n\n## 2. Revisar la información documentada\nAntes de la auditoría, el equipo revisa la información documentada pertinente del auditado para:\n\n- Conocer su **contexto**: tamaño, naturaleza, complejidad, procesos, riesgos.\n- Determinar la **adecuación** del sistema documentado frente a los criterios (¿el procedimiento cubre los requisitos?).\n- Identificar **áreas de interés** y posibles **deficiencias** que conviene profundizar en sitio.\n\nInformación útil en una auditoría interna de un sistema de inocuidad:\n\n- Procedimientos y diagramas del proceso a auditar.\n- Análisis de peligros y plan de control.\n- Resultados de auditorías anteriores y estado de sus acciones correctivas.\n- **Indicadores**: desviaciones de PCC y PPRO, quejas, resultados de verificación, productos no conformes.\n- **Cambios** recientes en el proceso, personal, equipos o proveedores.\n\nPara una auditoría a un proveedor: su certificado y el informe de su última auditoría de certificación (si lo comparte), su cuestionario, sus especificaciones y COA, el historial de rechazos y verificaciones, y las quejas relacionadas.\n\n## 3. Planificar la auditoría\n### Enfoque basado en riesgos\nEl auditor líder adopta un enfoque basado en riesgos para planificar: dónde concentrar el tiempo, qué muestras revisar, qué personas entrevistar. Los riesgos de la propia auditoría también se consideran (por ejemplo, que el proceso crítico no esté operando el día de la visita, o que el auditado no disponga de las personas clave).\n\n### El plan de auditoría\nEl plan es el documento que organiza la auditoría. Debería incluir, de forma proporcional al alcance y complejidad:\n\n- **Objetivos** de la auditoría.\n- **Alcance**: unidades organizacionales, funciones, procesos, ubicaciones (físicas o virtuales), periodo.\n- **Criterios** y documentos de referencia.\n- **Fechas, horarios y lugares** de las actividades, incluidas las reuniones con la dirección.\n- **Métodos** de auditoría, incluido el muestreo y el uso de métodos remotos.\n- **Funciones y responsabilidades** del equipo, guías y observadores.\n- **Recursos** necesarios, incluidos los de las áreas críticas.\n\n### Ejemplo de agenda de un día\n| Hora | Actividad | Auditor | Personas del auditado |\n|---|---|---|---|\n| 08:30 | Reunión de apertura | Equipo | Gerencia, coordinador |\n| 09:00 | Recorrido por planta: recepción, almacén, producción | Equipo | Supervisor |\n| 10:30 | Liberación de producto y PCC de concentración | A1 | Jefe de laboratorio, analista |\n| 10:30 | Gestión de proveedores y recepción | A2 | Compras, almacén |\n| 12:30 | Comida | | |\n| 13:15 | Gestión del cambio y mantenimiento | A1 | Ingeniería, calidad |\n| 13:15 | Limpieza y PPR de producción (observación en línea) | A2 | Producción |\n| 15:30 | Reunión del equipo auditor | Equipo | |\n| 16:15 | Reunión de cierre | Equipo | Gerencia, coordinador |\n\nEl plan se **comunica** al auditado con anticipación y puede ajustarse durante la auditoría si es necesario (por ejemplo, para seguir un hallazgo importante).\n\n### ¿Anunciada o no anunciada?\nAlgunos esquemas de inocuidad (por ejemplo, FSSC 22000 y SQF) incluyen auditorías **no anunciadas** de tercera parte. En auditorías internas, conviene combinar auditorías planificadas con **verificaciones no anunciadas** de prácticas operativas (higiene, segregación, limpieza), porque lo que se observa sin aviso suele ser más representativo.\n\n## 4. Asignar el trabajo al equipo\nEl auditor líder asigna a cada auditor la responsabilidad de procesos, funciones o actividades específicos, considerando su **competencia**, su **independencia** y el uso eficaz de los recursos. Los expertos técnicos y auditores en formación se asignan con supervisión.\n\n## 5. Preparar la información documentada para la auditoría\n### Documentos de trabajo\nLos documentos de trabajo sirven de **referencia** y **registro** del progreso. Pueden ser:\n\n- **Listas de verificación**.\n- **Planes de muestreo**.\n- Formatos para registrar la **información**: evidencia, hallazgos y registros de reuniones.\n\n### Listas de verificación: útiles y peligrosas\nUna lista de verificación ayuda a no olvidar requisitos y a organizar el trabajo. Pero mal usada:\n\n- Convierte la auditoría en un **interrogatorio** de preguntas cerradas (\"¿tienen procedimiento de...?\", \"sí\").\n- Limita la **curiosidad** del auditor: lo que no está en la lista no se mira.\n- Lleva a auditar **requisito por requisito** en lugar de **proceso por proceso**.\n\nRecomendaciones:\n\n- Escribir **preguntas abiertas** orientadas a evidencia: \"muéstreme cómo se decidió la liberación de los últimos tres lotes con resultado cercano al límite\".\n- Organizarla por **proceso**, con los requisitos de varias normas que aplican a cada uno.\n- Incluir los **riesgos** y datos identificados en la preparación.\n- Dejar espacio para seguir **pistas** que aparezcan.\n\n### Un ejemplo de lista orientada a proceso\n**Proceso: liberación de producto terminado**\n\n| Pregunta o verificación | Criterio | Evidencia buscada |\n|---|---|---|\n| ¿Cómo decide el laboratorio si un lote cumple, en particular cerca de los límites? | ISO/IEC 17025 7.8.6; procedimiento de liberación; regla de decisión | Procedimiento; tres lotes recientes cercanos al límite y su decisión |\n| ¿Quién está autorizado para liberar y cómo se demuestra? | ISO 22000 5.3; 7.2 | Matriz de autorizaciones; firmas en los registros |\n| ¿Qué pasa cuando el PCC de concentración se sale del límite crítico? | ISO 22000 8.5.4.4 y 8.9.4 | Registros de desviaciones del último semestre; manejo del producto |\n| ¿Cómo se asegura la validez del método de concentración? | ISO 22000 8.7; ISO/IEC 17025 7.7 | Carta de control; calibración del titulador; valoración del titulante |\n| ¿Qué cambios hubo en el proceso este año y cómo se gestionaron? | ISO 9001:2026 6.3; ISO 22000 8.6 | Registros de gestión del cambio |\n\n### Plan de muestreo\nSe define de antemano **qué** muestrear y **cuánto**, con criterio:\n\n- **Muestreo por juicio**: el auditor elige muestras con base en su conocimiento y en los riesgos (los lotes cercanos al límite, el turno nocturno, el mes con más quejas). Es lo más común en auditorías de sistemas.\n- **Muestreo estadístico**: selección aleatoria con un tamaño definido, cuando se quieren conclusiones sobre una población (por ejemplo, la proporción de registros completos). Requiere más muestras.\n\nUna regla práctica: elegir las muestras **tú mismo** (no aceptar las que el auditado ofrece) y de distintos **periodos, turnos y personas**.\n\n## Ideas que debes llevarte\n- La **preparación** determina la calidad de la auditoría.\n- **Iniciar**: contacto, información, requisitos, seguridad, método presencial o remoto; confirmar la **viabilidad**.\n- **Revisar** información documentada, indicadores, hallazgos previos y cambios para identificar dónde profundizar.\n- El **plan** incluye objetivos, alcance, criterios, horarios, métodos, funciones y recursos; se comunica y puede ajustarse.\n- Combina auditorías planificadas con **verificaciones no anunciadas**.\n- Las **listas de verificación** deben ser abiertas, por **proceso** y orientadas a evidencia, sin limitar la curiosidad.\n- Define el **muestreo** de antemano y elige tú las muestras, de distintos periodos, turnos y personas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Inicio",
+     "enunciado": "¿Qué se acuerda en el contacto inicial con el auditado?",
+     "opciones": [
+      "Objetivos, alcance, criterios, métodos, fechas, logística, requisitos de seguridad y método presencial o remoto",
+      "Solo la fecha",
+      "Los hallazgos esperados",
+      "El precio de los productos del auditado"
+     ],
+     "correcta": 0,
+     "explicacion": "También se solicita información para planificar y se identifican áreas de interés.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Viabilidad",
+     "enunciado": "¿Qué se hace si la auditoría no es viable (por ejemplo, el auditado no da acceso a información necesaria)?",
+     "opciones": [
+      "Se propone una alternativa al cliente de la auditoría",
+      "Se realiza igualmente sin información",
+      "Se aprueba al auditado",
+      "Se cancela sin informar"
+     ],
+     "correcta": 0,
+     "explicacion": "La viabilidad se confirma antes de planificar.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión documental",
+     "enunciado": "¿Para qué sirve revisar indicadores, hallazgos previos y cambios recientes antes de la auditoría?",
+     "opciones": [
+      "Para identificar dónde profundizar en sitio con un enfoque basado en riesgos",
+      "Para escribir el informe antes de la visita",
+      "Para evitar visitar la planta",
+      "No sirve para nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Orienta el tiempo y el muestreo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Plan",
+     "enunciado": "¿Cuál de estos elementos debería incluir el plan de auditoría?",
+     "opciones": [
+      "Objetivos, alcance, criterios, horarios, métodos, funciones y recursos",
+      "Las conclusiones de la auditoría",
+      "Los hallazgos",
+      "Las acciones correctivas"
+     ],
+     "correcta": 0,
+     "explicacion": "El plan organiza la auditoría y se comunica al auditado.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Plan",
+     "enunciado": "Durante la auditoría aparece un hallazgo importante que requiere más tiempo. ¿Puede ajustarse el plan?",
+     "opciones": [
+      "Sí, el plan puede ajustarse durante la auditoría si es necesario, informando al auditado",
+      "No, el plan es inamovible",
+      "Solo con permiso del organismo de acreditación",
+      "Solo al día siguiente"
+     ],
+     "correcta": 0,
+     "explicacion": "La flexibilidad permite seguir pistas importantes.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No anunciadas",
+     "enunciado": "¿Por qué conviene incluir verificaciones no anunciadas de prácticas operativas en el programa interno?",
+     "opciones": [
+      "Porque lo que se observa sin aviso suele ser más representativo de la práctica real",
+      "Porque son más cortas",
+      "Porque la norma prohíbe las anunciadas",
+      "Para sorprender y sancionar al personal"
+     ],
+     "correcta": 0,
+     "explicacion": "Algunos esquemas de inocuidad incluyen auditorías no anunciadas de tercera parte.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Asignación",
+     "enunciado": "¿Qué se considera al asignar el trabajo a cada auditor?",
+     "opciones": [
+      "Su competencia, su independencia y el uso eficaz de los recursos",
+      "Su antigüedad únicamente",
+      "Su preferencia personal",
+      "El orden alfabético"
+     ],
+     "correcta": 0,
+     "explicacion": "Expertos técnicos y auditores en formación se asignan con supervisión.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Listas de verificación",
+     "enunciado": "¿Cuál es un riesgo de usar mal una lista de verificación?",
+     "opciones": [
+      "Convertir la auditoría en un interrogatorio de preguntas cerradas y limitar la curiosidad del auditor",
+      "Que la auditoría sea más organizada",
+      "Que no se olviden requisitos",
+      "Que se registre la evidencia"
+     ],
+     "correcta": 0,
+     "explicacion": "Lo que no está en la lista no se mira.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Preguntas",
+     "enunciado": "¿Cuál es una pregunta de auditoría mejor formulada?",
+     "opciones": [
+      "Muéstreme cómo se decidió la liberación de los últimos tres lotes con resultado cercano al límite",
+      "¿Tienen procedimiento de liberación?",
+      "¿Todo está bien en liberación?",
+      "¿Cumplen la norma?"
+     ],
+     "correcta": 0,
+     "explicacion": "Es abierta y orientada a evidencia.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Organización",
+     "enunciado": "¿Por qué conviene organizar la lista de verificación por proceso y no por requisito?",
+     "opciones": [
+      "Porque así se ve cómo funcionan juntos los requisitos de varias normas en la práctica real",
+      "Porque es más corta",
+      "Porque la norma lo exige",
+      "Porque así no hay hallazgos"
+     ],
+     "correcta": 0,
+     "explicacion": "El enfoque a procesos refleja cómo trabaja la organización.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Muestreo",
+     "enunciado": "¿Qué tipo de muestreo es el más común en auditorías de sistemas?",
+     "opciones": [
+      "Muestreo por juicio, basado en conocimiento y riesgos",
+      "Muestreo estadístico con tablas de ISO 2859",
+      "Revisar el 100 % de los registros",
+      "No muestrear"
+     ],
+     "correcta": 0,
+     "explicacion": "El estadístico se usa cuando se quieren conclusiones sobre una población.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Muestreo",
+     "enunciado": "El auditado ofrece al auditor una carpeta con 'los registros de ejemplo'. ¿Qué es lo recomendable?",
+     "opciones": [
+      "Elegir uno mismo las muestras, de distintos periodos, turnos y personas",
+      "Revisar solo esa carpeta",
+      "Rechazar revisar registros",
+      "Pedir que el auditado elija más"
+     ],
+     "correcta": 0,
+     "explicacion": "Las muestras ofrecidas pueden no ser representativas.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan",
+     "enunciado": "Prepara el plan de una auditoría interna de un día al proceso de gestión de proveedores de tu planta: objetivos, alcance, criterios, agenda resumida y muestreo.",
+     "respuesta_modelo": "Objetivo: determinar si la gestión de proveedores asegura materias primas conformes con las especificaciones de grado alimentario y si las verificaciones de COA detectan desviaciones. Alcance: aprobación, evaluación y reevaluación de proveedores; recepción; verificación de COA; gestión de cambios de proveedores; registros de los últimos 12 meses; almacén de materias primas. Criterios: ISO 22000 7.1.6 y 8.5.1.2, ISO 9001:2026 8.4, FSSC 22000, procedimiento interno de proveedores y especificaciones. Agenda: apertura; revisión del procedimiento y la lista de proveedores aprobados con compras; recepción y almacén (observación de una descarga si es posible); laboratorio (verificación de COA y discrepancias); gestión del cambio y casos de compras de emergencia; reunión del equipo; cierre. Muestreo por juicio: tres proveedores de alto riesgo, uno nuevo, uno con discrepancias, y diez recepciones de distintos meses elegidas por el auditor.",
+     "puntos_clave": [
+      "Objetivo, alcance y criterios claros",
+      "Agenda lógica con observación en sitio",
+      "Muestreo por juicio con criterios de riesgo",
+      "Referencia a requisitos pertinentes"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Lista de verificación",
+     "enunciado": "Reescribe estas preguntas cerradas como preguntas abiertas orientadas a evidencia: a) ¿Tienen plan HACCP? b) ¿Capacitan al personal? c) ¿Calibran los equipos?",
+     "respuesta_modelo": "a) 'Muéstreme cómo se determinó que la concentración de activo es un PCC y cómo se monitoreó en los lotes de la semana pasada; ¿qué pasó la última vez que se excedió el límite crítico?' b) 'Elija a un operador de la línea de envasado: ¿cómo se definió qué competencias necesita, qué capacitación recibió para el procedimiento de verificación de etiquetas y cómo se evaluó su eficacia?' c) 'Para la báscula de formulación y el titulador, muéstreme el último certificado de calibración, cómo se verificó contra los requisitos de uso y qué se hizo la última vez que una verificación intermedia salió fuera de tolerancia.'",
+     "puntos_clave": [
+      "Preguntas abiertas",
+      "Orientadas a evidencia concreta",
+      "Incluyen el qué pasa cuando algo falla",
+      "Vinculadas a procesos reales"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Preparación",
+     "enunciado": "Vas a auditar a un proveedor de hipoclorito. ¿Qué información revisarías antes de la visita y cómo la usarías?",
+     "respuesta_modelo": "Revisaría su certificado y el resumen de su última auditoría de certificación, su cuestionario de proveedor, la especificación acordada, los COA del último año y nuestras verificaciones analíticas (discrepancias, tendencia del cloro disponible y del clorato), los rechazos y quejas relacionadas, los cambios notificados (planta, proceso) y las cargas previas y certificados de lavado de las pipas. La usaría para planificar con enfoque en riesgos: por ejemplo, si el clorato tiende a subir, profundizaría en el almacenamiento y la rotación del producto en su planta; si hubo discrepancias de COA, en su laboratorio, métodos y calibraciones; si hubo cambios, en su gestión del cambio. También definiría las muestras de lotes que quiero rastrear en su planta.",
+     "puntos_clave": [
+      "Fuentes de información pertinentes",
+      "Datos de desempeño propios",
+      "Uso para enfocar riesgos",
+      "Selección anticipada de muestras"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Técnicas para obtener evidencia",
+   "texto": "## La reunión de apertura\nLa auditoría en sitio empieza con la **reunión de apertura**, dirigida por el auditor líder. Su propósito es:\n\n- Confirmar el **acuerdo** de todos sobre el plan.\n- **Presentar** al equipo auditor y sus funciones.\n- Asegurar que se pueden realizar todas las **actividades** planificadas.\n\nTemas típicos: objetivos, alcance y criterios; métodos y procedimientos (incluido el **muestreo**, y que la auditoría se basa en **muestras**, por lo que puede no detectar todo); canales de comunicación; idioma; confidencialidad; requisitos de seguridad; disponibilidad de personas y recursos; forma de informar los hallazgos y su clasificación; condiciones para terminar la auditoría; cómo tratar las quejas o apelaciones; y la reunión de cierre.\n\nUna buena apertura dura entre 15 y 30 minutos, genera confianza y deja claro que el objetivo es encontrar evidencia, no culpables.\n\n## Fuentes de información\nLa evidencia se obtiene de muchas fuentes: entrevistas con el personal y otras personas, observación de actividades y del ambiente de trabajo, información documentada (políticas, procedimientos, especificaciones, registros), resultados de muestreo y ensayos, datos de indicadores y sistemas de información, informes de otras fuentes (quejas, retroalimentación de clientes, evaluaciones de proveedores), bases de datos y sitios web.\n\nEl proceso general es: **fuentes de información** → recolección mediante muestreo apropiado y **verificación** → **evidencia de la auditoría** → evaluación frente a los **criterios** → **hallazgos** → revisión → **conclusiones**.\n\n## Tres técnicas básicas\n### 1. Entrevista\nEs la técnica más importante y la más difícil. ISO 19011 da recomendaciones:\n\n- Entrevistar a personas de **niveles y funciones adecuados**, especialmente a quienes **realizan** las actividades.\n- Entrevistar durante el **horario normal** de trabajo y, cuando sea posible, en el **lugar de trabajo**.\n- Hacer que la persona se sienta **cómoda** antes y durante la entrevista.\n- **Explicar** el motivo de la entrevista y las notas que se toman.\n- Empezar pidiendo a la persona que **describa su trabajo**.\n- Elegir cuidadosamente el tipo de pregunta: **abierta**, cerrada o sugestiva.\n- **Resumir** y revisar los resultados con la persona entrevistada.\n- **Agradecer** su participación.\n\n#### Tipos de preguntas\n| Tipo | Ejemplo | Uso |\n|---|---|---|\n| **Abierta** | \"¿Cómo decide si un lote se puede envasar?\" | Para obtener información; la principal |\n| **Cerrada** | \"¿Firmó este registro?\" | Para confirmar un dato concreto |\n| **De sondeo** | \"¿Qué pasó entonces?\", \"¿Por qué?\" | Para profundizar |\n| **Hipotética** | \"¿Qué haría si el resultado sale fuera del límite?\" | Para evaluar el conocimiento de procedimientos |\n| **Sugestiva** | \"Siempre verifican la etiqueta, ¿verdad?\" | **Evitar**: induce la respuesta |\n| **Múltiple** | \"¿Cómo calibran, quién lo hace y con qué frecuencia y dónde lo registran?\" | **Evitar**: confunde |\n\n#### Escuchar\n- Dejar hablar sin interrumpir; tolerar los **silencios** (muchas veces la información importante viene después de una pausa).\n- Observar el **lenguaje no verbal** (dudas, miradas al supervisor).\n- **Parafrasear** para confirmar: \"Entonces, si entiendo bien, el analista repite el análisis antes de avisar al supervisor...\"\n- Evitar juzgar o corregir durante la entrevista: el auditor no está para enseñar el procedimiento.\n\n#### Con quién\nHablar con el **operador** que hace el trabajo da información distinta a la del gerente. Si solo se entrevista a supervisores, se audita el sistema que ellos **creen** que existe.\n\n### 2. Observación\nVer cómo se hacen realmente las cosas: un analista titulando, un operador cargando materias primas, una limpieza de cambio de producto, la recepción de una pipa, el control de etiquetas al inicio del envasado.\n\n- Observar sin interferir ni distraer al operador en tareas críticas o peligrosas.\n- Comparar lo observado con el procedimiento y con lo que la persona dijo en la entrevista.\n- Prestar atención al **ambiente**: identificación de materiales, segregación de grados, estado de las mangueras y conexiones, envases abiertos, limpieza, estado de las etiquetas de calibración.\n- Recordar que la presencia del auditor **cambia** el comportamiento (efecto Hawthorne): lo observado puede ser mejor que lo habitual. Por eso conviene corroborar con registros de otros días.\n\n### 3. Revisión de información documentada\n- **Documentos**: ¿el procedimiento existe, está vigente, es adecuado, está disponible donde se usa?\n- **Registros**: ¿demuestran que el proceso se hizo como se requiere?, ¿están completos, legibles, a tiempo?, ¿hay correcciones rastreables?, ¿los datos son coherentes entre sí?\n\nAlgunas señales de alerta en registros:\n\n- Todos los valores **idénticos** o \"demasiado perfectos\".\n- Registros llenados con la **misma tinta y letra** para varios días (posible llenado posterior).\n- **Firmas** de personas que no estaban ese día (contrastar con el control de asistencia).\n- Valores siempre **justo dentro** del límite.\n- **Correcciones** sin rastreabilidad.\n- Registros **pasados en limpio**.\n\n## Rastreo: seguir el hilo\nEl **rastreo** conecta la evidencia de varias fuentes siguiendo un objeto a través del sistema. Dos direcciones:\n\n- **Hacia adelante**: de la causa al efecto. Por ejemplo, de un lote de materia prima recibido hasta los lotes de producto donde se usó y los clientes que los recibieron.\n- **Hacia atrás**: del efecto a la causa. Por ejemplo, de una queja de un cliente hasta el lote, su liberación, su fabricación, las materias primas y sus COA, la calibración de los equipos usados y la competencia de quien intervino.\n\nEl rastreo es muy eficaz porque **conecta procesos**: un solo lote rastreado puede revelar problemas de trazabilidad, liberación, calibración, competencia y control de cambios a la vez. Es la técnica que distingue a un auditor con experiencia.\n\n## Evidencia: suficiente y apropiada\nLa evidencia debería ser:\n\n- **Verificable**: otro auditor podría revisar lo mismo y llegar a lo mismo.\n- **Suficiente**: en cantidad, para sostener la conclusión. Un solo registro con un problema puede ser un error aislado; varios del mismo tipo, un patrón.\n- **Apropiada**: pertinente al criterio y confiable.\n\nLa evidencia de mayor confiabilidad es la que el auditor **observa directamente** o la que se **corrobora** entre varias fuentes (lo que dice el operador, lo que muestra el registro y lo que se observa en la línea coinciden). Si las fuentes no coinciden, hay que investigar.\n\n## Registrar la evidencia\nDurante la auditoría, el auditor toma **notas** precisas:\n\n- Qué se revisó (identificación del documento, registro, lote, equipo).\n- Fecha y periodo.\n- Quién proporcionó la información (función, no necesariamente nombre en el informe).\n- Qué se observó o se dijo, con datos concretos.\n\nLas notas deben permitir redactar después un hallazgo **sin depender de la memoria**. \"Registros de CIP incompletos\" no sirve; \"en los registros de CIP del tanque T-3 del 4, 11 y 18 de octubre no se registró la temperatura de retorno\" sí.\n\n## Comunicación durante la auditoría\n- El equipo auditor se reúne periódicamente (por ejemplo, al mediodía) para intercambiar información y evaluar el avance.\n- Los posibles hallazgos se comunican al auditado **durante** la auditoría, no por primera vez en la reunión de cierre: así puede presentar evidencia adicional y no hay sorpresas.\n- Si se detecta un **riesgo inmediato y significativo** (por ejemplo, para la inocuidad del producto o la seguridad de las personas), se informa de inmediato al auditado y, según corresponda, al cliente de la auditoría.\n- Si la evidencia indica que los objetivos de la auditoría no se pueden lograr, el auditor líder informa al cliente y al auditado para decidir las acciones (modificar el plan, el alcance o terminar).\n\n## Ideas que debes llevarte\n- La **reunión de apertura** confirma el plan, presenta el equipo y aclara métodos, comunicación y la naturaleza basada en muestras de la auditoría.\n- **Entrevista**: con quien hace el trabajo, en su lugar, con preguntas **abiertas** y de sondeo; evita las sugestivas y múltiples; escucha y parafrasea.\n- **Observación**: compara práctica, procedimiento y entrevista; recuerda el efecto Hawthorne.\n- **Revisión documental**: vigencia, adecuación, registros completos y coherentes; señales de alerta de integridad.\n- **Rastreo** hacia adelante y hacia atrás: conecta procesos y revela problemas múltiples.\n- Evidencia **verificable, suficiente y apropiada**, idealmente **corroborada** entre fuentes; notas precisas.\n- Comunica los posibles hallazgos **durante** la auditoría y los riesgos significativos **de inmediato**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Apertura",
+     "enunciado": "¿Por qué se menciona en la reunión de apertura que la auditoría se basa en muestras?",
+     "opciones": [
+      "Para aclarar que puede no detectar todas las no conformidades",
+      "Para justificar una auditoría más corta",
+      "Para que el auditado elija las muestras",
+      "Por formalidad sin importancia"
+     ],
+     "correcta": 0,
+     "explicacion": "La ausencia de hallazgos no garantiza conformidad total.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Entrevista",
+     "enunciado": "¿Con quién conviene hablar para conocer cómo se hace realmente una tarea?",
+     "opciones": [
+      "Con la persona que realiza la tarea, en su lugar de trabajo",
+      "Solo con el gerente",
+      "Solo con el coordinador del sistema",
+      "Con nadie; basta el procedimiento"
+     ],
+     "correcta": 0,
+     "explicacion": "Si solo se entrevista a supervisores, se audita el sistema que ellos creen que existe.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Preguntas",
+     "enunciado": "'Siempre verifican la etiqueta al inicio, ¿verdad?' es una pregunta:",
+     "opciones": [
+      "Sugestiva, que conviene evitar",
+      "Abierta",
+      "De sondeo",
+      "Hipotética"
+     ],
+     "correcta": 0,
+     "explicacion": "Induce la respuesta esperada.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Preguntas",
+     "enunciado": "'¿Qué haría si el resultado de concentración sale fuera del límite crítico?' es una pregunta:",
+     "opciones": [
+      "Hipotética, útil para evaluar el conocimiento del procedimiento",
+      "Sugestiva",
+      "Cerrada",
+      "Múltiple"
+     ],
+     "correcta": 0,
+     "explicacion": "Se corrobora después con registros de casos reales.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Escuchar",
+     "enunciado": "¿Para qué sirve parafrasear durante una entrevista?",
+     "opciones": [
+      "Para confirmar que se entendió correctamente lo que dijo la persona",
+      "Para corregir a la persona",
+      "Para alargar la entrevista",
+      "Para inducir una respuesta"
+     ],
+     "correcta": 0,
+     "explicacion": "Evita malentendidos en los hallazgos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Observación",
+     "enunciado": "¿Qué es el efecto Hawthorne en una auditoría?",
+     "opciones": [
+      "Que la presencia del auditor cambia el comportamiento observado, que puede ser mejor de lo habitual",
+      "Que los registros se deterioran con el tiempo",
+      "Que el auditor se cansa por la tarde",
+      "Que el auditado se niega a cooperar"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso se corrobora con registros de otros días.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Señales de alerta",
+     "enunciado": "Los registros de pH de un mes muestran todos el mismo valor, con la misma tinta y letra. ¿Qué sugiere?",
+     "opciones": [
+      "Posible llenado posterior o datos no reales; investigar",
+      "Un proceso perfectamente estable",
+      "Un excelente operador",
+      "Nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una señal de alerta de integridad de datos.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Rastreo",
+     "enunciado": "Partir de una queja de un cliente y seguirla hasta el lote, su liberación, su fabricación y sus materias primas es un rastreo:",
+     "opciones": [
+      "Hacia atrás",
+      "Hacia adelante",
+      "Horizontal",
+      "Aleatorio"
+     ],
+     "correcta": 0,
+     "explicacion": "Del efecto a la causa.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Rastreo",
+     "enunciado": "¿Por qué el rastreo es una técnica muy eficaz?",
+     "opciones": [
+      "Porque conecta procesos y un solo caso puede revelar problemas en varios de ellos",
+      "Porque es más rápido que leer procedimientos",
+      "Porque evita las entrevistas",
+      "Porque no requiere muestras"
+     ],
+     "correcta": 0,
+     "explicacion": "Trazabilidad, liberación, calibración, competencia y cambios en un solo hilo.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "¿Qué evidencia es más confiable?",
+     "opciones": [
+      "La corroborada entre varias fuentes: lo que dice el operador, lo que muestra el registro y lo que se observa coinciden",
+      "Lo que dice el gerente",
+      "Un solo registro sin contexto",
+      "La opinión del auditor"
+     ],
+     "correcta": 0,
+     "explicacion": "Si las fuentes no coinciden, hay que investigar.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Notas",
+     "enunciado": "¿Cuál nota de auditoría es más útil?",
+     "opciones": [
+      "'Registros de CIP del tanque T-3 del 4, 11 y 18 de octubre sin temperatura de retorno'",
+      "'Registros de CIP incompletos'",
+      "'Problemas en CIP'",
+      "'CIP mal'"
+     ],
+     "correcta": 0,
+     "explicacion": "Permite redactar un hallazgo verificable sin depender de la memoria.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Comunicación",
+     "enunciado": "Durante la auditoría se detecta un lote de sanitizante por embarcar con resultado por encima del límite crítico. ¿Qué hace el auditor?",
+     "opciones": [
+      "Informa de inmediato al auditado por el riesgo significativo para la inocuidad",
+      "Lo anota para el informe final",
+      "Espera a la reunión de cierre",
+      "No hace nada porque no es su función"
+     ],
+     "correcta": 0,
+     "explicacion": "Los riesgos inmediatos y significativos se comunican de inmediato.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Entrevista",
+     "enunciado": "Escribe una secuencia de cinco preguntas para entrevistar a un operador de envasado sobre el control de etiquetas.",
+     "respuesta_modelo": "1) 'Cuénteme cómo empieza un envasado, desde que recibe la orden.' (abierta). 2) '¿Cómo sabe que la etiqueta es la correcta para ese producto?' (abierta). 3) 'Muéstreme dónde registró la verificación del último envasado.' (evidencia). 4) '¿Qué ha pasado alguna vez que la etiqueta no coincidía? ¿Qué hizo?' (sondeo sobre un caso real). 5) '¿Qué hace con las etiquetas que sobran al terminar?' (abierta sobre reconciliación). Al final, resumir lo que entendí y agradecer.",
+     "puntos_clave": [
+      "Preguntas abiertas que inician con su trabajo",
+      "Pregunta que pide evidencia",
+      "Pregunta de sondeo sobre un caso real",
+      "Cierre con resumen y agradecimiento"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Rastreo",
+     "enunciado": "Describe cómo rastrearías hacia atrás un lote de detergente que generó una queja de baja concentración y qué podrías encontrar en cada etapa.",
+     "respuesta_modelo": "1) Queja: registro, fecha, lote, muestra retenida y su reanálisis. 2) Embarque y almacén: condiciones de almacenamiento y tiempo hasta el embarque (degradación). 3) Liberación: resultado del análisis, regla de decisión, quién liberó y si estaba autorizado; carta de control de ese día. 4) Método: calibración del titulador, valoración del titulante, competencia del analista. 5) Fabricación: orden de producción, pesadas, báscula y su verificación, orden de carga, tiempos, desviaciones. 6) Materias primas: lotes usados, COA, verificación analítica, condiciones de almacenamiento (por ejemplo, hipoclorito degradado). 7) Cambios: cualquier cambio reciente en proveedor, fórmula o equipo. Cada etapa puede revelar un problema distinto (degradación, sesgo analítico, error de pesado, materia prima, cambio no gestionado).",
+     "puntos_clave": [
+      "Secuencia lógica desde la queja",
+      "Evidencia concreta en cada etapa",
+      "Problemas posibles en cada etapa",
+      "Conexión entre procesos"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Integridad",
+     "enunciado": "Al revisar registros de monitoreo de un PCC encuentras que todos los valores de un mes están justo dentro del límite crítico y escritos con la misma tinta. ¿Cómo procedes?",
+     "respuesta_modelo": "No concluyo de inmediato que hubo falsificación: es una señal de alerta que requiere más evidencia. Comparo con fuentes independientes: datos electrónicos del equipo si existen, registros de laboratorio de los mismos lotes, control de asistencia de quienes firmaron, otros registros del mismo turno. Entrevisto con preguntas abiertas a quien registra: cómo y cuándo anota. Observo el registro en tiempo real si es posible. Si la evidencia confirma que los registros no se llenan en el momento o no reflejan mediciones reales, es un hallazgo grave de integridad de datos que se comunica de inmediato al auditado y, por el riesgo para la inocuidad, se evalúa el producto afectado. Si hay explicación válida, se documenta.",
+     "puntos_clave": [
+      "Tratarlo como señal, no como conclusión",
+      "Corroboración con fuentes independientes",
+      "Entrevista y observación",
+      "Clasificación y comunicación si se confirma"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Auditoría remota y ubicaciones virtuales",
+   "texto": "## De la emergencia a la práctica normal\nDurante la pandemia de 2020 a 2022, muchas auditorías pasaron de golpe a videollamadas. Lo que empezó como una solución de emergencia se convirtió en una práctica establecida: hoy muchas auditorías internas, de proveedores y de certificación combinan actividades presenciales y remotas. ISO publicó en 2024 la especificación técnica **ISO/IEC TS 17012**, *Directrices para el uso de métodos de auditoría remota en la auditoría de sistemas de gestión*, y la edición **2026 de ISO 19011** incorporó esa orientación a su texto principal y amplió el **Anexo A** con orientación sobre métodos remotos y **ubicaciones virtuales**. Es el cambio principal de la nueva edición.\n\n## Conceptos clave\n- **Método de auditoría remota**: cualquier método para obtener evidencia sin la presencia física del auditor en el lugar: videollamadas, revisión de documentos y registros compartidos electrónicamente, acceso remoto a sistemas, transmisión de video en vivo de un proceso, fotografías y videos grabados, sensores y datos en línea.\n- **Auditoría remota**: la que se realiza completamente con métodos remotos.\n- **Auditoría combinada** (también llamada híbrida): parte presencial y parte remota. Por ejemplo, el auditor está en sitio y un experto técnico participa por video, o la revisión documental se hace a distancia y la observación de la planta en persona.\n- **Ubicación virtual**: un lugar en línea donde una organización realiza trabajo o presta un servicio, y donde las personas ejecutan procesos usando un entorno en línea, sin importar su ubicación física. Ejemplos: un sistema de gestión de documentos en la nube, un LIMS, el ERP, una plataforma de gestión de proveedores, un equipo de diseño que trabaja en línea. En la edición 2026 de ISO 19011, las ubicaciones virtuales se consideran parte del **alcance** que se audita.\n\n## Cuándo usar métodos remotos\n### La decisión se basa en riesgos\nEl uso de métodos remotos debería decidirse en la **planificación** del programa y de cada auditoría, considerando:\n\n- Los **objetivos** de la auditoría: ¿se pueden lograr con evidencia obtenida a distancia?\n- La **naturaleza del proceso**: revisar registros electrónicos se hace bien a distancia; evaluar la higiene de una planta, la segregación de grados o el estado de una línea de llenado, mucho peor.\n- La **madurez** del sistema y el **historial** del auditado: un sistema estable con buenos resultados admite más métodos remotos que uno nuevo o con problemas.\n- La **infraestructura tecnológica** del auditado y del auditor: conexión, equipo, herramientas.\n- La **competencia** de auditores y auditados en el uso de la tecnología.\n- Los riesgos de **seguridad de la información** y de **confidencialidad**.\n- Los requisitos de los **esquemas** y clientes: varios esquemas de inocuidad restringen qué partes de una auditoría de certificación pueden hacerse a distancia, y suelen exigir la parte de **planta** en sitio.\n\n### Buenas candidatas para métodos remotos\n- Revisión de documentos y registros electrónicos.\n- Entrevistas con personal de funciones administrativas o de gestión.\n- Revisión de ubicaciones virtuales (ERP, LIMS, sistemas de gestión documental).\n- Seguimiento de acciones correctivas basado en evidencia documental.\n- Participación de expertos técnicos que no pueden viajar.\n- Auditorías de proveedores de bajo riesgo o de sitios lejanos con historial favorable.\n\n### Malas candidatas\n- Evaluación de **condiciones físicas** y prácticas operativas: higiene, segregación, estado de equipos, manipulación de materiales, almacenamiento.\n- Primeras auditorías de un **proveedor nuevo** de alto riesgo.\n- Situaciones con **sospechas** de problemas de integridad: el auditado controla lo que se ve en la cámara.\n\n## Ventajas y riesgos\n| Ventajas | Riesgos |\n|---|---|\n| Menos viajes, costos y huella de carbono | Evidencia limitada a lo que el auditado muestra |\n| Acceso a expertos y a sitios lejanos | Dificultad para observar el ambiente y el lenguaje no verbal |\n| Mayor flexibilidad de calendario | Fallas de conexión y de tecnología |\n| Revisión eficiente de datos electrónicos | Riesgos de confidencialidad y seguridad de la información |\n| Posibilidad de grabar (con acuerdo) | Fatiga de pantalla y menor atención |\n| | Menor capacidad de detectar fraude o manipulación |\n\n## Cómo planificar una auditoría remota\n### Antes\n- Acordar con el auditado la **tecnología**: plataforma, accesos, permisos, pruebas de conexión.\n- Definir cómo se **compartirán** documentos y registros (carpetas compartidas temporales, acceso de solo lectura) y cómo se **protegerán** (confidencialidad, retención, eliminación al terminar).\n- Acordar si habrá **grabación** de audio o video, con consentimiento y finalidad clara.\n- **Probar** la conexión desde los lugares donde se hará la observación (la planta suele tener mala señal).\n- Ajustar la **agenda**: sesiones más cortas, con pausas; considerar diferencias horarias.\n- Pedir con anticipación la información que se revisará, pero **reservarse** la selección de muestras para el momento de la auditoría.\n\n### Durante\n- **Verificar identidades** de los participantes.\n- Para observar instalaciones por video: pedir que la cámara se mueva según **las indicaciones del auditor**, no por un recorrido preparado; pedir ver detalles específicos (etiquetas de calibración, identificación de materiales, el interior de un tanque, el piso detrás de los equipos), y pedir que la persona muestre lugares no planificados.\n- Pedir que se compartan **pantallas** de los sistemas en vivo (por ejemplo, abrir el ERP y buscar el lote que el auditor elige), en lugar de recibir capturas preparadas.\n- Corroborar la evidencia entre fuentes, igual que en una auditoría presencial.\n- Prestar atención a la **participación**: en una videollamada es fácil que alguien fuera de cámara \"sople\" respuestas.\n\n### Después\n- Asegurar que la información compartida se **elimine** o se conserve según lo acordado.\n- Indicar en el **informe** qué partes se auditaron a distancia, con qué métodos, y cualquier **limitación** que eso haya implicado (presentación imparcial).\n\n## Evidencia digital confiable\nLa edición 2026 pone énfasis en evaluar si la evidencia en formato digital es **confiable**: no basta con que exista un archivo, hay que considerar si está **controlado**, si su origen es **trazable** y si pudo haber sido **modificado**. Algunas preguntas útiles:\n\n- ¿El registro viene directamente del sistema (en vivo) o es una copia preparada?\n- ¿El sistema tiene **pista de auditoría**? ¿Quién lo modificó y cuándo?\n- ¿Las fechas de creación y modificación son coherentes?\n- ¿Los datos de distintos sistemas (laboratorio, producción, ERP) concuerdan?\n\n## Competencia del auditor\nEl uso de métodos remotos requiere competencias adicionales: manejo de las herramientas tecnológicas, técnicas de entrevista en línea, evaluación de evidencia digital y conciencia sobre la seguridad de la información y la privacidad. El gestor del programa debería considerarlas al seleccionar el equipo auditor.\n\n## Auditar ubicaciones virtuales\nCuando un proceso del alcance ocurre en una ubicación virtual (por ejemplo, la aprobación de documentos en un sistema en la nube, la liberación electrónica en un LIMS, o la gestión de proveedores en una plataforma), se audita como cualquier otro proceso:\n\n- ¿Quién tiene acceso y con qué permisos?\n- ¿Cómo se controlan versiones y aprobaciones?\n- ¿El sistema fue validado o verificado para su uso?\n- ¿Cómo se protege contra pérdida de datos?\n- ¿Qué pasa si el sistema falla?\n\n## Ideas que debes llevarte\n- **ISO 19011:2026** incorporó la orientación de **ISO/IEC TS 17012** sobre métodos remotos y amplió el Anexo A con **ubicaciones virtuales**.\n- Métodos remotos: videollamadas, documentos compartidos, acceso a sistemas, video en vivo, datos en línea; auditorías **remotas** o **combinadas**.\n- La decisión es **basada en riesgos**: objetivos, naturaleza del proceso, madurez, tecnología, competencia, seguridad y requisitos de esquemas.\n- Buenos candidatos: documentos y sistemas; malos: condiciones físicas, proveedores nuevos de alto riesgo, sospechas de integridad.\n- Planifica la tecnología, la protección de la información y la grabación; durante la auditoría, **dirige la cámara** y pide sistemas **en vivo**.\n- Evalúa la **confiabilidad de la evidencia digital** e indica en el informe las **limitaciones** de lo auditado a distancia.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Origen",
+     "enunciado": "¿Qué especificación técnica incorporó ISO 19011:2026 sobre auditoría remota?",
+     "opciones": [
+      "ISO/IEC TS 17012",
+      "ISO/IEC 17021-1",
+      "ISO/IEC 17043",
+      "ISO 31000"
+     ],
+     "correcta": 0,
+     "explicacion": "Publicada en 2024, sobre el uso de métodos de auditoría remota.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ubicación virtual",
+     "enunciado": "¿Cuál de estos es un ejemplo de ubicación virtual?",
+     "opciones": [
+      "Un LIMS en la nube donde se liberan resultados",
+      "El almacén de materias primas",
+      "La sala de juntas",
+      "El laboratorio físico"
+     ],
+     "correcta": 0,
+     "explicacion": "Lugar en línea donde se realiza trabajo, sin importar la ubicación física de las personas.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Combinada",
+     "enunciado": "Un auditor está en planta y un experto técnico participa por videollamada. ¿Qué tipo de auditoría es?",
+     "opciones": [
+      "Combinada (híbrida)",
+      "Totalmente remota",
+      "Conjunta",
+      "De tercera parte necesariamente"
+     ],
+     "correcta": 0,
+     "explicacion": "Mezcla actividades presenciales y remotas.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Decisión",
+     "enunciado": "¿En qué se basa la decisión de usar métodos remotos?",
+     "opciones": [
+      "En los riesgos: objetivos, naturaleza del proceso, madurez, tecnología, competencia, seguridad y requisitos de esquemas",
+      "En el costo únicamente",
+      "En la preferencia del auditor",
+      "En la distancia exclusivamente"
+     ],
+     "correcta": 0,
+     "explicacion": "Se decide en la planificación del programa y de cada auditoría.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Candidatos",
+     "enunciado": "¿Cuál de estas actividades es buena candidata para un método remoto?",
+     "opciones": [
+      "Revisión de registros electrónicos de calibración",
+      "Evaluación de la higiene de la línea de envasado",
+      "Primera auditoría de un proveedor nuevo de alto riesgo",
+      "Verificación de la segregación física de grados en almacén"
+     ],
+     "correcta": 0,
+     "explicacion": "Las condiciones físicas se evalúan mejor en persona.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgos",
+     "enunciado": "¿Cuál es un riesgo importante de la observación por video?",
+     "opciones": [
+      "La evidencia se limita a lo que el auditado decide mostrar",
+      "Es más cara que la presencial",
+      "No se puede hacer en planta",
+      "Elimina la necesidad de muestreo"
+     ],
+     "correcta": 0,
+     "explicacion": "Por eso el auditor dirige la cámara y pide lugares no planificados.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Técnica",
+     "enunciado": "En una observación remota de la planta, ¿qué práctica aumenta la confiabilidad?",
+     "opciones": [
+      "Pedir que la cámara se mueva según las indicaciones del auditor y mostrar detalles y lugares no planificados",
+      "Seguir el recorrido preparado por el auditado",
+      "Ver solo fotografías enviadas antes",
+      "Grabar sin consentimiento"
+     ],
+     "correcta": 0,
+     "explicacion": "Reduce el control del auditado sobre lo que se ve.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sistemas",
+     "enunciado": "¿Por qué conviene pedir que el auditado comparta su pantalla y busque en vivo el lote que el auditor elige?",
+     "opciones": [
+      "Porque la evidencia en vivo del sistema es más confiable que capturas preparadas",
+      "Porque es más rápido",
+      "Porque así el auditor no necesita preparación",
+      "No tiene ventaja"
+     ],
+     "correcta": 0,
+     "explicacion": "Las capturas pueden ser seleccionadas o modificadas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia digital",
+     "enunciado": "¿Qué pregunta ayuda a evaluar la confiabilidad de un registro electrónico?",
+     "opciones": [
+      "¿El sistema tiene pista de auditoría que muestre quién lo modificó y cuándo?",
+      "¿El archivo tiene buen formato?",
+      "¿El archivo es grande?",
+      "¿El archivo tiene logotipo?"
+     ],
+     "correcta": 0,
+     "explicacion": "La edición 2026 enfatiza la confiabilidad, el control y la trazabilidad de la evidencia digital.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Informe",
+     "enunciado": "¿Qué debe indicar el informe sobre las partes auditadas a distancia?",
+     "opciones": [
+      "Qué se auditó con métodos remotos, con qué métodos y cualquier limitación que implicó",
+      "Nada",
+      "Solo el nombre de la plataforma",
+      "La velocidad de la conexión"
+     ],
+     "correcta": 0,
+     "explicacion": "Es parte de la presentación imparcial.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confidencialidad",
+     "enunciado": "¿Qué debe acordarse antes de una auditoría remota respecto a la información compartida?",
+     "opciones": [
+      "Cómo se compartirá, protegerá, retendrá o eliminará, y si habrá grabación con consentimiento",
+      "Nada, todo es público",
+      "Que el auditor conserva todo indefinidamente",
+      "Que se publique en internet"
+     ],
+     "correcta": 0,
+     "explicacion": "Los riesgos de seguridad de la información son mayores a distancia.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Esquemas",
+     "enunciado": "¿Qué suelen exigir los esquemas de inocuidad sobre las auditorías remotas de certificación?",
+     "opciones": [
+      "Restringen qué partes pueden hacerse a distancia y suelen exigir la parte de planta en sitio",
+      "Permiten que todo sea remoto siempre",
+      "Prohíben cualquier actividad remota",
+      "No dicen nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Se consultan las reglas vigentes del esquema.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Planificación",
+     "enunciado": "Tu proveedor de tensioactivos está en otro país y tiene buen historial. Propón un esquema de auditoría combinada y justifica qué harías a distancia y qué en sitio.",
+     "respuesta_modelo": "A distancia: revisión previa de documentos (certificado, procedimientos de control de calidad, especificaciones, gestión del cambio), entrevistas con calidad y regulatorio, revisión en vivo de su sistema de gestión de lotes y su laboratorio (COA, trazabilidad de dos lotes que yo elija, calibraciones, resultados de impurezas como 1,4-dioxano). En sitio (con el auditor o con un auditor local de confianza o experto técnico): observación de la producción, almacenamiento, segregación de grados, limpieza de equipos compartidos, carga de pipas y envasado, porque son condiciones físicas que no se evalúan bien por video. Justificación: el buen historial permite reducir la parte presencial, pero las condiciones físicas críticas para la inocuidad requieren observación directa, al menos en un ciclo definido. El informe indicaría las limitaciones.",
+     "puntos_clave": [
+      "Partes remotas pertinentes",
+      "Partes presenciales pertinentes",
+      "Justificación basada en riesgo e historial",
+      "Mención de limitaciones en el informe"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Técnicas remotas",
+     "enunciado": "Describe cómo conducirías por video la observación del almacén de materias primas de un proveedor para reducir el riesgo de ver solo lo preparado.",
+     "respuesta_modelo": "Pediría que la persona con la cámara siga mis indicaciones en tiempo real, no un recorrido preparado; empezaría por una zona que yo elija, no por la entrada. Pediría acercamientos a etiquetas de identificación de materiales, grados y lotes; a pisos, rincones y detrás de tarimas; a envases abiertos; a la separación entre grado alimentario y técnico. Elegiría al azar dos o tres lotes en el sistema y pediría ver físicamente su ubicación e identificación. Pediría hablar con un almacenista en el lugar, no con el gerente. Verificaría la hora y fecha (por ejemplo, con un reloj del sistema en pantalla) para confirmar que es en vivo. Registraría las limitaciones encontradas (zonas sin señal, cámara de baja resolución).",
+     "puntos_clave": [
+      "El auditor dirige la cámara",
+      "Detalles y lugares no planificados",
+      "Selección de lotes por el auditor y verificación física",
+      "Entrevista en el lugar y registro de limitaciones"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ubicaciones virtuales",
+     "enunciado": "Tu empresa aprueba documentos y libera lotes en un sistema en la nube. ¿Qué evaluarías al auditar esa ubicación virtual?",
+     "respuesta_modelo": "Accesos y permisos: quién puede crear, aprobar, liberar y modificar; segregación de funciones; revisión periódica de usuarios. Control de versiones y aprobaciones: historial y pista de auditoría que muestre quién hizo qué y cuándo. Validación o verificación del sistema para su uso, incluidas las configuraciones de flujos de aprobación y cálculos. Integridad y protección de datos: respaldos, recuperación, protección contra pérdida y manipulación. Continuidad: qué pasa si el sistema falla (procedimiento de contingencia). Proveedor del servicio en la nube como proveedor externo controlado. Y si la práctica coincide con el procedimiento, rastreando en vivo algunos documentos y lotes elegidos por el auditor.",
+     "puntos_clave": [
+      "Accesos y segregación de funciones",
+      "Pista de auditoría y control de versiones",
+      "Validación, integridad y continuidad",
+      "Rastreo en vivo de casos elegidos"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
