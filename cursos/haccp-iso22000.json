@@ -602,6 +602,806 @@
      "id": "q14"
     }
    ]
+  },
+  {
+   "id": "4",
+   "titulo": "Programas de prerrequisitos en una planta química",
+   "texto": "## El piso sobre el que se construye HACCP\nLos **programas de prerrequisitos** (PPR) son las condiciones y actividades básicas necesarias para mantener un ambiente higiénico y prevenir la contaminación a lo largo de la operación. No se diseñan para un peligro específico identificado en el análisis, sino para que el análisis parta de un entorno **bajo control**. Sin PPR sólidos, el estudio HACCP se llena de PCC artificiales tratando de compensar deficiencias básicas.\n\nISO 22000:2018, en el apartado **8.2**, pide que la organización establezca, implemente, mantenga y actualice PPR apropiados a su tamaño, tipo de operación y productos, considerando las **especificaciones técnicas sectoriales** de la serie ISO/TS 22002, los requisitos legales y los acordados con clientes. Los esquemas GFSI lo concretan: SQF tiene un módulo de buenas prácticas para la fabricación, y FSSC 22000 exige la especificación técnica de prerrequisitos que corresponde a la categoría de la organización.\n\nLo que sigue son los PPR que ISO 22000 enumera, aterrizados a una **planta química** que fabrica auxiliares de proceso, detergentes y sanitizantes para la industria de alimentos.\n\n## Construcción y distribución de instalaciones\n- **Ubicación y entorno**: evaluar fuentes externas de contaminación (polvo, vapores de otras industrias, inundaciones, plagas).\n- **Diseño y distribución**: flujos de materiales y personas que eviten la contaminación cruzada. En una planta química, el punto más sensible es la convivencia de **grados**: grado alimentario, grado técnico y productos industriales que no deben acercarse al alimento.\n- **Zonificación**: áreas definidas para materias primas grado alimentario, áreas de fabricación, envasado, almacén de producto terminado, y zonas físicamente separadas o controladas para productos no alimentarios con sustancias que no deben contaminar.\n- **Superficies**: pisos, paredes y techos de materiales resistentes a los químicos que se manejan, fáciles de limpiar, sin acumulación de polvo o derrames.\n- **Ventilación y extracción**: control de polvos y vapores que puedan depositarse en productos abiertos.\n\n## Servicios: agua, aire y energía\n- **Agua**: en muchos detergentes y sanitizantes el agua es el **ingrediente principal**, a veces más del 80 % de la fórmula. Su calidad es crítica: química (dureza, cloruros, metales, cloro residual que puede reaccionar con componentes), microbiológica (sobre todo en productos sin conservador o con pH cercano a neutro), y de proceso (agua desmineralizada u osmotizada con mantenimiento de membranas y resinas, que pueden contaminarse microbiológicamente). Se requiere un plan de monitoreo con puntos, frecuencias y límites.\n- **Aire comprimido** y gases en contacto con producto (por ejemplo, para agitación o para vaciado de tanques): filtración y control de aceite y humedad.\n- **Vapor** en contacto directo: calidad culinaria si aplica.\n- **Energía e iluminación**: con protección contra rotura de lámparas sobre producto abierto.\n\n## Eliminación de residuos\nLos residuos químicos, envases vacíos y producto rechazado deben identificarse, segregarse y retirarse de forma que no contaminen ni se confundan con producto o con envases para reutilizar. El producto no conforme o rechazado debe destruirse o reprocesarse con control, nunca reingresar por error al inventario.\n\n## Equipos: idoneidad, limpieza y mantenimiento\n- **Materiales compatibles** con los químicos que se manejan, como viste en el capítulo de corrosión del curso de limpieza: un tanque que se corroe libera metales al producto.\n- **Diseño higiénico** donde sea pertinente: tanques con drenaje completo, sin puntos muertos, con tapas y bocas de inspección.\n- **Dedicación de equipos**: siempre que sea posible, equipos dedicados para grado alimentario. Cuando se comparten, deben existir procedimientos de **limpieza de cambio de producto** validados, con criterios de aceptación (por ejemplo, análisis del agua del último enjuague, conductividad o un marcador del producto anterior) y registros.\n- **Mantenimiento preventivo** con lubricantes grado alimentario en zonas de posible contacto, control de herramientas y piezas, y liberación del equipo por calidad después de una intervención.\n- **Calibración** de básculas, medidores de flujo, potenciómetros y otros instrumentos que afecten la conformidad del producto (apartado 8.7).\n\n## Gestión de materiales comprados\n- **Aprobación de proveedores** y especificaciones de grado alimentario (lo veremos en el capítulo 9).\n- **Inspección en recepción**: integridad del envase y sellos, identificación, documentación (certificado de análisis), condiciones del transporte, lote.\n- **Transporte a granel**: cuando una materia prima llega en pipa, verificar los **certificados de lavado** y las **tres cargas anteriores** del autotanque, para descartar residuos incompatibles o tóxicos. Muchas empresas usan listas de productos prohibidos como carga anterior.\n- **Almacenamiento** en condiciones adecuadas (temperatura, luz, humedad) y con rotación PEPS o por fecha de caducidad.\n- **Segregación** física y documental de materias primas grado alimentario de las de grado técnico, aunque sean la misma sustancia química.\n\n## Prevención de la contaminación cruzada\nEn una planta química, la contaminación cruzada adopta formas específicas:\n\n- **Química**: residuos de un producto en el siguiente que se fabrica en el mismo equipo; trazas de un componente tóxico o no permitido en la fórmula siguiente; mezcla accidental por conexión equivocada de mangueras o tuberías.\n- **De grado**: uso accidental de una materia prima grado técnico en una formulación grado alimentario.\n- **De alérgenos**: algunos auxiliares contienen componentes de origen alergénico (por ejemplo, enzimas producidas en sustratos derivados de alérgenos o emulsificantes de soya). Debe haber un **mapa de alérgenos** y controles de cambio de producto.\n- **Física**: fragmentos de empaques, juntas, filtros, vidrio y plástico duro.\n- **Microbiológica**: en productos acuosos con pH cercano a neutro, emulsiones, enzimas o productos sin conservador.\n\nMedidas típicas: equipos dedicados, mangueras y conexiones **identificadas por color o código** con conexiones que solo encajen con el tanque correcto, verificación de la carga por una segunda persona, secuenciación de la producción (del producto más inocuo al menos inocuo), limpiezas validadas y controles de vidrio y plástico frágil.\n\n## Limpieza y desinfección\nProgramas documentados para instalaciones y equipos, con frecuencia, método, químicos, responsables, verificación y registros. Para los equipos de proceso, la limpieza de cambio de producto es un PPR crítico (y a veces se convierte en PPRO, como verás en el capítulo 7).\n\n## Control de plagas\nPrograma con proveedor competente, mapa de dispositivos, uso de plaguicidas autorizados y alejados de producto y empaques, análisis de tendencias y acciones. En plantas químicas con materias primas orgánicas (azúcares, aceites, glicoles, enzimas) el riesgo no es menor que en una planta de alimentos.\n\n## Higiene del personal e instalaciones para empleados\nUniforme adecuado, lavado de manos, restricciones de joyería, control de alimentos y bebidas en planta, enfermedades transmisibles cuando hay producto expuesto, y **equipo de protección personal** que no sea fuente de contaminación (guantes que no se desprendan, cofias, etc.).\n\n## Reproceso\nEl reproceso (reincorporar material de un lote a otro) debe estar **controlado**: identificación, trazabilidad de qué lote se incorporó en cuál, compatibilidad, límites de porcentaje, aprobación de calidad y registro. Un reproceso no documentado rompe la trazabilidad.\n\n## Procedimientos de retiro de producto\nAunque el retiro se trata en 8.9.5, se planifica como PPR: procedimientos, responsables, contactos y simulacros.\n\n## Almacenamiento y distribución\n- **Almacén de producto terminado** con segregación de producto liberado, retenido y rechazado (física o por sistema).\n- Condiciones de almacenamiento compatibles con la estabilidad del producto (por ejemplo, el hipoclorito y el APA se degradan con calor).\n- **Transporte** limpio, adecuado y sin cargas incompatibles; para granel, mismos controles de carga previa que en la recepción.\n\n## Información del producto y conciencia del consumidor\nPara un fabricante de auxiliares, el \"consumidor\" es el cliente industrial. La información del producto incluye:\n\n- **Etiqueta** con identificación del producto, grado, lote, fecha, instrucciones de uso, precauciones y, cuando aplica, declaración de alérgenos o de aprobación para el uso en alimentos.\n- **Ficha técnica** con condiciones de uso, dosis, tiempos, si requiere enjuague, compatibilidad.\n- **Hoja de datos de seguridad**.\n- **Certificado de análisis** por lote.\n\nLos errores de **etiquetado** son una causa principal de retiros en la industria de alimentos; en la química también. El control de etiquetas (almacenamiento separado de etiquetas por producto, reconciliación, verificación de la etiqueta correcta al inicio de cada envasado, destrucción de etiquetas obsoletas) es un PPR de primer nivel.\n\n## Envases y empaques\n- Envases nuevos, o reacondicionados con un proceso controlado y validado, adecuados para grado alimentario.\n- **Prohibición o control estricto de tambores y contenedores reciclados** de procedencia desconocida.\n- Compatibilidad química del envase con el producto (por ejemplo, el APA requiere tapas ventiladas y materiales compatibles).\n- Almacenamiento de envases protegidos del polvo y las plagas, con la boca cubierta.\n- Cierres con **sello de seguridad** o evidencia de manipulación, que también apoyan la defensa alimentaria.\n\n## Cómo se documenta y verifica un PPR\nCada PPR debe tener: objetivo, alcance, responsable, actividades, frecuencia, registros y **verificación**. La verificación de PPR (8.8.1) se hace con inspecciones internas, auditorías, revisión de registros y tendencias. Un PPR que nunca se verifica degenera con el tiempo.\n\n## Ideas que debes llevarte\n- Los **PPR** crean el ambiente controlado sobre el que se construye el análisis de peligros; sin ellos, el plan se llena de PCC artificiales.\n- En una planta química, los temas críticos son **segregación de grados**, **contaminación cruzada química**, **calidad del agua**, **cargas previas de transporte a granel**, **limpieza de cambio de producto**, **etiquetado** y **envases**.\n- Los equipos se eligen por **compatibilidad** química y, si es posible, se **dedican** al grado alimentario.\n- El reproceso, el almacenamiento, la información del producto y los envases son PPR con impacto directo en la inocuidad.\n- Cada PPR se documenta, se registra y se **verifica**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Propósito de los PPR",
+     "enunciado": "¿Qué ocurre típicamente cuando una planta tiene PPR débiles y aun así construye su estudio HACCP?",
+     "opciones": [
+      "El plan se llena de PCC artificiales que intentan compensar deficiencias básicas",
+      "El estudio HACCP se vuelve más sencillo",
+      "Los PPR dejan de ser necesarios",
+      "El análisis de peligros no cambia"
+     ],
+     "correcta": 0,
+     "explicacion": "Los PPR controlan las condiciones generales; sin ellos, peligros que deberían estar controlados por el ambiente terminan como significativos.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Agua",
+     "enunciado": "¿Por qué la calidad del agua es especialmente crítica en un fabricante de detergentes y sanitizantes líquidos?",
+     "opciones": [
+      "Porque el agua suele ser el ingrediente mayoritario de la fórmula, y su calidad química y microbiológica pasa al producto",
+      "Porque el agua solo se usa para limpiar pisos",
+      "Porque el agua no tiene contacto con el producto",
+      "Porque el agua siempre es estéril"
+     ],
+     "correcta": 0,
+     "explicacion": "En muchas fórmulas el agua es más del 80 %. Dureza, cloruros, metales, cloro residual y contaminación microbiana del sistema de tratamiento afectan el producto.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Transporte a granel",
+     "enunciado": "Llega una pipa con ácido fosfórico grado alimentario. ¿Qué verificación es específica del transporte a granel?",
+     "opciones": [
+      "El certificado de lavado y las cargas anteriores del autotanque",
+      "El color de la pipa",
+      "La marca del tractocamión",
+      "La antigüedad del chofer en la empresa"
+     ],
+     "correcta": 0,
+     "explicacion": "Una carga anterior incompatible o tóxica puede dejar residuos. Muchas empresas tienen listas de cargas previas prohibidas.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Segregación de grados",
+     "enunciado": "Una planta recibe glicerina grado técnico y grado alimentario del mismo proveedor, en tambores idénticos. ¿Qué PPR es crítico?",
+     "opciones": [
+      "Segregación física y documental con identificación inequívoca de cada grado",
+      "Control de plagas",
+      "Higiene del personal",
+      "Iluminación del almacén"
+     ],
+     "correcta": 0,
+     "explicacion": "Aunque sea la misma sustancia, el grado define especificaciones de pureza. La confusión de grados es un peligro químico real.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Contaminación cruzada",
+     "enunciado": "¿Cuál de estas medidas previene la conexión accidental de una manguera al tanque equivocado?",
+     "opciones": [
+      "Mangueras y conexiones identificadas por color o código con acoplamientos que solo encajan con el tanque correcto",
+      "Capacitar una sola vez al personal",
+      "Aumentar la velocidad de descarga",
+      "Usar mangueras más largas"
+     ],
+     "correcta": 0,
+     "explicacion": "Las barreras físicas (conexiones exclusivas) son más robustas que depender solo de la atención del operador; se complementan con verificación por una segunda persona.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipos compartidos",
+     "enunciado": "Un reactor se usa para un producto grado técnico con un componente no permitido en alimentos y después para un producto grado alimentario. ¿Qué se requiere?",
+     "opciones": [
+      "Una limpieza de cambio de producto validada, con criterio de aceptación medible y registro, o idealmente dedicar el equipo",
+      "Un simple enjuague con agua sin registro",
+      "Nada, porque el reactor es de acero inoxidable",
+      "Agregar más conservador al producto grado alimentario"
+     ],
+     "correcta": 0,
+     "explicacion": "El arrastre del producto anterior es un peligro químico; la limpieza debe validarse con un marcador o análisis del último enjuague.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Reproceso",
+     "enunciado": "¿Qué elemento es indispensable para controlar el reproceso?",
+     "opciones": [
+      "Registrar qué lote se incorporó en cuál, con aprobación de calidad, para mantener la trazabilidad",
+      "Reprocesar sin registro para no generar papeleo",
+      "Mezclar cualquier rechazo con producto nuevo",
+      "Reprocesar solo los fines de semana"
+     ],
+     "correcta": 0,
+     "explicacion": "Un reproceso no documentado rompe la trazabilidad y puede introducir material no conforme en lotes liberados.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Etiquetado",
+     "enunciado": "¿Cuál de estas prácticas reduce el riesgo de colocar la etiqueta equivocada?",
+     "opciones": [
+      "Verificar la etiqueta contra la orden de producción al inicio de cada envasado y reconciliar las etiquetas usadas",
+      "Guardar todas las etiquetas en una misma caja para tenerlas a la mano",
+      "Imprimir etiquetas genéricas para todos los productos",
+      "Reutilizar etiquetas sobrantes de otros productos"
+     ],
+     "correcta": 0,
+     "explicacion": "El control de etiquetas incluye almacenamiento separado, verificación de inicio, reconciliación y destrucción de obsoletas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Envases",
+     "enunciado": "¿Por qué se prohíben o controlan estrictamente los tambores reciclados de procedencia desconocida para productos grado alimentario?",
+     "opciones": [
+      "Porque pueden contener residuos de químicos incompatibles o tóxicos que contaminen el producto",
+      "Porque son más caros",
+      "Porque su color no es atractivo",
+      "Porque no se pueden etiquetar"
+     ],
+     "correcta": 0,
+     "explicacion": "El envase es una fuente de contaminación química; solo se aceptan envases nuevos o reacondicionados con proceso controlado y validado.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alérgenos",
+     "enunciado": "¿Por qué una planta de auxiliares de proceso debe tener un mapa de alérgenos?",
+     "opciones": [
+      "Porque algunos componentes, como ciertas enzimas o emulsificantes de soya, pueden ser de origen alergénico y pasar al alimento del cliente",
+      "Porque los químicos inorgánicos son alergénicos",
+      "Porque es un requisito solo para restaurantes",
+      "Porque los alérgenos solo importan en el etiquetado del alimento final"
+     ],
+     "correcta": 0,
+     "explicacion": "Un auxiliar con componente alergénico no declarado puede introducir un alérgeno en el alimento del cliente.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación de PPR",
+     "enunciado": "¿Qué pasa con un PPR que se documenta pero nunca se verifica?",
+     "opciones": [
+      "Tiende a degradarse con el tiempo sin que nadie lo detecte",
+      "Se mantiene igual de eficaz indefinidamente",
+      "Se convierte automáticamente en PPRO",
+      "Deja de ser exigible por la norma"
+     ],
+     "correcta": 0,
+     "explicacion": "La verificación (inspecciones, auditorías, revisión de registros y tendencias) detecta la degradación y genera acciones.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Segregación de grados",
+     "enunciado": "Diseña un esquema de segregación para una planta que maneja hidróxido de sodio grado técnico y grado alimentario. Considera recepción, almacenamiento, fabricación y envasado.",
+     "respuesta_modelo": "Recepción: especificación y proveedor aprobado por grado; verificación del COA y del grado en documentos y etiqueta; identificación inmediata con etiqueta de color o código por grado; muestreo y verificación analítica según el plan. Almacenamiento: zonas o tanques dedicados por grado, rotulados; en el sistema de inventario, códigos de material distintos para cada grado que impidan consumir grado técnico en órdenes alimentarias. Fabricación: líneas de transferencia y conexiones dedicadas o con acoplamientos exclusivos; la orden de producción especifica el código de grado y una segunda persona verifica la carga; si el equipo se comparte, limpieza validada. Envasado: envases y etiquetas específicos por grado, verificación de inicio de envasado, reconciliación de etiquetas, liberación por laboratorio contra la especificación alimentaria. Registros de todo para la trazabilidad.",
+     "puntos_clave": [
+      "Identificación desde la recepción",
+      "Separación física y en el sistema de inventario",
+      "Controles en fabricación: conexiones, verificación doble, limpieza",
+      "Controles en envasado y liberación"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Contaminación cruzada",
+     "enunciado": "Explica cuatro formas de contaminación cruzada propias de una planta química de auxiliares y una medida para cada una.",
+     "respuesta_modelo": "1) Química por arrastre de producto anterior en equipo compartido: limpieza de cambio validada o equipos dedicados. 2) De grado, por uso de materia prima técnica en fórmula alimentaria: códigos de material distintos, segregación y verificación de carga. 3) Por conexión equivocada de mangueras o tuberías: conexiones exclusivas por color o código y doble verificación. 4) De alérgenos por componentes de origen alergénico: mapa de alérgenos, secuenciación y limpieza validada. También: física por fragmentos de empaque, filtros o vidrio (control de materiales frágiles y filtración), y microbiológica en productos acuosos (calidad del agua, limpieza y conservadores).",
+     "puntos_clave": [
+      "Cuatro formas pertinentes",
+      "Medida concreta para cada una",
+      "Uso de barreras físicas además de procedimientos",
+      "Relación con la inocuidad del producto"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Información del producto",
+     "enunciado": "¿Qué información del producto debe entregar un fabricante de sanitizantes a su cliente y por qué es un PPR y no solo un tema comercial?",
+     "respuesta_modelo": "Etiqueta con identificación, grado, lote, fecha, instrucciones de uso, precauciones y, cuando aplica, aprobación para uso en superficies en contacto con alimentos; ficha técnica con concentración de uso, tiempo de contacto, si requiere enjuague, compatibilidad y limitaciones; hoja de datos de seguridad; certificado de análisis por lote; y declaración de alérgenos si aplica. Es un PPR porque el cliente controla la exposición final del alimento con esa información: una instrucción de uso equivocada o ausente (por ejemplo, omitir que se requiere enjuague a cierta concentración) puede generar residuos por encima de los límites. Los errores de etiquetado son, además, causa principal de retiros.",
+     "puntos_clave": [
+      "Etiqueta, ficha técnica, hoja de seguridad y COA",
+      "Instrucciones de uso como control de la exposición",
+      "Riesgo de errores de etiquetado",
+      "Relación con la inocuidad del alimento del cliente"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Pasos preliminares del estudio HACCP",
+   "texto": "## Antes de buscar peligros\nEl análisis de peligros solo es tan bueno como la información de la que parte. Si el equipo no conoce bien las materias primas, el uso que el cliente le da al producto o cómo es realmente el proceso en planta, los peligros importantes simplemente **no aparecen** en la lista. Por eso el Codex define cinco pasos previos al análisis (formar el equipo, describir el producto, identificar el uso previsto, elaborar el diagrama de flujo y confirmarlo en sitio), e ISO 22000:2018 los agrupa en el apartado **8.5.1, pasos preliminares para permitir el análisis de peligros**.\n\nLa norma pide que toda la información pertinente para el análisis se **recopile, mantenga, actualice y documente**: requisitos legales, requisitos de clientes, y la experiencia y conocimiento de la organización, incluidos datos de quejas, incidentes y literatura técnica.\n\n## El equipo de inocuidad\n### Composición\nEl equipo debe ser **multidisciplinario**, con la combinación de conocimiento y experiencia necesaria para desarrollar e implementar el SGIA. En una planta de auxiliares de proceso, típicamente:\n\n- **Líder del equipo** de inocuidad.\n- **Química o química de formulación**: conoce materias primas, reacciones, impurezas, estabilidad.\n- **Producción**: conoce cómo se hace realmente cada operación, no como dice el procedimiento.\n- **Laboratorio de control de calidad**: métodos, límites de detección, capacidad analítica.\n- **Mantenimiento e ingeniería**: equipos, materiales, servicios.\n- **Almacén y logística**: recepción, almacenamiento, distribución.\n- **Asuntos regulatorios**: aprobaciones, límites, etiquetado.\n- **Compras**: proveedores y cambios.\n- Cuando hace falta, **expertos externos**, por ejemplo en toxicología o microbiología.\n\n### Competencia\nISO 22000 exige que el equipo tenga competencia demostrable en el desarrollo y aplicación del SGIA, incluidos los productos, procesos, equipos y peligros dentro del alcance. La evidencia típica: formación en HACCP e ISO 22000, experiencia documentada y participación en estudios anteriores. Un auditor preguntará al equipo, no solo al líder.\n\n## Características de las materias primas, ingredientes y materiales en contacto\nPara cada materia prima, ingrediente y material en contacto con el producto (incluidos envases, juntas, mangueras y lubricantes en zonas de contacto), la organización debe documentar la información necesaria para el análisis de peligros:\n\n- Características **biológicas, químicas y físicas**.\n- **Composición**, incluidos aditivos y auxiliares de proceso del proveedor.\n- **Origen** (animal, mineral, vegetal, sintético, fermentación) y, cuando importa, el país o la planta de origen.\n- **Método de producción** del proveedor, cuando influye en los peligros: por ejemplo, ácido fosfórico obtenido por vía térmica frente a vía húmeda (la vía húmeda parte de roca fosfórica y requiere purificación para eliminar impurezas como flúor, arsénico, cadmio y metales pesados), o una enzima producida por fermentación en un medio de origen alergénico.\n- **Envase y forma de entrega**: granel, tambor, IBC, saco.\n- **Condiciones de almacenamiento** y vida útil.\n- **Preparación o manejo** antes del uso.\n- **Criterios de aceptación** o **especificaciones** relacionados con la inocuidad, adecuados al uso previsto. Para materias primas químicas de grado alimentario, se suelen basar en monografías del **FCC** o del **JECFA**, en la regulación aplicable y en requisitos de clientes.\n\nLa fuente práctica de esta información es la combinación de la **especificación técnica del proveedor**, la **hoja de datos de seguridad**, el **certificado de análisis** y, muy importante, cuestionarios del proveedor sobre su proceso, alérgenos y declaraciones de cumplimiento.\n\n## Características del producto terminado\nPara cada producto o grupo de productos se documenta:\n\n- **Nombre** e identificación.\n- **Composición**: ingredientes y concentración de activos.\n- Características **biológicas, químicas y físicas** pertinentes para la inocuidad: pH, concentración de activo, densidad, presencia de agua (relevante para el crecimiento microbiano), conservadores.\n- **Vida útil** prevista y condiciones de almacenamiento.\n- **Envase**.\n- **Etiquetado** relacionado con la inocuidad e **instrucciones** de manipulación, preparación y uso.\n- **Métodos de distribución y entrega**.\n\n### Agrupar productos\nUna planta puede tener cientos de productos. No se hace un estudio por producto; se agrupan por **familias** con proceso, peligros y controles similares: por ejemplo, alcalinos líquidos, ácidos líquidos, sanitizantes oxidantes, cuaternarios, antiespumantes en emulsión, productos en polvo. La agrupación debe justificarse: si un producto de la familia tiene un componente o un uso distinto que introduce un peligro diferente, se trata aparte o se documenta su particularidad.\n\n## Uso previsto\nEl apartado 8.5.1.4 pide considerar el **uso previsto**, incluida la manipulación razonablemente esperada del producto terminado y **cualquier manipulación incorrecta o uso indebido no intencional pero razonablemente esperado**. También pide identificar los **grupos de usuarios o consumidores** para los que el producto es pertinente, incluidos los grupos vulnerables.\n\nPara un fabricante de auxiliares de proceso, esto es crucial y tiene matices propios:\n\n### ¿Quién es el usuario?\nEl usuario directo es la **planta del cliente**: operadores de saneamiento, de producción o de procesos. El \"consumidor\" final es quien come el alimento elaborado.\n\n### ¿Cómo llega al alimento?\n- **Contacto directo** como auxiliar de proceso (antiespumante en una fermentación, agente de pelado, antimicrobiano en agua de lavado).\n- **Contacto incidental** por residuos en superficies (sanitizantes sin enjuague, detergentes con enjuague insuficiente).\n- **Sin contacto**: productos para áreas sin contacto con alimentos (pisos, drenajes, exteriores), donde el peligro es el uso equivocado.\n\n### ¿Qué usos incorrectos son razonablemente esperables?\nEsta es la parte que más se omite y donde más aporta un químico con experiencia de campo:\n\n- **Sobredosificación**: el operador \"refuerza\" la concentración pensando que limpia o desinfecta más.\n- **Omisión del enjuague** en un producto que lo requiere.\n- **Uso en un lugar no previsto**: un sanitizante para pisos usado sobre una superficie en contacto con alimentos; un desengrasante industrial usado en una planta de alimentos porque \"limpia mejor\".\n- **Mezcla con otros químicos**: ácido con hipoclorito, liberando cloro.\n- **Trasvase** a envases sin etiqueta o a envases de alimentos o bebidas.\n- **Uso a temperaturas** que alteran el producto.\n- **Almacenamiento** prolongado o en condiciones que degradan el activo o generan subproductos (por ejemplo, clorato en el hipoclorito).\n\n### ¿Qué grupos vulnerables?\nLos alimentos de los clientes pueden ir a lactantes, adultos mayores, personas con alergias o inmunocomprometidos (por ejemplo, fórmulas infantiles o alimentos para hospitales). Esto influye en los **niveles aceptables** y en la exigencia de los controles.\n\n### Consecuencias en el diseño del producto y su información\nEl análisis del uso previsto y del uso indebido previsible genera medidas como: instrucciones claras de dosis y enjuague, sistemas de dosificación automática ofrecidos al cliente, advertencias en etiqueta, envases que dificulten el trasvase, colores o identificadores para productos de áreas sin contacto, capacitación al cliente.\n\n## Diagramas de flujo\nLos diagramas de flujo deben elaborarse para los productos o grupos de productos y procesos del alcance. ISO 22000 pide que incluyan, según corresponda:\n\n- La **secuencia e interacción** de las etapas.\n- Los **procesos subcontratados**.\n- La **entrada** de materias primas, ingredientes, auxiliares y productos intermedios.\n- Los puntos de **reproceso** y **recirculación**.\n- La **salida** o eliminación de productos terminados, intermedios, subproductos y residuos.\n\nUn diagrama de flujo de una planta química típica para un sanitizante líquido podría incluir: recepción de materias primas (granel y envasadas), almacenamiento, recepción y tratamiento de agua (ósmosis inversa o desmineralización), pesado o dosificación, carga al reactor o tanque de mezcla, mezclado, ajuste de pH o de concentración, muestreo y análisis, filtración, transferencia a tanque de almacenamiento, envasado, taponado y sellado, etiquetado, almacén de producto terminado, liberación, embarque. Más el reproceso, el agua de lavado de equipos y los residuos.\n\n## Descripción del proceso y del entorno\nAdemás del diagrama, se describen la **distribución de las instalaciones** (flujos de materiales y personas, áreas compartidas, segregación), los **equipos**, los **PPR existentes**, los **parámetros de proceso** y **las medidas de control existentes** con su rigor de aplicación, las **variaciones estacionales** y los **requisitos externos** que puedan influir en las medidas de control.\n\n## Confirmación en sitio\nEl equipo debe **confirmar en sitio** que los diagramas de flujo corresponden a la realidad, durante la operación, y actualizarlos cuando sea necesario. En la práctica, esta etapa revela con frecuencia:\n\n- Etapas que no aparecen en el diagrama (un filtrado intermedio, un tanque pulmón, un trasvase manual).\n- Conexiones o by-pass no documentados.\n- Diferencias entre turnos.\n- Reprocesos informales.\n- Materiales en contacto que nadie había listado (una manguera de un material no compatible, un filtro reutilizado).\n\nLa confirmación debe registrarse: quién, cuándo y qué se verificó.\n\n## Ideas que debes llevarte\n- Los **pasos preliminares** (8.5.1) determinan la calidad del análisis de peligros.\n- El **equipo** es multidisciplinario y con competencia demostrable; incluye química de formulación, producción, laboratorio, mantenimiento, regulatorio y compras.\n- Las **materias primas** se describen con origen, método de producción, composición y especificaciones de grado alimentario.\n- Los productos se agrupan en **familias** justificadas.\n- El **uso previsto** incluye la vía de llegada al alimento, los grupos vulnerables y el **uso indebido razonablemente previsible** (sobredosis, omisión del enjuague, uso fuera de lugar, mezclas, trasvases).\n- Los **diagramas de flujo** incluyen entradas, salidas, reproceso, recirculación y subcontratación, y se **confirman en sitio**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Equipo",
+     "enunciado": "¿Por qué conviene que el equipo de inocuidad incluya a alguien de producción y no solo de calidad?",
+     "opciones": [
+      "Porque conoce cómo se realizan realmente las operaciones, que puede diferir del procedimiento escrito",
+      "Porque la norma exige que la mitad del equipo sea de producción",
+      "Porque producción aprueba los límites críticos",
+      "Porque así se reduce el número de reuniones"
+     ],
+     "correcta": 0,
+     "explicacion": "La multidisciplinariedad evita que el análisis se haga sobre un proceso idealizado.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Materias primas",
+     "enunciado": "¿Por qué importa conocer si un ácido fosfórico se obtuvo por vía térmica o por vía húmeda?",
+     "opciones": [
+      "Porque la vía húmeda parte de roca fosfórica y puede arrastrar impurezas como flúor, arsénico, cadmio y metales pesados si la purificación no es adecuada",
+      "Porque la vía térmica produce ácido de otro color",
+      "Porque la vía húmeda produce un ácido más concentrado siempre",
+      "No importa, el ácido es el mismo"
+     ],
+     "correcta": 0,
+     "explicacion": "El método de producción del proveedor influye en el perfil de impurezas, y por tanto en los peligros y en las especificaciones.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Materias primas",
+     "enunciado": "¿Qué fuente de información es indispensable, además del certificado de análisis, para conocer los peligros de una materia prima?",
+     "opciones": [
+      "La especificación técnica y cuestionarios del proveedor sobre su proceso, alérgenos y cumplimiento regulatorio",
+      "El precio por kilogramo",
+      "La antigüedad del proveedor en el mercado",
+      "El catálogo comercial"
+     ],
+     "correcta": 0,
+     "explicacion": "El COA reporta un lote contra algunos parámetros; la especificación y el cuestionario aportan origen, proceso, alérgenos y declaraciones.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Familias de productos",
+     "enunciado": "Una familia de 'alcalinos líquidos' incluye un producto que contiene una enzima producida en un medio de origen alergénico. ¿Qué se debe hacer?",
+     "opciones": [
+      "Tratarlo aparte o documentar en el estudio el peligro adicional de alérgeno y sus controles",
+      "Mantenerlo en la familia sin cambios porque es alcalino",
+      "Eliminarlo del alcance",
+      "Agruparlo con los ácidos"
+     ],
+     "correcta": 0,
+     "explicacion": "La agrupación se justifica por peligros y controles similares; un componente que introduce un peligro diferente requiere tratamiento específico.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Uso previsto",
+     "enunciado": "¿Cuál de estos es un uso indebido razonablemente previsible de un sanitizante sin enjuague?",
+     "opciones": [
+      "Que el operador lo prepare al doble de la concentración pensando que desinfecta más",
+      "Que el cliente lo use según la etiqueta",
+      "Que el producto se almacene según la ficha técnica",
+      "Que el laboratorio lo analice"
+     ],
+     "correcta": 0,
+     "explicacion": "La sobredosificación es frecuente y, en un producto sin enjuague, puede generar residuos por encima de los límites.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Uso previsto",
+     "enunciado": "¿Qué medida responde mejor al riesgo de que un cliente use por error un sanitizante para pisos en superficies en contacto con alimentos?",
+     "opciones": [
+      "Advertencias claras en la etiqueta, identificación visual distinta y capacitación al cliente",
+      "Bajar el precio del producto para pisos",
+      "Eliminar la ficha técnica",
+      "No hacer nada, porque es responsabilidad del cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "El análisis del uso indebido previsible genera medidas de diseño e información del producto.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Grupos vulnerables",
+     "enunciado": "¿Cómo influye que el cliente fabrique fórmulas infantiles?",
+     "opciones": [
+      "Puede exigir niveles aceptables más estrictos y controles más rigurosos para los residuos de los auxiliares",
+      "No influye, porque el auxiliar no es un alimento",
+      "Solo cambia el precio del producto",
+      "Elimina la necesidad de análisis de peligros"
+     ],
+     "correcta": 0,
+     "explicacion": "Los grupos vulnerables se consideran al definir niveles aceptables y el rigor de las medidas de control.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diagramas de flujo",
+     "enunciado": "¿Cuál de estos elementos debe incluir un diagrama de flujo según ISO 22000?",
+     "opciones": [
+      "Los puntos de reproceso y recirculación",
+      "El organigrama de la empresa",
+      "El costo de cada etapa",
+      "La lista de clientes"
+     ],
+     "correcta": 0,
+     "explicacion": "El diagrama incluye secuencia e interacción de etapas, procesos subcontratados, entradas, reproceso, recirculación y salidas.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confirmación en sitio",
+     "enunciado": "Durante la confirmación en sitio, el equipo descubre un tanque pulmón que no aparece en el diagrama. ¿Qué hace?",
+     "opciones": [
+      "Actualiza el diagrama, analiza los peligros asociados a esa etapa y registra la confirmación",
+      "Lo ignora porque el diagrama ya fue aprobado",
+      "Pide a producción que deje de usarlo sin analizarlo",
+      "Lo agrega solo en la próxima auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "La confirmación existe para detectar diferencias; cada etapa real debe estar en el análisis de peligros.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Materiales en contacto",
+     "enunciado": "¿Por qué deben describirse también juntas, mangueras y lubricantes en zonas de contacto?",
+     "opciones": [
+      "Porque son materiales en contacto con el producto y pueden ser fuente de peligros químicos o físicos",
+      "Porque son caros",
+      "Porque el proveedor lo exige",
+      "Porque así lo pide el área de compras"
+     ],
+     "correcta": 0,
+     "explicacion": "ISO 22000 pide documentar las características de los materiales en contacto con el producto.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Información pertinente",
+     "enunciado": "¿Qué tipo de información debe recopilar la organización para el análisis de peligros además de los requisitos legales y de clientes?",
+     "opciones": [
+      "La experiencia y conocimiento de la organización, incluidos quejas, incidentes y literatura técnica",
+      "Solo la información del proveedor",
+      "Únicamente los resultados de auditorías externas",
+      "La información de mercadotecnia"
+     ],
+     "correcta": 0,
+     "explicacion": "8.5.1 pide mantener información pertinente, incluida la experiencia propia e información externa como datos históricos y literatura.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Uso previsto",
+     "enunciado": "Describe el uso previsto, la vía de llegada al alimento y tres usos indebidos razonablemente previsibles para un antiespumante de silicona grado alimentario usado en fermentaciones industriales.",
+     "respuesta_modelo": "Uso previsto: auxiliar de proceso para controlar la espuma en fermentaciones, dosificado en bajas concentraciones según la ficha técnica, por plantas de alimentos o ingredientes. Vía de llegada: contacto directo con el caldo de fermentación; queda como residuo no intencional en el producto si no se elimina en etapas posteriores. Usos indebidos previsibles: sobredosificación para controlar espumas excesivas, que aumenta el residuo; uso de un antiespumante grado técnico similar por confusión o por precio; dilución previa con agua no potable o almacenamiento de la dilución durante días, con riesgo de contaminación microbiana; uso a temperaturas que desestabilizan la emulsión. Consecuencias: instrucciones de dosis máxima, advertencia de no diluir con antelación, identificación clara del grado y recomendación de dosificación automática.",
+     "puntos_clave": [
+      "Uso previsto con usuario y dosis",
+      "Vía de llegada al alimento",
+      "Tres usos indebidos previsibles",
+      "Medidas derivadas"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Diagramas de flujo",
+     "enunciado": "Elabora en texto el diagrama de flujo de un detergente alcalino clorado líquido, indicando entradas, reproceso y salidas.",
+     "respuesta_modelo": "Entradas: hidróxido de sodio (granel), hipoclorito de sodio (granel), silicatos y quelantes (envasados), tensioactivo estable al cloro, agua tratada (de ósmosis o desmineralizada), envases y etiquetas. Etapas: 1) recepción y verificación de materias primas; 2) almacenamiento por tipo y grado; 3) tratamiento de agua; 4) pesado o dosificación; 5) carga al tanque de mezcla en orden definido (agua, álcali, quelantes, silicatos, tensioactivo y al final el hipoclorito con enfriamiento si aplica); 6) mezclado; 7) muestreo y análisis (alcalinidad, cloro disponible, densidad, apariencia); 8) ajuste si es necesario; 9) filtración; 10) transferencia a tanque de almacenamiento; 11) envasado; 12) taponado con tapa adecuada; 13) etiquetado y codificación de lote; 14) almacén de producto terminado en cuarentena; 15) liberación; 16) embarque. Reproceso: producto fuera de especificación reincorporado con aprobación y registro en la etapa 5. Salidas: producto terminado, agua de lavado de equipos, envases dañados, residuos y producto rechazado. Procesos subcontratados: transporte.",
+     "puntos_clave": [
+      "Entradas completas, incluidos agua y materiales de empaque",
+      "Secuencia lógica con muestreo y liberación",
+      "Reproceso identificado",
+      "Salidas y subcontratación"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Confirmación en sitio",
+     "enunciado": "¿Qué tipo de hallazgos suele revelar la confirmación en sitio del diagrama de flujo y por qué debe hacerse durante la operación?",
+     "respuesta_modelo": "Revela etapas no documentadas (filtrados intermedios, tanques pulmón, trasvases manuales), conexiones o by-pass, diferencias entre turnos, reprocesos informales y materiales en contacto no listados, como mangueras incompatibles o filtros reutilizados. Debe hacerse durante la operación porque muchas de esas diferencias solo se ven cuando el proceso está funcionando: el orden real de carga, quién verifica, qué se hace cuando hay un problema, cómo se conecta el equipo. Una revisión en papel o con la planta parada confirma el diagrama ideal, no el real.",
+     "puntos_clave": [
+      "Ejemplos de hallazgos",
+      "Diferencias entre procedimiento y práctica",
+      "Necesidad de observar en operación",
+      "Registro y actualización"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Análisis de peligros I: identificar peligros en auxiliares de proceso",
+   "texto": "## La pregunta correcta\nEl análisis de peligros empieza con una pregunta concreta para cada materia prima, cada material en contacto y cada etapa del diagrama de flujo: **¿qué agente biológico, químico, físico o alergénico podría estar presente, introducirse, incrementarse o persistir aquí, de modo que llegue al alimento del cliente en un nivel que pueda dañar la salud?**\n\nISO 22000:2018, en el apartado **8.5.2.2**, pide identificar y documentar todos los peligros razonablemente esperados en función del tipo de producto, el tipo de proceso y el entorno, considerando la **etapa** donde pueden presentarse (antes, durante y después), y para cada peligro determinar el **nivel aceptable** en el producto final cuando sea posible.\n\nEste capítulo te da un catálogo razonado de peligros propios de los auxiliares de proceso y de los químicos de contacto incidental. El siguiente capítulo trata de cómo evaluarlos.\n\n## Fuentes de información para identificar peligros\n- Información de los **pasos preliminares** (materias primas, producto, uso previsto, diagrama).\n- **Experiencia** de la planta: quejas, desviaciones, resultados de laboratorio, no conformidades.\n- **Información externa**: literatura técnica, alertas sanitarias, retiros de producto en la industria, bases de datos regulatorias, evaluaciones toxicológicas (JECFA, autoridades nacionales), especificaciones del FCC y JECFA.\n- **Requisitos legales** y de **clientes**.\n- La **química** de las sustancias: reacciones, degradación, impurezas típicas de la ruta de síntesis.\n\n## Peligros químicos\nSon los peligros dominantes en esta industria. Conviene clasificarlos por su **origen**:\n\n### 1. Impurezas inherentes a las materias primas\n- **Metales pesados y elementos tóxicos**: plomo, arsénico, cadmio, mercurio. Típicos en materias primas de origen mineral (fosfatos, silicatos, carbonatos, sales) y en algunos procesos de síntesis. Las especificaciones de grado alimentario (FCC, JECFA) fijan límites.\n- **Flúor** en fosfatos y ácido fosfórico de vía húmeda.\n- **Impurezas de síntesis**: monómeros residuales, catalizadores, solventes residuales, subproductos. Por ejemplo, en algunos tensioactivos etoxilados se vigila el **1,4-dioxano**, subproducto de la etoxilación; en otros, el óxido de etileno residual.\n- **Impurezas de la producción de sosa**: mercurio en sosa de celdas de mercurio (tecnología hoy prácticamente abandonada, pero relevante en la evaluación de proveedores), cloratos y cloruros.\n\n### 2. Productos de degradación\n- **Clorato** y **clorito** en hipoclorito de sodio, por descomposición durante el almacenamiento, como viste en el curso de limpieza.\n- **Bromato** en sistemas con bromuro y oxidantes fuertes.\n- Productos de oxidación o hidrólisis de componentes orgánicos que cambian la toxicidad o el perfil del producto.\n\n### 3. Error de grado\nUso de una materia prima de **grado técnico** en lugar de grado alimentario. Es probablemente el peligro químico más importante en una planta que maneja ambos grados. La materia prima puede ser químicamente la misma sustancia, pero con impurezas fuera de las especificaciones alimentarias.\n\n### 4. Error de formulación o de concentración\n- **Sobreconcentración** del activo (por ejemplo, un sanitizante sin enjuague por encima del límite regulatorio), que en el uso del cliente se traduce en residuos excesivos.\n- **Componente equivocado** o **componente omitido** (por ejemplo, un estabilizante omitido que acelera la degradación).\n- **Componente no permitido** para el uso alimentario introducido por confusión.\n\n### 5. Contaminación cruzada química\n- **Arrastre** de un producto anterior en equipos compartidos (sobre todo si el anterior contiene componentes no permitidos para contacto con alimentos).\n- **Conexiones equivocadas** de mangueras y tuberías.\n- **Residuos de agentes de limpieza** del equipo de la propia planta.\n- **Lubricantes** no grado alimentario en zonas de contacto.\n\n### 6. Migración desde materiales en contacto\n- Componentes de **envases** (monómeros, aditivos del plástico) que migran al producto, sobre todo con productos agresivos (ácidos, álcalis, solventes, oxidantes) que pueden extraer o degradar el plástico.\n- **Envases reciclados** con residuos de contenidos anteriores.\n- **Juntas y mangueras** incompatibles que se degradan.\n- **Corrosión** de tanques y tuberías que libera metales (hierro, níquel, cromo) al producto.\n\n### 7. Contaminación desde el entorno y el agua\n- **Agua de proceso** con contaminantes químicos (metales, nitratos, compuestos orgánicos) o con cloro residual que reacciona con componentes.\n- **Plaguicidas** mal aplicados cerca de producto o envases.\n- Polvos y vapores de otras áreas.\n\n### 8. Peligros por el uso del cliente\n- **Generación de subproductos** en el uso: por ejemplo, el cloro con materia orgánica forma trihalometanos; ciertos productos mal mezclados liberan gases tóxicos.\n- **Residuos** en el alimento por uso indebido previsible (sobredosis, omisión del enjuague).\n\nAunque estos ocurren en la planta del cliente, el fabricante debe considerarlos al diseñar el producto, las especificaciones y las instrucciones de uso.\n\n## Peligros biológicos\nMenos frecuentes en químicos agresivos (un álcali al 20 % o un ácido concentrado no permite crecimiento), pero reales en:\n\n- **Productos acuosos con pH cercano a neutro**: algunos tensioactivos diluidos, formulaciones enzimáticas, emulsiones de antiespumantes, soluciones de polímeros.\n- **Materias primas biológicas o de fermentación**: enzimas, cultivos, gomas, azúcares.\n- **Sistemas de agua**: ósmosis inversa, resinas de intercambio y tanques de agua tratada que acumulan biopelículas; el agua desmineralizada sin cloro residual es especialmente vulnerable.\n- **Equipos de difícil limpieza** que manejan productos susceptibles.\n\nLos microorganismos de interés dependen del uso: para un antiespumante usado en una fermentación, una carga alta de microorganismos puede contaminar el cultivo; para un producto que se usa en un alimento listo para consumo sin tratamiento posterior, los patógenos son críticos. Las especificaciones microbiológicas de grado alimentario (por ejemplo, para algunas enzimas o gomas) son una referencia.\n\n## Peligros físicos\n- **Fragmentos** de envases (plástico, metal), tapas, sellos.\n- **Partículas** de juntas, filtros, mangueras degradadas.\n- **Vidrio y plástico duro** de lámparas, instrumentos, ventanas.\n- **Metal** de equipos, herramientas, mallas rotas.\n- **Materia extraña** en sólidos: piedras, insectos, fibras de sacos.\n\nEn un auxiliar líquido de uso en dosificadores, un fragmento físico puede no llegar al alimento pero sí **tapar boquillas** o dosificadores, lo que provoca subdosificación o fallas del proceso del cliente. Eso puede ser un problema de calidad, o de inocuidad si la falla de dosificación compromete una medida de control del cliente (por ejemplo, un antimicrobiano que no se dosifica).\n\n## Alérgenos\nLos alérgenos deben identificarse como peligro cuando una materia prima o componente es de origen alergénico. Casos típicos en auxiliares:\n\n- **Enzimas** producidas por fermentación en medios con derivados de alérgenos o formuladas con portadores alergénicos.\n- **Emulsificantes** como la lecitina de soya.\n- **Aceites** de origen alergénico (cacahuate, ajonjolí, frutos secos) en antiespumantes o lubricantes.\n- **Proteínas** de leche o huevo en algunos productos especiales.\n- **Derivados de trigo** (almidones, hidrolizados) como portadores.\n\nLa evaluación depende de si la proteína alergénica está presente en el producto y puede llegar al alimento del cliente. Muchos auxiliares derivados de alérgenos se purifican de modo que la proteína queda muy baja o ausente, pero eso debe **demostrarse** y comunicarse al cliente, que debe considerarlo en su propio programa de alérgenos.\n\n## Peligros radiológicos\nRaros, pero ISO 22000 los incluye en el concepto de peligro químico en sentido amplio en algunas interpretaciones y el Codex los menciona. Pueden ser pertinentes en materias primas minerales de ciertos orígenes (por ejemplo, algunos minerales con radionúclidos naturales). En la mayoría de los estudios se descartan con justificación.\n\n## Peligros intencionales: no son lo mismo\nEl **fraude** (adulteración económicamente motivada) y la **contaminación intencional** (sabotaje) no se gestionan en el análisis de peligros convencional, sino con evaluaciones de **vulnerabilidad al fraude** y de **defensa alimentaria**, que exigen los esquemas GFSI. Los verás en el curso correspondiente. Aun así, cuando una evaluación de fraude identifica, por ejemplo, la sustitución de un grado alimentario por uno técnico como vulnerabilidad, el peligro químico resultante sí entra al análisis de peligros.\n\n## Cómo documentar la identificación\nUna tabla por etapa del diagrama (y por materia prima y material en contacto) con columnas como:\n\n| Etapa o material | Peligro | Tipo | Fuente o causa | Nivel aceptable |\n|---|---|---|---|---|\n| Recepción de ácido fosfórico | Arsénico, plomo, flúor | Químico | Impurezas de origen mineral | Según especificación FCC o regulación |\n| Pesado de materias primas | Uso de grado técnico | Químico | Confusión de materiales | Cero uso de grado técnico |\n| Mezclado | Sobreconcentración de activo | Químico | Error de pesado o dosificación | Concentración declarada ± tolerancia |\n| Envasado | Fragmentos de tapa | Físico | Taponado defectuoso | Ausencia |\n| Agua de ósmosis | Carga microbiana | Biológico | Biopelícula en membranas | Según especificación de agua |\n\nLa clave es escribir la **causa** del peligro con precisión: \"contaminación química\" es inútil; \"arrastre de producto anterior con componente no permitido en reactor compartido\" permite diseñar el control.\n\n## Ideas que debes llevarte\n- Se identifican todos los peligros **razonablemente esperados** por etapa, materia prima y material en contacto, con su **nivel aceptable**.\n- Los peligros químicos dominan: **impurezas** de materias primas, **degradación**, **error de grado**, **error de formulación**, **contaminación cruzada**, **migración** de materiales, **entorno y agua**, y **uso del cliente**.\n- Los peligros biológicos aparecen en productos acuosos neutros, materias primas biológicas y sistemas de agua.\n- Los físicos incluyen fragmentos de envases, juntas, filtros, vidrio y metal; también pueden afectar la dosificación del cliente.\n- Los **alérgenos** se identifican por el origen de los componentes y se comunica su estado al cliente.\n- Escribe la **causa** de cada peligro con precisión: eso define el control.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Identificación",
+     "enunciado": "¿Qué pregunta guía la identificación de peligros en cada etapa del diagrama de flujo?",
+     "opciones": [
+      "¿Qué agente biológico, químico, físico o alergénico podría estar presente, introducirse, incrementarse o persistir aquí y llegar al alimento en un nivel dañino?",
+      "¿Qué etapa es la más cara?",
+      "¿Qué etapa tiene más personal?",
+      "¿Dónde ha habido más quejas de calidad?"
+     ],
+     "correcta": 0,
+     "explicacion": "La identificación considera presencia, introducción, incremento y persistencia del peligro, con la mirada en el alimento del cliente.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Impurezas",
+     "enunciado": "¿Qué peligro químico es típico en materias primas de origen mineral como fosfatos y silicatos?",
+     "opciones": [
+      "Metales pesados y elementos tóxicos como plomo, arsénico y cadmio",
+      "1,4-dioxano",
+      "Clorato",
+      "Proteínas alergénicas"
+     ],
+     "correcta": 0,
+     "explicacion": "Los minerales arrastran impurezas inorgánicas; las especificaciones FCC y JECFA fijan límites.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Impurezas de síntesis",
+     "enunciado": "¿Qué impureza de síntesis se vigila en algunos tensioactivos etoxilados?",
+     "opciones": [
+      "1,4-dioxano",
+      "Flúor",
+      "Mercurio",
+      "Bromato"
+     ],
+     "correcta": 0,
+     "explicacion": "El 1,4-dioxano es un subproducto de la etoxilación; el óxido de etileno residual es otra impureza de interés.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Degradación",
+     "enunciado": "¿Qué peligro químico puede aumentar durante el almacenamiento prolongado y caliente de hipoclorito de sodio?",
+     "opciones": [
+      "Clorato",
+      "Arsénico",
+      "Plomo",
+      "1,4-dioxano"
+     ],
+     "correcta": 0,
+     "explicacion": "El hipoclorito se descompone en clorato; es un producto de degradación, no una impureza de origen.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Error de grado",
+     "enunciado": "¿Por qué el uso de materia prima grado técnico en lugar de grado alimentario es un peligro químico aunque sea la misma sustancia?",
+     "opciones": [
+      "Porque su perfil de impurezas no está controlado contra especificaciones alimentarias",
+      "Porque el grado técnico tiene otra fórmula química",
+      "Porque el grado técnico siempre es menos concentrado",
+      "No es un peligro si la sustancia es la misma"
+     ],
+     "correcta": 0,
+     "explicacion": "El grado define las especificaciones de pureza; el grado técnico puede exceder límites de metales u otras impurezas.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Formulación",
+     "enunciado": "¿Cómo se convierte una sobreconcentración de activo en un sanitizante sin enjuague en un peligro para el alimento?",
+     "opciones": [
+      "El cliente lo diluye según la etiqueta y obtiene una solución más concentrada que deja residuos por encima del límite",
+      "Hace que el sanitizante sea menos eficaz",
+      "Solo afecta el costo",
+      "No afecta al alimento porque el producto se diluye"
+     ],
+     "correcta": 0,
+     "explicacion": "La dosis del cliente se basa en la concentración declarada; si el producto está concentrado de más, la solución de uso también.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Migración",
+     "enunciado": "¿Qué peligro introduce un tanque de acero que se corroe por el producto que almacena?",
+     "opciones": [
+      "Liberación de metales como hierro, níquel o cromo al producto",
+      "Contaminación microbiana inevitable",
+      "Alérgenos",
+      "Ninguno, la corrosión es solo un problema de mantenimiento"
+     ],
+     "correcta": 0,
+     "explicacion": "La corrosión de equipos es una vía de migración de metales al producto.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Peligros biológicos",
+     "enunciado": "¿En cuál de estos productos es más pertinente el peligro biológico?",
+     "opciones": [
+      "Una emulsión acuosa de antiespumante con pH cercano a neutro",
+      "Sosa cáustica al 50 %",
+      "Ácido nítrico al 60 %",
+      "Hipoclorito de sodio al 12 %"
+     ],
+     "correcta": 0,
+     "explicacion": "Los productos acuosos neutros, emulsiones y formulaciones con materiales biológicos permiten crecimiento microbiano; los concentrados agresivos no.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Agua",
+     "enunciado": "¿Por qué el agua desmineralizada u osmotizada puede ser fuente de peligro biológico?",
+     "opciones": [
+      "Porque no tiene cloro residual y las membranas, resinas y tanques acumulan biopelículas",
+      "Porque el proceso de ósmosis añade bacterias",
+      "Porque contiene más sales que el agua de la red",
+      "Porque siempre está caliente"
+     ],
+     "correcta": 0,
+     "explicacion": "Al eliminar el desinfectante residual y por la superficie disponible, estos sistemas requieren sanitización y monitoreo microbiológico.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alérgenos",
+     "enunciado": "¿Cuál de estos componentes de un auxiliar de proceso podría introducir un alérgeno?",
+     "opciones": [
+      "Lecitina de soya usada como emulsificante",
+      "Hidróxido de sodio",
+      "Ácido fosfórico",
+      "Agua desmineralizada"
+     ],
+     "correcta": 0,
+     "explicacion": "La lecitina de soya y otros derivados de alérgenos deben evaluarse: si la proteína alergénica está presente, se comunica al cliente.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Causa del peligro",
+     "enunciado": "¿Cuál es la descripción de peligro más útil para diseñar un control?",
+     "opciones": [
+      "Arrastre de producto anterior con componente no permitido en reactor compartido",
+      "Contaminación química",
+      "Problemas de calidad",
+      "Riesgo general de producción"
+     ],
+     "correcta": 0,
+     "explicacion": "Una causa precisa indica qué controlar: limpieza de cambio, dedicación del equipo, secuenciación.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Catálogo de peligros",
+     "enunciado": "Para un sanitizante a base de ácido peracético, identifica cinco peligros químicos con su fuente o causa.",
+     "respuesta_modelo": "1) Sobreconcentración de APA o peróxido por error de formulación o dosificación, que genera residuos excesivos en el uso sin enjuague. 2) Metales de transición (hierro, cobre) procedentes de materias primas o de corrosión de equipos, que además catalizan la descomposición. 3) Uso de peróxido o ácido acético de grado técnico con impurezas fuera de especificación. 4) Contaminación cruzada por arrastre de un producto anterior en equipo compartido o conexión equivocada, por ejemplo con un álcali que degrada el producto. 5) Migración desde envases o juntas incompatibles atacados por el oxidante. También: degradación por almacenamiento caliente que cambia la composición, y estabilizante omitido o equivocado.",
+     "puntos_clave": [
+      "Cinco peligros químicos distintos",
+      "Fuente o causa precisa para cada uno",
+      "Incluye formulación, grado, contaminación cruzada y materiales",
+      "Relación con el uso del cliente"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Peligros físicos",
+     "enunciado": "Explica cómo un peligro físico en un auxiliar líquido puede terminar afectando la inocuidad del alimento del cliente aunque el fragmento nunca llegue al alimento.",
+     "respuesta_modelo": "Un fragmento de tapa, junta o filtro puede tapar boquillas, inyectores o dosificadores en la planta del cliente. Si ese dosificador aplica un antimicrobiano al agua de lavado o un sanitizante, la obstrucción causa subdosificación y la medida de control del cliente falla, dejando un peligro biológico sin controlar en el alimento. Por eso la filtración, el control de materiales frágiles y la integridad de envases tienen relevancia de inocuidad, no solo de calidad.",
+     "puntos_clave": [
+      "Obstrucción de equipos de dosificación",
+      "Subdosificación de una medida de control del cliente",
+      "Consecuencia sobre un peligro biológico del alimento",
+      "Relevancia de los controles físicos"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Alérgenos",
+     "enunciado": "Tu planta fabrica una formulación enzimática para la industria de panificación cuya enzima se produce por fermentación en un medio con derivados de trigo. ¿Cómo evaluarías y comunicarías el peligro de alérgeno?",
+     "respuesta_modelo": "Solicitaría al proveedor de la enzima información del proceso de fermentación y purificación, y datos analíticos de proteína de gluten o trigo en la enzima con un método validado. Evaluaría si la proteína alergénica puede estar presente en el producto terminado, considerando la dosis de uso y la llegada al alimento. Registraría el componente en el mapa de alérgenos de la planta y aplicaría controles de cambio de producto si comparte equipos. Comunicaría al cliente, en la ficha técnica o en una declaración de alérgenos, el origen del componente y el resultado de la evaluación, para que lo considere en su propio programa; si no se puede demostrar ausencia o un nivel por debajo de un umbral justificado, se declara como presente.",
+     "puntos_clave": [
+      "Información y datos del proveedor",
+      "Evaluación de presencia de proteína y llegada al alimento",
+      "Mapa de alérgenos y controles internos",
+      "Comunicación clara al cliente"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "titulo": "Análisis de peligros II: evaluar y seleccionar medidas de control",
+   "texto": "## De la lista de peligros a las decisiones\nDespués de identificar los peligros, la lista suele ser larga: decenas de peligros por familia de productos. No todos requieren el mismo nivel de control. ISO 22000:2018 pide, en el apartado **8.5.2.3**, **evaluar** cada peligro identificado para determinar si su prevención o su reducción a un nivel aceptable es **esencial**. A los que lo son se les llama **peligros significativos**, y para ellos se seleccionan y **categorizan** medidas de control (8.5.2.4).\n\nEste es el corazón técnico del estudio, y también donde más errores se cometen: o todo se vuelve significativo (y el plan es inmanejable) o casi nada lo es (y el plan deja peligros reales sin control).\n\n## Evaluar: severidad y probabilidad\nLa norma pide evaluar cada peligro con respecto a:\n\n- La **probabilidad** de que ocurra **antes de aplicar las medidas de control**.\n- La **severidad** de sus efectos adversos para la salud en relación con el **uso previsto**.\n\nLa forma más común es una **matriz de severidad por probabilidad**. Un ejemplo de escalas:\n\n**Severidad**\n- 1, baja: efectos leves y reversibles sin atención médica.\n- 2, moderada: efectos que pueden requerir atención médica, reversibles.\n- 3, alta: efectos graves, hospitalización, efectos crónicos o en grupos vulnerables.\n- 4, muy alta: muerte, lesión permanente, efectos irreversibles.\n\n**Probabilidad** (antes de las medidas de control específicas)\n- 1, remota: no se conoce que ocurra en este tipo de proceso.\n- 2, baja: ha ocurrido en la industria, rara vez.\n- 3, media: ha ocurrido en la planta o es plausible con cierta frecuencia.\n- 4, alta: ocurre con frecuencia si no se controla.\n\nEl producto de ambas da un puntaje, y se define un umbral: por ejemplo, **severidad × probabilidad ≥ 6**, o cualquier peligro con severidad 4 y probabilidad mayor que 1, es significativo.\n\n### Lo que la matriz no te dice\nLa matriz es una herramienta, no un sustituto del juicio. Errores comunes:\n\n- **Evaluar la probabilidad después de los controles**: \"es improbable porque tenemos un tamiz\". Si la probabilidad baja gracias al tamiz, el tamiz es justamente la medida de control que debe gestionarse. La norma pide evaluar **antes** de las medidas específicas del plan (aunque se consideran los PPR generales vigentes).\n- **Escalas sin definir**: si cada miembro del equipo interpreta \"media\" de forma distinta, la evaluación no es reproducible.\n- **Severidad mal referida**: la severidad debe considerar el **uso previsto** y los **grupos vulnerables** del alimento del cliente, no la peligrosidad del químico concentrado para el operador (eso es seguridad laboral, otro sistema).\n- **Puntaje sin justificación**: cada número debe tener un porqué (datos de proveedor, historial, literatura, regulación).\n\n### Severidad en auxiliares de proceso\nPara un auxiliar, la severidad se evalúa en el **alimento**, considerando la cantidad que puede llegar como residuo. Un metal pesado tiene efectos crónicos graves; un ligero exceso de un tensioactivo de baja toxicidad quizá tenga severidad baja. Las evaluaciones toxicológicas de referencia (ingesta diaria admisible del JECFA, límites regulatorios) son el punto de partida.\n\n## El nivel aceptable\nPara cada peligro debe definirse el **nivel aceptable en el producto final**: el nivel por debajo del cual el peligro no compromete la inocuidad para el uso previsto. Fuentes:\n\n- **Requisitos legales**: límites de residuos, especificaciones regulatorias, límites de contaminantes.\n- **Especificaciones de grado alimentario** (FCC, JECFA).\n- **Requisitos de clientes**.\n- **Datos científicos**: evaluaciones toxicológicas, literatura.\n- **Experiencia** de la organización.\n\nPara algunos peligros el nivel aceptable es **ausencia** (fragmentos de vidrio, uso de una materia prima no permitida). Para otros es un **valor numérico** (arsénico menor de cierto número de mg/kg, concentración de activo dentro de una tolerancia).\n\n## Seleccionar medidas de control\nPara cada peligro significativo se seleccionan medidas de control capaces de prevenirlo o reducirlo a su nivel aceptable. En una planta química, típicamente:\n\n| Peligro significativo | Medidas de control posibles |\n|---|---|\n| Impurezas en materia prima | Proveedor aprobado, especificación, COA, verificación analítica |\n| Error de grado | Segregación, códigos de material, verificación de carga, escaneo de código de barras |\n| Sobreconcentración | Pesado verificado, dosificación automática, análisis del lote antes de liberar |\n| Arrastre en equipo compartido | Limpieza validada, criterio de aceptación, dedicación |\n| Fragmentos físicos | Filtración con integridad verificada |\n| Contaminación microbiana | Calidad del agua, conservador, limpieza y sanitización, análisis |\n| Error de etiqueta | Verificación de inicio, reconciliación, visión artificial |\n\nUna medida de control puede controlar varios peligros, y un peligro puede requerir varias medidas combinadas.\n\n## Categorizar: ¿PCC o PPRO?\nEsta es la decisión que más debate genera. ISO 22000:2018 abandonó el árbol de decisiones como método obligatorio y, en su lugar, pide categorizar con un **enfoque lógico** que incluya la evaluación de los siguientes aspectos:\n\n1. El **efecto** de la medida sobre el peligro, en relación con el **rigor** de su aplicación.\n2. La **viabilidad** de su **monitoreo**: por ejemplo, la capacidad de monitorear de forma oportuna para permitir correcciones inmediatas.\n3. Su **ubicación** en el sistema en relación con otras medidas de control.\n4. La **probabilidad de fallo** de la medida o de variabilidad significativa en el proceso.\n5. La **severidad** de las consecuencias si la medida falla.\n6. Si la medida está **específicamente establecida y aplicada** para eliminar o reducir significativamente el peligro.\n7. Los **efectos sinérgicos**: la interacción entre dos o más medidas que tiene un efecto combinado mayor que la suma.\n\nLa lógica práctica que resulta:\n\n- **PCC**: la medida se aplica en una etapa específica, tiene un efecto decisivo sobre el peligro, se puede monitorear con **límites críticos medibles** en tiempo real (o casi) y permite **corrección inmediata**; si falla, la consecuencia es severa. Ejemplos en química: la verificación de concentración del activo antes de la liberación de un sanitizante sin enjuague, con un límite cuantitativo y retención automática del lote; una etapa de filtración final con malla de integridad verificada, cuando el peligro físico es significativo y no hay otra barrera posterior.\n- **PPRO**: la medida controla un peligro significativo, pero su monitoreo se basa en **criterios de acción** que pueden ser observables o medibles, a menudo no en tiempo real, o el peligro se controla por la combinación de varias medidas, o la falla tiene menor severidad o probabilidad. Ejemplos: la segregación de grados con verificación de la carga por una segunda persona; la limpieza de cambio de producto con verificación del último enjuague; la aprobación y verificación analítica de proveedores para un contaminante específico.\n\n### El árbol de decisiones del Codex\nEl árbol de decisiones del Codex sigue siendo una herramienta útil para razonar, siempre que se use con criterio. Sus preguntas básicas (¿existe una medida de control?, ¿la etapa está diseñada específicamente para eliminar o reducir el peligro?, ¿puede la contaminación ocurrir o aumentar a niveles inaceptables?, ¿una etapa posterior eliminará o reducirá el peligro?) ayudan a evitar dos errores: declarar PCC en una etapa donde una etapa posterior controla el peligro, o ignorar que nadie más lo controlará después.\n\n### Cuántos PCC\nNo hay un número correcto. En plantas químicas es común tener **pocos PCC** (a veces ninguno o uno o dos por familia de productos) y varios **PPRO**, porque muchos peligros químicos se controlan con medidas de prevención (proveedores, segregación, formulación) más que con una etapa de eliminación. Lo que importa es que la categorización esté **justificada y documentada**.\n\n## Medidas de control que no son ni PCC ni PPRO\nSi un peligro identificado resulta **no significativo**, se controla a través de los **PPR** generales. Esto no es un descuido: es la consecuencia lógica de tener PPR sólidos. Pero hay que documentar por qué no es significativo, para que, si cambian las condiciones (nuevo proveedor, nuevo producto, nuevo uso), se revise.\n\n## La documentación del análisis\nUna tabla de análisis de peligros típica incluye, para cada etapa o materia prima:\n\n- Peligro, tipo y causa.\n- Nivel aceptable y su fuente.\n- Severidad, probabilidad y justificación.\n- ¿Significativo? (sí o no, con justificación).\n- Medida o medidas de control.\n- Categorización: PCC, PPRO o PPR, con la justificación de los criterios.\n\nLa justificación escrita es lo que permite que el estudio se audite, se actualice y se defienda. Un auditor experimentado no pregunta \"¿cuántos PCC tienen?\", sino \"¿por qué esta medida es un PPRO y no un PCC?\".\n\n## Ideas que debes llevarte\n- Cada peligro se evalúa por **severidad** (en el alimento, según el uso previsto) y **probabilidad** (antes de las medidas de control específicas).\n- Las escalas y el umbral de significancia deben estar **definidos** y cada puntaje **justificado**.\n- Cada peligro tiene un **nivel aceptable** con fuente: regulación, especificaciones, clientes, ciencia.\n- Las medidas de control se **categorizan** como PCC o PPRO con un enfoque lógico: efecto, monitoreo, ubicación, probabilidad de fallo, severidad, especificidad y sinergia.\n- En plantas químicas suele haber **pocos PCC** y varios **PPRO**; lo importante es la justificación.\n- Los peligros no significativos se gestionan con PPR, con la justificación documentada.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Evaluación",
+     "enunciado": "¿Contra qué dos factores evalúa ISO 22000 cada peligro identificado?",
+     "opciones": [
+      "La probabilidad de ocurrencia antes de las medidas de control y la severidad de sus efectos según el uso previsto",
+      "El costo de controlarlo y su frecuencia en auditorías",
+      "La peligrosidad para el operador y la cantidad almacenada",
+      "La opinión del cliente y la del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "La severidad se refiere a la salud del consumidor del alimento según el uso previsto, no a la seguridad laboral.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Probabilidad",
+     "enunciado": "Un equipo califica como improbable la presencia de fragmentos metálicos 'porque tenemos un tamiz magnético'. ¿Cuál es el error?",
+     "opciones": [
+      "Evaluó la probabilidad después de la medida de control; si el tamiz reduce el peligro, el tamiz es la medida que debe gestionarse",
+      "Ninguno, es correcto considerar todos los controles",
+      "Debió calificarlo como severidad baja",
+      "Los fragmentos metálicos no son peligros"
+     ],
+     "correcta": 0,
+     "explicacion": "La probabilidad se evalúa antes de las medidas de control específicas; de lo contrario, se ocultan las medidas que hay que gestionar.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Severidad",
+     "enunciado": "Al evaluar la severidad de un residuo de sanitizante en un alimento, ¿qué debe considerarse?",
+     "opciones": [
+      "La toxicidad a la cantidad que puede llegar al alimento, el uso previsto y los grupos vulnerables",
+      "La corrosividad del concentrado para la piel del operador",
+      "El precio del sanitizante",
+      "El número de clientes que lo compran"
+     ],
+     "correcta": 0,
+     "explicacion": "La peligrosidad del concentrado es un tema de seguridad laboral; la severidad en inocuidad se evalúa en el alimento.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Nivel aceptable",
+     "enunciado": "¿Cuál de estas es una fuente adecuada para definir el nivel aceptable de arsénico en un ácido fosfórico grado alimentario?",
+     "opciones": [
+      "La monografía de especificaciones de grado alimentario (FCC o JECFA) y la regulación aplicable",
+      "El límite que el proveedor decida",
+      "El promedio de los últimos certificados",
+      "Ninguna, el nivel aceptable siempre es cero"
+     ],
+     "correcta": 0,
+     "explicacion": "El nivel aceptable se sustenta en requisitos legales, especificaciones reconocidas, clientes y datos científicos.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Nivel aceptable",
+     "enunciado": "¿Para cuál de estos peligros el nivel aceptable es típicamente 'ausencia'?",
+     "opciones": [
+      "Fragmentos de vidrio",
+      "Concentración de activo del sanitizante",
+      "Plomo en una sal mineral",
+      "Dureza del agua de proceso"
+     ],
+     "correcta": 0,
+     "explicacion": "Algunos peligros, como el vidrio o una sustancia no permitida, no tienen un nivel tolerable; otros tienen límites numéricos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Categorización",
+     "enunciado": "¿Cuál de estos aspectos NO forma parte del enfoque lógico de ISO 22000 para categorizar medidas de control?",
+     "opciones": [
+      "El costo de implementar la medida",
+      "La viabilidad de monitorear la medida de forma oportuna",
+      "La severidad de las consecuencias si la medida falla",
+      "Los efectos sinérgicos entre medidas"
+     ],
+     "correcta": 0,
+     "explicacion": "La norma considera efecto, monitoreo, ubicación, probabilidad de fallo, severidad, especificidad y sinergia; el costo no es un criterio de categorización.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PCC",
+     "enunciado": "¿Qué característica apunta a categorizar una medida como PCC?",
+     "opciones": [
+      "Se aplica en una etapa específica, tiene efecto decisivo, se monitorea con límites críticos medibles en tiempo oportuno y permite corrección inmediata",
+      "Se aplica de forma general en toda la planta",
+      "Se verifica solo una vez al año",
+      "Su monitoreo depende de una observación subjetiva"
+     ],
+     "correcta": 0,
+     "explicacion": "Un PCC requiere límites críticos medibles y monitoreo que permita actuar antes de que el producto no inocuo salga.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PPRO",
+     "enunciado": "La segregación de grados con verificación de carga por una segunda persona controla el peligro significativo de usar grado técnico. ¿Cómo se categoriza típicamente?",
+     "opciones": [
+      "PPRO, porque se monitorea con un criterio de acción observable y es una medida preventiva",
+      "PCC, porque cualquier medida para un peligro significativo es PCC",
+      "PPR, porque los peligros químicos no son significativos",
+      "No requiere categorización"
+     ],
+     "correcta": 0,
+     "explicacion": "El monitoreo es observable (se verificó o no el código), no un límite medible continuo: encaja en PPRO.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Árbol de decisiones",
+     "enunciado": "¿Qué error ayuda a evitar la pregunta del árbol del Codex '¿una etapa posterior eliminará o reducirá el peligro?'",
+     "opciones": [
+      "Declarar PCC una etapa cuando el peligro se controla de forma eficaz más adelante",
+      "Olvidar registrar la temperatura",
+      "Elegir mal el proveedor",
+      "Calibrar los equipos"
+     ],
+     "correcta": 0,
+     "explicacion": "Si una etapa posterior controla el peligro, el PCC suele estar allí; si nadie lo controla después, la etapa actual es candidata.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Número de PCC",
+     "enunciado": "¿Por qué en plantas químicas es común tener pocos PCC y varios PPRO?",
+     "opciones": [
+      "Porque muchos peligros químicos se controlan con medidas preventivas (proveedores, segregación, formulación) más que con una etapa de eliminación",
+      "Porque los peligros químicos no son graves",
+      "Porque la norma limita el número de PCC",
+      "Porque los PPRO no requieren monitoreo"
+     ],
+     "correcta": 0,
+     "explicacion": "No hay número correcto; lo importante es la justificación documentada de la categorización.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "No significativos",
+     "enunciado": "¿Qué debe documentarse para un peligro evaluado como no significativo?",
+     "opciones": [
+      "La justificación de por qué no es significativo, para revisarla si cambian las condiciones",
+      "Nada, se elimina del estudio",
+      "Que será PCC en el futuro",
+      "El nombre de quien lo propuso"
+     ],
+     "correcta": 0,
+     "explicacion": "Los peligros no significativos se gestionan con PPR; la justificación permite revisarlos ante cambios.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Evaluación",
+     "enunciado": "Evalúa con una matriz de severidad por probabilidad el peligro 'plomo en carbonato de sodio grado alimentario' y justifica cada puntaje. Indica si es significativo con un umbral de 6.",
+     "respuesta_modelo": "Severidad: 3 (alta). El plomo es tóxico acumulativo con efectos crónicos graves, especialmente en niños y embarazadas; si el carbonato se usa como auxiliar o ingrediente, el residuo llega al alimento. Probabilidad antes de controles específicos: 2 (baja), porque el carbonato de origen mineral o sintético puede contener trazas de metales y hay antecedentes en la industria de materias primas fuera de especificación, aunque no es frecuente. Puntaje 3 × 2 = 6: significativo con el umbral de 6. Nivel aceptable: según la especificación FCC o JECFA y la regulación aplicable. Medidas: proveedor aprobado con especificación de grado alimentario, COA por lote y verificación analítica periódica independiente; típicamente categorizado como PPRO.",
+     "puntos_clave": [
+      "Severidad justificada en el alimento",
+      "Probabilidad antes de controles específicos, justificada",
+      "Cálculo y decisión contra el umbral",
+      "Nivel aceptable y medida de control"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Categorización",
+     "enunciado": "Justifica, con los criterios de ISO 22000, si el análisis de concentración de activo antes de liberar un sanitizante sin enjuague debe ser PCC o PPRO.",
+     "respuesta_modelo": "Efecto: la medida detecta y retiene lotes con sobreconcentración, que es el peligro significativo; tiene efecto decisivo. Monitoreo: se puede medir cuantitativamente (titulación o método instrumental) en cada lote antes de liberarlo, con resultado oportuno que permite retener y corregir. Ubicación: es la última barrera antes de que el producto salga; no hay etapa posterior en la planta que controle el peligro. Probabilidad de fallo: los errores de pesado o dosificación son plausibles. Severidad: residuos por encima del límite regulatorio en alimentos sin enjuague. Especificidad: se establece específicamente para ese peligro. Conclusión: encaja como PCC con límite crítico de concentración (por ejemplo, el valor declarado más la tolerancia máxima permitida), monitoreo por lote y retención automática.",
+     "puntos_clave": [
+      "Aplica varios criterios del enfoque lógico",
+      "Monitoreo medible y oportuno",
+      "Ubicación como última barrera",
+      "Conclusión coherente con límite crítico"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Errores de evaluación",
+     "enunciado": "Menciona cuatro errores frecuentes al usar una matriz de riesgo en el análisis de peligros y cómo evitarlos.",
+     "respuesta_modelo": "1) Evaluar la probabilidad después de los controles: evaluar antes de las medidas específicas y luego identificar esas medidas. 2) Escalas no definidas: documentar criterios con ejemplos para cada nivel y calibrar al equipo. 3) Confundir severidad para el operador con severidad en el alimento: evaluar en el alimento según uso previsto y grupos vulnerables. 4) Puntajes sin justificación: escribir la evidencia de cada número (datos del proveedor, historial, literatura, regulación). También: usar el umbral de forma mecánica sin juicio para peligros de severidad muy alta.",
+     "puntos_clave": [
+      "Cuatro errores pertinentes",
+      "Corrección concreta para cada uno",
+      "Referencia al uso previsto",
+      "Importancia de la justificación"
+     ],
+     "id": "q14"
+    }
+   ]
   }
  ]
 }
