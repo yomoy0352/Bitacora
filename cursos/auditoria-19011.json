@@ -1714,6 +1714,648 @@
      "id": "q15"
     }
    ]
+  },
+  {
+   "id": "9",
+   "titulo": "Auditar sistemas de inocuidad y proveedores",
+   "texto": "## Lo particular de auditar inocuidad\nLas técnicas de ISO 19011 son las mismas para cualquier disciplina, pero auditar un sistema de inocuidad exige **conocimiento específico**: peligros, controles, validación, regulación aplicable y el esquema (ISO 22000, FSSC 22000, BRCGS, SQF). Un auditor que solo revisa que \"exista el documento\" pasa por alto lo esencial: si los controles **realmente** mantienen el producto inocuo.\n\nLa pregunta de fondo en cualquier auditoría de inocuidad es: **¿qué podría salir mal con este producto, y cómo sé que el sistema lo impide?**\n\n## Auditar el análisis de peligros\nEl análisis de peligros es el corazón del sistema y el lugar donde se esconden las debilidades más graves. Al auditarlo:\n\n- **Compara el diagrama de flujo con la planta**: camina el proceso y verifica que cada etapa, reproceso, retorno y derivación esté en el diagrama. Una etapa omitida es un peligro no analizado.\n- Verifica que se consideraron peligros **biológicos, químicos** (incluidos alérgenos, residuos de limpieza, migración de envases) **y físicos**, y, según el esquema, también **radiológicos**.\n- Revisa la **justificación** de la evaluación de severidad y probabilidad: ¿se basa en datos (quejas, resultados de laboratorio, literatura, historial) o en \"siempre se ha hecho así\"?\n- Verifica que el análisis se **actualiza** ante cambios: nuevas materias primas, equipos, proveedores, productos o información de peligros emergentes.\n- Para una empresa que fabrica químicos de limpieza para la industria alimentaria, el análisis también debe cubrir el **riesgo para el cliente**: residuos en superficies de contacto, compatibilidad, instrucciones de uso y enjuague, etiquetado.\n\n## Auditar los PCC y los PPRO\nPara cada punto crítico de control (PCC) u operativo (PPRO):\n\n- **Límite crítico** o criterio de acción: ¿está **validado**? Pide la evidencia de validación (estudio, literatura científica, reglamento) y verifica que corresponde a las condiciones reales (equipo, producto, carga).\n- **Monitoreo**: observa al operador haciéndolo. ¿Sabe qué mide, con qué frecuencia y qué hacer si sale de límites?\n- **Equipos de medición**: calibrados, con incertidumbre adecuada al límite (lo visto en el curso de metrología).\n- **Correcciones y acciones correctivas**: busca desviaciones en los registros y sigue su tratamiento hasta el destino del producto.\n- **Verificación**: revisión de registros por alguien distinto del operador, en el plazo definido.\n\n### Técnica útil: buscar la desviación\nEn lugar de revisar los registros \"buenos\", busca deliberadamente los días con **desviaciones**: arranques, fines de semana, cambios de turno, mantenimientos, fallas de energía. Si el registro nunca muestra una desviación en meses, pregunta cómo es posible; a veces es real, a veces es un registro \"maquillado\".\n\n## Auditar los programas de prerrequisitos (PPR)\nLos PPR (higiene, limpieza, control de plagas, mantenimiento, agua, manejo de residuos, personal, almacenamiento) se auditan sobre todo **observando**:\n\n- Estado de instalaciones y equipos, separación de áreas, flujos de personal y materiales.\n- **Limpieza**: compara el programa con lo que ves; pide la verificación (inspección visual, ATP, hisopos) y sus tendencias.\n- **Control de plagas**: mapa de trampas frente a la realidad, tendencias de capturas, acciones cuando suben.\n- **Químicos**: almacenamiento separado y etiquetado, fichas de seguridad, control de diluciones.\n\n## Pruebas de trazabilidad y balance de masas\nUna de las técnicas más potentes en auditorías de inocuidad es la **prueba de trazabilidad** en vivo:\n\n1. El auditor elige un **lote de producto terminado** (o de materia prima).\n2. Pide rastrear **hacia atrás** (materias primas, lotes de proveedor, envases) y **hacia adelante** (clientes y cantidades enviadas).\n3. Se cronometra el tiempo de respuesta (los esquemas suelen exigir que sea rápido, del orden de horas).\n4. Se hace un **balance de masas**: cantidades recibidas, usadas, en inventario, mermas y enviadas deben cuadrar dentro de una tolerancia razonable.\n\nUn balance que no cuadra puede indicar registros incompletos, reprocesos no documentados o, en casos graves, sustitución o fraude.\n\n## Auditar la cultura de inocuidad\nFSSC 22000 y los esquemas GFSI piden evidencia de **cultura de inocuidad**: compromiso de la dirección, comunicación, capacitación, retroalimentación del personal y medición del desempeño. El auditor la evalúa con **entrevistas** en piso (¿el operador se siente con autoridad para detener la línea?), con la revisión de **objetivos** y con el seguimiento de **incidentes**. Es un tema que el último curso de esta serie profundiza.\n\n## Auditorías a proveedores (segunda parte)\n### Por qué y cuándo\nUna auditoría a proveedor es una **auditoría de segunda parte**: la organización audita a quien le suministra. No todos los proveedores necesitan auditoría presencial; la decisión es **basada en riesgo**:\n\n- **Riesgo del material**: impacto en la inocuidad o la calidad del producto (un activo de un sanitizante, un material en contacto con alimentos, frente a un cartón de embalaje secundario).\n- **Desempeño histórico**: rechazos, desviaciones, quejas, COA fuera de especificación.\n- **Certificaciones**: un proveedor certificado en un esquema reconocido puede requerir menos auditoría directa, aunque conviene revisar el **alcance** del certificado y el informe.\n- **Vulnerabilidad al fraude** del material (lo verás en el curso de fraude y defensa alimentaria).\n- **Cambios**: proveedor nuevo, cambio de planta o de proceso.\n\n### Alternativas a la auditoría presencial\n- **Cuestionarios** de autoevaluación (útiles para proveedores de bajo riesgo, pero son lo que el proveedor dice de sí mismo).\n- Revisión de certificados e **informes de auditoría** de tercera parte.\n- **Auditoría remota** (capítulo 6), con sus limitaciones.\n- Verificación **analítica** en recepción: análisis propios que confirman los COA.\n\n### Qué auditar en un proveedor de materia prima\n- **Control de especificaciones** y cambios: ¿cómo avisa de un cambio de fórmula, origen o proceso?\n- **Liberación** de lotes: métodos, equipos, competencia del laboratorio, coherencia entre el COA y los datos crudos.\n- **Trazabilidad** y prueba de retiro.\n- **Gestión de sus propios proveedores** (la cadena no termina en él).\n- **Control de contaminación** y de mezclas (líneas compartidas, limpieza entre productos).\n- **Almacenamiento y transporte**: contenedores, sellos, limpieza de cisternas.\n- **No conformidades y quejas**: cómo trata las de sus clientes.\n\n### Verificar el COA: técnica clave\nSelecciona varios COA recibidos y, en la auditoría, pide los **datos crudos** del laboratorio del proveedor para esos lotes (cromatogramas, titulaciones, bitácoras). Verifica que:\n\n- Los resultados del COA coinciden con los datos crudos.\n- El análisis se hizo **antes** de la fecha de emisión del COA.\n- El equipo estaba calibrado y el analista era competente.\n- No hay COA \"típicos\" (valores copiados de un lote a otro).\n\nUn COA que no tiene respaldo en datos crudos es una no conformidad grave, y puede indicar falsificación.\n\n## Ideas que debes llevarte\n- Auditar inocuidad exige conocer **peligros, controles y validación**: la pregunta es si los controles mantienen el producto inocuo.\n- Contrasta el **diagrama de flujo con la planta** y verifica la justificación y actualización del análisis de peligros.\n- En PCC y PPRO verifica la **validación** del límite, observa el **monitoreo** y **busca las desviaciones**.\n- Los PPR se auditan **observando**; usa tendencias de verificación.\n- La **prueba de trazabilidad** con **balance de masas** es una técnica potente para detectar registros incompletos o fraude.\n- Audita proveedores con base en **riesgo**; considera alternativas y verifica los **COA contra datos crudos**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Pregunta de fondo",
+     "enunciado": "¿Cuál es la pregunta de fondo al auditar un sistema de inocuidad?",
+     "opciones": [
+      "¿Qué podría salir mal con el producto y cómo sé que el sistema lo impide?",
+      "¿Están todos los documentos firmados?",
+      "¿Cuántos procedimientos tiene la empresa?",
+      "¿El personal usa uniforme?"
+     ],
+     "correcta": 0,
+     "explicacion": "Verificar documentos sin evaluar la eficacia de los controles deja fuera lo esencial.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diagrama de flujo",
+     "enunciado": "Al caminar la planta encuentras una línea de reproceso que no aparece en el diagrama de flujo. ¿Por qué es importante?",
+     "opciones": [
+      "Porque una etapa omitida es un peligro que no se analizó",
+      "Porque el diagrama debe ser bonito",
+      "Porque el reproceso está prohibido",
+      "No es relevante"
+     ],
+     "correcta": 0,
+     "explicacion": "El análisis de peligros se basa en el diagrama.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Validación",
+     "enunciado": "¿Qué evidencia pides para un límite crítico de un PCC?",
+     "opciones": [
+      "La evidencia de validación que demuestra que el límite controla el peligro en las condiciones reales",
+      "Solo el registro de monitoreo",
+      "La firma del gerente",
+      "El manual de calidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Monitorear un límite no validado no asegura el control.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Buscar desviaciones",
+     "enunciado": "¿Por qué conviene revisar deliberadamente registros de arranques, fines de semana y cambios de turno?",
+     "opciones": [
+      "Porque ahí es más probable encontrar desviaciones y ver cómo se trataron",
+      "Porque son más fáciles de leer",
+      "Porque la norma lo exige",
+      "Para acortar la auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Registros sin desviaciones durante meses merecen una pregunta.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "PPR",
+     "enunciado": "¿Cuál es la técnica principal para auditar los programas de prerrequisitos?",
+     "opciones": [
+      "La observación directa, complementada con registros y tendencias de verificación",
+      "Solo la revisión documental",
+      "Un cuestionario al gerente",
+      "La revisión del organigrama"
+     ],
+     "correcta": 0,
+     "explicacion": "La higiene y el estado de las instalaciones se ven en el piso.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Trazabilidad",
+     "enunciado": "¿Qué implica una prueba de trazabilidad completa en una auditoría?",
+     "opciones": [
+      "Rastrear un lote hacia atrás y hacia adelante, cronometrar y hacer un balance de masas",
+      "Solo revisar el procedimiento de retiro",
+      "Preguntar si existe un sistema de lotes",
+      "Revisar la etiqueta"
+     ],
+     "correcta": 0,
+     "explicacion": "La prueba en vivo demuestra que el sistema funciona.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Balance de masas",
+     "enunciado": "¿Qué puede indicar un balance de masas que no cuadra?",
+     "opciones": [
+      "Registros incompletos, reprocesos no documentados o incluso sustitución o fraude",
+      "Que el laboratorio es preciso",
+      "Que la empresa vende mucho",
+      "Nada relevante"
+     ],
+     "correcta": 0,
+     "explicacion": "Se investiga hasta explicar la diferencia.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Segunda parte",
+     "enunciado": "¿Qué tipo de auditoría es la que una empresa hace a su proveedor?",
+     "opciones": [
+      "De segunda parte",
+      "De primera parte",
+      "De tercera parte",
+      "De certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "La realiza una parte interesada en la organización auditada.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgo",
+     "enunciado": "¿Cuál de estos proveedores tiene más prioridad para una auditoría presencial?",
+     "opciones": [
+      "El proveedor nuevo del activo de un sanitizante sin enjuague, con dos COA fuera de especificación",
+      "El proveedor certificado de cajas de embalaje secundario sin quejas",
+      "El proveedor de papelería",
+      "El proveedor de uniformes de oficina"
+     ],
+     "correcta": 0,
+     "explicacion": "Riesgo del material, novedad y desempeño suben la prioridad.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Certificados",
+     "enunciado": "Un proveedor presenta un certificado FSSC 22000. ¿Qué conviene revisar?",
+     "opciones": [
+      "El alcance del certificado (productos y sitio) y, si es posible, el informe de auditoría",
+      "Solo el logotipo",
+      "Nada, el certificado sustituye cualquier verificación",
+      "El color del certificado"
+     ],
+     "correcta": 0,
+     "explicacion": "Un certificado puede no cubrir el producto o la planta que te suministra.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "COA",
+     "enunciado": "En la auditoría al proveedor encuentras que el análisis de un lote se hizo dos días después de la fecha de emisión del COA. ¿Qué significa?",
+     "opciones": [
+      "El COA no tenía respaldo analítico al emitirse; es una no conformidad grave que puede indicar falsificación",
+      "Es normal",
+      "Es un error de formato menor",
+      "Indica un laboratorio eficiente"
+     ],
+     "correcta": 0,
+     "explicacion": "El COA debe basarse en resultados existentes.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cuestionarios",
+     "enunciado": "¿Cuál es la limitación principal de los cuestionarios de autoevaluación de proveedores?",
+     "opciones": [
+      "Reflejan lo que el proveedor dice de sí mismo, sin evidencia verificada",
+      "Son muy caros",
+      "Están prohibidos",
+      "Solo sirven para proveedores certificados"
+     ],
+     "correcta": 0,
+     "explicacion": "Son útiles para riesgo bajo, pero no sustituyen la verificación en riesgo alto.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan de verificación de COA",
+     "enunciado": "Describe cómo verificarías en una auditoría presencial la confiabilidad de los COA de un proveedor de cloruro de benzalconio al 50 %.",
+     "respuesta_modelo": "Antes de la auditoría seleccionaría 3 a 5 COA recibidos en los últimos meses, incluyendo alguno con valores cercanos a límites. En el laboratorio del proveedor pediría, para esos lotes, los datos crudos: titulaciones o cromatogramas, pesadas, bitácoras, fechas y analista. Verificaría que los valores coinciden con el COA, que el análisis se hizo antes de la emisión, que el método es adecuado y está validado o verificado, que los equipos estaban calibrados, que el analista era competente y que no hay valores copiados entre lotes. Compararía además con los resultados de nuestro análisis de recepción para detectar sesgos. Cualquier COA sin respaldo sería una no conformidad grave con evaluación de los lotes recibidos.",
+     "puntos_clave": [
+      "Selección previa de COA",
+      "Datos crudos y fechas",
+      "Método, calibración y competencia",
+      "Comparación con análisis propios"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Proveedores",
+     "enunciado": "Propón criterios para decidir qué proveedores de una empresa de químicos de limpieza se auditan presencialmente y cuáles con otros métodos.",
+     "respuesta_modelo": "Clasificaría por riesgo combinando: impacto del material en la inocuidad y el desempeño del producto (activos de sanitizantes y materiales en contacto con superficies alimentarias, alto; envases primarios, medio; embalaje secundario, bajo); historial de desempeño (COA fuera de especificación, rechazos, quejas); certificación y su alcance; vulnerabilidad al fraude o adulteración del material; y cambios (proveedor nuevo o cambio de planta). Riesgo alto: auditoría presencial inicial y periódica (por ejemplo, anual o bienal) más verificación analítica en recepción. Riesgo medio: auditoría remota o revisión del informe de tercera parte, con verificación analítica periódica. Riesgo bajo: cuestionario y certificado. La clasificación se revisa con los datos de desempeño.",
+     "puntos_clave": [
+      "Riesgo del material",
+      "Desempeño y certificación",
+      "Fraude y cambios",
+      "Métodos por nivel de riesgo y revisión periódica"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Análisis de peligros",
+     "enunciado": "¿Qué verificarías al auditar el análisis de peligros de un fabricante de detergentes y sanitizantes para la industria alimentaria?",
+     "respuesta_modelo": "Que el diagrama de flujo coincida con la planta, incluidos reprocesos y retornos; que se consideraron peligros químicos (contaminación cruzada entre productos, impurezas de materias primas, residuos en superficies del cliente, compatibilidad), físicos (partículas, materiales extraños) y, si aplica, biológicos (contaminación microbiana en productos base agua con conservador insuficiente); que la evaluación de severidad y probabilidad esté justificada con datos; que se consideren las instrucciones de uso, dilución y enjuague y el etiquetado como medidas de control para el cliente; y que el análisis se haya actualizado ante cambios de fórmula, materia prima o proveedor.",
+     "puntos_clave": [
+      "Diagrama contra planta",
+      "Peligros químicos, físicos y biológicos relevantes",
+      "Justificación con datos",
+      "Uso por el cliente y actualización"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "titulo": "Competencia y comportamiento del auditor",
+   "texto": "## La competencia del auditor\nLa confianza en una auditoría depende de la **competencia** de quienes la realizan. La cláusula 7 de ISO 19011 trata la competencia como la combinación de **comportamiento personal** y la capacidad de **aplicar conocimientos y habilidades**, obtenidos mediante educación, experiencia laboral, formación como auditor y experiencia en auditorías.\n\nEl proceso que propone es:\n\n1. **Determinar** la competencia necesaria para cumplir el programa.\n2. Establecer los **criterios de evaluación**.\n3. Seleccionar los **métodos** de evaluación.\n4. Realizar la **evaluación**.\n5. **Mantener y mejorar** la competencia.\n\n## Comportamiento personal\nISO 19011 describe los atributos de un auditor. Conviene leerlos como conductas observables:\n\n- **Ético**: justo, veraz, sincero, honesto y discreto.\n- **De mente abierta**: dispuesto a considerar ideas o puntos de vista alternativos.\n- **Diplomático**: con tacto al tratar con las personas.\n- **Observador**: atento a su entorno físico y a las actividades.\n- **Perceptivo**: consciente de las situaciones y capaz de entenderlas.\n- **Versátil**: capaz de adaptarse a distintas situaciones.\n- **Tenaz**: persistente y orientado a lograr los objetivos.\n- **Decidido**: capaz de llegar a conclusiones oportunas basadas en razonamiento lógico y análisis.\n- **Seguro de sí mismo**: capaz de actuar de forma independiente mientras interactúa eficazmente con otros.\n- **Con fortaleza**: capaz de actuar con responsabilidad y ética aunque sus acciones no siempre sean populares y puedan generar desacuerdo o confrontación.\n- **Abierto a la mejora**: dispuesto a aprender de las situaciones.\n- **Culturalmente sensible**: respetuoso con la cultura del auditado.\n- **Colaborativo**: interactúa eficazmente con otros, incluidos los miembros del equipo y el personal del auditado.\n\nNinguno de estos atributos se demuestra con un certificado de curso: se observan **auditando**.\n\n## Conocimientos y habilidades\n### Genéricos (para cualquier auditor de sistemas de gestión)\n- **Principios, procesos y métodos** de auditoría: cómo planificar, aplicar técnicas de muestreo, entrevistar, evaluar evidencia, redactar hallazgos.\n- **Normas de sistemas de gestión** y otros documentos de referencia usados como criterios.\n- La **organización** y su contexto: estructura, cultura, procesos.\n- **Requisitos legales** y otros requisitos aplicables a la disciplina.\n\n### Específicos de la disciplina\nPara auditar inocuidad: peligros, HACCP, PPR, validación y verificación, microbiología y química básicas, el esquema aplicable y la regulación. Para auditar un laboratorio: métodos, incertidumbre, trazabilidad, ISO/IEC 17025.\n\n### Del auditor líder\nAdemás: planificar y dirigir el equipo, comunicarse con el cliente y el auditado, resolver conflictos, organizar el trabajo bajo presión de tiempo y preparar el informe. En auditorías con **métodos remotos**, también conocer las tecnologías y sus riesgos.\n\n## Cómo se evalúa la competencia\nISO 19011 propone combinar métodos:\n\n- **Revisión de registros**: educación, formación, experiencia laboral y en auditorías.\n- **Retroalimentación**: encuestas, referencias, quejas del auditado, evaluación por el auditor líder.\n- **Entrevistas**.\n- **Observación**: un auditor experimentado acompaña y evalúa en una auditoría real (*witness audit*).\n- **Pruebas**: exámenes escritos u orales.\n- **Revisión posterior** a la auditoría: calidad de los informes y de los hallazgos.\n\nEn un programa interno, una ruta práctica es:\n\n1. Formación en la norma y en ISO 19011.\n2. Participar como **observador** en auditorías.\n3. Auditar como **auditor en formación** bajo supervisión.\n4. Ser **evaluado** en una auditoría por el gestor del programa o un auditor líder.\n5. Auditar de forma **independiente**.\n6. Mantener la competencia: un número mínimo de auditorías por año, actualización ante cambios normativos, retroalimentación.\n\n## Situaciones difíciles en campo\nUna parte importante de la competencia es manejar situaciones reales:\n\n### El auditado que acapara el tiempo\nPresentaciones largas, recorridos dirigidos, comidas prolongadas. Respuesta: recordar con amabilidad el plan, pedir lo que necesitas y, si persiste, informar al guía o a la dirección y registrar el impacto en el alcance.\n\n### El auditado hostil o defensivo\nMantener la calma y el tono neutral; separar a la persona del hallazgo; explicar el propósito de la pregunta; apoyarse en la evidencia; no discutir. Si la situación impide la auditoría, informar al auditor líder.\n\n### Las respuestas que no responden\n\"Eso lo maneja otra área\", \"siempre lo hacemos bien\". Reformular con preguntas abiertas y pedir evidencia concreta: \"muéstrame el registro de la última vez\".\n\n### Las ofertas que comprometen la independencia\nRegalos, invitaciones, favores. La regla es simple: rechazarlos con amabilidad y seguir la política del programa.\n\n### Cuando encuentras algo grave\nUn riesgo inmediato para la inocuidad, la seguridad de las personas o una ilegalidad: informar **de inmediato** al auditor líder y este al auditado y al cliente, sin esperar a la reunión de cierre.\n\n## Los sesgos del auditor\nEl auditor también es humano. Sesgos frecuentes:\n\n- **Confirmación**: buscar evidencia que confirme lo que ya se cree (por ejemplo, que un área \"siempre falla\").\n- **Anclaje**: quedarse con la primera impresión.\n- **Halo**: si una parte está muy bien, suponer que el resto también.\n- **Familiaridad**: auditar algo conocido y dejar de ver lo obvio.\n\nContramedidas: definir el muestreo antes de ver los registros, buscar evidencia que contradiga la hipótesis, rotar auditores, revisar los hallazgos en equipo.\n\n## Ideas que debes llevarte\n- Competencia = **comportamiento personal** + **conocimientos y habilidades** (genéricos y de la disciplina), con un proceso para determinarla, evaluarla y mantenerla.\n- Los atributos de comportamiento (ético, de mente abierta, diplomático, observador, perceptivo, versátil, tenaz, decidido, seguro, con fortaleza, abierto a la mejora, culturalmente sensible, colaborativo) se demuestran **auditando**.\n- Evalúa con **varios métodos**, incluida la **observación** en auditorías reales; construye una ruta de formación progresiva.\n- Maneja con calma las **situaciones difíciles**, rechaza lo que compromete la independencia y escala de inmediato los **riesgos graves**.\n- Reconoce y contrarresta los **sesgos**: confirmación, anclaje, halo, familiaridad.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Competencia",
+     "enunciado": "Según ISO 19011, ¿de qué se compone la competencia del auditor?",
+     "opciones": [
+      "Comportamiento personal y capacidad de aplicar conocimientos y habilidades",
+      "Solo un certificado de curso",
+      "Solo años de experiencia laboral",
+      "Solo el conocimiento de la norma"
+     ],
+     "correcta": 0,
+     "explicacion": "Se obtiene por educación, experiencia, formación y experiencia en auditorías.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proceso",
+     "enunciado": "¿Cuál es el primer paso del proceso de evaluación de competencia de ISO 19011?",
+     "opciones": [
+      "Determinar la competencia necesaria para cumplir el programa",
+      "Aplicar un examen",
+      "Emitir un certificado",
+      "Asignar auditorías"
+     ],
+     "correcta": 0,
+     "explicacion": "Luego criterios, métodos, evaluación y mantenimiento.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fortaleza",
+     "enunciado": "¿Qué describe el atributo 'con fortaleza'?",
+     "opciones": [
+      "Actuar con responsabilidad y ética aunque las acciones no sean populares y generen desacuerdo",
+      "Tener buena condición física",
+      "Hablar con voz fuerte",
+      "Imponer su opinión"
+     ],
+     "correcta": 0,
+     "explicacion": "Mantener un hallazgo sustentado ante presión es un ejemplo.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Atributos",
+     "enunciado": "Un auditor nota que un operador evita mirar un tanque cuando pasa junto a él, y pregunta por ello. ¿Qué atributo demuestra?",
+     "opciones": [
+      "Perceptivo y observador",
+      "Diplomático",
+      "Culturalmente sensible",
+      "Colaborativo"
+     ],
+     "correcta": 0,
+     "explicacion": "Ser consciente de las situaciones y atento al entorno.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Específicos",
+     "enunciado": "¿Qué conocimiento es específico de la disciplina para auditar inocuidad?",
+     "opciones": [
+      "HACCP, PPR, validación y regulación aplicable",
+      "Cómo redactar un hallazgo",
+      "Técnicas de muestreo",
+      "Principios de auditoría"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros son conocimientos genéricos.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evaluación",
+     "enunciado": "¿Qué método de evaluación permite ver al auditor en acción?",
+     "opciones": [
+      "La observación en una auditoría real",
+      "La revisión de su currículum",
+      "Un examen escrito",
+      "Una encuesta de satisfacción"
+     ],
+     "correcta": 0,
+     "explicacion": "Lo ideal es combinar varios métodos.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ruta",
+     "enunciado": "¿Cuál es una ruta adecuada para formar auditores internos?",
+     "opciones": [
+      "Formación, observador, auditor en formación supervisado, evaluación, auditor independiente y mantenimiento",
+      "Un curso de un día y auditar solo",
+      "Leer la norma",
+      "Auditar desde el primer día como líder"
+     ],
+     "correcta": 0,
+     "explicacion": "La competencia se construye progresivamente.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tiempo",
+     "enunciado": "El auditado programa una presentación de dos horas no planificada. ¿Qué hace el auditor?",
+     "opciones": [
+      "Recordar con amabilidad el plan, pedir lo necesario e informar si persiste, registrando el impacto",
+      "Escuchar toda la presentación",
+      "Retirarse de la auditoría",
+      "Reducir el muestreo sin decir nada"
+     ],
+     "correcta": 0,
+     "explicacion": "Proteger el alcance sin confrontar.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Riesgo grave",
+     "enunciado": "Durante la auditoría ves un riesgo inmediato para la inocuidad del producto. ¿Qué haces?",
+     "opciones": [
+      "Informar de inmediato al auditor líder, quien comunica al auditado y al cliente",
+      "Esperar a la reunión de cierre",
+      "Anotarlo para el informe",
+      "Resolverlo tú mismo"
+     ],
+     "correcta": 0,
+     "explicacion": "Los riesgos inmediatos no esperan.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Regalos",
+     "enunciado": "El proveedor auditado ofrece una cena y un regalo costoso al equipo auditor. ¿Qué se hace?",
+     "opciones": [
+      "Rechazarlos con amabilidad, siguiendo la política del programa",
+      "Aceptarlos si son pequeños",
+      "Aceptarlos y no mencionarlo",
+      "Aceptarlos a cambio de reducir hallazgos"
+     ],
+     "correcta": 0,
+     "explicacion": "Protege la independencia y la imparcialidad.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sesgos",
+     "enunciado": "Un auditor entra a un área convencido de que 'siempre falla' y solo busca registros con errores. ¿Qué sesgo muestra?",
+     "opciones": [
+      "Sesgo de confirmación",
+      "Efecto halo",
+      "Anclaje",
+      "Familiaridad"
+     ],
+     "correcta": 0,
+     "explicacion": "La contramedida es definir el muestreo antes y buscar evidencia contraria.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sesgos",
+     "enunciado": "¿Qué contramedida ayuda contra el sesgo de familiaridad?",
+     "opciones": [
+      "Rotar auditores entre áreas",
+      "Auditar siempre la misma área",
+      "Reducir el tiempo de auditoría",
+      "Eliminar el muestreo"
+     ],
+     "correcta": 0,
+     "explicacion": "Ojos nuevos ven lo que la costumbre oculta.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Hostilidad",
+     "enunciado": "Un jefe de producción responde con molestia: 'Ustedes de calidad solo vienen a buscar errores, aquí todo está bien'. ¿Cómo manejas la situación?",
+     "respuesta_modelo": "Mantengo la calma y un tono neutral, sin discutir. Reconozco su preocupación y explico el propósito: la auditoría evalúa el sistema, no a las personas, y también busca lo que funciona bien para reconocerlo. Reformulo con preguntas abiertas y concretas ('¿me muestras cómo registran la concentración en el último turno?') y me apoyo en la evidencia. Si encuentro un problema, lo comento en ese momento, con el requisito y la evidencia, y le pido su punto de vista. Si la actitud impide obtener evidencia, informo al auditor líder o a la dirección y registro el impacto en el alcance.",
+     "puntos_clave": [
+      "Calma y tono neutral",
+      "Explicar el propósito y separar persona de hallazgo",
+      "Preguntas abiertas y evidencia",
+      "Escalar si impide la auditoría"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Programa de competencia",
+     "enunciado": "Diseña los criterios de competencia y la forma de evaluarlos para auditores internos de un sistema de inocuidad en tu empresa.",
+     "respuesta_modelo": "Criterios: formación en ISO 22000 o FSSC 22000 y en ISO 19011 (curso aprobado); conocimiento de HACCP, PPR y de los procesos de la planta; conocimiento de la regulación aplicable; experiencia mínima en la empresa (por ejemplo, un año); participación como observador en al menos dos auditorías y como auditor en formación en al menos dos; atributos de comportamiento evaluados. Evaluación: revisión de registros, examen escrito, observación en una auditoría por el gestor del programa con una rúbrica (planificación, preguntas, muestreo, redacción de hallazgos, comportamiento) y revisión de la calidad de sus informes. Mantenimiento: mínimo de auditorías por año, actualización ante cambios de norma o esquema, retroalimentación de auditados y reevaluación periódica.",
+     "puntos_clave": [
+      "Criterios de formación y experiencia",
+      "Conocimiento de la disciplina",
+      "Varios métodos de evaluación con observación",
+      "Mantenimiento de la competencia"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Sesgos",
+     "enunciado": "Describe un ejemplo de efecto halo en una auditoría de inocuidad y cómo evitarlo.",
+     "respuesta_modelo": "Ejemplo: el auditor encuentra un laboratorio impecable, con registros perfectos y equipo moderno, y concluye inconscientemente que el control de PCC en producción también será bueno, por lo que reduce el muestreo en planta y no encuentra que los registros de un PCC se llenan al final del turno. Para evitarlo: definir el muestreo de cada proceso en el plan antes de la auditoría y respetarlo, evaluar cada proceso con su propia evidencia, buscar activamente evidencia que contradiga la impresión general y revisar los hallazgos en equipo.",
+     "puntos_clave": [
+      "Ejemplo concreto de halo",
+      "Consecuencia sobre el muestreo",
+      "Muestreo definido previamente",
+      "Evidencia independiente y revisión en equipo"
+     ],
+     "id": "q15"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "titulo": "Caso integrador: auditoría a un proveedor de materia prima",
+   "texto": "## El contexto\nUna empresa fabrica sanitizantes y detergentes para la industria alimentaria. Uno de sus productos clave es un sanitizante **sin enjuague** a base de cloruro de benzalconio (cuaternario de amonio). El activo lo compra como solución al 50 % a un único proveedor, **Proveedor Q**, que lo fabrica en su planta y lo entrega en contenedores IBC.\n\nEn los últimos seis meses ocurrió lo siguiente:\n\n- Dos lotes llegaron con concentración por debajo de la especificación (48.6 % y 48.9 % frente a un mínimo de 49.0 %), aunque sus COA decían 50.2 % y 50.1 %.\n- Un cliente reportó olor atípico en un lote de sanitizante terminado; la investigación interna no fue concluyente.\n- Proveedor Q anunció que cambió de proveedor de una de sus materias primas (la amina).\n- Proveedor Q tiene certificación ISO 9001, pero no en un esquema de inocuidad.\n\nEl gestor del programa de auditoría decide hacer una **auditoría de segunda parte**. Tú eres el **auditor líder**.\n\n## Paso 1: decidir y definir la auditoría\n### ¿Por qué presencial?\nAplicando el enfoque basado en riesgo del programa:\n\n- **Material crítico**: es el activo de un producto sin enjuague; su concentración e impurezas afectan directamente la eficacia y los residuos en superficies de contacto con alimentos.\n- **Desempeño**: dos COA no coinciden con el análisis de recepción.\n- **Cambio** reciente de materia prima en el proveedor.\n- La certificación ISO 9001 **no cubre** inocuidad.\n\nUna auditoría remota no permitiría observar la producción, el laboratorio en operación ni los contenedores con la misma confianza. Se decide **presencial**, con una parte **remota** previa para la revisión documental.\n\n### Objetivos\n1. Determinar la causa de la discrepancia entre los COA y los resultados de recepción, y evaluar la **confiabilidad** del proceso de liberación del proveedor.\n2. Evaluar el **control de cambios** del proveedor, en particular el cambio de proveedor de amina.\n3. Evaluar los controles de **contaminación** y **trazabilidad** del producto suministrado.\n4. Proporcionar información para decidir el **estatus de aprobación** del proveedor.\n\n### Alcance\nPlanta de Proveedor Q; procesos de recepción de materias primas, producción del cloruro de benzalconio al 50 %, laboratorio de control de calidad, envasado en IBC, almacenamiento y embarque; registros de los últimos 12 meses.\n\n### Criterios\n- Especificación técnica acordada y contrato de suministro (incluida la cláusula de notificación de cambios).\n- Requisitos de ISO 9001:2015 aplicables (control de cambios, liberación, control de proveedores externos, trazabilidad).\n- Requisitos regulatorios aplicables al producto.\n\n### Equipo\nAuditor líder (tú), un químico analítico como **experto técnico** para el laboratorio, y un auditor en formación como observador. Verificas que nadie del equipo tenga conflicto de interés con Proveedor Q.\n\n## Paso 2: preparar\n### Revisión documental remota (dos semanas antes)\nSolicitas y revisas:\n\n- Diagrama de flujo del proceso y especificaciones de materias primas.\n- Procedimiento de liberación y método analítico de la concentración (titulación en dos fases).\n- Registros de control de cambios de los últimos 12 meses.\n- COA de los 12 lotes recibidos, incluidos los dos discrepantes.\n\n**Hallazgos previos de la revisión documental**:\n\n- El procedimiento de control de cambios **no menciona** la notificación a clientes.\n- El método analítico no indica cómo se estandariza el titulante.\n- Los COA de tres lotes distintos tienen **valores idénticos** en cuatro parámetros (concentración, pH, color, amina libre).\n\n### Plan de auditoría (resumen)\n\n| Hora | Actividad |\n|---|---|\n| 08:30 | Reunión de apertura |\n| 09:00 | Recorrido del proceso y producción |\n| 11:00 | Laboratorio: datos crudos de COA |\n| 13:30 | Control de cambios y compras |\n| 15:00 | Prueba de trazabilidad y embarque |\n| 16:30 | Reunión del equipo auditor |\n| 17:00 | Reunión de cierre |\n\n### Lista de verificación (extracto)\n- Para los lotes 2604-07 y 2606-02 (discrepantes) y para 3 lotes \"idénticos\": pedir datos crudos de titulación, fechas, analista, estandarización del titulante.\n- Verificar calibración de balanzas y buretas, y certificado del estándar de referencia.\n- Pedir la evaluación de riesgo del cambio de proveedor de amina, su aprobación y la evidencia de notificación.\n- Observar la limpieza de IBC retornables y la verificación de su estado antes del llenado.\n- Prueba de trazabilidad del lote 2606-02 hacia atrás (amina y otros insumos) y hacia adelante.\n\n## Paso 3: realizar la auditoría\n### Laboratorio\nCon el experto técnico revisas las bitácoras:\n\n- Para el lote 2604-07, la bitácora muestra una titulación con resultado de **48.7 %**, seguida de una repetición con **50.2 %** sin justificación de por qué se repitió ni por qué se descartó el primer resultado. El COA reporta 50.2 %.\n- El titulante (lauril sulfato de sodio) se estandariza **una vez al mes**; la última estandarización de la solución en uso tenía siete semanas y la solución estaba fuera de su vigencia según la etiqueta.\n- Para los tres lotes \"idénticos\", el analista explica que \"cuando el resultado es parecido se usa el valor del lote anterior\". No hay datos crudos de dos de esos lotes.\n\n### Control de cambios\n- El cambio de proveedor de amina se aprobó internamente con una evaluación de riesgo de una página que solo considera **precio** y plazo de entrega. No se evaluó el perfil de **impurezas** de la nueva amina ni su efecto en el olor del producto.\n- No hay evidencia de **notificación** a clientes, a pesar de la cláusula del contrato.\n- El cambio se implementó tres semanas antes del lote con olor atípico.\n\n### Producción y envasado\n- El proceso está bien controlado: recetas en sistema, pesadas registradas, temperaturas de reacción monitoreadas con equipos calibrados. **Punto fuerte**.\n- Los IBC retornables se lavan, pero no se registra la **inspección** previa al llenado; en el patio observas un IBC limpio marcado como listo con residuos visibles en la válvula.\n\n### Prueba de trazabilidad\nEl lote 2606-02 se rastrea en **40 minutos** hacia atrás y hacia adelante. El balance de masas cuadra con una diferencia de 0.4 %, dentro de lo razonable. El lote de amina usado corresponde al **nuevo proveedor**.\n\n### Comunicación durante la auditoría\nAl final de cada bloque comentas con el guía los posibles hallazgos. El jefe de laboratorio no presenta evidencia adicional sobre la repetición de la titulación; reconoce que \"a veces se repite cuando sale bajo\".\n\n## Paso 4: hallazgos\nEn la reunión del equipo auditor consolidan y clasifican:\n\n### NC 1 (mayor): liberación sin respaldo analítico confiable\n**Requisito**: ISO 9001:2015, 8.6, y especificación acordada: la liberación del producto requiere evidencia de conformidad con los criterios de aceptación y trazabilidad a la persona que autoriza. Contrato de suministro, cláusula 5: los COA deben reflejar los resultados del lote.\n**Evidencia**: el lote 2604-07 tiene un resultado de 48.7 % descartado sin justificación y un COA de 50.2 %; dos lotes (2605-03 y 2605-09) tienen COA sin datos crudos que los respalden y con valores idénticos al lote anterior, según el analista por práctica habitual; el titulante se usaba fuera de su vigencia de estandarización.\n**Declaración**: los COA emitidos no reflejan de forma confiable los resultados analíticos de los lotes.\n\n### NC 2 (mayor): cambio de materia prima sin evaluación adecuada ni notificación\n**Requisito**: ISO 9001:2015, 8.5.6 y 8.4; contrato de suministro, cláusula 7 (notificación previa de cambios de materia prima o proceso).\n**Evidencia**: el cambio de proveedor de amina (aprobado el 3 de mayo de 2026) se evaluó solo por precio y plazo; no se evaluó el perfil de impurezas ni su efecto en el producto; no hay evidencia de notificación al cliente.\n**Declaración**: un cambio de materia prima se implementó sin evaluar su efecto en la conformidad del producto y sin la notificación contractual.\n\n### NC 3 (menor): inspección de IBC previa al llenado\n**Requisito**: procedimiento PR-ENV-03 del proveedor, sección 4: inspección visual de IBC antes del llenado.\n**Evidencia**: no hay registro de inspección; un IBC marcado como listo presentaba residuos visibles en la válvula.\n**Declaración**: no se demuestra la inspección de los contenedores antes del llenado.\n\n### Punto fuerte\nControl de la reacción y de las pesadas en producción, con registros completos y equipos calibrados. Trazabilidad rápida y balance de masas correcto.\n\n### Conclusión\nEl proceso productivo está controlado, pero la **liberación analítica** y el **control de cambios** no son confiables: los COA no pueden usarse como única base de aceptación, y el cambio de amina es una causa probable, no confirmada, del olor reportado. Se recomienda al cliente de la auditoría mantener al proveedor en **aprobación condicionada**.\n\n## Paso 5: cierre e informe\nEn la reunión de cierre presentas el punto fuerte, las tres no conformidades leídas tal como irán en el informe y la conclusión. El director de planta discute la clasificación de la NC 1 (\"solo fueron unos lotes\"); explicas que la evidencia muestra una **práctica habitual**, no un caso aislado, y que afecta la confianza en todos los COA. Mantienes la clasificación y registras la opinión divergente.\n\nAcuerdan:\n\n- **Corrección** inmediata: reanálisis de los lotes en inventario y retenidos con titulante estandarizado; reporte en 5 días hábiles.\n- Plan de **acciones correctivas** con análisis de causa en 20 días hábiles.\n- Evaluación del efecto de la nueva amina (perfil de impurezas, olor) en 20 días.\n- Verificación de las acciones mayores con una **auditoría de seguimiento** en tres meses.\n\nEl informe se emite en una semana con todos los elementos de ISO 19011, incluidas las limitaciones: no se pudo observar una titulación completa porque no había lotes en análisis durante la visita.\n\n## Paso 6: acciones del lado del cliente\nLa auditoría también genera acciones en tu propia empresa:\n\n- **Aumentar** la verificación en recepción: análisis de concentración de cada lote, más amina libre y olor, mientras el proveedor esté condicionado.\n- **Investigar** el lote con olor del cliente usando la nueva información (amina del nuevo proveedor) y conservar retenidos.\n- Evaluar un **segundo proveedor** del activo, para reducir la dependencia.\n- Actualizar la **evaluación de riesgo** del proveedor y la frecuencia de auditoría.\n\n## Paso 7: seguimiento\nTres semanas después, el proveedor envía su plan:\n\n- **NC 1**: causa identificada como ausencia de una regla documentada para resultados fuera de especificación (OOS) y presión por liberar. Acciones: procedimiento de OOS con investigación obligatoria antes de repetir, prohibición explícita de copiar valores, estandarización semanal del titulante con registro, revisión de datos crudos por un segundo analista antes de emitir el COA, capacitación con evaluación.\n- **NC 2**: nuevo procedimiento de control de cambios con evaluación técnica (impurezas, desempeño), lista de clientes a notificar y aprobación del área técnica.\n- **NC 3**: lista de verificación de inspección de IBC con firma.\n\nRevisas el plan: la causa de la NC 1 va al **sistema** (no \"error del analista\"), y las acciones la atacan. En la auditoría de seguimiento, tres meses después, verificas en datos crudos de 10 lotes que los COA coinciden, que hay dos investigaciones OOS documentadas y que el análisis de recepción ya no muestra discrepancias. Las NC se cierran y el proveedor regresa a **aprobado**, con auditoría anual durante dos años.\n\n## Lo que integra este caso\n- **Programa basado en riesgo** para decidir la auditoría (capítulo 3).\n- **Objetivos, alcance y criterios** claros, equipo con experto técnico e independencia (capítulos 2 y 4).\n- **Revisión documental** que orienta la auditoría y la **lista de verificación** dirigida a hipótesis (capítulo 4).\n- **Técnicas de evidencia**: datos crudos, observación, entrevista, trazabilidad (capítulos 5 y 9).\n- Combinación **remota y presencial** justificada por riesgo (capítulo 6).\n- **Hallazgos** bien redactados y clasificados, con punto fuerte y conclusión (capítulo 7).\n- **Cierre, informe y seguimiento**, incluida la revisión de la calidad del análisis de causa (capítulo 8).\n- **Comportamiento** del auditor: fortaleza ante la presión, imparcialidad (capítulo 10).\n- La auditoría no termina en el proveedor: también genera **acciones del cliente**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Decisión",
+     "enunciado": "¿Qué combinación de factores justificó una auditoría presencial a Proveedor Q?",
+     "opciones": [
+      "Material crítico, COA discrepantes, cambio reciente de materia prima y certificación que no cubre inocuidad",
+      "Solo el precio del material",
+      "Que el proveedor lo pidió",
+      "Que había presupuesto disponible"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una decisión basada en riesgo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Experto técnico",
+     "enunciado": "¿Por qué se incluyó un químico analítico como experto técnico?",
+     "opciones": [
+      "Para aportar conocimiento específico al revisar el método y los datos crudos del laboratorio",
+      "Para dirigir la auditoría",
+      "Para redactar el informe",
+      "Para sustituir al auditor líder"
+     ],
+     "correcta": 0,
+     "explicacion": "El experto técnico apoya, no audita de forma independiente.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión documental",
+     "enunciado": "¿Qué hallazgo previo de la revisión documental orientó la verificación en el laboratorio?",
+     "opciones": [
+      "Tres COA de lotes distintos con valores idénticos en cuatro parámetros",
+      "El logotipo del proveedor",
+      "El organigrama",
+      "La dirección de la planta"
+     ],
+     "correcta": 0,
+     "explicacion": "La revisión documental permite plantear hipótesis.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "En el lote 2604-07, el primer resultado fue 48.7 % y la repetición 50.2 %, sin justificación. ¿Qué indica?",
+     "opciones": [
+      "Un resultado fuera de especificación descartado sin investigación",
+      "Una práctica analítica correcta",
+      "Un error de redacción del COA",
+      "Que el método es muy preciso"
+     ],
+     "correcta": 0,
+     "explicacion": "Un OOS requiere investigación antes de repetir o descartar.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Clasificación",
+     "enunciado": "¿Por qué la NC 1 se clasificó como mayor y no menor?",
+     "opciones": [
+      "Porque la evidencia muestra una práctica habitual que afecta la confiabilidad de todos los COA",
+      "Porque el auditor estaba molesto",
+      "Porque involucra al laboratorio",
+      "Porque fueron más de cinco hallazgos"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una falla sistémica, no un caso aislado.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control de cambios",
+     "enunciado": "¿Cuál fue la debilidad principal en la evaluación del cambio de proveedor de amina?",
+     "opciones": [
+      "Solo consideró precio y plazo, sin evaluar impurezas ni efecto en el producto",
+      "No tenía firma",
+      "Se hizo en inglés",
+      "Se hizo demasiado pronto"
+     ],
+     "correcta": 0,
+     "explicacion": "Además, no se notificó al cliente.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Conclusión prudente",
+     "enunciado": "¿Cómo se expresó la relación entre la nueva amina y el olor reportado?",
+     "opciones": [
+      "Como causa probable, no confirmada",
+      "Como causa demostrada",
+      "No se mencionó",
+      "Como irrelevante"
+     ],
+     "correcta": 0,
+     "explicacion": "Las conclusiones no deben ir más allá de la evidencia.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Desacuerdo",
+     "enunciado": "El director de planta discute la clasificación de la NC 1. ¿Qué hace el auditor líder?",
+     "opciones": [
+      "Explica la evidencia, mantiene la clasificación y registra la opinión divergente",
+      "Cambia la clasificación a menor",
+      "Elimina el hallazgo",
+      "Suspende la reunión"
+     ],
+     "correcta": 0,
+     "explicacion": "Fortaleza y presentación imparcial.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Limitaciones",
+     "enunciado": "¿Qué limitación se registró en el informe?",
+     "opciones": [
+      "No se pudo observar una titulación completa porque no había lotes en análisis",
+      "No se revisaron datos crudos",
+      "No hubo reunión de cierre",
+      "No se hizo la prueba de trazabilidad"
+     ],
+     "correcta": 0,
+     "explicacion": "Las limitaciones afectan la confianza en las conclusiones.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Acciones del cliente",
+     "enunciado": "¿Qué acción tomó la empresa cliente mientras el proveedor estuvo condicionado?",
+     "opciones": [
+      "Aumentar la verificación analítica en recepción de cada lote",
+      "Dejar de analizar en recepción",
+      "Aceptar los COA sin verificación",
+      "Cambiar la especificación para aceptar 48 %"
+     ],
+     "correcta": 0,
+     "explicacion": "La auditoría también genera acciones propias.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Análisis de causa",
+     "enunciado": "¿Por qué el auditor aceptó el análisis de causa de la NC 1 en el seguimiento?",
+     "opciones": [
+      "Porque identificó una causa del sistema (falta de regla OOS y presión por liberar) y las acciones la atacaban",
+      "Porque culpó al analista",
+      "Porque se cerró el mismo día",
+      "Porque incluyó solo capacitación"
+     ],
+     "correcta": 0,
+     "explicacion": "Las acciones fueron más allá de capacitar.",
+     "id": "q11"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Eficacia",
+     "enunciado": "¿Qué evidencia de eficacia se verificó en la auditoría de seguimiento?",
+     "opciones": [
+      "Datos crudos de 10 lotes coincidentes con los COA, investigaciones OOS documentadas y ausencia de discrepancias en recepción",
+      "La firma del plan de acción",
+      "La fecha de capacitación",
+      "Un nuevo certificado ISO 9001"
+     ],
+     "correcta": 0,
+     "explicacion": "Eficacia se demuestra con datos posteriores.",
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Hipótesis",
+     "enunciado": "Antes de la auditoría, ¿qué hipótesis podrías plantear para explicar que dos COA dijeran 50.2 % y 50.1 % mientras tu laboratorio midió 48.6 % y 48.9 %? ¿Cómo verificarías cada una?",
+     "respuesta_modelo": "1) Error o sesgo en tu laboratorio: verificar con un material de referencia, revisar estandarización y repetir con otro analista o un laboratorio externo. 2) Sesgo en el laboratorio del proveedor (titulante mal estandarizado, método distinto): revisar estandarización, método y datos crudos en la auditoría. 3) Resultados OOS descartados o COA sin respaldo: revisar bitácoras, repeticiones y fechas. 4) Cambio del producto durante el transporte o almacenamiento (evaporación, degradación, contaminación del IBC): revisar condiciones, contenedores y retenidos del proveedor. 5) Muestreo no representativo (heterogeneidad del IBC): revisar los procedimientos de muestreo de ambas partes. Las hipótesis se contrastan con evidencia antes de concluir.",
+     "puntos_clave": [
+      "Considerar tu propio laboratorio",
+      "Sesgo o falla del proveedor",
+      "Transporte y muestreo",
+      "Verificación con evidencia de cada hipótesis"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Redacción",
+     "enunciado": "Redacta la NC 3 de forma distinta si en lugar de no haber registro de inspección hubieras encontrado que el procedimiento de inspección no existe.",
+     "respuesta_modelo": "Requisito: ISO 9001:2015, 8.5.4 (preservación) y 8.5.1 (control de la producción), y la especificación acordada con el cliente, que requieren controlar los contenedores para evitar la contaminación del producto. Evidencia: el proveedor no tiene un procedimiento ni criterio definido para inspeccionar los IBC retornables antes del llenado; en el patio se observó un IBC marcado como listo con residuos visibles en la válvula. Declaración: no se ha definido ni implementado un control de los contenedores retornables antes del llenado. Por la ausencia del control y el riesgo de contaminación del activo, podría clasificarse como mayor.",
+     "puntos_clave": [
+      "Requisito ajustado a la ausencia del control",
+      "Evidencia de ausencia y del IBC",
+      "Declaración clara",
+      "Reconsideración de la clasificación"
+     ],
+     "id": "q14"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Lecciones",
+     "enunciado": "Si fueras el gestor del programa, ¿qué cambios harías al programa de auditoría a proveedores después de este caso?",
+     "respuesta_modelo": "Incluiría la verificación de COA contra datos crudos como técnica obligatoria en auditorías de proveedores de materiales críticos; incorporaría la comparación sistemática de COA con análisis de recepción como indicador de riesgo que dispare auditorías; añadiría en los contratos y en la evaluación de proveedores la verificación del control de cambios y la notificación; revisaría la frecuencia de auditoría para proveedores únicos de activos críticos; evaluaría la competencia de los auditores en temas analíticos o incluiría expertos técnicos; y buscaría reducir la dependencia de proveedores únicos. Revisaría estos cambios con indicadores del programa.",
+     "puntos_clave": [
+      "Técnica de datos crudos obligatoria",
+      "Indicadores que disparen auditorías",
+      "Control de cambios en contrato y evaluación",
+      "Competencia y frecuencia basadas en riesgo"
+     ],
+     "id": "q15"
+    }
+   ]
   }
  ]
 }
