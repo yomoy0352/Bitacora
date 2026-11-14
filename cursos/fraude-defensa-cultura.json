@@ -1,0 +1,1207 @@
+{
+ "id": "fraude-defensa-cultura",
+ "titulo": "Fraude, defensa alimentaria y cultura de inocuidad",
+ "fuente": "Curso Bitácora · nivel profesional",
+ "capitulos": [
+  {
+   "id": "1",
+   "titulo": "Cuatro amenazas distintas: inocuidad, calidad, fraude y defensa",
+   "texto": "## Más allá del HACCP\nEl sistema HACCP y los programas de prerrequisitos se diseñaron para controlar peligros **no intencionales**: una bacteria que sobrevive a un tratamiento térmico insuficiente, un residuo de limpieza que no se enjuagó, un fragmento metálico de un equipo desgastado. Funcionan porque esos peligros siguen patrones previsibles que se pueden analizar.\n\nPero hay amenazas que **no siguen esos patrones**, porque detrás de ellas hay una **persona que actúa a propósito** y que, además, intenta no ser detectada. Para esas amenazas el HACCP no basta. Ahí entran el **fraude alimentario** y la **defensa alimentaria**. Y debajo de todo, hay un factor que determina si cualquiera de estos sistemas funciona en la práctica: la **cultura de inocuidad**.\n\n## Una matriz útil\nUna forma clara de distinguir las amenazas es cruzar dos preguntas: ¿la acción es **intencional**? y ¿cuál es su **motivación**?\n\n| | No intencional | Intencional |\n|---|---|---|\n| **Motivación económica** | Calidad (un producto fuera de especificación por variación del proceso) | **Fraude alimentario** |\n| **Intención o resultado de daño** | **Inocuidad** (un peligro que no se controló) | **Defensa alimentaria** (sabotaje, contaminación deliberada) |\n\n- **Inocuidad** (*food safety*): peligros no intencionales que pueden causar daño. Herramienta: HACCP.\n- **Calidad** (*food quality*): no conformidades no intencionales que afectan atributos del producto, sin daño a la salud.\n- **Fraude alimentario** (*food fraud*): acciones **intencionales** con **motivación económica**. El defraudador no quiere dañar al consumidor (eso destruiría su negocio), pero el daño puede ocurrir como efecto colateral.\n- **Defensa alimentaria** (*food defense*): acciones **intencionales** con el propósito de **causar daño**: a consumidores, a la empresa o a su reputación.\n\nLa diferencia de motivación cambia todo: quién es el atacante, qué busca, cómo se oculta y qué controles funcionan.\n\n## Definiciones\nLa Iniciativa Mundial de Inocuidad Alimentaria (GFSI) define el **fraude alimentario** como un término colectivo que abarca la sustitución, adición, manipulación o tergiversación **deliberada e intencional** de alimentos, ingredientes, envases, etiquetado o información del producto, o declaraciones falsas o engañosas sobre un producto, con **fines de lucro**, que podrían afectar la salud del consumidor.\n\nLa **defensa alimentaria** es el conjunto de actividades para proteger los alimentos de la **adulteración intencional** por actos que buscan causar daño, incluidos los de motivación ideológica.\n\nPara cada una se usan herramientas paralelas al HACCP:\n\n- **VACCP** (*Vulnerability Assessment and Critical Control Points*): evaluación de **vulnerabilidad** al fraude.\n- **TACCP** (*Threat Assessment and Critical Control Points*): evaluación de **amenazas** de defensa.\n\nAmbos términos se popularizaron con la especificación británica PAS 96, cuya edición vigente es de 2017. Las evaluaciones se hacen con lógica de riesgo, pero con una diferencia clave: en el HACCP se estima la **probabilidad** de un peligro; aquí se estima la **vulnerabilidad** del sistema frente a alguien que lo **busca** deliberadamente.\n\n## Lo que exigen los esquemas\n### GFSI\nLos requisitos de evaluación comparativa (*benchmarking*) de GFSI incluyeron el fraude alimentario y la cultura de inocuidad en su versión 2020. La **versión 2024**, publicada en diciembre de 2024, refuerza tres puntos que verás a lo largo del curso:\n\n- **Cultura de inocuidad**: un plan de evaluación de la cultura y un compromiso demostrable de todo el personal.\n- **Defensa alimentaria**: la evaluación de amenazas y el plan deben elaborarse con **conocimiento y experiencia** adecuados.\n- **Fraude alimentario**: la evaluación de vulnerabilidad y el plan de mitigación también requieren personal **competente**.\n\n### FSSC 22000 versión 7\nLa **versión 7** de FSSC 22000 se publicó el **1 de mayo de 2026**, alineada con los requisitos GFSI 2024 y con la nueva serie **ISO 22002:2025** de programas de prerrequisitos. Puntos relevantes para este curso:\n\n- Los pasos de evaluación de amenazas (defensa) y de vulnerabilidad (fraude) quedaron en **ISO 22002-100:2025**, la norma de requisitos comunes de prerrequisitos.\n- Los requisitos adicionales de FSSC exigen que las personas que elaboran y mantienen los planes de defensa y de mitigación del fraude tengan **conocimiento y competencia** apropiados.\n- La **cultura de inocuidad y calidad** se refuerza con un enfoque más estructurado y auditable, incluidos objetivos medibles y el compromiso visible de la dirección.\n- Las auditorías de transición comienzan el 1 de mayo de 2027 y el periodo de transición termina en abril de 2028.\n\nOtros esquemas reconocidos por GFSI (BRCGS, SQF, IFS) tienen requisitos equivalentes; los detalles se actualizan con frecuencia, así que consulta siempre la edición vigente del esquema que aplica.\n\n### Regulación\nAlgunos países tienen regulación específica. En Estados Unidos, la Ley de Modernización de la Inocuidad Alimentaria (FSMA) incluye una regla de **adulteración intencional** (21 CFR 121) que exige planes de defensa alimentaria a muchas instalaciones, y la regla de controles preventivos pide considerar los peligros introducidos con **fines económicos**. Si exportas o suministras a empresas que exportan a ese mercado, tus clientes te pedirán evidencia relacionada.\n\n## ¿Por qué le importa a un fabricante de químicos de limpieza?\nUna empresa que fabrica detergentes y sanitizantes para la industria alimentaria está **dentro** de la cadena alimentaria:\n\n- Sus productos tocan superficies de contacto con alimentos; un sanitizante sin enjuague deja residuos permitidos solo si su composición es la declarada.\n- Sus materias primas pueden ser **adulteradas** (un activo diluido, una glicerina contaminada, un solvente sustituido).\n- Sus productos pueden ser **falsificados** o **diluidos** por terceros en la distribución.\n- Sus clientes certificados en esquemas GFSI deben evaluar a sus proveedores, incluidos los de químicos, en fraude y defensa.\n\n## Cultura de inocuidad: el sustrato\nLos planes de fraude y defensa, el HACCP y los prerrequisitos son documentos. Lo que hace que **funcionen** es que las personas los apliquen todos los días, reporten lo que no está bien y se sientan responsables del producto. Eso es la **cultura de inocuidad**, y es el tema de la segunda mitad del curso.\n\n## Ideas que debes llevarte\n- El HACCP controla peligros **no intencionales**; el **fraude** y la **defensa** tratan amenazas **intencionales**.\n- **Fraude**: intencional, con **motivación económica**. **Defensa**: intencional, con propósito de **causar daño**.\n- **VACCP** evalúa vulnerabilidad al fraude; **TACCP** evalúa amenazas de defensa.\n- GFSI 2024 y **FSSC 22000 v7** (mayo 2026) refuerzan la cultura de inocuidad y exigen **competencia** a quienes elaboran los planes de fraude y defensa; los pasos de evaluación están en **ISO 22002-100:2025**.\n- Un fabricante de químicos para la industria alimentaria está **dentro** de la cadena: sus materias primas y productos son objeto de fraude y sus clientes lo evaluarán.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Matriz",
+     "enunciado": "¿Qué caracteriza al fraude alimentario?",
+     "opciones": [
+      "Es intencional y tiene motivación económica",
+      "Es no intencional y causa daño",
+      "Es intencional y busca causar daño",
+      "Es no intencional y afecta atributos de calidad"
+     ],
+     "correcta": 0,
+     "explicacion": "El defraudador no busca dañar, aunque el daño puede ocurrir.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Matriz",
+     "enunciado": "¿Qué caracteriza a una amenaza de defensa alimentaria?",
+     "opciones": [
+      "Es intencional con el propósito de causar daño",
+      "Es no intencional",
+      "Busca solo ganancia económica",
+      "Es un error de proceso"
+     ],
+     "correcta": 0,
+     "explicacion": "Incluye sabotaje y contaminación deliberada.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "HACCP",
+     "enunciado": "¿Por qué el HACCP no basta para el fraude y la defensa?",
+     "opciones": [
+      "Porque está diseñado para peligros no intencionales; aquí hay una persona que actúa a propósito y evita ser detectada",
+      "Porque el HACCP es obsoleto",
+      "Porque no aplica en plantas químicas",
+      "Porque solo aplica a microbiología"
+     ],
+     "correcta": 0,
+     "explicacion": "Las amenazas intencionales no siguen patrones previsibles.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "VACCP",
+     "enunciado": "¿Qué evalúa el VACCP?",
+     "opciones": [
+      "La vulnerabilidad al fraude alimentario",
+      "Las amenazas de sabotaje",
+      "Los peligros microbiológicos",
+      "La calidad sensorial"
+     ],
+     "correcta": 0,
+     "explicacion": "El TACCP evalúa amenazas de defensa.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Diferencia",
+     "enunciado": "¿Cuál es la diferencia clave entre evaluar un peligro HACCP y una vulnerabilidad al fraude?",
+     "opciones": [
+      "En el fraude se evalúa la vulnerabilidad del sistema frente a alguien que lo busca deliberadamente",
+      "No hay diferencia",
+      "El fraude no se evalúa",
+      "En el fraude solo se mide el costo"
+     ],
+     "correcta": 0,
+     "explicacion": "La probabilidad natural no aplica a un atacante que se adapta.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "GFSI 2024",
+     "enunciado": "¿Qué reforzó la versión 2024 de los requisitos GFSI en fraude y defensa?",
+     "opciones": [
+      "Que las evaluaciones y planes los elabore personal con conocimiento y experiencia adecuados",
+      "Que se eliminen los planes de fraude",
+      "Que solo apliquen a exportadores",
+      "Que los haga el organismo de certificación"
+     ],
+     "correcta": 0,
+     "explicacion": "También reforzó la cultura de inocuidad.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "FSSC v7",
+     "enunciado": "¿Cuándo se publicó FSSC 22000 versión 7?",
+     "opciones": [
+      "1 de mayo de 2026",
+      "Abril de 2023",
+      "Diciembre de 2024",
+      "Enero de 2028"
+     ],
+     "correcta": 0,
+     "explicacion": "Las auditorías de transición inician el 1 de mayo de 2027.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "ISO 22002-100",
+     "enunciado": "En FSSC 22000 v7, ¿dónde quedaron los pasos de evaluación de amenazas y de vulnerabilidad?",
+     "opciones": [
+      "En ISO 22002-100:2025",
+      "En ISO 9001",
+      "En ISO 19011",
+      "En ISO/IEC 17025"
+     ],
+     "correcta": 0,
+     "explicacion": "Es la norma de requisitos comunes de prerrequisitos.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "FSMA",
+     "enunciado": "¿Qué regla de FSMA en Estados Unidos exige planes de defensa alimentaria?",
+     "opciones": [
+      "La regla de adulteración intencional (21 CFR 121)",
+      "La regla de etiquetado nutrimental",
+      "La regla de producto orgánico",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "Aplica a muchas instalaciones registradas.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Químicos",
+     "enunciado": "¿Por qué un fabricante de sanitizantes para la industria alimentaria debe ocuparse del fraude?",
+     "opciones": [
+      "Porque sus materias primas y productos pueden ser adulterados o falsificados y sus clientes lo evaluarán",
+      "Porque no forma parte de la cadena alimentaria",
+      "Solo por imagen",
+      "No debe ocuparse"
+     ],
+     "correcta": 0,
+     "explicacion": "Está dentro de la cadena alimentaria.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Cultura",
+     "enunciado": "¿Qué papel juega la cultura de inocuidad frente a los planes de fraude y defensa?",
+     "opciones": [
+      "Determina si los planes funcionan en la práctica",
+      "Sustituye a los planes",
+      "No tiene relación",
+      "Solo aplica a la dirección"
+     ],
+     "correcta": 0,
+     "explicacion": "Los planes son documentos; la cultura los hace funcionar.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Clasificar",
+     "enunciado": "Clasifica en inocuidad, calidad, fraude o defensa: a) un proveedor diluye el activo para ganar margen; b) un empleado despedido agrega un contaminante a un tanque; c) un lote sale con color fuera de especificación por variación de una materia prima; d) un residuo de sanitizante queda en un equipo por un enjuague insuficiente.",
+     "respuesta_modelo": "a) Fraude: intencional con motivación económica. b) Defensa: intencional con propósito de causar daño (sabotaje interno). c) Calidad: no intencional, afecta un atributo sin daño a la salud. d) Inocuidad: peligro químico no intencional que puede causar daño.",
+     "puntos_clave": [
+      "a fraude",
+      "b defensa",
+      "c calidad",
+      "d inocuidad"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Explicar",
+     "enunciado": "Explica a tu director, en un párrafo, por qué la empresa necesita planes de fraude y defensa además del HACCP.",
+     "respuesta_modelo": "El HACCP nos protege de peligros no intencionales que siguen patrones previsibles, como un error de proceso o una contaminación accidental. Pero hay riesgos donde alguien actúa a propósito: un proveedor que diluye o sustituye una materia prima para ganar dinero, o una persona que quiere dañar el producto o a la empresa. Esas personas buscan precisamente los puntos débiles y evitan ser detectadas, así que los controles del HACCP no están diseñados para ellas. Además, nuestros clientes certificados en esquemas GFSI y la versión 7 de FSSC 22000 exigen planes de fraude y defensa elaborados por personal competente; sin ellos, perderíamos confianza y negocios.",
+     "puntos_clave": [
+      "Límite del HACCP",
+      "Amenazas intencionales",
+      "Requisitos de clientes y esquemas",
+      "Impacto en el negocio"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Cadena",
+     "enunciado": "Menciona tres formas concretas en que el fraude podría afectar a una empresa que fabrica químicos de limpieza para la industria alimentaria.",
+     "respuesta_modelo": "1) Una materia prima adulterada: un activo cuaternario diluido o una glicerina contaminada con dietilenglicol, que afecte la eficacia o la seguridad del producto. 2) Falsificación de sus productos por terceros: envases rellenados con producto diluido o de otra composición, que dejen residuos no previstos o no sanitizan. 3) Información falsa en la cadena: un proveedor que entrega certificados de análisis o de origen falsos, o un distribuidor que reetiqueta producto vencido. También podría ocurrir dilución del producto en la distribución.",
+     "puntos_clave": [
+      "Materias primas",
+      "Falsificación del producto propio",
+      "Documentos falsos",
+      "Distribución"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "titulo": "Fraude alimentario: tipos y casos que cambiaron la industria",
+   "texto": "## Un problema antiguo\nLa adulteración de alimentos es tan antigua como el comercio. Ya en la Roma antigua había quejas por vino adulterado, y en 1820 el químico Friedrich Accum publicó en Londres un tratado sobre la adulteración de alimentos que denunciaba, entre otras cosas, pan blanqueado con alumbre. Lo que ha cambiado es la **escala**: cadenas de suministro globales, ingredientes que pasan por muchas manos y métodos de adulteración diseñados para engañar a los análisis.\n\n## Tipos de fraude\nLas clasificaciones más usadas distinguen:\n\n- **Dilución**: mezclar un ingrediente valioso con otro de menor valor. Aceite de oliva extra virgen con aceites de semillas; jugo con agua y azúcar; un activo químico rebajado.\n- **Sustitución**: reemplazar total o parcialmente un ingrediente por otro más barato. Una especie de pescado por otra; carne de una especie por otra.\n- **Ocultamiento**: esconder la baja calidad o un defecto. Recubrir fruta dañada; usar colorantes para disimular frescura.\n- **Mejora no aprobada**: agregar una sustancia no declarada para mejorar una característica aparente. Melamina para elevar el resultado de \"proteína\"; colorantes industriales en especias.\n- **Etiquetado engañoso**: declarar un origen, una especie, una certificación o una fecha que no corresponden. \"Orgánico\" sin serlo; reetiquetar producto vencido.\n- **Falsificación**: copiar la marca, el envase o el producto de otro.\n- **Mercado gris, robo y desvío**: venta no autorizada de producto auténtico, producto robado que regresa al mercado, producto destinado a un mercado que se desvía a otro.\n\nEn la práctica un caso puede combinar varios tipos.\n\n## Casos que cambiaron la industria\n### Melamina en leche (China, 2008)\nProveedores de leche agregaron **melamina**, un compuesto industrial rico en nitrógeno, para que la leche diluida pasara los análisis de proteína (que miden nitrógeno total con el método Kjeldahl). La leche contaminada llegó a fórmulas infantiles. Cientos de miles de niños se enfermaron, con cálculos renales, y varios murieron.\n\n**Lección**: el defraudador conoce **qué se analiza** y diseña el fraude para pasar ese análisis. Un método no específico (nitrógeno total como indicador de proteína) es una **vulnerabilidad**.\n\n### Carne de caballo en Europa (2013)\nAnálisis de ADN en Irlanda y el Reino Unido encontraron carne de caballo en productos etiquetados como res, distribuidos en muchos países a través de una cadena de proveedores, comerciantes y procesadores. No fue un riesgo grave para la salud, pero sí un escándalo de confianza enorme.\n\n**Lección**: la **complejidad** de la cadena oculta el fraude. Ninguna de las grandes marcas afectadas sabía realmente de dónde venía su carne. El caso llevó en el Reino Unido a la revisión de Chris Elliott (2014) sobre la integridad de la cadena alimentaria, y al impulso de los requisitos de fraude en los esquemas GFSI.\n\n### Colorantes Sudán en especias (Reino Unido, 2005)\nUn lote de chile en polvo adulterado con **Sudán I**, un colorante industrial no permitido en alimentos y considerado posible carcinógeno, se usó en una salsa que llegó a cientos de productos. Fue uno de los mayores retiros de producto en el Reino Unido.\n\n**Lección**: un ingrediente **minoritario** puede afectar a cientos de productos; la evaluación no debe enfocarse solo en los ingredientes principales.\n\n### Dietilenglicol en lugar de glicerina\nDesde hace décadas se repiten casos de **dietilenglicol** (DEG), un solvente industrial tóxico, vendido o mezclado como **glicerina** o propilenglicol de grado farmacéutico, sobre todo en jarabes. Hubo casos graves en Panamá (2006) y, entre 2022 y 2023, jarabes para la tos contaminados con DEG y etilenglicol se asociaron con la muerte de cientos de niños en varios países.\n\n**Lección**: para una empresa química este caso es especialmente relevante. La glicerina y los glicoles son materias primas comunes en detergentes y cosméticos; un certificado de análisis sin respaldo y una cadena de intermediarios que reetiquetan el producto son vulnerabilidades críticas.\n\n## Por qué ocurre: el triángulo del fraude\nEl criminólogo Donald Cressey describió el **triángulo del fraude**, que se aplica bien al fraude alimentario. Para que ocurra suelen coincidir:\n\n1. **Motivación** o presión: márgenes estrechos, escasez de una materia prima, alza de precios, deudas, metas imposibles.\n2. **Oportunidad**: una materia prima fácil de adulterar sin que se note, controles débiles, una cadena larga, análisis previsibles o no específicos.\n3. **Racionalización**: \"todos lo hacen\", \"no le hace daño a nadie\", \"es solo un poco\".\n\nEl fraude **no se puede eliminar** controlando la motivación de otros, pero sí se puede reducir la **oportunidad**. Por eso la evaluación de vulnerabilidad se centra en la oportunidad y en los controles.\n\n## Señales de alerta en la cadena\n- Un precio **muy por debajo** del mercado.\n- Un **cambio repentino** de origen, de proveedor del proveedor o de ruta.\n- Escasez del material en el mercado (malas cosechas, conflictos, restricciones de exportación).\n- Un proveedor que **resiste** auditorías o no da información del origen.\n- Certificados que se ven **siempre iguales** o perfectos.\n- Intermediarios que **reenvasan** o reetiquetan.\n- Diferencias sutiles: olor, color, viscosidad, comportamiento en el proceso.\n\n## Fuentes de información\nUna evaluación de fraude se apoya en información externa:\n\n- **Bases de datos** de incidentes de fraude (comerciales y públicas), que reúnen casos por ingrediente.\n- **Alertas** de las autoridades y redes de cooperación, como los informes de la red de fraude alimentario de la Unión Europea.\n- Asociaciones **sectoriales** y publicaciones científicas.\n- Información de **mercado**: precios, disponibilidad, aranceles.\n\n## Ideas que debes llevarte\n- Tipos: **dilución**, **sustitución**, **ocultamiento**, **mejora no aprobada**, **etiquetado engañoso**, **falsificación**, **mercado gris y desvío**.\n- **Melamina**: el defraudador diseña el fraude para pasar el análisis. **Carne de caballo**: la complejidad de la cadena oculta el fraude. **Sudán**: un ingrediente minoritario afecta muchos productos. **DEG**: los intermediarios y los COA sin respaldo son vulnerabilidades críticas para la industria química.\n- **Triángulo del fraude**: motivación, oportunidad y racionalización; se controla sobre todo la **oportunidad**.\n- Conoce las **señales de alerta** y usa **fuentes externas** de información.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos",
+     "enunciado": "Agregar aceite de semillas a un aceite de oliva extra virgen es un ejemplo de:",
+     "opciones": [
+      "Dilución",
+      "Falsificación",
+      "Mercado gris",
+      "Ocultamiento"
+     ],
+     "correcta": 0,
+     "explicacion": "Se mezcla un ingrediente valioso con otro de menor valor.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos",
+     "enunciado": "Agregar melamina para elevar el resultado de proteína es un ejemplo de:",
+     "opciones": [
+      "Mejora no aprobada",
+      "Dilución únicamente",
+      "Mercado gris",
+      "Etiquetado engañoso"
+     ],
+     "correcta": 0,
+     "explicacion": "Una sustancia no declarada mejora una característica aparente.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Tipos",
+     "enunciado": "Reetiquetar producto vencido con una nueva fecha es un ejemplo de:",
+     "opciones": [
+      "Etiquetado engañoso",
+      "Sustitución",
+      "Dilución",
+      "Mejora no aprobada"
+     ],
+     "correcta": 0,
+     "explicacion": "La información declarada no corresponde al producto.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Melamina",
+     "enunciado": "¿Cuál es la lección principal del caso de la melamina?",
+     "opciones": [
+      "El defraudador diseña el fraude para pasar el análisis; un método no específico es una vulnerabilidad",
+      "La leche es siempre peligrosa",
+      "Los análisis de proteína son innecesarios",
+      "Solo ocurre en China"
+     ],
+     "correcta": 0,
+     "explicacion": "El método Kjeldahl mide nitrógeno total.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Caballo",
+     "enunciado": "¿Qué mostró el caso de la carne de caballo en Europa (2013)?",
+     "opciones": [
+      "Que la complejidad de la cadena oculta el fraude",
+      "Que la carne de caballo es tóxica",
+      "Que las grandes marcas controlaban bien su cadena",
+      "Que el ADN no sirve para detectar fraude"
+     ],
+     "correcta": 0,
+     "explicacion": "Llevó a la revisión Elliott sobre integridad de la cadena.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sudán",
+     "enunciado": "¿Qué enseña el caso del colorante Sudán I en chile en polvo?",
+     "opciones": [
+      "Un ingrediente minoritario puede afectar a cientos de productos",
+      "Solo importan los ingredientes principales",
+      "Los colorantes son siempre seguros",
+      "El retiro fue pequeño"
+     ],
+     "correcta": 0,
+     "explicacion": "La evaluación debe incluir ingredientes minoritarios.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "DEG",
+     "enunciado": "¿Por qué los casos de dietilenglicol son relevantes para una empresa química?",
+     "opciones": [
+      "Porque la glicerina y los glicoles son materias primas comunes, y los COA sin respaldo e intermediarios son vulnerabilidades",
+      "Porque el DEG es un ingrediente permitido",
+      "Porque solo afecta a cosméticos",
+      "No son relevantes"
+     ],
+     "correcta": 0,
+     "explicacion": "El DEG se ha vendido o mezclado como glicerina.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Triángulo",
+     "enunciado": "¿Cuáles son los elementos del triángulo del fraude de Cressey?",
+     "opciones": [
+      "Motivación, oportunidad y racionalización",
+      "Peligro, riesgo y control",
+      "Precio, calidad y entrega",
+      "Proveedor, cliente y auditor"
+     ],
+     "correcta": 0,
+     "explicacion": "Suelen coincidir para que ocurra el fraude.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Control",
+     "enunciado": "¿Sobre qué elemento del triángulo del fraude puede actuar más la empresa?",
+     "opciones": [
+      "La oportunidad",
+      "La motivación del proveedor",
+      "La racionalización del defraudador",
+      "Ninguno"
+     ],
+     "correcta": 0,
+     "explicacion": "Se reduce con controles y menos puntos débiles.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Señales",
+     "enunciado": "¿Cuál es una señal de alerta de posible fraude?",
+     "opciones": [
+      "Un precio muy por debajo del mercado",
+      "Un proveedor que acepta auditorías",
+      "Certificados con variación normal entre lotes",
+      "Un precio estable"
+     ],
+     "correcta": 0,
+     "explicacion": "También cambios repentinos de origen y escasez.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Fuentes",
+     "enunciado": "¿Qué fuente de información es útil para una evaluación de fraude?",
+     "opciones": [
+      "Bases de datos de incidentes de fraude y alertas de autoridades",
+      "Solo la opinión del proveedor",
+      "El organigrama de la empresa",
+      "Solo la experiencia del comprador"
+     ],
+     "correcta": 0,
+     "explicacion": "Se combinan con información de mercado.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Analizar caso",
+     "enunciado": "Analiza el caso de la melamina con el triángulo del fraude: identifica la motivación, la oportunidad y la posible racionalización.",
+     "respuesta_modelo": "Motivación: presión económica de los proveedores de leche por precios bajos y la exigencia de un contenido mínimo de proteína; diluir la leche con agua aumentaba el volumen y la ganancia. Oportunidad: el análisis de proteína se basaba en nitrógeno total, no específico, y la melamina, rica en nitrógeno, elevaba el resultado sin ser detectada; la cadena tenía muchos acopiadores con poco control. Racionalización: posiblemente la creencia de que la melamina en pequeñas cantidades no hacía daño y de que otros hacían lo mismo. La empresa podía reducir la oportunidad con métodos específicos, control de acopiadores y vigilancia de anomalías.",
+     "puntos_clave": [
+      "Motivación económica",
+      "Oportunidad por método no específico y cadena",
+      "Racionalización",
+      "Control de la oportunidad"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Señales",
+     "enunciado": "Un nuevo distribuidor ofrece glicerina USP a 35 % menos que tu proveedor habitual, con COA perfecto, pero no informa el fabricante original. ¿Qué harías?",
+     "respuesta_modelo": "Lo trataría como una señal de alerta seria: precio muy bajo, intermediario y origen no declarado, en un material con historial de adulteración con dietilenglicol. No lo aprobaría sin: identificar al fabricante original y la cadena de custodia; obtener COA del fabricante, no solo del distribuidor; analizar muestras en un laboratorio competente con un método específico para DEG y etilenglicol (no solo pruebas generales); evaluar al distribuidor (auditoría o certificaciones); y, si se aprueba, analizar cada lote recibido para DEG y EG durante un periodo definido. Si no se puede verificar el origen, no se compra.",
+     "puntos_clave": [
+      "Reconocer las señales de alerta",
+      "Exigir origen y cadena de custodia",
+      "Análisis específico de DEG y EG",
+      "Verificación por lote o rechazo"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Tipos",
+     "enunciado": "Para un sanitizante a base de cuaternario de amonio, da un ejemplo realista de tres tipos de fraude diferentes que podrían afectarlo en la cadena.",
+     "respuesta_modelo": "Dilución: el proveedor del activo entrega cloruro de benzalconio con menor concentración que la declarada para ganar margen. Sustitución: el activo se sustituye parcialmente por otro cuaternario más barato, con diferente perfil de eficacia o de residuos. Falsificación: terceros rellenan envases con la marca del sanitizante con producto diluido o de otra composición y lo venden a plantas de alimentos. También podría haber etiquetado engañoso: documentos de registro o certificados de eficacia que no corresponden al producto.",
+     "puntos_clave": [
+      "Dilución",
+      "Sustitución",
+      "Falsificación",
+      "Ejemplos realistas"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "titulo": "Evaluación de vulnerabilidad al fraude",
+   "texto": "## Qué es y qué no es\nLa **evaluación de vulnerabilidad al fraude** (VACCP) identifica **dónde** la organización es vulnerable a materiales o productos fraudulentos y **cuánto**. No busca demostrar que un proveedor es deshonesto; busca reconocer qué materiales, proveedores y etapas ofrecen **oportunidad** y **motivación** para el fraude, y si los controles actuales son suficientes.\n\nNo es lo mismo que el análisis de peligros:\n\n- El análisis de peligros pregunta: ¿qué peligro puede estar presente y qué tan probable es?\n- La evaluación de vulnerabilidad pregunta: ¿qué tan **fácil** y **atractivo** sería defraudarnos aquí, y **detectaríamos** el fraude?\n\n## Alcance\nLa evaluación debería cubrir:\n\n- **Materias primas** e ingredientes, incluidos los minoritarios.\n- **Materiales de envase** (por ejemplo, plásticos reciclados no aptos declarados como grado alimentario).\n- **Producto terminado** propio: riesgo de falsificación, dilución o desvío en la distribución.\n- **Información y documentos**: certificados de análisis, de origen, de registro, de certificación (orgánico, kosher, halal).\n- **Servicios** relevantes cuando aplique (por ejemplo, laboratorios externos).\n\n## El equipo\nLos esquemas actuales exigen que la evaluación la haga personal con **conocimiento y competencia** demostrables. En la práctica, un equipo multidisciplinario:\n\n- **Compras**: conoce el mercado, los precios, los proveedores y los cambios.\n- **Calidad e inocuidad**: conoce especificaciones, controles y riesgos para la salud.\n- **Laboratorio**: conoce qué se analiza, con qué métodos y sus límites de detección.\n- **Producción**: nota diferencias en el comportamiento de los materiales.\n- Apoyo externo cuando falta conocimiento (asociaciones, bases de datos, consultores).\n\nLa competencia se demuestra con formación en fraude alimentario y en el método de evaluación, más experiencia en los materiales evaluados.\n\n## Factores de vulnerabilidad\nDistintas herramientas (como la de SSAFE o las guías de la USP) agrupan los factores de forma parecida. Una estructura práctica:\n\n### Oportunidad\n- **Facilidad técnica** de adulterar: ¿es un líquido o polvo que se puede mezclar sin notarse? ¿Hay un adulterante barato y parecido?\n- **Detectabilidad**: ¿los análisis habituales detectarían la adulteración? ¿Son específicos?\n- **Complejidad de la cadena**: número de intermediarios, reenvasado, mezcla de lotes, transporte a granel.\n- **Acceso**: ¿quién tiene acceso al material en la cadena y sin supervisión?\n\n### Motivación\n- **Valor económico** del material y diferencia de precio con posibles adulterantes.\n- **Volatilidad** de precio y disponibilidad: escasez, malas cosechas, conflictos, aranceles.\n- **Historial** de fraude del material (bases de datos, alertas).\n- Situación del **proveedor**: dificultades económicas, cambios de dueño.\n\n### Controles existentes\n- **Relación** con el proveedor: años, auditorías, certificaciones con alcance adecuado.\n- **Especificaciones** completas.\n- **Análisis** en recepción y su especificidad.\n- **Trazabilidad** hasta el origen.\n- **Sellos** e integridad de contenedores.\n- Cultura **ética** del proveedor y canales de denuncia.\n\n## Un método de puntuación\nUna forma común es puntuar cada factor (por ejemplo, de 1 a 3 o de 1 a 5) y combinarlos en una **matriz**:\n\n- **Probabilidad de fraude** (oportunidad y motivación, ajustadas por controles).\n- **Impacto** si ocurre (salud, legal, cliente, reputación).\n\n### Ejemplo simplificado\nEscala de 1 (bajo) a 3 (alto); en la columna de controles, 3 significa controles débiles:\n\n| Material | Oport. | Motiv. | Control | Impacto | Resultado |\n|---|---|---|---|---|---|\n| Glicerina | 3 | 3 | 3 | 3 | **Alta** vulnerabilidad |\n| Cloruro de benzalconio 80 % | 3 | 2 | 2 | 3 | **Alta** |\n| Hidróxido de sodio 50 % | 2 | 1 | 1 | 2 | Baja |\n| Fragancia | 2 | 2 | 2 | 1 | Media |\n| Envase de PEAD | 2 | 2 | 2 | 2 | Media |\n\nJustificación de la glicerina:\n\n- **Oportunidad**: líquido incoloro; el DEG es más barato y difícil de distinguir sin un método específico; suele comprarse a distribuidores.\n- **Motivación**: precio variable; historial internacional de adulteración.\n- **Controles**: COA del distribuidor, no del fabricante; sin análisis específico de DEG.\n- **Impacto**: grave para la salud si el producto final tiene contacto con alimentos o personas.\n\nCada organización define su escala y su regla de combinación; lo importante es que sea **coherente**, **documentada** y que las puntuaciones estén **justificadas**.\n\n## Cuidado con la falsa precisión\nLos números ayudan a ordenar, pero la evaluación es **cualitativa**: una puntuación de 2.7 frente a 2.5 no significa mucho. El valor está en la **discusión** del equipo y en las justificaciones escritas. Un error frecuente es llenar una plantilla con puntuaciones \"medias\" para todo, sin pensar.\n\n## Cuándo revisar la evaluación\n- Al menos **una vez al año**.\n- Ante **cambios**: nuevo material, proveedor, origen o ruta.\n- Ante **información nueva**: una alerta de fraude del material, una escasez del mercado, un alza de precios, un incidente propio o del sector.\n- Después de cada **hallazgo** en recepción o queja relacionada.\n\n## Documentar\nLa evaluación documentada debería incluir:\n\n- Alcance, equipo y su competencia.\n- Método y escala.\n- Fuentes de información consultadas, con fecha.\n- Puntuación y **justificación** por material.\n- Vulnerabilidades significativas que requieren medidas de mitigación (capítulo 4).\n- Fecha de la próxima revisión.\n\n## Confidencialidad\nLa evaluación de vulnerabilidad es información **sensible**: describe dónde la empresa es débil. Se comparte con quien la necesita y se protege. A los clientes y auditores se les puede mostrar, pero conviene controlar las copias.\n\n## Ideas que debes llevarte\n- La evaluación de vulnerabilidad pregunta qué tan **fácil** y **atractivo** es defraudarnos y si lo **detectaríamos**.\n- Cubre materias primas (incluidas las minoritarias), envases, producto propio, documentos y servicios.\n- La hace un **equipo competente** y multidisciplinario.\n- Factores: **oportunidad** (facilidad técnica, detectabilidad, cadena, acceso), **motivación** (valor, volatilidad, historial, situación del proveedor) y **controles** existentes.\n- Usa una escala coherente y **justificada**; evita la falsa precisión.\n- Revisa al menos anualmente y ante **cambios** o **información nueva**; protege el documento.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Pregunta",
+     "enunciado": "¿Qué pregunta central responde la evaluación de vulnerabilidad al fraude?",
+     "opciones": [
+      "¿Qué tan fácil y atractivo es defraudarnos aquí y lo detectaríamos?",
+      "¿Qué peligro microbiológico existe?",
+      "¿Cuál proveedor es deshonesto?",
+      "¿Cuánto cuesta la materia prima?"
+     ],
+     "correcta": 0,
+     "explicacion": "No busca acusar a nadie, sino identificar debilidades.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Alcance",
+     "enunciado": "¿Qué debe incluir el alcance de la evaluación?",
+     "opciones": [
+      "Materias primas, incluidas las minoritarias, envases, producto propio y documentos",
+      "Solo las tres materias primas más caras",
+      "Solo el producto terminado",
+      "Solo los proveedores nuevos"
+     ],
+     "correcta": 0,
+     "explicacion": "Un ingrediente minoritario puede afectar muchos productos.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipo",
+     "enunciado": "¿Por qué conviene que compras participe en la evaluación?",
+     "opciones": [
+      "Porque conoce el mercado, los precios, los proveedores y los cambios",
+      "Porque es quien firma",
+      "Porque lo exige la ley",
+      "No debe participar"
+     ],
+     "correcta": 0,
+     "explicacion": "La información de mercado es clave para la motivación.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Oportunidad",
+     "enunciado": "¿Cuál de estos es un factor de oportunidad?",
+     "opciones": [
+      "Que los análisis habituales no detecten la adulteración",
+      "El historial de fraude del material",
+      "La volatilidad del precio",
+      "La situación económica del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros son factores de motivación.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Motivación",
+     "enunciado": "¿Cuál de estos es un factor de motivación?",
+     "opciones": [
+      "Escasez y alza de precio del material en el mercado",
+      "Número de intermediarios",
+      "Transporte a granel",
+      "Acceso sin supervisión"
+     ],
+     "correcta": 0,
+     "explicacion": "Los otros son factores de oportunidad.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Controles",
+     "enunciado": "¿Cuál de estos es un control existente que reduce la vulnerabilidad?",
+     "opciones": [
+      "Análisis en recepción con un método específico para el adulterante probable",
+      "Comprar siempre al proveedor más barato",
+      "Aceptar el COA del distribuidor sin verificación",
+      "Cambiar de proveedor sin evaluación"
+     ],
+     "correcta": 0,
+     "explicacion": "Un método específico reduce la oportunidad.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Glicerina",
+     "enunciado": "¿Por qué la glicerina comprada a un distribuidor sin análisis de DEG resultaría con alta vulnerabilidad?",
+     "opciones": [
+      "Alta oportunidad, motivación e historial de fraude, controles débiles e impacto grave",
+      "Porque es un material sólido",
+      "Porque es barata",
+      "Porque nunca ha habido casos"
+     ],
+     "correcta": 0,
+     "explicacion": "Todos los factores apuntan en la misma dirección.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Falsa precisión",
+     "enunciado": "¿Qué riesgo tiene confiar demasiado en las puntuaciones numéricas?",
+     "opciones": [
+      "La falsa precisión: la evaluación es cualitativa y su valor está en la discusión y las justificaciones",
+      "Ninguno",
+      "Que los números sean demasiado bajos",
+      "Que el auditor no los entienda"
+     ],
+     "correcta": 0,
+     "explicacion": "2.7 frente a 2.5 no significa mucho.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión",
+     "enunciado": "¿Cuándo se debe revisar la evaluación además de la revisión anual?",
+     "opciones": [
+      "Ante cambios de material, proveedor u origen, o ante información nueva como una alerta de fraude",
+      "Solo cuando lo pida el cliente",
+      "Cada cinco años",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "El fraude responde al mercado.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Documentar",
+     "enunciado": "¿Qué elemento es indispensable en la evaluación documentada?",
+     "opciones": [
+      "La justificación de cada puntuación y las fuentes consultadas",
+      "El logotipo de la empresa",
+      "Solo la puntuación final",
+      "La firma del proveedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Sin justificación no se puede revisar ni auditar.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Confidencialidad",
+     "enunciado": "¿Cómo debe tratarse el documento de evaluación de vulnerabilidad?",
+     "opciones": [
+      "Como información sensible, compartida con quien la necesita y con copias controladas",
+      "Publicarlo en el sitio web",
+      "Enviarlo a todos los proveedores",
+      "Pegarlo en el comedor"
+     ],
+     "correcta": 0,
+     "explicacion": "Describe dónde la empresa es débil.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Evaluar",
+     "enunciado": "Evalúa la vulnerabilidad al fraude del hipoclorito de sodio al 13 % comprado a granel a un proveedor local con 8 años de relación, con análisis de cloro disponible en cada recepción. Justifica cada factor.",
+     "respuesta_modelo": "Oportunidad: media; es un líquido que podría diluirse con agua, pero el análisis de cloro disponible en cada recepción es específico para esa dilución; el transporte a granel ofrece cierta oportunidad de manipulación. Motivación: baja a media; es un material de bajo valor, pero con concentración variable por degradación natural, lo que podría ocultar una dilución pequeña; precio relativamente estable. Controles: fuertes; relación larga, análisis por lote, especificación clara. Impacto: medio; un hipoclorito diluido afecta la eficacia del producto, no suele generar un peligro tóxico nuevo, aunque podrían considerarse impurezas como clorato. Resultado: vulnerabilidad baja a media; mantener controles y revisar si cambian proveedor, precio o resultados.",
+     "puntos_clave": [
+      "Oportunidad con justificación",
+      "Motivación con justificación",
+      "Controles existentes",
+      "Impacto y resultado"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Equipo",
+     "enunciado": "Propón la composición del equipo de evaluación de vulnerabilidad al fraude en tu empresa y cómo demostrarías su competencia.",
+     "respuesta_modelo": "Equipo: coordinador de inocuidad o del sistema de gestión (líder), comprador de materias primas, jefe de laboratorio, un representante de producción y, para materiales específicos, el responsable técnico o de desarrollo. Competencia: registros de formación en fraude alimentario y en el método de evaluación usado (por ejemplo, un curso reconocido), experiencia documentada con los materiales evaluados, conocimiento de las fuentes de información (bases de datos, alertas) y participación en evaluaciones previas; actualización periódica. Si falta conocimiento sobre algún material, se incorpora apoyo externo y se documenta.",
+     "puntos_clave": [
+      "Equipo multidisciplinario",
+      "Líder definido",
+      "Formación y experiencia documentadas",
+      "Apoyo externo y actualización"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Información nueva",
+     "enunciado": "Una alerta internacional informa adulteración de goma xantana con almidón modificado. Tu empresa usa goma xantana en un detergente en gel. ¿Qué haces con tu evaluación?",
+     "respuesta_modelo": "Reviso la evaluación del material de inmediato: aumento la puntuación de historial y motivación, y reviso la oportunidad (¿mis análisis de recepción, como viscosidad, detectarían el almidón?). Pregunto al proveedor por el origen y su control del fabricante, y si su fuente está involucrada en la alerta. Si la vulnerabilidad resulta significativa, defino medidas de mitigación: análisis específico de una muestra de lotes (por ejemplo, prueba de almidón con yodo o análisis más específico), COA del fabricante, revisión de lotes en inventario y de retenidos. Documento la revisión, la fuente y la fecha.",
+     "puntos_clave": [
+      "Revisión inmediata ante información nueva",
+      "Ajuste de factores",
+      "Consulta al proveedor y verificación",
+      "Medidas y documentación"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "titulo": "Plan de mitigación del fraude",
+   "texto": "## De la evaluación a la acción\nLa evaluación de vulnerabilidad dice **dónde** hay riesgo; el **plan de mitigación** dice **qué se hace** al respecto. Los esquemas piden un plan documentado, implementado y respaldado por el sistema de gestión, que especifique las medidas de mitigación para las vulnerabilidades significativas.\n\nLas medidas deben reducir la **oportunidad** (hacer más difícil el fraude) y aumentar la **probabilidad de detección** (que, si ocurre, se descubra pronto).\n\n## Tipos de medidas\n### Gestión de proveedores\n- **Aprobación** basada en riesgo: auditorías para materiales de alta vulnerabilidad, con foco en el origen, la trazabilidad y la verificación de COA (lo viste en el curso de auditoría).\n- Comprar al **fabricante** o a distribuidores autorizados que demuestren la cadena de custodia.\n- **Contratos** que exijan notificar cambios de origen, proceso o proveedor, y que permitan auditar y tomar muestras.\n- Conocer el **proveedor del proveedor** en materiales críticos.\n- Evitar **cambios** de proveedor por precio sin evaluación (el control de cambios del curso de CAPA).\n\n### Especificaciones\nEspecificaciones completas que incluyan los parámetros que permitan detectar adulteraciones **probables**, no solo los de calidad habituales. Por ejemplo, para la glicerina: contenido, identidad y límites de **DEG y etilenglicol**.\n\n### Análisis y autenticación\nEl análisis es una barrera clave, pero debe diseñarse **contra el fraude**:\n\n- **Métodos específicos**: el fraude se diseña para pasar los análisis habituales. Un método específico para el adulterante probable (cromatografía para DEG en glicerina) vale más que muchas pruebas generales.\n- **Huella o perfil**: comparar el perfil del material (espectro infrarrojo, perfil cromatográfico) con una referencia auténtica; detecta adulteraciones no previstas.\n- **Frecuencia impredecible**: si el proveedor sabe que solo se analiza el primer lote o cada décimo lote, la barrera se debilita. Un muestreo **aleatorio** es más disuasivo.\n- **Verificación de COA**: comparar periódicamente los resultados propios o de un laboratorio externo con los del COA; buscar COA \"demasiado perfectos\" o copiados.\n- **Laboratorios competentes**: con métodos validados y, cuando aplique, acreditados.\n\n### Integridad física y cadena de custodia\n- **Sellos** numerados en cisternas y contenedores, verificados en recepción contra la documentación.\n- **Transporte** controlado y limpieza documentada de cisternas.\n- Verificación de **etiquetas**, lotes y cantidades.\n- **Conciliación** de cantidades: balance de masas, faltantes o sobrantes inexplicables.\n\n### Protección del producto propio\n- Envases con **evidencia de manipulación** y diseños difíciles de copiar.\n- **Códigos** de lote y trazabilidad hasta el cliente.\n- Control de **distribuidores** autorizados.\n- Vigilancia del **mercado**: precios anormalmente bajos de tu producto, quejas de clientes que no son tuyos, envases sospechosos.\n- Control de envases y etiquetas **sobrantes** o defectuosos (destrucción documentada).\n\n### Vigilancia de la información\n- Seguimiento de **alertas** y bases de datos de fraude.\n- Seguimiento de **precios** y disponibilidad de materiales críticos.\n- Canal para que el personal reporte **anomalías** (un material que \"se comporta raro\").\n\n## Elegir medidas proporcionales\nNo todos los materiales necesitan todo. Una regla práctica:\n\n| Vulnerabilidad | Medidas típicas |\n|---|---|\n| Baja | Controles habituales: especificación, COA, proveedor aprobado, revisión anual |\n| Media | Además: verificación periódica de COA, análisis específico en una fracción de lotes, información de origen |\n| Alta | Además: compra al fabricante o cadena de custodia demostrada, análisis específico frecuente o por lote, sellos, auditoría al proveedor, vigilancia de mercado |\n\n## El plan documentado\nPara cada vulnerabilidad significativa, el plan debería indicar:\n\n- La **vulnerabilidad** (material, tipo de fraude probable).\n- Las **medidas** de mitigación.\n- Los **responsables**.\n- La **frecuencia** y el método de **verificación** de que las medidas se aplican.\n- Qué hacer si se **detecta** un posible fraude (respuesta).\n- Los registros que se conservan.\n\n### Ejemplo de entrada del plan\n| Elemento | Contenido |\n|---|---|\n| Material | Glicerina USP |\n| Fraude probable | Sustitución o mezcla con DEG o EG; dilución |\n| Medidas | Compra solo a fabricantes aprobados o distribuidores con cadena de custodia documentada; especificación con límites de DEG y EG; análisis por cromatografía de gases para DEG y EG en cada lote recibido; sellos numerados; verificación trimestral de COA por laboratorio externo |\n| Responsables | Compras (proveedores), laboratorio (análisis), almacén (sellos) |\n| Verificación | Revisión mensual de registros de recepción por calidad; auditoría interna anual |\n| Respuesta | Retener el lote, confirmar con laboratorio externo, notificar al proveedor y a la dirección, evaluar productos fabricados, evaluar notificación a clientes y autoridades |\n\n## Responder a un posible fraude\nCuando hay sospecha:\n\n1. **Retener** el material y los productos fabricados con él.\n2. **Confirmar** con evidencia (segundo análisis, laboratorio externo).\n3. Evaluar el **impacto** en inocuidad y en los clientes (como en el curso de CAPA).\n4. **Notificar** internamente y, según el caso, a clientes y autoridades.\n5. **Conservar** evidencia: muestras, documentos, sellos, comunicaciones; un fraude puede tener consecuencias legales.\n6. Revisar la **evaluación** y el plan.\n\n## Verificar que el plan funciona\n- Revisiones de registros: ¿se hicieron los análisis y se verificaron los sellos?\n- **Auditoría interna** del plan, incluida en el programa (los esquemas lo piden).\n- Pruebas: por ejemplo, analizar ocasionalmente una muestra \"de control\" o simular una discrepancia documental para ver si se detecta.\n- Revisión en la **revisión por la dirección**.\n\n## Ideas que debes llevarte\n- El plan de mitigación reduce la **oportunidad** y aumenta la **detección** para las vulnerabilidades significativas.\n- Medidas: gestión de **proveedores** y cadena de custodia, **especificaciones** completas, **análisis específicos** y de perfil, frecuencia **impredecible**, verificación de **COA**, sellos y conciliación, protección del producto propio y vigilancia de información.\n- Las medidas son **proporcionales** a la vulnerabilidad.\n- Documenta vulnerabilidad, medidas, responsables, verificación y **respuesta**.\n- Ante sospecha: retener, confirmar, evaluar impacto, notificar, **conservar evidencia** y revisar.\n- Verifica el plan con registros, **auditoría interna** y pruebas.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Objetivo",
+     "enunciado": "¿Qué buscan las medidas del plan de mitigación del fraude?",
+     "opciones": [
+      "Reducir la oportunidad y aumentar la probabilidad de detección",
+      "Cambiar la motivación del proveedor",
+      "Eliminar todos los proveedores",
+      "Reducir costos de compra"
+     ],
+     "correcta": 0,
+     "explicacion": "La empresa actúa sobre lo que controla.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Especificidad",
+     "enunciado": "¿Por qué un método analítico específico para el adulterante probable es tan valioso?",
+     "opciones": [
+      "Porque el fraude suele diseñarse para pasar los análisis habituales",
+      "Porque es más barato",
+      "Porque lo pide el proveedor",
+      "No es valioso"
+     ],
+     "correcta": 0,
+     "explicacion": "Lección del caso de la melamina.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Perfil",
+     "enunciado": "¿Qué ventaja tiene comparar el perfil o huella de un material con una referencia auténtica?",
+     "opciones": [
+      "Puede detectar adulteraciones no previstas",
+      "Sustituye a la especificación",
+      "Elimina la necesidad de proveedores aprobados",
+      "Solo sirve para alimentos"
+     ],
+     "correcta": 0,
+     "explicacion": "No depende de saber de antemano el adulterante.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Frecuencia",
+     "enunciado": "¿Por qué un muestreo aleatorio es más disuasivo que uno fijo?",
+     "opciones": [
+      "Porque el proveedor no puede predecir qué lote se analizará",
+      "Porque es más barato",
+      "Porque requiere menos análisis siempre",
+      "No es más disuasivo"
+     ],
+     "correcta": 0,
+     "explicacion": "Un patrón conocido debilita la barrera.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sellos",
+     "enunciado": "¿Para qué sirven los sellos numerados en cisternas?",
+     "opciones": [
+      "Para verificar en recepción que el contenedor no fue manipulado en tránsito",
+      "Para decorar",
+      "Para identificar al chofer",
+      "Para medir la temperatura"
+     ],
+     "correcta": 0,
+     "explicacion": "Se verifican contra la documentación.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Producto propio",
+     "enunciado": "¿Qué medida ayuda a proteger tu propio producto contra la falsificación?",
+     "opciones": [
+      "Vigilar el mercado por precios anormalmente bajos y quejas de clientes que no son tuyos",
+      "Vender a cualquier distribuidor",
+      "Eliminar los códigos de lote",
+      "Usar envases genéricos"
+     ],
+     "correcta": 0,
+     "explicacion": "También envases con evidencia de manipulación y distribuidores autorizados.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporcionalidad",
+     "enunciado": "¿Qué medidas corresponden a un material de vulnerabilidad baja?",
+     "opciones": [
+      "Controles habituales: especificación, COA, proveedor aprobado y revisión anual",
+      "Análisis por lote con cromatografía y auditoría anual",
+      "Cambiar de proveedor",
+      "Ninguna medida"
+     ],
+     "correcta": 0,
+     "explicacion": "Las medidas se ajustan a la vulnerabilidad.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Plan",
+     "enunciado": "¿Qué debe incluir cada entrada del plan de mitigación?",
+     "opciones": [
+      "Vulnerabilidad, medidas, responsables, verificación y respuesta",
+      "Solo el nombre del proveedor",
+      "Solo el precio",
+      "Solo la puntuación de la evaluación"
+     ],
+     "correcta": 0,
+     "explicacion": "Y los registros que se conservan.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Respuesta",
+     "enunciado": "¿Qué es lo primero ante la sospecha de un material fraudulento?",
+     "opciones": [
+      "Retener el material y los productos fabricados con él",
+      "Devolverlo al proveedor sin análisis",
+      "Usarlo y vigilar",
+      "Publicarlo en redes sociales"
+     ],
+     "correcta": 0,
+     "explicacion": "Luego confirmar, evaluar impacto y notificar.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Evidencia",
+     "enunciado": "¿Por qué es importante conservar muestras, documentos y sellos ante un posible fraude?",
+     "opciones": [
+      "Porque un fraude puede tener consecuencias legales y la evidencia es necesaria",
+      "Por costumbre",
+      "Para reciclarlos",
+      "No es importante"
+     ],
+     "correcta": 0,
+     "explicacion": "También sirve para la investigación de causa.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Verificación",
+     "enunciado": "¿Cómo se verifica que el plan de mitigación funciona?",
+     "opciones": [
+      "Con revisión de registros, auditoría interna, pruebas y revisión por la dirección",
+      "Solo con la firma del plan",
+      "Preguntando al proveedor",
+      "No se verifica"
+     ],
+     "correcta": 0,
+     "explicacion": "Los esquemas piden incluirlo en la auditoría interna.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Plan",
+     "enunciado": "Escribe la entrada del plan de mitigación para el cloruro de benzalconio al 80 %, evaluado con vulnerabilidad alta por riesgo de dilución y sustitución por otros cuaternarios.",
+     "respuesta_modelo": "Material: cloruro de benzalconio 80 %. Fraude probable: dilución con agua o solventes; sustitución parcial por otros cuaternarios más baratos. Medidas: compra solo a fabricantes aprobados o con cadena de custodia documentada; especificación con contenido de activo, distribución de cadenas alquílicas (perfil C12/C14/C16) y amina libre; análisis de activo en cada lote y perfil cromatográfico en lotes seleccionados al azar; verificación trimestral de COA por laboratorio externo; sellos numerados en contenedores; auditoría al fabricante cada dos años. Responsables: compras, laboratorio y almacén. Verificación: revisión mensual de registros por calidad y auditoría interna anual. Respuesta: retener el lote, confirmar con laboratorio externo, evaluar productos fabricados, notificar al proveedor y a la dirección, y evaluar comunicación a clientes.",
+     "puntos_clave": [
+      "Fraude probable",
+      "Medidas específicas incluido el perfil",
+      "Responsables y verificación",
+      "Respuesta definida"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Producto propio",
+     "enunciado": "Un cliente te envía la foto de un envase con tu marca, comprado a un distribuidor que no conoces, a un precio 40 % menor. ¿Qué haces?",
+     "respuesta_modelo": "Lo trato como posible falsificación o desvío. Pido al cliente que conserve el envase y, si es posible, que lo envíe; reviso el código de lote en mi trazabilidad (¿existe?, ¿a quién se vendió?); analizo el contenido contra la especificación; comparo envase, etiqueta y cierre con los originales. Si es falso o diluido, informo a los clientes en riesgo, evalúo acciones legales y la notificación a la autoridad, conservo la evidencia y refuerzo la protección del producto (envases con evidencia de manipulación, distribuidores autorizados, vigilancia de mercado). Si es auténtico pero desviado, investigo el canal de distribución.",
+     "puntos_clave": [
+      "Conservar evidencia",
+      "Verificar lote y analizar",
+      "Comunicar y acciones legales",
+      "Reforzar medidas"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Verificación",
+     "enunciado": "Diseña una prueba para verificar que el control de sellos en recepción realmente funciona.",
+     "respuesta_modelo": "De forma planificada y autorizada por la dirección, preparar con el transportista un embarque cuyo número de sello no coincida con el de la documentación (o un sello con evidencia de manipulación) y observar si el personal de recepción lo detecta, retiene la unidad y escala según el procedimiento. Registrar el resultado. Si no se detecta, analizar por qué (formato, capacitación, prisa, falta de autoridad para retener) y corregir. Complementar con la revisión de una muestra de registros de recepción para ver si el número de sello se anota y se compara de verdad.",
+     "puntos_clave": [
+      "Prueba planificada y autorizada",
+      "Observación de la respuesta",
+      "Análisis si falla",
+      "Revisión de registros"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "titulo": "Defensa alimentaria: amenazas y evaluación",
+   "texto": "## Casos que muestran el riesgo\nLa contaminación **deliberada** de productos es rara, pero cuando ocurre sus efectos son graves y duraderos:\n\n- **Chicago, 1982**: cápsulas de un analgésico de venta libre fueron contaminadas con cianuro en los anaqueles de tiendas; murieron siete personas. El caso transformó la industria de envases y dio origen a los cierres con **evidencia de manipulación** que hoy son estándar.\n- **Oregón, 1984**: miembros de una secta contaminaron con *Salmonella* barras de ensalada de varios restaurantes de un condado para influir en una elección local; más de 700 personas enfermaron. Es uno de los ataques biológicos más grandes en Estados Unidos.\n- **Japón, 2013**: un trabajador temporal de una planta de alimentos congelados, inconforme con sus condiciones laborales, contaminó productos con el plaguicida **malatión**; miles de personas reportaron síntomas y se retiraron millones de paquetes.\n\nObserva a los atacantes: una persona desconocida en la cadena de venta, un grupo con motivación ideológica y un **empleado** con acceso legítimo. Este último perfil, el de la amenaza **interna**, es el que la mayoría de las empresas subestima.\n\n## Quién podría atacar\nLas guías de defensa alimentaria, como PAS 96, describen distintos perfiles de atacante. Conocerlos ayuda a pensar qué buscan y qué acceso tienen:\n\n- **Empleado o excolaborador inconforme**: busca vengarse de la empresa o de un jefe; conoce la planta, los horarios y los puntos débiles.\n- **Extorsionador**: amenaza con contaminar (o dice haberlo hecho) para obtener dinero.\n- **Activista o extremista**: busca publicidad para una causa o causar daño a gran escala.\n- **Persona con trastornos** o motivaciones irracionales: difícil de predecir.\n- **Delincuente profesional**: robo, falsificación, desvío.\n- **Ciberatacante**: altera sistemas, recetas o equipos controlados por computadora, o secuestra datos.\n\n## Tipos de amenaza\n- **Contaminación maliciosa**: agregar un agente químico, biológico o físico para causar daño.\n- **Extorsión**: la amenaza de contaminación, real o no, ya causa un incidente: hay que evaluar, retener, quizá retirar.\n- **Sabotaje** de equipos o procesos, incluido el ciberataque a sistemas de control.\n- **Espionaje** y robo de información.\n- **Falsificación** (se traslapa con el fraude).\n\n## Evaluación de amenazas: el TACCP\nLa **evaluación de amenazas** identifica los puntos del proceso donde un atacante podría contaminar el producto con mayor impacto, y evalúa si las medidas actuales son suficientes.\n\n### Pasos generales\n1. Formar un equipo **competente** (incluye seguridad física, sistemas, recursos humanos, producción y calidad).\n2. Describir el proceso con un diagrama, incluidos los flujos de **personas** y **materiales** y los sistemas informáticos que controlan el proceso.\n3. Identificar los posibles **atacantes** y sus motivaciones.\n4. Identificar los **puntos vulnerables**: dónde se puede acceder al producto y contaminarlo.\n5. Evaluar cada punto con criterios definidos.\n6. Determinar medidas de **mitigación** para los puntos significativos (capítulo 6).\n\n### Criterios para evaluar un punto\nUna referencia útil es el enfoque de la regla de adulteración intencional de FSMA, que pide considerar tres elementos en cada punto, paso o procedimiento:\n\n- **Impacto** potencial en la salud pública: severidad y **escala** (cuántas porciones o clientes podrían verse afectados).\n- **Grado de acceso físico** al producto: barreras, supervisión, visibilidad.\n- **Capacidad del atacante** de contaminar con éxito: ¿el agente se mezclaría bien y llegaría al consumidor?, ¿algún paso posterior lo eliminaría?\n\nFSMA también identificó **tipos de actividad clave** que, por su naturaleza, suelen ser los más vulnerables:\n\n- **Recepción y carga de líquidos a granel**.\n- **Almacenamiento y manejo de líquidos** (tanques, silos, líneas abiertas).\n- **Manejo de ingredientes secundarios** (aditivos o ingredientes menores que se pesan o dosifican, a menudo en áreas con poca supervisión).\n- **Mezclado y actividades similares** (donde un contaminante se distribuye uniformemente en un gran volumen).\n\nOtra herramienta clásica es **CARVER + Shock**, de origen militar y adaptada a alimentos por autoridades de Estados Unidos. Evalúa siete atributos de cada punto:\n\n- **Criticidad**: impacto en la salud y la economía.\n- **Accesibilidad**: facilidad de acceso físico.\n- **Recuperabilidad**: capacidad del sistema de recuperarse.\n- **Vulnerabilidad**: facilidad de realizar el ataque una vez dentro.\n- **Efecto**: magnitud de la pérdida directa.\n- **Reconocibilidad**: facilidad de identificar el objetivo.\n- **Impacto psicológico** (*shock*): efecto en la confianza pública.\n\n### Lo que hace vulnerable a un punto\n- Producto **expuesto**: tanques abiertos, tolvas, mezcladores.\n- Etapa **posterior** a cualquier tratamiento que pudiera eliminar el contaminante.\n- **Gran volumen** que se distribuye a muchos clientes.\n- Poca **supervisión**: turnos nocturnos, áreas aisladas, fines de semana.\n- Acceso de **muchas personas**, incluidos contratistas.\n- Materiales en recepción **sin sellos** verificados.\n- Sistemas de control **conectados** a redes sin protección.\n\n## Particularidades de una planta química\nEn una planta que fabrica químicos para la industria alimentaria hay dos dimensiones:\n\n1. **El producto como objetivo**: un sanitizante sin enjuague contaminado deliberadamente llegaría a superficies de contacto con alimentos de muchos clientes. Las etapas de mezclado en tanques y el llenado son puntos de interés.\n2. **La planta como fuente**: la empresa almacena químicos peligrosos que podrían ser **robados** para usarlos como contaminantes en otro lugar. El control de inventario y de acceso a sustancias peligrosas es parte de la defensa, y en muchos países también de requisitos de seguridad química.\n\n## El factor ciber\nCada vez más procesos dependen de recetas en sistemas, dosificadores automáticos y controladores conectados. Una alteración maliciosa de una receta en el sistema (como la del caso integrador del curso de CAPA, pero intencional) podría producir lotes peligrosos sin que nadie toque físicamente el producto. La evaluación de amenazas debe incluir:\n\n- Quién puede **modificar recetas** y parámetros, y con qué control.\n- Si los cambios quedan **registrados** y se revisan.\n- La **segmentación** entre la red de oficina y la de control de planta.\n- Las **copias de seguridad** y la recuperación ante un secuestro de datos.\n\n## Ideas que debes llevarte\n- La contaminación deliberada es rara pero de gran impacto; la amenaza **interna** suele subestimarse.\n- Perfiles: empleado inconforme, extorsionador, activista, persona irracional, delincuente, ciberatacante.\n- El **TACCP** identifica puntos vulnerables y evalúa medidas, con un equipo competente.\n- Criterios útiles: **impacto** (severidad y escala), **acceso** y **capacidad** del atacante; los tipos de actividad clave de FSMA (líquidos a granel, almacenamiento de líquidos, ingredientes secundarios, mezclado) son buenos puntos de partida; **CARVER + Shock** es otra herramienta.\n- En una planta química, el producto es objetivo y la planta puede ser **fuente** de agentes peligrosos.\n- Incluye el **factor ciber**: recetas, accesos, registros y redes.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Chicago 1982",
+     "enunciado": "¿Qué cambio en la industria impulsó el caso de las cápsulas contaminadas con cianuro en Chicago en 1982?",
+     "opciones": [
+      "Los cierres y envases con evidencia de manipulación",
+      "Los análisis microbiológicos",
+      "La pasteurización",
+      "El etiquetado nutrimental"
+     ],
+     "correcta": 0,
+     "explicacion": "Hoy son estándar en muchos productos.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Interna",
+     "enunciado": "¿Qué perfil de atacante suelen subestimar las empresas?",
+     "opciones": [
+      "El empleado o excolaborador inconforme con acceso legítimo",
+      "El extorsionador",
+      "El activista",
+      "El ciberatacante extranjero"
+     ],
+     "correcta": 0,
+     "explicacion": "Conoce la planta, los horarios y los puntos débiles.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Extorsión",
+     "enunciado": "¿Por qué una amenaza de contaminación por extorsión es un incidente aunque no se haya contaminado nada?",
+     "opciones": [
+      "Porque obliga a evaluar, retener y quizá retirar producto",
+      "Porque siempre es real",
+      "Porque no requiere acción",
+      "Porque solo afecta a la policía"
+     ],
+     "correcta": 0,
+     "explicacion": "La amenaza misma genera consecuencias.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "FSMA",
+     "enunciado": "¿Qué tres elementos pide considerar la regla de adulteración intencional de FSMA en cada punto?",
+     "opciones": [
+      "Impacto en salud pública, grado de acceso físico y capacidad del atacante de contaminar con éxito",
+      "Costo, tiempo y calidad",
+      "Peligro, probabilidad y severidad microbiológica",
+      "Proveedor, cliente y transportista"
+     ],
+     "correcta": 0,
+     "explicacion": "El impacto incluye severidad y escala.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Actividades clave",
+     "enunciado": "¿Cuál es uno de los tipos de actividad clave identificados por FSMA?",
+     "opciones": [
+      "Mezclado y actividades similares",
+      "Facturación",
+      "Mantenimiento de oficinas",
+      "Recepción de papelería"
+     ],
+     "correcta": 0,
+     "explicacion": "También recepción de líquidos a granel, almacenamiento de líquidos e ingredientes secundarios.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Mezclado",
+     "enunciado": "¿Por qué el mezclado es una etapa vulnerable?",
+     "opciones": [
+      "Porque un contaminante se distribuye uniformemente en un gran volumen",
+      "Porque es la etapa más limpia",
+      "Porque está siempre automatizada",
+      "No es vulnerable"
+     ],
+     "correcta": 0,
+     "explicacion": "Aumenta la escala del impacto.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "CARVER",
+     "enunciado": "En CARVER + Shock, ¿qué evalúa la 'recuperabilidad'?",
+     "opciones": [
+      "La capacidad del sistema de recuperarse tras el ataque",
+      "La facilidad de acceso",
+      "El efecto psicológico",
+      "La facilidad de identificar el objetivo"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una de siete dimensiones.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Vulnerabilidad",
+     "enunciado": "¿Qué hace más vulnerable a un punto del proceso?",
+     "opciones": [
+      "Producto expuesto, después de cualquier tratamiento que pudiera eliminar el contaminante, con poca supervisión",
+      "Producto sellado y supervisado",
+      "Producto antes de un tratamiento eficaz",
+      "Áreas con acceso restringido"
+     ],
+     "correcta": 0,
+     "explicacion": "Exposición, posición y supervisión son clave.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Planta química",
+     "enunciado": "¿Qué dimensión adicional tiene la defensa en una planta química?",
+     "opciones": [
+      "La planta puede ser fuente de químicos peligrosos que podrían robarse para usarse como contaminantes",
+      "Ninguna",
+      "Solo el riesgo de incendio",
+      "Solo el riesgo de fraude"
+     ],
+     "correcta": 0,
+     "explicacion": "El control de inventario y acceso a sustancias peligrosas es parte de la defensa.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Ciber",
+     "enunciado": "¿Por qué el factor ciber es relevante en defensa alimentaria?",
+     "opciones": [
+      "Porque una alteración maliciosa de recetas o dosificadores podría producir lotes peligrosos sin contacto físico",
+      "Porque las computadoras pueden contaminarse con bacterias",
+      "No es relevante",
+      "Solo importa en oficinas"
+     ],
+     "correcta": 0,
+     "explicacion": "Hay que controlar quién modifica recetas y parámetros.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Equipo",
+     "enunciado": "¿Qué áreas conviene incluir en el equipo de evaluación de amenazas?",
+     "opciones": [
+      "Seguridad física, sistemas, recursos humanos, producción y calidad",
+      "Solo calidad",
+      "Solo seguridad patrimonial",
+      "Solo la dirección"
+     ],
+     "correcta": 0,
+     "explicacion": "Las amenazas cruzan varias disciplinas.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Puntos vulnerables",
+     "enunciado": "Identifica tres puntos vulnerables en la fabricación de un sanitizante sin enjuague (recepción de materias primas, mezclado en tanque, llenado) y justifica con los tres criterios de FSMA.",
+     "respuesta_modelo": "1) Recepción del activo a granel: impacto alto porque llega a todos los lotes; acceso medio (patio de descarga, transportistas externos); capacidad alta si no hay sellos verificados, porque un contaminante se mezclaría en el tanque. 2) Tanque de mezcla abierto o con boca de hombre: impacto alto (un lote completo para muchos clientes); acceso según supervisión, mayor en turno nocturno; capacidad alta porque el agitador distribuye el agente y no hay etapa posterior que lo elimine. 3) Tolva o tanque pulmón de la llenadora: impacto medio a alto; acceso de varios operadores y contratistas; capacidad alta porque está al final del proceso. Son puntos significativos que requieren medidas.",
+     "puntos_clave": [
+      "Tres puntos",
+      "Impacto con severidad y escala",
+      "Acceso",
+      "Capacidad del atacante"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Interna",
+     "enunciado": "¿Qué señales de una posible amenaza interna debería conocer un supervisor y cómo debería responder?",
+     "respuesta_modelo": "Señales: conflicto laboral grave o despido reciente, comentarios hostiles o amenazas, presencia en áreas o turnos que no le corresponden, interés inusual en áreas sensibles, recetas o sistemas, acceso fuera de horario, traslado de recipientes o sustancias sin justificación. Respuesta: no confrontar de forma agresiva ni acusar; documentar los hechos observados; informar al responsable de defensa alimentaria o de seguridad según el procedimiento; aplicar las medidas previstas (revisar accesos, aumentar supervisión, revisar registros y retener producto si hay indicios). Al mismo tiempo, una buena gestión de personas y canales de queja reduce el riesgo de origen.",
+     "puntos_clave": [
+      "Señales conductuales y de acceso",
+      "Documentar sin acusar",
+      "Escalar según procedimiento",
+      "Prevención con gestión de personas"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Ciber",
+     "enunciado": "Enumera cinco preguntas de evaluación de amenazas sobre los sistemas informáticos que controlan recetas y dosificación en una planta.",
+     "respuesta_modelo": "1) ¿Quién tiene permisos para crear o modificar recetas y parámetros, y se revisan periódicamente? 2) ¿Cada cambio queda registrado con usuario, fecha y valor anterior, y alguien revisa esos registros? 3) ¿Los cambios a recetas críticas requieren aprobación de una segunda persona? 4) ¿La red de control de planta está separada de la red de oficina e internet, y el acceso remoto de proveedores está controlado? 5) ¿Hay copias de seguridad de recetas y un plan de recuperación ante secuestro de datos o falla, probado? También: ¿se cambian contraseñas predeterminadas y se dan de baja usuarios de personal que sale?",
+     "puntos_clave": [
+      "Permisos",
+      "Registro y revisión de cambios",
+      "Doble aprobación",
+      "Segmentación, respaldo y bajas"
+     ],
+     "id": "q14"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "titulo": "Plan de defensa alimentaria",
+   "texto": "## Del punto vulnerable a la medida\nEl **plan de defensa alimentaria** documenta las medidas de mitigación para los puntos vulnerables significativos, cómo se vigila que se apliquen, qué se hace si fallan y cómo se verifica todo. Su lógica es parecida a la de un plan HACCP, pero adaptada a amenazas intencionales.\n\nUn principio guía: las medidas no tienen que convertir la planta en una fortaleza. Deben ser **proporcionales** y enfocarse en los puntos donde el impacto sería mayor, combinando **disuadir**, **impedir**, **detectar** y **responder**.\n\n## Medidas generales de protección\nSon la base de cualquier programa, aunque por sí solas no bastan para los puntos críticos.\n\n### Perímetro e instalaciones\n- Perímetro controlado, accesos limitados y vigilados.\n- Iluminación exterior, cámaras en accesos y áreas críticas, con grabación conservada.\n- Puertas de emergencia con alarma, que no sirvan de entrada.\n- Control de llaves y combinaciones.\n\n### Personas\n- Verificación de antecedentes laborales en la contratación, dentro de lo que permite la ley.\n- **Identificación** visible y uniformes que distingan áreas.\n- Acceso **por áreas** según la función: no todo el personal necesita entrar a todos lados.\n- **Visitantes y contratistas**: registro, identificación, escolta en áreas sensibles, inducción.\n- Prohibición de objetos personales y recipientes no autorizados en áreas de producción.\n- **Baja inmediata** de accesos (físicos y de sistemas) cuando alguien deja la empresa.\n- Atención a conflictos laborales: una buena gestión de personas es también defensa.\n\n### Materiales\n- Recepción solo de entregas **programadas** y de proveedores aprobados.\n- Verificación de **sellos**, documentación, integridad de envases y cantidades.\n- Control de **químicos peligrosos**: almacenamiento bajo llave, inventario conciliado, acceso restringido.\n- Control del **reactivo de laboratorio**: muchos laboratorios tienen sustancias tóxicas que deben estar controladas.\n\n### Sistemas\n- Permisos mínimos necesarios para modificar recetas y parámetros.\n- Registro de **cambios** y revisión.\n- Separación de redes, contraseñas robustas, respaldos.\n\n## Medidas específicas para puntos vulnerables\nPara los puntos significativos de la evaluación (capítulo 5), se diseñan medidas **dirigidas**:\n\n| Punto vulnerable | Medidas de mitigación posibles |\n|---|---|\n| Recepción de líquidos a granel | Sellos numerados verificados contra documentos; descarga solo con personal propio presente; mangueras y conexiones bajo llave |\n| Tanques de almacenamiento | Bocas de hombre y respiraderos con candado o sello; inspección de sellos en cada turno; acceso restringido al área |\n| Ingredientes secundarios | Almacén de ingredientes menores cerrado; dispensado por personal autorizado; contenedores sellados hasta su uso |\n| Mezclado | Tanques cerrados; presencia de dos personas al agregar ingredientes (regla de dos personas); cámara sobre la boca de carga |\n| Llenado | Tolvas cubiertas; supervisión; acceso limitado a operadores asignados |\n| Recetas en sistema | Doble aprobación para cambios en recetas críticas; alarma ante modificaciones fuera de horario |\n\n## Vigilancia, acciones y verificación\nComo en el HACCP, cada medida específica necesita:\n\n### Vigilancia\nQué se revisa, quién, cuándo y cómo se registra. Ejemplos: verificar los sellos de los tanques al inicio de cada turno; revisar el registro de cambios de recetas cada semana.\n\n### Acciones correctivas\nQué se hace si la medida no se aplicó o falló: un sello roto o con número diferente obliga a **retener** el contenido del tanque, investigar y decidir su destino con evidencia; una puerta controlada encontrada abierta se reporta y se revisa la grabación.\n\n### Verificación\n- Revisión de los registros de vigilancia.\n- **Auditoría interna** del plan (los esquemas lo piden en el programa de auditoría).\n- **Pruebas**: intentar entrar sin identificación, dejar un sello con número cambiado o simular una entrega no programada, para ver si el sistema responde. Estas pruebas se planifican y autorizan.\n- Revisión del plan al menos **anualmente** y ante cambios: nuevas instalaciones, nuevos productos, incidentes, nuevas amenazas.\n\n## Cultura de vigilancia\nLa medida más poderosa y barata es que **todo el personal** esté alerta y se sienta autorizado para reportar:\n\n- Capacitación de **concienciación** para todo el personal: qué es la defensa alimentaria, qué señales observar, a quién avisar.\n- Mensaje claro: \"si ves algo raro, dilo\", sin miedo a equivocarse.\n- Respuesta **rápida** y visible a los reportes, para que la gente sepa que sirven.\n\nEsto conecta directamente con la cultura de inocuidad de los capítulos 7 y 8.\n\n## Respuesta a incidentes\nEl plan debe prever qué hacer ante:\n\n- Una **amenaza** de contaminación (llamada, correo, nota): quién la recibe, qué información registrar, a quién escalar, cuándo avisar a la autoridad.\n- Evidencia de **manipulación**: sellos rotos, objetos extraños, personas no autorizadas.\n- **Contaminación confirmada**.\n\nLas decisiones típicas son retener producto, evaluar con análisis, coordinar con autoridades y, si es necesario, **retirar** producto del mercado (capítulo 9). El equipo de crisis y los contactos deben estar definidos **antes** del incidente.\n\n## Competencia\nLos esquemas actuales exigen que quienes **elaboran y mantienen** el plan tengan conocimiento y competencia adecuados. En la práctica: formación específica en defensa alimentaria y en el método de evaluación, conocimiento del proceso, y participación de especialistas (seguridad, sistemas). La regla de adulteración intencional de FSMA, por su parte, exige que ciertas tareas las realice o supervise un **individuo calificado** en defensa alimentaria.\n\n## Confidencialidad\nComo la evaluación de vulnerabilidad, el plan de defensa describe los puntos débiles de la planta. Se comparte con quien lo necesita, se controla y, ante auditores y clientes, se muestra con cuidado.\n\n## Ideas que debes llevarte\n- El plan combina **disuadir**, **impedir**, **detectar** y **responder**, con medidas **proporcionales**.\n- Medidas generales: perímetro, **personas** (identificación, acceso por áreas, visitantes, bajas inmediatas), **materiales** (sellos, químicos peligrosos bajo control) y **sistemas**.\n- Medidas **específicas** para los puntos significativos: sellos, candados, regla de dos personas, contenedores sellados, doble aprobación de recetas.\n- Cada medida tiene **vigilancia**, **acciones correctivas** y **verificación**, incluidas pruebas planificadas.\n- La **concienciación** del personal es la medida más poderosa.\n- Prepara la **respuesta** a amenazas, manipulación y contaminación antes de que ocurran.\n- Quienes elaboran el plan deben ser **competentes**; el plan es **confidencial**.",
+   "preguntas": [
+    {
+     "tipo": "opcion",
+     "concepto": "Enfoque",
+     "enunciado": "¿Qué cuatro funciones combinan las medidas de un plan de defensa?",
+     "opciones": [
+      "Disuadir, impedir, detectar y responder",
+      "Comprar, almacenar, producir y vender",
+      "Planear, hacer, verificar y actuar únicamente",
+      "Medir, analizar, mejorar y controlar"
+     ],
+     "correcta": 0,
+     "explicacion": "Con medidas proporcionales al riesgo.",
+     "id": "q1"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Proporcionalidad",
+     "enunciado": "¿Debe un plan de defensa convertir la planta en una fortaleza?",
+     "opciones": [
+      "No; las medidas deben ser proporcionales y enfocarse en los puntos de mayor impacto",
+      "Sí, en todas las áreas por igual",
+      "Solo en las oficinas",
+      "Solo si lo pide el cliente"
+     ],
+     "correcta": 0,
+     "explicacion": "Los recursos se concentran donde importa.",
+     "id": "q2"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Personas",
+     "enunciado": "¿Qué medida de personas es crítica cuando alguien deja la empresa?",
+     "opciones": [
+      "Dar de baja de inmediato sus accesos físicos y de sistemas",
+      "Esperar a fin de mes",
+      "Mantener sus accesos por si regresa",
+      "Ninguna"
+     ],
+     "correcta": 0,
+     "explicacion": "Un excolaborador inconforme es un perfil de amenaza.",
+     "id": "q3"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Visitantes",
+     "enunciado": "¿Cómo se gestionan los contratistas en áreas sensibles?",
+     "opciones": [
+      "Registro, identificación, inducción y escolta",
+      "Acceso libre si traen herramientas",
+      "Solo registro en la entrada",
+      "No se gestionan"
+     ],
+     "correcta": 0,
+     "explicacion": "Tienen acceso pero no siempre supervisión.",
+     "id": "q4"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Dos personas",
+     "enunciado": "¿Qué es la regla de dos personas en el mezclado?",
+     "opciones": [
+      "Que la adición de ingredientes en un punto vulnerable se haga con dos personas presentes",
+      "Que dos operadores firmen el registro al final del turno",
+      "Que haya dos tanques",
+      "Que se mezcle dos veces"
+     ],
+     "correcta": 0,
+     "explicacion": "Dificulta la acción de una sola persona con intención maliciosa.",
+     "id": "q5"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Sello roto",
+     "enunciado": "Al inicio del turno, un sello de la boca de un tanque está roto. ¿Qué acción corresponde?",
+     "opciones": [
+      "Retener el contenido, investigar y decidir su destino con evidencia",
+      "Colocar un sello nuevo y continuar",
+      "Ignorarlo si el tanque parece normal",
+      "Vaciar el tanque al drenaje sin registro"
+     ],
+     "correcta": 0,
+     "explicacion": "Es una acción correctiva definida en el plan.",
+     "id": "q6"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Químicos",
+     "enunciado": "¿Por qué se controlan los reactivos tóxicos del laboratorio en el plan de defensa?",
+     "opciones": [
+      "Porque podrían usarse como contaminantes si cualquiera tiene acceso",
+      "Por su costo",
+      "Porque caducan",
+      "No forman parte del plan"
+     ],
+     "correcta": 0,
+     "explicacion": "El inventario y el acceso deben estar controlados.",
+     "id": "q7"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Pruebas",
+     "enunciado": "¿Qué es una prueba de verificación del plan de defensa?",
+     "opciones": [
+      "Intentar, de forma planificada y autorizada, entrar sin identificación para ver si el sistema responde",
+      "Revisar el logotipo del plan",
+      "Preguntar al personal si leyó el plan",
+      "Contratar más vigilantes"
+     ],
+     "correcta": 0,
+     "explicacion": "Verifica que las medidas funcionan en la práctica.",
+     "id": "q8"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Concienciación",
+     "enunciado": "¿Cuál es la medida más poderosa y barata de la defensa alimentaria?",
+     "opciones": [
+      "Que todo el personal esté alerta y se sienta autorizado para reportar",
+      "Instalar cámaras en todas partes",
+      "Contratar guardias armados",
+      "Cerrar la planta los fines de semana"
+     ],
+     "correcta": 0,
+     "explicacion": "Conecta con la cultura de inocuidad.",
+     "id": "q9"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Respuesta",
+     "enunciado": "¿Cuándo deben definirse el equipo de crisis y los contactos para responder a una amenaza?",
+     "opciones": [
+      "Antes del incidente",
+      "Durante el incidente",
+      "Después del incidente",
+      "Solo si la amenaza es real"
+     ],
+     "correcta": 0,
+     "explicacion": "Improvisar en una crisis cuesta tiempo valioso.",
+     "id": "q10"
+    },
+    {
+     "tipo": "opcion",
+     "concepto": "Revisión",
+     "enunciado": "¿Cuándo debe revisarse el plan de defensa?",
+     "opciones": [
+      "Al menos anualmente y ante cambios, incidentes o nuevas amenazas",
+      "Solo cuando hay un ataque",
+      "Cada cinco años",
+      "Nunca"
+     ],
+     "correcta": 0,
+     "explicacion": "Las amenazas y la planta cambian.",
+     "id": "q11"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Medidas",
+     "enunciado": "Para el punto vulnerable 'tanque de mezcla de sanitizante con boca de hombre, en área con acceso de operadores y mantenimiento, turno nocturno con poca supervisión', propón medidas de mitigación con su vigilancia y acción correctiva.",
+     "respuesta_modelo": "Medidas: boca de hombre con candado o sello numerado cuando no está en carga; acceso al área restringido por tarjeta solo a operadores asignados y mantenimiento autorizado; regla de dos personas para abrir y agregar ingredientes; cámara sobre la boca de carga con grabación; supervisión física al menos una vez por turno nocturno. Vigilancia: verificar el sello o candado al inicio de cada turno y anotar el número; revisión semanal del registro de accesos y de una muestra de grabación. Acción correctiva: si el sello está roto o el acceso no autorizado, retener el lote, revisar la grabación y los registros, analizar el producto según el riesgo y decidir su destino con evidencia; investigar y reportar.",
+     "puntos_clave": [
+      "Medidas físicas y de acceso",
+      "Regla de dos personas y cámara",
+      "Vigilancia con frecuencia y registro",
+      "Acción correctiva con retención"
+     ],
+     "id": "q12"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Amenaza",
+     "enunciado": "Recepción recibe una llamada anónima que afirma que un lote de detergente fue contaminado. Describe los primeros pasos de respuesta.",
+     "respuesta_modelo": "Quien recibe la llamada registra todo lo posible: hora, número, palabras exactas, lote o producto mencionado, exigencias, voz y ruidos de fondo, sin colgar abruptamente. Escala de inmediato al responsable de defensa alimentaria y a la dirección según el plan. Se convoca al equipo de crisis, se retiene el lote mencionado y, por precaución, los relacionados; se revisan registros de acceso, sellos y grabaciones del periodo de fabricación; se evalúa con análisis dirigidos. Se notifica a la autoridad competente según la ley y la evaluación. Se prepara la comunicación con clientes y, si la evaluación lo indica, el retiro. Se conservan todas las evidencias.",
+     "puntos_clave": [
+      "Registro detallado de la llamada",
+      "Escalamiento y equipo de crisis",
+      "Retención y evaluación",
+      "Autoridad, clientes y evidencia"
+     ],
+     "id": "q13"
+    },
+    {
+     "tipo": "abierta",
+     "concepto": "Concienciación",
+     "enunciado": "Diseña un mensaje de concienciación de defensa alimentaria de 5 puntos para el personal de planta.",
+     "respuesta_modelo": "1) Nuestros productos llegan a plantas de alimentos: protegerlos protege a miles de personas. 2) Si ves a alguien sin identificación o en un área que no le corresponde, pregúntale amablemente o avisa al supervisor. 3) Si encuentras un sello roto, un candado abierto, un recipiente extraño o algo fuera de lugar, no lo toques y repórtalo de inmediato. 4) No prestes tu tarjeta ni tus contraseñas, y no dejes entrar a nadie detrás de ti. 5) Reportar nunca está mal: preferimos cien avisos sin problema que un incidente sin aviso; los reportes se atienden y se agradecen.",
+     "puntos_clave": [
+      "Por qué importa",
+      "Personas y accesos",
+      "Señales de manipulación",
+      "Reportar sin miedo"
+     ],
+     "id": "q14"
+    }
+   ]
+  }
+ ]
+}
